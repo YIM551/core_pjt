@@ -1,0 +1,4 @@
+INFO:     127.0.0.1:65044 - "GET /api/health HTTP/1.1" 200 OK
+[vlm ] 69651ms  : 이 이미지에는 베이지색과 흰색 패턴이 있는 소파가 보입니다. 소파 옆...
+INFO:     127.0.0.1:60798 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52223 - "GET /api/health HTTP/1.1" 200 OK

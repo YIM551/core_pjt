@@ -1,0 +1,3239 @@
+[
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--1-_jpg.rf.90233c5326ce5a78f92717fcb0e5e996.jpg",
+    "label": "train/labels/Chair--1-_jpg.rf.90233c5326ce5a78f92717fcb0e5e996.txt",
+    "bbox": [
+      0.45708333333333334,
+      0.425,
+      0.4741666666666667,
+      0.81
+    ],
+    "id": "C000"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--100-_jpg.rf.9a36b6d3259fd56c4496ec6e1ae16f22.jpg",
+    "label": "train/labels/Chair--100-_jpg.rf.9a36b6d3259fd56c4496ec6e1ae16f22.txt",
+    "bbox": [
+      0.45916666666666667,
+      0.5229166666666667,
+      0.205,
+      0.3875
+    ],
+    "id": "C001"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--101-_jpg.rf.2ee82990c5f2d62b6b6ec6f7542ca4a9.jpg",
+    "label": "train/labels/Chair--101-_jpg.rf.2ee82990c5f2d62b6b6ec6f7542ca4a9.txt",
+    "bbox": [
+      0.44708333333333333,
+      0.5495833333333333,
+      0.18916666666666668,
+      0.37083333333333335
+    ],
+    "id": "C002"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--102-_jpg.rf.b73ba09b5336b4df21ffbbdbe8d1e0a0.jpg",
+    "label": "train/labels/Chair--102-_jpg.rf.b73ba09b5336b4df21ffbbdbe8d1e0a0.txt",
+    "bbox": [
+      0.435,
+      0.5741666666666667,
+      0.175,
+      0.3616666666666667
+    ],
+    "id": "C003"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--103-_jpg.rf.6ca68e7d384d4002d0e4f31fdbdc0ca1.jpg",
+    "label": "train/labels/Chair--103-_jpg.rf.6ca68e7d384d4002d0e4f31fdbdc0ca1.txt",
+    "bbox": [
+      0.43125,
+      0.55125,
+      0.2025,
+      0.3675
+    ],
+    "id": "C004"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--104-_jpg.rf.2c4e954060c76d1da763750983016804.jpg",
+    "label": "train/labels/Chair--104-_jpg.rf.2c4e954060c76d1da763750983016804.txt",
+    "bbox": [
+      0.5375,
+      0.54625,
+      0.185,
+      0.37083333333333335
+    ],
+    "id": "C005"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--106-_jpg.rf.04e02d78d5e208bf731e2863ef01cf79.jpg",
+    "label": "train/labels/Chair--106-_jpg.rf.04e02d78d5e208bf731e2863ef01cf79.txt",
+    "bbox": [
+      0.48333333333333334,
+      0.5083333333333333,
+      0.33166666666666667,
+      0.68
+    ],
+    "id": "C006"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--107-_jpg.rf.4307a39603a3015ceec83944773d5c91.jpg",
+    "label": "train/labels/Chair--107-_jpg.rf.4307a39603a3015ceec83944773d5c91.txt",
+    "bbox": [
+      0.5208333333333334,
+      0.51875,
+      0.37666666666666665,
+      0.6825
+    ],
+    "id": "C007"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--11-_jpg.rf.aad85219b9e85e6e5b707b8a30d85f90.jpg",
+    "label": "train/labels/Chair--11-_jpg.rf.aad85219b9e85e6e5b707b8a30d85f90.txt",
+    "bbox": [
+      0.5633333333333334,
+      0.49,
+      0.4116666666666667,
+      0.7583333333333333
+    ],
+    "id": "C008"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--113-_jpg.rf.b620e3599a7d087db33c48d139b37473.jpg",
+    "label": "train/labels/Chair--113-_jpg.rf.b620e3599a7d087db33c48d139b37473.txt",
+    "bbox": [
+      0.5545833333333333,
+      0.48125,
+      0.3408333333333333,
+      0.5125
+    ],
+    "id": "C009"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--114-_jpg.rf.59ff0c8e8a245fc74a041ef043abee75.jpg",
+    "label": "train/labels/Chair--114-_jpg.rf.59ff0c8e8a245fc74a041ef043abee75.txt",
+    "bbox": [
+      0.55,
+      0.4708333333333333,
+      0.35333333333333333,
+      0.5
+    ],
+    "id": "C010"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--115-_jpg.rf.64a1d4fe9c144949f72ecc8e1d7c2a0f.jpg",
+    "label": "train/labels/Chair--115-_jpg.rf.64a1d4fe9c144949f72ecc8e1d7c2a0f.txt",
+    "bbox": [
+      0.5408333333333334,
+      0.47791666666666666,
+      0.25333333333333335,
+      0.3975
+    ],
+    "id": "C011"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--116-_jpg.rf.f49499f41b97579405d0d60297dff700.jpg",
+    "label": "train/labels/Chair--116-_jpg.rf.f49499f41b97579405d0d60297dff700.txt",
+    "bbox": [
+      0.5575,
+      0.46458333333333335,
+      0.255,
+      0.3925
+    ],
+    "id": "C012"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--117-_jpg.rf.dded8c75e3d179d0d2d2d5eca2541bb2.jpg",
+    "label": "train/labels/Chair--117-_jpg.rf.dded8c75e3d179d0d2d2d5eca2541bb2.txt",
+    "bbox": [
+      0.5079166666666667,
+      0.505,
+      0.2525,
+      0.3983333333333333
+    ],
+    "id": "C013"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--118-_jpg.rf.0931b8e018b3b11c9854e733abd83074.jpg",
+    "label": "train/labels/Chair--118-_jpg.rf.0931b8e018b3b11c9854e733abd83074.txt",
+    "bbox": [
+      0.5358333333333334,
+      0.5208333333333334,
+      0.23666666666666666,
+      0.36833333333333335
+    ],
+    "id": "C014"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--119-_jpg.rf.7b104085d89ad57fac36cdb3012f2ac1.jpg",
+    "label": "train/labels/Chair--119-_jpg.rf.7b104085d89ad57fac36cdb3012f2ac1.txt",
+    "bbox": [
+      0.5,
+      0.46875,
+      0.22166666666666668,
+      0.3441666666666667
+    ],
+    "id": "C015"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--12-_jpg.rf.8f65623748aba70644aa7da1e419f678.jpg",
+    "label": "train/labels/Chair--12-_jpg.rf.8f65623748aba70644aa7da1e419f678.txt",
+    "bbox": [
+      0.5654166666666667,
+      0.6395833333333333,
+      0.4241666666666667,
+      0.6375
+    ],
+    "id": "C016"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--120-_jpg.rf.d241a42277728531e5e11fa8371b0ddc.jpg",
+    "label": "train/labels/Chair--120-_jpg.rf.d241a42277728531e5e11fa8371b0ddc.txt",
+    "bbox": [
+      0.5333333333333333,
+      0.5291666666666667,
+      0.245,
+      0.355
+    ],
+    "id": "C017"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--121-_jpg.rf.bdca1a7c610913b9c97c3ac48f79e665.jpg",
+    "label": "train/labels/Chair--121-_jpg.rf.bdca1a7c610913b9c97c3ac48f79e665.txt",
+    "bbox": [
+      0.5058333333333334,
+      0.5308333333333334,
+      0.22833333333333333,
+      0.34
+    ],
+    "id": "C018"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--122-_jpg.rf.b3b494b102d2ec1d3cde19b0bdb3c3c5.jpg",
+    "label": "train/labels/Chair--122-_jpg.rf.b3b494b102d2ec1d3cde19b0bdb3c3c5.txt",
+    "bbox": [
+      0.5170833333333333,
+      0.48375,
+      0.2525,
+      0.36083333333333334
+    ],
+    "id": "C019"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--123-_jpg.rf.f517826bf50cea101f79401b846ae5b9.jpg",
+    "label": "train/labels/Chair--123-_jpg.rf.f517826bf50cea101f79401b846ae5b9.txt",
+    "bbox": [
+      0.5654166666666667,
+      0.4666666666666667,
+      0.2608333333333333,
+      0.36666666666666664
+    ],
+    "id": "C020"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--125-_jpg.rf.05b307f3a97b268a547b6cd6205e118b.jpg",
+    "label": "train/labels/Chair--125-_jpg.rf.05b307f3a97b268a547b6cd6205e118b.txt",
+    "bbox": [
+      0.58,
+      0.5004166666666666,
+      0.26166666666666666,
+      0.3725
+    ],
+    "id": "C021"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--127-_jpg.rf.9cadcb25d0cd7bdf50d0289b3abd8ff3.jpg",
+    "label": "train/labels/Chair--127-_jpg.rf.9cadcb25d0cd7bdf50d0289b3abd8ff3.txt",
+    "bbox": [
+      0.5191666666666667,
+      0.49666666666666665,
+      0.25333333333333335,
+      0.3933333333333333
+    ],
+    "id": "C022"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--128-_jpg.rf.7e2f327445b2141956ea0407409ea183.jpg",
+    "label": "train/labels/Chair--128-_jpg.rf.7e2f327445b2141956ea0407409ea183.txt",
+    "bbox": [
+      0.46208333333333335,
+      0.49583333333333335,
+      0.23583333333333334,
+      0.39166666666666666
+    ],
+    "id": "C023"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--129-_jpg.rf.52bcfcbe1dbb96e23cf06cbdbaeea6f1.jpg",
+    "label": "train/labels/Chair--129-_jpg.rf.52bcfcbe1dbb96e23cf06cbdbaeea6f1.txt",
+    "bbox": [
+      0.43291666666666667,
+      0.5579166666666666,
+      0.2275,
+      0.3858333333333333
+    ],
+    "id": "C024"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--13-_jpg.rf.90faf4987113af3e86d137125400f89c.jpg",
+    "label": "train/labels/Chair--13-_jpg.rf.90faf4987113af3e86d137125400f89c.txt",
+    "bbox": [
+      0.48333333333333334,
+      0.6133333333333333,
+      0.43833333333333335,
+      0.6366666666666667
+    ],
+    "id": "C025"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--130-_jpg.rf.d165a353f07625a4f593a3e293e6dc4d.jpg",
+    "label": "train/labels/Chair--130-_jpg.rf.d165a353f07625a4f593a3e293e6dc4d.txt",
+    "bbox": [
+      0.47208333333333335,
+      0.58375,
+      0.23583333333333334,
+      0.3775
+    ],
+    "id": "C026"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--131-_jpg.rf.f089cd4c172be76a12a8bfb79b096c9c.jpg",
+    "label": "train/labels/Chair--131-_jpg.rf.f089cd4c172be76a12a8bfb79b096c9c.txt",
+    "bbox": [
+      0.47625,
+      0.6129166666666667,
+      0.24583333333333332,
+      0.3725
+    ],
+    "id": "C027"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--132-_jpg.rf.649439fd24c5e5394185be197d95a400.jpg",
+    "label": "train/labels/Chair--132-_jpg.rf.649439fd24c5e5394185be197d95a400.txt",
+    "bbox": [
+      0.50625,
+      0.5895833333333333,
+      0.33416666666666667,
+      0.5008333333333334
+    ],
+    "id": "C028"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--134-_jpg.rf.02ee1008ee32c872ef1fcb3266bfaf07.jpg",
+    "label": "train/labels/Chair--134-_jpg.rf.02ee1008ee32c872ef1fcb3266bfaf07.txt",
+    "bbox": [
+      0.6008333333333333,
+      0.5783333333333334,
+      0.345,
+      0.5233333333333333
+    ],
+    "id": "C029"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--136-_jpg.rf.dadac737c779150a5ec154db5275d14a.jpg",
+    "label": "train/labels/Chair--136-_jpg.rf.dadac737c779150a5ec154db5275d14a.txt",
+    "bbox": [
+      0.5725,
+      0.5958333333333333,
+      0.37,
+      0.5583333333333333
+    ],
+    "id": "C030"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--137-_jpg.rf.b7848c56680bd7ce3bbb712a1a038731.jpg",
+    "label": "train/labels/Chair--137-_jpg.rf.b7848c56680bd7ce3bbb712a1a038731.txt",
+    "bbox": [
+      0.5579166666666666,
+      0.5908333333333333,
+      0.36916666666666664,
+      0.5516666666666666
+    ],
+    "id": "C031"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--139-_jpg.rf.5218554d0d9fe2a51e0a8d3a5d16e73a.jpg",
+    "label": "train/labels/Chair--139-_jpg.rf.5218554d0d9fe2a51e0a8d3a5d16e73a.txt",
+    "bbox": [
+      0.5745833333333333,
+      0.5366666666666666,
+      0.37416666666666665,
+      0.5183333333333333
+    ],
+    "id": "C032"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--14-_jpg.rf.9974c920a32e1f06ca82c5b2c8ca1d8c.jpg",
+    "label": "train/labels/Chair--14-_jpg.rf.9974c920a32e1f06ca82c5b2c8ca1d8c.txt",
+    "bbox": [
+      0.47333333333333333,
+      0.5408333333333334,
+      0.545,
+      0.835
+    ],
+    "id": "C033"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--140-_jpg.rf.f954bc1c3f6cf9450a365ad939a6ca4a.jpg",
+    "label": "train/labels/Chair--140-_jpg.rf.f954bc1c3f6cf9450a365ad939a6ca4a.txt",
+    "bbox": [
+      0.6441666666666667,
+      0.5925,
+      0.3616666666666667,
+      0.5383333333333333
+    ],
+    "id": "C034"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--141-_jpg.rf.5b7feaed9a3d2eec745995e147d63206.jpg",
+    "label": "train/labels/Chair--141-_jpg.rf.5b7feaed9a3d2eec745995e147d63206.txt",
+    "bbox": [
+      0.5083333333333333,
+      0.5695833333333333,
+      0.36333333333333334,
+      0.5458333333333333
+    ],
+    "id": "C035"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--142-_jpg.rf.0fed4b8ae59a9ae267c678e45071cf4d.jpg",
+    "label": "train/labels/Chair--142-_jpg.rf.0fed4b8ae59a9ae267c678e45071cf4d.txt",
+    "bbox": [
+      0.5179166666666667,
+      0.54375,
+      0.3425,
+      0.5141666666666667
+    ],
+    "id": "C036"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--143-_jpg.rf.e1edf3d61f427bd15e248a168e64fd9f.jpg",
+    "label": "train/labels/Chair--143-_jpg.rf.e1edf3d61f427bd15e248a168e64fd9f.txt",
+    "bbox": [
+      0.46,
+      0.52875,
+      0.3283333333333333,
+      0.5008333333333334
+    ],
+    "id": "C037"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--144-_jpg.rf.715f11b96e43e534e04aa9ef825777bf.jpg",
+    "label": "train/labels/Chair--144-_jpg.rf.715f11b96e43e534e04aa9ef825777bf.txt",
+    "bbox": [
+      0.5695833333333333,
+      0.53625,
+      0.3308333333333333,
+      0.4825
+    ],
+    "id": "C038"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--145-_jpg.rf.629cfb0d9fce2ec71ae82ed2f062eda6.jpg",
+    "label": "train/labels/Chair--145-_jpg.rf.629cfb0d9fce2ec71ae82ed2f062eda6.txt",
+    "bbox": [
+      0.5716666666666667,
+      0.5433333333333333,
+      0.325,
+      0.46166666666666667
+    ],
+    "id": "C039"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--146-_jpg.rf.0812b1fb2e10a93eb3d3cb33b812209c.jpg",
+    "label": "train/labels/Chair--146-_jpg.rf.0812b1fb2e10a93eb3d3cb33b812209c.txt",
+    "bbox": [
+      0.5470833333333334,
+      0.5133333333333333,
+      0.3375,
+      0.4583333333333333
+    ],
+    "id": "C040"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--147-_jpg.rf.e4fd0a9787c3f651ddb697726ca7f604.jpg",
+    "label": "train/labels/Chair--147-_jpg.rf.e4fd0a9787c3f651ddb697726ca7f604.txt",
+    "bbox": [
+      0.5533333333333333,
+      0.47583333333333333,
+      0.3233333333333333,
+      0.45666666666666667
+    ],
+    "id": "C041"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--148-_jpg.rf.e5f7e07dc63425838b3efca1a5de8ede.jpg",
+    "label": "train/labels/Chair--148-_jpg.rf.e5f7e07dc63425838b3efca1a5de8ede.txt",
+    "bbox": [
+      0.50625,
+      0.5416666666666666,
+      0.4025,
+      0.6066666666666667
+    ],
+    "id": "C042"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--15-_jpg.rf.86efbda898a099ba731f539461ee0800.jpg",
+    "label": "train/labels/Chair--15-_jpg.rf.86efbda898a099ba731f539461ee0800.txt",
+    "bbox": [
+      0.46416666666666667,
+      0.5704166666666667,
+      0.38333333333333336,
+      0.6725
+    ],
+    "id": "C043"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--155-_jpg.rf.1c8984f9fa58526358e89b9d7fc9d3c7.jpg",
+    "label": "train/labels/Chair--155-_jpg.rf.1c8984f9fa58526358e89b9d7fc9d3c7.txt",
+    "bbox": [
+      0.49083333333333334,
+      0.5608333333333333,
+      0.41833333333333333,
+      0.62
+    ],
+    "id": "C044"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--157-_jpg.rf.39541fa7a91c7ef88cb967e592547a35.jpg",
+    "label": "train/labels/Chair--157-_jpg.rf.39541fa7a91c7ef88cb967e592547a35.txt",
+    "bbox": [
+      0.5070833333333333,
+      0.5708333333333333,
+      0.3858333333333333,
+      0.5483333333333333
+    ],
+    "id": "C045"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--159-_jpg.rf.56f52f5a6a8743c92f51c824b614a4b2.jpg",
+    "label": "train/labels/Chair--159-_jpg.rf.56f52f5a6a8743c92f51c824b614a4b2.txt",
+    "bbox": [
+      0.5645833333333333,
+      0.6141666666666666,
+      0.31916666666666665,
+      0.555
+    ],
+    "id": "C046"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--16-_jpg.rf.460a7e27a5c3c9dcc413eb5b2937e94e.jpg",
+    "label": "train/labels/Chair--16-_jpg.rf.460a7e27a5c3c9dcc413eb5b2937e94e.txt",
+    "bbox": [
+      0.46625,
+      0.48583333333333334,
+      0.5325,
+      0.8383333333333334
+    ],
+    "id": "C047"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--160-_jpg.rf.b94a251d9108eea340269f4998856b49.jpg",
+    "label": "train/labels/Chair--160-_jpg.rf.b94a251d9108eea340269f4998856b49.txt",
+    "bbox": [
+      0.5358333333333334,
+      0.5616666666666666,
+      0.4216666666666667,
+      0.7516666666666667
+    ],
+    "id": "C048"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--161-_jpg.rf.a22467d86cc0bc7619fe6fa33d1a32ac.jpg",
+    "label": "train/labels/Chair--161-_jpg.rf.a22467d86cc0bc7619fe6fa33d1a32ac.txt",
+    "bbox": [
+      0.5820833333333333,
+      0.5508333333333333,
+      0.49416666666666664,
+      0.7733333333333333
+    ],
+    "id": "C049"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--162-_jpg.rf.d319a3bb6cef4fd805cc02cacecc2e0f.jpg",
+    "label": "train/labels/Chair--162-_jpg.rf.d319a3bb6cef4fd805cc02cacecc2e0f.txt",
+    "bbox": [
+      0.51375,
+      0.5541666666666667,
+      0.3475,
+      0.615
+    ],
+    "id": "C050"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--163-_jpg.rf.7735659c8b8dae7eacc21846070671e5.jpg",
+    "label": "train/labels/Chair--163-_jpg.rf.7735659c8b8dae7eacc21846070671e5.txt",
+    "bbox": [
+      0.5016666666666667,
+      0.5929166666666666,
+      0.44,
+      0.7841666666666667
+    ],
+    "id": "C051"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--164-_jpg.rf.b84910f5041ae4ae46f2622a15985f78.jpg",
+    "label": "train/labels/Chair--164-_jpg.rf.b84910f5041ae4ae46f2622a15985f78.txt",
+    "bbox": [
+      0.5575,
+      0.5279166666666667,
+      0.26666666666666666,
+      0.5025
+    ],
+    "id": "C052"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--165-_jpg.rf.ac20bf0d3fcfd375243a95d4d374ba52.jpg",
+    "label": "train/labels/Chair--165-_jpg.rf.ac20bf0d3fcfd375243a95d4d374ba52.txt",
+    "bbox": [
+      0.49666666666666665,
+      0.5254166666666666,
+      0.5883333333333334,
+      0.8991666666666667
+    ],
+    "id": "C053"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--166-_jpg.rf.623679436ccc9226d1ddfd3ada8c62bb.jpg",
+    "label": "train/labels/Chair--166-_jpg.rf.623679436ccc9226d1ddfd3ada8c62bb.txt",
+    "bbox": [
+      0.4775,
+      0.5933333333333334,
+      0.355,
+      0.7416666666666667
+    ],
+    "id": "C054"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--167-_jpg.rf.706a284938312dacf842f6f86732a3cb.jpg",
+    "label": "train/labels/Chair--167-_jpg.rf.706a284938312dacf842f6f86732a3cb.txt",
+    "bbox": [
+      0.5275,
+      0.5929166666666666,
+      0.24666666666666667,
+      0.5075
+    ],
+    "id": "C055"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--169-_jpg.rf.9d6e5d800b7ca7300690c303808b84fd.jpg",
+    "label": "train/labels/Chair--169-_jpg.rf.9d6e5d800b7ca7300690c303808b84fd.txt",
+    "bbox": [
+      0.49583333333333335,
+      0.57125,
+      0.37333333333333335,
+      0.8141666666666667
+    ],
+    "id": "C056"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--17-_jpg.rf.57e0d8821adee9e8cd08a6aa925a22ce.jpg",
+    "label": "train/labels/Chair--17-_jpg.rf.57e0d8821adee9e8cd08a6aa925a22ce.txt",
+    "bbox": [
+      0.5208333333333334,
+      0.5008333333333334,
+      0.34833333333333333,
+      0.5166666666666667
+    ],
+    "id": "C057"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--170-_jpg.rf.72f779c291bd10994fc3e053279c5900.jpg",
+    "label": "train/labels/Chair--170-_jpg.rf.72f779c291bd10994fc3e053279c5900.txt",
+    "bbox": [
+      0.5016666666666667,
+      0.5216666666666666,
+      0.625,
+      0.9166666666666666
+    ],
+    "id": "C058"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--171-_jpg.rf.d3d7b65526937e3281ea55af3cb05b8d.jpg",
+    "label": "train/labels/Chair--171-_jpg.rf.d3d7b65526937e3281ea55af3cb05b8d.txt",
+    "bbox": [
+      0.5004166666666666,
+      0.5445833333333333,
+      0.2891666666666667,
+      0.5975
+    ],
+    "id": "C059"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--172-_jpg.rf.24ad5ff90243c5f226c4187c346e2341.jpg",
+    "label": "train/labels/Chair--172-_jpg.rf.24ad5ff90243c5f226c4187c346e2341.txt",
+    "bbox": [
+      0.4875,
+      0.57125,
+      0.36333333333333334,
+      0.8025
+    ],
+    "id": "C060"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--173-_jpg.rf.2410a1d4e57abdbd53a6fff6a64b4828.jpg",
+    "label": "train/labels/Chair--173-_jpg.rf.2410a1d4e57abdbd53a6fff6a64b4828.txt",
+    "bbox": [
+      0.49666666666666665,
+      0.56375,
+      0.4083333333333333,
+      0.8091666666666667
+    ],
+    "id": "C061"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--175-_jpg.rf.b9f7c9adbc8f118da5223aea6b8b3857.jpg",
+    "label": "train/labels/Chair--175-_jpg.rf.b9f7c9adbc8f118da5223aea6b8b3857.txt",
+    "bbox": [
+      0.5029166666666667,
+      0.50625,
+      0.5441666666666667,
+      0.9391666666666667
+    ],
+    "id": "C062"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--178-_jpg.rf.5df80e76f1012975098a8b5da41b86ac.jpg",
+    "label": "train/labels/Chair--178-_jpg.rf.5df80e76f1012975098a8b5da41b86ac.txt",
+    "bbox": [
+      0.5029166666666667,
+      0.5054166666666666,
+      0.5075,
+      0.8408333333333333
+    ],
+    "id": "C063"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--179-_jpg.rf.c840288baaf74bc792ecbbd403ec6f45.jpg",
+    "label": "train/labels/Chair--179-_jpg.rf.c840288baaf74bc792ecbbd403ec6f45.txt",
+    "bbox": [
+      0.5641666666666667,
+      0.5595833333333333,
+      0.42,
+      0.5891666666666666
+    ],
+    "id": "C064"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--18-_jpg.rf.e0d276ea948b7be6c1d3506bea3e431b.jpg",
+    "label": "train/labels/Chair--18-_jpg.rf.e0d276ea948b7be6c1d3506bea3e431b.txt",
+    "bbox": [
+      0.485,
+      0.5116666666666667,
+      0.5516666666666666,
+      0.9166666666666666
+    ],
+    "id": "C065"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--180-_jpg.rf.76d940fe4ed6d8bd0860266dd5b589e8.jpg",
+    "label": "train/labels/Chair--180-_jpg.rf.76d940fe4ed6d8bd0860266dd5b589e8.txt",
+    "bbox": [
+      0.5008333333333334,
+      0.50375,
+      0.38166666666666665,
+      0.8541666666666666
+    ],
+    "id": "C066"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--181-_jpg.rf.d06bfd140287e0dbe5449892a0d6f3cb.jpg",
+    "label": "train/labels/Chair--181-_jpg.rf.d06bfd140287e0dbe5449892a0d6f3cb.txt",
+    "bbox": [
+      0.50625,
+      0.5029166666666667,
+      0.4225,
+      0.8508333333333333
+    ],
+    "id": "C067"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--183-_jpg.rf.087f45ee27d50e330f62461f0ea00073.jpg",
+    "label": "train/labels/Chair--183-_jpg.rf.087f45ee27d50e330f62461f0ea00073.txt",
+    "bbox": [
+      0.5241666666666667,
+      0.5041666666666667,
+      0.5183333333333333,
+      0.8633333333333333
+    ],
+    "id": "C068"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--184-_jpg.rf.fd61623e818b8e47e2a526b8cb8490c7.jpg",
+    "label": "train/labels/Chair--184-_jpg.rf.fd61623e818b8e47e2a526b8cb8490c7.txt",
+    "bbox": [
+      0.49916666666666665,
+      0.5179166666666667,
+      0.49666666666666665,
+      0.8425
+    ],
+    "id": "C069"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--185-_jpg.rf.d13cd652f1f2e8db56d975afda28be93.jpg",
+    "label": "train/labels/Chair--185-_jpg.rf.d13cd652f1f2e8db56d975afda28be93.txt",
+    "bbox": [
+      0.47833333333333333,
+      0.5066666666666667,
+      0.5766666666666667,
+      0.85
+    ],
+    "id": "C070"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--186-_jpg.rf.cb4f0d0a64085dba10e4671ad30b2b7c.jpg",
+    "label": "train/labels/Chair--186-_jpg.rf.cb4f0d0a64085dba10e4671ad30b2b7c.txt",
+    "bbox": [
+      0.5104166666666666,
+      0.5125,
+      0.49083333333333334,
+      0.91
+    ],
+    "id": "C071"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--187-_jpg.rf.f0a54f7169539020786d1f21029d8555.jpg",
+    "label": "train/labels/Chair--187-_jpg.rf.f0a54f7169539020786d1f21029d8555.txt",
+    "bbox": [
+      0.5075,
+      0.5129166666666667,
+      0.5,
+      0.9075
+    ],
+    "id": "C072"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--188-_jpg.rf.4bff0975ca3b5ef3892acf1321eb3b7e.jpg",
+    "label": "train/labels/Chair--188-_jpg.rf.4bff0975ca3b5ef3892acf1321eb3b7e.txt",
+    "bbox": [
+      0.5004166666666666,
+      0.5041666666666667,
+      0.46416666666666667,
+      0.855
+    ],
+    "id": "C073"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--189-_jpg.rf.627a9527a5b38ad0317c97502072ee5a.jpg",
+    "label": "train/labels/Chair--189-_jpg.rf.627a9527a5b38ad0317c97502072ee5a.txt",
+    "bbox": [
+      0.4791666666666667,
+      0.5045833333333334,
+      0.525,
+      0.8458333333333333
+    ],
+    "id": "C074"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--190-_jpg.rf.f06c3f433392b4f028fd40176f68dea5.jpg",
+    "label": "train/labels/Chair--190-_jpg.rf.f06c3f433392b4f028fd40176f68dea5.txt",
+    "bbox": [
+      0.4225,
+      0.5120833333333333,
+      0.49333333333333335,
+      0.7675
+    ],
+    "id": "C075"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--191-_jpg.rf.863e83947b8fe9ca4ec04abddf9f04e1.jpg",
+    "label": "train/labels/Chair--191-_jpg.rf.863e83947b8fe9ca4ec04abddf9f04e1.txt",
+    "bbox": [
+      0.5375,
+      0.5420833333333334,
+      0.3516666666666667,
+      0.6275
+    ],
+    "id": "C076"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--192-_jpg.rf.e1387ce8bf80139fedb151825ba375f6.jpg",
+    "label": "train/labels/Chair--192-_jpg.rf.e1387ce8bf80139fedb151825ba375f6.txt",
+    "bbox": [
+      0.4370833333333333,
+      0.495,
+      0.4875,
+      0.82
+    ],
+    "id": "C077"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--194-_jpg.rf.65118c0958e7154e52f1575247b7f5c2.jpg",
+    "label": "train/labels/Chair--194-_jpg.rf.65118c0958e7154e52f1575247b7f5c2.txt",
+    "bbox": [
+      0.49541666666666667,
+      0.52125,
+      0.4241666666666667,
+      0.5041666666666667
+    ],
+    "id": "C078"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--197-_jpg.rf.894dcca3d3206d65a225d4c8ce52ef68.jpg",
+    "label": "train/labels/Chair--197-_jpg.rf.894dcca3d3206d65a225d4c8ce52ef68.txt",
+    "bbox": [
+      0.4945833333333333,
+      0.6258333333333334,
+      0.3725,
+      0.5733333333333334
+    ],
+    "id": "C079"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--2-_jpg.rf.53703002ffac527a3c2d19b775620bd2.jpg",
+    "label": "train/labels/Chair--2-_jpg.rf.53703002ffac527a3c2d19b775620bd2.txt",
+    "bbox": [
+      0.4891666666666667,
+      0.51125,
+      0.545,
+      0.9191666666666667
+    ],
+    "id": "C080"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--201-_jpg.rf.67fab00a242a6749fc8bc4c4c3963256.jpg",
+    "label": "train/labels/Chair--201-_jpg.rf.67fab00a242a6749fc8bc4c4c3963256.txt",
+    "bbox": [
+      0.40041666666666664,
+      0.5004166666666666,
+      0.3075,
+      0.6608333333333334
+    ],
+    "id": "C081"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--202-_jpg.rf.95f54364725b8451d12c62e298255506.jpg",
+    "label": "train/labels/Chair--202-_jpg.rf.95f54364725b8451d12c62e298255506.txt",
+    "bbox": [
+      0.36791666666666667,
+      0.47625,
+      0.3375,
+      0.6308333333333334
+    ],
+    "id": "C082"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--203-_jpg.rf.a75d46e50b5f144801973023e6a3cbd4.jpg",
+    "label": "train/labels/Chair--203-_jpg.rf.a75d46e50b5f144801973023e6a3cbd4.txt",
+    "bbox": [
+      0.34625,
+      0.47875,
+      0.41583333333333333,
+      0.7541666666666667
+    ],
+    "id": "C083"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--205-_jpg.rf.6f6aeaacff0742b387ff78f41d3b4319.jpg",
+    "label": "train/labels/Chair--205-_jpg.rf.6f6aeaacff0742b387ff78f41d3b4319.txt",
+    "bbox": [
+      0.5433333333333333,
+      0.49916666666666665,
+      0.41,
+      0.8016666666666666
+    ],
+    "id": "C084"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--208-_jpg.rf.9b292d70274915ed65f1a9744d00002f.jpg",
+    "label": "train/labels/Chair--208-_jpg.rf.9b292d70274915ed65f1a9744d00002f.txt",
+    "bbox": [
+      0.52625,
+      0.41875,
+      0.32916666666666666,
+      0.6775
+    ],
+    "id": "C085"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--209-_jpg.rf.a4596bdee95a2d60c5c082454a94189c.jpg",
+    "label": "train/labels/Chair--209-_jpg.rf.a4596bdee95a2d60c5c082454a94189c.txt",
+    "bbox": [
+      0.4525,
+      0.4,
+      0.325,
+      0.6716666666666666
+    ],
+    "id": "C086"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--210-_jpg.rf.2bd6ae0a81c671650c978d308280d9d8.jpg",
+    "label": "train/labels/Chair--210-_jpg.rf.2bd6ae0a81c671650c978d308280d9d8.txt",
+    "bbox": [
+      0.44666666666666666,
+      0.4675,
+      0.38333333333333336,
+      0.7283333333333334
+    ],
+    "id": "C087"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--211-_jpg.rf.cbabbd7dbfdda8a1eeca0961dfc3498e.jpg",
+    "label": "train/labels/Chair--211-_jpg.rf.cbabbd7dbfdda8a1eeca0961dfc3498e.txt",
+    "bbox": [
+      0.42333333333333334,
+      0.3983333333333333,
+      0.395,
+      0.7066666666666667
+    ],
+    "id": "C088"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--216-_jpg.rf.741c93a8687fa1783b7cb26bf9b0777f.jpg",
+    "label": "train/labels/Chair--216-_jpg.rf.741c93a8687fa1783b7cb26bf9b0777f.txt",
+    "bbox": [
+      0.445,
+      0.47833333333333333,
+      0.37,
+      0.6816666666666666
+    ],
+    "id": "C089"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--217-_jpg.rf.57a5a94f98a0850877e92c4f8091ebe4.jpg",
+    "label": "train/labels/Chair--217-_jpg.rf.57a5a94f98a0850877e92c4f8091ebe4.txt",
+    "bbox": [
+      0.4425,
+      0.40458333333333335,
+      0.37333333333333335,
+      0.7191666666666666
+    ],
+    "id": "C090"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--218-_jpg.rf.2163ff186f8f93b08cecbe7a67ff0160.jpg",
+    "label": "train/labels/Chair--218-_jpg.rf.2163ff186f8f93b08cecbe7a67ff0160.txt",
+    "bbox": [
+      0.42916666666666664,
+      0.4325,
+      0.38333333333333336,
+      0.72
+    ],
+    "id": "C091"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--219-_jpg.rf.aa2fb5d4700cf0d3dc8c683033d9b2a9.jpg",
+    "label": "train/labels/Chair--219-_jpg.rf.aa2fb5d4700cf0d3dc8c683033d9b2a9.txt",
+    "bbox": [
+      0.47125,
+      0.4945833333333333,
+      0.37583333333333335,
+      0.7541666666666667
+    ],
+    "id": "C092"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--22-_jpg.rf.f6b6c5467fe8112f3b7730f35854cf2c.jpg",
+    "label": "train/labels/Chair--22-_jpg.rf.f6b6c5467fe8112f3b7730f35854cf2c.txt",
+    "bbox": [
+      0.4995833333333333,
+      0.5008333333333334,
+      0.5375,
+      0.9833333333333333
+    ],
+    "id": "C093"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--220-_jpg.rf.b0461ef25e2445973d4cf0dc9ab73be1.jpg",
+    "label": "train/labels/Chair--220-_jpg.rf.b0461ef25e2445973d4cf0dc9ab73be1.txt",
+    "bbox": [
+      0.485,
+      0.4675,
+      0.37,
+      0.6666666666666666
+    ],
+    "id": "C094"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--222-_jpg.rf.bac8f338e31b83e4141509d3c6103c33.jpg",
+    "label": "train/labels/Chair--222-_jpg.rf.bac8f338e31b83e4141509d3c6103c33.txt",
+    "bbox": [
+      0.45,
+      0.40208333333333335,
+      0.35833333333333334,
+      0.6358333333333334
+    ],
+    "id": "C095"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--223-_jpg.rf.0ad2e9e38239694cf673cc171d4fd726.jpg",
+    "label": "train/labels/Chair--223-_jpg.rf.0ad2e9e38239694cf673cc171d4fd726.txt",
+    "bbox": [
+      0.42,
+      0.41583333333333333,
+      0.3466666666666667,
+      0.6533333333333333
+    ],
+    "id": "C096"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--224-_jpg.rf.709ca65b2e2a4526dacbea4db178f310.jpg",
+    "label": "train/labels/Chair--224-_jpg.rf.709ca65b2e2a4526dacbea4db178f310.txt",
+    "bbox": [
+      0.47375,
+      0.43875,
+      0.31583333333333335,
+      0.6775
+    ],
+    "id": "C097"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--226-_jpg.rf.3438283adf818b38704f54d7bef4c7c2.jpg",
+    "label": "train/labels/Chair--226-_jpg.rf.3438283adf818b38704f54d7bef4c7c2.txt",
+    "bbox": [
+      0.43083333333333335,
+      0.49583333333333335,
+      0.36666666666666664,
+      0.7316666666666667
+    ],
+    "id": "C098"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--227-_jpg.rf.e869dfafd08cf763b42f40abbdb69cf2.jpg",
+    "label": "train/labels/Chair--227-_jpg.rf.e869dfafd08cf763b42f40abbdb69cf2.txt",
+    "bbox": [
+      0.43583333333333335,
+      0.485,
+      0.41,
+      0.73
+    ],
+    "id": "C099"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--228-_jpg.rf.6c7e3113c00607666b889de2d0688408.jpg",
+    "label": "train/labels/Chair--228-_jpg.rf.6c7e3113c00607666b889de2d0688408.txt",
+    "bbox": [
+      0.365,
+      0.47458333333333336,
+      0.43166666666666664,
+      0.7625
+    ],
+    "id": "C100"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--23-_jpg.rf.2d70dde51ffa58aa30b6d90018b15fde.jpg",
+    "label": "train/labels/Chair--23-_jpg.rf.2d70dde51ffa58aa30b6d90018b15fde.txt",
+    "bbox": [
+      0.49875,
+      0.49833333333333335,
+      0.5491666666666667,
+      0.9016666666666666
+    ],
+    "id": "C101"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--231-_jpg.rf.ddd4401e61e4a85e6e33faef250bffb2.jpg",
+    "label": "train/labels/Chair--231-_jpg.rf.ddd4401e61e4a85e6e33faef250bffb2.txt",
+    "bbox": [
+      0.4041666666666667,
+      0.4795833333333333,
+      0.35,
+      0.6425
+    ],
+    "id": "C102"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--232-_jpg.rf.6851ff26d4b57503c19b3eca34307888.jpg",
+    "label": "train/labels/Chair--232-_jpg.rf.6851ff26d4b57503c19b3eca34307888.txt",
+    "bbox": [
+      0.3575,
+      0.5033333333333333,
+      0.335,
+      0.6
+    ],
+    "id": "C103"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--234-_jpg.rf.b29afebeaab23f785aef15c2133d1626.jpg",
+    "label": "train/labels/Chair--234-_jpg.rf.b29afebeaab23f785aef15c2133d1626.txt",
+    "bbox": [
+      0.39875,
+      0.72625,
+      0.3875,
+      0.5458333333333333
+    ],
+    "id": "C104"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--235-_jpg.rf.a5c87a33ef351ccfc261ce1eedd82e9e.jpg",
+    "label": "train/labels/Chair--235-_jpg.rf.a5c87a33ef351ccfc261ce1eedd82e9e.txt",
+    "bbox": [
+      0.4791666666666667,
+      0.5966666666666667,
+      0.4483333333333333,
+      0.765
+    ],
+    "id": "C105"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--236-_jpg.rf.5360945580db4a88b862b664edd78933.jpg",
+    "label": "train/labels/Chair--236-_jpg.rf.5360945580db4a88b862b664edd78933.txt",
+    "bbox": [
+      0.5470833333333334,
+      0.5495833333333333,
+      0.4508333333333333,
+      0.6358333333333334
+    ],
+    "id": "C106"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--237-_jpg.rf.9ee645b68dc9c391b5ef162bf403d00e.jpg",
+    "label": "train/labels/Chair--237-_jpg.rf.9ee645b68dc9c391b5ef162bf403d00e.txt",
+    "bbox": [
+      0.4979166666666667,
+      0.56125,
+      0.41083333333333333,
+      0.8125
+    ],
+    "id": "C107"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--238-_jpg.rf.1f2d7a5f17618248463460cc2cf2a877.jpg",
+    "label": "train/labels/Chair--238-_jpg.rf.1f2d7a5f17618248463460cc2cf2a877.txt",
+    "bbox": [
+      0.49916666666666665,
+      0.5625,
+      0.4,
+      0.8316666666666667
+    ],
+    "id": "C108"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--239-_jpg.rf.5892e4165b42c86883d60ec958f78e90.jpg",
+    "label": "train/labels/Chair--239-_jpg.rf.5892e4165b42c86883d60ec958f78e90.txt",
+    "bbox": [
+      0.505,
+      0.5029166666666667,
+      0.44666666666666666,
+      0.9308333333333333
+    ],
+    "id": "C109"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--24-_jpg.rf.d75d2a400dc69a6d0e90dc8c083fbdd8.jpg",
+    "label": "train/labels/Chair--24-_jpg.rf.d75d2a400dc69a6d0e90dc8c083fbdd8.txt",
+    "bbox": [
+      0.5166666666666667,
+      0.5304166666666666,
+      0.4166666666666667,
+      0.8225
+    ],
+    "id": "C110"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--245-_jpg.rf.79f51c29fbff949b7e9b0a77f90017e8.jpg",
+    "label": "train/labels/Chair--245-_jpg.rf.79f51c29fbff949b7e9b0a77f90017e8.txt",
+    "bbox": [
+      0.48,
+      0.51875,
+      0.42333333333333334,
+      0.8991666666666667
+    ],
+    "id": "C111"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--25-_jpg.rf.592dc939e1413696982471b9abc59cb4.jpg",
+    "label": "train/labels/Chair--25-_jpg.rf.592dc939e1413696982471b9abc59cb4.txt",
+    "bbox": [
+      0.5125,
+      0.4841666666666667,
+      0.5816666666666667,
+      0.92
+    ],
+    "id": "C112"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--250-_jpg.rf.651a53d4dd4260d0013788845bc226d1.jpg",
+    "label": "train/labels/Chair--250-_jpg.rf.651a53d4dd4260d0013788845bc226d1.txt",
+    "bbox": [
+      0.5083333333333333,
+      0.5666666666666667,
+      0.43666666666666665,
+      0.8116666666666666
+    ],
+    "id": "C113"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--251-_jpg.rf.bc924065ab723cb71efb0a2152c9d245.jpg",
+    "label": "train/labels/Chair--251-_jpg.rf.bc924065ab723cb71efb0a2152c9d245.txt",
+    "bbox": [
+      0.5145833333333333,
+      0.55,
+      0.43083333333333335,
+      0.7866666666666666
+    ],
+    "id": "C114"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--254-_jpg.rf.02bd32d23f6bff3606e781a43553398e.jpg",
+    "label": "train/labels/Chair--254-_jpg.rf.02bd32d23f6bff3606e781a43553398e.txt",
+    "bbox": [
+      0.52125,
+      0.4795833333333333,
+      0.5375,
+      0.7641666666666667
+    ],
+    "id": "C115"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--255-_jpg.rf.149216833c12be5cdf202c03949d3a8d.jpg",
+    "label": "train/labels/Chair--255-_jpg.rf.149216833c12be5cdf202c03949d3a8d.txt",
+    "bbox": [
+      0.50125,
+      0.5808333333333333,
+      0.4058333333333333,
+      0.8066666666666666
+    ],
+    "id": "C116"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--256-_jpg.rf.261b18b47cdc349e92fb2400b918caa8.jpg",
+    "label": "train/labels/Chair--256-_jpg.rf.261b18b47cdc349e92fb2400b918caa8.txt",
+    "bbox": [
+      0.5083333333333333,
+      0.50125,
+      0.485,
+      0.8425
+    ],
+    "id": "C117"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--257-_jpg.rf.552f52b6c473c746598eb328084e76fc.jpg",
+    "label": "train/labels/Chair--257-_jpg.rf.552f52b6c473c746598eb328084e76fc.txt",
+    "bbox": [
+      0.4995833333333333,
+      0.5320833333333334,
+      0.4225,
+      0.8358333333333333
+    ],
+    "id": "C118"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--258-_jpg.rf.64a033c23e0d13ec782beaac560858ed.jpg",
+    "label": "train/labels/Chair--258-_jpg.rf.64a033c23e0d13ec782beaac560858ed.txt",
+    "bbox": [
+      0.4995833333333333,
+      0.57,
+      0.3725,
+      0.83
+    ],
+    "id": "C119"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--26-_jpg.rf.4cdb9571cbaf5dfa1c10678b982df57d.jpg",
+    "label": "train/labels/Chair--26-_jpg.rf.4cdb9571cbaf5dfa1c10678b982df57d.txt",
+    "bbox": [
+      0.49833333333333335,
+      0.4945833333333333,
+      0.575,
+      0.9475
+    ],
+    "id": "C120"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--260-_jpg.rf.dbd1a112952cd24714885566ec077156.jpg",
+    "label": "train/labels/Chair--260-_jpg.rf.dbd1a112952cd24714885566ec077156.txt",
+    "bbox": [
+      0.5,
+      0.5354166666666667,
+      0.43166666666666664,
+      0.8508333333333333
+    ],
+    "id": "C121"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--262-_jpg.rf.a70878c05b1db79ecf1b152bd8f14461.jpg",
+    "label": "train/labels/Chair--262-_jpg.rf.a70878c05b1db79ecf1b152bd8f14461.txt",
+    "bbox": [
+      0.5,
+      0.575,
+      0.44333333333333336,
+      0.8133333333333334
+    ],
+    "id": "C122"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--263-_jpg.rf.6f34a431dc717f0600401023fef12038.jpg",
+    "label": "train/labels/Chair--263-_jpg.rf.6f34a431dc717f0600401023fef12038.txt",
+    "bbox": [
+      0.49916666666666665,
+      0.5691666666666667,
+      0.4066666666666667,
+      0.8333333333333334
+    ],
+    "id": "C123"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--265-_jpg.rf.6c8dc56444b22d243729e8be5e5be8ff.jpg",
+    "label": "train/labels/Chair--265-_jpg.rf.6c8dc56444b22d243729e8be5e5be8ff.txt",
+    "bbox": [
+      0.4766666666666667,
+      0.56125,
+      0.39166666666666666,
+      0.8291666666666667
+    ],
+    "id": "C124"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--266-_jpg.rf.d8c23912c9f876d6bf6f330d60c96f0a.jpg",
+    "label": "train/labels/Chair--266-_jpg.rf.d8c23912c9f876d6bf6f330d60c96f0a.txt",
+    "bbox": [
+      0.4979166666666667,
+      0.535,
+      0.38416666666666666,
+      0.89
+    ],
+    "id": "C125"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--267-_jpg.rf.1cc11c4ca595f2a8a87b2780b7364a35.jpg",
+    "label": "train/labels/Chair--267-_jpg.rf.1cc11c4ca595f2a8a87b2780b7364a35.txt",
+    "bbox": [
+      0.49625,
+      0.51375,
+      0.37416666666666665,
+      0.8725
+    ],
+    "id": "C126"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chair--269-_jpg.rf.87aa2b7101b1fd216cd9762a0283f4ad.jpg",
+    "label": "test/labels/Chair--269-_jpg.rf.87aa2b7101b1fd216cd9762a0283f4ad.txt",
+    "bbox": [
+      0.49875,
+      0.55625,
+      0.36583333333333334,
+      0.8208333333333333
+    ],
+    "id": "C127"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chair--270-_jpg.rf.77fe75ee33dd358303bd3406412ff8dd.jpg",
+    "label": "test/labels/Chair--270-_jpg.rf.77fe75ee33dd358303bd3406412ff8dd.txt",
+    "bbox": [
+      0.5025,
+      0.5570833333333334,
+      0.39666666666666667,
+      0.8108333333333333
+    ],
+    "id": "C128"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--28-_jpg.rf.d505117ca276adb21c4597d5cb04e335.jpg",
+    "label": "train/labels/Chair--28-_jpg.rf.d505117ca276adb21c4597d5cb04e335.txt",
+    "bbox": [
+      0.49375,
+      0.5366666666666666,
+      0.3875,
+      0.8166666666666667
+    ],
+    "id": "C129"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--3-_jpg.rf.dbf2a07925fc82e1cbebe13695f6a7da.jpg",
+    "label": "train/labels/Chair--3-_jpg.rf.dbf2a07925fc82e1cbebe13695f6a7da.txt",
+    "bbox": [
+      0.5320833333333334,
+      0.545,
+      0.2808333333333333,
+      0.43666666666666665
+    ],
+    "id": "C130"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--30-_jpg.rf.2885b3aeb0e0e4f3dbb081e2551ef415.jpg",
+    "label": "train/labels/Chair--30-_jpg.rf.2885b3aeb0e0e4f3dbb081e2551ef415.txt",
+    "bbox": [
+      0.45208333333333334,
+      0.5875,
+      0.4008333333333333,
+      0.5116666666666667
+    ],
+    "id": "C131"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--31-_jpg.rf.3b63b751440519b9a1d117f1d8ee2ab1.jpg",
+    "label": "train/labels/Chair--31-_jpg.rf.3b63b751440519b9a1d117f1d8ee2ab1.txt",
+    "bbox": [
+      0.5483333333333333,
+      0.52875,
+      0.4066666666666667,
+      0.7358333333333333
+    ],
+    "id": "C132"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--32-_jpg.rf.74960a3b3527cd3d11e2253395a5fc0b.jpg",
+    "label": "train/labels/Chair--32-_jpg.rf.74960a3b3527cd3d11e2253395a5fc0b.txt",
+    "bbox": [
+      0.51875,
+      0.5695833333333333,
+      0.3075,
+      0.4691666666666667
+    ],
+    "id": "C133"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--33-_jpg.rf.e4a142d2bbe139a79c6d52773622c299.jpg",
+    "label": "train/labels/Chair--33-_jpg.rf.e4a142d2bbe139a79c6d52773622c299.txt",
+    "bbox": [
+      0.5595833333333333,
+      0.5858333333333333,
+      0.2991666666666667,
+      0.5133333333333333
+    ],
+    "id": "C134"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--34-_jpg.rf.4b8ae844a9e058a298c09decb11d4d2c.jpg",
+    "label": "train/labels/Chair--34-_jpg.rf.4b8ae844a9e058a298c09decb11d4d2c.txt",
+    "bbox": [
+      0.5333333333333333,
+      0.55625,
+      0.4083333333333333,
+      0.43416666666666665
+    ],
+    "id": "C135"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--35-_jpg.rf.1d0a08287fcbc211a187738e89f5fb29.jpg",
+    "label": "train/labels/Chair--35-_jpg.rf.1d0a08287fcbc211a187738e89f5fb29.txt",
+    "bbox": [
+      0.5408333333333334,
+      0.5458333333333333,
+      0.6216666666666667,
+      0.8833333333333333
+    ],
+    "id": "C136"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--36-_jpg.rf.d264ed20cad3b2d9305458bef27fa64f.jpg",
+    "label": "train/labels/Chair--36-_jpg.rf.d264ed20cad3b2d9305458bef27fa64f.txt",
+    "bbox": [
+      0.5670833333333334,
+      0.6104166666666667,
+      0.32416666666666666,
+      0.6875
+    ],
+    "id": "C137"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--38-_jpg.rf.76a81e7363e840e2264f27a8f5729a12.jpg",
+    "label": "train/labels/Chair--38-_jpg.rf.76a81e7363e840e2264f27a8f5729a12.txt",
+    "bbox": [
+      0.57,
+      0.6379166666666667,
+      0.45,
+      0.6558333333333334
+    ],
+    "id": "C138"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--39-_jpg.rf.f335770a703aed172411991cf42712d8.jpg",
+    "label": "train/labels/Chair--39-_jpg.rf.f335770a703aed172411991cf42712d8.txt",
+    "bbox": [
+      0.4625,
+      0.5116666666666667,
+      0.42,
+      0.7383333333333333
+    ],
+    "id": "C139"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--4-_jpg.rf.8654bfe9517687699936094bc8329910.jpg",
+    "label": "train/labels/Chair--4-_jpg.rf.8654bfe9517687699936094bc8329910.txt",
+    "bbox": [
+      0.5195833333333333,
+      0.5466666666666666,
+      0.37583333333333335,
+      0.6983333333333334
+    ],
+    "id": "C140"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--40-_jpg.rf.d985251bb254b30397979168f7bc85ed.jpg",
+    "label": "train/labels/Chair--40-_jpg.rf.d985251bb254b30397979168f7bc85ed.txt",
+    "bbox": [
+      0.5154166666666666,
+      0.64375,
+      0.2525,
+      0.39916666666666667
+    ],
+    "id": "C141"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--41-_jpg.rf.de82da0d829e0589f3009f7113178fc5.jpg",
+    "label": "train/labels/Chair--41-_jpg.rf.de82da0d829e0589f3009f7113178fc5.txt",
+    "bbox": [
+      0.5170833333333333,
+      0.49875,
+      0.22416666666666665,
+      0.35083333333333333
+    ],
+    "id": "C142"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--42-_jpg.rf.a18c69e72c0ebd8c630c58e4485eb651.jpg",
+    "label": "train/labels/Chair--42-_jpg.rf.a18c69e72c0ebd8c630c58e4485eb651.txt",
+    "bbox": [
+      0.5258333333333334,
+      0.49125,
+      0.22166666666666668,
+      0.3525
+    ],
+    "id": "C143"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--43-_jpg.rf.898cf7238528195bb930b0221fef3f06.jpg",
+    "label": "train/labels/Chair--43-_jpg.rf.898cf7238528195bb930b0221fef3f06.txt",
+    "bbox": [
+      0.5254166666666666,
+      0.4979166666666667,
+      0.22416666666666665,
+      0.35083333333333333
+    ],
+    "id": "C144"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--44-_jpg.rf.29ea42caef9e2ffe9ab84d4507e454cc.jpg",
+    "label": "train/labels/Chair--44-_jpg.rf.29ea42caef9e2ffe9ab84d4507e454cc.txt",
+    "bbox": [
+      0.5329166666666667,
+      0.4945833333333333,
+      0.2475,
+      0.3825
+    ],
+    "id": "C145"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--45-_jpg.rf.5e36ffe99e6f76734c57ba5bb41375d7.jpg",
+    "label": "train/labels/Chair--45-_jpg.rf.5e36ffe99e6f76734c57ba5bb41375d7.txt",
+    "bbox": [
+      0.5754166666666667,
+      0.5029166666666667,
+      0.2725,
+      0.4041666666666667
+    ],
+    "id": "C146"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--46-_jpg.rf.5b1cd412329069debba3da493db133c7.jpg",
+    "label": "train/labels/Chair--46-_jpg.rf.5b1cd412329069debba3da493db133c7.txt",
+    "bbox": [
+      0.48541666666666666,
+      0.61375,
+      0.2708333333333333,
+      0.4075
+    ],
+    "id": "C147"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--47-_jpg.rf.7622439573a138bd4ca02cb05b7b13fd.jpg",
+    "label": "train/labels/Chair--47-_jpg.rf.7622439573a138bd4ca02cb05b7b13fd.txt",
+    "bbox": [
+      0.5183333333333333,
+      0.63375,
+      0.25833333333333336,
+      0.4008333333333333
+    ],
+    "id": "C148"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--48-_jpg.rf.3fa936001b92529aefba1925149772ff.jpg",
+    "label": "train/labels/Chair--48-_jpg.rf.3fa936001b92529aefba1925149772ff.txt",
+    "bbox": [
+      0.50875,
+      0.6508333333333334,
+      0.2658333333333333,
+      0.3933333333333333
+    ],
+    "id": "C149"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--49-_jpg.rf.3f64de4ff5aa6a2bf3dbe8b292760c90.jpg",
+    "label": "train/labels/Chair--49-_jpg.rf.3f64de4ff5aa6a2bf3dbe8b292760c90.txt",
+    "bbox": [
+      0.43,
+      0.66875,
+      0.26666666666666666,
+      0.3875
+    ],
+    "id": "C150"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--5-_jpg.rf.68493a0c2f18c18e94687da77df7adeb.jpg",
+    "label": "train/labels/Chair--5-_jpg.rf.68493a0c2f18c18e94687da77df7adeb.txt",
+    "bbox": [
+      0.5770833333333333,
+      0.4125,
+      0.3258333333333333,
+      0.6083333333333333
+    ],
+    "id": "C151"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--50-_jpg.rf.d42aa52e4214cedba81a4ef497e911c8.jpg",
+    "label": "train/labels/Chair--50-_jpg.rf.d42aa52e4214cedba81a4ef497e911c8.txt",
+    "bbox": [
+      0.4083333333333333,
+      0.6058333333333333,
+      0.255,
+      0.37166666666666665
+    ],
+    "id": "C152"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--51-_jpg.rf.233f79dd8da1435d77826bffaf2f53d1.jpg",
+    "label": "train/labels/Chair--51-_jpg.rf.233f79dd8da1435d77826bffaf2f53d1.txt",
+    "bbox": [
+      0.40375,
+      0.5645833333333333,
+      0.25916666666666666,
+      0.3825
+    ],
+    "id": "C153"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--52-_jpg.rf.0d08ba23092e7ae78a4b19780745ab13.jpg",
+    "label": "train/labels/Chair--52-_jpg.rf.0d08ba23092e7ae78a4b19780745ab13.txt",
+    "bbox": [
+      0.41541666666666666,
+      0.5754166666666667,
+      0.2675,
+      0.3908333333333333
+    ],
+    "id": "C154"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--53-_jpg.rf.4b4e382e04a9621f4179ec083044e163.jpg",
+    "label": "train/labels/Chair--53-_jpg.rf.4b4e382e04a9621f4179ec083044e163.txt",
+    "bbox": [
+      0.4504166666666667,
+      0.5591666666666667,
+      0.26916666666666667,
+      0.40166666666666667
+    ],
+    "id": "C155"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--54-_jpg.rf.8377acd51910f5612a8a20b80beb7f78.jpg",
+    "label": "train/labels/Chair--54-_jpg.rf.8377acd51910f5612a8a20b80beb7f78.txt",
+    "bbox": [
+      0.4816666666666667,
+      0.5533333333333333,
+      0.27666666666666667,
+      0.4116666666666667
+    ],
+    "id": "C156"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--55-_jpg.rf.30f8caf0901718234762cdef8d852e4c.jpg",
+    "label": "train/labels/Chair--55-_jpg.rf.30f8caf0901718234762cdef8d852e4c.txt",
+    "bbox": [
+      0.49875,
+      0.545,
+      0.28583333333333333,
+      0.42833333333333334
+    ],
+    "id": "C157"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--56-_jpg.rf.f2379342794db78c2bfe27d09267eb0f.jpg",
+    "label": "train/labels/Chair--56-_jpg.rf.f2379342794db78c2bfe27d09267eb0f.txt",
+    "bbox": [
+      0.4666666666666667,
+      0.6441666666666667,
+      0.3616666666666667,
+      0.555
+    ],
+    "id": "C158"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--58-_jpg.rf.33d7a19f65e64ba22b83bdbd80def610.jpg",
+    "label": "train/labels/Chair--58-_jpg.rf.33d7a19f65e64ba22b83bdbd80def610.txt",
+    "bbox": [
+      0.4866666666666667,
+      0.58875,
+      0.375,
+      0.5191666666666667
+    ],
+    "id": "C159"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--59-_jpg.rf.c05c6a56e2b0ad7ea528e6311c699eed.jpg",
+    "label": "train/labels/Chair--59-_jpg.rf.c05c6a56e2b0ad7ea528e6311c699eed.txt",
+    "bbox": [
+      0.39458333333333334,
+      0.5566666666666666,
+      0.3308333333333333,
+      0.45166666666666666
+    ],
+    "id": "C160"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--6-_jpg.rf.5dc1508126a371ece989fbd1a753cfad.jpg",
+    "label": "train/labels/Chair--6-_jpg.rf.5dc1508126a371ece989fbd1a753cfad.txt",
+    "bbox": [
+      0.5120833333333333,
+      0.48291666666666666,
+      0.3541666666666667,
+      0.5225
+    ],
+    "id": "C161"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--60-_jpg.rf.cea4d6f75345fa7b42df607f56678e66.jpg",
+    "label": "train/labels/Chair--60-_jpg.rf.cea4d6f75345fa7b42df607f56678e66.txt",
+    "bbox": [
+      0.5616666666666666,
+      0.5441666666666667,
+      0.16166666666666665,
+      0.24333333333333335
+    ],
+    "id": "C162"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--61-_jpg.rf.c1eec8cc68548d0478a447eb74953eda.jpg",
+    "label": "train/labels/Chair--61-_jpg.rf.c1eec8cc68548d0478a447eb74953eda.txt",
+    "bbox": [
+      0.58375,
+      0.56375,
+      0.16416666666666666,
+      0.2525
+    ],
+    "id": "C163"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--62-_jpg.rf.baf72d26d8b802a5bdc21e213938213f.jpg",
+    "label": "train/labels/Chair--62-_jpg.rf.baf72d26d8b802a5bdc21e213938213f.txt",
+    "bbox": [
+      0.5225,
+      0.5895833333333333,
+      0.18333333333333332,
+      0.2925
+    ],
+    "id": "C164"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--63-_jpg.rf.ca35222b8d6801e0899b967b5ed56124.jpg",
+    "label": "train/labels/Chair--63-_jpg.rf.ca35222b8d6801e0899b967b5ed56124.txt",
+    "bbox": [
+      0.5058333333333334,
+      0.5645833333333333,
+      0.185,
+      0.2941666666666667
+    ],
+    "id": "C165"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--64-_jpg.rf.1e4638567b0029f668de19ecb819cb8e.jpg",
+    "label": "train/labels/Chair--64-_jpg.rf.1e4638567b0029f668de19ecb819cb8e.txt",
+    "bbox": [
+      0.53375,
+      0.5654166666666667,
+      0.1975,
+      0.29583333333333334
+    ],
+    "id": "C166"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--65-_jpg.rf.976ef93dc95af6a76c7e0fe03dd711ae.jpg",
+    "label": "train/labels/Chair--65-_jpg.rf.976ef93dc95af6a76c7e0fe03dd711ae.txt",
+    "bbox": [
+      0.5179166666666667,
+      0.56,
+      0.20583333333333334,
+      0.3016666666666667
+    ],
+    "id": "C167"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--66-_jpg.rf.5694ffdf176b2a299296ce55c964c6a3.jpg",
+    "label": "train/labels/Chair--66-_jpg.rf.5694ffdf176b2a299296ce55c964c6a3.txt",
+    "bbox": [
+      0.5329166666666667,
+      0.5754166666666667,
+      0.20916666666666667,
+      0.30583333333333335
+    ],
+    "id": "C168"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--67-_jpg.rf.ce7ad4908f2e01ff720c5495f921761a.jpg",
+    "label": "train/labels/Chair--67-_jpg.rf.ce7ad4908f2e01ff720c5495f921761a.txt",
+    "bbox": [
+      0.5370833333333334,
+      0.5508333333333333,
+      0.2125,
+      0.30666666666666664
+    ],
+    "id": "C169"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--68-_jpg.rf.f780eaf526453367dd790a3165a0ae48.jpg",
+    "label": "train/labels/Chair--68-_jpg.rf.f780eaf526453367dd790a3165a0ae48.txt",
+    "bbox": [
+      0.53,
+      0.55875,
+      0.22333333333333333,
+      0.31416666666666665
+    ],
+    "id": "C170"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--69-_jpg.rf.d6213f7d75b8f6cce4f27798c96c4cda.jpg",
+    "label": "train/labels/Chair--69-_jpg.rf.d6213f7d75b8f6cce4f27798c96c4cda.txt",
+    "bbox": [
+      0.5758333333333333,
+      0.555,
+      0.22833333333333333,
+      0.31666666666666665
+    ],
+    "id": "C171"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--7-_jpg.rf.e5b9328e2162a85ac7f097c2d91a267c.jpg",
+    "label": "train/labels/Chair--7-_jpg.rf.e5b9328e2162a85ac7f097c2d91a267c.txt",
+    "bbox": [
+      0.5458333333333333,
+      0.5966666666666667,
+      0.4216666666666667,
+      0.635
+    ],
+    "id": "C172"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--70-_jpg.rf.b8ac361dd3ba334e22deaa4364988fed.jpg",
+    "label": "train/labels/Chair--70-_jpg.rf.b8ac361dd3ba334e22deaa4364988fed.txt",
+    "bbox": [
+      0.5633333333333334,
+      0.5404166666666667,
+      0.22666666666666666,
+      0.31916666666666665
+    ],
+    "id": "C173"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--71-_jpg.rf.3d939e638977230e5a37124098ee443e.jpg",
+    "label": "train/labels/Chair--71-_jpg.rf.3d939e638977230e5a37124098ee443e.txt",
+    "bbox": [
+      0.5645833333333333,
+      0.56,
+      0.2275,
+      0.3283333333333333
+    ],
+    "id": "C174"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--72-_jpg.rf.ec406cb3753d5afc20247e58f4d99caf.jpg",
+    "label": "train/labels/Chair--72-_jpg.rf.ec406cb3753d5afc20247e58f4d99caf.txt",
+    "bbox": [
+      0.5579166666666666,
+      0.5516666666666666,
+      0.2275,
+      0.3333333333333333
+    ],
+    "id": "C175"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--73-_jpg.rf.b114f6caf1627b508cec5b72cb1d539d.jpg",
+    "label": "train/labels/Chair--73-_jpg.rf.b114f6caf1627b508cec5b72cb1d539d.txt",
+    "bbox": [
+      0.5983333333333334,
+      0.5020833333333333,
+      0.17,
+      0.33916666666666667
+    ],
+    "id": "C176"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--74-_jpg.rf.5ba6447c0dc66a185052fff2e204bf43.jpg",
+    "label": "train/labels/Chair--74-_jpg.rf.5ba6447c0dc66a185052fff2e204bf43.txt",
+    "bbox": [
+      0.6066666666666667,
+      0.45708333333333334,
+      0.175,
+      0.3375
+    ],
+    "id": "C177"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--75-_jpg.rf.30781a32e53b84537cc6d8bee343e727.jpg",
+    "label": "train/labels/Chair--75-_jpg.rf.30781a32e53b84537cc6d8bee343e727.txt",
+    "bbox": [
+      0.5975,
+      0.455,
+      0.175,
+      0.3416666666666667
+    ],
+    "id": "C178"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--78-_jpg.rf.bc1f414c09e606335cd1a791c3c20ab0.jpg",
+    "label": "train/labels/Chair--78-_jpg.rf.bc1f414c09e606335cd1a791c3c20ab0.txt",
+    "bbox": [
+      0.5966666666666667,
+      0.46041666666666664,
+      0.22166666666666668,
+      0.37916666666666665
+    ],
+    "id": "C179"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--79-_jpg.rf.3f86f65120daa6f9976daa89ac72b032.jpg",
+    "label": "train/labels/Chair--79-_jpg.rf.3f86f65120daa6f9976daa89ac72b032.txt",
+    "bbox": [
+      0.5720833333333334,
+      0.5416666666666666,
+      0.22583333333333333,
+      0.38666666666666666
+    ],
+    "id": "C180"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--8-_jpg.rf.87c0e2de5d6087044376d78ef0cdf4f4.jpg",
+    "label": "train/labels/Chair--8-_jpg.rf.87c0e2de5d6087044376d78ef0cdf4f4.txt",
+    "bbox": [
+      0.5279166666666667,
+      0.6420833333333333,
+      0.37416666666666665,
+      0.5858333333333333
+    ],
+    "id": "C181"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--81-_jpg.rf.56ce59c95c2b1bbb43697fd25c8017b1.jpg",
+    "label": "train/labels/Chair--81-_jpg.rf.56ce59c95c2b1bbb43697fd25c8017b1.txt",
+    "bbox": [
+      0.615,
+      0.5479166666666667,
+      0.24666666666666667,
+      0.37583333333333335
+    ],
+    "id": "C182"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--82-_jpg.rf.f51cf315a0c0569288e1a4148a8821a8.jpg",
+    "label": "train/labels/Chair--82-_jpg.rf.f51cf315a0c0569288e1a4148a8821a8.txt",
+    "bbox": [
+      0.5775,
+      0.5366666666666666,
+      0.23166666666666666,
+      0.35333333333333333
+    ],
+    "id": "C183"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--83-_jpg.rf.66d609adba155703666966dee2837eae.jpg",
+    "label": "train/labels/Chair--83-_jpg.rf.66d609adba155703666966dee2837eae.txt",
+    "bbox": [
+      0.49875,
+      0.5645833333333333,
+      0.21416666666666667,
+      0.3475
+    ],
+    "id": "C184"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--84-_jpg.rf.cdf1f162eb2da5ffa55a962fef8f1e5b.jpg",
+    "label": "train/labels/Chair--84-_jpg.rf.cdf1f162eb2da5ffa55a962fef8f1e5b.txt",
+    "bbox": [
+      0.485,
+      0.6116666666666667,
+      0.22666666666666666,
+      0.3433333333333333
+    ],
+    "id": "C185"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--85-_jpg.rf.48369c169c3b18dd9579cdeac9dfc3d1.jpg",
+    "label": "train/labels/Chair--85-_jpg.rf.48369c169c3b18dd9579cdeac9dfc3d1.txt",
+    "bbox": [
+      0.5058333333333334,
+      0.6208333333333333,
+      0.26166666666666666,
+      0.42
+    ],
+    "id": "C186"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--87-_jpg.rf.4fae828719715993b3e4061efe97263c.jpg",
+    "label": "train/labels/Chair--87-_jpg.rf.4fae828719715993b3e4061efe97263c.txt",
+    "bbox": [
+      0.54,
+      0.6516666666666666,
+      0.23333333333333334,
+      0.4216666666666667
+    ],
+    "id": "C187"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--88-_jpg.rf.8b7f1f678c591e620fbbc816991a3cf3.jpg",
+    "label": "train/labels/Chair--88-_jpg.rf.8b7f1f678c591e620fbbc816991a3cf3.txt",
+    "bbox": [
+      0.5391666666666667,
+      0.6633333333333333,
+      0.23833333333333334,
+      0.4033333333333333
+    ],
+    "id": "C188"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--89-_jpg.rf.684baea65411852261d3f87a14bc97ef.jpg",
+    "label": "train/labels/Chair--89-_jpg.rf.684baea65411852261d3f87a14bc97ef.txt",
+    "bbox": [
+      0.55125,
+      0.62875,
+      0.22416666666666665,
+      0.3958333333333333
+    ],
+    "id": "C189"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--9-_jpg.rf.a6d8c009c1dc26d392d98ab796bc1d6d.jpg",
+    "label": "train/labels/Chair--9-_jpg.rf.a6d8c009c1dc26d392d98ab796bc1d6d.txt",
+    "bbox": [
+      0.4795833333333333,
+      0.5008333333333334,
+      0.3175,
+      0.6066666666666667
+    ],
+    "id": "C190"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--90-_jpg.rf.8cca0f8bad925d95a322d32e4eae8137.jpg",
+    "label": "train/labels/Chair--90-_jpg.rf.8cca0f8bad925d95a322d32e4eae8137.txt",
+    "bbox": [
+      0.47041666666666665,
+      0.7279166666666667,
+      0.24416666666666667,
+      0.3975
+    ],
+    "id": "C191"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--91-_jpg.rf.f95ad7340dcec72062c8dbedfd38f05d.jpg",
+    "label": "train/labels/Chair--91-_jpg.rf.f95ad7340dcec72062c8dbedfd38f05d.txt",
+    "bbox": [
+      0.535,
+      0.5629166666666666,
+      0.23,
+      0.37916666666666665
+    ],
+    "id": "C192"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--92-_jpg.rf.cc38b06bb98f9abbf5908c3d781f1f04.jpg",
+    "label": "train/labels/Chair--92-_jpg.rf.cc38b06bb98f9abbf5908c3d781f1f04.txt",
+    "bbox": [
+      0.5345833333333333,
+      0.5683333333333334,
+      0.23083333333333333,
+      0.37666666666666665
+    ],
+    "id": "C193"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--93-_jpg.rf.5429114b94fd1fa02fb327a72c73c2bd.jpg",
+    "label": "train/labels/Chair--93-_jpg.rf.5429114b94fd1fa02fb327a72c73c2bd.txt",
+    "bbox": [
+      0.6308333333333334,
+      0.5395833333333333,
+      0.225,
+      0.3908333333333333
+    ],
+    "id": "C194"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--94-_jpg.rf.13bbb7cacf59686547263d65ef2d1282.jpg",
+    "label": "train/labels/Chair--94-_jpg.rf.13bbb7cacf59686547263d65ef2d1282.txt",
+    "bbox": [
+      0.6529166666666667,
+      0.50375,
+      0.2175,
+      0.37916666666666665
+    ],
+    "id": "C195"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--95-_jpg.rf.21523a5740d6a945f62ee77890298ced.jpg",
+    "label": "train/labels/Chair--95-_jpg.rf.21523a5740d6a945f62ee77890298ced.txt",
+    "bbox": [
+      0.49666666666666665,
+      0.6020833333333333,
+      0.26166666666666666,
+      0.4425
+    ],
+    "id": "C196"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--96-_jpg.rf.f2a5f2631241d2f51e57f00bf7663003.jpg",
+    "label": "train/labels/Chair--96-_jpg.rf.f2a5f2631241d2f51e57f00bf7663003.txt",
+    "bbox": [
+      0.4008333333333333,
+      0.595,
+      0.2633333333333333,
+      0.45666666666666667
+    ],
+    "id": "C197"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--97-_jpg.rf.1c33b03bfe682e6b45bcfc8a318c15ac.jpg",
+    "label": "train/labels/Chair--97-_jpg.rf.1c33b03bfe682e6b45bcfc8a318c15ac.txt",
+    "bbox": [
+      0.43166666666666664,
+      0.5520833333333334,
+      0.2633333333333333,
+      0.43416666666666665
+    ],
+    "id": "C198"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--98-_jpg.rf.fc5825edfb84983b2b89bdb04a2c480d.jpg",
+    "label": "train/labels/Chair--98-_jpg.rf.fc5825edfb84983b2b89bdb04a2c480d.txt",
+    "bbox": [
+      0.41458333333333336,
+      0.5425,
+      0.24416666666666667,
+      0.4216666666666667
+    ],
+    "id": "C199"
+  },
+  {
+    "original_split": "train",
+    "class_id": 0,
+    "image": "train/images/Chair--99-_jpg.rf.196081806a32a0770a068b0d85bbda14.jpg",
+    "label": "train/labels/Chair--99-_jpg.rf.196081806a32a0770a068b0d85bbda14.txt",
+    "bbox": [
+      0.4425,
+      0.5175,
+      0.22166666666666668,
+      0.4083333333333333
+    ],
+    "id": "C200"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs--1-_jpg.rf.7104107727daae1f8c000a66cf0dd7b1.jpg",
+    "label": "test/labels/Chairs--1-_jpg.rf.7104107727daae1f8c000a66cf0dd7b1.txt",
+    "bbox": [
+      0.49666666666666665,
+      0.48333333333333334,
+      0.46,
+      0.9383333333333334
+    ],
+    "id": "C201"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs--10-_jpg.rf.cb94c97083903d1228907f324283816a.jpg",
+    "label": "test/labels/Chairs--10-_jpg.rf.cb94c97083903d1228907f324283816a.txt",
+    "bbox": [
+      0.4975,
+      0.50375,
+      0.4716666666666667,
+      0.9525
+    ],
+    "id": "C202"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs--11-_jpg.rf.731df0193231d047877e2b6e7b1cae30.jpg",
+    "label": "test/labels/Chairs--11-_jpg.rf.731df0193231d047877e2b6e7b1cae30.txt",
+    "bbox": [
+      0.49541666666666667,
+      0.5008333333333334,
+      0.5191666666666667,
+      0.9433333333333334
+    ],
+    "id": "C203"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs--15-_jpg.rf.9be74e388453b5ecc3adb2b5a8fd5986.jpg",
+    "label": "test/labels/Chairs--15-_jpg.rf.9be74e388453b5ecc3adb2b5a8fd5986.txt",
+    "bbox": [
+      0.45458333333333334,
+      0.5741666666666667,
+      0.4725,
+      0.7533333333333333
+    ],
+    "id": "C204"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs--16-_jpg.rf.ddca24c24866d8fe5ce85ff1693d476d.jpg",
+    "label": "test/labels/Chairs--16-_jpg.rf.ddca24c24866d8fe5ce85ff1693d476d.txt",
+    "bbox": [
+      0.4666666666666667,
+      0.5104166666666666,
+      0.395,
+      0.7891666666666667
+    ],
+    "id": "C205"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs--17-_jpg.rf.55c5e0f6af86de0c761404b8c2e6ddd9.jpg",
+    "label": "test/labels/Chairs--17-_jpg.rf.55c5e0f6af86de0c761404b8c2e6ddd9.txt",
+    "bbox": [
+      0.4970833333333333,
+      0.50125,
+      0.5791666666666667,
+      0.9108333333333334
+    ],
+    "id": "C206"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs--18-_jpg.rf.ea0390cdc8ae6ca3ed13e7905227205f.jpg",
+    "label": "test/labels/Chairs--18-_jpg.rf.ea0390cdc8ae6ca3ed13e7905227205f.txt",
+    "bbox": [
+      0.48791666666666667,
+      0.5183333333333333,
+      0.5108333333333334,
+      0.895
+    ],
+    "id": "C207"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs--19-_jpg.rf.40292689b7fe54a2c3652f887c0f79e0.jpg",
+    "label": "test/labels/Chairs--19-_jpg.rf.40292689b7fe54a2c3652f887c0f79e0.txt",
+    "bbox": [
+      0.5020833333333333,
+      0.5004166666666666,
+      0.5891666666666666,
+      0.9958333333333333
+    ],
+    "id": "C208"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs--2-_jpg.rf.3ba27b7e63dd7e3f13a498509b60b116.jpg",
+    "label": "test/labels/Chairs--2-_jpg.rf.3ba27b7e63dd7e3f13a498509b60b116.txt",
+    "bbox": [
+      0.4975,
+      0.5154166666666666,
+      0.5933333333333334,
+      0.9325
+    ],
+    "id": "C209"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs--3-_jpg.rf.ccce678d5f3071968ca661d91f1ae434.jpg",
+    "label": "test/labels/Chairs--3-_jpg.rf.ccce678d5f3071968ca661d91f1ae434.txt",
+    "bbox": [
+      0.4841666666666667,
+      0.5125,
+      0.5233333333333333,
+      0.76
+    ],
+    "id": "C210"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs--4-_jpg.rf.841ab5fe61c07f83f3bc9701c447cf57.jpg",
+    "label": "test/labels/Chairs--4-_jpg.rf.841ab5fe61c07f83f3bc9701c447cf57.txt",
+    "bbox": [
+      0.5016666666666667,
+      0.5033333333333333,
+      0.43,
+      0.7133333333333334
+    ],
+    "id": "C211"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs--5-_jpg.rf.07e74476a60a33abd8b0e5b13fe24005.jpg",
+    "label": "test/labels/Chairs--5-_jpg.rf.07e74476a60a33abd8b0e5b13fe24005.txt",
+    "bbox": [
+      0.4970833333333333,
+      0.5545833333333333,
+      0.41083333333333333,
+      0.6675
+    ],
+    "id": "C212"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs--6-_jpg.rf.8036e586aaead774cff802b6d1bb37e8.jpg",
+    "label": "test/labels/Chairs--6-_jpg.rf.8036e586aaead774cff802b6d1bb37e8.txt",
+    "bbox": [
+      0.49833333333333335,
+      0.5033333333333333,
+      0.5966666666666667,
+      0.8983333333333333
+    ],
+    "id": "C213"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs--7-_jpg.rf.fc2c8683ba9119a23088ae928ebdd44c.jpg",
+    "label": "test/labels/Chairs--7-_jpg.rf.fc2c8683ba9119a23088ae928ebdd44c.txt",
+    "bbox": [
+      0.5320833333333334,
+      0.4975,
+      0.44916666666666666,
+      0.8083333333333333
+    ],
+    "id": "C214"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs--8-_jpg.rf.55bb8b68b198223ed0482be0c68e9b97.jpg",
+    "label": "test/labels/Chairs--8-_jpg.rf.55bb8b68b198223ed0482be0c68e9b97.txt",
+    "bbox": [
+      0.4825,
+      0.49916666666666665,
+      0.5983333333333334,
+      0.9366666666666666
+    ],
+    "id": "C215"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs--9-_jpg.rf.1b487b9ec510a76618fc455db2fc8025.jpg",
+    "label": "test/labels/Chairs--9-_jpg.rf.1b487b9ec510a76618fc455db2fc8025.txt",
+    "bbox": [
+      0.4975,
+      0.49833333333333335,
+      0.545,
+      0.8783333333333333
+    ],
+    "id": "C216"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--1-_jpg.rf.2de7bde7a88e33cb1d71910c256701cc.jpg",
+    "label": "test/labels/Chairs1--1-_jpg.rf.2de7bde7a88e33cb1d71910c256701cc.txt",
+    "bbox": [
+      0.4970833333333333,
+      0.5433333333333333,
+      0.5158333333333334,
+      0.7566666666666667
+    ],
+    "id": "C217"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--10-_jpg.rf.ee1e78868548a6037eeb9725007fbc4e.jpg",
+    "label": "test/labels/Chairs1--10-_jpg.rf.ee1e78868548a6037eeb9725007fbc4e.txt",
+    "bbox": [
+      0.52375,
+      0.49833333333333335,
+      0.7075,
+      0.7933333333333333
+    ],
+    "id": "C218"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--11-_jpg.rf.c6246ee15d4b57b9b05c5ad30e0d1b29.jpg",
+    "label": "test/labels/Chairs1--11-_jpg.rf.c6246ee15d4b57b9b05c5ad30e0d1b29.txt",
+    "bbox": [
+      0.4870833333333333,
+      0.4920833333333333,
+      0.6841666666666667,
+      0.8758333333333334
+    ],
+    "id": "C219"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--12-_jpg.rf.86ece7cb0bbb8a485bcd7e43bee93e7e.jpg",
+    "label": "test/labels/Chairs1--12-_jpg.rf.86ece7cb0bbb8a485bcd7e43bee93e7e.txt",
+    "bbox": [
+      0.5,
+      0.5,
+      0.4766666666666667,
+      0.63
+    ],
+    "id": "C220"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--13-_jpg.rf.bf9547edfdd012bd2727a949803247ba.jpg",
+    "label": "test/labels/Chairs1--13-_jpg.rf.bf9547edfdd012bd2727a949803247ba.txt",
+    "bbox": [
+      0.4975,
+      0.4979166666666667,
+      0.5283333333333333,
+      0.7258333333333333
+    ],
+    "id": "C221"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--14-_jpg.rf.689e1a42281a02b21cd2d9b8cce1c175.jpg",
+    "label": "test/labels/Chairs1--14-_jpg.rf.689e1a42281a02b21cd2d9b8cce1c175.txt",
+    "bbox": [
+      0.49333333333333335,
+      0.6008333333333333,
+      0.5083333333333333,
+      0.73
+    ],
+    "id": "C222"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--15-_jpg.rf.162bfcb6485cb2735cc38011a34a9b5a.jpg",
+    "label": "test/labels/Chairs1--15-_jpg.rf.162bfcb6485cb2735cc38011a34a9b5a.txt",
+    "bbox": [
+      0.5179166666666667,
+      0.53125,
+      0.4791666666666667,
+      0.6791666666666667
+    ],
+    "id": "C223"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--16-_jpg.rf.88c9bcf1b7b2ef7088515700ac31a039.jpg",
+    "label": "test/labels/Chairs1--16-_jpg.rf.88c9bcf1b7b2ef7088515700ac31a039.txt",
+    "bbox": [
+      0.49375,
+      0.6016666666666667,
+      0.5108333333333334,
+      0.7233333333333334
+    ],
+    "id": "C224"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--17-_jpg.rf.732ce3d2a0df90544a25a0e4c64fd168.jpg",
+    "label": "test/labels/Chairs1--17-_jpg.rf.732ce3d2a0df90544a25a0e4c64fd168.txt",
+    "bbox": [
+      0.49666666666666665,
+      0.5004166666666666,
+      0.5183333333333333,
+      0.7958333333333333
+    ],
+    "id": "C225"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--18-_jpg.rf.9085745cb2cfadac321e67963ff1aad0.jpg",
+    "label": "test/labels/Chairs1--18-_jpg.rf.9085745cb2cfadac321e67963ff1aad0.txt",
+    "bbox": [
+      0.53625,
+      0.5879166666666666,
+      0.5191666666666667,
+      0.6258333333333334
+    ],
+    "id": "C226"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--19-_jpg.rf.4880b7aa1aa3c5ef114d5dc0cc44f4d5.jpg",
+    "label": "test/labels/Chairs1--19-_jpg.rf.4880b7aa1aa3c5ef114d5dc0cc44f4d5.txt",
+    "bbox": [
+      0.5283333333333333,
+      0.49375,
+      0.6166666666666667,
+      0.8591666666666666
+    ],
+    "id": "C227"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--2-_jpg.rf.0d163452ef078e384528a1532e482669.jpg",
+    "label": "test/labels/Chairs1--2-_jpg.rf.0d163452ef078e384528a1532e482669.txt",
+    "bbox": [
+      0.49166666666666664,
+      0.5345833333333333,
+      0.55,
+      0.7608333333333334
+    ],
+    "id": "C228"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--20-_jpg.rf.fd2c79c53946753448a20fddfa3b2b11.jpg",
+    "label": "test/labels/Chairs1--20-_jpg.rf.fd2c79c53946753448a20fddfa3b2b11.txt",
+    "bbox": [
+      0.4979166666666667,
+      0.5095833333333334,
+      0.5275,
+      0.6491666666666667
+    ],
+    "id": "C229"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--21-_jpg.rf.e7aa86a36d94eb8c521f11394cf089ed.jpg",
+    "label": "test/labels/Chairs1--21-_jpg.rf.e7aa86a36d94eb8c521f11394cf089ed.txt",
+    "bbox": [
+      0.53125,
+      0.5558333333333333,
+      0.6191666666666666,
+      0.7516666666666667
+    ],
+    "id": "C230"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--3-_jpg.rf.c858c564b62b4f21ec024bdb6b081b73.jpg",
+    "label": "test/labels/Chairs1--3-_jpg.rf.c858c564b62b4f21ec024bdb6b081b73.txt",
+    "bbox": [
+      0.5033333333333333,
+      0.61625,
+      0.4533333333333333,
+      0.6475
+    ],
+    "id": "C231"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--4-_jpg.rf.4344ad3c696373d22e91675194d18fe9.jpg",
+    "label": "test/labels/Chairs1--4-_jpg.rf.4344ad3c696373d22e91675194d18fe9.txt",
+    "bbox": [
+      0.5058333333333334,
+      0.49666666666666665,
+      0.55,
+      0.7766666666666666
+    ],
+    "id": "C232"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--5-_jpg.rf.0ba993b209c64965c5b6d04e3be64ba2.jpg",
+    "label": "test/labels/Chairs1--5-_jpg.rf.0ba993b209c64965c5b6d04e3be64ba2.txt",
+    "bbox": [
+      0.5220833333333333,
+      0.5045833333333334,
+      0.6491666666666667,
+      0.8508333333333333
+    ],
+    "id": "C233"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--6-_jpg.rf.e2a58c8f556f9285e748fe89c6bb529b.jpg",
+    "label": "test/labels/Chairs1--6-_jpg.rf.e2a58c8f556f9285e748fe89c6bb529b.txt",
+    "bbox": [
+      0.5066666666666667,
+      0.4975,
+      0.6666666666666666,
+      0.885
+    ],
+    "id": "C234"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--7-_jpg.rf.6feefd41d24e83c71d8a81803ca65458.jpg",
+    "label": "test/labels/Chairs1--7-_jpg.rf.6feefd41d24e83c71d8a81803ca65458.txt",
+    "bbox": [
+      0.50625,
+      0.5095833333333334,
+      0.6058333333333333,
+      0.9125
+    ],
+    "id": "C235"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--8-_jpg.rf.4926e05b4eb959f874e781087ab1ebda.jpg",
+    "label": "test/labels/Chairs1--8-_jpg.rf.4926e05b4eb959f874e781087ab1ebda.txt",
+    "bbox": [
+      0.4975,
+      0.4995833333333333,
+      0.71,
+      0.8558333333333333
+    ],
+    "id": "C236"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs1--9-_jpg.rf.5915f8f7cd8c05beacd362c785b7ca35.jpg",
+    "label": "test/labels/Chairs1--9-_jpg.rf.5915f8f7cd8c05beacd362c785b7ca35.txt",
+    "bbox": [
+      0.49666666666666665,
+      0.5,
+      0.7,
+      0.9433333333333334
+    ],
+    "id": "C237"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs2--1-_jpg.rf.fee1e92025714829a0ac397c1bfdfa91.jpg",
+    "label": "test/labels/Chairs2--1-_jpg.rf.fee1e92025714829a0ac397c1bfdfa91.txt",
+    "bbox": [
+      0.5183333333333333,
+      0.51875,
+      0.39,
+      0.5075
+    ],
+    "id": "C238"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs2--10-_jpg.rf.357ac427705b0d8ce0c24134154050ca.jpg",
+    "label": "test/labels/Chairs2--10-_jpg.rf.357ac427705b0d8ce0c24134154050ca.txt",
+    "bbox": [
+      0.47791666666666666,
+      0.4245833333333333,
+      0.4575,
+      0.5875
+    ],
+    "id": "C239"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs2--11-_jpg.rf.e9d9b74daa2f043b32c7a8c21c44a830.jpg",
+    "label": "test/labels/Chairs2--11-_jpg.rf.e9d9b74daa2f043b32c7a8c21c44a830.txt",
+    "bbox": [
+      0.49666666666666665,
+      0.4379166666666667,
+      0.45166666666666666,
+      0.5925
+    ],
+    "id": "C240"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs2--2-_jpg.rf.6bcbb8710a97d5d90a05bc002fe2c1ff.jpg",
+    "label": "test/labels/Chairs2--2-_jpg.rf.6bcbb8710a97d5d90a05bc002fe2c1ff.txt",
+    "bbox": [
+      0.5320833333333334,
+      0.5195833333333333,
+      0.3875,
+      0.5025
+    ],
+    "id": "C241"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs2--3-_jpg.rf.23743311c2b2b7fa0a1a45f46cf7d0cd.jpg",
+    "label": "test/labels/Chairs2--3-_jpg.rf.23743311c2b2b7fa0a1a45f46cf7d0cd.txt",
+    "bbox": [
+      0.5666666666666667,
+      0.4166666666666667,
+      0.4116666666666667,
+      0.5333333333333333
+    ],
+    "id": "C242"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs2--4-_jpg.rf.de8e12ff0e5883c324977104a25a38d2.jpg",
+    "label": "test/labels/Chairs2--4-_jpg.rf.de8e12ff0e5883c324977104a25a38d2.txt",
+    "bbox": [
+      0.4675,
+      0.4266666666666667,
+      0.4633333333333333,
+      0.5916666666666667
+    ],
+    "id": "C243"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs2--5-_jpg.rf.61720acd033d836dda69d07c60074f87.jpg",
+    "label": "test/labels/Chairs2--5-_jpg.rf.61720acd033d836dda69d07c60074f87.txt",
+    "bbox": [
+      0.4820833333333333,
+      0.46,
+      0.4575,
+      0.5833333333333334
+    ],
+    "id": "C244"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs2--6-_jpg.rf.adb97f03c131a766e00e02e9a10c3879.jpg",
+    "label": "test/labels/Chairs2--6-_jpg.rf.adb97f03c131a766e00e02e9a10c3879.txt",
+    "bbox": [
+      0.4820833333333333,
+      0.45875,
+      0.4625,
+      0.5441666666666667
+    ],
+    "id": "C245"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs2--7-_jpg.rf.13adb1d2f4491af0a8ddab3dc4e945b5.jpg",
+    "label": "test/labels/Chairs2--7-_jpg.rf.13adb1d2f4491af0a8ddab3dc4e945b5.txt",
+    "bbox": [
+      0.45708333333333334,
+      0.5908333333333333,
+      0.4375,
+      0.54
+    ],
+    "id": "C246"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs2--8-_jpg.rf.02ec147b66d1a1115cab9aa1da1292f8.jpg",
+    "label": "test/labels/Chairs2--8-_jpg.rf.02ec147b66d1a1115cab9aa1da1292f8.txt",
+    "bbox": [
+      0.5170833333333333,
+      0.4554166666666667,
+      0.4508333333333333,
+      0.5925
+    ],
+    "id": "C247"
+  },
+  {
+    "original_split": "test",
+    "class_id": 0,
+    "image": "test/images/Chairs2--9-_jpg.rf.1071acc1f5d85f462874ee9fa1e1d920.jpg",
+    "label": "test/labels/Chairs2--9-_jpg.rf.1071acc1f5d85f462874ee9fa1e1d920.txt",
+    "bbox": [
+      0.5754166666666667,
+      0.4025,
+      0.4175,
+      0.535
+    ],
+    "id": "C248"
+  }
+]

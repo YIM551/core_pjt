@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-10-21T06:30:58.081648+00:00",
+  "image": "C:/work/core_pjt/samples/furniture_v2_sofa.jpg",
+  "image_sha256": "3cc5950e24dccfbc16a15842db222e2d4d39a2cf5ed6d4841fdd28ef725d173b",
+  "image_size": [
+    1200,
+    1200
+  ],
+  "model": "C:/work/core_pjt/models/Qwen2.5-VL-3B-Instruct-Q4_K_M.gguf",
+  "vision_projector": "C:/work/core_pjt/models/mmproj-Qwen2.5-VL-3B-Instruct-f16.gguf",
+  "device": "cpu",
+  "n_threads": 24,
+  "n_ctx": 4096,
+  "prompt": "이 이미지에 무엇이 보이는지 한국어로 간결하게 설명해줘.",
+  "max_tokens": 80,
+  "temperature": 0.0,
+  "yolo_record": "C:/work/core_pjt/results/furniture_day1/inference.json",
+  "same_image_as_yolo": true,
+  "timing_note": "First VLM call includes image encoding and text generation; not a warmed benchmark.",
+  "model_load_seconds": 1.324403300008271,
+  "inference_seconds": 69.18451459996868,
+  "description": ": 이 이미지에는 베이지색과 흰색 패턴이 있는 소파가 보입니다. 소파 옆에는 테이블과 의자가 있으며, 배경에는 계단이 보입니다. 바닥은 베이지색 카펫으로 되어 있습니다.",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 83,
+    "completion_tokens": 65,
+    "total_tokens": 148
+  },
+  "completed_at_utc": "2026-10-21T06:32:08.604824+00:00"
+}

@@ -1,0 +1,8 @@
+{
+  "both_http_200": true,
+  "same_image_as_standalone_yolo_and_vlm": true,
+  "identical_bytes_to_both_endpoints": true,
+  "yolo_summary_matches_standalone": true,
+  "vlm_description_matches_standalone": true,
+  "both_models_loaded": true
+}

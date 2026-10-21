@@ -16,3 +16,7 @@
 *.pptx binary
 *.xlsx binary
 *.wasm binary
+
+# Preserve byte-level provenance and frozen review/manifest checksums on checkout.
+datasets/** -text whitespace=cr-at-eol,-blank-at-eof
+results/furniture_day1/data_audit/** -text whitespace=cr-at-eol

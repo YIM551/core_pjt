@@ -1,0 +1,48 @@
+{
+  "dataset": "C:\\work\\core_pjt\\datasets\\roboflow\\furniture\\v2_curated_v2",
+  "ultralytics": "8.4.164",
+  "splits": {
+    "train": {
+      "images": 393,
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "all_samples_transformed": true,
+      "image_tensor_shape": [
+        3,
+        320,
+        320
+      ]
+    },
+    "val": {
+      "images": 85,
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "all_samples_transformed": true,
+      "image_tensor_shape": [
+        3,
+        320,
+        320
+      ]
+    },
+    "test": {
+      "images": 87,
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "all_samples_transformed": true,
+      "image_tensor_shape": [
+        3,
+        320,
+        320
+      ]
+    }
+  }
+}

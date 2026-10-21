@@ -1,0 +1,1417 @@
+{
+  "reviewer": "assistant_visual_review_tables",
+  "scope": "all Table images via contact sheets; original images where indicated",
+  "decisions": [
+    {
+      "id": "T000",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T000"
+    },
+    {
+      "id": "T001",
+      "status": "quarantine",
+      "reason": "A cropped furniture leg at the left edge makes annotation completeness uncertain; conservatively held for manual relabelling or crop review.",
+      "full_size_review": true,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T002",
+      "status": "quarantine",
+      "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+      "full_size_review": false,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T003",
+      "status": "quarantine",
+      "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+      "full_size_review": false,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T004",
+      "status": "quarantine",
+      "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+      "full_size_review": false,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T005",
+      "status": "quarantine",
+      "reason": "A cropped furniture leg at the left edge makes annotation completeness uncertain; conservatively held for manual relabelling or crop review.",
+      "full_size_review": true,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T006",
+      "status": "quarantine",
+      "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+      "full_size_review": false,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T007",
+      "status": "quarantine",
+      "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+      "full_size_review": true,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T008",
+      "status": "quarantine",
+      "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+      "full_size_review": true,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T009",
+      "status": "quarantine",
+      "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+      "full_size_review": false,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T010",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": true,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T011",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": true,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T012",
+      "status": "quarantine",
+      "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+      "full_size_review": false,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T013",
+      "status": "quarantine",
+      "reason": "A cropped furniture leg at the left edge makes annotation completeness uncertain; conservatively held for manual relabelling or crop review.",
+      "full_size_review": true,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T014",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": true,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T015",
+      "status": "quarantine",
+      "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+      "full_size_review": false,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T016",
+      "status": "quarantine",
+      "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+      "full_size_review": false,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T017",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T017"
+    },
+    {
+      "id": "T018",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": true,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T019",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": true,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T020",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T021",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T022",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T023",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T024",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T024"
+    },
+    {
+      "id": "T025",
+      "status": "quarantine",
+      "reason": "The desk is labelled but upholstered chairs/seating are visibly present on both sides without labels.",
+      "full_size_review": true,
+      "group_id": "T025"
+    },
+    {
+      "id": "T026",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T026"
+    },
+    {
+      "id": "T027",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T027"
+    },
+    {
+      "id": "T028",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T028"
+    },
+    {
+      "id": "T029",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T029"
+    },
+    {
+      "id": "T030",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T030"
+    },
+    {
+      "id": "T031",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T031"
+    },
+    {
+      "id": "T032",
+      "status": "accept",
+      "reason": "Single cloth-covered table with curved legs; existing box covers the visible table and no clear additional target furniture is present.",
+      "full_size_review": true,
+      "group_id": "table_plaid_covered_curved_legs"
+    },
+    {
+      "id": "T033",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T033"
+    },
+    {
+      "id": "T034",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T034"
+    },
+    {
+      "id": "T035",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T035"
+    },
+    {
+      "id": "T036",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T036"
+    },
+    {
+      "id": "T037",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_orange_computer_desk"
+    },
+    {
+      "id": "T038",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T038"
+    },
+    {
+      "id": "T039",
+      "status": "quarantine",
+      "reason": "A recognisable cropped office chair (arm, seat and casters) appears at the right edge without a label.",
+      "full_size_review": true,
+      "group_id": "T039"
+    },
+    {
+      "id": "T040",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T040"
+    },
+    {
+      "id": "T041",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T041"
+    },
+    {
+      "id": "T042",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T042"
+    },
+    {
+      "id": "T043",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T043"
+    },
+    {
+      "id": "T044",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T044"
+    },
+    {
+      "id": "T045",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T045"
+    },
+    {
+      "id": "T046",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T046"
+    },
+    {
+      "id": "T047",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T047"
+    },
+    {
+      "id": "T048",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T048"
+    },
+    {
+      "id": "T049",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T049"
+    },
+    {
+      "id": "T050",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T050"
+    },
+    {
+      "id": "T051",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T051"
+    },
+    {
+      "id": "T052",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T052"
+    },
+    {
+      "id": "T053",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T053"
+    },
+    {
+      "id": "T054",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T054"
+    },
+    {
+      "id": "T055",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T055"
+    },
+    {
+      "id": "T056",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T056"
+    },
+    {
+      "id": "T057",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T057"
+    },
+    {
+      "id": "T058",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T058"
+    },
+    {
+      "id": "T059",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T059"
+    },
+    {
+      "id": "T060",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T060"
+    },
+    {
+      "id": "T061",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_natural_wood_dining_product"
+    },
+    {
+      "id": "T062",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T062"
+    },
+    {
+      "id": "T063",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T063"
+    },
+    {
+      "id": "T064",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T064"
+    },
+    {
+      "id": "T065",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T065"
+    },
+    {
+      "id": "T066",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T066"
+    },
+    {
+      "id": "T067",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T067"
+    },
+    {
+      "id": "T068",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T068"
+    },
+    {
+      "id": "T069",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T069"
+    },
+    {
+      "id": "T070",
+      "status": "accept",
+      "reason": "Single cloth-covered table with curved legs; existing box covers the visible table and no clear additional target furniture is present.",
+      "full_size_review": false,
+      "group_id": "table_plaid_covered_curved_legs"
+    },
+    {
+      "id": "T071",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T071"
+    },
+    {
+      "id": "T072",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_natural_wood_dining_product"
+    },
+    {
+      "id": "T073",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T073"
+    },
+    {
+      "id": "T074",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T074"
+    },
+    {
+      "id": "T075",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T075"
+    },
+    {
+      "id": "T076",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T076"
+    },
+    {
+      "id": "T077",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T077"
+    },
+    {
+      "id": "T078",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T078"
+    },
+    {
+      "id": "T079",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T079"
+    },
+    {
+      "id": "T080",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T080"
+    },
+    {
+      "id": "T081",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T081"
+    },
+    {
+      "id": "T082",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T082"
+    },
+    {
+      "id": "T083",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T083"
+    },
+    {
+      "id": "T084",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T084"
+    },
+    {
+      "id": "T085",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T085"
+    },
+    {
+      "id": "T086",
+      "status": "quarantine",
+      "reason": "Another cropped white furniture item with a horizontal support and turned leg appears at the left edge; possible unlabelled chair/table requires manual review.",
+      "full_size_review": true,
+      "group_id": "T086"
+    },
+    {
+      "id": "T087",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": true,
+      "group_id": "T087"
+    },
+    {
+      "id": "T088",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T088"
+    },
+    {
+      "id": "T089",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T089"
+    },
+    {
+      "id": "T090",
+      "status": "quarantine",
+      "reason": "Several recognisable chairs are visible behind the labelled table and have no annotations.",
+      "full_size_review": true,
+      "group_id": "T090"
+    },
+    {
+      "id": "T091",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T091"
+    },
+    {
+      "id": "T092",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T092"
+    },
+    {
+      "id": "T093",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T093"
+    },
+    {
+      "id": "T094",
+      "status": "accept",
+      "reason": "Single cloth-covered table with curved legs; existing box covers the visible table and no clear additional target furniture is present.",
+      "full_size_review": false,
+      "group_id": "table_plaid_covered_curved_legs"
+    },
+    {
+      "id": "T095",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T095"
+    },
+    {
+      "id": "T096",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T096"
+    },
+    {
+      "id": "T097",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T097"
+    },
+    {
+      "id": "T098",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T098"
+    },
+    {
+      "id": "T099",
+      "status": "quarantine",
+      "reason": "A second table with visible legs appears in the upper background without an annotation.",
+      "full_size_review": true,
+      "group_id": "T099"
+    },
+    {
+      "id": "T100",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T101",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T102",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": true,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T103",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T104",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T105",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T106",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T107",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T108",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T109",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T110",
+      "status": "quarantine",
+      "reason": "A wooden chair is visible in the upper-left background without an annotation.",
+      "full_size_review": true,
+      "group_id": "T110"
+    },
+    {
+      "id": "T111",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T112",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": true,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T113",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T114",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": true,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T115",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T116",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T117",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T117"
+    },
+    {
+      "id": "T118",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T119",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T120",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T121",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T122",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": true,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T123",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T124",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T124"
+    },
+    {
+      "id": "T125",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T126",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T127",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T128",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T129",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": true,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T130",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T131",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_beige_desk_room"
+    },
+    {
+      "id": "T132",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T132"
+    },
+    {
+      "id": "T133",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T133"
+    },
+    {
+      "id": "T134",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_antique_yellow_background"
+    },
+    {
+      "id": "T135",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T135"
+    },
+    {
+      "id": "T136",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T136"
+    },
+    {
+      "id": "T137",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T137"
+    },
+    {
+      "id": "T138",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T138"
+    },
+    {
+      "id": "T139",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T139"
+    },
+    {
+      "id": "T140",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T140"
+    },
+    {
+      "id": "T141",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T141"
+    },
+    {
+      "id": "T142",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T142"
+    },
+    {
+      "id": "T143",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T143"
+    },
+    {
+      "id": "T144",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T144"
+    },
+    {
+      "id": "T145",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_orange_computer_desk"
+    },
+    {
+      "id": "T146",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_honey_drawer_product_family"
+    },
+    {
+      "id": "T147",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_honey_drawer_product_family"
+    },
+    {
+      "id": "T148",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T148"
+    },
+    {
+      "id": "T149",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_honey_drawer_product_family"
+    },
+    {
+      "id": "T150",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T150"
+    },
+    {
+      "id": "T151",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_honey_drawer_product_family"
+    },
+    {
+      "id": "T152",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T152"
+    },
+    {
+      "id": "T153",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T153"
+    },
+    {
+      "id": "T154",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_antique_yellow_background"
+    },
+    {
+      "id": "T155",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T155"
+    },
+    {
+      "id": "T156",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T156"
+    },
+    {
+      "id": "T157",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T157"
+    },
+    {
+      "id": "T158",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T158"
+    },
+    {
+      "id": "T159",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T159"
+    },
+    {
+      "id": "T160",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T160"
+    },
+    {
+      "id": "T161",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T161"
+    },
+    {
+      "id": "T162",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_honey_drawer_product_family"
+    },
+    {
+      "id": "T163",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T163"
+    },
+    {
+      "id": "T164",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T164"
+    },
+    {
+      "id": "T165",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T165"
+    },
+    {
+      "id": "T166",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_antique_wall_console"
+    },
+    {
+      "id": "T167",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_oak_drawers_product"
+    },
+    {
+      "id": "T168",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T168"
+    },
+    {
+      "id": "T169",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T169"
+    },
+    {
+      "id": "T170",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T170"
+    },
+    {
+      "id": "T171",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_antique_wall_console"
+    },
+    {
+      "id": "T172",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T172"
+    },
+    {
+      "id": "T173",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T173"
+    },
+    {
+      "id": "T174",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T174"
+    },
+    {
+      "id": "T175",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T175"
+    },
+    {
+      "id": "T176",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_honey_drawer_product_family"
+    },
+    {
+      "id": "T177",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T177"
+    },
+    {
+      "id": "T178",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T178"
+    },
+    {
+      "id": "T179",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T179"
+    },
+    {
+      "id": "T180",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_oak_drawers_product"
+    },
+    {
+      "id": "T181",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T181"
+    },
+    {
+      "id": "T182",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T182"
+    },
+    {
+      "id": "T183",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T183"
+    },
+    {
+      "id": "T184",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T184"
+    },
+    {
+      "id": "T185",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T185"
+    },
+    {
+      "id": "T186",
+      "status": "accept",
+      "reason": "Single cloth-covered table with curved legs; existing box covers the visible table and no clear additional target furniture is present.",
+      "full_size_review": false,
+      "group_id": "table_plaid_covered_curved_legs"
+    },
+    {
+      "id": "T187",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T187"
+    },
+    {
+      "id": "T188",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T188"
+    },
+    {
+      "id": "T189",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T189"
+    },
+    {
+      "id": "T190",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T190"
+    },
+    {
+      "id": "T191",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T191"
+    },
+    {
+      "id": "T192",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T192"
+    },
+    {
+      "id": "T193",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "T193"
+    },
+    {
+      "id": "T194",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": true,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T195",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T196",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": false,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T197",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": true,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T198",
+      "status": "quarantine",
+      "reason": "A cropped furniture leg at the left edge makes annotation completeness uncertain; conservatively held for manual relabelling or crop review.",
+      "full_size_review": true,
+      "group_id": "table_red_desk_room"
+    },
+    {
+      "id": "T199",
+      "status": "accept",
+      "reason": "One clear table/desk target in the reviewed image; existing box reasonably covers its visible extent and no clear unlabelled Chair/Sofa/Table is present.",
+      "full_size_review": true,
+      "group_id": "table_red_desk_room"
+    }
+  ],
+  "notes": [
+    "Every item in contact sheets table_01.jpg through table_07.jpg was visually inspected with the original green annotation box; 27 originals were additionally inspected at full image size.",
+    "Conservative visual screening is not an independent human ground-truth certification. Ambiguous cropped extra furniture is quarantined rather than automatically assigned pseudo-labels. No source labels were edited.",
+    "table_red_desk_room contains T001-T016, T018-T023 and T194-T199: the same red two-drawer desk and white glossy marble-tile floor with black skirting. The series crosses the original train/valid split. This is also the Table scene to compare against Chair captures in the same white-floor/black-skirting environment; per-object group_id is retained for traceability.",
+    "table_beige_desk_room contains T100-T109, T111-T116, T118-T123 and T125-T131: same beige three-drawer desk, yellow-brown floor tiles and pale tile skirting. This is visually a different environment from the red desk. A cabinet, fan, cables or a small fabric edge alone were not treated as missing target annotations.",
+    "table_plaid_covered_curved_legs connects T032, T070, T094 and T186, including original train/valid images. The original T032 inspection supports a cloth-covered table; none shows an additional clear target.",
+    "Repeated product groups link matching products or photo variants: orange computer desk T037/T145; natural wood dining product T061/T072; antique yellow-background table T134/T154; antique wall console T166/T171; oak drawer table T167/T180.",
+    "table_honey_drawer_product_family conservatively keeps closely matching honey-coloured panel-top single-drawer table product variants T146/T147/T149/T151/T162/T176 together; exact same physical instance is not established for every product-photo variant.",
+    "Some accepted product images are low resolution or blurred but still show one identifiable table and an encompassing box. Acceptance is for a small PoC subset, not a claim of production-grade image quality.",
+    "No new numerical boxes or class labels were invented. Quarantine reasons distinguish definite missing targets from unresolved cropped-furniture ambiguity."
+  ]
+}

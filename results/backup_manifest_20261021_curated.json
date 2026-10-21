@@ -1,0 +1,65 @@
+{
+  "created_at_utc": "2026-10-21T07:08:01.951752+00:00",
+  "repository": "https://github.com/YIM551/core_pjt",
+  "release_tag": "backup-2026-10-21-curated",
+  "previous_release": {
+    "tag": "backup-2026-10-21",
+    "url": "https://github.com/YIM551/core_pjt/releases/tag/backup-2026-10-21",
+    "assets": [
+      {
+        "name": "furniture.v2-release.yolov11.zip",
+        "bytes": 56423743,
+        "sha256": "c9fcf329d42cb419f4af787ac95172511f5f6a71017e359ac6710324b06125bd",
+        "restore_to": "datasets/roboflow/furniture/v2 (extract archive)"
+      },
+      {
+        "name": "local-models.zip",
+        "bytes": 21376340,
+        "sha256": "cd2498ca9fe5c116b47944c238e2f99ca562fa652660ce8eb2d252d7d5d73b8f",
+        "restore_to": "project root (extract archive)"
+      },
+      {
+        "name": "project-overview.mp4",
+        "bytes": 164958616,
+        "sha256": "974d6ac86e0c5cf7f678ba825c980e28fb54d9b7bf1dd8a09f21d310d7aae28e",
+        "restore_to": "설명 영상/코어프로젝트2회차설명영상.mp4"
+      }
+    ]
+  },
+  "assets": [
+    {
+      "name": "furniture.v2-curated-v2.zip",
+      "bytes": 38534838,
+      "sha256": "72ab61725cc8021508aaec6ac6e446994d64183b328f027074201302ef766a2d",
+      "members": 1136,
+      "restore_to": "project root (extract archive; project-relative paths retained)",
+      "dataset": "datasets/roboflow/furniture/v2_curated_v2",
+      "accepted_images": 565,
+      "quarantined_images": 124,
+      "images_by_split": {
+        "train": 393,
+        "valid": 85,
+        "test": 87
+      }
+    }
+  ],
+  "git_backup_scope": [
+    "VLM first inference script and outputs",
+    "PoC combined request script, responses and logs",
+    "Dataset audit/build scripts",
+    "All 689 visual review decisions and contact sheets",
+    "Final and superseded curated metadata and frozen split manifests",
+    "README restore and training instructions"
+  ],
+  "excluded_recreatable": [
+    ".venv",
+    "Python/download/Ultralytics caches",
+    "models/*.gguf (unchanged; official download commands in README)",
+    "superseded v2_curated_v1 image/label copies (recoverable from original ZIP plus its split_manifest.json)"
+  ],
+  "verification": {
+    "zip_crc_and_every_member_sha256_matches_local": true,
+    "final_dataset_independent_checks": 50,
+    "final_dataset_loader_images_checked": 565
+  }
+}

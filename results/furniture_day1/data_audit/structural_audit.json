@@ -1,0 +1,30 @@
+{
+  "images": 689,
+  "classes": [
+    "Chair",
+    "Sofa",
+    "Table"
+  ],
+  "boxes_by_original_split": {
+    "train": {
+      "0": 199,
+      "1": 193,
+      "2": 62
+    },
+    "valid": {
+      "1": 23,
+      "2": 138
+    },
+    "test": {
+      "0": 50,
+      "1": 24
+    }
+  },
+  "all_images_have_one_annotation": true,
+  "structural_issue_ids": [],
+  "source_matches_export_archive": true,
+  "raw_tree_sha256": "46af11222baca3707ea13a576629f314d3c3c3abe814585fd0e6a326ad0bcd3e",
+  "similarity_link_count": 18,
+  "cross_original_split_links": 0,
+  "method": "RGB decoded pixel hashes plus pHash<=4, dHash<=8, aspect ratio difference<=5%, mean RGB gap<=25. Candidate links are conservatively grouped, not proof of duplicate identity. Visual object/scene groups supplement this check."
+}

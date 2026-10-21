@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-10-21T06:35:36.568748+00:00",
+  "url": "http://127.0.0.1:8001",
+  "image": "C:/work/core_pjt/samples/furniture_v2_sofa.jpg",
+  "image_sha256": "3cc5950e24dccfbc16a15842db222e2d4d39a2cf5ed6d4841fdd28ef725d173b",
+  "image_bytes": 115211,
+  "same_image_as_previous_yolo": true,
+  "request_content_type": "image/jpeg",
+  "mode": "one YOLO request and one VLM request submitted concurrently",
+  "health_before": {
+    "status": "ok",
+    "device": "cpu",
+    "yolo_loaded": false,
+    "vlm_loaded": false
+  },
+  "responses": {
+    "yolo": {
+      "endpoint": "/api/yolo-detect",
+      "http_status": 200,
+      "request_image_sha256": "3cc5950e24dccfbc16a15842db222e2d4d39a2cf5ed6d4841fdd28ef725d173b",
+      "client_elapsed_ms": 1621.7634999775328,
+      "body": {
+        "summary": "couch 1개, chair 1개, vase 1개",
+        "elapsed_ms": 1385
+      }
+    },
+    "vlm": {
+      "endpoint": "/api/vlm-describe",
+      "http_status": 200,
+      "request_image_sha256": "3cc5950e24dccfbc16a15842db222e2d4d39a2cf5ed6d4841fdd28ef725d173b",
+      "client_elapsed_ms": 69894.92210000753,
+      "body": {
+        "description": ": 이 이미지에는 베이지색과 흰색 패턴이 있는 소파가 보입니다. 소파 옆에는 테이블과 의자가 있으며, 배경에는 계단이 보입니다. 바닥은 베이지색 카펫으로 되어 있습니다.",
+        "elapsed_ms": 69651
+      }
+    }
+  },
+  "timing_note": "Server elapsed_ms includes thread-pool wait, first model loading and inference. Client timings include HTTP and decoding overhead. This is not a serial/parallel benchmark.",
+  "total_client_elapsed_ms": 69896.84520004084,
+  "health_after": {
+    "status": "ok",
+    "device": "cpu",
+    "yolo_loaded": true,
+    "vlm_loaded": true
+  },
+  "completed_at_utc": "2026-10-21T06:36:48.184517+00:00"
+}

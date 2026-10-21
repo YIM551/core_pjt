@@ -1,0 +1,2602 @@
+[
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--1-_jpg.rf.c6b3c2a08a5f8a08656ef70e0090d133.jpg",
+    "label": "train/labels/Table--1-_jpg.rf.c6b3c2a08a5f8a08656ef70e0090d133.txt",
+    "bbox": [
+      0.5,
+      0.495,
+      0.8816666666666667,
+      0.6533333333333333
+    ],
+    "id": "T000"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--100-_jpg.rf.fa4bc479dabba16066f79782d4883da3.jpg",
+    "label": "train/labels/Table--100-_jpg.rf.fa4bc479dabba16066f79782d4883da3.txt",
+    "bbox": [
+      0.5379166666666667,
+      0.5558333333333333,
+      0.6691666666666667,
+      0.495
+    ],
+    "id": "T001"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--101-_jpg.rf.5c939ea09d852db34e0a87987e920fbb.jpg",
+    "label": "train/labels/Table--101-_jpg.rf.5c939ea09d852db34e0a87987e920fbb.txt",
+    "bbox": [
+      0.6025,
+      0.5758333333333333,
+      0.6983333333333334,
+      0.48333333333333334
+    ],
+    "id": "T002"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--102-_jpg.rf.10dcaca556b4d70b9ffb0c2dea80d23d.jpg",
+    "label": "train/labels/Table--102-_jpg.rf.10dcaca556b4d70b9ffb0c2dea80d23d.txt",
+    "bbox": [
+      0.5591666666666667,
+      0.5579166666666666,
+      0.6666666666666666,
+      0.5058333333333334
+    ],
+    "id": "T003"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--103-_jpg.rf.63a1418611bb109611d913341a86afce.jpg",
+    "label": "train/labels/Table--103-_jpg.rf.63a1418611bb109611d913341a86afce.txt",
+    "bbox": [
+      0.5716666666666667,
+      0.565,
+      0.6683333333333333,
+      0.51
+    ],
+    "id": "T004"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--104-_jpg.rf.96fa7010f73bb31b13e963dbbe986820.jpg",
+    "label": "train/labels/Table--104-_jpg.rf.96fa7010f73bb31b13e963dbbe986820.txt",
+    "bbox": [
+      0.54625,
+      0.5495833333333333,
+      0.6741666666666667,
+      0.4925
+    ],
+    "id": "T005"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--105-_jpg.rf.58b42f699665af9ddf27ed3ebc080c2e.jpg",
+    "label": "train/labels/Table--105-_jpg.rf.58b42f699665af9ddf27ed3ebc080c2e.txt",
+    "bbox": [
+      0.6458333333333334,
+      0.5566666666666666,
+      0.665,
+      0.5333333333333333
+    ],
+    "id": "T006"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--106-_jpg.rf.442402b7eb204d8c62ded77c7d9831f7.jpg",
+    "label": "train/labels/Table--106-_jpg.rf.442402b7eb204d8c62ded77c7d9831f7.txt",
+    "bbox": [
+      0.5733333333333334,
+      0.5604166666666667,
+      0.6833333333333333,
+      0.5325
+    ],
+    "id": "T007"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--107-_jpg.rf.8b36c4b1fae19d949f9628dc8500e31e.jpg",
+    "label": "train/labels/Table--107-_jpg.rf.8b36c4b1fae19d949f9628dc8500e31e.txt",
+    "bbox": [
+      0.60125,
+      0.5570833333333334,
+      0.6608333333333334,
+      0.5441666666666667
+    ],
+    "id": "T008"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--109-_jpg.rf.aa84133ed8ce186d4b77c3ee6cf42602.jpg",
+    "label": "train/labels/Table--109-_jpg.rf.aa84133ed8ce186d4b77c3ee6cf42602.txt",
+    "bbox": [
+      0.53,
+      0.5233333333333333,
+      0.6333333333333333,
+      0.5816666666666667
+    ],
+    "id": "T009"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--110-_jpg.rf.cb2ce66f1f459e561a3b8fa933ca5c84.jpg",
+    "label": "train/labels/Table--110-_jpg.rf.cb2ce66f1f459e561a3b8fa933ca5c84.txt",
+    "bbox": [
+      0.30666666666666664,
+      0.57625,
+      0.5383333333333333,
+      0.41583333333333333
+    ],
+    "id": "T010"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--111-_jpg.rf.6f22f791563fd22de270b6e953052b87.jpg",
+    "label": "train/labels/Table--111-_jpg.rf.6f22f791563fd22de270b6e953052b87.txt",
+    "bbox": [
+      0.31958333333333333,
+      0.5633333333333334,
+      0.5541666666666667,
+      0.42833333333333334
+    ],
+    "id": "T011"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--112-_jpg.rf.2861e94f0c81851ec2256c90cda8e81b.jpg",
+    "label": "train/labels/Table--112-_jpg.rf.2861e94f0c81851ec2256c90cda8e81b.txt",
+    "bbox": [
+      0.425,
+      0.505,
+      0.55,
+      0.43666666666666665
+    ],
+    "id": "T012"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--113-_jpg.rf.b4a3b88bc258d0db33ba4598ba2ce520.jpg",
+    "label": "train/labels/Table--113-_jpg.rf.b4a3b88bc258d0db33ba4598ba2ce520.txt",
+    "bbox": [
+      0.40625,
+      0.5566666666666666,
+      0.6058333333333333,
+      0.5483333333333333
+    ],
+    "id": "T013"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--114-_jpg.rf.c6d50e4edec426e0abcb7aa9f63da8f3.jpg",
+    "label": "train/labels/Table--114-_jpg.rf.c6d50e4edec426e0abcb7aa9f63da8f3.txt",
+    "bbox": [
+      0.36291666666666667,
+      0.5533333333333333,
+      0.6141666666666666,
+      0.515
+    ],
+    "id": "T014"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--115-_jpg.rf.d0f4e4f540b106286d29bbdd9c3db784.jpg",
+    "label": "train/labels/Table--115-_jpg.rf.d0f4e4f540b106286d29bbdd9c3db784.txt",
+    "bbox": [
+      0.49625,
+      0.5395833333333333,
+      0.5925,
+      0.6241666666666666
+    ],
+    "id": "T015"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--116-_jpg.rf.a74e15afe10e448729543970c01ff5df.jpg",
+    "label": "train/labels/Table--116-_jpg.rf.a74e15afe10e448729543970c01ff5df.txt",
+    "bbox": [
+      0.48791666666666667,
+      0.5166666666666667,
+      0.6025,
+      0.5866666666666667
+    ],
+    "id": "T016"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--12-_jpg.rf.25ec642e82bdacf262895daa9345676b.jpg",
+    "label": "train/labels/Table--12-_jpg.rf.25ec642e82bdacf262895daa9345676b.txt",
+    "bbox": [
+      0.5058333333333334,
+      0.5445833333333333,
+      0.9333333333333333,
+      0.6241666666666666
+    ],
+    "id": "T017"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--120-_jpg.rf.307731fbeb6eafb83dddeebfafd91d39.jpg",
+    "label": "train/labels/Table--120-_jpg.rf.307731fbeb6eafb83dddeebfafd91d39.txt",
+    "bbox": [
+      0.5091666666666667,
+      0.62375,
+      0.6666666666666666,
+      0.4741666666666667
+    ],
+    "id": "T018"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--121-_jpg.rf.7b31d41a517d810356000978f813f1bc.jpg",
+    "label": "train/labels/Table--121-_jpg.rf.7b31d41a517d810356000978f813f1bc.txt",
+    "bbox": [
+      0.5445833333333333,
+      0.6504166666666666,
+      0.7225,
+      0.5058333333333334
+    ],
+    "id": "T019"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--122-_jpg.rf.794c83504821d4c26ecebb097fc545e0.jpg",
+    "label": "train/labels/Table--122-_jpg.rf.794c83504821d4c26ecebb097fc545e0.txt",
+    "bbox": [
+      0.5370833333333334,
+      0.6458333333333334,
+      0.8008333333333333,
+      0.6183333333333333
+    ],
+    "id": "T020"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--124-_jpg.rf.252fefd4e7cc6da6080be6398bd6e5b6.jpg",
+    "label": "train/labels/Table--124-_jpg.rf.252fefd4e7cc6da6080be6398bd6e5b6.txt",
+    "bbox": [
+      0.5208333333333334,
+      0.5979166666666667,
+      0.885,
+      0.6075
+    ],
+    "id": "T021"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--125-_jpg.rf.184a4621e8cbb0eea85685b9a1ef8751.jpg",
+    "label": "train/labels/Table--125-_jpg.rf.184a4621e8cbb0eea85685b9a1ef8751.txt",
+    "bbox": [
+      0.52125,
+      0.64,
+      0.8691666666666666,
+      0.6933333333333334
+    ],
+    "id": "T022"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--126-_jpg.rf.1fec076536f4c957dfddede2397866cd.jpg",
+    "label": "train/labels/Table--126-_jpg.rf.1fec076536f4c957dfddede2397866cd.txt",
+    "bbox": [
+      0.515,
+      0.6445833333333333,
+      0.8516666666666667,
+      0.7091666666666666
+    ],
+    "id": "T023"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--127-_jpg.rf.f2d35f27469fd30992cfcab7783b48f9.jpg",
+    "label": "train/labels/Table--127-_jpg.rf.f2d35f27469fd30992cfcab7783b48f9.txt",
+    "bbox": [
+      0.4975,
+      0.555,
+      0.8866666666666667,
+      0.7933333333333333
+    ],
+    "id": "T024"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--128-_jpg.rf.f40f4e481b08cf46cda961b383cabee0.jpg",
+    "label": "train/labels/Table--128-_jpg.rf.f40f4e481b08cf46cda961b383cabee0.txt",
+    "bbox": [
+      0.49541666666666667,
+      0.5316666666666666,
+      0.9541666666666667,
+      0.6566666666666666
+    ],
+    "id": "T025"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--13-_jpg.rf.287d688bd251155fa149e0372f530a32.jpg",
+    "label": "train/labels/Table--13-_jpg.rf.287d688bd251155fa149e0372f530a32.txt",
+    "bbox": [
+      0.5033333333333333,
+      0.5016666666666667,
+      0.9833333333333333,
+      0.65
+    ],
+    "id": "T026"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--131-_jpg.rf.49682626b3ae361c00d4792e42e13e1a.jpg",
+    "label": "train/labels/Table--131-_jpg.rf.49682626b3ae361c00d4792e42e13e1a.txt",
+    "bbox": [
+      0.5,
+      0.5245833333333333,
+      0.545,
+      0.6941666666666667
+    ],
+    "id": "T027"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--132-_jpg.rf.8d9a8bbde5b53ce8963ec7d7c10c77e6.jpg",
+    "label": "train/labels/Table--132-_jpg.rf.8d9a8bbde5b53ce8963ec7d7c10c77e6.txt",
+    "bbox": [
+      0.5058333333333334,
+      0.49291666666666667,
+      0.8516666666666667,
+      0.4175
+    ],
+    "id": "T028"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--133-_jpg.rf.b287a1f43ed81065235ddd5d1af46209.jpg",
+    "label": "train/labels/Table--133-_jpg.rf.b287a1f43ed81065235ddd5d1af46209.txt",
+    "bbox": [
+      0.49375,
+      0.5179166666666667,
+      0.9791666666666666,
+      0.6258333333333334
+    ],
+    "id": "T029"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--135-_jpg.rf.ff7a7d04c78eeb689015ae46cd8df69c.jpg",
+    "label": "train/labels/Table--135-_jpg.rf.ff7a7d04c78eeb689015ae46cd8df69c.txt",
+    "bbox": [
+      0.5120833333333333,
+      0.5058333333333334,
+      0.8641666666666666,
+      0.525
+    ],
+    "id": "T030"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--136-_jpg.rf.804283d74c16d4d5f69f4ea240358fcf.jpg",
+    "label": "train/labels/Table--136-_jpg.rf.804283d74c16d4d5f69f4ea240358fcf.txt",
+    "bbox": [
+      0.5020833333333333,
+      0.5729166666666666,
+      0.9375,
+      0.8241666666666667
+    ],
+    "id": "T031"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--137-_jpg.rf.57ae67df1eb7ca8325fc27607a5554b0.jpg",
+    "label": "train/labels/Table--137-_jpg.rf.57ae67df1eb7ca8325fc27607a5554b0.txt",
+    "bbox": [
+      0.4970833333333333,
+      0.5754166666666667,
+      0.9391666666666667,
+      0.6591666666666667
+    ],
+    "id": "T032"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--138-_jpg.rf.a0142d1c3ba66208abc068eeb2c8312f.jpg",
+    "label": "train/labels/Table--138-_jpg.rf.a0142d1c3ba66208abc068eeb2c8312f.txt",
+    "bbox": [
+      0.5016666666666667,
+      0.5208333333333334,
+      0.995,
+      0.6983333333333334
+    ],
+    "id": "T033"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--139-_jpg.rf.73aa51f67bcbc9772dd5315b67bb0f4c.jpg",
+    "label": "train/labels/Table--139-_jpg.rf.73aa51f67bcbc9772dd5315b67bb0f4c.txt",
+    "bbox": [
+      0.4995833333333333,
+      0.5725,
+      0.8091666666666667,
+      0.6433333333333333
+    ],
+    "id": "T034"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--14-_jpg.rf.c32785a40a52efd6faf735e48439558b.jpg",
+    "label": "train/labels/Table--14-_jpg.rf.c32785a40a52efd6faf735e48439558b.txt",
+    "bbox": [
+      0.50125,
+      0.505,
+      0.9541666666666667,
+      0.7883333333333333
+    ],
+    "id": "T035"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--140-_jpg.rf.e7adb43bc5ded9fc9528e2a9d9001967.jpg",
+    "label": "train/labels/Table--140-_jpg.rf.e7adb43bc5ded9fc9528e2a9d9001967.txt",
+    "bbox": [
+      0.49541666666666667,
+      0.5316666666666666,
+      0.8608333333333333,
+      0.5316666666666666
+    ],
+    "id": "T036"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--141-_jpg.rf.8ef25de084be2f8ac6447dc2746a0306.jpg",
+    "label": "train/labels/Table--141-_jpg.rf.8ef25de084be2f8ac6447dc2746a0306.txt",
+    "bbox": [
+      0.49625,
+      0.4975,
+      0.9925,
+      0.86
+    ],
+    "id": "T037"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--142-_jpg.rf.9afededdfc9164713bd9b04b7753d909.jpg",
+    "label": "train/labels/Table--142-_jpg.rf.9afededdfc9164713bd9b04b7753d909.txt",
+    "bbox": [
+      0.5008333333333334,
+      0.5166666666666667,
+      0.9466666666666667,
+      0.4683333333333333
+    ],
+    "id": "T038"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--143-_jpg.rf.1ce8ec13f240de93c57df4d206cdfb15.jpg",
+    "label": "train/labels/Table--143-_jpg.rf.1ce8ec13f240de93c57df4d206cdfb15.txt",
+    "bbox": [
+      0.49833333333333335,
+      0.54875,
+      0.7633333333333333,
+      0.49416666666666664
+    ],
+    "id": "T039"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--144-_jpg.rf.a0d02c609cbbf4c0c429ec69bcf41ddf.jpg",
+    "label": "train/labels/Table--144-_jpg.rf.a0d02c609cbbf4c0c429ec69bcf41ddf.txt",
+    "bbox": [
+      0.5120833333333333,
+      0.5225,
+      0.7825,
+      0.6383333333333333
+    ],
+    "id": "T040"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--145-_jpg.rf.1927052d45232949481edf2ac96ebe0e.jpg",
+    "label": "train/labels/Table--145-_jpg.rf.1927052d45232949481edf2ac96ebe0e.txt",
+    "bbox": [
+      0.49833333333333335,
+      0.59125,
+      0.8783333333333333,
+      0.5058333333333334
+    ],
+    "id": "T041"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--146-_jpg.rf.cc9bd45a860334eaae28a0da0633aaab.jpg",
+    "label": "train/labels/Table--146-_jpg.rf.cc9bd45a860334eaae28a0da0633aaab.txt",
+    "bbox": [
+      0.5083333333333333,
+      0.47208333333333335,
+      0.88,
+      0.7575
+    ],
+    "id": "T042"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--148-_jpg.rf.219641ad5bf79aac451527e0c9a26f30.jpg",
+    "label": "train/labels/Table--148-_jpg.rf.219641ad5bf79aac451527e0c9a26f30.txt",
+    "bbox": [
+      0.50125,
+      0.5395833333333333,
+      0.9458333333333333,
+      0.5758333333333333
+    ],
+    "id": "T043"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--149-_jpg.rf.b4c286bc8334135bbf9221d83ee9ed96.jpg",
+    "label": "train/labels/Table--149-_jpg.rf.b4c286bc8334135bbf9221d83ee9ed96.txt",
+    "bbox": [
+      0.5220833333333333,
+      0.5704166666666667,
+      0.8075,
+      0.5941666666666666
+    ],
+    "id": "T044"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--150-_jpg.rf.3621c3ca85341400005e986bb4a8ddbf.jpg",
+    "label": "train/labels/Table--150-_jpg.rf.3621c3ca85341400005e986bb4a8ddbf.txt",
+    "bbox": [
+      0.515,
+      0.54875,
+      0.945,
+      0.5425
+    ],
+    "id": "T045"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--151-_jpg.rf.aaa4ef5cdb2a6bef3e16921f42e1c613.jpg",
+    "label": "train/labels/Table--151-_jpg.rf.aaa4ef5cdb2a6bef3e16921f42e1c613.txt",
+    "bbox": [
+      0.49375,
+      0.58,
+      0.9208333333333333,
+      0.5283333333333333
+    ],
+    "id": "T046"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--152-_jpg.rf.36566303ebfe1e902bbc8944747ced75.jpg",
+    "label": "train/labels/Table--152-_jpg.rf.36566303ebfe1e902bbc8944747ced75.txt",
+    "bbox": [
+      0.5075,
+      0.57125,
+      0.7033333333333334,
+      0.6258333333333334
+    ],
+    "id": "T047"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--153-_jpg.rf.0e3cabafb733d9092702c9c79c8233f0.jpg",
+    "label": "train/labels/Table--153-_jpg.rf.0e3cabafb733d9092702c9c79c8233f0.txt",
+    "bbox": [
+      0.49291666666666667,
+      0.4970833333333333,
+      0.9708333333333333,
+      0.5408333333333334
+    ],
+    "id": "T048"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--154-_jpg.rf.67264c7a7b156dd01c44e5e35de6cbe9.jpg",
+    "label": "train/labels/Table--154-_jpg.rf.67264c7a7b156dd01c44e5e35de6cbe9.txt",
+    "bbox": [
+      0.49875,
+      0.515,
+      0.8425,
+      0.595
+    ],
+    "id": "T049"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--155-_jpg.rf.d78ae1ceadfa8ba0684f9f9e3649c8c3.jpg",
+    "label": "train/labels/Table--155-_jpg.rf.d78ae1ceadfa8ba0684f9f9e3649c8c3.txt",
+    "bbox": [
+      0.49625,
+      0.5066666666666667,
+      0.9141666666666667,
+      0.645
+    ],
+    "id": "T050"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--156-_jpg.rf.744f79848418246cb6d40cc9df2f7236.jpg",
+    "label": "train/labels/Table--156-_jpg.rf.744f79848418246cb6d40cc9df2f7236.txt",
+    "bbox": [
+      0.49666666666666665,
+      0.5429166666666667,
+      0.9333333333333333,
+      0.6158333333333333
+    ],
+    "id": "T051"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--158-_jpg.rf.d2327d07bd935d377eeac2ab02928fb2.jpg",
+    "label": "train/labels/Table--158-_jpg.rf.d2327d07bd935d377eeac2ab02928fb2.txt",
+    "bbox": [
+      0.49083333333333334,
+      0.63375,
+      0.9733333333333334,
+      0.5208333333333334
+    ],
+    "id": "T052"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--162-_jpg.rf.9e5aea52661e6ced41f3c60c24adbf1a.jpg",
+    "label": "train/labels/Table--162-_jpg.rf.9e5aea52661e6ced41f3c60c24adbf1a.txt",
+    "bbox": [
+      0.49666666666666665,
+      0.5054166666666666,
+      0.985,
+      0.5575
+    ],
+    "id": "T053"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--164-_jpg.rf.6447ce4b7135f6180494b762013ab55d.jpg",
+    "label": "train/labels/Table--164-_jpg.rf.6447ce4b7135f6180494b762013ab55d.txt",
+    "bbox": [
+      0.4845833333333333,
+      0.5466666666666666,
+      0.8275,
+      0.8433333333333334
+    ],
+    "id": "T054"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--167-_jpg.rf.9ecb016c5ba8d7d707ef61f6f3bbcbb4.jpg",
+    "label": "train/labels/Table--167-_jpg.rf.9ecb016c5ba8d7d707ef61f6f3bbcbb4.txt",
+    "bbox": [
+      0.48625,
+      0.5070833333333333,
+      0.8125,
+      0.6408333333333334
+    ],
+    "id": "T055"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--168-_jpg.rf.fb789d769fbe42a4b54ebfc7b497ab8b.jpg",
+    "label": "train/labels/Table--168-_jpg.rf.fb789d769fbe42a4b54ebfc7b497ab8b.txt",
+    "bbox": [
+      0.5016666666666667,
+      0.53625,
+      0.93,
+      0.5625
+    ],
+    "id": "T056"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--170-_jpg.rf.ef47ee70fc2ac560c2845e2181421643.jpg",
+    "label": "train/labels/Table--170-_jpg.rf.ef47ee70fc2ac560c2845e2181421643.txt",
+    "bbox": [
+      0.4945833333333333,
+      0.4875,
+      0.9658333333333333,
+      0.5616666666666666
+    ],
+    "id": "T057"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--171-_jpg.rf.ed7e07dfa7ebf5b6c2b2b42d4234de76.jpg",
+    "label": "train/labels/Table--171-_jpg.rf.ed7e07dfa7ebf5b6c2b2b42d4234de76.txt",
+    "bbox": [
+      0.5129166666666667,
+      0.5391666666666667,
+      0.8775,
+      0.49
+    ],
+    "id": "T058"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--172-_jpg.rf.cb32995dfb38cc08629d09fcc1fd02b5.jpg",
+    "label": "train/labels/Table--172-_jpg.rf.cb32995dfb38cc08629d09fcc1fd02b5.txt",
+    "bbox": [
+      0.5016666666666667,
+      0.47791666666666666,
+      0.985,
+      0.6308333333333334
+    ],
+    "id": "T059"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--173-_jpg.rf.232c9aaa415ed6a7ef05b7779e30977f.jpg",
+    "label": "train/labels/Table--173-_jpg.rf.232c9aaa415ed6a7ef05b7779e30977f.txt",
+    "bbox": [
+      0.50375,
+      0.5383333333333333,
+      0.9558333333333333,
+      0.5366666666666666
+    ],
+    "id": "T060"
+  },
+  {
+    "original_split": "train",
+    "class_id": 2,
+    "image": "train/images/Table--179-_jpg.rf.76bc6162fadd4955e00965b4c6c075ff.jpg",
+    "label": "train/labels/Table--179-_jpg.rf.76bc6162fadd4955e00965b4c6c075ff.txt",
+    "bbox": [
+      0.5016666666666667,
+      0.5845833333333333,
+      0.9633333333333334,
+      0.6475
+    ],
+    "id": "T061"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--18-_jpg.rf.de1fe0b6685a402c63d63556bbd8def8.jpg",
+    "label": "valid/labels/Table--18-_jpg.rf.de1fe0b6685a402c63d63556bbd8def8.txt",
+    "bbox": [
+      0.47708333333333336,
+      0.6045833333333334,
+      0.6791666666666667,
+      0.5225
+    ],
+    "id": "T062"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--180-_jpg.rf.2beea02a58d9f0ca24ba3790fe44e810.jpg",
+    "label": "valid/labels/Table--180-_jpg.rf.2beea02a58d9f0ca24ba3790fe44e810.txt",
+    "bbox": [
+      0.4945833333333333,
+      0.5866666666666667,
+      0.9375,
+      0.49666666666666665
+    ],
+    "id": "T063"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--181-_jpg.rf.315654282d6245f2e892427d3bb0697b.jpg",
+    "label": "valid/labels/Table--181-_jpg.rf.315654282d6245f2e892427d3bb0697b.txt",
+    "bbox": [
+      0.49916666666666665,
+      0.5095833333333334,
+      0.9616666666666667,
+      0.6308333333333334
+    ],
+    "id": "T064"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--182-_jpg.rf.3eaea906b3694ee24b1d7b69233d703b.jpg",
+    "label": "valid/labels/Table--182-_jpg.rf.3eaea906b3694ee24b1d7b69233d703b.txt",
+    "bbox": [
+      0.51375,
+      0.5125,
+      0.8091666666666667,
+      0.43
+    ],
+    "id": "T065"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--184-_jpg.rf.480182803bc722f03e5aa3b4b5904884.jpg",
+    "label": "valid/labels/Table--184-_jpg.rf.480182803bc722f03e5aa3b4b5904884.txt",
+    "bbox": [
+      0.4975,
+      0.4891666666666667,
+      0.835,
+      0.795
+    ],
+    "id": "T066"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--185-_jpg.rf.15aee97da43f3620aec70daa8ff7eaa6.jpg",
+    "label": "valid/labels/Table--185-_jpg.rf.15aee97da43f3620aec70daa8ff7eaa6.txt",
+    "bbox": [
+      0.48625,
+      0.5670833333333334,
+      0.7425,
+      0.5025
+    ],
+    "id": "T067"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--186-_jpg.rf.c6d609243f76a2ae493680495ae004a7.jpg",
+    "label": "valid/labels/Table--186-_jpg.rf.c6d609243f76a2ae493680495ae004a7.txt",
+    "bbox": [
+      0.49583333333333335,
+      0.6325,
+      0.9316666666666666,
+      0.685
+    ],
+    "id": "T068"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--188-_jpg.rf.1935dee0c201b9de72fe6ec82f8ccd80.jpg",
+    "label": "valid/labels/Table--188-_jpg.rf.1935dee0c201b9de72fe6ec82f8ccd80.txt",
+    "bbox": [
+      0.4841666666666667,
+      0.49541666666666667,
+      0.8866666666666667,
+      0.6291666666666667
+    ],
+    "id": "T069"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--19-_jpg.rf.23c8556f71e72c8e676c8cc9ba44cc10.jpg",
+    "label": "valid/labels/Table--19-_jpg.rf.23c8556f71e72c8e676c8cc9ba44cc10.txt",
+    "bbox": [
+      0.5141666666666667,
+      0.5383333333333333,
+      0.9133333333333333,
+      0.615
+    ],
+    "id": "T070"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--191-_jpg.rf.2a3afb88ff155e8074843f69f0aad2ed.jpg",
+    "label": "valid/labels/Table--191-_jpg.rf.2a3afb88ff155e8074843f69f0aad2ed.txt",
+    "bbox": [
+      0.49833333333333335,
+      0.5066666666666667,
+      0.9883333333333333,
+      0.5966666666666667
+    ],
+    "id": "T071"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--192-_jpg.rf.a6b4fe25ee1adf9e95e9c122418ea38b.jpg",
+    "label": "valid/labels/Table--192-_jpg.rf.a6b4fe25ee1adf9e95e9c122418ea38b.txt",
+    "bbox": [
+      0.49083333333333334,
+      0.5820833333333333,
+      0.9733333333333334,
+      0.6575
+    ],
+    "id": "T072"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--194-_jpg.rf.575d11723e72356aa9977dd4e50b55ec.jpg",
+    "label": "valid/labels/Table--194-_jpg.rf.575d11723e72356aa9977dd4e50b55ec.txt",
+    "bbox": [
+      0.4979166666666667,
+      0.5833333333333334,
+      0.9075,
+      0.45
+    ],
+    "id": "T073"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--196-_jpg.rf.a63d1539f0f865b2aed6985f9d622864.jpg",
+    "label": "valid/labels/Table--196-_jpg.rf.a63d1539f0f865b2aed6985f9d622864.txt",
+    "bbox": [
+      0.50625,
+      0.50125,
+      0.7608333333333334,
+      0.6775
+    ],
+    "id": "T074"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--199-_jpg.rf.1a432f5c2fc524a75ef94a4928797e11.jpg",
+    "label": "valid/labels/Table--199-_jpg.rf.1a432f5c2fc524a75ef94a4928797e11.txt",
+    "bbox": [
+      0.5066666666666667,
+      0.5520833333333334,
+      0.905,
+      0.44916666666666666
+    ],
+    "id": "T075"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--2-_jpg.rf.981a58a9a5c45321aa6f93a6131abffe.jpg",
+    "label": "valid/labels/Table--2-_jpg.rf.981a58a9a5c45321aa6f93a6131abffe.txt",
+    "bbox": [
+      0.5033333333333333,
+      0.5391666666666667,
+      0.7833333333333333,
+      0.4866666666666667
+    ],
+    "id": "T076"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--200-_jpg.rf.deae631e8cabd7bac97bd91865501566.jpg",
+    "label": "valid/labels/Table--200-_jpg.rf.deae631e8cabd7bac97bd91865501566.txt",
+    "bbox": [
+      0.5133333333333333,
+      0.4995833333333333,
+      0.915,
+      0.9375
+    ],
+    "id": "T077"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--201-_jpg.rf.78f74a6caed3b7eb36ac961a7156a5b4.jpg",
+    "label": "valid/labels/Table--201-_jpg.rf.78f74a6caed3b7eb36ac961a7156a5b4.txt",
+    "bbox": [
+      0.49625,
+      0.49083333333333334,
+      0.9925,
+      0.835
+    ],
+    "id": "T078"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--209-_jpg.rf.5458dc242f15df1c5190d5804c515b25.jpg",
+    "label": "valid/labels/Table--209-_jpg.rf.5458dc242f15df1c5190d5804c515b25.txt",
+    "bbox": [
+      0.49916666666666665,
+      0.6716666666666666,
+      0.875,
+      0.37333333333333335
+    ],
+    "id": "T079"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--21-_jpg.rf.53949756e794b784c5412c02889f1dda.jpg",
+    "label": "valid/labels/Table--21-_jpg.rf.53949756e794b784c5412c02889f1dda.txt",
+    "bbox": [
+      0.5075,
+      0.4866666666666667,
+      0.8933333333333333,
+      0.7366666666666667
+    ],
+    "id": "T080"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--211-_jpg.rf.7450ff38c73f4e5fe362a5338b6082a3.jpg",
+    "label": "valid/labels/Table--211-_jpg.rf.7450ff38c73f4e5fe362a5338b6082a3.txt",
+    "bbox": [
+      0.4979166666666667,
+      0.5566666666666666,
+      0.9258333333333333,
+      0.645
+    ],
+    "id": "T081"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--212-_jpg.rf.fec90d99e0f8725820b2dd24d06aa54d.jpg",
+    "label": "valid/labels/Table--212-_jpg.rf.fec90d99e0f8725820b2dd24d06aa54d.txt",
+    "bbox": [
+      0.49541666666666667,
+      0.5504166666666667,
+      0.9908333333333333,
+      0.7058333333333333
+    ],
+    "id": "T082"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--213-_jpg.rf.28697992a4ffabbaa5607adb7ca9abb0.jpg",
+    "label": "valid/labels/Table--213-_jpg.rf.28697992a4ffabbaa5607adb7ca9abb0.txt",
+    "bbox": [
+      0.50125,
+      0.5354166666666667,
+      0.8941666666666667,
+      0.8791666666666667
+    ],
+    "id": "T083"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--214-_jpg.rf.4fa28fae0bbb0988ceb4c2b238c41883.jpg",
+    "label": "valid/labels/Table--214-_jpg.rf.4fa28fae0bbb0988ceb4c2b238c41883.txt",
+    "bbox": [
+      0.49583333333333335,
+      0.5070833333333333,
+      0.935,
+      0.7225
+    ],
+    "id": "T084"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--215-_jpg.rf.78f3f95cccc143bb081825e6aca7c321.jpg",
+    "label": "valid/labels/Table--215-_jpg.rf.78f3f95cccc143bb081825e6aca7c321.txt",
+    "bbox": [
+      0.50125,
+      0.4870833333333333,
+      0.9875,
+      0.8241666666666667
+    ],
+    "id": "T085"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--216-_jpg.rf.73613b7e76e6a36752806e165bdbb222.jpg",
+    "label": "valid/labels/Table--216-_jpg.rf.73613b7e76e6a36752806e165bdbb222.txt",
+    "bbox": [
+      0.4825,
+      0.5004166666666666,
+      0.89,
+      0.8941666666666667
+    ],
+    "id": "T086"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--217-_jpg.rf.3aa8272e09dbdc719ff6c358dcfdcdb3.jpg",
+    "label": "valid/labels/Table--217-_jpg.rf.3aa8272e09dbdc719ff6c358dcfdcdb3.txt",
+    "bbox": [
+      0.5158333333333334,
+      0.55375,
+      0.9133333333333333,
+      0.8791666666666667
+    ],
+    "id": "T087"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--218-_jpg.rf.3cba103eb9962fce24cba4b85fcf29fe.jpg",
+    "label": "valid/labels/Table--218-_jpg.rf.3cba103eb9962fce24cba4b85fcf29fe.txt",
+    "bbox": [
+      0.51,
+      0.585,
+      0.82,
+      0.7833333333333333
+    ],
+    "id": "T088"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--219-_jpg.rf.91d15e87707420451b0f7980f83f072b.jpg",
+    "label": "valid/labels/Table--219-_jpg.rf.91d15e87707420451b0f7980f83f072b.txt",
+    "bbox": [
+      0.5020833333333333,
+      0.5004166666666666,
+      0.8775,
+      0.5791666666666667
+    ],
+    "id": "T089"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--22-_jpg.rf.e48027f8c5cf59fd2248efa2ff8e0cd2.jpg",
+    "label": "valid/labels/Table--22-_jpg.rf.e48027f8c5cf59fd2248efa2ff8e0cd2.txt",
+    "bbox": [
+      0.49916666666666665,
+      0.5145833333333333,
+      0.975,
+      0.7741666666666667
+    ],
+    "id": "T090"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--220-_jpg.rf.f72728ef4e862d0cc9ba09b900040967.jpg",
+    "label": "valid/labels/Table--220-_jpg.rf.f72728ef4e862d0cc9ba09b900040967.txt",
+    "bbox": [
+      0.4979166666666667,
+      0.5083333333333333,
+      0.7741666666666667,
+      0.6
+    ],
+    "id": "T091"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--221-_jpg.rf.b2da630ee87060973b9040c06316e730.jpg",
+    "label": "valid/labels/Table--221-_jpg.rf.b2da630ee87060973b9040c06316e730.txt",
+    "bbox": [
+      0.5241666666666667,
+      0.50875,
+      0.86,
+      0.6225
+    ],
+    "id": "T092"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--222-_jpg.rf.9fb865675b51f57b19a54070ad604875.jpg",
+    "label": "valid/labels/Table--222-_jpg.rf.9fb865675b51f57b19a54070ad604875.txt",
+    "bbox": [
+      0.5079166666666667,
+      0.5108333333333334,
+      0.8408333333333333,
+      0.6333333333333333
+    ],
+    "id": "T093"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--224-_jpg.rf.ae5c5c279d5d1f6bccf6263073e13591.jpg",
+    "label": "valid/labels/Table--224-_jpg.rf.ae5c5c279d5d1f6bccf6263073e13591.txt",
+    "bbox": [
+      0.5320833333333334,
+      0.5725,
+      0.8908333333333334,
+      0.71
+    ],
+    "id": "T094"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--226-_jpg.rf.98a156d9f2395eb518ad891b453c4973.jpg",
+    "label": "valid/labels/Table--226-_jpg.rf.98a156d9f2395eb518ad891b453c4973.txt",
+    "bbox": [
+      0.5154166666666666,
+      0.48541666666666666,
+      0.8425,
+      0.7025
+    ],
+    "id": "T095"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--227-_jpg.rf.93b24d647d44c191cb76bd9705e47be5.jpg",
+    "label": "valid/labels/Table--227-_jpg.rf.93b24d647d44c191cb76bd9705e47be5.txt",
+    "bbox": [
+      0.5075,
+      0.51625,
+      0.8883333333333333,
+      0.5225
+    ],
+    "id": "T096"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--228-_jpg.rf.2a98705305bd7bae40d156c33f6d6a36.jpg",
+    "label": "valid/labels/Table--228-_jpg.rf.2a98705305bd7bae40d156c33f6d6a36.txt",
+    "bbox": [
+      0.5,
+      0.69,
+      0.8783333333333333,
+      0.56
+    ],
+    "id": "T097"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--229-_jpg.rf.f984296bbeff7a2c1bdbe4d8174242bf.jpg",
+    "label": "valid/labels/Table--229-_jpg.rf.f984296bbeff7a2c1bdbe4d8174242bf.txt",
+    "bbox": [
+      0.5166666666666667,
+      0.6058333333333333,
+      0.8633333333333333,
+      0.6433333333333333
+    ],
+    "id": "T098"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--23-_jpg.rf.0c64fd189cb61edb0bcf0d38bd5512fe.jpg",
+    "label": "valid/labels/Table--23-_jpg.rf.0c64fd189cb61edb0bcf0d38bd5512fe.txt",
+    "bbox": [
+      0.50875,
+      0.5083333333333333,
+      0.9241666666666667,
+      0.7333333333333333
+    ],
+    "id": "T099"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--230-_jpg.rf.8cc5f022fdaf1aaed0419f78131c48de.jpg",
+    "label": "valid/labels/Table--230-_jpg.rf.8cc5f022fdaf1aaed0419f78131c48de.txt",
+    "bbox": [
+      0.5604166666666667,
+      0.5633333333333334,
+      0.8208333333333333,
+      0.595
+    ],
+    "id": "T100"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--231-_jpg.rf.1e653a37603a0e56c0b258653fbb8144.jpg",
+    "label": "valid/labels/Table--231-_jpg.rf.1e653a37603a0e56c0b258653fbb8144.txt",
+    "bbox": [
+      0.49833333333333335,
+      0.5945833333333334,
+      0.8216666666666667,
+      0.6358333333333334
+    ],
+    "id": "T101"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--232-_jpg.rf.edd9d6722c5152ca22345b58c2dcef2c.jpg",
+    "label": "valid/labels/Table--232-_jpg.rf.edd9d6722c5152ca22345b58c2dcef2c.txt",
+    "bbox": [
+      0.5529166666666666,
+      0.6158333333333333,
+      0.6208333333333333,
+      0.45166666666666666
+    ],
+    "id": "T102"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--233-_jpg.rf.0448818a6f6d886f6efa141f68abd07c.jpg",
+    "label": "valid/labels/Table--233-_jpg.rf.0448818a6f6d886f6efa141f68abd07c.txt",
+    "bbox": [
+      0.6029166666666667,
+      0.6133333333333333,
+      0.6175,
+      0.49833333333333335
+    ],
+    "id": "T103"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--234-_jpg.rf.83fcb00d2f191c617bf96734b792f8cf.jpg",
+    "label": "valid/labels/Table--234-_jpg.rf.83fcb00d2f191c617bf96734b792f8cf.txt",
+    "bbox": [
+      0.5241666666666667,
+      0.50875,
+      0.815,
+      0.48583333333333334
+    ],
+    "id": "T104"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--235-_jpg.rf.bc0f6caf6c0dc0f0abe29d08413c5a6d.jpg",
+    "label": "valid/labels/Table--235-_jpg.rf.bc0f6caf6c0dc0f0abe29d08413c5a6d.txt",
+    "bbox": [
+      0.52875,
+      0.5245833333333333,
+      0.7508333333333334,
+      0.49083333333333334
+    ],
+    "id": "T105"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--236-_jpg.rf.a3e5f22ccdec078832197479f7f5367c.jpg",
+    "label": "valid/labels/Table--236-_jpg.rf.a3e5f22ccdec078832197479f7f5367c.txt",
+    "bbox": [
+      0.5029166666666667,
+      0.5966666666666667,
+      0.8308333333333333,
+      0.595
+    ],
+    "id": "T106"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--237-_jpg.rf.4eb1dc7bd250f00158b003a85ecee9c2.jpg",
+    "label": "valid/labels/Table--237-_jpg.rf.4eb1dc7bd250f00158b003a85ecee9c2.txt",
+    "bbox": [
+      0.43333333333333335,
+      0.57625,
+      0.7966666666666666,
+      0.6491666666666667
+    ],
+    "id": "T107"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--238-_jpg.rf.da9b4fa923b1c50cf2681765f3779b30.jpg",
+    "label": "valid/labels/Table--238-_jpg.rf.da9b4fa923b1c50cf2681765f3779b30.txt",
+    "bbox": [
+      0.4554166666666667,
+      0.5191666666666667,
+      0.8041666666666667,
+      0.5983333333333334
+    ],
+    "id": "T108"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--239-_jpg.rf.8ced15f537442a0f2940f3922c927a39.jpg",
+    "label": "valid/labels/Table--239-_jpg.rf.8ced15f537442a0f2940f3922c927a39.txt",
+    "bbox": [
+      0.47333333333333333,
+      0.5233333333333333,
+      0.8433333333333334,
+      0.5516666666666666
+    ],
+    "id": "T109"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--24-_jpg.rf.bc9d4a3f04131cf3f1c3c51ba397a2e6.jpg",
+    "label": "valid/labels/Table--24-_jpg.rf.bc9d4a3f04131cf3f1c3c51ba397a2e6.txt",
+    "bbox": [
+      0.4945833333333333,
+      0.5266666666666666,
+      0.8775,
+      0.7
+    ],
+    "id": "T110"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--240-_jpg.rf.22d9e48116dfe203b97beec445243595.jpg",
+    "label": "valid/labels/Table--240-_jpg.rf.22d9e48116dfe203b97beec445243595.txt",
+    "bbox": [
+      0.48333333333333334,
+      0.5895833333333333,
+      0.9366666666666666,
+      0.6241666666666666
+    ],
+    "id": "T111"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--241-_jpg.rf.9f1ecbc32dd5ada0182f59372726dcf1.jpg",
+    "label": "valid/labels/Table--241-_jpg.rf.9f1ecbc32dd5ada0182f59372726dcf1.txt",
+    "bbox": [
+      0.495,
+      0.5716666666666667,
+      0.65,
+      0.44
+    ],
+    "id": "T112"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--243-_jpg.rf.1c2107145de91fec9eab4021c925a51a.jpg",
+    "label": "valid/labels/Table--243-_jpg.rf.1c2107145de91fec9eab4021c925a51a.txt",
+    "bbox": [
+      0.49041666666666667,
+      0.6154166666666666,
+      0.9408333333333333,
+      0.6908333333333333
+    ],
+    "id": "T113"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--247-_jpg.rf.9231b5489d29710e75b94378cf3cfe77.jpg",
+    "label": "valid/labels/Table--247-_jpg.rf.9231b5489d29710e75b94378cf3cfe77.txt",
+    "bbox": [
+      0.52125,
+      0.6870833333333334,
+      0.5941666666666666,
+      0.4575
+    ],
+    "id": "T114"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--248-_jpg.rf.01790bcfcb0f8f7a1d7a5f99ef342c26.jpg",
+    "label": "valid/labels/Table--248-_jpg.rf.01790bcfcb0f8f7a1d7a5f99ef342c26.txt",
+    "bbox": [
+      0.5391666666666667,
+      0.7270833333333333,
+      0.63,
+      0.3858333333333333
+    ],
+    "id": "T115"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--249-_jpg.rf.7dc22437fd105f9daf711872e60f04ee.jpg",
+    "label": "valid/labels/Table--249-_jpg.rf.7dc22437fd105f9daf711872e60f04ee.txt",
+    "bbox": [
+      0.55375,
+      0.7225,
+      0.5958333333333333,
+      0.435
+    ],
+    "id": "T116"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--25-_jpg.rf.44e5a31e9a8a30b4a5845e9575ad7b10.jpg",
+    "label": "valid/labels/Table--25-_jpg.rf.44e5a31e9a8a30b4a5845e9575ad7b10.txt",
+    "bbox": [
+      0.4895833333333333,
+      0.47625,
+      0.9725,
+      0.6608333333333334
+    ],
+    "id": "T117"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--250-_jpg.rf.f8faf57189486f2c1044076ff50d045c.jpg",
+    "label": "valid/labels/Table--250-_jpg.rf.f8faf57189486f2c1044076ff50d045c.txt",
+    "bbox": [
+      0.49833333333333335,
+      0.7154166666666667,
+      0.655,
+      0.4241666666666667
+    ],
+    "id": "T118"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--251-_jpg.rf.1aaeac7143c43a959d6702eb0fff6010.jpg",
+    "label": "valid/labels/Table--251-_jpg.rf.1aaeac7143c43a959d6702eb0fff6010.txt",
+    "bbox": [
+      0.4525,
+      0.6204166666666666,
+      0.7833333333333333,
+      0.5941666666666666
+    ],
+    "id": "T119"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--255-_jpg.rf.9edd469ae42a697c95cbac54885fb29d.jpg",
+    "label": "valid/labels/Table--255-_jpg.rf.9edd469ae42a697c95cbac54885fb29d.txt",
+    "bbox": [
+      0.5258333333333334,
+      0.6133333333333333,
+      0.8483333333333334,
+      0.605
+    ],
+    "id": "T120"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--256-_jpg.rf.7a600c2dfd5a37132c00a9c45b62dfe4.jpg",
+    "label": "valid/labels/Table--256-_jpg.rf.7a600c2dfd5a37132c00a9c45b62dfe4.txt",
+    "bbox": [
+      0.46875,
+      0.6416666666666667,
+      0.8808333333333334,
+      0.715
+    ],
+    "id": "T121"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--257-_jpg.rf.fbea48cb7d3329229a1122018ad93a5d.jpg",
+    "label": "valid/labels/Table--257-_jpg.rf.fbea48cb7d3329229a1122018ad93a5d.txt",
+    "bbox": [
+      0.5558333333333333,
+      0.7208333333333333,
+      0.6633333333333333,
+      0.4683333333333333
+    ],
+    "id": "T122"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--259-_jpg.rf.8f735eb320bb389aa24c67c305269c15.jpg",
+    "label": "valid/labels/Table--259-_jpg.rf.8f735eb320bb389aa24c67c305269c15.txt",
+    "bbox": [
+      0.48125,
+      0.635,
+      0.8591666666666666,
+      0.6833333333333333
+    ],
+    "id": "T123"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--26-_jpg.rf.2d22fc04178b2f6110b7e189e1312b1b.jpg",
+    "label": "valid/labels/Table--26-_jpg.rf.2d22fc04178b2f6110b7e189e1312b1b.txt",
+    "bbox": [
+      0.4975,
+      0.6058333333333333,
+      0.935,
+      0.595
+    ],
+    "id": "T124"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--260-_jpg.rf.63257fa33e7f56e0f585b57714acf531.jpg",
+    "label": "valid/labels/Table--260-_jpg.rf.63257fa33e7f56e0f585b57714acf531.txt",
+    "bbox": [
+      0.5029166666666667,
+      0.6154166666666666,
+      0.9425,
+      0.7091666666666666
+    ],
+    "id": "T125"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--262-_jpg.rf.8940580aac9bae0bed7850977475c8d8.jpg",
+    "label": "valid/labels/Table--262-_jpg.rf.8940580aac9bae0bed7850977475c8d8.txt",
+    "bbox": [
+      0.475,
+      0.605,
+      0.8433333333333334,
+      0.6216666666666667
+    ],
+    "id": "T126"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--263-_jpg.rf.6a1dedf450909fa1c1be3d731ca314b2.jpg",
+    "label": "valid/labels/Table--263-_jpg.rf.6a1dedf450909fa1c1be3d731ca314b2.txt",
+    "bbox": [
+      0.43333333333333335,
+      0.57,
+      0.8183333333333334,
+      0.5333333333333333
+    ],
+    "id": "T127"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--264-_jpg.rf.eec349c069e8b23fd2885dcfecbb1345.jpg",
+    "label": "valid/labels/Table--264-_jpg.rf.eec349c069e8b23fd2885dcfecbb1345.txt",
+    "bbox": [
+      0.4370833333333333,
+      0.605,
+      0.8525,
+      0.6183333333333333
+    ],
+    "id": "T128"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--265-_jpg.rf.fc57ddd2a3defa1d528ef7491e974061.jpg",
+    "label": "valid/labels/Table--265-_jpg.rf.fc57ddd2a3defa1d528ef7491e974061.txt",
+    "bbox": [
+      0.48041666666666666,
+      0.59875,
+      0.7758333333333334,
+      0.5091666666666667
+    ],
+    "id": "T129"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--266-_jpg.rf.3303879f4c3d23416cb79bd29c5967b9.jpg",
+    "label": "valid/labels/Table--266-_jpg.rf.3303879f4c3d23416cb79bd29c5967b9.txt",
+    "bbox": [
+      0.45208333333333334,
+      0.5733333333333334,
+      0.8558333333333333,
+      0.5783333333333334
+    ],
+    "id": "T130"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--267-_jpg.rf.ecb63c4c87cf991ebed28942fb723892.jpg",
+    "label": "valid/labels/Table--267-_jpg.rf.ecb63c4c87cf991ebed28942fb723892.txt",
+    "bbox": [
+      0.48791666666666667,
+      0.5845833333333333,
+      0.8725,
+      0.6525
+    ],
+    "id": "T131"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--268-_jpg.rf.b5b4c4321db8da40c468c30a27685369.jpg",
+    "label": "valid/labels/Table--268-_jpg.rf.b5b4c4321db8da40c468c30a27685369.txt",
+    "bbox": [
+      0.4775,
+      0.5116666666666667,
+      0.715,
+      0.5133333333333333
+    ],
+    "id": "T132"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--269-_jpg.rf.cb636bee4686992ce7a389a7b71adf4a.jpg",
+    "label": "valid/labels/Table--269-_jpg.rf.cb636bee4686992ce7a389a7b71adf4a.txt",
+    "bbox": [
+      0.5083333333333333,
+      0.5466666666666666,
+      0.91,
+      0.44666666666666666
+    ],
+    "id": "T133"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--27-_jpg.rf.80b252b51e9062e062bc55b543518aa0.jpg",
+    "label": "valid/labels/Table--27-_jpg.rf.80b252b51e9062e062bc55b543518aa0.txt",
+    "bbox": [
+      0.50375,
+      0.555,
+      0.9325,
+      0.74
+    ],
+    "id": "T134"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--28-_jpg.rf.4ad1e6e7ef9a3a1ddccde5da48bcb012.jpg",
+    "label": "valid/labels/Table--28-_jpg.rf.4ad1e6e7ef9a3a1ddccde5da48bcb012.txt",
+    "bbox": [
+      0.4970833333333333,
+      0.4875,
+      0.9908333333333333,
+      0.5866666666666667
+    ],
+    "id": "T135"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--29-_jpg.rf.f63c958e9ac9b1bf9ae346df09c29f85.jpg",
+    "label": "valid/labels/Table--29-_jpg.rf.f63c958e9ac9b1bf9ae346df09c29f85.txt",
+    "bbox": [
+      0.495,
+      0.4891666666666667,
+      0.9166666666666666,
+      0.595
+    ],
+    "id": "T136"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--30-_jpg.rf.0c4d78b7e91eeb08af75d17e29c02a97.jpg",
+    "label": "valid/labels/Table--30-_jpg.rf.0c4d78b7e91eeb08af75d17e29c02a97.txt",
+    "bbox": [
+      0.5008333333333334,
+      0.57875,
+      0.8616666666666667,
+      0.7225
+    ],
+    "id": "T137"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--32-_jpg.rf.52b3e783fc15b9d0d869aae168104307.jpg",
+    "label": "valid/labels/Table--32-_jpg.rf.52b3e783fc15b9d0d869aae168104307.txt",
+    "bbox": [
+      0.5070833333333333,
+      0.5366666666666666,
+      0.9841666666666666,
+      0.785
+    ],
+    "id": "T138"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--33-_jpg.rf.82ef5f9628b016a1bbaeea0386906a8e.jpg",
+    "label": "valid/labels/Table--33-_jpg.rf.82ef5f9628b016a1bbaeea0386906a8e.txt",
+    "bbox": [
+      0.5129166666666667,
+      0.5075,
+      0.8775,
+      0.85
+    ],
+    "id": "T139"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--35-_jpg.rf.fa6b51e531f70ff697798276110ae664.jpg",
+    "label": "valid/labels/Table--35-_jpg.rf.fa6b51e531f70ff697798276110ae664.txt",
+    "bbox": [
+      0.5316666666666666,
+      0.5383333333333333,
+      0.8216666666666667,
+      0.6066666666666667
+    ],
+    "id": "T140"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--38-_jpg.rf.551d2d67e2f899c2fc6589f4ab43f22a.jpg",
+    "label": "valid/labels/Table--38-_jpg.rf.551d2d67e2f899c2fc6589f4ab43f22a.txt",
+    "bbox": [
+      0.48791666666666667,
+      0.555,
+      0.8608333333333333,
+      0.5733333333333334
+    ],
+    "id": "T141"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--39-_jpg.rf.3758fb4a174cd1eede64ca00b2946664.jpg",
+    "label": "valid/labels/Table--39-_jpg.rf.3758fb4a174cd1eede64ca00b2946664.txt",
+    "bbox": [
+      0.5095833333333334,
+      0.5020833333333333,
+      0.8775,
+      0.4125
+    ],
+    "id": "T142"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--4-_jpg.rf.1a491a6fa0b2897fd71632716ca807f6.jpg",
+    "label": "valid/labels/Table--4-_jpg.rf.1a491a6fa0b2897fd71632716ca807f6.txt",
+    "bbox": [
+      0.5120833333333333,
+      0.6279166666666667,
+      0.6875,
+      0.5691666666666667
+    ],
+    "id": "T143"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--40-_jpg.rf.eb32824cf28f260f80b638846378ee0e.jpg",
+    "label": "valid/labels/Table--40-_jpg.rf.eb32824cf28f260f80b638846378ee0e.txt",
+    "bbox": [
+      0.49541666666666667,
+      0.5975,
+      0.8791666666666667,
+      0.5216666666666666
+    ],
+    "id": "T144"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--41-_jpg.rf.6e92dc658bf7348b2d49cbcefd0112d4.jpg",
+    "label": "valid/labels/Table--41-_jpg.rf.6e92dc658bf7348b2d49cbcefd0112d4.txt",
+    "bbox": [
+      0.49916666666666665,
+      0.5104166666666666,
+      0.9083333333333333,
+      0.7191666666666666
+    ],
+    "id": "T145"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--42-_jpg.rf.a5d8fa95306e0d62ef8e6c8c94ab2e09.jpg",
+    "label": "valid/labels/Table--42-_jpg.rf.a5d8fa95306e0d62ef8e6c8c94ab2e09.txt",
+    "bbox": [
+      0.50875,
+      0.5566666666666666,
+      0.8908333333333334,
+      0.8066666666666666
+    ],
+    "id": "T146"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--43-_jpg.rf.e13029be5f7d9169849acb8c3671f196.jpg",
+    "label": "valid/labels/Table--43-_jpg.rf.e13029be5f7d9169849acb8c3671f196.txt",
+    "bbox": [
+      0.5058333333333334,
+      0.5079166666666667,
+      0.6633333333333333,
+      0.5091666666666667
+    ],
+    "id": "T147"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--44-_jpg.rf.30d7935582cb3cd5445afad7c8bfd484.jpg",
+    "label": "valid/labels/Table--44-_jpg.rf.30d7935582cb3cd5445afad7c8bfd484.txt",
+    "bbox": [
+      0.49916666666666665,
+      0.5258333333333334,
+      0.975,
+      0.6016666666666667
+    ],
+    "id": "T148"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--45-_jpg.rf.c59796f176bcb3b495d200f47f76e179.jpg",
+    "label": "valid/labels/Table--45-_jpg.rf.c59796f176bcb3b495d200f47f76e179.txt",
+    "bbox": [
+      0.5020833333333333,
+      0.5070833333333333,
+      0.9291666666666667,
+      0.5075
+    ],
+    "id": "T149"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--46-_jpg.rf.240442ba69f29c0da962e345134a3a9d.jpg",
+    "label": "valid/labels/Table--46-_jpg.rf.240442ba69f29c0da962e345134a3a9d.txt",
+    "bbox": [
+      0.50375,
+      0.5508333333333333,
+      0.9375,
+      0.8816666666666667
+    ],
+    "id": "T150"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--47-_jpg.rf.bc77da66d1caa52e35022d62ef0077ca.jpg",
+    "label": "valid/labels/Table--47-_jpg.rf.bc77da66d1caa52e35022d62ef0077ca.txt",
+    "bbox": [
+      0.48791666666666667,
+      0.51875,
+      0.8691666666666666,
+      0.4841666666666667
+    ],
+    "id": "T151"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--48-_jpg.rf.28f1df28fb6d567e18128dee7cf9f76d.jpg",
+    "label": "valid/labels/Table--48-_jpg.rf.28f1df28fb6d567e18128dee7cf9f76d.txt",
+    "bbox": [
+      0.49166666666666664,
+      0.47458333333333336,
+      0.9833333333333333,
+      0.6391666666666667
+    ],
+    "id": "T152"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--49-_jpg.rf.2f4d9bdd8f32087073536dbca35711bb.jpg",
+    "label": "valid/labels/Table--49-_jpg.rf.2f4d9bdd8f32087073536dbca35711bb.txt",
+    "bbox": [
+      0.5041666666666667,
+      0.50375,
+      0.985,
+      0.6458333333333334
+    ],
+    "id": "T153"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--50-_jpg.rf.3bc656007bc8f4fa35f345df05bc1993.jpg",
+    "label": "valid/labels/Table--50-_jpg.rf.3bc656007bc8f4fa35f345df05bc1993.txt",
+    "bbox": [
+      0.49583333333333335,
+      0.5983333333333334,
+      0.95,
+      0.6866666666666666
+    ],
+    "id": "T154"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--51-_jpg.rf.b4b15b0694a820b848d8d884babcd633.jpg",
+    "label": "valid/labels/Table--51-_jpg.rf.b4b15b0694a820b848d8d884babcd633.txt",
+    "bbox": [
+      0.49916666666666665,
+      0.5783333333333334,
+      0.835,
+      0.4866666666666667
+    ],
+    "id": "T155"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--52-_jpg.rf.89872f6670b7b1b517e1a58440cba650.jpg",
+    "label": "valid/labels/Table--52-_jpg.rf.89872f6670b7b1b517e1a58440cba650.txt",
+    "bbox": [
+      0.49541666666666667,
+      0.49916666666666665,
+      0.9691666666666666,
+      0.7633333333333333
+    ],
+    "id": "T156"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--53-_jpg.rf.9b1eb162c7e5cb7a10fb5c74fffba9b2.jpg",
+    "label": "valid/labels/Table--53-_jpg.rf.9b1eb162c7e5cb7a10fb5c74fffba9b2.txt",
+    "bbox": [
+      0.49541666666666667,
+      0.4920833333333333,
+      0.9825,
+      0.5191666666666667
+    ],
+    "id": "T157"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--54-_jpg.rf.42b81178795954c38f517039e7294613.jpg",
+    "label": "valid/labels/Table--54-_jpg.rf.42b81178795954c38f517039e7294613.txt",
+    "bbox": [
+      0.4995833333333333,
+      0.5716666666666667,
+      0.9575,
+      0.6783333333333333
+    ],
+    "id": "T158"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--55-_jpg.rf.8f36a6eb29f370ecb60ba21b138509f6.jpg",
+    "label": "valid/labels/Table--55-_jpg.rf.8f36a6eb29f370ecb60ba21b138509f6.txt",
+    "bbox": [
+      0.49583333333333335,
+      0.4775,
+      0.9683333333333334,
+      0.7333333333333333
+    ],
+    "id": "T159"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--56-_jpg.rf.a4a92435cca1efd621a7581aec872862.jpg",
+    "label": "valid/labels/Table--56-_jpg.rf.a4a92435cca1efd621a7581aec872862.txt",
+    "bbox": [
+      0.49916666666666665,
+      0.5879166666666666,
+      0.935,
+      0.7558333333333334
+    ],
+    "id": "T160"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--57-_jpg.rf.16e39d5b6748e1117b57faad484c3074.jpg",
+    "label": "valid/labels/Table--57-_jpg.rf.16e39d5b6748e1117b57faad484c3074.txt",
+    "bbox": [
+      0.5008333333333334,
+      0.5129166666666667,
+      0.9316666666666666,
+      0.7725
+    ],
+    "id": "T161"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--58-_jpg.rf.62b4f187c224a505fe5a2e6791517eae.jpg",
+    "label": "valid/labels/Table--58-_jpg.rf.62b4f187c224a505fe5a2e6791517eae.txt",
+    "bbox": [
+      0.4925,
+      0.5170833333333333,
+      0.87,
+      0.4608333333333333
+    ],
+    "id": "T162"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--59-_jpg.rf.10a82677a96068b2d9a8b93609093f96.jpg",
+    "label": "valid/labels/Table--59-_jpg.rf.10a82677a96068b2d9a8b93609093f96.txt",
+    "bbox": [
+      0.5008333333333334,
+      0.4816666666666667,
+      0.9616666666666667,
+      0.72
+    ],
+    "id": "T163"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--6-_jpg.rf.38d48017ee489dc3693642e2a7f11b2b.jpg",
+    "label": "valid/labels/Table--6-_jpg.rf.38d48017ee489dc3693642e2a7f11b2b.txt",
+    "bbox": [
+      0.47125,
+      0.5475,
+      0.8275,
+      0.745
+    ],
+    "id": "T164"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--60-_jpg.rf.f1aa3ced253c6133cc3ea0fecdeb1714.jpg",
+    "label": "valid/labels/Table--60-_jpg.rf.f1aa3ced253c6133cc3ea0fecdeb1714.txt",
+    "bbox": [
+      0.4816666666666667,
+      0.5570833333333334,
+      0.9066666666666666,
+      0.6925
+    ],
+    "id": "T165"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--61-_jpg.rf.cdf0126304f07c0afcec19bf2f6c89e1.jpg",
+    "label": "valid/labels/Table--61-_jpg.rf.cdf0126304f07c0afcec19bf2f6c89e1.txt",
+    "bbox": [
+      0.5133333333333333,
+      0.62625,
+      0.9666666666666667,
+      0.6641666666666667
+    ],
+    "id": "T166"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--62-_jpg.rf.6feb3071ca1f202dac1161dec9fa8f17.jpg",
+    "label": "valid/labels/Table--62-_jpg.rf.6feb3071ca1f202dac1161dec9fa8f17.txt",
+    "bbox": [
+      0.49166666666666664,
+      0.5454166666666667,
+      0.9316666666666666,
+      0.6441666666666667
+    ],
+    "id": "T167"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--63-_jpg.rf.b0ed1586bbd3f1d97698611f31771bf1.jpg",
+    "label": "valid/labels/Table--63-_jpg.rf.b0ed1586bbd3f1d97698611f31771bf1.txt",
+    "bbox": [
+      0.4945833333333333,
+      0.48583333333333334,
+      0.9408333333333333,
+      0.5016666666666667
+    ],
+    "id": "T168"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--64-_jpg.rf.b1dafa95c3b9c1966134cb61b8838a36.jpg",
+    "label": "valid/labels/Table--64-_jpg.rf.b1dafa95c3b9c1966134cb61b8838a36.txt",
+    "bbox": [
+      0.5129166666666667,
+      0.555,
+      0.9625,
+      0.8033333333333333
+    ],
+    "id": "T169"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--65-_jpg.rf.608b0d5d03f6732e2ad36f1e655401d9.jpg",
+    "label": "valid/labels/Table--65-_jpg.rf.608b0d5d03f6732e2ad36f1e655401d9.txt",
+    "bbox": [
+      0.5070833333333333,
+      0.49833333333333335,
+      0.9408333333333333,
+      0.5383333333333333
+    ],
+    "id": "T170"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--66-_jpg.rf.af7410c593eded3e87e902a367d8de15.jpg",
+    "label": "valid/labels/Table--66-_jpg.rf.af7410c593eded3e87e902a367d8de15.txt",
+    "bbox": [
+      0.50125,
+      0.6308333333333334,
+      0.8908333333333334,
+      0.575
+    ],
+    "id": "T171"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--67-_jpg.rf.4f24544617aead96405a57efb350933a.jpg",
+    "label": "valid/labels/Table--67-_jpg.rf.4f24544617aead96405a57efb350933a.txt",
+    "bbox": [
+      0.495,
+      0.4995833333333333,
+      0.9166666666666666,
+      0.7375
+    ],
+    "id": "T172"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--68-_jpg.rf.6bae2abe75ad845d9301ffa49b41dc9c.jpg",
+    "label": "valid/labels/Table--68-_jpg.rf.6bae2abe75ad845d9301ffa49b41dc9c.txt",
+    "bbox": [
+      0.5020833333333333,
+      0.5779166666666666,
+      0.9808333333333333,
+      0.8025
+    ],
+    "id": "T173"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--69-_jpg.rf.666f305b21716fcd666dc8827b6fa8b2.jpg",
+    "label": "valid/labels/Table--69-_jpg.rf.666f305b21716fcd666dc8827b6fa8b2.txt",
+    "bbox": [
+      0.4945833333333333,
+      0.5954166666666667,
+      0.9675,
+      0.6558333333333334
+    ],
+    "id": "T174"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--7-_jpg.rf.af5143c0731175035e28c4ce457ad4b0.jpg",
+    "label": "valid/labels/Table--7-_jpg.rf.af5143c0731175035e28c4ce457ad4b0.txt",
+    "bbox": [
+      0.5016666666666667,
+      0.5004166666666666,
+      0.995,
+      0.9975
+    ],
+    "id": "T175"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--70-_jpg.rf.5b21c2d2e69217cef720e703fee05144.jpg",
+    "label": "valid/labels/Table--70-_jpg.rf.5b21c2d2e69217cef720e703fee05144.txt",
+    "bbox": [
+      0.50125,
+      0.49916666666666665,
+      0.9425,
+      0.8783333333333333
+    ],
+    "id": "T176"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--71-_jpg.rf.6c9b9897120bf5ddde01d4fd9a7d7167.jpg",
+    "label": "valid/labels/Table--71-_jpg.rf.6c9b9897120bf5ddde01d4fd9a7d7167.txt",
+    "bbox": [
+      0.5016666666666667,
+      0.49291666666666667,
+      0.9816666666666667,
+      0.6275
+    ],
+    "id": "T177"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--72-_jpg.rf.f3a619d33e4de2207a325b1b45b2bec0.jpg",
+    "label": "valid/labels/Table--72-_jpg.rf.f3a619d33e4de2207a325b1b45b2bec0.txt",
+    "bbox": [
+      0.50125,
+      0.5045833333333334,
+      0.9958333333333333,
+      0.5108333333333334
+    ],
+    "id": "T178"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--73-_jpg.rf.980e1f12b3c91ec4f5711fd061dcc1c1.jpg",
+    "label": "valid/labels/Table--73-_jpg.rf.980e1f12b3c91ec4f5711fd061dcc1c1.txt",
+    "bbox": [
+      0.5004166666666666,
+      0.4066666666666667,
+      0.9225,
+      0.7266666666666667
+    ],
+    "id": "T179"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--74-_jpg.rf.8ddad754358e7a118e22acac91cef535.jpg",
+    "label": "valid/labels/Table--74-_jpg.rf.8ddad754358e7a118e22acac91cef535.txt",
+    "bbox": [
+      0.5020833333333333,
+      0.5541666666666667,
+      0.9591666666666666,
+      0.5616666666666666
+    ],
+    "id": "T180"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--75-_jpg.rf.b0473bdca57f6e1d58e9ce92076017a3.jpg",
+    "label": "valid/labels/Table--75-_jpg.rf.b0473bdca57f6e1d58e9ce92076017a3.txt",
+    "bbox": [
+      0.4975,
+      0.48833333333333334,
+      0.9683333333333334,
+      0.7933333333333333
+    ],
+    "id": "T181"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--76-_jpg.rf.92ec0dec795496e44167b1c2cb18ff9c.jpg",
+    "label": "valid/labels/Table--76-_jpg.rf.92ec0dec795496e44167b1c2cb18ff9c.txt",
+    "bbox": [
+      0.5004166666666666,
+      0.49166666666666664,
+      0.9975,
+      0.4816666666666667
+    ],
+    "id": "T182"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--77-_jpg.rf.2739e9140562ab00b8dfeaaee81453f7.jpg",
+    "label": "valid/labels/Table--77-_jpg.rf.2739e9140562ab00b8dfeaaee81453f7.txt",
+    "bbox": [
+      0.5016666666666667,
+      0.505,
+      0.97,
+      0.66
+    ],
+    "id": "T183"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--78-_jpg.rf.d455a2664ec2f7ce3febaa687ac3948f.jpg",
+    "label": "valid/labels/Table--78-_jpg.rf.d455a2664ec2f7ce3febaa687ac3948f.txt",
+    "bbox": [
+      0.515,
+      0.5908333333333333,
+      0.8216666666666667,
+      0.48333333333333334
+    ],
+    "id": "T184"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--79-_jpg.rf.729a470cefefa16626fbeeb44a136520.jpg",
+    "label": "valid/labels/Table--79-_jpg.rf.729a470cefefa16626fbeeb44a136520.txt",
+    "bbox": [
+      0.5,
+      0.5104166666666666,
+      0.955,
+      0.8958333333333334
+    ],
+    "id": "T185"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--8-_jpg.rf.a0d8fd860bc91e0a16988b40b23d98e4.jpg",
+    "label": "valid/labels/Table--8-_jpg.rf.a0d8fd860bc91e0a16988b40b23d98e4.txt",
+    "bbox": [
+      0.50375,
+      0.54125,
+      0.9225,
+      0.6058333333333333
+    ],
+    "id": "T186"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--86-_jpg.rf.42353de1dbca89e56ead4d601ada950b.jpg",
+    "label": "valid/labels/Table--86-_jpg.rf.42353de1dbca89e56ead4d601ada950b.txt",
+    "bbox": [
+      0.5,
+      0.5716666666666667,
+      0.97,
+      0.615
+    ],
+    "id": "T187"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--87-_jpg.rf.61cff63fbebafdeeb81b305ea68afdd4.jpg",
+    "label": "valid/labels/Table--87-_jpg.rf.61cff63fbebafdeeb81b305ea68afdd4.txt",
+    "bbox": [
+      0.49666666666666665,
+      0.5104166666666666,
+      0.97,
+      0.6675
+    ],
+    "id": "T188"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--89-_jpg.rf.cb4b63c64ecc19cdff92dadf7301d735.jpg",
+    "label": "valid/labels/Table--89-_jpg.rf.cb4b63c64ecc19cdff92dadf7301d735.txt",
+    "bbox": [
+      0.5129166666666667,
+      0.52625,
+      0.7475,
+      0.8491666666666666
+    ],
+    "id": "T189"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--9-_jpg.rf.e5d21a7c08a7f6e6ed5eff10692575d7.jpg",
+    "label": "valid/labels/Table--9-_jpg.rf.e5d21a7c08a7f6e6ed5eff10692575d7.txt",
+    "bbox": [
+      0.5029166666666667,
+      0.5004166666666666,
+      0.9491666666666667,
+      0.7391666666666666
+    ],
+    "id": "T190"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--91-_jpg.rf.ff9421bd4ef48e003b26005d933b1c38.jpg",
+    "label": "valid/labels/Table--91-_jpg.rf.ff9421bd4ef48e003b26005d933b1c38.txt",
+    "bbox": [
+      0.49541666666666667,
+      0.5208333333333334,
+      0.9575,
+      0.58
+    ],
+    "id": "T191"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--92-_jpg.rf.70978df07b6ecde253b080517f5e01e0.jpg",
+    "label": "valid/labels/Table--92-_jpg.rf.70978df07b6ecde253b080517f5e01e0.txt",
+    "bbox": [
+      0.5375,
+      0.5508333333333333,
+      0.7516666666666667,
+      0.7816666666666666
+    ],
+    "id": "T192"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--93-_jpg.rf.fdcaafaae16a8c4cdfbc5106f1973281.jpg",
+    "label": "valid/labels/Table--93-_jpg.rf.fdcaafaae16a8c4cdfbc5106f1973281.txt",
+    "bbox": [
+      0.515,
+      0.5545833333333333,
+      0.8183333333333334,
+      0.6741666666666667
+    ],
+    "id": "T193"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--94-_jpg.rf.f663f27bb6e8d8a15d48ab0cad3954e7.jpg",
+    "label": "valid/labels/Table--94-_jpg.rf.f663f27bb6e8d8a15d48ab0cad3954e7.txt",
+    "bbox": [
+      0.49583333333333335,
+      0.6316666666666667,
+      0.65,
+      0.48333333333333334
+    ],
+    "id": "T194"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--95-_jpg.rf.8fec73da04c0e5b1e6c705becbfb616f.jpg",
+    "label": "valid/labels/Table--95-_jpg.rf.8fec73da04c0e5b1e6c705becbfb616f.txt",
+    "bbox": [
+      0.4925,
+      0.6245833333333334,
+      0.685,
+      0.4725
+    ],
+    "id": "T195"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--96-_jpg.rf.09f6e2940e40ea05db9099b6c5c848ac.jpg",
+    "label": "valid/labels/Table--96-_jpg.rf.09f6e2940e40ea05db9099b6c5c848ac.txt",
+    "bbox": [
+      0.47708333333333336,
+      0.6329166666666667,
+      0.6541666666666667,
+      0.4741666666666667
+    ],
+    "id": "T196"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--97-_jpg.rf.d167a2d7728bbb53500f14b237fbeab7.jpg",
+    "label": "valid/labels/Table--97-_jpg.rf.d167a2d7728bbb53500f14b237fbeab7.txt",
+    "bbox": [
+      0.49833333333333335,
+      0.6333333333333333,
+      0.6816666666666666,
+      0.4866666666666667
+    ],
+    "id": "T197"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--98-_jpg.rf.2ce96b7218dec65d6f3ad771591c5477.jpg",
+    "label": "valid/labels/Table--98-_jpg.rf.2ce96b7218dec65d6f3ad771591c5477.txt",
+    "bbox": [
+      0.5529166666666666,
+      0.5816666666666667,
+      0.6541666666666667,
+      0.45
+    ],
+    "id": "T198"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 2,
+    "image": "valid/images/Table--99-_jpg.rf.759d40069735c5d0ad6913f8183768be.jpg",
+    "label": "valid/labels/Table--99-_jpg.rf.759d40069735c5d0ad6913f8183768be.txt",
+    "bbox": [
+      0.5379166666666667,
+      0.58375,
+      0.6908333333333333,
+      0.47583333333333333
+    ],
+    "id": "T199"
+  }
+]

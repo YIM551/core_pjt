@@ -1,0 +1,1761 @@
+{
+  "reviewer": "assistant_visual_review_chairs",
+  "scope": "all Chair images via contact sheets; original images where indicated",
+  "decisions": [
+    {
+      "id": "C000",
+      "status": "quarantine",
+      "reason": "Additional recognizable chair is partially visible at the left edge but has no label; only the main chair is annotated.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_wood_patterned_seat"
+    },
+    {
+      "id": "C001",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C002",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C003",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C004",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C005",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C006",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C007",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C008",
+      "status": "quarantine",
+      "reason": "A cropped carved furniture/chair leg remains at the lower-left edge without a label; conservative exclusion because the single-target condition is ambiguous.",
+      "full_size_review": true,
+      "group_id": "chair_brown_room_wood_patterned_seat"
+    },
+    {
+      "id": "C009",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C010",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C011",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_cream_ornate_armchair"
+    },
+    {
+      "id": "C012",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_cream_ornate_armchair"
+    },
+    {
+      "id": "C013",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_cream_ornate_armchair"
+    },
+    {
+      "id": "C014",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_cream_ornate_armchair"
+    },
+    {
+      "id": "C015",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_cream_ornate_armchair"
+    },
+    {
+      "id": "C016",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C017",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_cream_ornate_armchair"
+    },
+    {
+      "id": "C018",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_cream_ornate_armchair"
+    },
+    {
+      "id": "C019",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_cream_ornate_armchair"
+    },
+    {
+      "id": "C020",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_cream_ornate_armchair"
+    },
+    {
+      "id": "C021",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_cream_ornate_armchair"
+    },
+    {
+      "id": "C022",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_cream_ornate_armchair"
+    },
+    {
+      "id": "C023",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_cream_ornate_armchair"
+    },
+    {
+      "id": "C024",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_cream_ornate_armchair"
+    },
+    {
+      "id": "C025",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C026",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_cream_ornate_armchair"
+    },
+    {
+      "id": "C027",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_cream_ornate_armchair"
+    },
+    {
+      "id": "C028",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C029",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C030",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C031",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C032",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C033",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_wood_crossback_checked_seat"
+    },
+    {
+      "id": "C034",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C035",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C036",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C037",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C038",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C039",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C040",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C041",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C042",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C043",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_yellow_armless"
+    },
+    {
+      "id": "C044",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C045",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C046",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_blue_office"
+    },
+    {
+      "id": "C047",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C047"
+    },
+    {
+      "id": "C048",
+      "status": "quarantine",
+      "reason": "Additional recognizable chair is partially visible at the left edge but has no label; only the main chair is annotated.",
+      "full_size_review": true,
+      "group_id": "chair_brown_room_wood_patterned_seat"
+    },
+    {
+      "id": "C049",
+      "status": "accept",
+      "reason": "Contact-sheet review, supplemented by full-size inspection: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": true,
+      "group_id": "chair_brown_room_black_carved_cane"
+    },
+    {
+      "id": "C050",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_blue_office"
+    },
+    {
+      "id": "C051",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C051"
+    },
+    {
+      "id": "C052",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_blue_office"
+    },
+    {
+      "id": "C053",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_wood_crossback_checked_seat"
+    },
+    {
+      "id": "C054",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_yellow_armless"
+    },
+    {
+      "id": "C055",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_blue_office"
+    },
+    {
+      "id": "C056",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C056"
+    },
+    {
+      "id": "C057",
+      "status": "accept",
+      "reason": "Contact-sheet review, supplemented by full-size inspection: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": true,
+      "group_id": "C057"
+    },
+    {
+      "id": "C058",
+      "status": "accept",
+      "reason": "Contact-sheet review, supplemented by full-size inspection: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": true,
+      "group_id": "chair_brown_room_wood_crossback_checked_seat"
+    },
+    {
+      "id": "C059",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_blue_office"
+    },
+    {
+      "id": "C060",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C060"
+    },
+    {
+      "id": "C061",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_product_red_vertical_slats_duplicate"
+    },
+    {
+      "id": "C062",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C062"
+    },
+    {
+      "id": "C063",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C063"
+    },
+    {
+      "id": "C064",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_brown_slatted_armchair"
+    },
+    {
+      "id": "C065",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C065"
+    },
+    {
+      "id": "C066",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C066"
+    },
+    {
+      "id": "C067",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C067"
+    },
+    {
+      "id": "C068",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C068"
+    },
+    {
+      "id": "C069",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C069"
+    },
+    {
+      "id": "C070",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C070"
+    },
+    {
+      "id": "C071",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C071"
+    },
+    {
+      "id": "C072",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C072"
+    },
+    {
+      "id": "C073",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_product_woven_plastic_color_variants"
+    },
+    {
+      "id": "C074",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_product_woven_plastic_color_variants"
+    },
+    {
+      "id": "C075",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_black_carved_cane"
+    },
+    {
+      "id": "C076",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_blue_office"
+    },
+    {
+      "id": "C077",
+      "status": "quarantine",
+      "reason": "Additional recognizable chair is partially visible at the left edge but has no label; only the main chair is annotated.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_wood_patterned_seat"
+    },
+    {
+      "id": "C078",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C078"
+    },
+    {
+      "id": "C079",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C079"
+    },
+    {
+      "id": "C080",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_black_carved_cane"
+    },
+    {
+      "id": "C081",
+      "status": "quarantine",
+      "reason": "Additional black sofa or sofa section is visible in the left background without a label; only the foreground chair is annotated.",
+      "full_size_review": true,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C082",
+      "status": "quarantine",
+      "reason": "Additional black sofa or sofa section is visible in the left background without a label; only the foreground chair is annotated.",
+      "full_size_review": true,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C083",
+      "status": "quarantine",
+      "reason": "Additional black sofa or sofa section is visible in the left background without a label; only the foreground chair is annotated.",
+      "full_size_review": true,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C084",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C085",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C086",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C087",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C088",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C089",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C090",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C091",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C092",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C093",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C093"
+    },
+    {
+      "id": "C094",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C095",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C096",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C097",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C098",
+      "status": "quarantine",
+      "reason": "A narrow cropped black furniture fragment is visible at the left edge; the adjacent series shows sofas there. Quarantine for unresolved missing-target ambiguity.",
+      "full_size_review": true,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C099",
+      "status": "quarantine",
+      "reason": "Additional black sofa or sofa section is visible in the left background without a label; only the foreground chair is annotated.",
+      "full_size_review": false,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C100",
+      "status": "quarantine",
+      "reason": "Additional black sofa or sofa section is visible in the left background without a label; only the foreground chair is annotated.",
+      "full_size_review": false,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C101",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C101"
+    },
+    {
+      "id": "C102",
+      "status": "quarantine",
+      "reason": "Additional black sofa or sofa section is visible in the left background without a label; only the foreground chair is annotated.",
+      "full_size_review": false,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C103",
+      "status": "quarantine",
+      "reason": "Additional black sofa or sofa section is visible in the left background without a label; only the foreground chair is annotated.",
+      "full_size_review": false,
+      "group_id": "chair_blue_pillar_black_floral_seat"
+    },
+    {
+      "id": "C104",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_bright_room_red_wood_slats"
+    },
+    {
+      "id": "C105",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_bright_room_red_wood_slats"
+    },
+    {
+      "id": "C106",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_bright_room_red_wood_slats"
+    },
+    {
+      "id": "C107",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C107"
+    },
+    {
+      "id": "C108",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C108"
+    },
+    {
+      "id": "C109",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C109"
+    },
+    {
+      "id": "C110",
+      "status": "quarantine",
+      "reason": "Several additional chairs are visible in the garden background without labels; only the foreground chair is annotated.",
+      "full_size_review": false,
+      "group_id": "C110"
+    },
+    {
+      "id": "C111",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C111"
+    },
+    {
+      "id": "C112",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C112"
+    },
+    {
+      "id": "C113",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C113"
+    },
+    {
+      "id": "C114",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C114"
+    },
+    {
+      "id": "C115",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C115"
+    },
+    {
+      "id": "C116",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C116"
+    },
+    {
+      "id": "C117",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C117"
+    },
+    {
+      "id": "C118",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C118"
+    },
+    {
+      "id": "C119",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C119"
+    },
+    {
+      "id": "C120",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C120"
+    },
+    {
+      "id": "C121",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C121"
+    },
+    {
+      "id": "C122",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C122"
+    },
+    {
+      "id": "C123",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C123"
+    },
+    {
+      "id": "C124",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C124"
+    },
+    {
+      "id": "C125",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_product_metal_ladder_round_seat_variants"
+    },
+    {
+      "id": "C126",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_product_metal_ladder_round_seat_variants"
+    },
+    {
+      "id": "C127",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C127"
+    },
+    {
+      "id": "C128",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C128"
+    },
+    {
+      "id": "C129",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C129"
+    },
+    {
+      "id": "C130",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_brown_slatted_armchair"
+    },
+    {
+      "id": "C131",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_brown_slatted_armchair"
+    },
+    {
+      "id": "C132",
+      "status": "quarantine",
+      "reason": "Additional recognizable chair is partially visible at the left edge but has no label; only the main chair is annotated.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_wood_patterned_seat"
+    },
+    {
+      "id": "C133",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_brown_slatted_armchair"
+    },
+    {
+      "id": "C134",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_blue_office"
+    },
+    {
+      "id": "C135",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_brown_slatted_armchair"
+    },
+    {
+      "id": "C136",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_wood_crossback_checked_seat"
+    },
+    {
+      "id": "C137",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_yellow_armless"
+    },
+    {
+      "id": "C138",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C139",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_black_carved_cane"
+    },
+    {
+      "id": "C140",
+      "status": "quarantine",
+      "reason": "Additional recognizable chair is partially visible at the left edge but has no label; only the main chair is annotated.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_wood_patterned_seat"
+    },
+    {
+      "id": "C141",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C142",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C143",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C144",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C145",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C146",
+      "status": "accept",
+      "reason": "Contact-sheet review, supplemented by full-size inspection: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": true,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C147",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C148",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C149",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C150",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C151",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_blue_office"
+    },
+    {
+      "id": "C152",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C153",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C154",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C155",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C156",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C157",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C158",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C159",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C160",
+      "status": "quarantine",
+      "reason": "The open doorway at the left contains partly occluded furniture under clothing; an additional target chair/table cannot be confidently excluded at full size.",
+      "full_size_review": true,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C161",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C162",
+      "status": "quarantine",
+      "reason": "Furniture and a possible chair/table are partly visible through the left doorway; target-class identity is unresolved, so exclude from the conservative single-target subset.",
+      "full_size_review": true,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C163",
+      "status": "quarantine",
+      "reason": "Furniture and a possible chair/table are partly visible through the left doorway; target-class identity is unresolved, so exclude from the conservative single-target subset.",
+      "full_size_review": true,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C164",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C165",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C166",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C167",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C168",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C169",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C170",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C171",
+      "status": "quarantine",
+      "reason": "A small brown furniture-like fragment is cropped at the lower-right edge; unresolved additional-target ambiguity warrants conservative quarantine.",
+      "full_size_review": true,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C172",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C173",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C174",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C175",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_ornate_armchair"
+    },
+    {
+      "id": "C176",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C177",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C178",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C179",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C180",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C181",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_brown_room_yellow_armless"
+    },
+    {
+      "id": "C182",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C183",
+      "status": "quarantine",
+      "reason": "A brown rounded furniture-like piece enters the bottom edge outside the sole chair box; possible second-chair arm/back remains unresolved at full size.",
+      "full_size_review": true,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C184",
+      "status": "quarantine",
+      "reason": "A brown rounded furniture-like piece enters the bottom edge outside the sole chair box; possible second-chair arm/back remains unresolved at full size.",
+      "full_size_review": true,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C185",
+      "status": "quarantine",
+      "reason": "A brown rounded furniture-like piece enters the bottom edge outside the sole chair box; possible second-chair arm/back remains unresolved at full size.",
+      "full_size_review": true,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C186",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C187",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C188",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C189",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C190",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_blue_office"
+    },
+    {
+      "id": "C191",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C192",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C193",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C194",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C195",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C196",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C197",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C198",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C199",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C200",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_white_room_maroon_armless"
+    },
+    {
+      "id": "C201",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_product_plastic_armless_front_variants"
+    },
+    {
+      "id": "C202",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_product_plastic_armless_front_variants"
+    },
+    {
+      "id": "C203",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C203"
+    },
+    {
+      "id": "C204",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C204"
+    },
+    {
+      "id": "C205",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C205"
+    },
+    {
+      "id": "C206",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C206"
+    },
+    {
+      "id": "C207",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C207"
+    },
+    {
+      "id": "C208",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C208"
+    },
+    {
+      "id": "C209",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C209"
+    },
+    {
+      "id": "C210",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C210"
+    },
+    {
+      "id": "C211",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C211"
+    },
+    {
+      "id": "C212",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_product_red_vertical_slats_duplicate"
+    },
+    {
+      "id": "C213",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C213"
+    },
+    {
+      "id": "C214",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C214"
+    },
+    {
+      "id": "C215",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C215"
+    },
+    {
+      "id": "C216",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C216"
+    },
+    {
+      "id": "C217",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C217"
+    },
+    {
+      "id": "C218",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C218"
+    },
+    {
+      "id": "C219",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C219"
+    },
+    {
+      "id": "C220",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C220"
+    },
+    {
+      "id": "C221",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C221"
+    },
+    {
+      "id": "C222",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_product_tan_framed_upholstery_duplicate"
+    },
+    {
+      "id": "C223",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C223"
+    },
+    {
+      "id": "C224",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_product_tan_framed_upholstery_duplicate"
+    },
+    {
+      "id": "C225",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C225"
+    },
+    {
+      "id": "C226",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C226"
+    },
+    {
+      "id": "C227",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C227"
+    },
+    {
+      "id": "C228",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C228"
+    },
+    {
+      "id": "C229",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C229"
+    },
+    {
+      "id": "C230",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C230"
+    },
+    {
+      "id": "C231",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C231"
+    },
+    {
+      "id": "C232",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C232"
+    },
+    {
+      "id": "C233",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C233"
+    },
+    {
+      "id": "C234",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C234"
+    },
+    {
+      "id": "C235",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C235"
+    },
+    {
+      "id": "C236",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C236"
+    },
+    {
+      "id": "C237",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "C237"
+    },
+    {
+      "id": "C238",
+      "status": "quarantine",
+      "reason": "An additional cropped wooden stool/table-like object is visible at the lower-right corner outside the sole chair box; it requires separate class/box review.",
+      "full_size_review": true,
+      "group_id": "chair_backlit_door_gray_woven_armchair"
+    },
+    {
+      "id": "C239",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_backlit_door_brown_slatted_armchair"
+    },
+    {
+      "id": "C240",
+      "status": "accept",
+      "reason": "Contact-sheet review, supplemented by full-size inspection: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": true,
+      "group_id": "chair_backlit_door_gray_woven_armchair"
+    },
+    {
+      "id": "C241",
+      "status": "quarantine",
+      "reason": "An additional cropped wooden stool/table-like object is visible at the lower-right corner outside the sole chair box; it requires separate class/box review.",
+      "full_size_review": true,
+      "group_id": "chair_backlit_door_gray_woven_armchair"
+    },
+    {
+      "id": "C242",
+      "status": "accept",
+      "reason": "Contact-sheet review, supplemented by full-size inspection: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": true,
+      "group_id": "chair_backlit_door_gray_woven_armchair"
+    },
+    {
+      "id": "C243",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_backlit_door_brown_slatted_armchair"
+    },
+    {
+      "id": "C244",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_backlit_door_brown_slatted_armchair"
+    },
+    {
+      "id": "C245",
+      "status": "accept",
+      "reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": false,
+      "group_id": "chair_backlit_door_brown_slatted_armchair"
+    },
+    {
+      "id": "C246",
+      "status": "quarantine",
+      "reason": "A second wooden chair is clearly partly visible along the left edge without a label; only the foreground plastic chair is annotated.",
+      "full_size_review": true,
+      "group_id": "chair_backlit_door_brown_slatted_armchair"
+    },
+    {
+      "id": "C247",
+      "status": "accept",
+      "reason": "Contact-sheet review, supplemented by full-size inspection: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": true,
+      "group_id": "chair_backlit_door_gray_woven_armchair"
+    },
+    {
+      "id": "C248",
+      "status": "accept",
+      "reason": "Contact-sheet review, supplemented by full-size inspection: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+      "full_size_review": true,
+      "group_id": "chair_backlit_door_gray_woven_armchair"
+    }
+  ],
+  "notes": [
+    "All 249 images C000-C248 were visually inspected on all nine contact sheets with original boxes. Full-size images were inspected only where full_size_review is true. This is a conservative visual screen, not proof of complete pixel-level annotation correctness.",
+    "Accept means no clear missing target or gross box/class error was found at the reviewed resolution. Quarantine includes both confirmed missing furniture labels and explicitly stated unresolved edge/doorway ambiguities; these must not all be counted as confirmed annotation errors.",
+    "No clear gross Chair-class mismatch or badly misplaced main-chair box was found among the accepted images. C057 was checked at full size and its apparent short box on the thumbnail actually encompasses the legs. Image-edge truncation of a target was not rejected when the visible extent was reasonably boxed.",
+    "group_id preserves visually repeated object/viewpoint families, including noncontiguous IDs. Product pairs C061/C212 and C222/C224 show repeated product imagery. C073/C074, C125/C126 and C201/C202 are conservatively grouped closely matching product variants. Unrelated or uncertain product identities retain unique IDs; computed duplicate groups may further merge them.",
+    "SCENE_WHITE_TILE_BLACK_SKIRT_BROWN_DOOR: C001,C002,C003,C004,C005,C006,C007,C009,C010,C011,C012,C013,C014,C015,C017,C018,C019,C020,C021,C022,C023,C024,C026,C027,C028,C029,C030,C031,C032,C034,C035,C036,C037,C038,C039,C040,C041,C042,C044,C045,C046,C050,C052,C055,C059,C064,C076,C130,C131,C133,C134,C135,C141,C142,C143,C144,C145,C146,C147,C148,C149,C150,C151,C152,C153,C154,C155,C156,C157,C158,C159,C160,C162,C163,C164,C165,C166,C167,C168,C169,C170,C171,C173,C174,C175,C176,C177,C178,C179,C180,C182,C183,C184,C185,C186,C187,C188,C189,C190,C191,C192,C193,C194,C195,C196,C197,C198,C199,C200. These object families share the same distinctive white glossy tiled floor, black skirting, white wall and brown doors. Merge these families at scene level to avoid background leakage, including cross-class table series when matched.",
+    "SCENE_WHITE_TILE_ADDITIONAL_POSSIBLE_AREA: C104,C105,C106. White glossy floor and black skirting resemble the preceding capture environment, but wardrobe/curtain and wood slat chair make the exact room identity less certain. Conservative scene union is appropriate if site-level separation is desired.",
+    "SCENE_BROWN_WALL_CURTAIN: C000,C008,C016,C025,C033,C043,C048,C049,C053,C054,C058,C075,C077,C080,C132,C136,C137,C138,C139,C140,C161,C172,C181. Repeated furniture photographs share the brown wall, curtain/window, older wooden door and brown tiled floor; group these object families together at scene level.",
+    "SCENE_WHITE_WALL_BLUE_PILLAR_BEIGE_MARBLE: C081,C082,C083,C084,C085,C086,C087,C088,C089,C090,C091,C092,C094,C095,C096,C097,C098,C099,C100,C102,C103. Background black sofas in the quarantined members can match a Sofa family; root has been notified to check cross-class scene linkage.",
+    "SCENE_BACKLIT_GLAZED_DOOR: C238,C239,C240,C241,C242,C243,C244,C245,C246,C247,C248. Gray woven and brown slatted plastic chairs are photographed by the same glazed wooden door and curtain on a glossy tiled floor. Merge both object groups at scene level. The brown slatted chair resembles the white-room brown chair; actual shared object/site identity is plausible but not proven.",
+    "The broad scene groups can be large. Preserve group integrity instead of forcing exact image-level split ratios. Dataset and labels were treated as read-only; this review does not generate replacement annotations or detector pseudo-labels."
+  ]
+}

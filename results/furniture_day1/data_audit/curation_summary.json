@@ -1,0 +1,85 @@
+{
+  "created_at_utc": "2026-10-21T06:55:58.576005+00:00",
+  "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2",
+  "output": "C:/work/core_pjt/datasets/roboflow/furniture/v2_curated_v2",
+  "source_version": "Furniture v2",
+  "derived_version": "v2_curated_v2",
+  "seed": 20261021,
+  "target_ratios": {
+    "train": 0.7,
+    "valid": 0.15,
+    "test": 0.15
+  },
+  "class_names": [
+    "Chair",
+    "Sofa",
+    "Table"
+  ],
+  "accepted_images": 565,
+  "quarantined_images": 124,
+  "classes_by_split": {
+    "train": {
+      "Chair": 156,
+      "Sofa": 113,
+      "Table": 124
+    },
+    "valid": {
+      "Chair": 34,
+      "Sofa": 24,
+      "Table": 27
+    },
+    "test": {
+      "Chair": 34,
+      "Sofa": 24,
+      "Table": 29
+    }
+  },
+  "images_by_split": {
+    "train": 393,
+    "valid": 85,
+    "test": 87
+  },
+  "independent_groups_by_split": {
+    "train": 228,
+    "valid": 37,
+    "test": 38
+  },
+  "source_known_groups_spanning_original_splits": 10,
+  "raw_tree_sha256": "46af11222baca3707ea13a576629f314d3c3c3abe814585fd0e6a326ad0bcd3e",
+  "review_sha256": {
+    "chair_review.json": "751948b6bd6cd23ab912add9901ce3f309e2a2dff538bb13e4d42a63067f5bb1",
+    "sofa_review.json": "daa9ae12ef440a8922f18215cc0daaf9ab174b9987f33b21c8fb819461939a24",
+    "table_review.json": "fb4f60fd9c5ad2641b3258d76ab8058b2b3c7a7da7f9e5efa4a2ed6ca1f959b8"
+  },
+  "image_index_sha256": "6cb96b233f245fa5a89b373de922323092e5e0c9e1dcb5cba47b4dc9ff01f5ea",
+  "script_sha256": {
+    "audit_furniture_structure.py": "39b820636fb6ff7a0307115afcb1d4c1beedb6bafe3434bc3ecadaffecbc8660",
+    "build_furniture_curated.py": "aaf4c7962c1f650ee0379518262a92e840d78ecf0f92d69d91e5b396396f4c2d"
+  },
+  "runtime": {
+    "python": "3.12.10",
+    "ultralytics": "8.4.164",
+    "numpy": "2.5.4",
+    "pillow": "12.3.0",
+    "PyYAML": "6.0.3",
+    "opencv-python": "5.0.0.93"
+  },
+  "scene_groups_sha256": "426aab5267c66e440e484ff41a420e48741141aa6299c074e1e61a380a90dc1c",
+  "review_overrides_sha256": null,
+  "similarity_links_sha256": "520d249b9cc20b39bbb5a14bd1848b9334ce3dfb3609869c56bdfa91892fe19b",
+  "split_manifest_sha256": "91fbacaceece08988cb58742e341980db8d39a4939d3c82dda5df497bacc0b2c",
+  "label_policy": "Conservative assistant visual screening. Accepted boxes are copied unchanged; images with missing/ambiguous targets or problematic boxes are quarantined. No model-generated annotations are treated as ground truth.",
+  "evaluation_scope": "Local exploratory evaluation on a curated mainly-single-target subset, not the original RF100 benchmark and not a complete-room object-counting benchmark. Visual review and perceptual grouping can miss issues; new production claims need independent annotation review and scene data.",
+  "test_policy": "New holdout frozen by split_manifest.json. Source data was visually inspected for QA; do not use derived test predictions or scores for tuning.",
+  "checks": {
+    "original_tree_unchanged": true,
+    "accepted_plus_quarantined_equals_689": true,
+    "all_source_images_reviewed": true,
+    "all_derived_images_and_labels_match_source_hashes": true,
+    "every_class_present_in_every_split": true,
+    "group_overlap_between_splits": [],
+    "known_exact_or_perceptual_links_cross_split": [],
+    "actual_file_hash_overlap_between_splits": [],
+    "actual_decoded_pixel_hash_overlap_between_splits": []
+  }
+}

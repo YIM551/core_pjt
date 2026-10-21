@@ -13,13 +13,13 @@ move 면 **시뮬레이터** 의 로봇이 움직이고, describe 면 장면을 
 웹캠 대신 [Roboflow Furniture v2](https://universe.roboflow.com/roboflow-100/furniture-ngpea/dataset/2)의 YOLOv11 ZIP을 받아 로컬 이미지로 실습했다.
 
 - **완료:** 이미지 689장(train 454 / valid 161 / test 74) 다운로드, 이미지 디코딩·라벨 형식·대응 관계 검증, 로컬 YAML 연결, 기존 1일차 코드로 YOLO 첫 추론.
-- 클래스 번호는 `0: Chair`, `1: Sofa`, `2: Table`이다. SHA-256 기준 동일 이미지 파일 중복은 0개이며, 시각적으로 유사한 이미지까지 검사한 결과는 아니다.
-- 기본 `yolo11n.pt`가 샘플에서 confidence 0.10 / 0.25 / 0.60 기준 각각 5 / 3 / 2개를 예측했다. **이번 실습에서는 Furniture 파인튜닝이나 VLM 추론을 아직 실행하지 않았다.** 기존 데모 학습 가중치는 Furniture 학습 결과가 아니다.
+- 클래스 번호는 `0: Chair`, `1: Sofa`, `2: Table`이다. SHA-256 기준 동일 이미지 파일 중복은 0개다. 이후 수행한 유사 이미지·촬영 그룹 검수 결과는 아래 파생 데이터 기록을 따른다.
+- 기본 `yolo11n.pt`가 샘플에서 confidence 0.10 / 0.25 / 0.60 기준 각각 5 / 3 / 2개를 예측했다. 같은 소파 이미지로 VLM 추론과 PoC 서버의 두 API 응답까지 확인했다. **Furniture 파인튜닝은 아직 실행하지 않았다.** 기존 데모 학습 가중치는 Furniture 학습 결과가 아니다.
 - 출처·버전·라이선스·ZIP 해시는 `datasets/roboflow/furniture/v2/provenance.json`, 데이터 검사와 첫 추론 기록은 `results/furniture_day1/validation.json` · `image_manifest.csv` · `inference.json` · `first_inference.jpg`에 있다.
 
 ### GitHub 백업과 복구
 
-백업 저장소는 **[YIM551/core_pjt](https://github.com/YIM551/core_pjt) (비공개)**이며, 대용량 파일은 **[backup-2026-10-21 릴리스](https://github.com/YIM551/core_pjt/releases/tag/backup-2026-10-21)**에서 함께 관리한다.
+백업 저장소는 **[YIM551/core_pjt](https://github.com/YIM551/core_pjt) (비공개)**다. 원본 데이터·모델·영상은 **[최초 백업 릴리스](https://github.com/YIM551/core_pjt/releases/tag/backup-2026-10-21)**, 최종 학습용 데이터는 **[데이터 정비 완료 백업 릴리스](https://github.com/YIM551/core_pjt/releases/tag/backup-2026-10-21-curated)**에서 관리한다. 후자의 태그는 VLM·PoC 실행 결과와 데이터 검수까지 포함한 코드 시점이다.
 
 | 위치 | 보관 내용 |
 |---|---|
@@ -27,15 +27,18 @@ move 면 **시뮬레이터** 의 로봇이 움직이고, describe 면 장면을 
 | 릴리스 `furniture.v2-release.yolov11.zip` | 공식 Furniture v2 원본 이미지·라벨·설정 |
 | 릴리스 `local-models.zip` | `yolo11n.pt`, 제스처 `.task`, 기존 데모 학습 `.pt` 등 로컬 모델. 프로젝트 상대경로를 유지한 압축 파일 |
 | 릴리스 `project-overview.mp4` | 원래 `설명 영상/코어프로젝트2회차설명영상.mp4` |
+| 새 릴리스 `furniture.v2-curated-v2.zip` | 최종 학습용 이미지·라벨 565쌍, data.yaml, 고정 분할·검수 대기 목록·출처. 프로젝트 상대경로 보존 |
 
 가상환경·캐시·모델 가중치·원본 데이터 이미지/라벨·ZIP·영상·다운로드 과정의 브라우저 화면은 Git에 넣지 않는다. GB 단위 GGUF 모델은 릴리스에도 넣지 않으며, 아래 **2. 모델 다운로드**의 공식 명령으로 다시 받는다. `data.local.yaml`은 PC 경로에 맞춰 다시 생성한다.
 
-새 환경에서는 저장소를 `C:\work\core_pjt`에 복제하고, 아래 **1. 가상환경과 패키지**에 따라 설치한다. 릴리스의 세 파일을 다운로드한 뒤 다음 위치에 복구한다.
+새 환경에서는 저장소를 `C:\work\core_pjt`에 복제하고, 아래 **1. 가상환경과 패키지**에 따라 설치한다. 최초 릴리스의 세 파일과 새 릴리스의 최종 데이터 ZIP을 다운로드한 뒤 다음 위치에 복구한다.
 
 ```powershell
 Expand-Archive -LiteralPath "$env:USERPROFILE\Downloads\furniture.v2-release.yolov11.zip" -DestinationPath "C:\work\core_pjt\datasets\roboflow\furniture\v2" -Force
+Copy-Item -LiteralPath "$env:USERPROFILE\Downloads\furniture.v2-release.yolov11.zip" -Destination "C:\work\core_pjt\datasets\roboflow\furniture\furniture.v2-release.yolov11.zip"
 Expand-Archive -LiteralPath "$env:USERPROFILE\Downloads\local-models.zip" -DestinationPath "C:\work\core_pjt" -Force
 Copy-Item -LiteralPath "$env:USERPROFILE\Downloads\project-overview.mp4" -Destination "C:\work\core_pjt\설명 영상\코어프로젝트2회차설명영상.mp4"
+Expand-Archive -LiteralPath "$env:USERPROFILE\Downloads\furniture.v2-curated-v2.zip" -DestinationPath "C:\work\core_pjt" -Force
 
 & "C:\work\core_pjt\.venv\Scripts\python.exe" "C:\work\core_pjt\scripts\prepare_furniture.py"
 & "C:\work\core_pjt\.venv\Scripts\python.exe" "C:\work\core_pjt\scripts\furniture_first_inference.py"
@@ -43,11 +46,51 @@ Copy-Item -LiteralPath "$env:USERPROFILE\Downloads\project-overview.mp4" -Destin
 
 첫 명령의 ZIP은 `provenance.json`에 기록된 SHA-256으로 확인할 수 있다. `prepare_furniture.py`는 원본을 보존하며 경로 설정과 검증 보고서를 생성한다. `furniture_first_inference.py`는 기존 1일차 추론 함수를 사용해 샘플 결과 이미지와 JSON을 다시 저장한다.
 
+새 ZIP의 크기·SHA-256·이전 릴리스 의존 파일은 `results/backup_manifest_20261021_curated.json`에 기록했다. 압축 파일 1,136개 항목을 로컬 파일과 해시 비교했다. `v2_curated_v1`은 대체된 중간본이므로 이미지 사본 대신 원본 경로와 해시를 담은 매니페스트를 보관한다. PoC의 `server.json`에 있는 PID와 로그는 과거 실행 기록이며, 복구 후에는 서버를 다시 실행해야 한다.
+
+### Furniture 학습용 파생 데이터 준비 완료
+
+공식 원본은 `datasets/roboflow/furniture/v2`에 그대로 보존했다. 원본 ZIP 내부 파일과의 일치, 작업 전후 전체 원본 파일 SHA-256 일치를 확인했다. 689장 모두 박스가 하나씩 있고 파일 누락·깨진 이미지·좌표 범위 오류는 없지만, 추가 가구가 라벨링되지 않은 사진이 있었다. 기존 valid에는 Chair가, test에는 Table이 없으며 동일 가구의 다른 각도가 train/valid에 함께 들어간 사례도 확인했다.
+
+24개의 이미지 모음 화면에서 689장 전체를 시각 검토하고, 애매한 사례를 포함한 125장을 원본 크기로 추가 확인했다. **565장은 채택, 124장은 추가 검수 대기**로 분리했다. 검수 대기에는 확인된 누락 라벨뿐 아니라 잘린 가구·의자/소파 구분의 불확실성도 포함된다. 기존 추론 샘플 `S217`(Sofa--383)도 왼쪽 의자의 라벨이 없어 학습 세트에서 제외했다. 정답 박스를 임의 생성하지 않았으며, 채택한 라벨은 원본 그대로 복사했다.
+
+최종 학습 설정은 **`datasets/roboflow/furniture/v2_curated_v2/data.yaml`** 이다. `v2_curated_v1`은 검수 중간본이며 `SUPERSEDED.json`으로 대체 상태를 기록했다.
+
+| 새 분할 | Chair | Sofa | Table | 이미지 수 |
+|---|---:|---:|---:|---:|
+| train | 156 | 113 | 124 | 393 |
+| valid | 34 | 24 | 27 | 85 |
+| test | 34 | 24 | 29 | 87 |
+
+seed `20261021`, 목표 비율 70/15/15를 사용했다. 반복 가구·제품군, 같은 촬영 공간, 보수적인 유사 이미지 후보를 묶은 뒤 그룹을 쪼개지 않고 클래스별 비율을 맞췄다. 확인한 그룹의 분할 간 겹침과 실제 파일/디코딩 픽셀의 분할 간 동일 해시 중복은 0개다. 모든 클래스가 세 분할에 존재하며 Ultralytics 8.4.164로 565장 전체를 읽고 320×320 입력 텐서로 변환하는 검사도 통과했다.
+
+- `datasets/roboflow/furniture/v2_curated_v2/split_manifest.json`: 원본↔파생 경로, 클래스·촬영 그룹·분할·이미지/라벨 해시. 이후 실험에서 고정할 분할이다.
+- 같은 폴더의 `quarantine.json`: 추가 검수할 원본 이미지와 개별 사유. 원본 파일을 이동하거나 삭제하지 않았다.
+- 같은 폴더의 `derivation.json`: 검수·스크립트 해시, 라이브러리 버전, seed, 분할 정책과 검증 결과. `SOURCE_README.*.txt`에 원본 출처·라이선스 문구도 보존했다.
+- `results/furniture_day1/data_audit`: 원본 해시 목록, 검수용 이미지 모음, 이미지별 검수 결정, 촬영 공간 묶음, 구조 검사 및 로더 검사 기록.
+
+재현 시 기존 파생 디렉터리를 덮어쓰지 않고 새 출력 경로를 지정한다. 검수 JSON과 원본이 현재 기록과 일치해야 한다.
+
+```powershell
+Set-Location C:\work\core_pjt
+.\.venv\Scripts\python.exe scripts\audit_furniture_structure.py
+.\.venv\Scripts\python.exe scripts\build_furniture_curated.py --output datasets\roboflow\furniture\v2_curated_rebuild --seed 20261021
+```
+
+이 데이터는 주로 하나의 가구가 선명한 사진을 남긴 첫 파인튜닝 실습용 부분집합이다. 자동화된 시각 검수만으로 모든 누락을 보장할 수는 없다. 방 전체의 여러 가구를 검출하는 성능을 평가하려면 제외된 사진을 추가 라벨링하고 별도 장면 평가 세트를 만들어야 한다. 새 분할 성적을 원래 RF100 벤치마크와 동일하게 해석하지 않는다.
+
 ### 다음 작업
 
-1. **VLM과 PoC 연결:** 같은 샘플을 page37 VLM에 넣어 YOLO와 설명을 비교하고, page47 서버·page49 클라이언트로 이미지 업로드와 응답을 확인한다. 아래 데이터 정비와 독립적으로 진행할 수 있다.
-2. **학습 전 데이터 정비:** 원본 valid에는 Chair가 없고 test에는 Table이 없다. 모든 이미지에 박스가 하나씩만 있으며, 샘플의 배경 의자처럼 라벨이 없는 물체도 있다. 라벨 누락과 유사 이미지를 검수하고 원본과 구분되는 파생 버전에서 클래스 균형·유사 이미지 그룹을 고려해 분할한다. 분할 기준과 seed, 원본 이미지 매핑을 기록한다.
-3. **파인튜닝과 평가:** 정비한 데이터로 CPU 1 epoch 연결 확인 후 10 epoch 기준 실험을 진행한다. 기본 COCO 모델과 Furniture 모델은 클래스 ID·의미가 달라 mAP를 그대로 전후 비교하지 않는다. 동일 클래스 체계와 검증 분할로 실험을 비교하고 테스트 세트는 최종 평가에 사용한다.
+1. 아래 명령으로 CPU 1 epoch 학습 연결을 확인한다. 재실행할 때는 기존 학습 결과를 덮어쓰지 않도록 `--name`을 바꾼다.
+2. 연결이 확인되면 같은 train/valid로 학습 설정을 비교한다. test는 최종 설정을 정한 뒤 한 번 평가하며, 테스트 점수로 설정을 고르지 않는다.
+3. `quarantine.json`의 사진을 라벨링 도구에서 열어 보이는 모든 Chair/Sofa/Table에 박스를 추가하고, 재검수한 새 데이터 버전을 만든다. 기본 COCO 모델과 Furniture 모델은 클래스 체계가 달라 mAP를 그대로 전후 비교하지 않는다.
+
+```powershell
+Set-Location C:\work\core_pjt
+.\.venv\Scripts\python.exe "source\2회차_day1\page58_파인튜닝_학습\YOLO_파인튜닝_학습.py" `
+  --data "C:\work\core_pjt\datasets\roboflow\furniture\v2_curated_v2\data.yaml" `
+  --epochs 1 --imgsz 320 --batch 4 --device cpu --name furniture_curated_smoke_20261021
+```
 
 ## 받은 뒤 폴더 놓기
 

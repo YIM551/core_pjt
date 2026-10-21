@@ -1,0 +1,1242 @@
+[
+  {
+    "id": "C000",
+    "image": "train/images/Chair--1-_jpg.rf.90233c5326ce5a78f92717fcb0e5e996.jpg",
+    "label": "train/labels/Chair--1-_jpg.rf.90233c5326ce5a78f92717fcb0e5e996.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "Additional recognizable chair is partially visible at the left edge but has no label; only the main chair is annotated.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C008",
+    "image": "train/images/Chair--11-_jpg.rf.aad85219b9e85e6e5b707b8a30d85f90.jpg",
+    "label": "train/labels/Chair--11-_jpg.rf.aad85219b9e85e6e5b707b8a30d85f90.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "A cropped carved furniture/chair leg remains at the lower-left edge without a label; conservative exclusion because the single-target condition is ambiguous.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C048",
+    "image": "train/images/Chair--160-_jpg.rf.b94a251d9108eea340269f4998856b49.jpg",
+    "label": "train/labels/Chair--160-_jpg.rf.b94a251d9108eea340269f4998856b49.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "Additional recognizable chair is partially visible at the left edge but has no label; only the main chair is annotated.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C077",
+    "image": "train/images/Chair--192-_jpg.rf.e1387ce8bf80139fedb151825ba375f6.jpg",
+    "label": "train/labels/Chair--192-_jpg.rf.e1387ce8bf80139fedb151825ba375f6.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "Additional recognizable chair is partially visible at the left edge but has no label; only the main chair is annotated.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C081",
+    "image": "train/images/Chair--201-_jpg.rf.67fab00a242a6749fc8bc4c4c3963256.jpg",
+    "label": "train/labels/Chair--201-_jpg.rf.67fab00a242a6749fc8bc4c4c3963256.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "Additional black sofa or sofa section is visible in the left background without a label; only the foreground chair is annotated.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C082",
+    "image": "train/images/Chair--202-_jpg.rf.95f54364725b8451d12c62e298255506.jpg",
+    "label": "train/labels/Chair--202-_jpg.rf.95f54364725b8451d12c62e298255506.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "Additional black sofa or sofa section is visible in the left background without a label; only the foreground chair is annotated.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C083",
+    "image": "train/images/Chair--203-_jpg.rf.a75d46e50b5f144801973023e6a3cbd4.jpg",
+    "label": "train/labels/Chair--203-_jpg.rf.a75d46e50b5f144801973023e6a3cbd4.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "Additional black sofa or sofa section is visible in the left background without a label; only the foreground chair is annotated.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C098",
+    "image": "train/images/Chair--226-_jpg.rf.3438283adf818b38704f54d7bef4c7c2.jpg",
+    "label": "train/labels/Chair--226-_jpg.rf.3438283adf818b38704f54d7bef4c7c2.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "A narrow cropped black furniture fragment is visible at the left edge; the adjacent series shows sofas there. Quarantine for unresolved missing-target ambiguity.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C099",
+    "image": "train/images/Chair--227-_jpg.rf.e869dfafd08cf763b42f40abbdb69cf2.jpg",
+    "label": "train/labels/Chair--227-_jpg.rf.e869dfafd08cf763b42f40abbdb69cf2.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "Additional black sofa or sofa section is visible in the left background without a label; only the foreground chair is annotated.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C100",
+    "image": "train/images/Chair--228-_jpg.rf.6c7e3113c00607666b889de2d0688408.jpg",
+    "label": "train/labels/Chair--228-_jpg.rf.6c7e3113c00607666b889de2d0688408.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "Additional black sofa or sofa section is visible in the left background without a label; only the foreground chair is annotated.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C102",
+    "image": "train/images/Chair--231-_jpg.rf.ddd4401e61e4a85e6e33faef250bffb2.jpg",
+    "label": "train/labels/Chair--231-_jpg.rf.ddd4401e61e4a85e6e33faef250bffb2.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "Additional black sofa or sofa section is visible in the left background without a label; only the foreground chair is annotated.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C103",
+    "image": "train/images/Chair--232-_jpg.rf.6851ff26d4b57503c19b3eca34307888.jpg",
+    "label": "train/labels/Chair--232-_jpg.rf.6851ff26d4b57503c19b3eca34307888.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "Additional black sofa or sofa section is visible in the left background without a label; only the foreground chair is annotated.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C110",
+    "image": "train/images/Chair--24-_jpg.rf.d75d2a400dc69a6d0e90dc8c083fbdd8.jpg",
+    "label": "train/labels/Chair--24-_jpg.rf.d75d2a400dc69a6d0e90dc8c083fbdd8.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C110",
+    "reason": "Several additional chairs are visible in the garden background without labels; only the foreground chair is annotated.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C132",
+    "image": "train/images/Chair--31-_jpg.rf.3b63b751440519b9a1d117f1d8ee2ab1.jpg",
+    "label": "train/labels/Chair--31-_jpg.rf.3b63b751440519b9a1d117f1d8ee2ab1.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "Additional recognizable chair is partially visible at the left edge but has no label; only the main chair is annotated.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C140",
+    "image": "train/images/Chair--4-_jpg.rf.8654bfe9517687699936094bc8329910.jpg",
+    "label": "train/labels/Chair--4-_jpg.rf.8654bfe9517687699936094bc8329910.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "Additional recognizable chair is partially visible at the left edge but has no label; only the main chair is annotated.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C160",
+    "image": "train/images/Chair--59-_jpg.rf.c05c6a56e2b0ad7ea528e6311c699eed.jpg",
+    "label": "train/labels/Chair--59-_jpg.rf.c05c6a56e2b0ad7ea528e6311c699eed.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "The open doorway at the left contains partly occluded furniture under clothing; an additional target chair/table cannot be confidently excluded at full size.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C162",
+    "image": "train/images/Chair--60-_jpg.rf.cea4d6f75345fa7b42df607f56678e66.jpg",
+    "label": "train/labels/Chair--60-_jpg.rf.cea4d6f75345fa7b42df607f56678e66.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "Furniture and a possible chair/table are partly visible through the left doorway; target-class identity is unresolved, so exclude from the conservative single-target subset.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C163",
+    "image": "train/images/Chair--61-_jpg.rf.c1eec8cc68548d0478a447eb74953eda.jpg",
+    "label": "train/labels/Chair--61-_jpg.rf.c1eec8cc68548d0478a447eb74953eda.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "Furniture and a possible chair/table are partly visible through the left doorway; target-class identity is unresolved, so exclude from the conservative single-target subset.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C171",
+    "image": "train/images/Chair--69-_jpg.rf.d6213f7d75b8f6cce4f27798c96c4cda.jpg",
+    "label": "train/labels/Chair--69-_jpg.rf.d6213f7d75b8f6cce4f27798c96c4cda.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "A small brown furniture-like fragment is cropped at the lower-right edge; unresolved additional-target ambiguity warrants conservative quarantine.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C183",
+    "image": "train/images/Chair--82-_jpg.rf.f51cf315a0c0569288e1a4148a8821a8.jpg",
+    "label": "train/labels/Chair--82-_jpg.rf.f51cf315a0c0569288e1a4148a8821a8.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "A brown rounded furniture-like piece enters the bottom edge outside the sole chair box; possible second-chair arm/back remains unresolved at full size.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C184",
+    "image": "train/images/Chair--83-_jpg.rf.66d609adba155703666966dee2837eae.jpg",
+    "label": "train/labels/Chair--83-_jpg.rf.66d609adba155703666966dee2837eae.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "A brown rounded furniture-like piece enters the bottom edge outside the sole chair box; possible second-chair arm/back remains unresolved at full size.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C185",
+    "image": "train/images/Chair--84-_jpg.rf.cdf1f162eb2da5ffa55a962fef8f1e5b.jpg",
+    "label": "train/labels/Chair--84-_jpg.rf.cdf1f162eb2da5ffa55a962fef8f1e5b.txt",
+    "class_id": 0,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "A brown rounded furniture-like piece enters the bottom edge outside the sole chair box; possible second-chair arm/back remains unresolved at full size.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C238",
+    "image": "test/images/Chairs2--1-_jpg.rf.fee1e92025714829a0ac397c1bfdfa91.jpg",
+    "label": "test/labels/Chairs2--1-_jpg.rf.fee1e92025714829a0ac397c1bfdfa91.txt",
+    "class_id": 0,
+    "original_split": "test",
+    "group_id": "group_C000",
+    "reason": "An additional cropped wooden stool/table-like object is visible at the lower-right corner outside the sole chair box; it requires separate class/box review.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C241",
+    "image": "test/images/Chairs2--2-_jpg.rf.6bcbb8710a97d5d90a05bc002fe2c1ff.jpg",
+    "label": "test/labels/Chairs2--2-_jpg.rf.6bcbb8710a97d5d90a05bc002fe2c1ff.txt",
+    "class_id": 0,
+    "original_split": "test",
+    "group_id": "group_C000",
+    "reason": "An additional cropped wooden stool/table-like object is visible at the lower-right corner outside the sole chair box; it requires separate class/box review.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "C246",
+    "image": "test/images/Chairs2--7-_jpg.rf.13adb1d2f4491af0a8ddab3dc4e945b5.jpg",
+    "label": "test/labels/Chairs2--7-_jpg.rf.13adb1d2f4491af0a8ddab3dc4e945b5.txt",
+    "class_id": 0,
+    "original_split": "test",
+    "group_id": "group_C000",
+    "reason": "A second wooden chair is clearly partly visible along the left edge without a label; only the foreground plastic chair is annotated.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S000",
+    "image": "train/images/Sofa--1-_jpg.rf.41c87b6cb90cfd074c6bebd0641f5920.jpg",
+    "label": "train/labels/Sofa--1-_jpg.rf.41c87b6cb90cfd074c6bebd0641f5920.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S000",
+    "reason": "A recognizable sliver of a second matching upholstered seat is visible at the left edge without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S001",
+    "image": "train/images/Sofa--151-_jpg.rf.1e3a0a1af09aafb2c5b88ea3b6371c09.jpg",
+    "label": "train/labels/Sofa--151-_jpg.rf.1e3a0a1af09aafb2c5b88ea3b6371c09.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S001",
+    "reason": "Side table furniture is visible beside the sofa, including cropped table portions, without additional target labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S002",
+    "image": "train/images/Sofa--152-_jpg.rf.dd7ed89874326d0682b67e68c4818801.jpg",
+    "label": "train/labels/Sofa--152-_jpg.rf.dd7ed89874326d0682b67e68c4818801.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S001",
+    "reason": "Side table furniture is visible beside the sofa, including cropped table portions, without additional target labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S003",
+    "image": "train/images/Sofa--155-_jpg.rf.2898eee5e1b37cbfc91ccb6f2b4ce3b7.jpg",
+    "label": "train/labels/Sofa--155-_jpg.rf.2898eee5e1b37cbfc91ccb6f2b4ce3b7.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S001",
+    "reason": "Side table furniture is visible beside the sofa, including cropped table portions, without additional target labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S004",
+    "image": "train/images/Sofa--156-_jpg.rf.7adb6f5dbb8c62a79abc3f406d05fa65.jpg",
+    "label": "train/labels/Sofa--156-_jpg.rf.7adb6f5dbb8c62a79abc3f406d05fa65.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S001",
+    "reason": "Side table furniture is visible beside the sofa, including cropped table portions, without additional target labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S005",
+    "image": "train/images/Sofa--157-_jpg.rf.5f5e8eb918140ba153e1bf10e78184e4.jpg",
+    "label": "train/labels/Sofa--157-_jpg.rf.5f5e8eb918140ba153e1bf10e78184e4.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S001",
+    "reason": "Side table furniture is visible beside the sofa, including cropped table portions, without additional target labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S010",
+    "image": "train/images/Sofa--164-_jpg.rf.a8e905eb2fe473f0be843d2f6e715e1d.jpg",
+    "label": "train/labels/Sofa--164-_jpg.rf.a8e905eb2fe473f0be843d2f6e715e1d.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S010",
+    "reason": "Additional chair/sofa seating is visible at the edge or behind the patchwork sofa without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S014",
+    "image": "train/images/Sofa--168-_jpg.rf.d10dd5ef88e93cb45194de8ed232296e.jpg",
+    "label": "train/labels/Sofa--168-_jpg.rf.d10dd5ef88e93cb45194de8ed232296e.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "Additional upholstered seats/ottoman-like furniture is visible at the edges of the staircase scene; the one-sofa annotation is insufficient or ambiguous.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S015",
+    "image": "train/images/Sofa--169-_jpg.rf.2baeec9cfa59c03abb025a5da11315cc.jpg",
+    "label": "train/labels/Sofa--169-_jpg.rf.2baeec9cfa59c03abb025a5da11315cc.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S015",
+    "reason": "A separate side table supporting a lamp is visible without a table label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S017",
+    "image": "train/images/Sofa--171-_jpg.rf.bfd876477238a95d07493fec11251d33.jpg",
+    "label": "train/labels/Sofa--171-_jpg.rf.bfd876477238a95d07493fec11251d33.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S017",
+    "reason": "Separate coffee table and/or matching chair furniture is clearly visible without labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S021",
+    "image": "train/images/Sofa--175-_jpg.rf.05a2461e0b0a3b210258f318b0cfa30d.jpg",
+    "label": "train/labels/Sofa--175-_jpg.rf.05a2461e0b0a3b210258f318b0cfa30d.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "Additional upholstered seats/ottoman-like furniture is visible at the edges of the staircase scene; the one-sofa annotation is insufficient or ambiguous.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S024",
+    "image": "train/images/Sofa--180-_jpg.rf.c6a16f14ccfa40f603b66ca1e3051595.jpg",
+    "label": "train/labels/Sofa--180-_jpg.rf.c6a16f14ccfa40f603b66ca1e3051595.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "Additional upholstered seats/ottoman-like furniture is visible at the edges of the staircase scene; the one-sofa annotation is insufficient or ambiguous.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S025",
+    "image": "train/images/Sofa--181-_jpg.rf.64bafb026a280b401760072405daba54.jpg",
+    "label": "train/labels/Sofa--181-_jpg.rf.64bafb026a280b401760072405daba54.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "Additional upholstered seats/ottoman-like furniture is visible at the edges of the staircase scene; the one-sofa annotation is insufficient or ambiguous.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S026",
+    "image": "train/images/Sofa--182-_jpg.rf.507296eceb2d4da9dfb47a779d009378.jpg",
+    "label": "train/labels/Sofa--182-_jpg.rf.507296eceb2d4da9dfb47a779d009378.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "Additional upholstered seats/ottoman-like furniture is visible at the edges of the staircase scene; the one-sofa annotation is insufficient or ambiguous.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S027",
+    "image": "train/images/Sofa--183-_jpg.rf.c958058311016fcd62266011793c8542.jpg",
+    "label": "train/labels/Sofa--183-_jpg.rf.c958058311016fcd62266011793c8542.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "A separate slatted coffee table is visible in the staircase sofa scene without a table label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S028",
+    "image": "train/images/Sofa--184-_jpg.rf.d49000ab63cc1637a3ea17867f7028f3.jpg",
+    "label": "train/labels/Sofa--184-_jpg.rf.d49000ab63cc1637a3ea17867f7028f3.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "Additional upholstered seats/ottoman-like furniture is visible at the edges of the staircase scene; the one-sofa annotation is insufficient or ambiguous.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S029",
+    "image": "train/images/Sofa--185-_jpg.rf.ff546d0d614a3f4661e6173112c2eb1d.jpg",
+    "label": "train/labels/Sofa--185-_jpg.rf.ff546d0d614a3f4661e6173112c2eb1d.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "Additional upholstered seats/ottoman-like furniture is visible at the edges of the staircase scene; the one-sofa annotation is insufficient or ambiguous.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S030",
+    "image": "train/images/Sofa--186-_jpg.rf.0f1786329690d6a76fbb4f93974768cf.jpg",
+    "label": "train/labels/Sofa--186-_jpg.rf.0f1786329690d6a76fbb4f93974768cf.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "A separate slatted coffee table is visible in the staircase sofa scene without a table label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S031",
+    "image": "train/images/Sofa--187-_jpg.rf.d6264a50345b7b031033ab44eef70733.jpg",
+    "label": "train/labels/Sofa--187-_jpg.rf.d6264a50345b7b031033ab44eef70733.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_C081",
+    "reason": "Additional upholstered seats/ottoman-like furniture is visible at the edges of the staircase scene; the one-sofa annotation is insufficient or ambiguous.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S036",
+    "image": "train/images/Sofa--192-_jpg.rf.1f462dc5b0163078f54f717e740c8aaf.jpg",
+    "label": "train/labels/Sofa--192-_jpg.rf.1f462dc5b0163078f54f717e740c8aaf.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S036",
+    "reason": "A separate wooden side table is clearly visible at the left without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S043",
+    "image": "train/images/Sofa--199-_jpg.rf.94093b54e21ed3efc5972ddc240facc7.jpg",
+    "label": "train/labels/Sofa--199-_jpg.rf.94093b54e21ed3efc5972ddc240facc7.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S043",
+    "reason": "A separate round glass-topped side table is visible at the right without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S046",
+    "image": "train/images/Sofa--201-_jpg.rf.03edeed669e222985ecd6cdadb24274b.jpg",
+    "label": "train/labels/Sofa--201-_jpg.rf.03edeed669e222985ecd6cdadb24274b.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S046",
+    "reason": "A separate wooden side table is partly visible at the left edge without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S048",
+    "image": "train/images/Sofa--203-_jpg.rf.6569b2dfff07c65c4de3e44d8403a684.jpg",
+    "label": "train/labels/Sofa--203-_jpg.rf.6569b2dfff07c65c4de3e44d8403a684.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S048",
+    "reason": "Foreground ottoman/seating and surrounding furnishings make the single Sofa label incomplete or ambiguous.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S054",
+    "image": "train/images/Sofa--209-_jpg.rf.6c5344fdd601d3df890217e53f119ca3.jpg",
+    "label": "train/labels/Sofa--209-_jpg.rf.6c5344fdd601d3df890217e53f119ca3.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S054",
+    "reason": "A separate small round side table is visible at the right without a table label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S056",
+    "image": "train/images/Sofa--211-_jpg.rf.94cd5f742c62fc907893c25469f88115.jpg",
+    "label": "train/labels/Sofa--211-_jpg.rf.94cd5f742c62fc907893c25469f88115.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S056",
+    "reason": "The left-side cabinet/table furniture is ambiguous relative to the Table class; held for review.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S064",
+    "image": "train/images/Sofa--219-_jpg.rf.86b6e852d0312027576e493d6d13236a.jpg",
+    "label": "train/labels/Sofa--219-_jpg.rf.86b6e852d0312027576e493d6d13236a.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S064",
+    "reason": "A separate desk/side table and lamp at the left are visible without a table label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S072",
+    "image": "train/images/Sofa--227-_jpg.rf.7d324b621b765f8d1e25f95a72b85d18.jpg",
+    "label": "train/labels/Sofa--227-_jpg.rf.7d324b621b765f8d1e25f95a72b85d18.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S072",
+    "reason": "Left-side cube and stand may be a separate side table; target completeness is uncertain.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S073",
+    "image": "train/images/Sofa--228-_jpg.rf.f06ac189b1cb497a870b99ef471a1774.jpg",
+    "label": "train/labels/Sofa--228-_jpg.rf.f06ac189b1cb497a870b99ef471a1774.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S073",
+    "reason": "A separate foreground coffee table is visible without a table label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S074",
+    "image": "train/images/Sofa--229-_jpg.rf.02acca88b8fddc3fa006d4f041edbb3c.jpg",
+    "label": "train/labels/Sofa--229-_jpg.rf.02acca88b8fddc3fa006d4f041edbb3c.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S074",
+    "reason": "A separate foreground coffee table is visible without a table label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S075",
+    "image": "train/images/Sofa--230-_jpg.rf.85ae7f0bce0e7841bf3b04440a8c5031.jpg",
+    "label": "train/labels/Sofa--230-_jpg.rf.85ae7f0bce0e7841bf3b04440a8c5031.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S075",
+    "reason": "Furniture beside the sofa may be separate side tables; target completeness is uncertain.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S084",
+    "image": "train/images/Sofa--240-_jpg.rf.6662eac50905dd341a138845b6815c12.jpg",
+    "label": "train/labels/Sofa--240-_jpg.rf.6662eac50905dd341a138845b6815c12.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S084",
+    "reason": "Additional side table furniture is visible in the room without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S085",
+    "image": "train/images/Sofa--241-_jpg.rf.357c7cf4b38e964cbb1d052011b9e890.jpg",
+    "label": "train/labels/Sofa--241-_jpg.rf.357c7cf4b38e964cbb1d052011b9e890.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S084",
+    "reason": "Other seating is visible in the showroom/background or at the image edges without labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S086",
+    "image": "train/images/Sofa--242-_jpg.rf.97e9e595b712da5b61572bb772dfebce.jpg",
+    "label": "train/labels/Sofa--242-_jpg.rf.97e9e595b712da5b61572bb772dfebce.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S084",
+    "reason": "Other seating is visible in the showroom/background or at the image edges without labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S087",
+    "image": "train/images/Sofa--243-_jpg.rf.740f48f2657adbf3871e3e495133545f.jpg",
+    "label": "train/labels/Sofa--243-_jpg.rf.740f48f2657adbf3871e3e495133545f.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S084",
+    "reason": "Other seating is visible in the showroom/background or at the image edges without labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S089",
+    "image": "train/images/Sofa--245-_jpg.rf.b06465a252febdbb37e8e7ab5a391126.jpg",
+    "label": "train/labels/Sofa--245-_jpg.rf.b06465a252febdbb37e8e7ab5a391126.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S089",
+    "reason": "A dark additional chair is visible inside the doorway on the left without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S090",
+    "image": "train/images/Sofa--246-_jpg.rf.887e8263bcc4007863bf2371d63e2342.jpg",
+    "label": "train/labels/Sofa--246-_jpg.rf.887e8263bcc4007863bf2371d63e2342.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S089",
+    "reason": "A dark additional chair is visible inside the doorway on the left without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S092",
+    "image": "train/images/Sofa--248-_jpg.rf.9d80ffb51d75931dc7892cf61488b76d.jpg",
+    "label": "train/labels/Sofa--248-_jpg.rf.9d80ffb51d75931dc7892cf61488b76d.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S089",
+    "reason": "A dark additional chair is visible inside the doorway on the left without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S095",
+    "image": "train/images/Sofa--251-_jpg.rf.40a143fc8a54642f251613745c7a64af.jpg",
+    "label": "train/labels/Sofa--251-_jpg.rf.40a143fc8a54642f251613745c7a64af.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S010",
+    "reason": "Cropped dark furniture legs at image edges are unresolved in this multi-seat room; conservatively held for annotation review.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S096",
+    "image": "train/images/Sofa--252-_jpg.rf.2a0cdadb5d529bcddc849b7c48ccf94c.jpg",
+    "label": "train/labels/Sofa--252-_jpg.rf.2a0cdadb5d529bcddc849b7c48ccf94c.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S010",
+    "reason": "Additional chair/sofa seating is visible at the edge or behind the patchwork sofa without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S097",
+    "image": "train/images/Sofa--253-_jpg.rf.858c7b5456913666393b765c9ac6c3de.jpg",
+    "label": "train/labels/Sofa--253-_jpg.rf.858c7b5456913666393b765c9ac6c3de.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S010",
+    "reason": "Additional chair/sofa seating is visible at the edge or behind the patchwork sofa without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S099",
+    "image": "train/images/Sofa--255-_jpg.rf.ac132cc962b7e6c75dbccc38fc072e6b.jpg",
+    "label": "train/labels/Sofa--255-_jpg.rf.ac132cc962b7e6c75dbccc38fc072e6b.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S010",
+    "reason": "Additional chair/sofa seating is visible at the edge or behind the patchwork sofa without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S101",
+    "image": "train/images/Sofa--257-_jpg.rf.f01514bc1ce8bc8997fd0ebd33f1161d.jpg",
+    "label": "train/labels/Sofa--257-_jpg.rf.f01514bc1ce8bc8997fd0ebd33f1161d.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S100",
+    "reason": "A separate side table is visible to the left of the mustard sofa without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S105",
+    "image": "train/images/Sofa--261-_jpg.rf.de9e9bfbc60ab2165af5cb7263c65d1f.jpg",
+    "label": "train/labels/Sofa--261-_jpg.rf.de9e9bfbc60ab2165af5cb7263c65d1f.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S105",
+    "reason": "A second upholstered sofa/chair is partly visible at the left edge without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S107",
+    "image": "train/images/Sofa--263-_jpg.rf.7f9190683fdc904631a8289218f51ce3.jpg",
+    "label": "train/labels/Sofa--263-_jpg.rf.7f9190683fdc904631a8289218f51ce3.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S105",
+    "reason": "A separate wooden chair is visible at the right edge without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S108",
+    "image": "train/images/Sofa--264-_jpg.rf.cac4a04d89e7f3e4079b90fb3eb58f8b.jpg",
+    "label": "train/labels/Sofa--264-_jpg.rf.cac4a04d89e7f3e4079b90fb3eb58f8b.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S105",
+    "reason": "Additional seating is visible behind/beside the main sofa without labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S113",
+    "image": "train/images/Sofa--270-_jpg.rf.a783394a9cf27690960fabff9bd35897.jpg",
+    "label": "train/labels/Sofa--270-_jpg.rf.a783394a9cf27690960fabff9bd35897.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S113",
+    "reason": "Another red seat is visible in the left foreground without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S114",
+    "image": "train/images/Sofa--271-_jpg.rf.3561c35de4a92445b0e237401fc70edd.jpg",
+    "label": "train/labels/Sofa--271-_jpg.rf.3561c35de4a92445b0e237401fc70edd.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S114",
+    "reason": "A separate dark coffee-table edge is visible in the lower foreground without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S115",
+    "image": "train/images/Sofa--272-_jpg.rf.06d37d72d408de6cb0307571b9360ba9.jpg",
+    "label": "train/labels/Sofa--272-_jpg.rf.06d37d72d408de6cb0307571b9360ba9.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S115",
+    "reason": "A separate dark wooden chair/table is partly visible at the right edge without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S116",
+    "image": "train/images/Sofa--273-_jpg.rf.bfb5e533dead12edeaa7bf01967ec882.jpg",
+    "label": "train/labels/Sofa--273-_jpg.rf.bfb5e533dead12edeaa7bf01967ec882.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S116",
+    "reason": "Other chair/table-like furniture is visible behind or to the left of the loveseat; completeness is uncertain.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S117",
+    "image": "train/images/Sofa--274-_jpg.rf.5f2168fc8d3984a35dce75fdc731a6df.jpg",
+    "label": "train/labels/Sofa--274-_jpg.rf.5f2168fc8d3984a35dce75fdc731a6df.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S116",
+    "reason": "Other chair/table-like furniture is visible behind or to the left of the loveseat; completeness is uncertain.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S120",
+    "image": "train/images/Sofa--277-_jpg.rf.363cbdde43f9a19aeaadca80ae901e77.jpg",
+    "label": "train/labels/Sofa--277-_jpg.rf.363cbdde43f9a19aeaadca80ae901e77.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S017",
+    "reason": "Separate coffee table and/or matching chair furniture is clearly visible without labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S121",
+    "image": "train/images/Sofa--278-_jpg.rf.9fb3b0ff13017768394b480ad7881526.jpg",
+    "label": "train/labels/Sofa--278-_jpg.rf.9fb3b0ff13017768394b480ad7881526.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S017",
+    "reason": "Separate coffee table and/or matching chair furniture is clearly visible without labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S122",
+    "image": "train/images/Sofa--279-_jpg.rf.eaf442d167e1c7b83e845090e88cd312.jpg",
+    "label": "train/labels/Sofa--279-_jpg.rf.eaf442d167e1c7b83e845090e88cd312.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S017",
+    "reason": "The foreground includes a recognizable cropped table edge without a table label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S130",
+    "image": "train/images/Sofa--289-_jpg.rf.566d3a1058ec7fdd1a8d392cebd1ca91.jpg",
+    "label": "train/labels/Sofa--289-_jpg.rf.566d3a1058ec7fdd1a8d392cebd1ca91.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S123",
+    "reason": "A separate dark side table/stool is visible to the right of the ornate sofa without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S152",
+    "image": "train/images/Sofa--314-_jpg.rf.a76f490c0c6f87b6f2e7284e274746bc.jpg",
+    "label": "train/labels/Sofa--314-_jpg.rf.a76f490c0c6f87b6f2e7284e274746bc.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S152",
+    "reason": "Single-seat chair versus small loveseat classification is ambiguous; preserve original Sofa label only in quarantine pending class-policy review.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S162",
+    "image": "train/images/Sofa--324-_jpg.rf.bd0ae6d93abe57eb1a6ad791e14c8c06.jpg",
+    "label": "train/labels/Sofa--324-_jpg.rf.bd0ae6d93abe57eb1a6ad791e14c8c06.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S162",
+    "reason": "A cropped cube-shaped furnishing at the left may be a separate side table; target completeness is uncertain.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S167",
+    "image": "train/images/Sofa--329-_jpg.rf.6a3a348f79efd447280a94491af7c131.jpg",
+    "label": "train/labels/Sofa--329-_jpg.rf.6a3a348f79efd447280a94491af7c131.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S167",
+    "reason": "A separate left-side cabinet/table-like furnishing is visible; its Table class treatment needs review.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S170",
+    "image": "train/images/Sofa--332-_jpg.rf.2132b11436adbb2d27fcefa563653528.jpg",
+    "label": "train/labels/Sofa--332-_jpg.rf.2132b11436adbb2d27fcefa563653528.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S170",
+    "reason": "A separate glass coffee table is visible in the foreground without a table label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S173",
+    "image": "train/images/Sofa--335-_jpg.rf.dfea7988b8d460d619db7702b75d8e44.jpg",
+    "label": "train/labels/Sofa--335-_jpg.rf.dfea7988b8d460d619db7702b75d8e44.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S173",
+    "reason": "Single-seat chair versus small loveseat classification is ambiguous; preserve original Sofa label only in quarantine pending class-policy review.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S176",
+    "image": "train/images/Sofa--340-_jpg.rf.9ad786810ed6071fb21f206661ccb2a8.jpg",
+    "label": "train/labels/Sofa--340-_jpg.rf.9ad786810ed6071fb21f206661ccb2a8.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S176",
+    "reason": "Separate side tables are visible at the left and behind the right arm without labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S178",
+    "image": "train/images/Sofa--342-_jpg.rf.84aecff8ba41b8d3d82038f3b028c2d7.jpg",
+    "label": "train/labels/Sofa--342-_jpg.rf.84aecff8ba41b8d3d82038f3b028c2d7.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S178",
+    "reason": "Single-seat chair versus small loveseat classification is ambiguous; preserve original Sofa label only in quarantine pending class-policy review.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S179",
+    "image": "train/images/Sofa--343-_jpg.rf.2acff0c00c2fa738e0104c9fd2eba3c0.jpg",
+    "label": "train/labels/Sofa--343-_jpg.rf.2acff0c00c2fa738e0104c9fd2eba3c0.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S179",
+    "reason": "A cropped dark furnishing in the left foreground may be a separate table; target completeness is uncertain.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S186",
+    "image": "train/images/Sofa--350-_jpg.rf.afca5f82670c13bd4afbda3cbc386b2a.jpg",
+    "label": "train/labels/Sofa--350-_jpg.rf.afca5f82670c13bd4afbda3cbc386b2a.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S186",
+    "reason": "A separate left side table and additional cropped seating on the right are visible without labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S189",
+    "image": "train/images/Sofa--354-_jpg.rf.23c663ebcb784dd222a76740746b3dd4.jpg",
+    "label": "train/labels/Sofa--354-_jpg.rf.23c663ebcb784dd222a76740746b3dd4.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S189",
+    "reason": "A wooden lamp-side table/cabinet is clearly visible on the right; its target annotation is missing or ambiguous.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S190",
+    "image": "train/images/Sofa--355-_jpg.rf.66dd102cfbedbbf35a294628027323b9.jpg",
+    "label": "train/labels/Sofa--355-_jpg.rf.66dd102cfbedbbf35a294628027323b9.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S190",
+    "reason": "A small cropped furniture-like leg appears at the right edge; conservatively held because target completeness is uncertain.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S192",
+    "image": "train/images/Sofa--357-_jpg.rf.1cb335ca0d8e4772068d21d8c3e5e50e.jpg",
+    "label": "train/labels/Sofa--357-_jpg.rf.1cb335ca0d8e4772068d21d8c3e5e50e.txt",
+    "class_id": 1,
+    "original_split": "train",
+    "group_id": "group_S192",
+    "reason": "A cropped upholstered furniture portion is visible at the lower right without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S198",
+    "image": "test/images/Sofa--363-_jpg.rf.62d1d1098bebe20ff41042e2e96066d0.jpg",
+    "label": "test/labels/Sofa--363-_jpg.rf.62d1d1098bebe20ff41042e2e96066d0.txt",
+    "class_id": 1,
+    "original_split": "test",
+    "group_id": "group_S015",
+    "reason": "A separate side table supporting a lamp is visible without a table label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S201",
+    "image": "test/images/Sofa--366-_jpg.rf.6d034b62d3f63bc46df916dbbcbf9061.jpg",
+    "label": "test/labels/Sofa--366-_jpg.rf.6d034b62d3f63bc46df916dbbcbf9061.txt",
+    "class_id": 1,
+    "original_split": "test",
+    "group_id": "group_S201",
+    "reason": "A separate cropped coffee-table top with magazines is visible along the lower edge without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S202",
+    "image": "test/images/Sofa--367-_jpg.rf.8095cd511857dd572f00797f943097fa.jpg",
+    "label": "test/labels/Sofa--367-_jpg.rf.8095cd511857dd572f00797f943097fa.txt",
+    "class_id": 1,
+    "original_split": "test",
+    "group_id": "group_S202",
+    "reason": "Several other sofas/chairs are visible behind and beside the target; the box also clips the extended left arm.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S203",
+    "image": "test/images/Sofa--368-_jpg.rf.48c4bf24db065744d974aae9b0fc7193.jpg",
+    "label": "test/labels/Sofa--368-_jpg.rf.48c4bf24db065744d974aae9b0fc7193.txt",
+    "class_id": 1,
+    "original_split": "test",
+    "group_id": "group_S203",
+    "reason": "A dining table and chairs are visible through the doorway at the left without labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S212",
+    "image": "test/images/Sofa--378-_jpg.rf.c40c499a5cf3a47d7fde026878415fce.jpg",
+    "label": "test/labels/Sofa--378-_jpg.rf.c40c499a5cf3a47d7fde026878415fce.txt",
+    "class_id": 1,
+    "original_split": "test",
+    "group_id": "group_S212",
+    "reason": "A separate side table/console is visible to the left of the sofa without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S215",
+    "image": "test/images/Sofa--381-_jpg.rf.8707c08d28d64430499c30a4f73160c9.jpg",
+    "label": "test/labels/Sofa--381-_jpg.rf.8707c08d28d64430499c30a4f73160c9.txt",
+    "class_id": 1,
+    "original_split": "test",
+    "group_id": "group_S215",
+    "reason": "A separate round coffee table is visible at the left foreground without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S217",
+    "image": "valid/images/Sofa--383-_jpg.rf.02ef655cee76cbd77bbab340a6231ce2.jpg",
+    "label": "valid/labels/Sofa--383-_jpg.rf.02ef655cee76cbd77bbab340a6231ce2.txt",
+    "class_id": 1,
+    "original_split": "valid",
+    "group_id": "group_S217",
+    "reason": "Sofa--383 includes a clearly visible unlabeled chair on the left and other scene furniture.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S222",
+    "image": "valid/images/sofas--7-_jpg.rf.394c04e45b48953a0319599de1d8eb8a.jpg",
+    "label": "valid/labels/sofas--7-_jpg.rf.394c04e45b48953a0319599de1d8eb8a.txt",
+    "class_id": 1,
+    "original_split": "valid",
+    "group_id": "group_S219",
+    "reason": "Single-seat chair versus small loveseat classification is ambiguous; preserve original Sofa label only in quarantine pending class-policy review.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S223",
+    "image": "valid/images/sofas--8-_jpg.rf.64a5fa3782a215228c98139fbdb31529.jpg",
+    "label": "valid/labels/sofas--8-_jpg.rf.64a5fa3782a215228c98139fbdb31529.txt",
+    "class_id": 1,
+    "original_split": "valid",
+    "group_id": "group_S223",
+    "reason": "A dark cropped foreground object may be a separate table/seat; conservatively held because its identity is unresolved.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S225",
+    "image": "valid/images/Sofass--15-_jpg.rf.0c49fbbe21f041798a7cee93e577b23c.jpg",
+    "label": "valid/labels/Sofass--15-_jpg.rf.0c49fbbe21f041798a7cee93e577b23c.txt",
+    "class_id": 1,
+    "original_split": "valid",
+    "group_id": "group_S001",
+    "reason": "Side table furniture is visible beside the sofa, including cropped table portions, without additional target labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S229",
+    "image": "valid/images/Sofass--19-_jpg.rf.9a949e739a82e708bba3dfb9378abee2.jpg",
+    "label": "valid/labels/Sofass--19-_jpg.rf.9a949e739a82e708bba3dfb9378abee2.txt",
+    "class_id": 1,
+    "original_split": "valid",
+    "group_id": "group_S229",
+    "reason": "A separate dark coffee table is clearly visible across the lower foreground without a table label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S232",
+    "image": "valid/images/Sofass--23-_jpg.rf.8e183c03ae4584b0173f0dde4babb394.jpg",
+    "label": "valid/labels/Sofass--23-_jpg.rf.8e183c03ae4584b0173f0dde4babb394.txt",
+    "class_id": 1,
+    "original_split": "valid",
+    "group_id": "group_S001",
+    "reason": "Side table furniture is visible beside the sofa, including cropped table portions, without additional target labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "S237",
+    "image": "valid/images/Sofass--3-_jpg.rf.7670f9d3b672f14999d58502e34f77ce.jpg",
+    "label": "valid/labels/Sofass--3-_jpg.rf.7670f9d3b672f14999d58502e34f77ce.txt",
+    "class_id": 1,
+    "original_split": "valid",
+    "group_id": "group_S229",
+    "reason": "A separate dark coffee table is clearly visible across the lower foreground without a table label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T001",
+    "image": "train/images/Table--100-_jpg.rf.fa4bc479dabba16066f79782d4883da3.jpg",
+    "label": "train/labels/Table--100-_jpg.rf.fa4bc479dabba16066f79782d4883da3.txt",
+    "class_id": 2,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "A cropped furniture leg at the left edge makes annotation completeness uncertain; conservatively held for manual relabelling or crop review.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T002",
+    "image": "train/images/Table--101-_jpg.rf.5c939ea09d852db34e0a87987e920fbb.jpg",
+    "label": "train/labels/Table--101-_jpg.rf.5c939ea09d852db34e0a87987e920fbb.txt",
+    "class_id": 2,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T003",
+    "image": "train/images/Table--102-_jpg.rf.10dcaca556b4d70b9ffb0c2dea80d23d.jpg",
+    "label": "train/labels/Table--102-_jpg.rf.10dcaca556b4d70b9ffb0c2dea80d23d.txt",
+    "class_id": 2,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T004",
+    "image": "train/images/Table--103-_jpg.rf.63a1418611bb109611d913341a86afce.jpg",
+    "label": "train/labels/Table--103-_jpg.rf.63a1418611bb109611d913341a86afce.txt",
+    "class_id": 2,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T005",
+    "image": "train/images/Table--104-_jpg.rf.96fa7010f73bb31b13e963dbbe986820.jpg",
+    "label": "train/labels/Table--104-_jpg.rf.96fa7010f73bb31b13e963dbbe986820.txt",
+    "class_id": 2,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "A cropped furniture leg at the left edge makes annotation completeness uncertain; conservatively held for manual relabelling or crop review.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T006",
+    "image": "train/images/Table--105-_jpg.rf.58b42f699665af9ddf27ed3ebc080c2e.jpg",
+    "label": "train/labels/Table--105-_jpg.rf.58b42f699665af9ddf27ed3ebc080c2e.txt",
+    "class_id": 2,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T007",
+    "image": "train/images/Table--106-_jpg.rf.442402b7eb204d8c62ded77c7d9831f7.jpg",
+    "label": "train/labels/Table--106-_jpg.rf.442402b7eb204d8c62ded77c7d9831f7.txt",
+    "class_id": 2,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T008",
+    "image": "train/images/Table--107-_jpg.rf.8b36c4b1fae19d949f9628dc8500e31e.jpg",
+    "label": "train/labels/Table--107-_jpg.rf.8b36c4b1fae19d949f9628dc8500e31e.txt",
+    "class_id": 2,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T009",
+    "image": "train/images/Table--109-_jpg.rf.aa84133ed8ce186d4b77c3ee6cf42602.jpg",
+    "label": "train/labels/Table--109-_jpg.rf.aa84133ed8ce186d4b77c3ee6cf42602.txt",
+    "class_id": 2,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T012",
+    "image": "train/images/Table--112-_jpg.rf.2861e94f0c81851ec2256c90cda8e81b.jpg",
+    "label": "train/labels/Table--112-_jpg.rf.2861e94f0c81851ec2256c90cda8e81b.txt",
+    "class_id": 2,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T013",
+    "image": "train/images/Table--113-_jpg.rf.b4a3b88bc258d0db33ba4598ba2ce520.jpg",
+    "label": "train/labels/Table--113-_jpg.rf.b4a3b88bc258d0db33ba4598ba2ce520.txt",
+    "class_id": 2,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "A cropped furniture leg at the left edge makes annotation completeness uncertain; conservatively held for manual relabelling or crop review.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T015",
+    "image": "train/images/Table--115-_jpg.rf.d0f4e4f540b106286d29bbdd9c3db784.jpg",
+    "label": "train/labels/Table--115-_jpg.rf.d0f4e4f540b106286d29bbdd9c3db784.txt",
+    "class_id": 2,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T016",
+    "image": "train/images/Table--116-_jpg.rf.a74e15afe10e448729543970c01ff5df.jpg",
+    "label": "train/labels/Table--116-_jpg.rf.a74e15afe10e448729543970c01ff5df.txt",
+    "class_id": 2,
+    "original_split": "train",
+    "group_id": "group_C000",
+    "reason": "An additional dark chair/stand is partially visible at the left edge without an annotation; the desk is the only labelled target.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T025",
+    "image": "train/images/Table--128-_jpg.rf.f40f4e481b08cf46cda961b383cabee0.jpg",
+    "label": "train/labels/Table--128-_jpg.rf.f40f4e481b08cf46cda961b383cabee0.txt",
+    "class_id": 2,
+    "original_split": "train",
+    "group_id": "group_T025",
+    "reason": "The desk is labelled but upholstered chairs/seating are visibly present on both sides without labels.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T039",
+    "image": "train/images/Table--143-_jpg.rf.1ce8ec13f240de93c57df4d206cdfb15.jpg",
+    "label": "train/labels/Table--143-_jpg.rf.1ce8ec13f240de93c57df4d206cdfb15.txt",
+    "class_id": 2,
+    "original_split": "train",
+    "group_id": "group_T039",
+    "reason": "A recognisable cropped office chair (arm, seat and casters) appears at the right edge without a label.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T086",
+    "image": "valid/images/Table--216-_jpg.rf.73613b7e76e6a36752806e165bdbb222.jpg",
+    "label": "valid/labels/Table--216-_jpg.rf.73613b7e76e6a36752806e165bdbb222.txt",
+    "class_id": 2,
+    "original_split": "valid",
+    "group_id": "group_T086",
+    "reason": "Another cropped white furniture item with a horizontal support and turned leg appears at the left edge; possible unlabelled chair/table requires manual review.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T090",
+    "image": "valid/images/Table--22-_jpg.rf.e48027f8c5cf59fd2248efa2ff8e0cd2.jpg",
+    "label": "valid/labels/Table--22-_jpg.rf.e48027f8c5cf59fd2248efa2ff8e0cd2.txt",
+    "class_id": 2,
+    "original_split": "valid",
+    "group_id": "group_T090",
+    "reason": "Several recognisable chairs are visible behind the labelled table and have no annotations.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T099",
+    "image": "valid/images/Table--23-_jpg.rf.0c64fd189cb61edb0bcf0d38bd5512fe.jpg",
+    "label": "valid/labels/Table--23-_jpg.rf.0c64fd189cb61edb0bcf0d38bd5512fe.txt",
+    "class_id": 2,
+    "original_split": "valid",
+    "group_id": "group_T099",
+    "reason": "A second table with visible legs appears in the upper background without an annotation.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T110",
+    "image": "valid/images/Table--24-_jpg.rf.bc9d4a3f04131cf3f1c3c51ba397a2e6.jpg",
+    "label": "valid/labels/Table--24-_jpg.rf.bc9d4a3f04131cf3f1c3c51ba397a2e6.txt",
+    "class_id": 2,
+    "original_split": "valid",
+    "group_id": "group_T110",
+    "reason": "A wooden chair is visible in the upper-left background without an annotation.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  },
+  {
+    "id": "T198",
+    "image": "valid/images/Table--98-_jpg.rf.2ce96b7218dec65d6f3ad771591c5477.jpg",
+    "label": "valid/labels/Table--98-_jpg.rf.2ce96b7218dec65d6f3ad771591c5477.txt",
+    "class_id": 2,
+    "original_split": "valid",
+    "group_id": "group_C000",
+    "reason": "A cropped furniture leg at the left edge makes annotation completeness uncertain; conservatively held for manual relabelling or crop review.",
+    "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2"
+  }
+]

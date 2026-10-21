@@ -1,0 +1,73 @@
+{
+  "image_sha256": "3cc5950e24dccfbc16a15842db222e2d4d39a2cf5ed6d4841fdd28ef725d173b",
+  "same_input_file": true,
+  "vlm_description": ": 이 이미지에는 베이지색과 흰색 패턴이 있는 소파가 보입니다. 소파 옆에는 테이블과 의자가 있으며, 배경에는 계단이 보입니다. 바닥은 베이지색 카펫으로 되어 있습니다.",
+  "vlm_finish_reason": "stop",
+  "vlm_model_load_seconds": 1.324403300008271,
+  "vlm_inference_seconds": 69.18451459996868,
+  "yolo_confidence_threshold": 0.25,
+  "yolo_detections": [
+    {
+      "class_id": 57,
+      "label": "couch",
+      "confidence": 0.9075305461883545,
+      "xyxy": [
+        164.67025756835938,
+        334.9360046386719,
+        1080.666748046875,
+        919.9089965820312
+      ]
+    },
+    {
+      "class_id": 56,
+      "label": "chair",
+      "confidence": 0.9069146513938904,
+      "xyxy": [
+        0.7211493849754333,
+        253.6822509765625,
+        218.4375,
+        545.71044921875
+      ]
+    },
+    {
+      "class_id": 75,
+      "label": "vase",
+      "confidence": 0.37676283717155457,
+      "xyxy": [
+        359.56842041015625,
+        152.70526123046875,
+        393.787353515625,
+        229.9657745361328
+      ]
+    }
+  ],
+  "yolo_previous_warmed_call_ms": 40.78250000020489,
+  "timing_caveat": "Previous warmed YOLO call vs first VLM call including image encoding and text generation; not a controlled benchmark.",
+  "visual_review": {
+    "method": "Assistant inspection of the original image; qualitative review of one sample, not ground-truth evaluation.",
+    "supported": [
+      "One prominent patterned light-colored sofa",
+      "One clearly visible chair behind the sofa on the left",
+      "Stairs behind the sofa",
+      "Carpeted floor"
+    ],
+    "uncertain": [
+      "VLM table: furniture at the far left is partially cropped; exact identity and count are uncertain",
+      "YOLO vase (0.377): small dark wall-mounted object is ambiguous"
+    ],
+    "agreement": [
+      "VLM sofa corresponds to YOLO couch",
+      "Both identify a chair"
+    ],
+    "additional_vlm_context": [
+      "Sofa color and pattern",
+      "Stairs",
+      "Carpet"
+    ],
+    "notes": [
+      "Omission from a brief VLM description does not prove a YOLO detection false",
+      "All object counts in the scene cannot be verified against this dataset: the sample has only one annotated sofa box",
+      "The observation does not establish either model accuracy over the dataset"
+    ]
+  }
+}

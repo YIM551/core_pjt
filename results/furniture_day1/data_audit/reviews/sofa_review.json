@@ -1,0 +1,1698 @@
+{
+  "reviewer": "assistant_visual_review_sofas",
+  "scope": "all Sofa images via contact sheets; original images where indicated",
+  "decisions": [
+    {
+      "id": "S000",
+      "status": "quarantine",
+      "reason": "A recognizable sliver of a second matching upholstered seat is visible at the left edge without a label.",
+      "full_size_review": true,
+      "group_id": "S000"
+    },
+    {
+      "id": "S001",
+      "status": "quarantine",
+      "reason": "Side table furniture is visible beside the sofa, including cropped table portions, without additional target labels.",
+      "full_size_review": false,
+      "group_id": "sofa_brown_leather_barred_window"
+    },
+    {
+      "id": "S002",
+      "status": "quarantine",
+      "reason": "Side table furniture is visible beside the sofa, including cropped table portions, without additional target labels.",
+      "full_size_review": false,
+      "group_id": "sofa_brown_leather_barred_window"
+    },
+    {
+      "id": "S003",
+      "status": "quarantine",
+      "reason": "Side table furniture is visible beside the sofa, including cropped table portions, without additional target labels.",
+      "full_size_review": false,
+      "group_id": "sofa_brown_leather_barred_window"
+    },
+    {
+      "id": "S004",
+      "status": "quarantine",
+      "reason": "Side table furniture is visible beside the sofa, including cropped table portions, without additional target labels.",
+      "full_size_review": false,
+      "group_id": "sofa_brown_leather_barred_window"
+    },
+    {
+      "id": "S005",
+      "status": "quarantine",
+      "reason": "Side table furniture is visible beside the sofa, including cropped table portions, without additional target labels.",
+      "full_size_review": false,
+      "group_id": "sofa_brown_leather_barred_window"
+    },
+    {
+      "id": "S006",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_dark_floral_wooden_loveseat"
+    },
+    {
+      "id": "S007",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_dark_floral_wooden_loveseat"
+    },
+    {
+      "id": "S008",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_dark_floral_wooden_loveseat"
+    },
+    {
+      "id": "S009",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_dark_floral_wooden_loveseat"
+    },
+    {
+      "id": "S010",
+      "status": "quarantine",
+      "reason": "Additional chair/sofa seating is visible at the edge or behind the patchwork sofa without a label.",
+      "full_size_review": false,
+      "group_id": "sofa_patchwork_sofa_room"
+    },
+    {
+      "id": "S011",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_gray_wainscot_clock_loveseat"
+    },
+    {
+      "id": "S012",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_curved_arm_product_variants"
+    },
+    {
+      "id": "S013",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_curved_arm_product_variants"
+    },
+    {
+      "id": "S014",
+      "status": "quarantine",
+      "reason": "Additional upholstered seats/ottoman-like furniture is visible at the edges of the staircase scene; the one-sofa annotation is insufficient or ambiguous.",
+      "full_size_review": false,
+      "group_id": "sofa_black_cream_staircase_sofa"
+    },
+    {
+      "id": "S015",
+      "status": "quarantine",
+      "reason": "A separate side table supporting a lamp is visible without a table label.",
+      "full_size_review": false,
+      "group_id": "sofa_blue_sofa_green_wall_scene"
+    },
+    {
+      "id": "S016",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_cream_wooden_loveseat_product"
+    },
+    {
+      "id": "S017",
+      "status": "quarantine",
+      "reason": "Separate coffee table and/or matching chair furniture is clearly visible without labels.",
+      "full_size_review": false,
+      "group_id": "sofa_striped_wooden_loveseat_room"
+    },
+    {
+      "id": "S018",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_brown_floral_wooden_loveseat_product"
+    },
+    {
+      "id": "S019",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_small_gray_sofa_product"
+    },
+    {
+      "id": "S020",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_mission_floral_loveseat_product"
+    },
+    {
+      "id": "S021",
+      "status": "quarantine",
+      "reason": "Additional upholstered seats/ottoman-like furniture is visible at the edges of the staircase scene; the one-sofa annotation is insufficient or ambiguous.",
+      "full_size_review": false,
+      "group_id": "sofa_black_cream_staircase_sofa"
+    },
+    {
+      "id": "S022",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_tan_flat_back_sofa_product"
+    },
+    {
+      "id": "S023",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_orange_floral_loveseat_product"
+    },
+    {
+      "id": "S024",
+      "status": "quarantine",
+      "reason": "Additional upholstered seats/ottoman-like furniture is visible at the edges of the staircase scene; the one-sofa annotation is insufficient or ambiguous.",
+      "full_size_review": false,
+      "group_id": "sofa_black_cream_staircase_sofa"
+    },
+    {
+      "id": "S025",
+      "status": "quarantine",
+      "reason": "Additional upholstered seats/ottoman-like furniture is visible at the edges of the staircase scene; the one-sofa annotation is insufficient or ambiguous.",
+      "full_size_review": false,
+      "group_id": "sofa_black_cream_staircase_sofa"
+    },
+    {
+      "id": "S026",
+      "status": "quarantine",
+      "reason": "Additional upholstered seats/ottoman-like furniture is visible at the edges of the staircase scene; the one-sofa annotation is insufficient or ambiguous.",
+      "full_size_review": false,
+      "group_id": "sofa_black_cream_staircase_sofa"
+    },
+    {
+      "id": "S027",
+      "status": "quarantine",
+      "reason": "A separate slatted coffee table is visible in the staircase sofa scene without a table label.",
+      "full_size_review": false,
+      "group_id": "sofa_black_cream_staircase_sofa"
+    },
+    {
+      "id": "S028",
+      "status": "quarantine",
+      "reason": "Additional upholstered seats/ottoman-like furniture is visible at the edges of the staircase scene; the one-sofa annotation is insufficient or ambiguous.",
+      "full_size_review": false,
+      "group_id": "sofa_black_cream_staircase_sofa"
+    },
+    {
+      "id": "S029",
+      "status": "quarantine",
+      "reason": "Additional upholstered seats/ottoman-like furniture is visible at the edges of the staircase scene; the one-sofa annotation is insufficient or ambiguous.",
+      "full_size_review": false,
+      "group_id": "sofa_black_cream_staircase_sofa"
+    },
+    {
+      "id": "S030",
+      "status": "quarantine",
+      "reason": "A separate slatted coffee table is visible in the staircase sofa scene without a table label.",
+      "full_size_review": false,
+      "group_id": "sofa_black_cream_staircase_sofa"
+    },
+    {
+      "id": "S031",
+      "status": "quarantine",
+      "reason": "Additional upholstered seats/ottoman-like furniture is visible at the edges of the staircase scene; the one-sofa annotation is insufficient or ambiguous.",
+      "full_size_review": true,
+      "group_id": "sofa_black_cream_staircase_sofa"
+    },
+    {
+      "id": "S032",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S032"
+    },
+    {
+      "id": "S033",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S033"
+    },
+    {
+      "id": "S034",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S034"
+    },
+    {
+      "id": "S035",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S035"
+    },
+    {
+      "id": "S036",
+      "status": "quarantine",
+      "reason": "A separate wooden side table is clearly visible at the left without a label.",
+      "full_size_review": true,
+      "group_id": "S036"
+    },
+    {
+      "id": "S037",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S037"
+    },
+    {
+      "id": "S038",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S038"
+    },
+    {
+      "id": "S039",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_brown_floral_wooden_loveseat_product"
+    },
+    {
+      "id": "S040",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_mission_floral_loveseat_product"
+    },
+    {
+      "id": "S041",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_orange_floral_loveseat_product"
+    },
+    {
+      "id": "S042",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S042"
+    },
+    {
+      "id": "S043",
+      "status": "quarantine",
+      "reason": "A separate round glass-topped side table is visible at the right without a label.",
+      "full_size_review": true,
+      "group_id": "S043"
+    },
+    {
+      "id": "S044",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S044"
+    },
+    {
+      "id": "S045",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S045"
+    },
+    {
+      "id": "S046",
+      "status": "quarantine",
+      "reason": "A separate wooden side table is partly visible at the left edge without a label.",
+      "full_size_review": true,
+      "group_id": "S046"
+    },
+    {
+      "id": "S047",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S047"
+    },
+    {
+      "id": "S048",
+      "status": "quarantine",
+      "reason": "Foreground ottoman/seating and surrounding furnishings make the single Sofa label incomplete or ambiguous.",
+      "full_size_review": false,
+      "group_id": "S048"
+    },
+    {
+      "id": "S049",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S049"
+    },
+    {
+      "id": "S050",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S050"
+    },
+    {
+      "id": "S051",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S051"
+    },
+    {
+      "id": "S052",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S052"
+    },
+    {
+      "id": "S053",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S053"
+    },
+    {
+      "id": "S054",
+      "status": "quarantine",
+      "reason": "A separate small round side table is visible at the right without a table label.",
+      "full_size_review": false,
+      "group_id": "S054"
+    },
+    {
+      "id": "S055",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S055"
+    },
+    {
+      "id": "S056",
+      "status": "quarantine",
+      "reason": "The left-side cabinet/table furniture is ambiguous relative to the Table class; held for review.",
+      "full_size_review": false,
+      "group_id": "S056"
+    },
+    {
+      "id": "S057",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S057"
+    },
+    {
+      "id": "S058",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S058"
+    },
+    {
+      "id": "S059",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S059"
+    },
+    {
+      "id": "S060",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_tan_flat_back_sofa_product"
+    },
+    {
+      "id": "S061",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S061"
+    },
+    {
+      "id": "S062",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S062"
+    },
+    {
+      "id": "S063",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_tan_flat_back_sofa_product"
+    },
+    {
+      "id": "S064",
+      "status": "quarantine",
+      "reason": "A separate desk/side table and lamp at the left are visible without a table label.",
+      "full_size_review": true,
+      "group_id": "S064"
+    },
+    {
+      "id": "S065",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S065"
+    },
+    {
+      "id": "S066",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S066"
+    },
+    {
+      "id": "S067",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_gray_wainscot_clock_loveseat"
+    },
+    {
+      "id": "S068",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S068"
+    },
+    {
+      "id": "S069",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S069"
+    },
+    {
+      "id": "S070",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S070"
+    },
+    {
+      "id": "S071",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S071"
+    },
+    {
+      "id": "S072",
+      "status": "quarantine",
+      "reason": "Left-side cube and stand may be a separate side table; target completeness is uncertain.",
+      "full_size_review": false,
+      "group_id": "S072"
+    },
+    {
+      "id": "S073",
+      "status": "quarantine",
+      "reason": "A separate foreground coffee table is visible without a table label.",
+      "full_size_review": false,
+      "group_id": "S073"
+    },
+    {
+      "id": "S074",
+      "status": "quarantine",
+      "reason": "A separate foreground coffee table is visible without a table label.",
+      "full_size_review": false,
+      "group_id": "S074"
+    },
+    {
+      "id": "S075",
+      "status": "quarantine",
+      "reason": "Furniture beside the sofa may be separate side tables; target completeness is uncertain.",
+      "full_size_review": false,
+      "group_id": "S075"
+    },
+    {
+      "id": "S076",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S076"
+    },
+    {
+      "id": "S077",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S077"
+    },
+    {
+      "id": "S078",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S078"
+    },
+    {
+      "id": "S079",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_small_gray_sofa_product"
+    },
+    {
+      "id": "S080",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S080"
+    },
+    {
+      "id": "S081",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S081"
+    },
+    {
+      "id": "S082",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S082"
+    },
+    {
+      "id": "S083",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S083"
+    },
+    {
+      "id": "S084",
+      "status": "quarantine",
+      "reason": "Additional side table furniture is visible in the room without a label.",
+      "full_size_review": false,
+      "group_id": "sofa_warehouse_seating_scene"
+    },
+    {
+      "id": "S085",
+      "status": "quarantine",
+      "reason": "Other seating is visible in the showroom/background or at the image edges without labels.",
+      "full_size_review": false,
+      "group_id": "sofa_warehouse_seating_scene"
+    },
+    {
+      "id": "S086",
+      "status": "quarantine",
+      "reason": "Other seating is visible in the showroom/background or at the image edges without labels.",
+      "full_size_review": false,
+      "group_id": "sofa_warehouse_seating_scene"
+    },
+    {
+      "id": "S087",
+      "status": "quarantine",
+      "reason": "Other seating is visible in the showroom/background or at the image edges without labels.",
+      "full_size_review": false,
+      "group_id": "sofa_warehouse_seating_scene"
+    },
+    {
+      "id": "S088",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_brown_curved_leather_loveseat"
+    },
+    {
+      "id": "S089",
+      "status": "quarantine",
+      "reason": "A dark additional chair is visible inside the doorway on the left without a label.",
+      "full_size_review": true,
+      "group_id": "sofa_wooden_floral_porch_sofa"
+    },
+    {
+      "id": "S090",
+      "status": "quarantine",
+      "reason": "A dark additional chair is visible inside the doorway on the left without a label.",
+      "full_size_review": false,
+      "group_id": "sofa_wooden_floral_porch_sofa"
+    },
+    {
+      "id": "S091",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_wooden_floral_porch_sofa"
+    },
+    {
+      "id": "S092",
+      "status": "quarantine",
+      "reason": "A dark additional chair is visible inside the doorway on the left without a label.",
+      "full_size_review": false,
+      "group_id": "sofa_wooden_floral_porch_sofa"
+    },
+    {
+      "id": "S093",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_wooden_floral_porch_sofa"
+    },
+    {
+      "id": "S094",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_wooden_floral_porch_sofa"
+    },
+    {
+      "id": "S095",
+      "status": "quarantine",
+      "reason": "Cropped dark furniture legs at image edges are unresolved in this multi-seat room; conservatively held for annotation review.",
+      "full_size_review": true,
+      "group_id": "sofa_patchwork_sofa_room"
+    },
+    {
+      "id": "S096",
+      "status": "quarantine",
+      "reason": "Additional chair/sofa seating is visible at the edge or behind the patchwork sofa without a label.",
+      "full_size_review": false,
+      "group_id": "sofa_patchwork_sofa_room"
+    },
+    {
+      "id": "S097",
+      "status": "quarantine",
+      "reason": "Additional chair/sofa seating is visible at the edge or behind the patchwork sofa without a label.",
+      "full_size_review": false,
+      "group_id": "sofa_patchwork_sofa_room"
+    },
+    {
+      "id": "S098",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_patchwork_sofa_room"
+    },
+    {
+      "id": "S099",
+      "status": "quarantine",
+      "reason": "Additional chair/sofa seating is visible at the edge or behind the patchwork sofa without a label.",
+      "full_size_review": false,
+      "group_id": "sofa_patchwork_sofa_room"
+    },
+    {
+      "id": "S100",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_mustard_sofa_product"
+    },
+    {
+      "id": "S101",
+      "status": "quarantine",
+      "reason": "A separate side table is visible to the left of the mustard sofa without a label.",
+      "full_size_review": false,
+      "group_id": "sofa_mustard_sofa_product"
+    },
+    {
+      "id": "S102",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_tufted_futon_product_variants"
+    },
+    {
+      "id": "S103",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_tufted_futon_product_variants"
+    },
+    {
+      "id": "S104",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_tufted_futon_product_variants"
+    },
+    {
+      "id": "S105",
+      "status": "quarantine",
+      "reason": "A second upholstered sofa/chair is partly visible at the left edge without a label.",
+      "full_size_review": true,
+      "group_id": "sofa_outdoor_furniture_metal_door_scene"
+    },
+    {
+      "id": "S106",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_outdoor_furniture_metal_door_scene"
+    },
+    {
+      "id": "S107",
+      "status": "quarantine",
+      "reason": "A separate wooden chair is visible at the right edge without a label.",
+      "full_size_review": false,
+      "group_id": "sofa_outdoor_furniture_metal_door_scene"
+    },
+    {
+      "id": "S108",
+      "status": "quarantine",
+      "reason": "Additional seating is visible behind/beside the main sofa without labels.",
+      "full_size_review": false,
+      "group_id": "sofa_outdoor_furniture_metal_door_scene"
+    },
+    {
+      "id": "S109",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_outdoor_furniture_metal_door_scene"
+    },
+    {
+      "id": "S110",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_outdoor_furniture_metal_door_scene"
+    },
+    {
+      "id": "S111",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_tan_chesterfield_product"
+    },
+    {
+      "id": "S112",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_tan_chesterfield_product"
+    },
+    {
+      "id": "S113",
+      "status": "quarantine",
+      "reason": "Another red seat is visible in the left foreground without a label.",
+      "full_size_review": false,
+      "group_id": "S113"
+    },
+    {
+      "id": "S114",
+      "status": "quarantine",
+      "reason": "A separate dark coffee-table edge is visible in the lower foreground without a label.",
+      "full_size_review": true,
+      "group_id": "S114"
+    },
+    {
+      "id": "S115",
+      "status": "quarantine",
+      "reason": "A separate dark wooden chair/table is partly visible at the right edge without a label.",
+      "full_size_review": true,
+      "group_id": "S115"
+    },
+    {
+      "id": "S116",
+      "status": "quarantine",
+      "reason": "Other chair/table-like furniture is visible behind or to the left of the loveseat; completeness is uncertain.",
+      "full_size_review": false,
+      "group_id": "sofa_multicolor_wooden_loveseat_room"
+    },
+    {
+      "id": "S117",
+      "status": "quarantine",
+      "reason": "Other chair/table-like furniture is visible behind or to the left of the loveseat; completeness is uncertain.",
+      "full_size_review": false,
+      "group_id": "sofa_multicolor_wooden_loveseat_room"
+    },
+    {
+      "id": "S118",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S118"
+    },
+    {
+      "id": "S119",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_striped_wooden_loveseat_room"
+    },
+    {
+      "id": "S120",
+      "status": "quarantine",
+      "reason": "Separate coffee table and/or matching chair furniture is clearly visible without labels.",
+      "full_size_review": false,
+      "group_id": "sofa_striped_wooden_loveseat_room"
+    },
+    {
+      "id": "S121",
+      "status": "quarantine",
+      "reason": "Separate coffee table and/or matching chair furniture is clearly visible without labels.",
+      "full_size_review": false,
+      "group_id": "sofa_striped_wooden_loveseat_room"
+    },
+    {
+      "id": "S122",
+      "status": "quarantine",
+      "reason": "The foreground includes a recognizable cropped table edge without a table label.",
+      "full_size_review": false,
+      "group_id": "sofa_striped_wooden_loveseat_room"
+    },
+    {
+      "id": "S123",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S124",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S125",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S126",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S127",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S128",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S129",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S130",
+      "status": "quarantine",
+      "reason": "A separate dark side table/stool is visible to the right of the ornate sofa without a label.",
+      "full_size_review": true,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S131",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S132",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S133",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S134",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S135",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S136",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S137",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S138",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S139",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S140",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S141",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S142",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S143",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S144",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S145",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S146",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S147",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_ornate_pink_sofa_landing_room"
+    },
+    {
+      "id": "S148",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S148"
+    },
+    {
+      "id": "S149",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S149"
+    },
+    {
+      "id": "S150",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S150"
+    },
+    {
+      "id": "S151",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S151"
+    },
+    {
+      "id": "S152",
+      "status": "quarantine",
+      "reason": "Single-seat chair versus small loveseat classification is ambiguous; preserve original Sofa label only in quarantine pending class-policy review.",
+      "full_size_review": true,
+      "group_id": "S152"
+    },
+    {
+      "id": "S153",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S153"
+    },
+    {
+      "id": "S154",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S154"
+    },
+    {
+      "id": "S155",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S155"
+    },
+    {
+      "id": "S156",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S156"
+    },
+    {
+      "id": "S157",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S157"
+    },
+    {
+      "id": "S158",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S158"
+    },
+    {
+      "id": "S159",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S159"
+    },
+    {
+      "id": "S160",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S160"
+    },
+    {
+      "id": "S161",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S161"
+    },
+    {
+      "id": "S162",
+      "status": "quarantine",
+      "reason": "A cropped cube-shaped furnishing at the left may be a separate side table; target completeness is uncertain.",
+      "full_size_review": true,
+      "group_id": "S162"
+    },
+    {
+      "id": "S163",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S163"
+    },
+    {
+      "id": "S164",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S164"
+    },
+    {
+      "id": "S165",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_white_panel_wall_product_scene"
+    },
+    {
+      "id": "S166",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S166"
+    },
+    {
+      "id": "S167",
+      "status": "quarantine",
+      "reason": "A separate left-side cabinet/table-like furnishing is visible; its Table class treatment needs review.",
+      "full_size_review": false,
+      "group_id": "S167"
+    },
+    {
+      "id": "S168",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S168"
+    },
+    {
+      "id": "S169",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S169"
+    },
+    {
+      "id": "S170",
+      "status": "quarantine",
+      "reason": "A separate glass coffee table is visible in the foreground without a table label.",
+      "full_size_review": false,
+      "group_id": "S170"
+    },
+    {
+      "id": "S171",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S171"
+    },
+    {
+      "id": "S172",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S172"
+    },
+    {
+      "id": "S173",
+      "status": "quarantine",
+      "reason": "Single-seat chair versus small loveseat classification is ambiguous; preserve original Sofa label only in quarantine pending class-policy review.",
+      "full_size_review": true,
+      "group_id": "S173"
+    },
+    {
+      "id": "S174",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_cream_wooden_loveseat_product"
+    },
+    {
+      "id": "S175",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S175"
+    },
+    {
+      "id": "S176",
+      "status": "quarantine",
+      "reason": "Separate side tables are visible at the left and behind the right arm without labels.",
+      "full_size_review": true,
+      "group_id": "S176"
+    },
+    {
+      "id": "S177",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S177"
+    },
+    {
+      "id": "S178",
+      "status": "quarantine",
+      "reason": "Single-seat chair versus small loveseat classification is ambiguous; preserve original Sofa label only in quarantine pending class-policy review.",
+      "full_size_review": true,
+      "group_id": "S178"
+    },
+    {
+      "id": "S179",
+      "status": "quarantine",
+      "reason": "A cropped dark furnishing in the left foreground may be a separate table; target completeness is uncertain.",
+      "full_size_review": false,
+      "group_id": "S179"
+    },
+    {
+      "id": "S180",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S180"
+    },
+    {
+      "id": "S181",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S181"
+    },
+    {
+      "id": "S182",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_dark_floral_wooden_loveseat"
+    },
+    {
+      "id": "S183",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_curved_arm_product_variants"
+    },
+    {
+      "id": "S184",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_curved_arm_product_variants"
+    },
+    {
+      "id": "S185",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_curved_arm_product_variants"
+    },
+    {
+      "id": "S186",
+      "status": "quarantine",
+      "reason": "A separate left side table and additional cropped seating on the right are visible without labels.",
+      "full_size_review": false,
+      "group_id": "S186"
+    },
+    {
+      "id": "S187",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S187"
+    },
+    {
+      "id": "S188",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S188"
+    },
+    {
+      "id": "S189",
+      "status": "quarantine",
+      "reason": "A wooden lamp-side table/cabinet is clearly visible on the right; its target annotation is missing or ambiguous.",
+      "full_size_review": true,
+      "group_id": "S189"
+    },
+    {
+      "id": "S190",
+      "status": "quarantine",
+      "reason": "A small cropped furniture-like leg appears at the right edge; conservatively held because target completeness is uncertain.",
+      "full_size_review": true,
+      "group_id": "S190"
+    },
+    {
+      "id": "S191",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S191"
+    },
+    {
+      "id": "S192",
+      "status": "quarantine",
+      "reason": "A cropped upholstered furniture portion is visible at the lower right without a label.",
+      "full_size_review": true,
+      "group_id": "S192"
+    },
+    {
+      "id": "S193",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S193"
+    },
+    {
+      "id": "S194",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S194"
+    },
+    {
+      "id": "S195",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S195"
+    },
+    {
+      "id": "S196",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S196"
+    },
+    {
+      "id": "S197",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S197"
+    },
+    {
+      "id": "S198",
+      "status": "quarantine",
+      "reason": "A separate side table supporting a lamp is visible without a table label.",
+      "full_size_review": false,
+      "group_id": "sofa_blue_sofa_green_wall_scene"
+    },
+    {
+      "id": "S199",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S199"
+    },
+    {
+      "id": "S200",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S200"
+    },
+    {
+      "id": "S201",
+      "status": "quarantine",
+      "reason": "A separate cropped coffee-table top with magazines is visible along the lower edge without a label.",
+      "full_size_review": true,
+      "group_id": "S201"
+    },
+    {
+      "id": "S202",
+      "status": "quarantine",
+      "reason": "Several other sofas/chairs are visible behind and beside the target; the box also clips the extended left arm.",
+      "full_size_review": true,
+      "group_id": "S202"
+    },
+    {
+      "id": "S203",
+      "status": "quarantine",
+      "reason": "A dining table and chairs are visible through the doorway at the left without labels.",
+      "full_size_review": true,
+      "group_id": "S203"
+    },
+    {
+      "id": "S204",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S204"
+    },
+    {
+      "id": "S205",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_white_panel_wall_product_scene"
+    },
+    {
+      "id": "S206",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S206"
+    },
+    {
+      "id": "S207",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S207"
+    },
+    {
+      "id": "S208",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S208"
+    },
+    {
+      "id": "S209",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_gray_rounded_arm_studio_loveseat"
+    },
+    {
+      "id": "S210",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_gray_rounded_arm_studio_loveseat"
+    },
+    {
+      "id": "S211",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_gray_rounded_arm_studio_loveseat"
+    },
+    {
+      "id": "S212",
+      "status": "quarantine",
+      "reason": "A separate side table/console is visible to the left of the sofa without a label.",
+      "full_size_review": false,
+      "group_id": "S212"
+    },
+    {
+      "id": "S213",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_brown_curved_leather_loveseat"
+    },
+    {
+      "id": "S214",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S214"
+    },
+    {
+      "id": "S215",
+      "status": "quarantine",
+      "reason": "A separate round coffee table is visible at the left foreground without a label.",
+      "full_size_review": false,
+      "group_id": "S215"
+    },
+    {
+      "id": "S216",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S216"
+    },
+    {
+      "id": "S217",
+      "status": "quarantine",
+      "reason": "Sofa--383 includes a clearly visible unlabeled chair on the left and other scene furniture.",
+      "full_size_review": false,
+      "group_id": "S217"
+    },
+    {
+      "id": "S218",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "S218"
+    },
+    {
+      "id": "S219",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_striped_wooden_seating_family"
+    },
+    {
+      "id": "S220",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_striped_wooden_seating_family"
+    },
+    {
+      "id": "S221",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_striped_wooden_seating_family"
+    },
+    {
+      "id": "S222",
+      "status": "quarantine",
+      "reason": "Single-seat chair versus small loveseat classification is ambiguous; preserve original Sofa label only in quarantine pending class-policy review.",
+      "full_size_review": true,
+      "group_id": "sofa_striped_wooden_seating_family"
+    },
+    {
+      "id": "S223",
+      "status": "quarantine",
+      "reason": "A dark cropped foreground object may be a separate table/seat; conservatively held because its identity is unresolved.",
+      "full_size_review": true,
+      "group_id": "S223"
+    },
+    {
+      "id": "S224",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_black_sofa_rgb_pillows_room"
+    },
+    {
+      "id": "S225",
+      "status": "quarantine",
+      "reason": "Side table furniture is visible beside the sofa, including cropped table portions, without additional target labels.",
+      "full_size_review": true,
+      "group_id": "sofa_brown_leather_barred_window"
+    },
+    {
+      "id": "S226",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_gray_shag_pillows_room"
+    },
+    {
+      "id": "S227",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_black_sofa_rgb_pillows_room"
+    },
+    {
+      "id": "S228",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "S228"
+    },
+    {
+      "id": "S229",
+      "status": "quarantine",
+      "reason": "A separate dark coffee table is clearly visible across the lower foreground without a table label.",
+      "full_size_review": true,
+      "group_id": "sofa_wooden_sofa_curtained_window_room"
+    },
+    {
+      "id": "S230",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_striped_wooden_seating_family"
+    },
+    {
+      "id": "S231",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_dark_floral_wooden_loveseat"
+    },
+    {
+      "id": "S232",
+      "status": "quarantine",
+      "reason": "Side table furniture is visible beside the sofa, including cropped table portions, without additional target labels.",
+      "full_size_review": true,
+      "group_id": "sofa_brown_leather_barred_window"
+    },
+    {
+      "id": "S233",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_dark_floral_wooden_loveseat"
+    },
+    {
+      "id": "S234",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_wooden_sofa_curtained_window_room"
+    },
+    {
+      "id": "S235",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": true,
+      "group_id": "sofa_wooden_sofa_curtained_window_room"
+    },
+    {
+      "id": "S236",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_black_sofa_rgb_pillows_room"
+    },
+    {
+      "id": "S237",
+      "status": "quarantine",
+      "reason": "A separate dark coffee table is clearly visible across the lower foreground without a table label.",
+      "full_size_review": true,
+      "group_id": "sofa_wooden_sofa_curtained_window_room"
+    },
+    {
+      "id": "S238",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_gray_shag_pillows_room"
+    },
+    {
+      "id": "S239",
+      "status": "accept",
+      "reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+      "full_size_review": false,
+      "group_id": "sofa_black_sofa_rgb_pillows_room"
+    }
+  ],
+  "notes": [
+    "All 240 Sofa IDs S000-S239 were inspected across sofa_01.jpg through sofa_08.jpg. Full-size originals were additionally inspected for the decisions marked true. This is assistant visual QA, not externally verified ground truth.",
+    "Quarantine retains the original annotations unchanged. It includes confirmed missing targets, class ambiguity and unresolved edge furniture. No automatic pseudo-labels were promoted to ground truth.",
+    "Manual groups conservatively join repeated objects, color/product variants, matching furniture sets and clearly repeated room/view series. Unique unrelated items use their own ID. Groups should be unioned with exact/perceptual groups before split allocation.",
+    "Repeated ornate sofa S123-S147 uses a wooden staircase banister on the right, which is not a chair. S130 separately shows a dark side table/stool and is quarantined.",
+    "S234/S235 were confirmed in full-size originals to show floor reflection and loose curtains below the sofa, not a second sofa. S229/S237 in the same series do include a foreground coffee table.",
+    "Plant pots, narrow plant holders, rugs, lamps, baskets, shelves, people and decorative objects alone were not treated as missing Chair/Sofa/Table annotations.",
+    "Potential cross-class room candidate: S224/S227/S236/S239 have white walls, glossy pale floor tiles and black skirting. Compare to the Chair reviewer family; no cross-class identity was independently confirmed by this reviewer.",
+    "Several single-seat versus loveseat distinctions (S152/S173/S178/S222) require a consistent class definition. They were conservatively quarantined rather than relabeled.",
+    "The outdoor metal-door scene group S105-S110 is conservative scene grouping for related furniture photographs; the tan flat-back product group joins highly similar design views, preventing product-family leakage.",
+    "The hand-picked conservative subset is intended as a first fine-tuning practice set; contact-sheet QA cannot prove exhaustive annotation correctness and does not replace later high-resolution annotation audit."
+  ]
+}

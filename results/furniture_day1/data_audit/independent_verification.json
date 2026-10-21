@@ -1,0 +1,119 @@
+{
+  "verified_at_utc": "2026-10-21T06:58:26.040120+00:00",
+  "reviewer": "independent_review_chairs_agent",
+  "source": "C:/work/core_pjt/datasets/roboflow/furniture/v2",
+  "derived": "C:/work/core_pjt/datasets/roboflow/furniture/v2_curated_v2",
+  "result": "pass",
+  "checks": {
+    "unique_index_ids": true,
+    "unique_accepted_ids": true,
+    "unique_quarantined_ids": true,
+    "each_original_id_partitioned_once": true,
+    "accepted_quarantine_counts_match_derivation": true,
+    "all_raw_file_paths_and_sha256_match_before": true,
+    "raw_snapshot_before_equals_after": true,
+    "raw_tree_sha256_matches_snapshots_and_derivation": true,
+    "archive_sha256_matches_provenance": true,
+    "archive_size_matches_provenance": true,
+    "archive_member_names_unique": true,
+    "every_archive_member_matches_extracted_raw_bytes": true,
+    "all_actual_source_images_indexed_once": true,
+    "all_actual_source_labels_indexed_once": true,
+    "index_hashes_match_all_actual_source_images_and_labels": true,
+    "all_source_labels_agree_with_index_class_box_and_validity": true,
+    "raw_split_counts_match_download_provenance": true,
+    "review_file_hashes_match_frozen_derivation": true,
+    "all_original_ids_reviewed_once": true,
+    "no_unrecorded_review_overrides": true,
+    "accepted_partition_matches_final_review_and_structural_policy": true,
+    "quarantine_partition_matches_final_review_and_structural_policy": true,
+    "similarity_links_hash_matches_derivation": true,
+    "scene_groups_hash_matches_derivation": true,
+    "image_index_hash_matches_derivation": true,
+    "recorded_script_hashes_match_actual": true,
+    "all_group_and_similarity_edges_reference_known_ids": true,
+    "independent_graph_components_match_manifest_and_quarantine_groups": true,
+    "no_transitive_visual_scene_similarity_split_leakage": true,
+    "no_direct_similarity_edge_crosses_splits": true,
+    "all_565_image_and_565_label_copies_byte_identical_to_originals": true,
+    "all_manifest_paths_classes_and_source_references_consistent": true,
+    "actual_accepted_decoded_pixel_hashes_match_index": true,
+    "no_actual_identical_file_content_cross_split": true,
+    "no_actual_identical_decoded_image_cross_split": true,
+    "actual_derived_image_file_set_exactly_manifest": true,
+    "actual_derived_label_file_set_exactly_manifest": true,
+    "quarantine_source_references_and_reasons_complete": true,
+    "class_counts_from_actual_labels_match_derivation": true,
+    "split_image_counts_match_derivation": true,
+    "every_class_present_in_every_split": true,
+    "dataset_yaml_names_and_split_paths_valid": true,
+    "source_readme_copies_identical": true,
+    "same_seed_assignment_matches_frozen_manifest": true,
+    "same_seed_assignment_reproducible_with_reversed_input_order": true,
+    "reproduced_class_counts_match_actual_files": true,
+    "independent_group_counts_match_derivation": true,
+    "frozen_manifest_hash_matches_derivation": true,
+    "frozen_manifest_unchanged_during_verification": true,
+    "source_still_byte_identical_after_verification": true
+  },
+  "failures": {},
+  "observed": {
+    "source_images": 689,
+    "source_labels": 689,
+    "raw_files": 1383,
+    "archive_members_verified": 1381,
+    "accepted": 565,
+    "quarantined": 124,
+    "classes_by_split": {
+      "train": {
+        "Chair": 156,
+        "Sofa": 113,
+        "Table": 124
+      },
+      "valid": {
+        "Chair": 34,
+        "Sofa": 24,
+        "Table": 27
+      },
+      "test": {
+        "Chair": 34,
+        "Sofa": 24,
+        "Table": 29
+      }
+    },
+    "images_by_split": {
+      "train": 393,
+      "valid": 85,
+      "test": 87
+    },
+    "accepted_groups_by_split": {
+      "train": 228,
+      "valid": 37,
+      "test": 38
+    },
+    "all_source_connected_components": 348,
+    "visual_review_groups": 363,
+    "scene_groups": 8,
+    "similarity_edges": 18,
+    "transitively_leaking_groups": 0,
+    "actual_byte_hash_leaks": 0,
+    "actual_pixel_hash_leaks": 0
+  },
+  "hashes": {
+    "archive_sha256": "c9fcf329d42cb419f4af787ac95172511f5f6a71017e359ac6710324b06125bd",
+    "raw_tree_sha256": "46af11222baca3707ea13a576629f314d3c3c3abe814585fd0e6a326ad0bcd3e",
+    "frozen_manifest_sha256": "91fbacaceece08988cb58742e341980db8d39a4939d3c82dda5df497bacc0b2c",
+    "derivation_sha256": "8692a3d389f544a80483fee8da788548611616f99c6d5ed36cf3e9a129574636"
+  },
+  "reproducibility": {
+    "seed": 20261021,
+    "runs": 2,
+    "matches_frozen_manifest": true,
+    "reversed_input_order_same_result": true
+  },
+  "method": "All raw files and accepted copies hashed from disk; ZIP members compared to extracted originals; connected components independently reconstructed using adjacency/BFS across all IDs, including quarantined bridge IDs. The allocator alone was imported and run twice in memory. No builder main, training, image or label writes were performed.",
+  "limitations": [
+    "Checks establish file integrity and separation of recorded visual/scene/similarity groups, not absence of all unknown visual similarities or annotation errors.",
+    "Ultralytics labels.cache files, if generated concurrently, are not samples and are excluded from image/label file-set checks."
+  ]
+}

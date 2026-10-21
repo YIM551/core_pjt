@@ -1,0 +1,5 @@
+{
+  "status": "superseded_draft_do_not_train",
+  "use_dataset": "../v2_curated_v2/data.yaml",
+  "reason": "A reviewer finalized additional product-family grouping corrections after this draft. v2 incorporates the frozen final review and stronger integrity checks."
+}

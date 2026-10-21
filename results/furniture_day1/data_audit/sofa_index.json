@@ -1,0 +1,3122 @@
+[
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--1-_jpg.rf.41c87b6cb90cfd074c6bebd0641f5920.jpg",
+    "label": "train/labels/Sofa--1-_jpg.rf.41c87b6cb90cfd074c6bebd0641f5920.txt",
+    "bbox": [
+      0.5204166666666666,
+      0.5466666666666666,
+      0.8375,
+      0.385
+    ],
+    "id": "S000"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--151-_jpg.rf.1e3a0a1af09aafb2c5b88ea3b6371c09.jpg",
+    "label": "train/labels/Sofa--151-_jpg.rf.1e3a0a1af09aafb2c5b88ea3b6371c09.txt",
+    "bbox": [
+      0.48,
+      0.57625,
+      0.895,
+      0.5858333333333333
+    ],
+    "id": "S001"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--152-_jpg.rf.dd7ed89874326d0682b67e68c4818801.jpg",
+    "label": "train/labels/Sofa--152-_jpg.rf.dd7ed89874326d0682b67e68c4818801.txt",
+    "bbox": [
+      0.4633333333333333,
+      0.475,
+      0.8766666666666667,
+      0.5483333333333333
+    ],
+    "id": "S002"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--155-_jpg.rf.2898eee5e1b37cbfc91ccb6f2b4ce3b7.jpg",
+    "label": "train/labels/Sofa--155-_jpg.rf.2898eee5e1b37cbfc91ccb6f2b4ce3b7.txt",
+    "bbox": [
+      0.5333333333333333,
+      0.43416666666666665,
+      0.9016666666666666,
+      0.5316666666666666
+    ],
+    "id": "S003"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--156-_jpg.rf.7adb6f5dbb8c62a79abc3f406d05fa65.jpg",
+    "label": "train/labels/Sofa--156-_jpg.rf.7adb6f5dbb8c62a79abc3f406d05fa65.txt",
+    "bbox": [
+      0.5179166666666667,
+      0.525,
+      0.9075,
+      0.6
+    ],
+    "id": "S004"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--157-_jpg.rf.5f5e8eb918140ba153e1bf10e78184e4.jpg",
+    "label": "train/labels/Sofa--157-_jpg.rf.5f5e8eb918140ba153e1bf10e78184e4.txt",
+    "bbox": [
+      0.4691666666666667,
+      0.5829166666666666,
+      0.9166666666666666,
+      0.5925
+    ],
+    "id": "S005"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--158-_jpg.rf.bf90ee458acbbf8cd41c07755446c9b7.jpg",
+    "label": "train/labels/Sofa--158-_jpg.rf.bf90ee458acbbf8cd41c07755446c9b7.txt",
+    "bbox": [
+      0.4691666666666667,
+      0.41541666666666666,
+      0.8883333333333333,
+      0.7491666666666666
+    ],
+    "id": "S006"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--159-_jpg.rf.a72b35bd7bd67adc8bcfafdff4908f39.jpg",
+    "label": "train/labels/Sofa--159-_jpg.rf.a72b35bd7bd67adc8bcfafdff4908f39.txt",
+    "bbox": [
+      0.49416666666666664,
+      0.45708333333333334,
+      0.8566666666666667,
+      0.5891666666666666
+    ],
+    "id": "S007"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--160-_jpg.rf.d58f3dca96619fb4c793e4371e192c3e.jpg",
+    "label": "train/labels/Sofa--160-_jpg.rf.d58f3dca96619fb4c793e4371e192c3e.txt",
+    "bbox": [
+      0.4708333333333333,
+      0.52875,
+      0.8516666666666667,
+      0.6225
+    ],
+    "id": "S008"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--161-_jpg.rf.cd4637a2b38679015fc8982e1e14d634.jpg",
+    "label": "train/labels/Sofa--161-_jpg.rf.cd4637a2b38679015fc8982e1e14d634.txt",
+    "bbox": [
+      0.45708333333333334,
+      0.5566666666666666,
+      0.8958333333333334,
+      0.4716666666666667
+    ],
+    "id": "S009"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--164-_jpg.rf.a8e905eb2fe473f0be843d2f6e715e1d.jpg",
+    "label": "train/labels/Sofa--164-_jpg.rf.a8e905eb2fe473f0be843d2f6e715e1d.txt",
+    "bbox": [
+      0.5454166666666667,
+      0.5379166666666667,
+      0.8658333333333333,
+      0.6975
+    ],
+    "id": "S010"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--165-_jpg.rf.3b3ebfc9debc85d1a865fe677d19b17e.jpg",
+    "label": "train/labels/Sofa--165-_jpg.rf.3b3ebfc9debc85d1a865fe677d19b17e.txt",
+    "bbox": [
+      0.49083333333333334,
+      0.61125,
+      0.8983333333333333,
+      0.5275
+    ],
+    "id": "S011"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--166-_jpg.rf.0a0c87bfe37d427d635821367566c714.jpg",
+    "label": "train/labels/Sofa--166-_jpg.rf.0a0c87bfe37d427d635821367566c714.txt",
+    "bbox": [
+      0.5029166666666667,
+      0.5054166666666666,
+      0.9041666666666667,
+      0.5791666666666667
+    ],
+    "id": "S012"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--167-_jpg.rf.e549ccf6cb65b51ddb71d688459c4f1f.jpg",
+    "label": "train/labels/Sofa--167-_jpg.rf.e549ccf6cb65b51ddb71d688459c4f1f.txt",
+    "bbox": [
+      0.5016666666666667,
+      0.50625,
+      0.905,
+      0.5725
+    ],
+    "id": "S013"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--168-_jpg.rf.d10dd5ef88e93cb45194de8ed232296e.jpg",
+    "label": "train/labels/Sofa--168-_jpg.rf.d10dd5ef88e93cb45194de8ed232296e.txt",
+    "bbox": [
+      0.5183333333333333,
+      0.5504166666666667,
+      0.9216666666666666,
+      0.5358333333333334
+    ],
+    "id": "S014"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--169-_jpg.rf.2baeec9cfa59c03abb025a5da11315cc.jpg",
+    "label": "train/labels/Sofa--169-_jpg.rf.2baeec9cfa59c03abb025a5da11315cc.txt",
+    "bbox": [
+      0.5291666666666667,
+      0.5545833333333333,
+      0.7733333333333333,
+      0.45916666666666667
+    ],
+    "id": "S015"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--170-_jpg.rf.bfd265cdc5c39127aaa388f6d8b5e096.jpg",
+    "label": "train/labels/Sofa--170-_jpg.rf.bfd265cdc5c39127aaa388f6d8b5e096.txt",
+    "bbox": [
+      0.5083333333333333,
+      0.59,
+      0.8933333333333333,
+      0.6866666666666666
+    ],
+    "id": "S016"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--171-_jpg.rf.bfd876477238a95d07493fec11251d33.jpg",
+    "label": "train/labels/Sofa--171-_jpg.rf.bfd876477238a95d07493fec11251d33.txt",
+    "bbox": [
+      0.5433333333333333,
+      0.5866666666666667,
+      0.56,
+      0.54
+    ],
+    "id": "S017"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--172-_jpg.rf.a9e6c352fe7b022d4c8b1ed674d7be6d.jpg",
+    "label": "train/labels/Sofa--172-_jpg.rf.a9e6c352fe7b022d4c8b1ed674d7be6d.txt",
+    "bbox": [
+      0.51,
+      0.49333333333333335,
+      0.9233333333333333,
+      0.7216666666666667
+    ],
+    "id": "S018"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--173-_jpg.rf.f0014448c7df89eb1b0f1f87b932d3f6.jpg",
+    "label": "train/labels/Sofa--173-_jpg.rf.f0014448c7df89eb1b0f1f87b932d3f6.txt",
+    "bbox": [
+      0.49833333333333335,
+      0.5266666666666666,
+      0.535,
+      0.2783333333333333
+    ],
+    "id": "S019"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--174-_jpg.rf.4b6182b31ed60395e7addbbae2964bde.jpg",
+    "label": "train/labels/Sofa--174-_jpg.rf.4b6182b31ed60395e7addbbae2964bde.txt",
+    "bbox": [
+      0.4975,
+      0.55,
+      0.9033333333333333,
+      0.5683333333333334
+    ],
+    "id": "S020"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--175-_jpg.rf.05a2461e0b0a3b210258f318b0cfa30d.jpg",
+    "label": "train/labels/Sofa--175-_jpg.rf.05a2461e0b0a3b210258f318b0cfa30d.txt",
+    "bbox": [
+      0.4995833333333333,
+      0.585,
+      0.6341666666666667,
+      0.4716666666666667
+    ],
+    "id": "S021"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--176-_jpg.rf.ed62351b0ebd3bdd0605484509a4accd.jpg",
+    "label": "train/labels/Sofa--176-_jpg.rf.ed62351b0ebd3bdd0605484509a4accd.txt",
+    "bbox": [
+      0.48875,
+      0.5604166666666667,
+      0.9125,
+      0.4091666666666667
+    ],
+    "id": "S022"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--177-_jpg.rf.dbf8ef1954aa825b1fb1304841477545.jpg",
+    "label": "train/labels/Sofa--177-_jpg.rf.dbf8ef1954aa825b1fb1304841477545.txt",
+    "bbox": [
+      0.5058333333333334,
+      0.5275,
+      0.8616666666666667,
+      0.5166666666666667
+    ],
+    "id": "S023"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--180-_jpg.rf.c6a16f14ccfa40f603b66ca1e3051595.jpg",
+    "label": "train/labels/Sofa--180-_jpg.rf.c6a16f14ccfa40f603b66ca1e3051595.txt",
+    "bbox": [
+      0.5145833333333333,
+      0.5220833333333333,
+      0.8358333333333333,
+      0.5408333333333334
+    ],
+    "id": "S024"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--181-_jpg.rf.64bafb026a280b401760072405daba54.jpg",
+    "label": "train/labels/Sofa--181-_jpg.rf.64bafb026a280b401760072405daba54.txt",
+    "bbox": [
+      0.47333333333333333,
+      0.5295833333333333,
+      0.7433333333333333,
+      0.5325
+    ],
+    "id": "S025"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--182-_jpg.rf.507296eceb2d4da9dfb47a779d009378.jpg",
+    "label": "train/labels/Sofa--182-_jpg.rf.507296eceb2d4da9dfb47a779d009378.txt",
+    "bbox": [
+      0.4845833333333333,
+      0.5541666666666667,
+      0.9275,
+      0.545
+    ],
+    "id": "S026"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--183-_jpg.rf.c958058311016fcd62266011793c8542.jpg",
+    "label": "train/labels/Sofa--183-_jpg.rf.c958058311016fcd62266011793c8542.txt",
+    "bbox": [
+      0.4945833333333333,
+      0.5283333333333333,
+      0.6191666666666666,
+      0.40166666666666667
+    ],
+    "id": "S027"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--184-_jpg.rf.d49000ab63cc1637a3ea17867f7028f3.jpg",
+    "label": "train/labels/Sofa--184-_jpg.rf.d49000ab63cc1637a3ea17867f7028f3.txt",
+    "bbox": [
+      0.5120833333333333,
+      0.5204166666666666,
+      0.7658333333333334,
+      0.5208333333333334
+    ],
+    "id": "S028"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--185-_jpg.rf.ff546d0d614a3f4661e6173112c2eb1d.jpg",
+    "label": "train/labels/Sofa--185-_jpg.rf.ff546d0d614a3f4661e6173112c2eb1d.txt",
+    "bbox": [
+      0.49,
+      0.5091666666666667,
+      0.9416666666666667,
+      0.5733333333333334
+    ],
+    "id": "S029"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--186-_jpg.rf.0f1786329690d6a76fbb4f93974768cf.jpg",
+    "label": "train/labels/Sofa--186-_jpg.rf.0f1786329690d6a76fbb4f93974768cf.txt",
+    "bbox": [
+      0.48791666666666667,
+      0.58375,
+      0.6575,
+      0.4608333333333333
+    ],
+    "id": "S030"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--187-_jpg.rf.d6264a50345b7b031033ab44eef70733.jpg",
+    "label": "train/labels/Sofa--187-_jpg.rf.d6264a50345b7b031033ab44eef70733.txt",
+    "bbox": [
+      0.48083333333333333,
+      0.5208333333333334,
+      0.8416666666666667,
+      0.5383333333333333
+    ],
+    "id": "S031"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--188-_jpg.rf.5cc29b24949e42c0a2f23412e697ecd9.jpg",
+    "label": "train/labels/Sofa--188-_jpg.rf.5cc29b24949e42c0a2f23412e697ecd9.txt",
+    "bbox": [
+      0.5004166666666666,
+      0.5945833333333334,
+      0.8508333333333333,
+      0.44583333333333336
+    ],
+    "id": "S032"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--189-_jpg.rf.d7237761dbeb1e390c3d6373f431a380.jpg",
+    "label": "train/labels/Sofa--189-_jpg.rf.d7237761dbeb1e390c3d6373f431a380.txt",
+    "bbox": [
+      0.47041666666666665,
+      0.49916666666666665,
+      0.9308333333333333,
+      0.4716666666666667
+    ],
+    "id": "S033"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--190-_jpg.rf.50c750d897a70754940b3da0e5b33257.jpg",
+    "label": "train/labels/Sofa--190-_jpg.rf.50c750d897a70754940b3da0e5b33257.txt",
+    "bbox": [
+      0.49583333333333335,
+      0.585,
+      0.8883333333333333,
+      0.5016666666666667
+    ],
+    "id": "S034"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--191-_jpg.rf.cce9f588d2806ee92a25872b27d7db44.jpg",
+    "label": "train/labels/Sofa--191-_jpg.rf.cce9f588d2806ee92a25872b27d7db44.txt",
+    "bbox": [
+      0.49,
+      0.54125,
+      0.74,
+      0.36583333333333334
+    ],
+    "id": "S035"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--192-_jpg.rf.1f462dc5b0163078f54f717e740c8aaf.jpg",
+    "label": "train/labels/Sofa--192-_jpg.rf.1f462dc5b0163078f54f717e740c8aaf.txt",
+    "bbox": [
+      0.49041666666666667,
+      0.45125,
+      0.9341666666666667,
+      0.44583333333333336
+    ],
+    "id": "S036"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--193-_jpg.rf.2530e0c7ae50d7c938c0308ae989341f.jpg",
+    "label": "train/labels/Sofa--193-_jpg.rf.2530e0c7ae50d7c938c0308ae989341f.txt",
+    "bbox": [
+      0.5275,
+      0.5,
+      0.73,
+      0.5566666666666666
+    ],
+    "id": "S037"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--194-_jpg.rf.3b4e756085221c03504ced1aba60e107.jpg",
+    "label": "train/labels/Sofa--194-_jpg.rf.3b4e756085221c03504ced1aba60e107.txt",
+    "bbox": [
+      0.49666666666666665,
+      0.49875,
+      0.9516666666666667,
+      0.6408333333333334
+    ],
+    "id": "S038"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--195-_jpg.rf.3842016bdc4ed239bc5bca0b82878ee4.jpg",
+    "label": "train/labels/Sofa--195-_jpg.rf.3842016bdc4ed239bc5bca0b82878ee4.txt",
+    "bbox": [
+      0.4866666666666667,
+      0.495,
+      0.9316666666666666,
+      0.7166666666666667
+    ],
+    "id": "S039"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--196-_jpg.rf.97af4ba4dc8087c303d190c3dab34669.jpg",
+    "label": "train/labels/Sofa--196-_jpg.rf.97af4ba4dc8087c303d190c3dab34669.txt",
+    "bbox": [
+      0.5016666666666667,
+      0.5479166666666667,
+      0.8966666666666666,
+      0.5641666666666667
+    ],
+    "id": "S040"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--197-_jpg.rf.7e3eab2d7b69f68b38a34e088f310334.jpg",
+    "label": "train/labels/Sofa--197-_jpg.rf.7e3eab2d7b69f68b38a34e088f310334.txt",
+    "bbox": [
+      0.49041666666666667,
+      0.5254166666666666,
+      0.8625,
+      0.5125
+    ],
+    "id": "S041"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--198-_jpg.rf.1083765dde8ce2cf887526180574812e.jpg",
+    "label": "train/labels/Sofa--198-_jpg.rf.1083765dde8ce2cf887526180574812e.txt",
+    "bbox": [
+      0.5004166666666666,
+      0.5116666666666667,
+      0.8858333333333334,
+      0.51
+    ],
+    "id": "S042"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--199-_jpg.rf.94093b54e21ed3efc5972ddc240facc7.jpg",
+    "label": "train/labels/Sofa--199-_jpg.rf.94093b54e21ed3efc5972ddc240facc7.txt",
+    "bbox": [
+      0.4845833333333333,
+      0.48791666666666667,
+      0.9025,
+      0.39416666666666667
+    ],
+    "id": "S043"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--2-_jpg.rf.73fdab893371c2221023d1a31150e484.jpg",
+    "label": "train/labels/Sofa--2-_jpg.rf.73fdab893371c2221023d1a31150e484.txt",
+    "bbox": [
+      0.50125,
+      0.4975,
+      0.7525,
+      0.4033333333333333
+    ],
+    "id": "S044"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--200-_jpg.rf.ae044686f0232b7878389f73dd82bc26.jpg",
+    "label": "train/labels/Sofa--200-_jpg.rf.ae044686f0232b7878389f73dd82bc26.txt",
+    "bbox": [
+      0.49916666666666665,
+      0.6404166666666666,
+      0.9183333333333333,
+      0.4425
+    ],
+    "id": "S045"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--201-_jpg.rf.03edeed669e222985ecd6cdadb24274b.jpg",
+    "label": "train/labels/Sofa--201-_jpg.rf.03edeed669e222985ecd6cdadb24274b.txt",
+    "bbox": [
+      0.4895833333333333,
+      0.44916666666666666,
+      0.9425,
+      0.42
+    ],
+    "id": "S046"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--202-_jpg.rf.58497473fb1b75fafb3e42b8f28e14ef.jpg",
+    "label": "train/labels/Sofa--202-_jpg.rf.58497473fb1b75fafb3e42b8f28e14ef.txt",
+    "bbox": [
+      0.4945833333333333,
+      0.5675,
+      0.9208333333333333,
+      0.475
+    ],
+    "id": "S047"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--203-_jpg.rf.6569b2dfff07c65c4de3e44d8403a684.jpg",
+    "label": "train/labels/Sofa--203-_jpg.rf.6569b2dfff07c65c4de3e44d8403a684.txt",
+    "bbox": [
+      0.5041666666666667,
+      0.4633333333333333,
+      0.9866666666666667,
+      0.4483333333333333
+    ],
+    "id": "S048"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--204-_jpg.rf.37d903fb498394bf3f66706e3a1c3924.jpg",
+    "label": "train/labels/Sofa--204-_jpg.rf.37d903fb498394bf3f66706e3a1c3924.txt",
+    "bbox": [
+      0.50375,
+      0.48041666666666666,
+      0.9491666666666667,
+      0.43083333333333335
+    ],
+    "id": "S049"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--205-_jpg.rf.647ceedf30a37750044c9824040e9908.jpg",
+    "label": "train/labels/Sofa--205-_jpg.rf.647ceedf30a37750044c9824040e9908.txt",
+    "bbox": [
+      0.495,
+      0.4216666666666667,
+      0.8816666666666667,
+      0.48833333333333334
+    ],
+    "id": "S050"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--206-_jpg.rf.52b8e06b059fa9a16ac2406c215eeed7.jpg",
+    "label": "train/labels/Sofa--206-_jpg.rf.52b8e06b059fa9a16ac2406c215eeed7.txt",
+    "bbox": [
+      0.5,
+      0.5008333333333334,
+      0.9166666666666666,
+      0.43333333333333335
+    ],
+    "id": "S051"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--207-_jpg.rf.471484b9f4a051b7e6ca0d1b1ccfdf1f.jpg",
+    "label": "train/labels/Sofa--207-_jpg.rf.471484b9f4a051b7e6ca0d1b1ccfdf1f.txt",
+    "bbox": [
+      0.49916666666666665,
+      0.48541666666666666,
+      0.9683333333333334,
+      0.4175
+    ],
+    "id": "S052"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--208-_jpg.rf.980813576125ea2b6d6729eaae0928b0.jpg",
+    "label": "train/labels/Sofa--208-_jpg.rf.980813576125ea2b6d6729eaae0928b0.txt",
+    "bbox": [
+      0.49875,
+      0.49416666666666664,
+      0.9441666666666667,
+      0.43333333333333335
+    ],
+    "id": "S053"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--209-_jpg.rf.6c5344fdd601d3df890217e53f119ca3.jpg",
+    "label": "train/labels/Sofa--209-_jpg.rf.6c5344fdd601d3df890217e53f119ca3.txt",
+    "bbox": [
+      0.4675,
+      0.6016666666666667,
+      0.7583333333333333,
+      0.43
+    ],
+    "id": "S054"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--210-_jpg.rf.765d537fdc4001d529057077ed99b71d.jpg",
+    "label": "train/labels/Sofa--210-_jpg.rf.765d537fdc4001d529057077ed99b71d.txt",
+    "bbox": [
+      0.47708333333333336,
+      0.5629166666666666,
+      0.7108333333333333,
+      0.3591666666666667
+    ],
+    "id": "S055"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--211-_jpg.rf.94cd5f742c62fc907893c25469f88115.jpg",
+    "label": "train/labels/Sofa--211-_jpg.rf.94cd5f742c62fc907893c25469f88115.txt",
+    "bbox": [
+      0.5541666666666667,
+      0.5045833333333334,
+      0.7866666666666666,
+      0.3625
+    ],
+    "id": "S056"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--212-_jpg.rf.2104170b696e659c5c434a74e7efa60a.jpg",
+    "label": "train/labels/Sofa--212-_jpg.rf.2104170b696e659c5c434a74e7efa60a.txt",
+    "bbox": [
+      0.5195833333333333,
+      0.5633333333333334,
+      0.7541666666666667,
+      0.4716666666666667
+    ],
+    "id": "S057"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--213-_jpg.rf.cecd8d27260e1418911cc7b2d4c8aba0.jpg",
+    "label": "train/labels/Sofa--213-_jpg.rf.cecd8d27260e1418911cc7b2d4c8aba0.txt",
+    "bbox": [
+      0.4825,
+      0.59625,
+      0.8833333333333333,
+      0.4375
+    ],
+    "id": "S058"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--214-_jpg.rf.93a6beb2dd02ee9c8432afec81285726.jpg",
+    "label": "train/labels/Sofa--214-_jpg.rf.93a6beb2dd02ee9c8432afec81285726.txt",
+    "bbox": [
+      0.5025,
+      0.5716666666666667,
+      0.9166666666666666,
+      0.35833333333333334
+    ],
+    "id": "S059"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--215-_jpg.rf.12e63a0876031ef9f366e5cf0d02f52c.jpg",
+    "label": "train/labels/Sofa--215-_jpg.rf.12e63a0876031ef9f366e5cf0d02f52c.txt",
+    "bbox": [
+      0.49375,
+      0.655,
+      0.9258333333333333,
+      0.35833333333333334
+    ],
+    "id": "S060"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--216-_jpg.rf.88d34d1685c4f84ee5f3d80411532501.jpg",
+    "label": "train/labels/Sofa--216-_jpg.rf.88d34d1685c4f84ee5f3d80411532501.txt",
+    "bbox": [
+      0.4725,
+      0.55875,
+      0.7833333333333333,
+      0.4375
+    ],
+    "id": "S061"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--217-_jpg.rf.c218459995bdd3f6c9d42c846bf6e6b1.jpg",
+    "label": "train/labels/Sofa--217-_jpg.rf.c218459995bdd3f6c9d42c846bf6e6b1.txt",
+    "bbox": [
+      0.49333333333333335,
+      0.50375,
+      0.8316666666666667,
+      0.44416666666666665
+    ],
+    "id": "S062"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--218-_jpg.rf.80f556e2d008c91de3e4f4e5535d1d5a.jpg",
+    "label": "train/labels/Sofa--218-_jpg.rf.80f556e2d008c91de3e4f4e5535d1d5a.txt",
+    "bbox": [
+      0.5108333333333334,
+      0.55875,
+      0.9133333333333333,
+      0.41083333333333333
+    ],
+    "id": "S063"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--219-_jpg.rf.86b6e852d0312027576e493d6d13236a.jpg",
+    "label": "train/labels/Sofa--219-_jpg.rf.86b6e852d0312027576e493d6d13236a.txt",
+    "bbox": [
+      0.49625,
+      0.6729166666666667,
+      0.8025,
+      0.3308333333333333
+    ],
+    "id": "S064"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--220-_jpg.rf.c9e8e3b31c00b799e258d5bd4ddfc81a.jpg",
+    "label": "train/labels/Sofa--220-_jpg.rf.c9e8e3b31c00b799e258d5bd4ddfc81a.txt",
+    "bbox": [
+      0.4920833333333333,
+      0.5133333333333333,
+      0.9608333333333333,
+      0.4266666666666667
+    ],
+    "id": "S065"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--221-_jpg.rf.ba7b59887f73ddd2497f718ae8afd02c.jpg",
+    "label": "train/labels/Sofa--221-_jpg.rf.ba7b59887f73ddd2497f718ae8afd02c.txt",
+    "bbox": [
+      0.49125,
+      0.65125,
+      0.9441666666666667,
+      0.44916666666666666
+    ],
+    "id": "S066"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--222-_jpg.rf.44389363e11e9f8d22cab82fea9b227f.jpg",
+    "label": "train/labels/Sofa--222-_jpg.rf.44389363e11e9f8d22cab82fea9b227f.txt",
+    "bbox": [
+      0.50875,
+      0.6116666666666667,
+      0.8991666666666667,
+      0.535
+    ],
+    "id": "S067"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--223-_jpg.rf.22b531106d7b58504823031820d6496e.jpg",
+    "label": "train/labels/Sofa--223-_jpg.rf.22b531106d7b58504823031820d6496e.txt",
+    "bbox": [
+      0.5058333333333334,
+      0.6045833333333334,
+      0.955,
+      0.4425
+    ],
+    "id": "S068"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--224-_jpg.rf.a35b948c35311e38d0ced5e1354691a0.jpg",
+    "label": "train/labels/Sofa--224-_jpg.rf.a35b948c35311e38d0ced5e1354691a0.txt",
+    "bbox": [
+      0.52,
+      0.5475,
+      0.7416666666666667,
+      0.43166666666666664
+    ],
+    "id": "S069"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--225-_jpg.rf.b74b1af74bb57ad03fe6226fec172ac0.jpg",
+    "label": "train/labels/Sofa--225-_jpg.rf.b74b1af74bb57ad03fe6226fec172ac0.txt",
+    "bbox": [
+      0.4995833333333333,
+      0.49833333333333335,
+      0.8025,
+      0.4633333333333333
+    ],
+    "id": "S070"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--226-_jpg.rf.7404471ec673fd28ca875966efb11e2c.jpg",
+    "label": "train/labels/Sofa--226-_jpg.rf.7404471ec673fd28ca875966efb11e2c.txt",
+    "bbox": [
+      0.5008333333333334,
+      0.5258333333333334,
+      0.885,
+      0.5283333333333333
+    ],
+    "id": "S071"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--227-_jpg.rf.7d324b621b765f8d1e25f95a72b85d18.jpg",
+    "label": "train/labels/Sofa--227-_jpg.rf.7d324b621b765f8d1e25f95a72b85d18.txt",
+    "bbox": [
+      0.5575,
+      0.6279166666666667,
+      0.7333333333333333,
+      0.26416666666666666
+    ],
+    "id": "S072"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--228-_jpg.rf.f06ac189b1cb497a870b99ef471a1774.jpg",
+    "label": "train/labels/Sofa--228-_jpg.rf.f06ac189b1cb497a870b99ef471a1774.txt",
+    "bbox": [
+      0.5116666666666667,
+      0.6129166666666667,
+      0.8733333333333333,
+      0.3475
+    ],
+    "id": "S073"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--229-_jpg.rf.02acca88b8fddc3fa006d4f041edbb3c.jpg",
+    "label": "train/labels/Sofa--229-_jpg.rf.02acca88b8fddc3fa006d4f041edbb3c.txt",
+    "bbox": [
+      0.50375,
+      0.5516666666666666,
+      0.8208333333333333,
+      0.3333333333333333
+    ],
+    "id": "S074"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--230-_jpg.rf.85ae7f0bce0e7841bf3b04440a8c5031.jpg",
+    "label": "train/labels/Sofa--230-_jpg.rf.85ae7f0bce0e7841bf3b04440a8c5031.txt",
+    "bbox": [
+      0.5054166666666666,
+      0.5466666666666666,
+      0.7175,
+      0.28
+    ],
+    "id": "S075"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--231-_jpg.rf.ac428b618c4a26cf1d4547dcedb4d012.jpg",
+    "label": "train/labels/Sofa--231-_jpg.rf.ac428b618c4a26cf1d4547dcedb4d012.txt",
+    "bbox": [
+      0.5,
+      0.5075,
+      0.69,
+      0.33
+    ],
+    "id": "S076"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--232-_jpg.rf.f5ea774e38053aa5fff21afa48ab8cb6.jpg",
+    "label": "train/labels/Sofa--232-_jpg.rf.f5ea774e38053aa5fff21afa48ab8cb6.txt",
+    "bbox": [
+      0.5,
+      0.6104166666666667,
+      0.9666666666666667,
+      0.4525
+    ],
+    "id": "S077"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--233-_jpg.rf.2e590ade61953a8638b712734849a962.jpg",
+    "label": "train/labels/Sofa--233-_jpg.rf.2e590ade61953a8638b712734849a962.txt",
+    "bbox": [
+      0.5175,
+      0.49875,
+      0.8833333333333333,
+      0.5525
+    ],
+    "id": "S078"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--234-_jpg.rf.d66fc125d8deb1a1ffd95e35a3b7212f.jpg",
+    "label": "train/labels/Sofa--234-_jpg.rf.d66fc125d8deb1a1ffd95e35a3b7212f.txt",
+    "bbox": [
+      0.4979166666666667,
+      0.5254166666666666,
+      0.5308333333333334,
+      0.2808333333333333
+    ],
+    "id": "S079"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--235-_jpg.rf.fcd2a817912bcfaa154c91bbb1dfcc9b.jpg",
+    "label": "train/labels/Sofa--235-_jpg.rf.fcd2a817912bcfaa154c91bbb1dfcc9b.txt",
+    "bbox": [
+      0.5025,
+      0.48875,
+      0.9466666666666667,
+      0.5108333333333334
+    ],
+    "id": "S080"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--236-_jpg.rf.8659cc92e1e76e1fc19272f11b335a3d.jpg",
+    "label": "train/labels/Sofa--236-_jpg.rf.8659cc92e1e76e1fc19272f11b335a3d.txt",
+    "bbox": [
+      0.4979166666666667,
+      0.48375,
+      0.9341666666666667,
+      0.3775
+    ],
+    "id": "S081"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--237-_jpg.rf.a7bfa7276962bfff94bc69f2bb953e92.jpg",
+    "label": "train/labels/Sofa--237-_jpg.rf.a7bfa7276962bfff94bc69f2bb953e92.txt",
+    "bbox": [
+      0.49583333333333335,
+      0.4979166666666667,
+      0.985,
+      0.4925
+    ],
+    "id": "S082"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--238-_jpg.rf.d2d0f9b8360930bce9fdc7e5759d4534.jpg",
+    "label": "train/labels/Sofa--238-_jpg.rf.d2d0f9b8360930bce9fdc7e5759d4534.txt",
+    "bbox": [
+      0.50875,
+      0.5016666666666667,
+      0.8991666666666667,
+      0.42333333333333334
+    ],
+    "id": "S083"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--240-_jpg.rf.6662eac50905dd341a138845b6815c12.jpg",
+    "label": "train/labels/Sofa--240-_jpg.rf.6662eac50905dd341a138845b6815c12.txt",
+    "bbox": [
+      0.4725,
+      0.44166666666666665,
+      0.8866666666666667,
+      0.39166666666666666
+    ],
+    "id": "S084"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--241-_jpg.rf.357c7cf4b38e964cbb1d052011b9e890.jpg",
+    "label": "train/labels/Sofa--241-_jpg.rf.357c7cf4b38e964cbb1d052011b9e890.txt",
+    "bbox": [
+      0.49583333333333335,
+      0.5179166666666667,
+      0.8333333333333334,
+      0.3725
+    ],
+    "id": "S085"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--242-_jpg.rf.97e9e595b712da5b61572bb772dfebce.jpg",
+    "label": "train/labels/Sofa--242-_jpg.rf.97e9e595b712da5b61572bb772dfebce.txt",
+    "bbox": [
+      0.45166666666666666,
+      0.5275,
+      0.8816666666666667,
+      0.355
+    ],
+    "id": "S086"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--243-_jpg.rf.740f48f2657adbf3871e3e495133545f.jpg",
+    "label": "train/labels/Sofa--243-_jpg.rf.740f48f2657adbf3871e3e495133545f.txt",
+    "bbox": [
+      0.495,
+      0.5,
+      0.9166666666666666,
+      0.39
+    ],
+    "id": "S087"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--244-_jpg.rf.e8b5f26e80ec0256cf5b114439f085b4.jpg",
+    "label": "train/labels/Sofa--244-_jpg.rf.e8b5f26e80ec0256cf5b114439f085b4.txt",
+    "bbox": [
+      0.5,
+      0.5129166666666667,
+      0.9666666666666667,
+      0.5641666666666667
+    ],
+    "id": "S088"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--245-_jpg.rf.b06465a252febdbb37e8e7ab5a391126.jpg",
+    "label": "train/labels/Sofa--245-_jpg.rf.b06465a252febdbb37e8e7ab5a391126.txt",
+    "bbox": [
+      0.49083333333333334,
+      0.6008333333333333,
+      0.6333333333333333,
+      0.5833333333333334
+    ],
+    "id": "S089"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--246-_jpg.rf.887e8263bcc4007863bf2371d63e2342.jpg",
+    "label": "train/labels/Sofa--246-_jpg.rf.887e8263bcc4007863bf2371d63e2342.txt",
+    "bbox": [
+      0.48333333333333334,
+      0.6170833333333333,
+      0.5516666666666666,
+      0.5875
+    ],
+    "id": "S090"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--247-_jpg.rf.6438f2d9a7065a86d2068d87fa46bf9c.jpg",
+    "label": "train/labels/Sofa--247-_jpg.rf.6438f2d9a7065a86d2068d87fa46bf9c.txt",
+    "bbox": [
+      0.5054166666666666,
+      0.50375,
+      0.9491666666666667,
+      0.5158333333333334
+    ],
+    "id": "S091"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--248-_jpg.rf.9d80ffb51d75931dc7892cf61488b76d.jpg",
+    "label": "train/labels/Sofa--248-_jpg.rf.9d80ffb51d75931dc7892cf61488b76d.txt",
+    "bbox": [
+      0.49875,
+      0.5895833333333333,
+      0.7891666666666667,
+      0.5641666666666667
+    ],
+    "id": "S092"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--249-_jpg.rf.490ea47e817bc9490aed70cc1389a8a5.jpg",
+    "label": "train/labels/Sofa--249-_jpg.rf.490ea47e817bc9490aed70cc1389a8a5.txt",
+    "bbox": [
+      0.50125,
+      0.48791666666666667,
+      0.9958333333333333,
+      0.5525
+    ],
+    "id": "S093"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--250-_jpg.rf.693a8106bd01f5299c179f266f1e4ca3.jpg",
+    "label": "train/labels/Sofa--250-_jpg.rf.693a8106bd01f5299c179f266f1e4ca3.txt",
+    "bbox": [
+      0.4725,
+      0.5620833333333334,
+      0.8366666666666667,
+      0.5608333333333333
+    ],
+    "id": "S094"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--251-_jpg.rf.40a143fc8a54642f251613745c7a64af.jpg",
+    "label": "train/labels/Sofa--251-_jpg.rf.40a143fc8a54642f251613745c7a64af.txt",
+    "bbox": [
+      0.48625,
+      0.465,
+      0.8658333333333333,
+      0.5033333333333333
+    ],
+    "id": "S095"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--252-_jpg.rf.2a0cdadb5d529bcddc849b7c48ccf94c.jpg",
+    "label": "train/labels/Sofa--252-_jpg.rf.2a0cdadb5d529bcddc849b7c48ccf94c.txt",
+    "bbox": [
+      0.4683333333333333,
+      0.52375,
+      0.7333333333333333,
+      0.4241666666666667
+    ],
+    "id": "S096"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--253-_jpg.rf.858c7b5456913666393b765c9ac6c3de.jpg",
+    "label": "train/labels/Sofa--253-_jpg.rf.858c7b5456913666393b765c9ac6c3de.txt",
+    "bbox": [
+      0.55375,
+      0.5645833333333333,
+      0.8858333333333334,
+      0.6975
+    ],
+    "id": "S097"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--254-_jpg.rf.a8392e07106fbafae51f54c1a7e49b59.jpg",
+    "label": "train/labels/Sofa--254-_jpg.rf.a8392e07106fbafae51f54c1a7e49b59.txt",
+    "bbox": [
+      0.49666666666666665,
+      0.5333333333333333,
+      0.9866666666666667,
+      0.5983333333333334
+    ],
+    "id": "S098"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--255-_jpg.rf.ac132cc962b7e6c75dbccc38fc072e6b.jpg",
+    "label": "train/labels/Sofa--255-_jpg.rf.ac132cc962b7e6c75dbccc38fc072e6b.txt",
+    "bbox": [
+      0.44875,
+      0.5441666666666667,
+      0.8658333333333333,
+      0.7016666666666667
+    ],
+    "id": "S099"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--256-_jpg.rf.bdadc81e1b02ce203acd7c5ba966b939.jpg",
+    "label": "train/labels/Sofa--256-_jpg.rf.bdadc81e1b02ce203acd7c5ba966b939.txt",
+    "bbox": [
+      0.50875,
+      0.5275,
+      0.8841666666666667,
+      0.5333333333333333
+    ],
+    "id": "S100"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--257-_jpg.rf.f01514bc1ce8bc8997fd0ebd33f1161d.jpg",
+    "label": "train/labels/Sofa--257-_jpg.rf.f01514bc1ce8bc8997fd0ebd33f1161d.txt",
+    "bbox": [
+      0.5083333333333333,
+      0.6229166666666667,
+      0.9,
+      0.38416666666666666
+    ],
+    "id": "S101"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--258-_jpg.rf.04be7d49f7a97247d4324d8de750dc09.jpg",
+    "label": "train/labels/Sofa--258-_jpg.rf.04be7d49f7a97247d4324d8de750dc09.txt",
+    "bbox": [
+      0.4995833333333333,
+      0.5,
+      0.9375,
+      0.46166666666666667
+    ],
+    "id": "S102"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--259-_jpg.rf.e7c6236ec293daa15bfcb2d852d56fb7.jpg",
+    "label": "train/labels/Sofa--259-_jpg.rf.e7c6236ec293daa15bfcb2d852d56fb7.txt",
+    "bbox": [
+      0.49833333333333335,
+      0.49875,
+      0.96,
+      0.4558333333333333
+    ],
+    "id": "S103"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--260-_jpg.rf.be285c94764c5a240f356ea8f16fc3b7.jpg",
+    "label": "train/labels/Sofa--260-_jpg.rf.be285c94764c5a240f356ea8f16fc3b7.txt",
+    "bbox": [
+      0.49833333333333335,
+      0.4970833333333333,
+      0.955,
+      0.4558333333333333
+    ],
+    "id": "S104"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--261-_jpg.rf.de9e9bfbc60ab2165af5cb7263c65d1f.jpg",
+    "label": "train/labels/Sofa--261-_jpg.rf.de9e9bfbc60ab2165af5cb7263c65d1f.txt",
+    "bbox": [
+      0.4820833333333333,
+      0.5220833333333333,
+      0.9175,
+      0.48583333333333334
+    ],
+    "id": "S105"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--262-_jpg.rf.6762ce6622f2a6dc5c7b601361866995.jpg",
+    "label": "train/labels/Sofa--262-_jpg.rf.6762ce6622f2a6dc5c7b601361866995.txt",
+    "bbox": [
+      0.48583333333333334,
+      0.52875,
+      0.95,
+      0.4225
+    ],
+    "id": "S106"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--263-_jpg.rf.7f9190683fdc904631a8289218f51ce3.jpg",
+    "label": "train/labels/Sofa--263-_jpg.rf.7f9190683fdc904631a8289218f51ce3.txt",
+    "bbox": [
+      0.505,
+      0.3983333333333333,
+      0.615,
+      0.3016666666666667
+    ],
+    "id": "S107"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--264-_jpg.rf.cac4a04d89e7f3e4079b90fb3eb58f8b.jpg",
+    "label": "train/labels/Sofa--264-_jpg.rf.cac4a04d89e7f3e4079b90fb3eb58f8b.txt",
+    "bbox": [
+      0.48125,
+      0.48041666666666666,
+      0.8158333333333333,
+      0.4225
+    ],
+    "id": "S108"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--265-_jpg.rf.97b2d17335720d8c7fd8abc7a5de69a8.jpg",
+    "label": "train/labels/Sofa--265-_jpg.rf.97b2d17335720d8c7fd8abc7a5de69a8.txt",
+    "bbox": [
+      0.5170833333333333,
+      0.45208333333333334,
+      0.9108333333333334,
+      0.3641666666666667
+    ],
+    "id": "S109"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--266-_jpg.rf.bfc2411fdf29b7463fbdbc32e8009e3a.jpg",
+    "label": "train/labels/Sofa--266-_jpg.rf.bfc2411fdf29b7463fbdbc32e8009e3a.txt",
+    "bbox": [
+      0.535,
+      0.4479166666666667,
+      0.6533333333333333,
+      0.2675
+    ],
+    "id": "S110"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--268-_jpg.rf.181ae697986bd305624076f9e29efbd0.jpg",
+    "label": "train/labels/Sofa--268-_jpg.rf.181ae697986bd305624076f9e29efbd0.txt",
+    "bbox": [
+      0.495,
+      0.5504166666666667,
+      0.95,
+      0.5341666666666667
+    ],
+    "id": "S111"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--269-_jpg.rf.2c4ff7982ff00f2f2c349cfbc4b34177.jpg",
+    "label": "train/labels/Sofa--269-_jpg.rf.2c4ff7982ff00f2f2c349cfbc4b34177.txt",
+    "bbox": [
+      0.47541666666666665,
+      0.5204166666666666,
+      0.8841666666666667,
+      0.5125
+    ],
+    "id": "S112"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--270-_jpg.rf.a783394a9cf27690960fabff9bd35897.jpg",
+    "label": "train/labels/Sofa--270-_jpg.rf.a783394a9cf27690960fabff9bd35897.txt",
+    "bbox": [
+      0.3858333333333333,
+      0.5025,
+      0.5566666666666666,
+      0.385
+    ],
+    "id": "S113"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--271-_jpg.rf.3561c35de4a92445b0e237401fc70edd.jpg",
+    "label": "train/labels/Sofa--271-_jpg.rf.3561c35de4a92445b0e237401fc70edd.txt",
+    "bbox": [
+      0.49833333333333335,
+      0.6316666666666667,
+      0.995,
+      0.47833333333333333
+    ],
+    "id": "S114"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--272-_jpg.rf.06d37d72d408de6cb0307571b9360ba9.jpg",
+    "label": "train/labels/Sofa--272-_jpg.rf.06d37d72d408de6cb0307571b9360ba9.txt",
+    "bbox": [
+      0.49541666666666667,
+      0.6591666666666667,
+      0.9458333333333333,
+      0.4033333333333333
+    ],
+    "id": "S115"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--273-_jpg.rf.bfb5e533dead12edeaa7bf01967ec882.jpg",
+    "label": "train/labels/Sofa--273-_jpg.rf.bfb5e533dead12edeaa7bf01967ec882.txt",
+    "bbox": [
+      0.49375,
+      0.48333333333333334,
+      0.9558333333333333,
+      0.54
+    ],
+    "id": "S116"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--274-_jpg.rf.5f2168fc8d3984a35dce75fdc731a6df.jpg",
+    "label": "train/labels/Sofa--274-_jpg.rf.5f2168fc8d3984a35dce75fdc731a6df.txt",
+    "bbox": [
+      0.4791666666666667,
+      0.5233333333333333,
+      0.73,
+      0.57
+    ],
+    "id": "S117"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--275-_jpg.rf.c4e6efc75a4fc1e30faca16adf0248b6.jpg",
+    "label": "train/labels/Sofa--275-_jpg.rf.c4e6efc75a4fc1e30faca16adf0248b6.txt",
+    "bbox": [
+      0.4995833333333333,
+      0.5125,
+      0.9325,
+      0.42333333333333334
+    ],
+    "id": "S118"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--276-_jpg.rf.e54074e2735ea13e53da2d03f47973af.jpg",
+    "label": "train/labels/Sofa--276-_jpg.rf.e54074e2735ea13e53da2d03f47973af.txt",
+    "bbox": [
+      0.5083333333333333,
+      0.6354166666666666,
+      0.9316666666666666,
+      0.5725
+    ],
+    "id": "S119"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--277-_jpg.rf.363cbdde43f9a19aeaadca80ae901e77.jpg",
+    "label": "train/labels/Sofa--277-_jpg.rf.363cbdde43f9a19aeaadca80ae901e77.txt",
+    "bbox": [
+      0.52625,
+      0.5029166666666667,
+      0.5741666666666667,
+      0.3641666666666667
+    ],
+    "id": "S120"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--278-_jpg.rf.9fb3b0ff13017768394b480ad7881526.jpg",
+    "label": "train/labels/Sofa--278-_jpg.rf.9fb3b0ff13017768394b480ad7881526.txt",
+    "bbox": [
+      0.44958333333333333,
+      0.5908333333333333,
+      0.5591666666666667,
+      0.53
+    ],
+    "id": "S121"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--279-_jpg.rf.eaf442d167e1c7b83e845090e88cd312.jpg",
+    "label": "train/labels/Sofa--279-_jpg.rf.eaf442d167e1c7b83e845090e88cd312.txt",
+    "bbox": [
+      0.6204166666666666,
+      0.54125,
+      0.7425,
+      0.4708333333333333
+    ],
+    "id": "S122"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--281-_jpg.rf.7f660955628a118ee783d58600508dd3.jpg",
+    "label": "train/labels/Sofa--281-_jpg.rf.7f660955628a118ee783d58600508dd3.txt",
+    "bbox": [
+      0.465,
+      0.5225,
+      0.91,
+      0.53
+    ],
+    "id": "S123"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--282-_jpg.rf.43355efb16fd73f87c063dbfea856587.jpg",
+    "label": "train/labels/Sofa--282-_jpg.rf.43355efb16fd73f87c063dbfea856587.txt",
+    "bbox": [
+      0.49333333333333335,
+      0.48833333333333334,
+      0.9533333333333334,
+      0.49833333333333335
+    ],
+    "id": "S124"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--283-_jpg.rf.2a09fdf82de126ba5caf440f0c033466.jpg",
+    "label": "train/labels/Sofa--283-_jpg.rf.2a09fdf82de126ba5caf440f0c033466.txt",
+    "bbox": [
+      0.4633333333333333,
+      0.5158333333333334,
+      0.9083333333333333,
+      0.605
+    ],
+    "id": "S125"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--284-_jpg.rf.623bccd14f25a02aeb1329061287df37.jpg",
+    "label": "train/labels/Sofa--284-_jpg.rf.623bccd14f25a02aeb1329061287df37.txt",
+    "bbox": [
+      0.38625,
+      0.5541666666666667,
+      0.7658333333333334,
+      0.735
+    ],
+    "id": "S126"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--285-_jpg.rf.883ca1c662e9c1cf2a8d622287151650.jpg",
+    "label": "train/labels/Sofa--285-_jpg.rf.883ca1c662e9c1cf2a8d622287151650.txt",
+    "bbox": [
+      0.44,
+      0.5604166666666667,
+      0.87,
+      0.7041666666666667
+    ],
+    "id": "S127"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--286-_jpg.rf.049bbcc0e7e912cf7a5ea90a122a9fea.jpg",
+    "label": "train/labels/Sofa--286-_jpg.rf.049bbcc0e7e912cf7a5ea90a122a9fea.txt",
+    "bbox": [
+      0.49166666666666664,
+      0.49416666666666664,
+      0.96,
+      0.49666666666666665
+    ],
+    "id": "S128"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--287-_jpg.rf.bcfdb48c4682911decf3f516aaf046e3.jpg",
+    "label": "train/labels/Sofa--287-_jpg.rf.bcfdb48c4682911decf3f516aaf046e3.txt",
+    "bbox": [
+      0.48083333333333333,
+      0.47875,
+      0.9483333333333334,
+      0.5258333333333334
+    ],
+    "id": "S129"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--289-_jpg.rf.566d3a1058ec7fdd1a8d392cebd1ca91.jpg",
+    "label": "train/labels/Sofa--289-_jpg.rf.566d3a1058ec7fdd1a8d392cebd1ca91.txt",
+    "bbox": [
+      0.4725,
+      0.50625,
+      0.7866666666666666,
+      0.4625
+    ],
+    "id": "S130"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--291-_jpg.rf.3eeca5bbd2147fea0a2a42ad7efa7f2b.jpg",
+    "label": "train/labels/Sofa--291-_jpg.rf.3eeca5bbd2147fea0a2a42ad7efa7f2b.txt",
+    "bbox": [
+      0.495,
+      0.5083333333333333,
+      0.9716666666666667,
+      0.5316666666666666
+    ],
+    "id": "S131"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--293-_jpg.rf.5d3f0294d968264e4f9afc93df12cd5d.jpg",
+    "label": "train/labels/Sofa--293-_jpg.rf.5d3f0294d968264e4f9afc93df12cd5d.txt",
+    "bbox": [
+      0.4920833333333333,
+      0.4558333333333333,
+      0.9475,
+      0.435
+    ],
+    "id": "S132"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--294-_jpg.rf.f3f8c587ad225693c7d11f50a2911858.jpg",
+    "label": "train/labels/Sofa--294-_jpg.rf.f3f8c587ad225693c7d11f50a2911858.txt",
+    "bbox": [
+      0.4920833333333333,
+      0.555,
+      0.9641666666666666,
+      0.5783333333333334
+    ],
+    "id": "S133"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--295-_jpg.rf.7d76537feda01cd9d20dfd4ca145ce58.jpg",
+    "label": "train/labels/Sofa--295-_jpg.rf.7d76537feda01cd9d20dfd4ca145ce58.txt",
+    "bbox": [
+      0.4979166666666667,
+      0.5275,
+      0.9141666666666667,
+      0.5066666666666667
+    ],
+    "id": "S134"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--296-_jpg.rf.ae3d2f28efc4d2775ac0a75ccda42e0a.jpg",
+    "label": "train/labels/Sofa--296-_jpg.rf.ae3d2f28efc4d2775ac0a75ccda42e0a.txt",
+    "bbox": [
+      0.47208333333333335,
+      0.4504166666666667,
+      0.9391666666666667,
+      0.4508333333333333
+    ],
+    "id": "S135"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--297-_jpg.rf.ef8ca6791ca642b76b7aa53ee1bcd80f.jpg",
+    "label": "train/labels/Sofa--297-_jpg.rf.ef8ca6791ca642b76b7aa53ee1bcd80f.txt",
+    "bbox": [
+      0.47625,
+      0.4429166666666667,
+      0.7058333333333333,
+      0.38083333333333336
+    ],
+    "id": "S136"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--298-_jpg.rf.63d6659a8cfee8afa37667ec5724cda6.jpg",
+    "label": "train/labels/Sofa--298-_jpg.rf.63d6659a8cfee8afa37667ec5724cda6.txt",
+    "bbox": [
+      0.45916666666666667,
+      0.42541666666666667,
+      0.8816666666666667,
+      0.4875
+    ],
+    "id": "S137"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--299-_jpg.rf.70ddb5ed3a2ada3923256a5b89a18e94.jpg",
+    "label": "train/labels/Sofa--299-_jpg.rf.70ddb5ed3a2ada3923256a5b89a18e94.txt",
+    "bbox": [
+      0.47625,
+      0.45125,
+      0.9125,
+      0.4575
+    ],
+    "id": "S138"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--301-_jpg.rf.9575d107cb29ba43ae326eaae5929e12.jpg",
+    "label": "train/labels/Sofa--301-_jpg.rf.9575d107cb29ba43ae326eaae5929e12.txt",
+    "bbox": [
+      0.47458333333333336,
+      0.47708333333333336,
+      0.6091666666666666,
+      0.3075
+    ],
+    "id": "S139"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--302-_jpg.rf.713f6ff75dba4e8d78af28053dea9b6e.jpg",
+    "label": "train/labels/Sofa--302-_jpg.rf.713f6ff75dba4e8d78af28053dea9b6e.txt",
+    "bbox": [
+      0.49333333333333335,
+      0.4479166666666667,
+      0.7216666666666667,
+      0.35583333333333333
+    ],
+    "id": "S140"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--303-_jpg.rf.751fe8af2112a676093604eb6344cb72.jpg",
+    "label": "train/labels/Sofa--303-_jpg.rf.751fe8af2112a676093604eb6344cb72.txt",
+    "bbox": [
+      0.4920833333333333,
+      0.41541666666666666,
+      0.5541666666666667,
+      0.2808333333333333
+    ],
+    "id": "S141"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--304-_jpg.rf.1924d352cdc43a84cdf5c7a261428781.jpg",
+    "label": "train/labels/Sofa--304-_jpg.rf.1924d352cdc43a84cdf5c7a261428781.txt",
+    "bbox": [
+      0.44875,
+      0.43375,
+      0.6241666666666666,
+      0.3375
+    ],
+    "id": "S142"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--305-_jpg.rf.6e2b1b4b807e4badea3b96a4832117b4.jpg",
+    "label": "train/labels/Sofa--305-_jpg.rf.6e2b1b4b807e4badea3b96a4832117b4.txt",
+    "bbox": [
+      0.5116666666666667,
+      0.42333333333333334,
+      0.5916666666666667,
+      0.28833333333333333
+    ],
+    "id": "S143"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--306-_jpg.rf.96033a1af12812c756784a0ace956a5d.jpg",
+    "label": "train/labels/Sofa--306-_jpg.rf.96033a1af12812c756784a0ace956a5d.txt",
+    "bbox": [
+      0.4395833333333333,
+      0.41583333333333333,
+      0.6225,
+      0.295
+    ],
+    "id": "S144"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--307-_jpg.rf.562b22c01340bf2d0316f25c21b62e26.jpg",
+    "label": "train/labels/Sofa--307-_jpg.rf.562b22c01340bf2d0316f25c21b62e26.txt",
+    "bbox": [
+      0.4841666666666667,
+      0.43,
+      0.7383333333333333,
+      0.34
+    ],
+    "id": "S145"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--308-_jpg.rf.f4f3f456f4ea790f411b0f54db4231de.jpg",
+    "label": "train/labels/Sofa--308-_jpg.rf.f4f3f456f4ea790f411b0f54db4231de.txt",
+    "bbox": [
+      0.4820833333333333,
+      0.5183333333333333,
+      0.8608333333333333,
+      0.44166666666666665
+    ],
+    "id": "S146"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--309-_jpg.rf.ee9aafbf9cf0a36062ddc4c02569559f.jpg",
+    "label": "train/labels/Sofa--309-_jpg.rf.ee9aafbf9cf0a36062ddc4c02569559f.txt",
+    "bbox": [
+      0.4579166666666667,
+      0.46416666666666667,
+      0.8241666666666667,
+      0.36666666666666664
+    ],
+    "id": "S147"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--310-_jpg.rf.328d28ce0274a5070257e93a64fff1e8.jpg",
+    "label": "train/labels/Sofa--310-_jpg.rf.328d28ce0274a5070257e93a64fff1e8.txt",
+    "bbox": [
+      0.5083333333333333,
+      0.49416666666666664,
+      0.9016666666666666,
+      0.5166666666666667
+    ],
+    "id": "S148"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--311-_jpg.rf.b00fdbf3de465e059d5ee8bc6ec1a219.jpg",
+    "label": "train/labels/Sofa--311-_jpg.rf.b00fdbf3de465e059d5ee8bc6ec1a219.txt",
+    "bbox": [
+      0.5041666666666667,
+      0.4775,
+      0.9533333333333334,
+      0.44
+    ],
+    "id": "S149"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--312-_jpg.rf.7ec872d86f06a7d58ccbd96a68f49ee4.jpg",
+    "label": "train/labels/Sofa--312-_jpg.rf.7ec872d86f06a7d58ccbd96a68f49ee4.txt",
+    "bbox": [
+      0.5170833333333333,
+      0.6566666666666666,
+      0.9058333333333334,
+      0.385
+    ],
+    "id": "S150"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--313-_jpg.rf.5737f4e80fe3089039b88ba9a6684f41.jpg",
+    "label": "train/labels/Sofa--313-_jpg.rf.5737f4e80fe3089039b88ba9a6684f41.txt",
+    "bbox": [
+      0.49583333333333335,
+      0.4716666666666667,
+      0.8383333333333334,
+      0.6216666666666667
+    ],
+    "id": "S151"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--314-_jpg.rf.a76f490c0c6f87b6f2e7284e274746bc.jpg",
+    "label": "train/labels/Sofa--314-_jpg.rf.a76f490c0c6f87b6f2e7284e274746bc.txt",
+    "bbox": [
+      0.495,
+      0.5104166666666666,
+      0.9616666666666667,
+      0.8225
+    ],
+    "id": "S152"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--315-_jpg.rf.18058b24a8add1d13d295a73f25de5cc.jpg",
+    "label": "train/labels/Sofa--315-_jpg.rf.18058b24a8add1d13d295a73f25de5cc.txt",
+    "bbox": [
+      0.5008333333333334,
+      0.5320833333333334,
+      0.97,
+      0.43416666666666665
+    ],
+    "id": "S153"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--316-_jpg.rf.19d2472cde857a302e5e999546a7e256.jpg",
+    "label": "train/labels/Sofa--316-_jpg.rf.19d2472cde857a302e5e999546a7e256.txt",
+    "bbox": [
+      0.49916666666666665,
+      0.5341666666666667,
+      0.9683333333333334,
+      0.5116666666666667
+    ],
+    "id": "S154"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--317-_jpg.rf.29c22c892fa2408953872a842903455e.jpg",
+    "label": "train/labels/Sofa--317-_jpg.rf.29c22c892fa2408953872a842903455e.txt",
+    "bbox": [
+      0.5045833333333334,
+      0.5554166666666667,
+      0.9441666666666667,
+      0.5191666666666667
+    ],
+    "id": "S155"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--318-_jpg.rf.d9308f7bcbe411691c5421b7986adbcd.jpg",
+    "label": "train/labels/Sofa--318-_jpg.rf.d9308f7bcbe411691c5421b7986adbcd.txt",
+    "bbox": [
+      0.49333333333333335,
+      0.49666666666666665,
+      0.92,
+      0.46
+    ],
+    "id": "S156"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--319-_jpg.rf.b4c0972b7be7e2d3bf086e3829d3822b.jpg",
+    "label": "train/labels/Sofa--319-_jpg.rf.b4c0972b7be7e2d3bf086e3829d3822b.txt",
+    "bbox": [
+      0.5045833333333334,
+      0.5545833333333333,
+      0.9008333333333334,
+      0.5591666666666667
+    ],
+    "id": "S157"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--320-_jpg.rf.fc6c5347264e3cb77aaa327f3d4a5a3c.jpg",
+    "label": "train/labels/Sofa--320-_jpg.rf.fc6c5347264e3cb77aaa327f3d4a5a3c.txt",
+    "bbox": [
+      0.495,
+      0.54625,
+      0.8833333333333333,
+      0.4025
+    ],
+    "id": "S158"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--321-_jpg.rf.d7d61f8c940c33a471de62423e946ccd.jpg",
+    "label": "train/labels/Sofa--321-_jpg.rf.d7d61f8c940c33a471de62423e946ccd.txt",
+    "bbox": [
+      0.5004166666666666,
+      0.6233333333333333,
+      0.9858333333333333,
+      0.6483333333333333
+    ],
+    "id": "S159"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--322-_jpg.rf.95f0eb8b66494ff068ace58c45017ecd.jpg",
+    "label": "train/labels/Sofa--322-_jpg.rf.95f0eb8b66494ff068ace58c45017ecd.txt",
+    "bbox": [
+      0.5033333333333333,
+      0.55125,
+      0.945,
+      0.5308333333333334
+    ],
+    "id": "S160"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--323-_jpg.rf.3907ae62ce20c305cb434c3c51be182f.jpg",
+    "label": "train/labels/Sofa--323-_jpg.rf.3907ae62ce20c305cb434c3c51be182f.txt",
+    "bbox": [
+      0.49375,
+      0.5966666666666667,
+      0.8775,
+      0.49666666666666665
+    ],
+    "id": "S161"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--324-_jpg.rf.bd0ae6d93abe57eb1a6ad791e14c8c06.jpg",
+    "label": "train/labels/Sofa--324-_jpg.rf.bd0ae6d93abe57eb1a6ad791e14c8c06.txt",
+    "bbox": [
+      0.495,
+      0.5704166666666667,
+      0.91,
+      0.5208333333333334
+    ],
+    "id": "S162"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--325-_jpg.rf.5ca10a2bc3496e4e82a20030703df600.jpg",
+    "label": "train/labels/Sofa--325-_jpg.rf.5ca10a2bc3496e4e82a20030703df600.txt",
+    "bbox": [
+      0.5095833333333334,
+      0.495,
+      0.9075,
+      0.33166666666666667
+    ],
+    "id": "S163"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--326-_jpg.rf.70481e0ff3ddf8055fd5748718a40b8f.jpg",
+    "label": "train/labels/Sofa--326-_jpg.rf.70481e0ff3ddf8055fd5748718a40b8f.txt",
+    "bbox": [
+      0.50125,
+      0.4975,
+      0.9908333333333333,
+      0.4483333333333333
+    ],
+    "id": "S164"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--327-_jpg.rf.c86e31d6f13ceec70566f34e2287e777.jpg",
+    "label": "train/labels/Sofa--327-_jpg.rf.c86e31d6f13ceec70566f34e2287e777.txt",
+    "bbox": [
+      0.495,
+      0.5766666666666667,
+      0.9316666666666666,
+      0.37
+    ],
+    "id": "S165"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--328-_jpg.rf.d392bfa4e0e0aa53bd1f80240a53c21b.jpg",
+    "label": "train/labels/Sofa--328-_jpg.rf.d392bfa4e0e0aa53bd1f80240a53c21b.txt",
+    "bbox": [
+      0.5008333333333334,
+      0.5983333333333334,
+      0.8783333333333333,
+      0.6233333333333333
+    ],
+    "id": "S166"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--329-_jpg.rf.6a3a348f79efd447280a94491af7c131.jpg",
+    "label": "train/labels/Sofa--329-_jpg.rf.6a3a348f79efd447280a94491af7c131.txt",
+    "bbox": [
+      0.5241666666666667,
+      0.59375,
+      0.875,
+      0.7258333333333333
+    ],
+    "id": "S167"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--330-_jpg.rf.ae45af2c8870222daffcadefb2724949.jpg",
+    "label": "train/labels/Sofa--330-_jpg.rf.ae45af2c8870222daffcadefb2724949.txt",
+    "bbox": [
+      0.49041666666666667,
+      0.5183333333333333,
+      0.9758333333333333,
+      0.6283333333333333
+    ],
+    "id": "S168"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--331-_jpg.rf.c9493159fcc2c24ea5763a7aeb71277a.jpg",
+    "label": "train/labels/Sofa--331-_jpg.rf.c9493159fcc2c24ea5763a7aeb71277a.txt",
+    "bbox": [
+      0.49583333333333335,
+      0.4920833333333333,
+      0.945,
+      0.6791666666666667
+    ],
+    "id": "S169"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--332-_jpg.rf.2132b11436adbb2d27fcefa563653528.jpg",
+    "label": "train/labels/Sofa--332-_jpg.rf.2132b11436adbb2d27fcefa563653528.txt",
+    "bbox": [
+      0.50125,
+      0.53375,
+      0.9191666666666667,
+      0.6225
+    ],
+    "id": "S170"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--333-_jpg.rf.c01c9e70cbbb625c19bd5eee30c0a41a.jpg",
+    "label": "train/labels/Sofa--333-_jpg.rf.c01c9e70cbbb625c19bd5eee30c0a41a.txt",
+    "bbox": [
+      0.5054166666666666,
+      0.57875,
+      0.9458333333333333,
+      0.6041666666666666
+    ],
+    "id": "S171"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--334-_jpg.rf.288b2b0918edbd3d7bb0e02593a62068.jpg",
+    "label": "train/labels/Sofa--334-_jpg.rf.288b2b0918edbd3d7bb0e02593a62068.txt",
+    "bbox": [
+      0.5004166666666666,
+      0.5058333333333334,
+      0.9291666666666667,
+      0.5
+    ],
+    "id": "S172"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--335-_jpg.rf.dfea7988b8d460d619db7702b75d8e44.jpg",
+    "label": "train/labels/Sofa--335-_jpg.rf.dfea7988b8d460d619db7702b75d8e44.txt",
+    "bbox": [
+      0.5008333333333334,
+      0.47041666666666665,
+      0.935,
+      0.7475
+    ],
+    "id": "S173"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--337-_jpg.rf.965aa0b9435a99eeee41ad7f6a4ba197.jpg",
+    "label": "train/labels/Sofa--337-_jpg.rf.965aa0b9435a99eeee41ad7f6a4ba197.txt",
+    "bbox": [
+      0.48583333333333334,
+      0.5958333333333333,
+      0.8916666666666667,
+      0.6816666666666666
+    ],
+    "id": "S174"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--338-_jpg.rf.449e05ce75aee27de355860b0bbe14c6.jpg",
+    "label": "train/labels/Sofa--338-_jpg.rf.449e05ce75aee27de355860b0bbe14c6.txt",
+    "bbox": [
+      0.49375,
+      0.59375,
+      0.8158333333333333,
+      0.4725
+    ],
+    "id": "S175"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--340-_jpg.rf.9ad786810ed6071fb21f206661ccb2a8.jpg",
+    "label": "train/labels/Sofa--340-_jpg.rf.9ad786810ed6071fb21f206661ccb2a8.txt",
+    "bbox": [
+      0.49416666666666664,
+      0.605,
+      0.9116666666666666,
+      0.555
+    ],
+    "id": "S176"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--341-_jpg.rf.01d676561649467c1e488634639c7667.jpg",
+    "label": "train/labels/Sofa--341-_jpg.rf.01d676561649467c1e488634639c7667.txt",
+    "bbox": [
+      0.49,
+      0.52875,
+      0.9433333333333334,
+      0.6075
+    ],
+    "id": "S177"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--342-_jpg.rf.84aecff8ba41b8d3d82038f3b028c2d7.jpg",
+    "label": "train/labels/Sofa--342-_jpg.rf.84aecff8ba41b8d3d82038f3b028c2d7.txt",
+    "bbox": [
+      0.49875,
+      0.5108333333333334,
+      0.8191666666666667,
+      0.7216666666666667
+    ],
+    "id": "S178"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--343-_jpg.rf.2acff0c00c2fa738e0104c9fd2eba3c0.jpg",
+    "label": "train/labels/Sofa--343-_jpg.rf.2acff0c00c2fa738e0104c9fd2eba3c0.txt",
+    "bbox": [
+      0.5245833333333333,
+      0.63625,
+      0.8591666666666666,
+      0.6441666666666667
+    ],
+    "id": "S179"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--344-_jpg.rf.cd3343fdedfa140b7d7c61c1ead588bb.jpg",
+    "label": "train/labels/Sofa--344-_jpg.rf.cd3343fdedfa140b7d7c61c1ead588bb.txt",
+    "bbox": [
+      0.48375,
+      0.6491666666666667,
+      0.9408333333333333,
+      0.43166666666666664
+    ],
+    "id": "S180"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--345-_jpg.rf.769baf7c20020656530dc4e2f3f8d64a.jpg",
+    "label": "train/labels/Sofa--345-_jpg.rf.769baf7c20020656530dc4e2f3f8d64a.txt",
+    "bbox": [
+      0.48833333333333334,
+      0.4979166666666667,
+      0.88,
+      0.6858333333333333
+    ],
+    "id": "S181"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--346-_jpg.rf.d86537edd654436406ab9bf6a34cdbc3.jpg",
+    "label": "train/labels/Sofa--346-_jpg.rf.d86537edd654436406ab9bf6a34cdbc3.txt",
+    "bbox": [
+      0.46291666666666664,
+      0.5533333333333333,
+      0.9141666666666667,
+      0.7066666666666667
+    ],
+    "id": "S182"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--347-_jpg.rf.9094a7be462740b42d94d00ebc0e6ae2.jpg",
+    "label": "train/labels/Sofa--347-_jpg.rf.9094a7be462740b42d94d00ebc0e6ae2.txt",
+    "bbox": [
+      0.49375,
+      0.5,
+      0.9025,
+      0.5766666666666667
+    ],
+    "id": "S183"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--348-_jpg.rf.74a1bda29972fc468b85d6c9eab48bbd.jpg",
+    "label": "train/labels/Sofa--348-_jpg.rf.74a1bda29972fc468b85d6c9eab48bbd.txt",
+    "bbox": [
+      0.49666666666666665,
+      0.50875,
+      0.905,
+      0.5858333333333333
+    ],
+    "id": "S184"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--349-_jpg.rf.ce28a7d8d3504a1b4650101242645ac2.jpg",
+    "label": "train/labels/Sofa--349-_jpg.rf.ce28a7d8d3504a1b4650101242645ac2.txt",
+    "bbox": [
+      0.495,
+      0.50625,
+      0.9016666666666666,
+      0.5775
+    ],
+    "id": "S185"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--350-_jpg.rf.afca5f82670c13bd4afbda3cbc386b2a.jpg",
+    "label": "train/labels/Sofa--350-_jpg.rf.afca5f82670c13bd4afbda3cbc386b2a.txt",
+    "bbox": [
+      0.52625,
+      0.62,
+      0.5841666666666666,
+      0.23833333333333334
+    ],
+    "id": "S186"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--351-_jpg.rf.354276fda925270b07db1c4cc6690ef6.jpg",
+    "label": "train/labels/Sofa--351-_jpg.rf.354276fda925270b07db1c4cc6690ef6.txt",
+    "bbox": [
+      0.5020833333333333,
+      0.52125,
+      0.8758333333333334,
+      0.3375
+    ],
+    "id": "S187"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--352-_jpg.rf.32ffccba0f394876120a11cb26f35b86.jpg",
+    "label": "train/labels/Sofa--352-_jpg.rf.32ffccba0f394876120a11cb26f35b86.txt",
+    "bbox": [
+      0.5,
+      0.4970833333333333,
+      0.9066666666666666,
+      0.3775
+    ],
+    "id": "S188"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--354-_jpg.rf.23c663ebcb784dd222a76740746b3dd4.jpg",
+    "label": "train/labels/Sofa--354-_jpg.rf.23c663ebcb784dd222a76740746b3dd4.txt",
+    "bbox": [
+      0.4979166666666667,
+      0.5766666666666667,
+      0.8925,
+      0.37833333333333335
+    ],
+    "id": "S189"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--355-_jpg.rf.66dd102cfbedbbf35a294628027323b9.jpg",
+    "label": "train/labels/Sofa--355-_jpg.rf.66dd102cfbedbbf35a294628027323b9.txt",
+    "bbox": [
+      0.5079166666666667,
+      0.5195833333333333,
+      0.8108333333333333,
+      0.42916666666666664
+    ],
+    "id": "S190"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--356-_jpg.rf.fcdbee95f3831f4a62c1146dd4308afa.jpg",
+    "label": "train/labels/Sofa--356-_jpg.rf.fcdbee95f3831f4a62c1146dd4308afa.txt",
+    "bbox": [
+      0.485,
+      0.5145833333333333,
+      0.855,
+      0.3925
+    ],
+    "id": "S191"
+  },
+  {
+    "original_split": "train",
+    "class_id": 1,
+    "image": "train/images/Sofa--357-_jpg.rf.1cb335ca0d8e4772068d21d8c3e5e50e.jpg",
+    "label": "train/labels/Sofa--357-_jpg.rf.1cb335ca0d8e4772068d21d8c3e5e50e.txt",
+    "bbox": [
+      0.49916666666666665,
+      0.5483333333333333,
+      0.9616666666666667,
+      0.495
+    ],
+    "id": "S192"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--358-_jpg.rf.222b7db07beb288e5cca992ae79a233a.jpg",
+    "label": "test/labels/Sofa--358-_jpg.rf.222b7db07beb288e5cca992ae79a233a.txt",
+    "bbox": [
+      0.495,
+      0.5304166666666666,
+      0.9333333333333333,
+      0.4525
+    ],
+    "id": "S193"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--359-_jpg.rf.a4748aba2a58ed4003752e3a5af7059b.jpg",
+    "label": "test/labels/Sofa--359-_jpg.rf.a4748aba2a58ed4003752e3a5af7059b.txt",
+    "bbox": [
+      0.5033333333333333,
+      0.5320833333333334,
+      0.82,
+      0.3225
+    ],
+    "id": "S194"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--360-_jpg.rf.70ff6e6aac3947ddc9e6fd275a512991.jpg",
+    "label": "test/labels/Sofa--360-_jpg.rf.70ff6e6aac3947ddc9e6fd275a512991.txt",
+    "bbox": [
+      0.4708333333333333,
+      0.555,
+      0.85,
+      0.405
+    ],
+    "id": "S195"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--361-_jpg.rf.b000d4dd63ec006e320df2bc375ed48a.jpg",
+    "label": "test/labels/Sofa--361-_jpg.rf.b000d4dd63ec006e320df2bc375ed48a.txt",
+    "bbox": [
+      0.48791666666666667,
+      0.49541666666666667,
+      0.8441666666666666,
+      0.5558333333333333
+    ],
+    "id": "S196"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--362-_jpg.rf.dc289d69275015a9e5d6fb0ac0191cf4.jpg",
+    "label": "test/labels/Sofa--362-_jpg.rf.dc289d69275015a9e5d6fb0ac0191cf4.txt",
+    "bbox": [
+      0.48041666666666666,
+      0.5179166666666667,
+      0.8491666666666666,
+      0.3975
+    ],
+    "id": "S197"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--363-_jpg.rf.62d1d1098bebe20ff41042e2e96066d0.jpg",
+    "label": "test/labels/Sofa--363-_jpg.rf.62d1d1098bebe20ff41042e2e96066d0.txt",
+    "bbox": [
+      0.46208333333333335,
+      0.5529166666666666,
+      0.7708333333333334,
+      0.4558333333333333
+    ],
+    "id": "S198"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--364-_jpg.rf.7f13214f45e5c81cd2d0b1711966ee23.jpg",
+    "label": "test/labels/Sofa--364-_jpg.rf.7f13214f45e5c81cd2d0b1711966ee23.txt",
+    "bbox": [
+      0.4891666666666667,
+      0.5225,
+      0.8866666666666667,
+      0.47333333333333333
+    ],
+    "id": "S199"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--365-_jpg.rf.8ec5e13d87ce8491a9e8b4c999ea7330.jpg",
+    "label": "test/labels/Sofa--365-_jpg.rf.8ec5e13d87ce8491a9e8b4c999ea7330.txt",
+    "bbox": [
+      0.505,
+      0.5270833333333333,
+      0.895,
+      0.3775
+    ],
+    "id": "S200"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--366-_jpg.rf.6d034b62d3f63bc46df916dbbcbf9061.jpg",
+    "label": "test/labels/Sofa--366-_jpg.rf.6d034b62d3f63bc46df916dbbcbf9061.txt",
+    "bbox": [
+      0.5033333333333333,
+      0.48333333333333334,
+      0.925,
+      0.44333333333333336
+    ],
+    "id": "S201"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--367-_jpg.rf.8095cd511857dd572f00797f943097fa.jpg",
+    "label": "test/labels/Sofa--367-_jpg.rf.8095cd511857dd572f00797f943097fa.txt",
+    "bbox": [
+      0.5295833333333333,
+      0.46166666666666667,
+      0.9391666666666667,
+      0.5566666666666666
+    ],
+    "id": "S202"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--368-_jpg.rf.48c4bf24db065744d974aae9b0fc7193.jpg",
+    "label": "test/labels/Sofa--368-_jpg.rf.48c4bf24db065744d974aae9b0fc7193.txt",
+    "bbox": [
+      0.49666666666666665,
+      0.5291666666666667,
+      0.9366666666666666,
+      0.3983333333333333
+    ],
+    "id": "S203"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--369-_jpg.rf.75078e95b6d2040bfb541251bf88b2e8.jpg",
+    "label": "test/labels/Sofa--369-_jpg.rf.75078e95b6d2040bfb541251bf88b2e8.txt",
+    "bbox": [
+      0.4979166666666667,
+      0.505,
+      0.9658333333333333,
+      0.5516666666666666
+    ],
+    "id": "S204"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--370-_jpg.rf.9ab14673a275355577f473ff0a451209.jpg",
+    "label": "test/labels/Sofa--370-_jpg.rf.9ab14673a275355577f473ff0a451209.txt",
+    "bbox": [
+      0.49375,
+      0.5583333333333333,
+      0.9491666666666667,
+      0.4166666666666667
+    ],
+    "id": "S205"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--371-_jpg.rf.b3a0d779301403be185fb0c0ad0e2dcf.jpg",
+    "label": "test/labels/Sofa--371-_jpg.rf.b3a0d779301403be185fb0c0ad0e2dcf.txt",
+    "bbox": [
+      0.5054166666666666,
+      0.59625,
+      0.8491666666666666,
+      0.4008333333333333
+    ],
+    "id": "S206"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--372-_jpg.rf.f1f2fa65658b79c76056267c277fe590.jpg",
+    "label": "test/labels/Sofa--372-_jpg.rf.f1f2fa65658b79c76056267c277fe590.txt",
+    "bbox": [
+      0.4975,
+      0.5425,
+      0.8883333333333333,
+      0.3466666666666667
+    ],
+    "id": "S207"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--373-_jpg.rf.157a4c0cb02cf213225921bd491b700e.jpg",
+    "label": "test/labels/Sofa--373-_jpg.rf.157a4c0cb02cf213225921bd491b700e.txt",
+    "bbox": [
+      0.495,
+      0.5579166666666666,
+      0.9083333333333333,
+      0.5391666666666667
+    ],
+    "id": "S208"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--375-_jpg.rf.ab44c7858ff2e7205d0afdb6fec359e8.jpg",
+    "label": "test/labels/Sofa--375-_jpg.rf.ab44c7858ff2e7205d0afdb6fec359e8.txt",
+    "bbox": [
+      0.5016666666666667,
+      0.5033333333333333,
+      0.9533333333333334,
+      0.5583333333333333
+    ],
+    "id": "S209"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--376-_jpg.rf.b9c24b9be019fa3e14c9bb61bf2ac99c.jpg",
+    "label": "test/labels/Sofa--376-_jpg.rf.b9c24b9be019fa3e14c9bb61bf2ac99c.txt",
+    "bbox": [
+      0.4975,
+      0.49541666666666667,
+      0.9016666666666666,
+      0.5225
+    ],
+    "id": "S210"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--377-_jpg.rf.92e21e6d79ef16b15b00c879397fd487.jpg",
+    "label": "test/labels/Sofa--377-_jpg.rf.92e21e6d79ef16b15b00c879397fd487.txt",
+    "bbox": [
+      0.4979166666666667,
+      0.49916666666666665,
+      0.9041666666666667,
+      0.49666666666666665
+    ],
+    "id": "S211"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--378-_jpg.rf.c40c499a5cf3a47d7fde026878415fce.jpg",
+    "label": "test/labels/Sofa--378-_jpg.rf.c40c499a5cf3a47d7fde026878415fce.txt",
+    "bbox": [
+      0.5025,
+      0.54625,
+      0.615,
+      0.36916666666666664
+    ],
+    "id": "S212"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--379-_jpg.rf.0d6c8032ca051163e3c7cd2182000243.jpg",
+    "label": "test/labels/Sofa--379-_jpg.rf.0d6c8032ca051163e3c7cd2182000243.txt",
+    "bbox": [
+      0.4975,
+      0.5095833333333334,
+      0.7966666666666666,
+      0.5091666666666667
+    ],
+    "id": "S213"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--380-_jpg.rf.619a976ba1c9e88a932508ffd75b207e.jpg",
+    "label": "test/labels/Sofa--380-_jpg.rf.619a976ba1c9e88a932508ffd75b207e.txt",
+    "bbox": [
+      0.49916666666666665,
+      0.5679166666666666,
+      0.98,
+      0.4058333333333333
+    ],
+    "id": "S214"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--381-_jpg.rf.8707c08d28d64430499c30a4f73160c9.jpg",
+    "label": "test/labels/Sofa--381-_jpg.rf.8707c08d28d64430499c30a4f73160c9.txt",
+    "bbox": [
+      0.5220833333333333,
+      0.5991666666666666,
+      0.8858333333333334,
+      0.3383333333333333
+    ],
+    "id": "S215"
+  },
+  {
+    "original_split": "test",
+    "class_id": 1,
+    "image": "test/images/Sofa--382-_jpg.rf.67df29acb173387013a704593ea9967f.jpg",
+    "label": "test/labels/Sofa--382-_jpg.rf.67df29acb173387013a704593ea9967f.txt",
+    "bbox": [
+      0.4970833333333333,
+      0.4925,
+      0.9658333333333333,
+      0.36833333333333335
+    ],
+    "id": "S216"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofa--383-_jpg.rf.02ef655cee76cbd77bbab340a6231ce2.jpg",
+    "label": "valid/labels/Sofa--383-_jpg.rf.02ef655cee76cbd77bbab340a6231ce2.txt",
+    "bbox": [
+      0.5145833333333333,
+      0.5225,
+      0.7708333333333334,
+      0.48833333333333334
+    ],
+    "id": "S217"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofa--384-_jpg.rf.23026a5db38f5009641c75c70a2a15ca.jpg",
+    "label": "valid/labels/Sofa--384-_jpg.rf.23026a5db38f5009641c75c70a2a15ca.txt",
+    "bbox": [
+      0.5179166666666667,
+      0.5258333333333334,
+      0.7958333333333333,
+      0.3933333333333333
+    ],
+    "id": "S218"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/sofas--1-_jpg.rf.23c5e37fabb72bbeb7c583887e7d6d58.jpg",
+    "label": "valid/labels/sofas--1-_jpg.rf.23c5e37fabb72bbeb7c583887e7d6d58.txt",
+    "bbox": [
+      0.5020833333333333,
+      0.5579166666666666,
+      0.9741666666666666,
+      0.5875
+    ],
+    "id": "S219"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/sofas--4-_jpg.rf.1e1149564fe51ef097ae6f70125abfbb.jpg",
+    "label": "valid/labels/sofas--4-_jpg.rf.1e1149564fe51ef097ae6f70125abfbb.txt",
+    "bbox": [
+      0.5004166666666666,
+      0.6079166666666667,
+      0.9875,
+      0.6241666666666666
+    ],
+    "id": "S220"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/sofas--6-_jpg.rf.13fd5ba30085c85b9400e264727d9dca.jpg",
+    "label": "valid/labels/sofas--6-_jpg.rf.13fd5ba30085c85b9400e264727d9dca.txt",
+    "bbox": [
+      0.50625,
+      0.49041666666666667,
+      0.9825,
+      0.5525
+    ],
+    "id": "S221"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/sofas--7-_jpg.rf.394c04e45b48953a0319599de1d8eb8a.jpg",
+    "label": "valid/labels/sofas--7-_jpg.rf.394c04e45b48953a0319599de1d8eb8a.txt",
+    "bbox": [
+      0.5095833333333334,
+      0.5225,
+      0.9308333333333333,
+      0.9
+    ],
+    "id": "S222"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/sofas--8-_jpg.rf.64a5fa3782a215228c98139fbdb31529.jpg",
+    "label": "valid/labels/sofas--8-_jpg.rf.64a5fa3782a215228c98139fbdb31529.txt",
+    "bbox": [
+      0.4975,
+      0.5520833333333334,
+      0.9583333333333334,
+      0.6958333333333333
+    ],
+    "id": "S223"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofass--13-_jpg.rf.4cd7afb09daf94985e4f70e4c14a1e75.jpg",
+    "label": "valid/labels/Sofass--13-_jpg.rf.4cd7afb09daf94985e4f70e4c14a1e75.txt",
+    "bbox": [
+      0.5075,
+      0.5820833333333333,
+      0.97,
+      0.5058333333333334
+    ],
+    "id": "S224"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofass--15-_jpg.rf.0c49fbbe21f041798a7cee93e577b23c.jpg",
+    "label": "valid/labels/Sofass--15-_jpg.rf.0c49fbbe21f041798a7cee93e577b23c.txt",
+    "bbox": [
+      0.48583333333333334,
+      0.5791666666666667,
+      0.935,
+      0.4166666666666667
+    ],
+    "id": "S225"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofass--16-_jpg.rf.35203cc25e162aba671946b5fe6ce321.jpg",
+    "label": "valid/labels/Sofass--16-_jpg.rf.35203cc25e162aba671946b5fe6ce321.txt",
+    "bbox": [
+      0.49916666666666665,
+      0.7258333333333333,
+      0.9866666666666667,
+      0.5333333333333333
+    ],
+    "id": "S226"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofass--17-_jpg.rf.8b9470bb5f52ebf22d14ff0e649cd64b.jpg",
+    "label": "valid/labels/Sofass--17-_jpg.rf.8b9470bb5f52ebf22d14ff0e649cd64b.txt",
+    "bbox": [
+      0.5045833333333334,
+      0.57,
+      0.9625,
+      0.5033333333333333
+    ],
+    "id": "S227"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofass--18-_jpg.rf.b413d2c08fbb40a8d5e3cfdb085c90ce.jpg",
+    "label": "valid/labels/Sofass--18-_jpg.rf.b413d2c08fbb40a8d5e3cfdb085c90ce.txt",
+    "bbox": [
+      0.4975,
+      0.645,
+      0.9816666666666667,
+      0.45166666666666666
+    ],
+    "id": "S228"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofass--19-_jpg.rf.9a949e739a82e708bba3dfb9378abee2.jpg",
+    "label": "valid/labels/Sofass--19-_jpg.rf.9a949e739a82e708bba3dfb9378abee2.txt",
+    "bbox": [
+      0.51875,
+      0.6754166666666667,
+      0.9308333333333333,
+      0.5858333333333333
+    ],
+    "id": "S229"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofass--20-_jpg.rf.022658d557e97bba2e96735dbc8d8337.jpg",
+    "label": "valid/labels/Sofass--20-_jpg.rf.022658d557e97bba2e96735dbc8d8337.txt",
+    "bbox": [
+      0.5004166666666666,
+      0.4979166666666667,
+      0.9958333333333333,
+      0.43916666666666665
+    ],
+    "id": "S230"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofass--21-_jpg.rf.734c053179d4377c72d1d8e4227a40cc.jpg",
+    "label": "valid/labels/Sofass--21-_jpg.rf.734c053179d4377c72d1d8e4227a40cc.txt",
+    "bbox": [
+      0.4970833333333333,
+      0.41375,
+      0.8925,
+      0.4558333333333333
+    ],
+    "id": "S231"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofass--23-_jpg.rf.8e183c03ae4584b0173f0dde4babb394.jpg",
+    "label": "valid/labels/Sofass--23-_jpg.rf.8e183c03ae4584b0173f0dde4babb394.txt",
+    "bbox": [
+      0.4970833333333333,
+      0.4691666666666667,
+      0.9058333333333334,
+      0.4083333333333333
+    ],
+    "id": "S232"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofass--24-_jpg.rf.6f8aca89a3aa688eb9d8243ccb576c4e.jpg",
+    "label": "valid/labels/Sofass--24-_jpg.rf.6f8aca89a3aa688eb9d8243ccb576c4e.txt",
+    "bbox": [
+      0.48541666666666666,
+      0.5283333333333333,
+      0.8908333333333334,
+      0.485
+    ],
+    "id": "S233"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofass--26-_jpg.rf.d172f7d5e8e83d04765666ada374cfd9.jpg",
+    "label": "valid/labels/Sofass--26-_jpg.rf.d172f7d5e8e83d04765666ada374cfd9.txt",
+    "bbox": [
+      0.5091666666666667,
+      0.6783333333333333,
+      0.8916666666666667,
+      0.5516666666666666
+    ],
+    "id": "S234"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofass--28-_jpg.rf.4f70935c064eb336a8b842015e107030.jpg",
+    "label": "valid/labels/Sofass--28-_jpg.rf.4f70935c064eb336a8b842015e107030.txt",
+    "bbox": [
+      0.5075,
+      0.6758333333333333,
+      0.8816666666666667,
+      0.55
+    ],
+    "id": "S235"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofass--29-_jpg.rf.a785658f4cecc15415f7e7b38533dc61.jpg",
+    "label": "valid/labels/Sofass--29-_jpg.rf.a785658f4cecc15415f7e7b38533dc61.txt",
+    "bbox": [
+      0.5066666666666667,
+      0.5770833333333333,
+      0.945,
+      0.49583333333333335
+    ],
+    "id": "S236"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofass--3-_jpg.rf.7670f9d3b672f14999d58502e34f77ce.jpg",
+    "label": "valid/labels/Sofass--3-_jpg.rf.7670f9d3b672f14999d58502e34f77ce.txt",
+    "bbox": [
+      0.50375,
+      0.6304166666666666,
+      0.9841666666666666,
+      0.6225
+    ],
+    "id": "S237"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofass--4-_jpg.rf.22969a41d9cdc03f71c0db8efd7de495.jpg",
+    "label": "valid/labels/Sofass--4-_jpg.rf.22969a41d9cdc03f71c0db8efd7de495.txt",
+    "bbox": [
+      0.4975,
+      0.7254166666666667,
+      0.98,
+      0.5258333333333334
+    ],
+    "id": "S238"
+  },
+  {
+    "original_split": "valid",
+    "class_id": 1,
+    "image": "valid/images/Sofass--8-_jpg.rf.3e6319d14511fe37a882fc7a9acea95f.jpg",
+    "label": "valid/labels/Sofass--8-_jpg.rf.3e6319d14511fe37a882fc7a9acea95f.txt",
+    "bbox": [
+      0.49875,
+      0.5733333333333334,
+      0.9741666666666666,
+      0.49666666666666665
+    ],
+    "id": "S239"
+  }
+]

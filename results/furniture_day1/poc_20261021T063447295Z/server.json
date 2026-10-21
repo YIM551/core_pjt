@@ -1,0 +1,9 @@
+{
+  "pid": 37720,
+  "url": "http://127.0.0.1:8001",
+  "run_dir": "C:\\work\\core_pjt\\results\\furniture_day1\\poc_20261021T063447295Z",
+  "started_at_utc": "2026-10-21T06:34:47.3281483Z",
+  "python": "C:\\work\\core_pjt\\.venv\\Scripts\\python.exe",
+  "app": "PoC_FastAPI서버:app",
+  "listener_pid": 40864
+}
