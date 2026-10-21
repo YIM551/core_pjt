@@ -1,0 +1,150 @@
+{
+  "created_at_utc": "2026-10-21T06:17:31.919159+00:00",
+  "image": "C:/work/core_pjt/samples/furniture_v2_sofa.jpg",
+  "image_sha256": "3cc5950e24dccfbc16a15842db222e2d4d39a2cf5ed6d4841fdd28ef725d173b",
+  "image_size": [
+    1200,
+    1200
+  ],
+  "dataset_image": "C:/work/core_pjt/datasets/roboflow/furniture/v2/valid/images/Sofa--383-_jpg.rf.02ef655cee76cbd77bbab340a6231ce2.jpg",
+  "dataset_split": "valid",
+  "model": "C:/work/core_pjt/yolo11n.pt",
+  "model_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+  "model_type": "pretrained COCO YOLO11n; not fine-tuned on Furniture",
+  "device": "cpu",
+  "inferences": [
+    {
+      "confidence_threshold": 0.1,
+      "elapsed_ms": 931.9620000314899,
+      "includes_initial_warmup": true,
+      "detections": [
+        {
+          "class_id": 57,
+          "label": "couch",
+          "confidence": 0.9075305461883545,
+          "xyxy": [
+            164.67025756835938,
+            334.9360046386719,
+            1080.666748046875,
+            919.9089965820312
+          ]
+        },
+        {
+          "class_id": 56,
+          "label": "chair",
+          "confidence": 0.9069146513938904,
+          "xyxy": [
+            0.7211493849754333,
+            253.6822509765625,
+            218.4375,
+            545.71044921875
+          ]
+        },
+        {
+          "class_id": 75,
+          "label": "vase",
+          "confidence": 0.37676283717155457,
+          "xyxy": [
+            359.56842041015625,
+            152.70526123046875,
+            393.787353515625,
+            229.9657745361328
+          ]
+        },
+        {
+          "class_id": 56,
+          "label": "chair",
+          "confidence": 0.11568643152713776,
+          "xyxy": [
+            0.4071163833141327,
+            283.2596740722656,
+            102.68231964111328,
+            434.73028564453125
+          ]
+        },
+        {
+          "class_id": 60,
+          "label": "dining table",
+          "confidence": 0.1050313338637352,
+          "xyxy": [
+            0.06023883447051048,
+            280.4729919433594,
+            102.50870513916016,
+            433.2925720214844
+          ]
+        }
+      ]
+    },
+    {
+      "confidence_threshold": 0.25,
+      "elapsed_ms": 40.78250000020489,
+      "includes_initial_warmup": false,
+      "detections": [
+        {
+          "class_id": 57,
+          "label": "couch",
+          "confidence": 0.9075305461883545,
+          "xyxy": [
+            164.67025756835938,
+            334.9360046386719,
+            1080.666748046875,
+            919.9089965820312
+          ]
+        },
+        {
+          "class_id": 56,
+          "label": "chair",
+          "confidence": 0.9069146513938904,
+          "xyxy": [
+            0.7211493849754333,
+            253.6822509765625,
+            218.4375,
+            545.71044921875
+          ]
+        },
+        {
+          "class_id": 75,
+          "label": "vase",
+          "confidence": 0.37676283717155457,
+          "xyxy": [
+            359.56842041015625,
+            152.70526123046875,
+            393.787353515625,
+            229.9657745361328
+          ]
+        }
+      ]
+    },
+    {
+      "confidence_threshold": 0.6,
+      "elapsed_ms": 27.370799973141402,
+      "includes_initial_warmup": false,
+      "detections": [
+        {
+          "class_id": 57,
+          "label": "couch",
+          "confidence": 0.9075305461883545,
+          "xyxy": [
+            164.67025756835938,
+            334.9360046386719,
+            1080.666748046875,
+            919.9089965820312
+          ]
+        },
+        {
+          "class_id": 56,
+          "label": "chair",
+          "confidence": 0.9069146513938904,
+          "xyxy": [
+            0.7211493849754333,
+            253.6822509765625,
+            218.4375,
+            545.71044921875
+          ]
+        }
+      ]
+    }
+  ],
+  "timing_note": "First call includes warm-up. These single calls are not a benchmark.",
+  "annotated_image": "C:/work/core_pjt/results/furniture_day1/first_inference.jpg"
+}

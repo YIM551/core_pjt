@@ -1,0 +1,7 @@
+[도전 1] summarize() 채점 (conf 0.25 로 검출한 뒤 요약)
+  O  sample.jpg               → 총 5개 (person 4개, bus 1개)
+  O  pointing_up.jpg          → 총 1개 (person 1개)
+  O  victory.jpg              → 인식된 객체 없음
+  O  가상 검출 (동률 · tie 0.90)    → 총 5개 (car 2개, person 2개, bus 1개)
+
+  4/4 통과

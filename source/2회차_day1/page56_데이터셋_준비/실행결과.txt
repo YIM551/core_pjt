@@ -1,0 +1,13 @@
+데모 데이터셋 생성 완료: train 40장 / val 10장
+data.yaml 작성: C:\work\vlm9\source\2회차_day1\dataset\data.yaml
+
+[train] 이미지 40장
+
+[val] 이미지 10장
+
+[클래스 분포]
+  obstacle     38개
+  marker       36개
+
+[PASS] 데이터셋 검증 통과
+  (0s)

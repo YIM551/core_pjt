@@ -1,0 +1,11 @@
+서버 상태   : {'status': 'ok', 'device': 'cpu', 'yolo_loaded': False, 'vlm_loaded': False}
+입력 이미지 : sample.jpg (134 KB)
+
+[1] POST /api/yolo-detect
+    summary : person 4개, bus 1개
+    elapsed : 1641 ms
+
+[2] 두 엔드포인트 동시 호출 (병렬)
+    YOLO : 87 ms ― person 4개, bus 1개
+    VLM  : 92478 ms ― : 이미지에는 전기 버스가 보입니다. 버스는 "cero emisiones"라고 쓰여 있으며, 배경에는 건물과 나무가 보입니다.
+    전체 : 92850 ms (직렬이면 92565 ms)

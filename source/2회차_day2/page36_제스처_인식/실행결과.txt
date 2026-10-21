@@ -1,0 +1,7 @@
+[도전 2] count_fingers() 채점 (0° 와 90° 로 돌려 비교)
+  O  pointing_up.jpg    0° → 펼친 손가락 1개  (기대 1개, gesture: Pointing_Up)
+  O  pointing_up.jpg   90° → 펼친 손가락 1개  (기대 1개, gesture: None)
+  O  victory.jpg        0° → 펼친 손가락 2개  (기대 2개, gesture: Victory)
+  O  victory.jpg       90° → 펼친 손가락 2개  (기대 2개, gesture: None)
+
+  4/4 통과

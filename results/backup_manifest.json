@@ -1,0 +1,37 @@
+{
+  "created_at_utc": "2026-10-21T06:22:07.084341+00:00",
+  "repository": "https://github.com/YIM551/core_pjt",
+  "release_tag": "backup-2026-10-21",
+  "assets": [
+    {
+      "name": "furniture.v2-release.yolov11.zip",
+      "bytes": 56423743,
+      "sha256": "c9fcf329d42cb419f4af787ac95172511f5f6a71017e359ac6710324b06125bd",
+      "restore_to": "datasets/roboflow/furniture/v2 (extract archive)"
+    },
+    {
+      "name": "local-models.zip",
+      "bytes": 21376340,
+      "sha256": "cd2498ca9fe5c116b47944c238e2f99ca562fa652660ce8eb2d252d7d5d73b8f",
+      "restore_to": "project root (extract archive)"
+    },
+    {
+      "name": "project-overview.mp4",
+      "bytes": 164958616,
+      "sha256": "974d6ac86e0c5cf7f678ba825c980e28fb54d9b7bf1dd8a09f21d310d7aae28e",
+      "restore_to": "설명 영상/코어프로젝트2회차설명영상.mp4"
+    }
+  ],
+  "local_models_archive_members": [
+    "models/gesture_recognizer.task",
+    "source/2회차_day1/runs/ft_v1/weights/best.pt",
+    "source/2회차_day1/runs/ft_v1/weights/last.pt",
+    "yolo11n.pt"
+  ],
+  "excluded_recreatable": [
+    ".venv",
+    "Python/download caches",
+    "models/*.gguf"
+  ],
+  "dataset_provenance": "datasets/roboflow/furniture/v2/provenance.json"
+}

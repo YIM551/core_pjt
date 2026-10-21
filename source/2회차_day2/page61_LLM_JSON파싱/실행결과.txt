@@ -1,0 +1,36 @@
+[A] LLM 실제 호출
+  입력 :
+    [YOLO 객체 인식] person 1개, tie 1개
+    [VLM 장면 설명] 여성이 손가락으로 1을 가리키고 있다, 장애물 없음.
+    [손 제스처] Pointing_Up, 가리키는 방향: 위
+    
+    [사용자 질문] 지금 상황을 정리해줘.
+
+  원문 (5.8s) :
+    <think>
+
+    </think>
+
+    {"objects": "person, tie", "obstacle": false,
+    "direction": "up", "summary": "여자가 손가락으로 위를 가리키며 1을
+    가리키고 있다."}
+
+  파싱 결과 :
+    ok        : True
+    objects   : person, tie
+    obstacle  : False
+    direction : up
+    summary   : 여자가 손가락으로 위를 가리키며 1을 가리키고 있다.
+
+[B] 파서 자체 점검 ― 깨진 출력 6종
+  유형        ok     obstacle  direction summary
+  정상        True   False     up        한 사람이 위를 가리킨다.
+  코드펜스      True   False     up        위를 가리킨다.
+  앞뒤 잡글     True   True      none      버스가 길을 막고 있다.
+  문자열 bool  True   False     left      왼쪽을 가리킨다.
+  한글 방향     True   False     right     오른쪽을 가리킨다.
+  잘린 think  False  False     none      답변 없음
+
+  참고: 파서 없이 bool("false") 로 읽으면 obstacle = True  ← 정반대가 된다
+
+형식은 모델이 아니라 파서가 보장한다 → 3일차 도구 호출의 입력이 된다.

@@ -1,0 +1,23 @@
+# 웹 대시보드 서버(main.py) 의존성 (Python 3.12, CPU) ― 버전은 source 의 설치_명령어.sh 와 같다
+#
+# llama-cpp-python 은 PyPI 에 Windows 용 빌드가 없어 CPU 휠 저장소를 함께 지정해야 한다.
+#   pip install -r requirements.txt --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+
+# 웹 서버
+fastapi==0.141.1
+uvicorn==0.54.0
+httpx==0.28.1            # API_검증.py
+
+# 이미지
+pillow==12.3.0
+
+# YOLO (torch 는 CPU 빌드가 설치된다)
+ultralytics==8.4.164
+torch==2.14.0
+torchvision==0.29.0
+
+# VLM · LLM GGUF 추론 (CPU 휠, 0.3.34 고정)
+llama-cpp-python==0.3.34
+
+# 모델 가중치 다운로드용 hf 명령
+huggingface_hub==2.0.0

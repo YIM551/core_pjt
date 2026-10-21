@@ -1,0 +1,26 @@
+모델 로딩 중...
+
+[1] 채점 ― LLM 이 고른 것 → 규칙 적용 후
+O 앞에 뭐가 있어?
+      LLM describe()       → 최종 describe()
+O 사람이 몇 명이야?
+      LLM describe()       → 최종 describe()
+O 오른쪽으로 3칸 가
+      LLM move(right, 3)   → 최종 move(right, 3)
+O 아래로 한 칸만 가줘
+      LLM move(down, 1)    → 최종 move(down, 1)
+O 왼쪽으로, 5칸 이동.
+      LLM move(left, 5)    → 최종 move(left, 5)
+O 이쪽으로 2칸 이동해 [손: 위]
+      LLM move(up, 2)      → 최종 move(up, 2)
+O 저쪽으로 가
+      LLM move(right, 1)   → 최종 ask(steps=1)  ← 코드가 바꿈
+O 버스 있는 쪽으로 가
+      LLM move(right, 1)   → 최종 ask(steps=1)  ← 코드가 바꿈
+
+정답 8/8
+
+[2] 되묻기 → 방향을 답하면 이어서 (history)
+  1턴  Q. 저쪽으로 2칸 가    → ask(steps=2)  "어느 쪽으로 2칸 갈까요? 방향을 말하거나 "
+  2턴  Q. 왼쪽           → move(left, 2)  "왼쪽으로 2칸 이동합니다."
+  대화 기록 4개 → 방향은 2턴째 답에서, 칸 수는 1턴째 ask 가 기억한 값에서

@@ -1,0 +1,6 @@
+path: C:/work/core_pjt/source/2회차_day1/dataset
+train: images/train
+val: images/val
+names:
+  0: obstacle
+  1: marker

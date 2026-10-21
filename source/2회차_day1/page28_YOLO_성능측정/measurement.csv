@@ -1,0 +1,2 @@
+﻿model,load_s,infer_ms_avg,infer_ms_min,infer_ms_max,fps,detected,objects,mem_delta_mb
+yolo11n.pt,0.05,22.9,15.4,35.5,43.6,5,bus person,162.3

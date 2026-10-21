@@ -1,0 +1,18 @@
+입력 이미지 : pointing_up.jpg   mirror=False
+
+   회전 | gesture 카테고리           | 랜드마크 방향 
+--------------------------------------------------
+   0° | Pointing_Up (0.82)     | 위
+  90° | None (0.78)            | 왼쪽
+ 180° | Thumb_Down (0.48)      | 아래
+ 270° | None (0.75)            | 오른쪽
+
+[LLM 입력용 Text]
+  손 제스처: Pointing_Up, 가리키는 방향: 위
+  손 제스처: None, 가리키는 방향: 왼쪽
+  손 제스처: Thumb_Down, 가리키는 방향: 아래
+  손 제스처: None, 가리키는 방향: 오른쪽
+
+저장 : direction_pointing_up.png
+
+카테고리는 손이 돌아가면 틀린다 → 방향은 랜드마크로 판단한다.

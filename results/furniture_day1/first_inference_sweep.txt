@@ -1,0 +1,10 @@
+�Է� �̹��� : furniture_v2_sofa.jpg  (1200x1200)
+모델 로딩   : 1.19s
+
+  conf |   검출 수 |    추론(ms) | 검출 결과
+------------------------------------------------------------------------
+  0.10 |      5 |       932 | couch, chair, vase, chair, dining table
+  0.25 |      3 |        42 | couch, chair, vase
+  0.60 |      2 |        25 | couch, chair
+
+conf 를 낮추면 검출 수가 늘지만 오탐(False Positive)도 함께 늘어난다.

@@ -1,0 +1,11 @@
+[수정 전] 조건분기_도전2.py ― 위쪽|위로 만 방향어
+  X  위 2칸 가      LLM move(up, 2)      → 최종 ask(steps=2)
+  O  버스 위치로 가    LLM move(right, 1)   → 최종 ask(steps=1)
+  O  위에 뭐 있어?    LLM describe()       → 최종 describe()
+  기존 8문항 : 8/8
+
+[수정 후] 조건분기_도전2_정답.py ― '위 ' · 문장 끝 '위' · 동의어(우측 · 밑 …) 추가
+  O  위 2칸 가      LLM move(up, 2)      → 최종 move(up, 2)
+  O  버스 위치로 가    LLM move(right, 1)   → 최종 ask(steps=1)
+  O  위에 뭐 있어?    LLM describe()       → 최종 describe()
+  기존 8문항 : 8/8

@@ -1,0 +1,25 @@
+Python 3.12.4 / Windows
+
+[1] 패키지 설치 확인
+    OK   fastapi      0.139.2    웹 대시보드 서버 
+    OK   uvicorn      0.51.0     웹 대시보드 서버 실행 
+    OK   httpx        0.27.0     3일차 API 검증 
+    OK   PIL          12.3.0     이미지 처리 (pillow) 
+    OK   ultralytics  8.4.104    YOLO Object Detection 
+    OK   llama_cpp    0.3.34     VLM / LLM GGUF 추론 
+    OK   mediapipe    1.0.1      손 제스처 인식 [2일차 신규]
+
+[2] 모델 가중치 확인
+    OK   YOLO11n         5.4 MB  yolo11n.pt 
+    OK   VLM 본체       1840.5 MB  Qwen2.5-VL-3B-Instruct-Q4_K_M.gguf 
+    OK   VLM mmproj   1276.4 MB  mmproj-Qwen2.5-VL-3B-Instruct-f16.gguf 
+    OK   제스처 모델          8.0 MB  gesture_recognizer.task [2일차 신규]
+    OK   LLM          2381.6 MB  Qwen3-4B-Q4_K_M.gguf [2일차 신규]
+
+[3] 입력 이미지 확인
+    OK   samples/sample.jpg
+    OK   samples/pointing_up.jpg
+    OK   samples/victory.jpg
+
+------------------------------------------------------------
+모든 준비 완료 ― 실습을 시작하세요.

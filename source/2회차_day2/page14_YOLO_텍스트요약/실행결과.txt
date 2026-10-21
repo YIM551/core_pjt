@@ -1,0 +1,18 @@
+입력 이미지 : sample.jpg
+
+[원본 검출 결과]
+  bus          conf=0.94
+  person       conf=0.89
+  person       conf=0.88
+  person       conf=0.86
+  person       conf=0.62
+
+[LLM 입력용 요약 문장]
+  [YOLO 객체 인식] person 4개, bus 1개
+
+[min_conf 별 요약 비교 ― 노이즈 ↔ 누락]
+  min_conf=0.0 → person 4개, bus 1개
+  min_conf=0.5 → person 4개, bus 1개
+  min_conf=0.8 → person 3개, bus 1개
+
+이 한 문장이 VLM 설명문과 함께 LLM 입력으로 들어갑니다.

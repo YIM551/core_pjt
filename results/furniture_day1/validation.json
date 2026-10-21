@@ -1,0 +1,73 @@
+{
+  "status": "pass",
+  "checked_at_utc": "2026-10-21T06:16:17.379145+00:00",
+  "source_url": "https://universe.roboflow.com/roboflow-100/furniture-ngpea/dataset/2",
+  "version": 2,
+  "data_dir": "C:/work/core_pjt/datasets/roboflow/furniture/v2",
+  "original_yaml_sha256": "2fd88bd6fd5764073802e1107fb87d1325c3cdd310747242f035dd35b977f0a7",
+  "class_names": {
+    "0": "Chair",
+    "1": "Sofa",
+    "2": "Table"
+  },
+  "expected_image_counts": {
+    "train": 454,
+    "valid": 161,
+    "test": 74
+  },
+  "image_counts": {
+    "train": 454,
+    "valid": 161,
+    "test": 74
+  },
+  "label_counts": {
+    "train": 454,
+    "valid": 161,
+    "test": 74
+  },
+  "box_counts": {
+    "train": 454,
+    "valid": 161,
+    "test": 74
+  },
+  "boxes_by_class_id": {
+    "0": 249,
+    "1": 240,
+    "2": 200
+  },
+  "boxes_by_split_and_class_id": {
+    "train": {
+      "0": 199,
+      "1": 193,
+      "2": 62
+    },
+    "valid": {
+      "0": 0,
+      "1": 23,
+      "2": 138
+    },
+    "test": {
+      "0": 50,
+      "1": 24,
+      "2": 0
+    }
+  },
+  "box_count_histogram_by_split": {
+    "train": {
+      "1": 454
+    },
+    "valid": {
+      "1": 161
+    },
+    "test": {
+      "1": 74
+    }
+  },
+  "total_images": 689,
+  "local_config_written": true,
+  "local_config": "C:/work/core_pjt/datasets/roboflow/furniture/v2/data.local.yaml",
+  "duplicate_check": "Exact image file bytes (SHA-256), not visual similarity",
+  "duplicate_groups": [],
+  "cross_split_duplicate_group_count": 0,
+  "errors": []
+}

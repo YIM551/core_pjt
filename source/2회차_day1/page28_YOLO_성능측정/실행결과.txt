@@ -1,0 +1,9 @@
+측정 중: yolo11n.pt (10회) ...
+
+       model |       load_s | infer_ms_avg | infer_ms_min | infer_ms_max |          fps |     detected |      objects | mem_delta_mb
+---------------------------------------------------------------------------------------------------------------------------------------
+  yolo11n.pt |         0.04 |         44.7 |         43.7 |         46.5 |         22.4 |            5 |   bus person |        169.2
+
+CSV 저장: C:\work\vlm9\source\2회차_day1\page28_YOLO_성능측정\measurement.csv
+이 파일은 중간 결과입니다. 3일차까지 보관하세요.
+  (5s)

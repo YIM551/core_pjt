@@ -1,0 +1,8 @@
+[서버 시작 직후]  GET /api/health
+   {'status': 'ok', 'yolo_loaded': False, 'vlm_loaded': False}
+
+[YOLO 요청 1회 후 (3.5s)]  GET /api/health
+   {'status': 'ok', 'yolo_loaded': True, 'vlm_loaded': False}
+
+[VLM 요청 1회 후 (10.4s)]  GET /api/health
+   {'status': 'ok', 'yolo_loaded': True, 'vlm_loaded': True}

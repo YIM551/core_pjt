@@ -1,0 +1,2424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>통합 대시보드</title>
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #0a0b0f;
+    --sidebar-bg: #111319;
+    --panel: #16181f;
+    --panel-border: rgba(255,255,255,.07);
+    --panel-border-strong: rgba(255,255,255,.14);
+    --text: #f2f3f6;
+    --text-dim: #9aa0ab;
+    --text-faint: #5a6070;
+    --accent: #6d5bff;
+    --accent-2: #8b6bff;
+    --accent-soft: rgba(109,91,255,.16);
+    --accent-grad: linear-gradient(135deg, #6d5bff, #9b6bff);
+    --success: #34d399;
+    --warning: #fbbf24;
+    --danger: #f87171;
+    --radius: 14px;
+    --radius-sm: 10px;
+    --shadow-card: 0 1px 0 rgba(255,255,255,.03) inset, 0 10px 28px -14px rgba(0,0,0,.65), 0 2px 6px rgba(0,0,0,.3);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", sans-serif;
+    -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    background:
+      radial-gradient(circle at 18% -8%, rgba(109,91,255,.14), transparent 42%),
+      radial-gradient(circle at 100% 0%, rgba(155,107,255,.08), transparent 38%),
+      var(--bg);
+    color: var(--text); height: 100vh; display: flex; overflow: hidden;
+  }
+
+  /* 오버레이/스크롤 영역이 많은 다크 대시보드라 기본 브라우저 스크롤바가 두껍고
+     밝게 튀어 보인다. 트랙을 투명하게, 썸만 은은하게 보이는 얇은 스크롤바로 통일한다. */
+  * { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.16) transparent; }
+  *::-webkit-scrollbar { width: 8px; height: 8px; }
+  *::-webkit-scrollbar-track { background: transparent; }
+  *::-webkit-scrollbar-thumb { background: rgba(255,255,255,.14); border-radius: 8px; }
+  *::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,.24); }
+
+  /* ---------- 좌측 사이드바 ---------- */
+  .sidebar {
+    width: 96px; background: var(--sidebar-bg); display: flex; flex-direction: column;
+    justify-content: flex-start; align-items: center; padding: 24px 0; gap: 8px;
+    border-right: 1px solid var(--panel-border); flex-shrink: 0;
+  }
+  .sidebar button {
+    width: 80px; padding: 10px 6px; font-size: 13px; text-align: center; border-radius: var(--radius-sm);
+    background: none; border: none; color: var(--text-dim); cursor: pointer; font-family: inherit;
+    transition: background .15s ease, color .15s ease;
+  }
+  .sidebar button:hover:not(.active) { background: rgba(255,255,255,.05); color: #c7c9cf; }
+  .sidebar button.active {
+    background: var(--accent-soft); color: #ab9dff; font-weight: 600;
+    box-shadow: 0 0 0 1px rgba(109,91,255,.35) inset;
+  }
+
+  /* ---------- 공통 ---------- */
+  .app-main { flex: 1; display: flex; flex-direction: column; padding: 16px; gap: 12px; min-width: 0; min-height: 0; }
+  .tab-panel { display: none; flex: 1; flex-direction: column; gap: 12px; min-height: 0; }
+  .tab-panel.active { display: flex; }
+
+  .box {
+    background: var(--panel); border: 1px solid var(--panel-border); border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
+    padding: 12px; font-size: 13px; color: var(--text-dim); display: flex; flex-direction: column;
+  }
+  .box b { color: #fff; display: block; margin-bottom: 6px; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+  .media { align-items: center; justify-content: center; text-align: center; color: var(--text-faint); }
+
+  /* ---------- 카메라 스트리밍 ---------- */
+  /* 기기별 대시보드 패널이 이 구조를 사용한다. */
+  .cam-box.media { align-items: stretch; justify-content: flex-start; text-align: left; min-height: 0; overflow: hidden; }
+  .cam-viewport {
+    flex: 1; min-height: 0; margin-top: 6px; display: flex; align-items: center; justify-content: center;
+    background: #05060a; border: 1px solid var(--panel-border); border-radius: 10px; overflow: hidden;
+  }
+  .cam-img, .cam-video { width: 100%; height: 100%; object-fit: contain; display: none; }
+  /* 로컬 PC 웹캠은 셀피(거울)처럼 보이도록 화면 표시만 좌우 반전한다. CSS transform은
+     표시에만 적용되고, 분석용 캡처(canvas drawImage)와 MediaPipe 제스처 인식은 원본
+     픽셀을 그대로 읽으므로 좌우가 반전되지 않는다(라즈베리파이 MJPEG .cam-img는 셀피가
+     아니므로 반전하지 않는다). */
+  .cam-video { transform: scaleX(-1); }
+  .cam-placeholder { display: flex; align-items: center; justify-content: center; color: var(--text-faint); font-size: 11px; padding: 8px; text-align: center; }
+  .cam-status { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--text-dim); margin-top: 6px; flex-shrink: 0; }
+  .cam-status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--text-faint); flex-shrink: 0; transition: background .2s ease; }
+  .cam-status-dot.connecting { background: var(--warning); box-shadow: 0 0 0 3px rgba(251,191,36,.18); }
+  .cam-status-dot.ok { background: var(--success); box-shadow: 0 0 0 3px rgba(52,211,153,.18); animation: pulse-dot 2s ease-in-out infinite; }
+  .cam-status-dot.error { background: var(--danger); box-shadow: 0 0 0 3px rgba(248,113,113,.18); }
+  @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: .55; } }
+
+  /* ---------- 스냅샷 (Phase 5: YOLO 인식용 정지 이미지) ---------- */
+  /* "로컬 PC"/기기별 대시보드 패널이 이 구조를 함께 사용한다(같은 역할의 요소는
+     한 곳에서만 손보지 않고 항상 함께 반영). 바운딩 박스는 별도의 절대좌표 DOM
+     요소로 겹쳐 그리지 않고, 캔버스 픽셀 자체에 이미지와 함께 그려 넣어 다른
+     시각 요소와 겹치거나 위치가 어긋날 여지를 없앤다. */
+  .snapshot-box.media { align-items: stretch; justify-content: flex-start; text-align: left; min-height: 0; overflow: hidden; }
+  .snapshot-viewport {
+    flex: 1; min-height: 0; margin-top: 6px; display: flex; align-items: center; justify-content: center;
+    background: #05060a; border: 1px solid var(--panel-border); border-radius: 10px; overflow: hidden;
+  }
+  .snapshot-canvas { max-width: 100%; max-height: 100%; display: none; }
+  .snapshot-placeholder { color: var(--text-faint); font-size: 11px; padding: 8px; text-align: center; }
+
+  h2.panel-title {
+    margin: 0 0 4px 0; font-size: 17px; font-weight: 700; letter-spacing: -.01em;
+    background: var(--accent-grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+
+  button.mock-btn {
+    background: var(--accent-grad); color: #fff; border: none; border-radius: var(--radius-sm);
+    padding: 9px 16px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit;
+    box-shadow: 0 4px 14px -6px rgba(109,91,255,.7); transition: transform .12s ease, box-shadow .12s ease, filter .12s ease;
+  }
+  button.mock-btn:hover { filter: brightness(1.08); transform: translateY(-1px); box-shadow: 0 6px 18px -6px rgba(109,91,255,.85); }
+  button.mock-btn:active { transform: translateY(0); filter: brightness(.96); }
+  button.mock-btn:disabled { opacity: .5; cursor: not-allowed; transform: none; box-shadow: none; }
+  input.mock-input, textarea.mock-input, select.mock-input {
+    background: #0e0f14; border: 1px solid var(--panel-border-strong); border-radius: var(--radius-sm);
+    color: var(--text); padding: 8px 10px; font-size: 13px; font-family: inherit;
+    transition: border-color .12s ease, box-shadow .12s ease;
+  }
+  input.mock-input:focus, textarea.mock-input:focus, select.mock-input:focus {
+    outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+  textarea.mock-input { width: 100%; resize: none; }
+
+  /* ---------- 프롬프트 답변창 ---------- */
+  /* "로컬 PC"/기기별 대시보드 패널의 프롬프트 박스가 이 구조를 사용한다. 부모(.box.prompt)가
+     그리드/플렉스로 높이가 고정되어 있으므로, 답변 목록만 자체적으로
+     overflow-y:auto 스크롤되고 부모 높이는 그대로 유지된다. */
+  .prompt-send-btn { align-self: flex-end; margin-top: 6px; }
+  /* 음성 프롬프트 상태 배지. 대기열에 음성 텍스트가 보관돼 있는 동안, 또는 폴링이
+     연속으로 실패했을 때만 표시된다(평소에는 display:none). 워크플로우 진행바 영역과
+     겹치지 않도록 프롬프트 박스 안쪽 아래에 붙인다. flex-shrink를 막아 답변창이
+     길어져도 문구가 잘리지 않게 한다. */
+  .voice-badge {
+    flex-shrink: 0; margin-top: 6px; padding: 5px 8px; border-radius: 6px;
+    font-size: 11px; line-height: 1.4;
+    background: var(--accent-soft); color: var(--text-dim);
+    border: 1px solid var(--panel-border);
+  }
+  .voice-badge-error { background: rgba(220, 80, 80, .12); border-color: rgba(220, 80, 80, .35); }
+  /* 처리 중인 패널은 프롬프트 입력 영역을 흐리게 해서 지금 입력을 받지 않는 상태임을
+     한눈에 알 수 있게 한다(버튼/입력창 disabled와 함께 적용된다). */
+  .box.prompt.prompt-busy .prompt-input,
+  .box.prompt.prompt-busy .prompt-send-btn { opacity: .55; cursor: not-allowed; }
+  /* 제스처 시퀀스 입력 중(주먹 인식~손 사라짐)에는 프롬프트 입력 영역을 강조하고,
+     전송 버튼 옆에 안내 메시지를 띄운다(docs/GESTURE_SEQUENCE_INPUT.md). */
+  .box.prompt.gesture-active {
+    outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 10px;
+    box-shadow: 0 0 0 3px var(--accent-soft), 0 0 18px rgba(109,91,255,.55);
+  }
+  .box.prompt.gesture-active .prompt-input {
+    border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft) inset;
+  }
+  .gesture-input-msg {
+    margin-left: 8px; font-size: 12px; font-weight: 600; color: var(--accent-2);
+    vertical-align: middle; white-space: nowrap;
+  }
+  .answer-log { flex: 1; min-height: 0; overflow-y: auto; margin-top: 6px; display: flex; flex-direction: column; gap: 6px; }
+  .answer-log-empty { color: var(--text-faint); font-size: 11px; }
+  /* [전송] 한 번으로 Q(유저 프롬프트)가 즉시, LLM 최종 답변(또는 정보 부족 시 되묻는
+     문구)이 완료되는 대로 이 답변창에 한 줄씩 순차적으로 쌓인다(PHASE8.md 프롬프트
+     전송 흐름 완료 기준). YOLO/VLM 결과는 이 답변창에 중복 표시하지 않고 별도의
+     YOLO/VLM 결과 영역(.yolo-result/.vlm-result)에만 표시한다. 두 종류 모두 같은
+     줄 단위 구조(.answer-line)를 공유하고 역할별로 색상만 다르다. */
+  .answer-line { font-size: 11px; border-bottom: 1px solid var(--panel-border); padding-bottom: 6px; white-space: pre-line; }
+  /* 각 줄 위에 찍히는 시각(HH:MM:SS)과, 답변 줄에는 질문 전송부터 걸린 시간.
+     본문보다 작고 흐리게 표시해 답변 자체를 가리지 않게 한다. */
+  .answer-time { display: block; font-size: 10px; color: var(--text-faint); margin-bottom: 2px; }
+  .answer-text { display: block; }
+  .answer-line:last-child { border-bottom: none; padding-bottom: 0; }
+  .answer-line.answer-q { color: #ab9dff; font-weight: 600; }
+  .answer-line.answer-a { color: #c7c9cf; }
+  .small .answer-log { padding: 0 8px 6px; }
+
+  /* ---------- 연동 탭 ---------- */
+  .device-block-list { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+  .device-block {
+    flex: 1; min-width: 170px; background: #0e0f14; border: 1px solid var(--panel-border);
+    border-radius: var(--radius-sm); padding: 12px; transition: border-color .15s ease;
+  }
+  .device-block:hover { border-color: var(--panel-border-strong); }
+  .device-block-head {
+    display: flex; align-items: center; justify-content: space-between; gap: 8px; cursor: pointer;
+  }
+  .device-block.registered .device-block-head { cursor: default; }
+  .device-block-name { color: #fff; font-size: 13px; font-weight: 600; }
+  .device-block-form {
+    display: none; margin-top: 10px; gap: 8px; align-items: center; flex-wrap: wrap;
+  }
+  .device-block-form.open { display: flex; }
+  .device-block-form input.mock-input { flex: 1; min-width: 110px; }
+
+  .device-card-list { display: flex; gap: 12px; flex-wrap: wrap; }
+  .device-card { width: 220px; transition: transform .15s ease, box-shadow .15s ease; }
+  .device-card:hover { transform: translateY(-2px); box-shadow: 0 14px 30px -16px rgba(0,0,0,.7); }
+  .device-card .name { color: #fff; font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+  .device-card .ip { color: var(--text-dim); font-size: 12px; margin-bottom: 8px; }
+  /* 등록된 기기 카드(1~3번)는 연결 상태 배지 옆에 [연동 해제] 버튼을 함께 둔다
+     ("로컬 PC" 카드는 별도 등록/해제 절차가 없으므로 이 행 자체가 없다). */
+  .device-card-status-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  button.unlink-btn {
+    background: rgba(248,113,113,.12); color: #ff9b9b; border: 1px solid rgba(248,113,113,.25); border-radius: 8px;
+    padding: 4px 10px; font-size: 11px; cursor: pointer; font-family: inherit; flex-shrink: 0;
+    transition: background .15s ease;
+  }
+  button.unlink-btn:hover { background: rgba(248,113,113,.22); }
+  .status-badge { font-size: 11px; padding: 3px 9px; border-radius: 10px; width: fit-content; font-weight: 600; }
+  .status-badge.unregistered { background: rgba(255,255,255,.06); color: var(--text-dim); }
+  .status-badge.registered { background: rgba(96,165,250,.14); color: #7fc3fb; }
+  .status-badge.connected { background: rgba(52,211,153,.14); color: #5eeab0; }
+  .limit-msg { display: none; color: #ff9b9b; font-size: 12px; margin-top: 8px; }
+  .device-empty-msg { color: var(--text-faint); font-size: 12px; }
+
+  /* ---------- 대시보드 탭 ---------- */
+  .subtabs { display: flex; gap: 4px; border-bottom: 1px solid var(--panel-border); padding-bottom: 8px; flex-shrink: 0; }
+  .subtabs button {
+    padding: 6px 14px; border-radius: 8px; font-size: 14px; color: var(--text-dim);
+    background: none; border: none; cursor: pointer; font-family: inherit; transition: background .15s ease, color .15s ease;
+  }
+  .subtabs button:hover:not(.active) { background: rgba(255,255,255,.05); color: #c7c9cf; }
+  .subtabs button.active { color: #fff; background: var(--accent-soft); font-weight: 600; }
+  .subtab-panel { display: none; flex: 1; min-height: 0; }
+  .subtab-panel.active { display: flex; flex-direction: column; gap: 10px; }
+
+  .device-grid {
+    flex: 1; min-height: 0; display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    gap: 10px;
+  }
+  .col3-stack { display: flex; flex-direction: column; gap: 8px; grid-column: 3; grid-row: 1; min-height: 0; }
+  .col3-stack .prompt { flex: 2; min-height: 0; overflow: hidden; }
+  .col3-stack .small { flex: 1; padding: 0; overflow: hidden; }
+  .small b { font-size: 10px; }
+  /* "LLM 답변" 박스처럼 .small-split 없이 <b>가 .box.small의 직계 자식으로 오는
+     경우, 부모 패딩이 0이라 라벨이 여백 없이 박스 테두리(둥근 모서리)에 바로
+     붙어 겹쳐 보인다. .small-split의 자식(yolo-part/vlm-part/mediapipe-part)은
+     자체 패딩이 있어 영향받지 않는다. */
+  .box.small > b { padding: 8px 8px 0; }
+  .small-split { display: flex; flex: 1; min-height: 0; }
+  /* yolo-part/vlm-part/mediapipe-part는 인식 결과가 길어지면 내용이 늘어날 수
+     있는 형제 요소이므로, 모두 함께 overflow-y:auto를 적용해 부모 박스 높이를
+     넘는 텍스트가 잘리거나 다른 요소와 겹치지 않고 자체적으로 스크롤되게 한다. */
+  .small-split .yolo-part { flex: 2; padding: 8px; border-right: 1px solid var(--panel-border); font-size: 11px; overflow-y: auto; }
+  .small-split .vlm-part { flex: 3; padding: 8px; border-right: 1px solid var(--panel-border); font-size: 11px; overflow-y: auto; }
+  .small-split .mediapipe-part { flex: 2; padding: 8px; font-size: 11px; overflow-y: auto; }
+  .yolo-result, .vlm-result, .mediapipe-result { color: #c7c9cf; white-space: pre-line; }
+
+  /* "로컬 PC"/기기별 대시보드 패널의 워크플로우 박스가 이 구조(.workflow-steps 안의
+     .step 6개)를 함께 사용한다(동일 원인을 공유하는 형제 요소는 한 곳에서만 손보지
+     않고 항상 함께 반영). */
+  /* 제목("AI Workflow")은 다른 박스들과 동일하게 항상 좌측 상단에 고정돼야 한다
+     (PHASE8.md 완료 기준). 과거에는 .workflow 박스 자체(flex-direction:column)에
+     justify-content:center를 줘서 제목+단계 목록 전체를 세로 중앙 정렬했는데, 이
+     방식은 제목까지 함께 아래로 밀려나 다른 박스(.cam-box/.snapshot-box 등, 모두
+     justify-content:flex-start 유지)와 달리 제목이 좌측 상단에 있지 않게 되는
+     원인이었다. 대신 .workflow는 기본 정렬(flex-start)을 유지해 제목을 맨 위에
+     그대로 두고, 그 아래 남는 세로 공간 안에서 단계 목록만 자체적으로(flex:1 +
+     align-items:center) 중앙 정렬한다. */
+  .workflow { grid-column: 1 / span 2; grid-row: 2; overflow-y: auto; }
+  .workflow-steps { display: flex; align-items: center; gap: 6px; font-size: 12px; flex-wrap: wrap; flex: 1; }
+  .step { padding: 4px 9px; border-radius: 12px; background: rgba(255,255,255,.06); color: #7a808c; transition: background .2s ease, color .2s ease; }
+  .step.done { background: rgba(52,211,153,.14); color: #5eeab0; }
+  .step.active { background: var(--accent-grad); color: #fff; box-shadow: 0 0 0 3px var(--accent-soft); }
+  /* "추가 정보 요청중" 단계는 LLM이 정보가 충분하다고 판단하면 건너뛸 수 있다(PRD 2.5절).
+     건너뛴 단계를 다른 "아직 도달하지 않은" 단계와 시각적으로 구분해, 완료된 단계들
+     사이에 이유 없는 빈 단계처럼 보이지 않게 한다. */
+  .step.skipped { opacity: .4; text-decoration: line-through; }
+  .arrow { color: #4a4f5a; }
+
+  /* "로컬 PC"/기기별 대시보드 패널의 "LLM 최종 답변" 박스가 이 구조를 사용한다.
+     답변 텍스트가 박스 높이를 넘으면 잘리거나 다른 요소와 겹치는 대신 자체적으로
+     세로 스크롤되게 한다(yolo-part/vlm-part, answer-log와 동일한 원칙).*/
+  .llm-answer { grid-column: 3; grid-row: 2; overflow: hidden; }
+  .llm-answer-text { flex: 1; min-height: 0; overflow-y: auto; margin-top: 6px; font-size: 12px; color: #c7c9cf; white-space: pre-line; }
+
+  /* ---------- 시뮬레이터 탭 ---------- */
+  .sim-layout { flex: 1; min-height: 0; display: flex; gap: 12px; }
+  .sim-grid-wrap { flex: 6; display: flex; align-items: center; justify-content: center; }
+  .sim-grid {
+    aspect-ratio: 1; height: min(100%, 560px); width: auto;
+    display: grid; grid-template-columns: repeat(8, 1fr); grid-template-rows: repeat(8, 1fr);
+    gap: 3px; background: #23262e; border: 1px solid var(--panel-border); border-radius: 12px; padding: 3px;
+    box-shadow: var(--shadow-card);
+  }
+  .sim-cell {
+    background: #15171d; border-radius: 4px; position: relative;
+    display: flex; align-items: center; justify-content: center; overflow: hidden;
+  }
+  /* 랜덤 벽 생성(Phase 8)으로 지정된 칸은 배경 해치 패턴만 바꿔 표시한다. 마커와
+     같은 절대좌표 레이어를 쓰지 않는 셀 배경 자체이므로 다른 시각 요소와 겹칠 여지가 없다. */
+  .sim-cell.sim-wall {
+    background: repeating-linear-gradient(45deg, #3a3f4b, #3a3f4b 4px, #23262e 4px, #23262e 8px);
+  }
+  /* 로봇 마커는 셀 전체(inset:3px)를 차지한다. 경로 점/선(.sim-path-layer)도 셀
+     전체(inset:0)에 걸쳐 그려지는 별도 레이어이지만 항상 마커보다 먼저 DOM에
+     삽입해 마커가 그 위에 그려지므로 겹침이 방지된다. 시뮬레이터에는 로봇이
+     "로컬 PC" 하나만 존재한다(라즈베리파이 연동은 별도 프로젝트로 분리, 시뮬레이터
+     탭은 기능 테스트 용도로 한정). */
+  .sim-marker-row {
+    position: absolute; inset: 3px;
+    display: flex; align-items: stretch; justify-content: center; gap: 2px; pointer-events: none;
+  }
+  .sim-marker {
+    flex: 1 1 0; min-width: 0; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 2px;
+    border-radius: 10px; font-weight: 700; color: #14161a; overflow: hidden;
+  }
+  .sim-marker .sim-marker-label { font-size: 30px; line-height: 1; white-space: nowrap; overflow: hidden; text-overflow: clip; }
+  /* 배경 없이 이름표 없는 캐릭터(로봇 🤖) 아이콘만 표시한다. */
+  .sim-marker.robot-local-pc { background: transparent; }
+  /* 시작 위치(1,1)부터 현재까지 실제로 지나온 칸의 정중앙에 점을 두고, 인접한 두 칸
+     사이는 각 칸에서 중앙~칸 경계까지 뻗은 반쪽 선분 두 개(칸마다 하나씩)로 이어
+     "하나의 이어진 자취"처럼 보이게 한다. 이 레이어는 셀 전체(position:absolute;
+     inset:0)를 덮지만 항상 마커 행(.sim-marker-row)보다 먼저 DOM에 삽입해(renderGrid
+     참고) 같은 스태킹 컨텍스트에서 마커가 항상 위에 그려지게 한다 — 로봇이 현재
+     서 있는 칸에서는 로봇 마커가 자기 자취의 끝점을 자연스럽게 덮는 것이므로 문제가
+     되지 않는다. 로봇이 아직 서 있지 않은(이미 지나쳐 온) 칸에는 마커 자체가 없으므로
+     점/선이 그대로 보인다. */
+  .sim-path-layer { position: absolute; inset: 0; pointer-events: none; }
+  .sim-path-dot {
+    position: absolute; top: 50%; left: 50%; width: 6px; height: 6px; border-radius: 50%; opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  /* 굵기(2px)를 중심선에 정확히 맞추기 위해 top/left를 50%에서 절반만큼(1px) 당긴다. */
+  .sim-path-seg { position: absolute; opacity: 1; }
+  .sim-path-seg.dir-right { top: calc(50% - 1px); left: 50%; width: 50%; height: 2px; }
+  .sim-path-seg.dir-left { top: calc(50% - 1px); right: 50%; width: 50%; height: 2px; }
+  .sim-path-seg.dir-down { left: calc(50% - 1px); top: 50%; width: 2px; height: 50%; }
+  .sim-path-seg.dir-up { left: calc(50% - 1px); bottom: 50%; width: 2px; height: 50%; }
+  .sim-path-dot.robot-local-pc, .sim-path-seg.robot-local-pc { background: #e6dcff; }
+
+  .sim-info-panel { flex: 4; display: flex; flex-direction: column; gap: 10px; min-width: 220px; }
+  .sim-info-row { display: flex; justify-content: space-between; font-size: 13px; padding: 7px 0; border-bottom: 1px solid var(--panel-border); }
+  .sim-info-row span:first-child { color: var(--text-dim); }
+  .sim-info-row span:last-child { font-weight: 600; color: #f2f3f6; }
+  .sim-log-list { list-style: none; margin: 0; padding: 0; font-size: 12px; color: #7a808c; display: flex; flex-direction: column; gap: 4px; max-height: 220px; overflow-y: auto; }
+</style>
+</head>
+<body>
+
+  <nav class="sidebar">
+    <button class="nav-item active" data-tab="tab-integration">연동</button>
+    <button class="nav-item" data-tab="tab-dashboard">대시보드</button>
+    <button class="nav-item" data-tab="tab-simulator">시뮬레이터</button>
+  </nav>
+
+  <main class="app-main">
+
+    <!-- ================= 연동 탭 ================= -->
+    <section id="tab-integration" class="tab-panel active">
+      <h2 class="panel-title">연동 — 라즈베리파이5 기기 등록</h2>
+
+      <div class="box">
+        <b>연동 가능한 기기</b>
+        <div class="device-block-list" id="device-block-list">
+          <div class="device-block" data-block-id="1">
+            <div class="device-block-head" data-role="block-head">
+              <span class="device-block-name">1번 기기</span>
+              <span class="status-badge unregistered" data-role="status-badge">미등록</span>
+            </div>
+            <div class="device-block-form" data-role="block-form">
+              <input class="mock-input" type="text" placeholder="192.168.0.10" data-role="ip-input">
+              <button class="mock-btn" type="button" data-role="confirm-btn">등록</button>
+            </div>
+          </div>
+          <div class="device-block" data-block-id="2">
+            <div class="device-block-head" data-role="block-head">
+              <span class="device-block-name">2번 기기</span>
+              <span class="status-badge unregistered" data-role="status-badge">미등록</span>
+            </div>
+            <div class="device-block-form" data-role="block-form">
+              <input class="mock-input" type="text" placeholder="192.168.0.10" data-role="ip-input">
+              <button class="mock-btn" type="button" data-role="confirm-btn">등록</button>
+            </div>
+          </div>
+          <div class="device-block" data-block-id="3">
+            <div class="device-block-head" data-role="block-head">
+              <span class="device-block-name">3번 기기</span>
+              <span class="status-badge unregistered" data-role="status-badge">미등록</span>
+            </div>
+            <div class="device-block-form" data-role="block-form">
+              <input class="mock-input" type="text" placeholder="192.168.0.10" data-role="ip-input">
+              <button class="mock-btn" type="button" data-role="confirm-btn">등록</button>
+            </div>
+          </div>
+        </div>
+        <div class="limit-msg" id="reg-limit-msg">현재 2대 등록까지 가능합니다. 추후 개발 예정입니다.</div>
+      </div>
+
+      <div class="box" style="flex:1;">
+        <b>등록된 기기 목록</b>
+        <div class="device-card-list" id="device-card-list">
+          <!-- "로컬 PC"는 별도 등록 조작 없이 항상 목록 맨 앞에 연결됨 상태로 고정 표시된다
+               (삭제/해제 UI 없음, 3블록/최대 2대 등록 제한과 무관하므로 JS 등록 로직의
+               대상이 아니다). -->
+          <div class="box device-card local-pc-card">
+            <div class="name">로컬 PC</div>
+            <div class="ip">로컬 웹캠</div>
+            <div class="status-badge connected">● 연결됨</div>
+          </div>
+          <span class="device-empty-msg" id="device-empty-msg">등록된 기기가 없습니다.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 대시보드 탭 ================= -->
+    <!-- "로컬 PC" 서브탭은 항상 존재한다. 라즈베리파이 기기를 등록할 때마다 JS가 아래
+         서브탭 바에 기기 서브탭/패널을 동적으로 추가한다(최대 2개, "로컬 PC" 탭은 항상 맨 앞). -->
+    <section id="tab-dashboard" class="tab-panel">
+      <div class="subtabs">
+        <!-- "로컬 PC" 서브탭은 라즈베리파이 등록 여부와 무관하게 항상 맨 앞에 고정 존재한다.
+             라즈베리파이 기기 서브탭은 등록될 때마다 이 버튼 뒤에 JS로 추가된다. -->
+        <button class="subtab-item active" data-subtab="subtab-local-pc">로컬 PC</button>
+      </div>
+
+      <!-- 로컬 PC: 별도 등록 절차 없이 페이지 로드 시 getUserMedia로 PC 자신의 웹캠에 바로 연결한다
+           (DETAIL_SPEC.md 6.2절, 백엔드 중계 없음). 스크립트 하단의 createLocalPcCameraController 참고. -->
+      <div id="subtab-local-pc" class="subtab-panel active">
+        <div class="device-grid">
+          <div class="box media cam-box" style="grid-column:1; grid-row:1;">
+            <b>카메라 스트리밍 (로컬 PC)</b>
+            <div class="cam-viewport">
+              <video class="cam-video" autoplay muted playsinline></video>
+              <div class="cam-placeholder">카메라 연결 대기 중</div>
+            </div>
+            <div class="cam-status">
+              <span class="cam-status-dot"></span>
+              <span class="cam-status-text">대기 중</span>
+            </div>
+          </div>
+          <div class="box media snapshot-box" style="grid-column:2; grid-row:1;">
+            <b>스냅샷</b>
+            <div class="snapshot-viewport">
+              <canvas class="snapshot-canvas"></canvas>
+              <div class="snapshot-placeholder">촬영된 스냅샷이 없습니다</div>
+            </div>
+          </div>
+          <div class="col3-stack">
+            <div class="box prompt">
+              <b>프롬프트 입력창</b>
+              <textarea class="mock-input prompt-input" rows="3" placeholder="예: 앞에 뭐가 보여?"></textarea>
+              <button class="mock-btn prompt-send-btn" type="button" data-role="prompt-send-btn">전송</button>
+              <div class="answer-log" data-role="answer-log">
+                <div class="answer-log-empty">답변창 (여기에 LLM 응답이 표시됩니다)</div>
+              </div>
+            </div>
+            <div class="box small">
+              <div class="small-split">
+                <div class="yolo-part">
+                  <b>YOLO 답변</b>
+                  <div class="yolo-result" data-role="yolo-result">아직 인식 결과가 없습니다</div>
+                </div>
+                <div class="vlm-part">
+                  <b>VLM 답변</b>
+                  <div class="vlm-result" data-role="vlm-result">아직 분석 결과가 없습니다</div>
+                </div>
+                <div class="mediapipe-part">
+                  <b>제스처(MediaPipe)</b>
+                  <div class="mediapipe-result" data-role="mediapipe-result">아직 인식 결과가 없습니다</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box workflow">
+            <b>AI Workflow</b>
+            <div class="workflow-steps">
+              <span class="step">1.프롬프트+캡처</span><span class="arrow">→</span>
+              <span class="step">2.분석중(YOLO/VLM/미디어파이프)</span><span class="arrow">→</span>
+              <span class="step">3.추가정보 요청중</span><span class="arrow">→</span>
+              <span class="step">4.답변생성(LLM)</span><span class="arrow">→</span>
+              <span class="step">5.이동중</span>
+            </div>
+          </div>
+          <div class="box llm-answer">
+            <b>LLM 최종 답변</b>
+            <div class="llm-answer-text" data-role="llm-answer-text">아직 생성된 답변이 없습니다</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 기기별 대시보드 패널 템플릿 (등록 시 JS가 복제하여 서브탭으로 추가) -->
+      <template id="device-panel-template">
+        <div class="subtab-panel">
+          <div class="device-grid">
+            <div class="box media cam-box" style="grid-column:1; grid-row:1;">
+              <b>카메라 스트리밍 (<span class="tpl-device-label">기기</span>)</b>
+              <div class="cam-viewport">
+                <img class="cam-img" alt="카메라 스트리밍 영상">
+                <div class="cam-placeholder">카메라 연결 대기 중</div>
+              </div>
+              <div class="cam-status">
+                <span class="cam-status-dot"></span>
+                <span class="cam-status-text">대기 중</span>
+              </div>
+            </div>
+            <div class="box media snapshot-box" style="grid-column:2; grid-row:1;">
+              <b>스냅샷</b>
+              <div class="snapshot-viewport">
+                <canvas class="snapshot-canvas"></canvas>
+                <div class="snapshot-placeholder">촬영된 스냅샷이 없습니다</div>
+              </div>
+            </div>
+            <div class="col3-stack">
+              <div class="box prompt">
+                <b>프롬프트 입력창</b>
+                <textarea class="mock-input prompt-input" rows="3" placeholder="예: 앞에 뭐가 보여?"></textarea>
+                <button class="mock-btn prompt-send-btn" type="button" data-role="prompt-send-btn">전송</button>
+                <div class="answer-log" data-role="answer-log">
+                  <div class="answer-log-empty">답변창 (여기에 LLM 응답이 표시됩니다)</div>
+                </div>
+              </div>
+              <div class="box small">
+                <div class="small-split">
+                  <div class="yolo-part">
+                    <b>YOLO 답변</b>
+                    <div class="yolo-result" data-role="yolo-result">아직 인식 결과가 없습니다</div>
+                  </div>
+                  <div class="vlm-part">
+                    <b>VLM 답변</b>
+                    <div class="vlm-result" data-role="vlm-result">아직 분석 결과가 없습니다</div>
+                  </div>
+                  <div class="mediapipe-part">
+                    <b>제스처(MediaPipe)</b>
+                    <div class="mediapipe-result" data-role="mediapipe-result">아직 인식 결과가 없습니다</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box workflow">
+              <b>AI Workflow</b>
+              <div class="workflow-steps">
+                <span class="step">1.프롬프트+캡처</span><span class="arrow">→</span>
+                <span class="step">2.분석중(YOLO/VLM/미디어파이프)</span><span class="arrow">→</span>
+                <span class="step">3.추가정보 요청중</span><span class="arrow">→</span>
+                <span class="step">4.답변생성(LLM)</span><span class="arrow">→</span>
+                <span class="step">5.이동중</span>
+              </div>
+            </div>
+            <div class="box llm-answer">
+              <b>LLM 최종 답변</b>
+              <div class="llm-answer-text" data-role="llm-answer-text">아직 생성된 답변이 없습니다</div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </section>
+
+    <!-- ================= 시뮬레이터 탭 ================= -->
+    <!-- Phase 8: "로컬 PC"는 연동 등록 여부와 무관하게 항상 시뮬레이터 대상 로봇으로
+         존재한다(연동 탭의 "로컬 PC" 카드가 항상 연결됨 상태로 고정 표시되는 것과 동일한
+         맥락). 로봇은 격자 위를 실시간으로 움직이지 않고, LLM이 move 도구를 고르면 그
+         인자(direction, steps)에 따라 좌표/방향이 즉시 갱신된다(스크립트 하단
+         "시뮬레이터: 8x8 격자맵" 절 참고). -->
+    <section id="tab-simulator" class="tab-panel">
+      <h2 class="panel-title">시뮬레이터</h2>
+      <div class="sim-layout">
+        <div class="sim-grid-wrap">
+          <div class="sim-grid" id="sim-grid"></div>
+        </div>
+        <div class="sim-info-panel">
+          <div class="box">
+            <b>기기 상태</b>
+            <div class="sim-info-row"><span>이전 좌표</span><span id="sim-prev-coord">-</span></div>
+            <div class="sim-info-row"><span>현재 좌표</span><span id="sim-current-coord">-</span></div>
+            <div class="sim-info-row"><span>진행 방향</span><span id="sim-direction">-</span></div>
+          </div>
+          <div class="box" style="flex:1;">
+            <b>이동 경로 로그</b>
+            <ul class="sim-log-list" id="sim-log-list">
+              <li>(예시) 이동 경로 로그가 이 영역에 표시됩니다.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // ---- 메인 사이드바 탭 전환 ----
+    document.querySelectorAll('.sidebar .nav-item').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.sidebar .nav-item').forEach(function (b) { b.classList.remove('active'); });
+        document.querySelectorAll('.tab-panel').forEach(function (p) { p.classList.remove('active'); });
+        btn.classList.add('active');
+        document.getElementById(btn.dataset.tab).classList.add('active');
+      });
+    });
+
+    // ---- 대시보드 서브탭 전환 (등록으로 동적 추가되는 탭에도 동일하게 사용) ----
+    function bindSubtabClick(btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.subtabs .subtab-item').forEach(function (b) { b.classList.remove('active'); });
+        document.querySelectorAll('.subtab-panel').forEach(function (p) { p.classList.remove('active'); });
+        btn.classList.add('active');
+        document.getElementById(btn.dataset.subtab).classList.add('active');
+      });
+    }
+    document.querySelectorAll('.subtabs .subtab-item').forEach(bindSubtabClick);
+
+    // ---- 카메라 스트리밍 ----
+    // 라즈베리파이5는 main.py의 MJPEG 중계(/api/camera-stream)를 fetch()+ReadableStream으로
+    // 직접 파싱해 표시한다(백엔드가 실제로 상류 스트림을 프레임 단위로 그대로 전달하므로
+    // 여기서도 별도 버퍼링/속도 제한 없이 도착하는 대로 그려 평상시 15FPS 이상을 그대로
+    // 반영하고, AI 추론 부하로 상류 프레임레이트가 낮아지면 그 저하도 자연스럽게 반영된다).
+    // "로컬 PC"는 DETAIL_SPEC.md 6.2절에 따라 백엔드 중계 없이 getUserMedia로 직접 연결한다.
+    var CAMERA_STREAM_ENDPOINT = '/api/camera-stream?ip=';
+    // main.py의 상류 read timeout(10초)보다 여유 있게 잡아, 서버가 조용한 단절을 감지해
+    // 스트림을 정상 종료시키는 경로가 정상 동작하는 한 이 값보다 먼저 반응하게 하고,
+    // 혹시 그 경로가 지연되더라도 클라이언트 쪽에서 이중으로 무응답을 감지한다.
+    var CAMERA_STALE_TIMEOUT_MS = 12000;
+    var HEADER_END_BYTES = new TextEncoder().encode('\r\n\r\n');
+
+    function findBytes(buf, target, from) {
+      var limit = buf.length - target.length;
+      outer:
+      for (var i = from; i <= limit; i++) {
+        for (var j = 0; j < target.length; j++) {
+          if (buf[i + j] !== target[j]) continue outer;
+        }
+        return i;
+      }
+      return -1;
+    }
+
+    function setCamStatus(camBox, state, text) {
+      var dot = camBox.querySelector('.cam-status-dot');
+      var label = camBox.querySelector('.cam-status-text');
+      dot.className = 'cam-status-dot' + (state ? ' ' + state : '');
+      label.textContent = text;
+    }
+
+    function showCamDisconnected(camBox, mediaEl, text) {
+      mediaEl.style.display = 'none';
+      var placeholder = camBox.querySelector('.cam-placeholder');
+      placeholder.textContent = text;
+      placeholder.style.display = 'flex';
+      setCamStatus(camBox, 'error', text);
+    }
+
+    // 라즈베리파이5 MJPEG 스트림 컨트롤러: multipart/x-mixed-replace 본문을 직접 파싱해
+    // 프레임(JPEG)마다 Blob Object URL로 갱신한다. start/stop 인터페이스를 제공해 대시보드
+    // 패널이 다시 그려질 때 이전 연결을 정리할 수 있게 한다.
+    function createRaspberryCameraController(camBox, ip) {
+      var imgEl = camBox.querySelector('.cam-img');
+      var currentObjectUrl = null;
+      var abortController = null;
+      var watchdogTimer = null;
+      var stopped = false;
+
+      function resetWatchdog() {
+        clearTimeout(watchdogTimer);
+        watchdogTimer = setTimeout(function () {
+          stopped = true;
+          if (abortController) abortController.abort();
+          showCamDisconnected(camBox, imgEl, '연결 끊김 (응답 없음)');
+        }, CAMERA_STALE_TIMEOUT_MS);
+      }
+
+      function showFrame(frameBytes) {
+        var blob = new Blob([frameBytes], { type: 'image/jpeg' });
+        var url = URL.createObjectURL(blob);
+        var previousUrl = currentObjectUrl;
+        imgEl.src = url;
+        currentObjectUrl = url;
+        if (previousUrl) URL.revokeObjectURL(previousUrl);
+        if (imgEl.style.display !== 'block') {
+          imgEl.style.display = 'block';
+          camBox.querySelector('.cam-placeholder').style.display = 'none';
+          setCamStatus(camBox, 'ok', '스트리밍 중');
+        }
+        resetWatchdog();
+      }
+
+      async function run() {
+        setCamStatus(camBox, 'connecting', '연결 중...');
+        abortController = new AbortController();
+        try {
+          var response = await fetch(CAMERA_STREAM_ENDPOINT + encodeURIComponent(ip), { signal: abortController.signal });
+          if (!response.ok || !response.body) throw new Error('camera-unreachable');
+
+          var contentType = response.headers.get('content-type') || '';
+          var boundaryMatch = /boundary=("?)([^;"]+)\1/i.exec(contentType);
+          if (!boundaryMatch) throw new Error('no-boundary');
+          var boundaryBytes = new TextEncoder().encode('--' + boundaryMatch[2]);
+
+          resetWatchdog();
+          var reader = response.body.getReader();
+          var buf = new Uint8Array(0);
+
+          while (true) {
+            var result = await reader.read();
+            if (result.done) break;
+            var merged = new Uint8Array(buf.length + result.value.length);
+            merged.set(buf, 0);
+            merged.set(result.value, buf.length);
+            buf = merged;
+
+            while (true) {
+              var boundaryIdx = findBytes(buf, boundaryBytes, 0);
+              if (boundaryIdx === -1) break;
+              var headerStart = boundaryIdx + boundaryBytes.length;
+              var headerEndIdx = findBytes(buf, HEADER_END_BYTES, headerStart);
+              if (headerEndIdx === -1) break; // 헤더가 아직 덜 도착함, 다음 청크를 기다림
+
+              var headerText = new TextDecoder().decode(buf.slice(headerStart, headerEndIdx));
+              var lengthMatch = /Content-Length:\s*(\d+)/i.exec(headerText);
+              var payloadStart = headerEndIdx + HEADER_END_BYTES.length;
+              var payloadEnd;
+
+              if (lengthMatch) {
+                var frameLen = parseInt(lengthMatch[1], 10);
+                payloadEnd = payloadStart + frameLen;
+                if (payloadEnd > buf.length) break; // 프레임이 아직 다 도착하지 않음
+              } else {
+                var nextBoundaryIdx = findBytes(buf, boundaryBytes, payloadStart);
+                if (nextBoundaryIdx === -1) break;
+                payloadEnd = nextBoundaryIdx;
+                while (payloadEnd > payloadStart && (buf[payloadEnd - 1] === 10 || buf[payloadEnd - 1] === 13)) payloadEnd--;
+              }
+
+              var frameBytes = buf.slice(payloadStart, payloadEnd);
+              if (frameBytes.length > 0) showFrame(frameBytes);
+              buf = buf.slice(payloadEnd);
+            }
+          }
+          throw new Error('stream-ended');
+        } catch (err) {
+          if (stopped) return; // stop()에 의한 정상 중단
+          showCamDisconnected(camBox, imgEl, '연결 끊김');
+        } finally {
+          clearTimeout(watchdogTimer);
+        }
+      }
+
+      run();
+
+      return {
+        stop: function () {
+          stopped = true;
+          clearTimeout(watchdogTimer);
+          if (abortController) abortController.abort();
+          if (currentObjectUrl) URL.revokeObjectURL(currentObjectUrl);
+        }
+      };
+    }
+
+    // "로컬 PC" 웹캠 컨트롤러: 백엔드 중계 없이 getUserMedia로 직접 연결한다(6.2절).
+    // 권한 거부/카메라 없음 등 오류도 라즈베리파이와 동일한 상태 표시 방식을 사용한다.
+    function createLocalPcCameraController(camBox) {
+      var videoEl = camBox.querySelector('.cam-video');
+
+      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+        showCamDisconnected(camBox, videoEl, '이 브라우저는 카메라를 지원하지 않음');
+        return;
+      }
+
+      setCamStatus(camBox, 'connecting', '연결 중...');
+      // 해상도를 제한하지 않으면 웹캠이 기본으로 고해상도(HD 이상)를 잡아 캡처 이미지가
+      // 커지고, 그만큼 YOLO/VLM 분석과 스냅샷 전송이 느려진다. 라즈베리파이 스트리밍
+      // 기준(DETAIL_SPEC.md 6절, 640x480)과 맞춰 화질을 다소 낮추더라도 처리 속도를
+      // 우선한다(ideal이라 이 해상도를 지원하지 않는 카메라는 가장 가까운 값으로 대체됨).
+      navigator.mediaDevices.getUserMedia({
+        video: { width: { ideal: 640 }, height: { ideal: 480 } },
+        audio: false
+      }).then(function (stream) {
+        videoEl.srcObject = stream;
+        videoEl.style.display = 'block';
+        camBox.querySelector('.cam-placeholder').style.display = 'none';
+        setCamStatus(camBox, 'ok', '스트리밍 중');
+
+        stream.getVideoTracks().forEach(function (track) {
+          track.addEventListener('ended', function () {
+            showCamDisconnected(camBox, videoEl, '연결 끊김');
+          });
+        });
+      }).catch(function (err) {
+        var message = '카메라 오류';
+        if (err && (err.name === 'NotAllowedError' || err.name === 'PermissionDeniedError')) {
+          message = '카메라 접근 권한이 거부됨';
+        } else if (err && (err.name === 'NotFoundError' || err.name === 'DevicesNotFoundError')) {
+          message = '카메라를 찾을 수 없음';
+        }
+        showCamDisconnected(camBox, videoEl, message);
+      });
+    }
+
+    createLocalPcCameraController(document.querySelector('#subtab-local-pc .cam-box'));
+
+    // ---- 스냅샷 촬영 + YOLO 객체 인식 (Phase 5) ----
+    // "로컬 PC"/기기별 대시보드 패널 모두 이 로직을 그대로 공유한다(카메라/프롬프트
+    // 흐름과 동일한 이유로, 한 곳에서만 연결하지 않고 항상 함께 반영). 카메라 소스가
+    // <video>(로컬 PC)인지 <img>(라즈베리파이 MJPEG)인지에 따라 캡처 방식만 분기하고
+    // 그 뒤 로직은 동일하다.
+    var YOLO_DETECT_ENDPOINT = '/api/yolo-detect';
+    var YOLO_BOX_COLOR = '#6fe3a1';
+    // Phase 6: 스냅샷 이미지를 VLM(Qwen2.5-VL-3B)에 보내 이미지 설명을 생성하는 엔드포인트.
+    // YOLO와 마찬가지로 스냅샷 촬영 시점에 같은 이미지 blob으로 함께 호출한다.
+    var VLM_DESCRIBE_ENDPOINT = '/api/vlm-describe';
+    // Phase 7: 유저 프롬프트 + YOLO 결과 + VLM 결과를 함께 LLM(Qwen3-4B)에 보내 최종
+    // 답변(또는 정보 부족 시 추가 정보 요청 문구)을 받는 엔드포인트. 이미지가 아니라
+    // 텍스트만 다루므로 YOLO/VLM과 달리 JSON 본문으로 요청한다.
+    var LLM_ANSWER_ENDPOINT = '/api/llm-answer';
+    // MediaPipe 손 제스처로 인식한 direction이 left/right일 때 등록된 기기의 GPIO
+    // LED를 깜빡이도록 신호를 보내는 엔드포인트("로컬 PC"는 device.ip가 없어 애초에
+    // 호출되지 않는다. runWorkflow 참고).
+    var ROBOT_SIGNAL_ENDPOINT = '/api/robot-signal';
+    var ROBOT_SIGNAL_DIRECTIONS = ['left', 'right'];
+
+    // "로컬 PC"(대시보드를 띄운 PC 자신) 로봇/패널의 식별자. 시뮬레이터 절에서도 쓰지만,
+    // 대시보드의 setupPromptAnswer()가 그보다 먼저 실행되면서 이 값을 비교에 쓰므로
+    // 여기서 선언해야 한다 — 시뮬레이터 절에 두면 var 호이스팅 때문에 그 시점에는
+    // undefined라 "로컬 PC 제외" 판정이 조용히 실패한다.
+    var LOCAL_PC_ROBOT_ID = 'local-pc';
+
+    // 라즈베리파이 PTT 버튼으로 인식된 음성 텍스트를 가져오는 폴링 엔드포인트.
+    // 기기 탭이 열려 있는 동안에만 1초 간격으로 호출한다(PLAN.md 4.6절).
+    var VOICE_POLL_ENDPOINT = '/api/voice-poll';
+    var VOICE_POLL_INTERVAL_MS = 1000;
+    // 매초 도는 폴링이라 한두 번 실패에 배너를 띄우면 노이즈가 크다. 이 횟수만큼 연속으로
+    // 실패했을 때만 화면에 상태를 표시한다(카메라 스트림 워치독보다 관대한 기준).
+    var VOICE_POLL_FAIL_THRESHOLD = 5;
+    // 대기열이 이미 차 있어 새 음성을 버렸을 때, 그 사실을 잠깐 알리는 시간.
+    var VOICE_IGNORED_NOTICE_MS = 4000;
+
+    function requestRobotSignal(ip, direction) {
+      if (ROBOT_SIGNAL_DIRECTIONS.indexOf(direction) === -1) return;
+      // 물리적으로 LED가 깜빡이는 동안(약 1.8초) 워크플로우 진행을 막을 이유가 없으므로
+      // 결과를 기다리지 않고(fire-and-forget) 실패는 조용히 무시한다.
+      fetch(ROBOT_SIGNAL_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ip: ip, direction: direction })
+      }).catch(function () {});
+    }
+
+    function getActiveCameraFrame(panelEl) {
+      var camBox = panelEl.querySelector('.cam-box');
+      if (!camBox) return null;
+      var videoEl = camBox.querySelector('.cam-video');
+      if (videoEl && videoEl.style.display === 'block' && videoEl.videoWidth > 0) {
+        return { el: videoEl, width: videoEl.videoWidth, height: videoEl.videoHeight };
+      }
+      var imgEl = camBox.querySelector('.cam-img');
+      if (imgEl && imgEl.style.display === 'block' && imgEl.naturalWidth > 0) {
+        return { el: imgEl, width: imgEl.naturalWidth, height: imgEl.naturalHeight };
+      }
+      return null;
+    }
+
+    // 인식된 객체가 없는 경우에도 오류 없이 "인식된 객체 없음"으로 정상 표시한다.
+    // 박스 중심의 가로 위치를 "화면 왼쪽/중앙/오른쪽"으로 바꾼다.
+    //
+    // LLM에 픽셀 좌표만 넘기면 이미지 폭이 얼마인지 모르는 채로 "x=74가 왼쪽인가"를
+    // 판단해야 해서, 소형 모델일수록 이 계산을 틀린다. 그러면 좌표를 무시하고 VLM
+    // 설명의 좌우 서술에 기대게 되는데, 3B급 VLM은 좌우를 자주 뒤집어 말한다(실측:
+    // 문이 화면 오른쪽에 있는데 LLM이 left를 반환). YOLO 박스 좌표는 정확하므로,
+    // 계산을 모델에 맡기지 말고 여기서 끝내 문장으로 넘긴다.
+    //
+    // 가운데 20%(0.4~0.6)만 "중앙"으로 두는 이유는, 시스템 프롬프트가 "대상이 좌우
+    // 어느 쪽으로도 치우치지 않고 화면 중앙에 있으면 그 기준을 적용하지 않는다"고
+    // 지시하기 때문이다. 중앙 영역을 넓게 잡으면 좌우 판정이 나와야 할 상황에서도
+    // unknown으로 빠져 로봇이 움직이지 않는다.
+    function describeHorizontalZone(box, imageWidth) {
+      if (!imageWidth) return '';
+      var ratio = ((box[0] + box[2]) / 2) / imageWidth;
+      if (ratio < 0.4) return '화면 왼쪽';
+      if (ratio > 0.6) return '화면 오른쪽';
+      return '화면 중앙';
+    }
+
+    function formatYoloResultText(objects, imageWidth) {
+      if (!objects || objects.length === 0) return '인식된 객체 없음';
+      var lines = ['총 ' + objects.length + '개 인식됨'];
+      objects.forEach(function (obj) {
+        var box = obj.box;
+        var coordText = '(' + Math.round(box[0]) + ',' + Math.round(box[1]) + ')-(' + Math.round(box[2]) + ',' + Math.round(box[3]) + ')';
+        var zone = describeHorizontalZone(box, imageWidth);
+        lines.push('- ' + obj.label + ' ' + Math.round(obj.confidence * 100) + '%' +
+          (zone ? ' ' + zone : '') + ' ' + coordText);
+      });
+      return lines.join('\n');
+    }
+
+    // 바운딩 박스는 별도의 절대좌표 DOM 요소가 아니라 캔버스 픽셀 위에 이미지와 함께
+    // 그려 넣는다. 좌표계가 이미지 원본 해상도와 그대로 일치하므로 겹침/오정렬 없이
+    // 캔버스가 CSS로 축소 표시되어도 비율이 함께 맞아떨어진다.
+    // 라벨끼리 겹치는지 검사하기 위한 사각형 교차 판정(여유 없이 딱 붙는 것도 겹침으로 본다).
+    function rectsOverlap(a, b) {
+      return a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
+    }
+
+    function drawYoloBoxes(ctx, objects) {
+      if (!objects || !objects.length) return;
+      ctx.lineWidth = 2;
+      ctx.strokeStyle = YOLO_BOX_COLOR;
+      ctx.font = '14px sans-serif';
+      ctx.textBaseline = 'bottom';
+      // 캔버스가 작게 표시될 때 객체가 서로 가까이 있으면 라벨이 겹쳐 읽히지 않는
+      // 문제가 있어, 이미 배치한 라벨 사각형과 겹치는 경우 겹치지 않을 때까지 라벨
+      // 높이(16px)만큼씩 아래로 내려가며 자리를 찾는다.
+      var placedLabelRects = [];
+      objects.forEach(function (obj) {
+        var box = obj.box;
+        var x1 = box[0], y1 = box[1], x2 = box[2], y2 = box[3];
+        ctx.strokeRect(x1, y1, x2 - x1, y2 - y1);
+
+        var label = obj.label + ' ' + Math.round(obj.confidence * 100) + '%';
+        var labelWidth = ctx.measureText(label).width + 6;
+        var labelHeight = 16;
+        // 박스 상단이 캔버스 맨 위에 붙어 있으면 라벨이 캔버스 밖으로 잘릴 수 있으므로,
+        // 그 경우엔 박스 안쪽 상단에 라벨을 그린다.
+        var labelY = y1 >= labelHeight ? y1 : y1 + labelHeight;
+        // 박스가 캔버스 오른쪽 경계에 가까우면 라벨이 폭을 넘어가 잘릴 수 있으므로,
+        // 라벨 시작 x좌표를 캔버스 폭 안으로 당겨 넣는다.
+        var labelX = Math.min(x1, ctx.canvas.width - labelWidth);
+        labelX = Math.max(labelX, 0);
+
+        var labelRect = { x: labelX, y: labelY - labelHeight, w: labelWidth, h: labelHeight };
+        while (
+          placedLabelRects.some(function (r) { return rectsOverlap(r, labelRect); }) &&
+          labelRect.y + labelHeight < ctx.canvas.height
+        ) {
+          labelRect.y += labelHeight;
+        }
+        placedLabelRects.push(labelRect);
+
+        ctx.fillStyle = YOLO_BOX_COLOR;
+        ctx.fillRect(labelRect.x, labelRect.y, labelRect.w, labelRect.h);
+        ctx.fillStyle = '#14161a';
+        ctx.fillText(label, labelRect.x + 3, labelRect.y + labelHeight);
+      });
+    }
+
+    // LLM 입력용 YOLO 요약 ― 2회차 2일차 Part 1 규격("이름 N개, 이름 M개", 많은 순).
+    // 화면에는 위치·좌표까지 담은 상세 목록(formatYoloResultText)을 보여 주고, LLM 에는
+    // 이 한 줄만 넘긴다.
+    function summarizeYoloForLlm(objects) {
+      if (!objects || objects.length === 0) return '인식된 객체 없음';
+      var counts = {};
+      objects.forEach(function (obj) { counts[obj.label] = (counts[obj.label] || 0) + 1; });
+      return Object.keys(counts)
+        .sort(function (a, b) { return counts[b] - counts[a]; })
+        .map(function (label) { return label + ' ' + counts[label] + '개'; })
+        .join(', ');
+    }
+
+    // YOLO 요청과 VLM 요청은 같은 스냅샷 blob을 각각 독립적으로 전송하고, 한쪽이
+    // 실패하거나 느려도 다른 쪽 결과 표시에 영향을 주지 않는다(서로의 완료를 기다리지
+    // 않고 각자 도착하는 대로 자신의 결과 영역만 갱신). resolve 값은 LLM 입력으로 쓰는
+    // 텍스트다(YOLO 는 summarizeYoloForLlm 의 한 줄 요약, VLM 은 설명 그대로).
+    function requestYoloDetect(blob, ctx, yoloResultEl) {
+      return fetch(YOLO_DETECT_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'image/jpeg' },
+        body: blob
+      }).then(function (response) {
+        if (!response.ok) throw new Error('yolo-detect-failed');
+        return response.json();
+      }).then(function (data) {
+        drawYoloBoxes(ctx, data.objects);
+        // 캡처 시 canvas.width를 원본 프레임 폭으로 맞춰두므로 그대로 쓸 수 있다.
+        var text = formatYoloResultText(data.objects, ctx && ctx.canvas ? ctx.canvas.width : 0);
+        if (yoloResultEl) yoloResultEl.textContent = text;
+        return summarizeYoloForLlm(data.objects);
+      }).catch(function () {
+        var text = 'YOLO 인식 오류가 발생했습니다.';
+        if (yoloResultEl) yoloResultEl.textContent = text;
+        return text;
+      });
+    }
+
+    // 이미지가 없거나(빈 blob) 분석에 실패한 경우에도 오류를 던지지 않고 VLM 결과
+    // 영역에 안내 문구만 표시한다(PHASE6.md 완료 기준 3번).
+    function requestVlmDescribe(blob, vlmResultEl) {
+      return fetch(VLM_DESCRIBE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'image/jpeg' },
+        body: blob
+      }).then(function (response) {
+        if (!response.ok) throw new Error('vlm-describe-failed');
+        return response.json();
+      }).then(function (data) {
+        var description = data && data.description ? data.description.trim() : '';
+        var text = description || '설명을 생성하지 못했습니다.';
+        if (vlmResultEl) vlmResultEl.textContent = text;
+        return text;
+      }).catch(function () {
+        var text = 'VLM 분석 오류가 발생했습니다.';
+        if (vlmResultEl) vlmResultEl.textContent = text;
+        return text;
+      });
+    }
+
+    // MediaPipe 제스처 인식(테스트: 엄지척(Thumb_Up) 등 인식 확인). YOLO/VLM과 달리
+    // 백엔드 호출이 아니라 브라우저에서 직접 실행되는 클라이언트 사이드 모델이라,
+    // 하단의 모듈 스크립트가 노출한 window.recognizeGesture(blob)에 그대로 넘겨
+    // 인식한다(모듈 스크립트는 이 클래식 스크립트와 별도 스코프라 var를 공유할 수
+    // 없어 전역 함수로 연결). YOLO/VLM과 동일한 스냅샷 blob을 쓰되, 캔버스를 직접
+    // 넘기지 않고 blob으로 전달하는 이유: YOLO 요청이 먼저 끝나면 drawYoloBoxes가
+    // 같은 캔버스 위에 바운딩 박스를 그려 넣는데, 이 함수는 Promise.all로 YOLO/VLM과
+    // 동시에 시작되므로 초기 모델 로딩이 느릴 경우 인식 시점에 캔버스가 이미
+    // 오염되어 있을 수 있다. blob은 캡처 시점의 원본 프레임 그대로 불변이므로 이
+    // 경쟁 조건이 없다.
+    // WASM/모델 로딩이 아직 끝나지 않았거나 실패해도 예외를 던지지 않고 안내 문구만
+    // 표시한다(YOLO/VLM과 동일한 원칙). window.recognizeGesture는 {direction, text}
+    // 객체를 돌려주며, 화면에는 text만 표시하고 direction은 LLM에 인식 결과로 넘긴다
+    // (로봇이 갈 방향은 LLM이 도구 인자로 정한다). 어떤 실패 경로에서도 항상 같은 형태의 객체를 돌려줘, 호출부가
+    // result.direction을 안전하게 읽을 수 있게 한다.
+    function requestGestureRecognize(blob, mediapipeResultEl, mirrored) {
+      if (!blob || typeof window.recognizeGesture !== 'function') {
+        var unavailable = { direction: 'unknown', text: '제스처 인식을 사용할 수 없습니다(모델 로딩 중이거나 초기화 실패).' };
+        if (mediapipeResultEl) mediapipeResultEl.textContent = unavailable.text;
+        return Promise.resolve(unavailable);
+      }
+      return Promise.resolve(window.recognizeGesture(blob, mirrored)).then(function (result) {
+        var safe = (result && typeof result === 'object')
+          ? { direction: result.direction || 'unknown', text: result.text || '인식된 제스처가 없습니다.' }
+          : { direction: 'unknown', text: String(result || '인식된 제스처가 없습니다.') };
+        if (mediapipeResultEl) mediapipeResultEl.textContent = safe.text;
+        return safe;
+      }).catch(function () {
+        var errResult = { direction: 'unknown', text: '제스처 인식 오류가 발생했습니다.' };
+        if (mediapipeResultEl) mediapipeResultEl.textContent = errResult.text;
+        return errResult;
+      });
+    }
+
+    // 스냅샷 캔버스에 현재 카메라 프레임을 그려 넣고 JPEG blob으로 돌려준다(Phase 8:
+    // 더 이상 별도의 "촬영" 버튼으로 트리거되지 않고, [전송] 파이프라인의 첫 단계로
+    // 통합되어 있다 - runWorkflow 참고). 카메라 영상이 없으면 기존과 동일하게 안내
+    // 문구 플레이스홀더를 그대로 보여주고 null을 돌려준다.
+    function captureSnapshotBlob(panelEl) {
+      var snapshotBox = panelEl.querySelector('.snapshot-box');
+      if (!snapshotBox) return Promise.resolve(null);
+      var canvas = snapshotBox.querySelector('.snapshot-canvas');
+      var placeholder = snapshotBox.querySelector('.snapshot-placeholder');
+      if (!canvas) return Promise.resolve(null);
+
+      var frame = getActiveCameraFrame(panelEl);
+      if (!frame) {
+        canvas.style.display = 'none';
+        if (placeholder) placeholder.style.display = 'block';
+        return Promise.resolve(null);
+      }
+
+      var ctx = canvas.getContext('2d');
+      canvas.width = frame.width;
+      canvas.height = frame.height;
+      // 로컬 PC 웹캠(<video>)은 화면에 셀피(좌우 반전)로 표시되므로, 스냅샷도 같은 방향으로
+      // 보이도록 캡처 시점에 픽셀을 좌우 반전한다(라즈베리파이 MJPEG <img>는 셀피가 아니라
+      // 반전하지 않는다). save/restore로 반전을 이 drawImage에만 한정해, 이후 이 캔버스에
+      // 그려지는 YOLO 박스/라벨(drawYoloBoxes)은 정상 방향으로 그려진다(라벨 글자 뒤집힘
+      // 방지). 이렇게 blob 자체가 반전되므로 YOLO 박스 좌표도 반전 이미지에 정확히 맞고,
+      // 제스처 방향도 사용자가 보는 셀피 기준으로 자연스럽게 계산된다.
+      var mirror = frame.el && frame.el.tagName === 'VIDEO';
+      ctx.save();
+      if (mirror) { ctx.translate(canvas.width, 0); ctx.scale(-1, 1); }
+      ctx.drawImage(frame.el, 0, 0, frame.width, frame.height);
+      ctx.restore();
+      canvas.style.display = 'block';
+      if (placeholder) placeholder.style.display = 'none';
+
+      // JPEG 품질을 낮춰 캡처 이미지 용량을 줄이면 전송/YOLO/VLM 분석이 더 빨라진다
+      // (화질 저하보다 처리 속도를 우선하기로 함).
+      return new Promise(function (resolve) {
+        canvas.toBlob(function (blob) { resolve(blob); }, 'image/jpeg', 0.6);
+      });
+    }
+
+    // ---- LLM 최종 답변 생성 (Phase 7) ----
+    // 유저 프롬프트 + YOLO 인식 결과 + VLM 이미지 설명을 함께 백엔드로 보내
+    // LLM(Qwen3-4B)의 최종 답변(또는 정보가 부족할 때의 추가 정보 요청 문구)을 받는다.
+    // 네트워크 오류/서버 오류가 발생해도 예외를 던지지 않고 오류 안내 문구를
+    // "최종 답변"(need_more_info: false)으로 안전하게 처리해, 실패 시에도 워크플로우가
+    // "추가 정보 요청중"에 멈춰버리지 않고 다음 단계로 계속 진행되게 한다.
+    //
+    // history는 "정보 부족" 응답 이후 사용자가 추가 정보를 담아 다시 전송할 때만
+    // 채워지는 이전 대화 턴 목록이다({role, content}[]). 비어 있으면 백엔드가 이번
+    // prompt/yoloSummary/vlmDescription으로 최초 질문 컨텍스트를 새로 구성하고,
+    // 비어 있지 않으면 promptText를 후속 답변 원문 그대로 이어붙여 원래 질문과
+    // LLM이 되물었던 내용까지 맥락을 유지한 채 처리한다. 응답의 user_content는
+    // 이번 턴에 실제로 LLM에 전달된 user 메시지 내용으로, 호출부가 다음 후속 턴을
+    // 위해 history에 그대로 이어붙일 수 있도록 함께 돌려받는다.
+    //
+    // source가 'voice'이고 deviceIp가 있으면 백엔드가 PC LLM 대신 그 라즈베리파이의
+    // 온디바이스 LLM으로 라우팅한다(PLAN.md 4.4절). 텍스트로 직접 입력한 프롬프트는
+    // source를 'text'로 보내 지금까지와 완전히 동일한 PC LLM 경로를 탄다.
+    // [2회차 3일차] 로봇을 움직일지, 어느 방향 몇 칸인지는 프런트가 정하지 않는다.
+    // 프런트는 스냅샷 제스처 방향(gestureDirection)을 인식 결과로 넘기기만 하고, 백엔드
+    // LLM이 의도를 파악해 고른 도구(tool: move | describe | ask)와 인자(args)를 돌려받아
+    // 그대로 실행한다(API 설계: API_설계.md A5).
+    function requestLlmAnswer(promptText, yoloSummary, vlmDescription, history, source, deviceIp,
+                              gestureDirection) {
+      return fetch(LLM_ANSWER_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          prompt: promptText,
+          yolo_summary: yoloSummary || '',
+          vlm_description: vlmDescription || '',
+          gesture_direction: gestureDirection || 'unknown',
+          history: history || [],
+          source: source === 'voice' ? 'voice' : 'text',
+          ip: deviceIp || ''
+        })
+      }).then(function (response) {
+        if (!response.ok) throw new Error('llm-answer-failed');
+        return response.json();
+      }).then(function (data) {
+        var message = data && data.message ? String(data.message).trim() : '';
+        var tool = data && data.tool ? String(data.tool) : 'describe';
+        return {
+          tool: tool,
+          args: (data && data.args && typeof data.args === 'object') ? data.args : {},
+          needMoreInfo: !!(data && data.need_more_info),
+          message: message || '답변을 생성하지 못했습니다.',
+          userContent: data && data.user_content ? String(data.user_content) : promptText
+        };
+      }).catch(function () {
+        // error 플래그를 함께 돌려준다. 호출부(runWorkflow)는 이 경우 대화 맥락
+        // (history)을 초기화하지 않는다 — 답변을 못 받은 것이지 대화가 끝난 게
+        // 아니므로, 여기서 맥락을 지우면 "정보 부족" 이후 이어가던 질문이 통째로
+        // 사라진다(PLAN.md 6절: "무응답/타임아웃 시 대화 맥락은 유지된다").
+        var isVoice = source === 'voice';
+        return {
+          error: true,
+          tool: 'describe',
+          args: {},
+          needMoreInfo: false,
+          message: isVoice
+            ? '라즈베리파이 온디바이스 LLM에서 답변을 받지 못했습니다. 기기 연결을 확인해 주세요.'
+            : 'LLM 답변 생성 중 오류가 발생했습니다.',
+          userContent: promptText
+        };
+      });
+    }
+
+    // 개별 기기 탭마다 독립적인 대화 맥락(history)을 유지하도록, 워크플로우 컨트롤러가
+    // 붙는 DOM 요소(workflowBox)별로 상태를 보관한다. 각 패널은 등록 시 한 번만
+    // 생성되고 이후 재생성되지 않으므로(Phase 3에서 append-only로 고쳐진 렌더링 구조),
+    // workflowBox를 키로 쓰면 기기별 맥락이 서로 섞이지 않는다.
+    var llmConversationStates = new WeakMap();
+
+    function getConversationState(workflowBox) {
+      var state = llmConversationStates.get(workflowBox);
+      if (!state) {
+        state = { history: [], awaitingFollowUp: false };
+        llmConversationStates.set(workflowBox, state);
+      }
+      return state;
+    }
+
+    // ---- AI Workflow 진행 상태 표시 ----
+    // DETAIL_SPEC.md 3.3절의 처리 순서(1.프롬프트+캡처 → 2.분석중(YOLO/VLM/미디어파이프) →
+    // 3.추가정보 요청중(조건부) → 4.답변생성(LLM) → 5.이동중)를 진행한다.
+    // "로컬 PC"/기기별 대시보드 패널이 동일한 .workflow-steps 구조(.step 5개)를
+    // 공유하므로, 이 컨트롤러 하나로 모두 처리한다.
+    // 5.이동중: LLM이 move 도구를 고르면 그 인자(direction, steps)로 시뮬레이터의
+    // 해당 로봇(robotId)을 실제로 회전·이동시킨다. describe면 이 단계를 건너뛴다
+    // (애니메이션이 아니라 좌표/방향이 즉시 갱신됨 - applyRobotMove(), 이 스크립트
+    // 하단 "시뮬레이터" 절에 정의됨. 이 함수는 <script> 전체 스코프에서 호출 시점
+    // 이전에 실행이 끝나 있으므로 함수 선언 호이스팅으로 여기서 앞당겨 참조해도
+    // 안전하다).
+    var WORKFLOW_STEP_DELAY_MS = 550;
+    var WORKFLOW_INFO_REQUEST_STEP_INDEX = 2; // "3.추가정보 요청중" (0-based)
+    var WORKFLOW_ANSWER_READY_STEP_INDEX = 3; // "4.답변생성(LLM)"
+    var WORKFLOW_MOVE_STEP_INDEX = 4; // "5.이동중"
+
+    function delay(ms) {
+      return new Promise(function (resolve) { setTimeout(resolve, ms); });
+    }
+
+    async function advanceStep(steps, index) {
+      steps[index].classList.add('active');
+      await delay(WORKFLOW_STEP_DELAY_MS);
+      steps[index].classList.remove('active');
+      steps[index].classList.add('done');
+    }
+
+    // runWorkflow(panelEl, robotId, promptText, source)는 이 아래 "프롬프트 입력창 / 답변창"
+    // 절에서 캡처→YOLO→VLM→LLM→시뮬레이터 이동까지 전체 파이프라인 하나로 정의된다.
+    // workflowBox는 panelEl 안의 독립된 .box.workflow DOM/타이머를 가리키므로,
+    // 기기별로 동시에 실행돼도 서로의 진행 상태를 덮어쓰지 않는다. robotId는 이
+    // 워크플로우가 속한 로봇의 식별자("local-pc" 또는 연동 탭에서 등록된 기기의
+    // blockId)로, 시뮬레이터의 같은 로봇 상태를 가리킨다.
+    // "3.추가정보 요청중" 단계를 건너뛸지 여부는 고정 길이 휴리스틱이 아니라,
+    // 2단계(분석중) 완료 후 실제로 호출한 LLM의 판단(need_more_info)으로 결정한다.
+
+    // ---- 프롬프트 입력창 / 답변창 / LLM 최종 답변 영역 ----
+    // "로컬 PC"/기기별 대시보드 패널(.box.prompt의 답변창)이 이 답변 로그 구조
+    // (.answer-log)를 함께 사용하고, 별도의 "LLM 최종 답변" 박스(.llm-answer-text)도
+    // 동일 구조를 공유한다(동일 원인을 공유하는 형제 요소는 한 곳에서만 손보지 않고
+    // 항상 함께 반영).
+    // [전송] 한 번에 Q → YOLO 답변 → VLM 답변 → LLM 최종 답변까지 한 줄씩 순차적으로
+    // 쌓이므로(PHASE8.md 완료 기준), Q/A 쌍이 아니라 줄 단위(.answer-line)로 추가하고
+    // 나중에 내용을 갱신할 수 있도록 생성한 요소를 그대로 돌려준다.
+    // 답변창의 각 줄에 찍을 시각(HH:MM:SS). 질문을 보낸 시각과 답변이 도착한 시각을
+    // 함께 보면 어느 단계에서 얼마나 걸렸는지 화면에서 바로 확인할 수 있다.
+    function formatClockTime(date) {
+      function pad(n) { return (n < 10 ? '0' : '') + n; }
+      return pad(date.getHours()) + ':' + pad(date.getMinutes()) + ':' + pad(date.getSeconds());
+    }
+
+    // meta는 줄 앞에 붙일 시각/소요 시간 정보다. 생략하면 현재 시각만 찍는다.
+    // 답변 줄에는 질문을 보낸 시점부터 걸린 시간(elapsedMs)을 함께 표시한다.
+    function appendAnswerEntry(logEl, text, cls, elapsedMs) {
+      if (!logEl) return null;
+      var emptyMsg = logEl.querySelector('.answer-log-empty');
+      if (emptyMsg) emptyMsg.remove();
+
+      var el = document.createElement('div');
+      el.className = 'answer-line ' + cls;
+
+      var metaEl = document.createElement('span');
+      metaEl.className = 'answer-time';
+      var metaText = formatClockTime(new Date());
+      if (typeof elapsedMs === 'number' && isFinite(elapsedMs) && elapsedMs >= 0) {
+        metaText += ' · ' + (elapsedMs / 1000).toFixed(1) + '초';
+      }
+      metaEl.textContent = metaText;
+
+      var textEl = document.createElement('span');
+      textEl.className = 'answer-text';
+      textEl.textContent = text;
+
+      el.appendChild(metaEl);
+      el.appendChild(textEl);
+      logEl.appendChild(el);
+      logEl.scrollTop = logEl.scrollHeight;
+      return el;
+    }
+
+    // 유저 프롬프트에서 이동 칸 수를 파싱한다(예: "오른쪽으로 5칸 이동해" → 5). 제스처
+    // 시퀀스 입력의 진행 기록을 제스처 영역에 표시하는 데만 쓴다(실제 이동 칸 수는 LLM이
+    // move 도구 인자로 정한다 - runWorkflow 참고). 숫자가 없으면 기본 1칸.
+    var PROMPT_STEPS_MAX = 20;
+    function parsePromptSteps(promptText) {
+      var match = String(promptText || '').match(/(\d+)\s*칸/);
+      var steps = match ? parseInt(match[1], 10) : 1;
+      if (!Number.isFinite(steps) || steps < 1) steps = 1;
+      return Math.min(steps, PROMPT_STEPS_MAX);
+    }
+
+    // 유저 프롬프트에서 이동 방향을 파싱한다(예: "오른쪽으로, 3칸 이동." → right). 제스처
+    // 시퀀스 입력의 진행 기록 표시용이다(실제 이동 방향은 LLM이 정한다).
+    // '위'는 '위쪽/위', '아래'는 '아래쪽/아래'를 포함해 인식한다.
+    function parsePromptDirection(promptText) {
+      var text = String(promptText || '');
+      if (/오른쪽/.test(text)) return 'right';
+      if (/왼쪽/.test(text)) return 'left';
+      if (/위쪽|위로|위 /.test(text) || /위$/.test(text.trim())) return 'up';
+      if (/아래쪽|아래로|아래/.test(text)) return 'down';
+      return 'unknown';
+    }
+
+    // "로컬 PC" 패널과 기기별 대시보드 패널(device-panel-template 복제본)이 모두
+    // 동일한 구조(.box.prompt 및 답변창/스냅샷/워크플로우/YOLO·VLM 결과 영역)를
+    // 공유하므로, panelEl 하나만 받으면 캡처→YOLO→VLM→LLM→
+    // 시뮬레이터 이동까지 전체 파이프라인을 한 번에 수행한다(Phase 8: [전송] 버튼이
+    // 이 전체 파이프라인의 유일한 트리거이며, 더 이상 별도의 "촬영" 버튼이 없다).
+    // robotId는 이 패널이 속한 로봇의 식별자("local-pc" 또는 기기 blockId)로,
+    // 시뮬레이터의 올바른 로봇을 이동시키는 데 쓰인다.
+    // source는 이 프롬프트의 출처('voice' 또는 'text')다. 음성으로 들어온 프롬프트만
+    // 해당 기기의 온디바이스 LLM으로 라우팅되며, 그 외 파이프라인(캡처→YOLO→VLM→
+    // 시뮬레이터 이동)은 출처와 무관하게 완전히 동일하다.
+    async function runWorkflow(panelEl, robotId, promptText, source) {
+      var workflowBox = panelEl.querySelector('.box.workflow');
+      if (!workflowBox) return;
+      var steps = workflowBox.querySelectorAll('.step');
+      if (!steps.length) return;
+      var logEl = panelEl.querySelector('[data-role="answer-log"]');
+      var llmAnswerTextEl = panelEl.querySelector('[data-role="llm-answer-text"]');
+      var yoloResultEl = panelEl.querySelector('[data-role="yolo-result"]');
+      var vlmResultEl = panelEl.querySelector('[data-role="vlm-result"]');
+      var mediapipeResultEl = panelEl.querySelector('[data-role="mediapipe-result"]');
+      var canvas = panelEl.querySelector('.snapshot-canvas');
+
+      steps.forEach(function (step) { step.classList.remove('active', 'done', 'skipped'); });
+
+      // 새 프롬프트 전송 시점에 이전 질문의 LLM 최종 답변이 이 박스에 그대로 남아있으면
+      // 지금 막 새로 처리 중인 답변처럼 보여 혼동을 준다. 이번 답변이 준비될 때까지는
+      // 빈 상태(최초 placeholder와 동일한 문구)로 되돌려 둔다.
+      if (llmAnswerTextEl) llmAnswerTextEl.textContent = '아직 생성된 답변이 없습니다';
+      // YOLO/VLM 결과도 같은 이유로 함께 되돌린다. 이걸 빼먹으면 새 프롬프트를 보낸
+      // 뒤에도 분석이 끝날 때까지 이전 질문의 인식/설명 결과가 그대로 남아, 지금 막
+      // 새로 분석된 내용처럼 보인다(동일 원인을 공유하는 형제 요소는 한 곳에서만
+      // 손보지 않고 항상 함께 반영).
+      if (yoloResultEl) yoloResultEl.textContent = '분석 대기 중…';
+      if (vlmResultEl) vlmResultEl.textContent = '분석 대기 중…';
+      // 제스처로 작성된 전송(source='gesture')은 스냅샷 제스처를 다시 인식하지 않으므로,
+      // 제스처 영역에는 "분석 대기 중" 대신 프롬프트 내용에서 파싱한 방향/칸수와 손 모양을
+      // 표시해 기록이 남게 한다(직접 타이핑 전송은 기존대로 "분석 대기 중"으로 두고
+      // 이후 스냅샷 제스처 결과로 갱신된다).
+      if (mediapipeResultEl) {
+        if (source === 'gesture') {
+          var _pdir = parsePromptDirection(promptText);
+          var _plabel = { right: '오른쪽', left: '왼쪽', up: '위쪽', down: '아래쪽', unknown: '인식 불가' }[_pdir] || _pdir;
+          mediapipeResultEl.textContent = '✊ 주먹 · 방향: ' + _plabel + ' · ' + parsePromptSteps(promptText) + '칸';
+        } else {
+          mediapipeResultEl.textContent = '분석 대기 중…';
+        }
+      }
+
+      // 1) Q. {프롬프트}는 전송 직후 즉시 답변창에 추가된다. 음성으로 들어온 프롬프트는
+      // 사용자가 직접 타이핑한 것과 구분되도록 🎤 배지를 앞에 붙인다(PLAN.md 4.6절).
+      var isVoicePrompt = source === 'voice';
+      appendAnswerEntry(logEl, (isVoicePrompt ? '🎤 Q. ' : 'Q. ') + promptText, 'answer-q');
+      // 답변 줄에 "질문을 보낸 뒤 몇 초 걸렸는지"를 함께 찍기 위한 기준 시각.
+      // 캡처→YOLO→VLM→LLM 전체 파이프라인에 걸린 시간이 여기에 포함된다.
+      var promptStartedAt = Date.now();
+
+      // "1.프롬프트+캡처": pill 애니메이션과 함께 이 시점의 카메라 프레임을 실제로
+      // 캡처한다. 카메라 영상이 없으면 기존과 동일하게 안내 문구로 처리된다.
+      steps[0].classList.add('active');
+      var blob = await captureSnapshotBlob(panelEl);
+      await delay(WORKFLOW_STEP_DELAY_MS);
+      steps[0].classList.remove('active');
+      steps[0].classList.add('done');
+
+      // "2.분석중(YOLO/VLM/미디어파이프)": 캡처된 이미지가 있으면 YOLO/VLM/MediaPipe
+      // 제스처 인식을 실제로 호출한다. 세 요청은 서로 독립적으로 진행되며, 결과는
+      // 답변창이 아니라 각자의 결과 영역(.yolo-result/.vlm-result/.mediapipe-result)
+      // 에만 표시한다(PHASE8.md 완료 기준: 답변창에는 Q와 LLM 최종 답변만 표시). 이
+      // 단계가 진행 중인 동안에는 진행바 라벨 자체에 현재 세 처리 상태를 함께
+      // 보여준다(analyzeStepBaseLabel/updateAnalyzeStepLabel). yoloLlmText/
+      // vlmLlmText는 LLM 호출에 그대로 전달되며, 카메라 영상이 없으면 안내 문구 대신
+      // 빈 값("없음"에 준함)을 넘긴다. 제스처 인식 결과의 direction(gestureDirection)도
+      // 인식 결과로 LLM에 넘기며, LLM이 이를 근거로 move 도구의 방향을 정한다.
+      var analyzeStep = steps[1];
+      var analyzeStepBaseLabel = analyzeStep.textContent;
+      var yoloDone = false, vlmDone = false, mediapipeDone = false;
+      function updateAnalyzeStepLabel() {
+        analyzeStep.textContent = '2.분석중 (' + (yoloDone ? 'YOLO 완료' : 'YOLO 처리중') +
+          ' · ' + (vlmDone ? 'VLM 완료' : 'VLM 처리중') +
+          ' · ' + (mediapipeDone ? '미디어파이프 완료' : '미디어파이프 처리중') + ')';
+      }
+      analyzeStep.classList.add('active');
+      var yoloLlmText = '';
+      var vlmLlmText = '';
+      var gestureDirection = 'unknown';
+      if (blob) {
+        var ctx = canvas ? canvas.getContext('2d') : null;
+        updateAnalyzeStepLabel();
+        var texts = await Promise.all([
+          requestYoloDetect(blob, ctx, yoloResultEl).then(function (text) {
+            yoloDone = true;
+            updateAnalyzeStepLabel();
+            return text;
+          }),
+          requestVlmDescribe(blob, vlmResultEl).then(function (text) {
+            vlmDone = true;
+            updateAnalyzeStepLabel();
+            return text;
+          }),
+          // 제스처 시퀀스로 들어온 전송(source='gesture')은 이미 방향/손모양이 제스처
+          // 영역에 기록돼 있으므로, 여기서 스냅샷 제스처를 다시 인식하지 않는다(그 기록을
+          // 덮어써 지우지 않기 위함). 방향은 프롬프트 텍스트에서 읽는다(Approach A).
+          // 직접 타이핑 전송은 기존대로 스냅샷 제스처를 폴백 방향으로 인식한다. 스냅샷
+          // blob은 로컬 PC의 경우 위에서 이미 좌우 반전(셀피)돼 있으므로 방향 flip은 하지
+          // 않는다(mirrored=false).
+          (source === 'gesture'
+            ? (function () { mediapipeDone = true; updateAnalyzeStepLabel(); return Promise.resolve({ direction: 'unknown' }); })()
+            : requestGestureRecognize(blob, mediapipeResultEl, false).then(function (result) {
+                mediapipeDone = true;
+                updateAnalyzeStepLabel();
+                return result;
+              }))
+        ]);
+        yoloLlmText = texts[0];
+        vlmLlmText = texts[1];
+        gestureDirection = (texts[2] && texts[2].direction) || 'unknown';
+      } else {
+        var guide = '카메라 영상이 없어 촬영할 수 없습니다.';
+        if (yoloResultEl) yoloResultEl.textContent = guide;
+        if (vlmResultEl) vlmResultEl.textContent = guide;
+        if (mediapipeResultEl) mediapipeResultEl.textContent = guide;
+      }
+      analyzeStep.textContent = analyzeStepBaseLabel;
+      await delay(WORKFLOW_STEP_DELAY_MS);
+      analyzeStep.classList.remove('active');
+      analyzeStep.classList.add('done');
+
+      // "추가 정보 요청중"에서 멈춰 있던 상태(awaitingFollowUp)가 아니면, 이번 전송은
+      // 새 프롬프트이므로 이전 대화 맥락을 이어받지 않고 새로 시작한다(완료 기준 5번:
+      // 최종 답변 완성 또는 새 프롬프트 전송 시 대화 맥락 초기화). workflowBox별로
+      // 상태를 보관하므로 기기 탭끼리 서로 영향을 주지 않는다.
+      var state = getConversationState(workflowBox);
+      var history = state.awaitingFollowUp ? state.history : [];
+
+      // [2회차 3일차] 이동 여부·방향·칸 수는 LLM이 고른 도구로 정한다. 프런트는 스냅샷
+      // 제스처 방향(gestureDirection)을 인식 결과로 함께 넘기기만 한다.
+      var device = devices[robotId];
+      var llmResult = await requestLlmAnswer(
+        promptText, yoloLlmText, vlmLlmText, history, source, device && device.ip,
+        gestureDirection
+      );
+
+      // 기기 무응답/타임아웃 등으로 답변을 받지 못한 경우. 이번 턴을 "최종 답변 완료"로
+      // 처리하면 아래에서 state.history가 초기화되어, "정보 부족" 이후 이어가던 대화
+      // 맥락이 통째로 사라진다. 오류 문구만 표시하고 맥락은 손대지 않은 채 멈춘다.
+      if (llmResult.error) {
+        appendAnswerEntry(logEl, llmResult.message, 'answer-a', Date.now() - promptStartedAt);
+        if (llmAnswerTextEl) llmAnswerTextEl.textContent = llmResult.message;
+        return;
+      }
+
+      // 이번 턴에 실제로 오간 user/assistant 내용을 history에 이어붙여 둔다. 아직
+      // 정보가 부족해 계속 이어가야 하는 경우에만 state에 반영해 다음 전송에서
+      // 재사용하고, 최종 답변이 완성되면(need_more_info: false) 아래에서 초기화한다.
+      var updatedHistory = history.concat([
+        { role: 'user', content: llmResult.userContent },
+        { role: 'assistant', content: JSON.stringify({ tool: llmResult.tool, args: llmResult.args, message: llmResult.message }) }
+      ]);
+
+      // 4) LLM 최종 답변 또는 추가 정보 요청 문구가 답변창과 "LLM 최종 답변" 영역에
+      // 함께 반영된다("[추가 정보 요청]" 표시를 붙여 플레이스홀더가 그대로 남아
+      // 아무 반응이 없는 것처럼 보이지 않게 한다).
+      var finalText = llmResult.needMoreInfo ? '[추가 정보 요청] ' + llmResult.message : llmResult.message;
+      appendAnswerEntry(logEl, finalText, 'answer-a', Date.now() - promptStartedAt);
+      if (llmAnswerTextEl) llmAnswerTextEl.textContent = finalText;
+
+      if (llmResult.needMoreInfo) {
+        state.history = updatedHistory;
+        state.awaitingFollowUp = true;
+        await advanceStep(steps, WORKFLOW_INFO_REQUEST_STEP_INDEX);
+        // 정보가 부족해 사용자의 추가 입력을 기다려야 하므로, 아직 최종 답변이 아닌
+        // 이 시점에서 진행을 멈춘다. "4.답변생성" 이후 단계는 사용자가 추가 정보를
+        // 담아 다시 전송해 이 함수가 재실행되고(그리고 그때 need_more_info가 false일
+        // 때) 비로소 이어서 진행된다. LLM이 ask(되묻기) 도구를 고른 상태이므로 로봇은
+        // 움직이지 않는다.
+        return;
+      }
+
+      // 최종 답변이 완성됐으므로 이 workflowBox의 대화 맥락을 초기화해, 다음 전송이
+      // (이어지는 후속 답변이 아니라) 완전히 새로운 질문으로 처리되게 한다.
+      state.history = [];
+      state.awaitingFollowUp = false;
+
+      steps[WORKFLOW_INFO_REQUEST_STEP_INDEX].classList.add('skipped');
+      await advanceStep(steps, WORKFLOW_ANSWER_READY_STEP_INDEX); // 4.답변생성(LLM)
+
+      // 5.이동중: LLM이 move 도구를 골랐을 때만 실행한다. describe(설명만)면 이동
+      // 단계를 건너뛴다. 좌표는 애니메이션 없이 즉시 갱신되며(applyRobotMove), 벽/격자
+      // 경계에 막히면 그 자리에서 멈춘다. 시뮬레이터에는 "로컬 PC" 로봇 하나만 있으므로
+      // 등록된 기기의 프롬프트는 GPIO LED 신호만 보낸다.
+      if (llmResult.tool !== 'move') {
+        steps[WORKFLOW_MOVE_STEP_INDEX].classList.add('skipped');
+        return;
+      }
+      var moveDirection = llmResult.args.direction;
+      var moveSteps = Number(llmResult.args.steps);
+      if (device && device.ip) requestRobotSignal(device.ip, moveDirection);
+
+      if (robotId === LOCAL_PC_ROBOT_ID) applyRobotMove(moveDirection, moveSteps);
+      steps[WORKFLOW_MOVE_STEP_INDEX].classList.add('active');
+      await delay(WORKFLOW_STEP_DELAY_MS);
+      steps[WORKFLOW_MOVE_STEP_INDEX].classList.remove('active');
+      steps[WORKFLOW_MOVE_STEP_INDEX].classList.add('done');
+    }
+
+    // ---- 제스처 시퀀스 입력 컨트롤러 (로컬 PC 전용) ----
+    // 웹캠을 MediaPipe VIDEO 모드로 연속 추적하며, 주먹이 인식되면 입력 모드를 켜고
+    // (입력창 하이라이트 + 전송 버튼 옆 안내 메시지), 방향→칸수를 단계별로 입력창에
+    // 작성한 뒤, 손이 사라지면 완성 문구를 전송한다. 주먹 인식 후 5초 안에 방향+칸수가
+    // 모두 안 들어오면 이번 제스처 프롬프트는 무시한다. 설계: docs/GESTURE_SEQUENCE_INPUT.md.
+    var GESTURE_DIR_PHRASE = { right: '오른쪽으로,', left: '왼쪽으로,', up: '위쪽으로,', down: '아래쪽으로,' };
+    function setupGestureSequenceInput(panelEl, promptBox, textarea, sendBtn, submitPrompt, videoEl) {
+      var DWELL_MS = 400;     // 주먹/방향/칸수 안정(연속 유지) 판정 시간
+      var GONE_MS = 400;      // 손 사라짐 판정 시간
+      var TIMEOUT_MS = 5000;  // 주먹 인식 후 방향+칸수 완성 제한 시간
+      var GRACE_MS = 400;     // 방향 확정 직후 칸수 읽기 시작까지 유예(잔상 방지)
+      var SAMPLE_MS = 66;     // 약 15fps로 추론 빈도 제한
+
+      // 전송 버튼 옆 안내 메시지(필요 시 1회 생성).
+      var msgEl = document.createElement('span');
+      msgEl.className = 'gesture-input-msg';
+      msgEl.style.display = 'none';
+      sendBtn.parentNode.insertBefore(msgEl, sendBtn.nextSibling);
+      var msgHideTimer = null;
+
+      // 제스처(MediaPipe) 결과 영역에도 시퀀스 진행 상태(주먹→방향→칸수)를 함께 표시한다.
+      var mpResultEl = panelEl.querySelector('[data-role="mediapipe-result"]');
+      var DIR_LABEL = { right: '오른쪽', left: '왼쪽', up: '위쪽', down: '아래쪽' };
+      function setMp(text) { if (mpResultEl) mpResultEl.textContent = text; }
+
+      var state = 'watching';         // 'watching' | 'active'
+      var fistSince = null, activeStart = 0;
+      var dir = null, dirCand = null, dirSince = 0, dirDoneAt = 0;
+      var cnt = null, cntCand = null, cntSince = 0;
+      var goneSince = null;
+      var frameFn = null, lastTs = 0, lastRun = 0;
+
+      function showMsg(text) {
+        msgEl.textContent = text; msgEl.style.display = '';
+        if (msgHideTimer) { clearTimeout(msgHideTimer); msgHideTimer = null; }
+      }
+      function hideMsgLater(ms) {
+        if (msgHideTimer) clearTimeout(msgHideTimer);
+        msgHideTimer = setTimeout(function () { msgEl.style.display = 'none'; }, ms);
+      }
+      function setHighlight(on) { promptBox.classList.toggle('gesture-active', on); }
+      function reset() {
+        state = 'watching'; fistSince = null; goneSince = null;
+        dir = null; dirCand = null; cnt = null; cntCand = null; dirDoneAt = 0;
+      }
+      function activate(now) {
+        state = 'active'; activeStart = now;
+        dir = null; dirCand = null; cnt = null; cntCand = null; goneSince = null; dirDoneAt = 0;
+        textarea.value = '';
+        setHighlight(true);
+        showMsg('✋ 제스처 기반 프롬프트 입력중입니다.');
+        setMp('✊ 주먹 인식 — 방향을 가리키세요');
+      }
+      function writeDir() {
+        textarea.value = GESTURE_DIR_PHRASE[dir] || '';
+        setMp('✊ 주먹 · 방향: ' + (DIR_LABEL[dir] || dir) + ' — 손가락으로 칸 수를 표시하세요');
+      }
+      function writeCnt() {
+        textarea.value = (GESTURE_DIR_PHRASE[dir] || '') + ' ' + cnt + '칸 이동.';
+        setMp('✊ 주먹 · 방향: ' + (DIR_LABEL[dir] || dir) + ' · ' + cnt + '칸 — 손을 빼면 전송');
+      }
+      function complete() {
+        var text = textarea.value.trim();
+        setHighlight(false);
+        // 제스처로만 인식한 경우의 기록(손 모양 ✊ + 방향 + 칸수)을 제스처 영역에 남긴다.
+        // source='gesture' 전송은 runWorkflow가 스냅샷 제스처 재인식을 건너뛰므로 이 기록이
+        // 추론 단계에서 지워지지 않는다.
+        setMp('✊ 주먹 · 방향: ' + (DIR_LABEL[dir] || dir) + ' · ' + cnt + '칸 · 전송 완료');
+        reset();
+        showMsg('✅ 입력 완료'); hideMsgLater(1500);
+        if (text) submitPrompt(text, 'gesture');
+      }
+      function cancel(reason) {
+        setHighlight(false); textarea.value = ''; reset();
+        setMp('⚠️ ' + reason);
+        showMsg('⚠️ ' + reason); hideMsgLater(2000);
+      }
+
+      var lastDbg = 0;
+      function handleResult(r, now) {
+        // 디버그: 손이 보일 때 감지 결과를 초당 1회 로그(주먹/방향/손가락 개수 확인용).
+        if (r.handPresent && now - lastDbg > 1000) {
+          lastDbg = now;
+          console.log('[gesture-seq]', state, '| 카테고리:', r.categoryName || '(없음)',
+            '| 방향:', r.direction, '| 손가락:', r.fingerCount);
+        }
+        if (state === 'watching') {
+          if (sendBtn.disabled) return; // 처리 중에는 새 시퀀스를 시작하지 않는다
+          if (r.handPresent && r.categoryName === 'Closed_Fist') {
+            if (fistSince == null) fistSince = now;
+            else if (now - fistSince >= DWELL_MS) activate(now);
+          } else fistSince = null;
+          return;
+        }
+        // state === 'active'
+        // 주먹 인식(활성화) 후 5초가 지나면 완성 여부와 무관하게 이번 제스처 프롬프트를
+        // 취소한다(손을 빼서 전송이 완료되면 state가 이미 'watching'이라 이 검사는 안 걸린다).
+        if (now - activeStart >= TIMEOUT_MS) {
+          cancel('제스처 입력 취소됨(5초 초과)'); return;
+        }
+        if (!r.handPresent) {
+          if (goneSince == null) goneSince = now;
+          else if (now - goneSince >= GONE_MS) {
+            if (dir && cnt) complete();
+            else cancel('제스처 입력 무시됨(정보 미완성)');
+          }
+          return;
+        }
+        goneSince = null;
+        if (!dir) {
+          if (r.categoryName === 'Closed_Fist') { dirCand = null; return; } // 아직 주먹
+          if (r.direction && r.direction !== 'unknown') {
+            if (dirCand === r.direction) {
+              if (now - dirSince >= DWELL_MS) { dir = r.direction; dirDoneAt = now; writeDir(); }
+            } else { dirCand = r.direction; dirSince = now; }
+          } else dirCand = null;
+        } else if (!cnt) {
+          if (now - dirDoneAt < GRACE_MS) return; // 방향 확정 직후 잠깐 유예
+          var n = r.fingerCount;
+          if (n >= 1 && n <= 5) {
+            if (cntCand === n) {
+              if (now - cntSince >= DWELL_MS) { cnt = n; writeCnt(); }
+            } else { cntCand = n; cntSince = now; }
+          } else cntCand = null;
+        }
+      }
+
+      function tick(now) {
+        var visible = panelEl.offsetParent !== null && !document.hidden;
+        var ready = frameFn && videoEl.readyState >= 2 && videoEl.videoWidth > 0;
+        if (visible && ready && now - lastRun >= SAMPLE_MS) {
+          lastRun = now;
+          var ts = now <= lastTs ? lastTs + 1 : now; // recognizeForVideo는 단조 증가 ts 필요
+          lastTs = ts;
+          try { handleResult(frameFn(videoEl, ts), now); } catch (e) {}
+        }
+        requestAnimationFrame(tick);
+      }
+
+      // window.initGestureVideo는 하단 모듈 스크립트(deferred)에서 정의되므로, 이 함수가
+      // 실행되는 시점에는 아직 없을 수 있다. 준비될 때까지 폴링했다가 VIDEO 인식기를 만든다.
+      function startVideo() {
+        if (typeof window.initGestureVideo !== 'function') {
+          setTimeout(startVideo, 200);
+          return;
+        }
+        window.initGestureVideo().then(function (fn) {
+          frameFn = fn;
+          console.log('[gesture-seq] VIDEO 인식기 준비 완료 — 주먹을 기다립니다.');
+        }).catch(function (e) {
+          console.error('[gesture-seq] VIDEO 인식기 초기화 실패:', e);
+        });
+      }
+      startVideo();
+      requestAnimationFrame(tick);
+    }
+
+    // "로컬 PC" 패널과 기기별 대시보드 패널(device-panel-template 복제본)이 동일한
+    // .box.prompt 구조를 공유하므로, 패널 하나를 받아 그 안의 프롬프트 입력/전송을
+    // 한 번에 연결한다(개별 기기 전송은 서로 완전히 독립적으로 동작).
+    function setupPromptAnswer(panelEl, robotId) {
+      var promptBox = panelEl.querySelector('.box.prompt');
+      if (!promptBox) return;
+      var textarea = promptBox.querySelector('.prompt-input');
+      var sendBtn = promptBox.querySelector('[data-role="prompt-send-btn"]');
+      if (!textarea || !sendBtn) return;
+
+      // 음성 대기열(1칸). 로컬 PC 패널에서는 음성 폴링을 걸지 않아 늘 비어 있지만,
+      // submitPrompt가 아래 early return보다 위에서 이 값을 참조하므로 여기서 선언한다.
+      var pendingVoiceText = '';
+      var sendBtnDefaultLabel = sendBtn.textContent;
+
+      // 프롬프트 박스 하단 상태 배지. 처리 중/대기 중/무시됨/연결 끊김을 한 자리에서
+      // 보여준다. 배지는 필요할 때만 만들어 붙인다(평소에는 DOM에 없다).
+      var statusBadge = null;
+      var ignoredNoticeTimer = null;
+
+      function showStatus(text, isError) {
+        if (!statusBadge) {
+          statusBadge = document.createElement('div');
+          statusBadge.className = 'voice-badge';
+          promptBox.appendChild(statusBadge);
+        }
+        statusBadge.textContent = text;
+        statusBadge.classList.toggle('voice-badge-error', !!isError);
+        statusBadge.style.display = '';
+      }
+
+      function hideStatus() {
+        if (statusBadge) statusBadge.style.display = 'none';
+      }
+
+      // 처리 중에는 입력창과 전송 버튼을 모두 잠근다. 기존에는 버튼만 잠가서 진행
+      // 중인지 눈에 잘 띄지 않았고, 입력창에는 계속 타이핑할 수 있어 혼란스러웠다.
+      function setBusy(busy) {
+        sendBtn.disabled = busy;
+        textarea.disabled = busy;
+        sendBtn.textContent = busy ? '처리 중…' : sendBtnDefaultLabel;
+        promptBox.classList.toggle('prompt-busy', busy);
+        if (busy) {
+          showStatus('⏳ 처리 중 — 캡처 → YOLO/VLM → LLM 답변 생성');
+        } else if (pendingVoiceText) {
+          showStatus('🎤 음성 프롬프트 대기 중 — 현재 처리가 끝나면 자동 전송됩니다');
+        } else {
+          hideStatus();
+        }
+      }
+
+      // 수동 전송과 음성 자동 전송이 같은 함수를 쓴다. 진행 중 잠금을 공유해야
+      // "타이핑 중 음성이 끼어듦"과 "음성 처리 중 사람이 전송을 누름"이 둘 다
+      // 자동으로 막힌다(PLAN.md 3절). 한 패널에서는 항상 하나만 처리된다.
+      function submitPrompt(value, source) {
+        if (!value) return;
+        if (ignoredNoticeTimer) { clearTimeout(ignoredNoticeTimer); ignoredNoticeTimer = null; }
+        textarea.value = '';
+        setBusy(true);
+        runWorkflow(panelEl, robotId, value, source).then(function () {
+          setBusy(false);
+          // 처리 중에 도착해 대기열에 보관돼 있던 음성 프롬프트가 있으면 이어서 보낸다.
+          flushPendingVoice();
+        });
+      }
+
+      sendBtn.addEventListener('click', function () {
+        submitPrompt(textarea.value.trim(), 'text');
+      });
+
+      // ---- 제스처 시퀀스 입력 (로컬 PC 전용) ----
+      // 웹캠(getUserMedia <video>)이 있는 로컬 PC 패널에서만 주먹→방향→칸수→손사라짐
+      // 시퀀스로 프롬프트를 자동 작성·전송한다(설계: docs/GESTURE_SEQUENCE_INPUT.md).
+      if (robotId === LOCAL_PC_ROBOT_ID) {
+        var camVideoEl = panelEl.querySelector('.cam-box .cam-video');
+        // window.initGestureVideo는 하단 모듈 스크립트(deferred)에서 정의되므로, 이 클래식
+        // 스크립트가 실행되는 시점(파싱 중)에는 아직 없다. 여기서 typeof 가드로 막지 말고,
+        // setupGestureSequenceInput 내부에서 함수가 준비될 때까지 기다렸다가 시작한다.
+        if (camVideoEl) {
+          setupGestureSequenceInput(panelEl, promptBox, textarea, sendBtn, submitPrompt, camVideoEl);
+        }
+      }
+
+      // ---- 음성 프롬프트 폴링 (라즈베리파이 기기 탭 전용) ----
+      // 로컬 PC에는 마이크 모듈이 없으므로 기기 탭에만 폴링을 건다.
+      if (robotId === LOCAL_PC_ROBOT_ID) return;
+
+      var lastVoiceSeq = null;   // null이면 아직 기준 seq를 못 잡은 상태
+      var pollFailCount = 0;
+
+      function flushPendingVoice() {
+        if (!pendingVoiceText) return;
+        var text = pendingVoiceText;
+        pendingVoiceText = '';
+        textarea.value = text;
+        submitPrompt(text, 'voice');
+      }
+
+      function handleVoiceText(text) {
+        // 빈 인식 결과(무음이라 whisper가 아무것도 못 알아들은 경우)는 프롬프트창을
+        // 채우지 않고 그냥 넘긴다(PLAN.md 6절 완료 기준).
+        if (!text) return;
+
+        if (sendBtn.disabled) {
+          // 이 기기가 아직 처리 중이다. 대기열은 1칸뿐이라, 이미 차 있으면 새 발화를
+          // 버린다 — 덮어쓰면 사용자가 마지막에 말한 것만 남아 "어느 게 처리될지"
+          // 예측할 수 없고, 여러 칸을 두면 말한 횟수만큼 연쇄 전송되어 "한 번에 하나씩"
+          // 이라는 원칙이 깨진다.
+          if (pendingVoiceText) {
+            showStatus('🎤 처리 중이라 이번 음성은 무시했습니다 (대기열이 이미 차 있음)', true);
+            if (ignoredNoticeTimer) clearTimeout(ignoredNoticeTimer);
+            // 잠깐 알린 뒤 원래 상태(처리 중/대기 중) 표시로 되돌린다.
+            ignoredNoticeTimer = setTimeout(function () {
+              ignoredNoticeTimer = null;
+              setBusy(sendBtn.disabled);
+            }, VOICE_IGNORED_NOTICE_MS);
+            return;
+          }
+          pendingVoiceText = text;
+          showStatus('🎤 음성 프롬프트 대기 중 — 현재 처리가 끝나면 자동 전송됩니다');
+          return;
+        }
+
+        textarea.value = text;
+        submitPrompt(text, 'voice');
+      }
+
+      setInterval(function () {
+        // 기기가 연동 해제되면 패널 자체가 DOM에서 제거된다. 그때는 더 폴링하지 않는다.
+        if (!document.body.contains(panelEl)) return;
+        // 등록된 기기면 지금 어느 탭을 보고 있든 항상 폴링한다. 처음에는 "기기 탭이
+        // 열려 있는 동안"만 폴링했으나, 그러면 시뮬레이터·연동 탭을 보고 있을 때 말한
+        // 음성이 조용히 무시되고 사용자는 원인을 알 수 없다(실사용에서 실제로 겪음).
+        // 기기는 최대 2대라 초당 2요청이고, 실패해도 조용히 넘어가므로 부담이 없다.
+        var device = devices[robotId];
+        if (!device || !device.ip) return;
+
+        fetch(VOICE_POLL_ENDPOINT + '?ip=' + encodeURIComponent(device.ip))
+          .then(function (response) {
+            if (!response.ok) throw new Error('voice-poll-failed');
+            return response.json();
+          })
+          .then(function (data) {
+            // 끊겼다가 다시 붙으면 오류 배지를 걷어낸다. 처리 중/대기 중 표시는
+            // setBusy가 관리하므로 여기서 건드리지 않는다.
+            if (pollFailCount >= VOICE_POLL_FAIL_THRESHOLD) setBusy(sendBtn.disabled);
+            pollFailCount = 0;
+            var seq = data && typeof data.seq === 'number' ? data.seq : 0;
+            // 첫 응답의 seq는 "이미 지나간 발화"의 번호다. 이걸 새 결과로 처리하면
+            // 탭을 열 때마다 예전 발화가 다시 전송되므로, 기준점만 잡고 넘어간다.
+            if (lastVoiceSeq === null) { lastVoiceSeq = seq; return; }
+            if (seq <= lastVoiceSeq) return;
+            lastVoiceSeq = seq;
+            handleVoiceText(data && typeof data.text === 'string' ? data.text.trim() : '');
+          })
+          .catch(function () {
+            // 매초 도는 폴링이라 실패할 때마다 배너를 띄우면 노이즈가 크다. 연속 실패가
+            // 쌓였을 때만 상태를 표시한다(PLAN.md 4.6절).
+            pollFailCount += 1;
+            if (pollFailCount === VOICE_POLL_FAIL_THRESHOLD) {
+              showStatus('🎤 음성 입력 연결 끊김 — 라즈베리파이 응답 없음', true);
+            }
+          });
+      }, VOICE_POLL_INTERVAL_MS);
+    }
+
+    setupPromptAnswer(document.getElementById('subtab-local-pc'), 'local-pc');
+
+    // ---- 연동: 기기 등록 (클라이언트 상태 변경만 수행, 실제 네트워크 통신은 없음) ----
+    var MAX_DEVICES = 2;
+    var devices = {}; // blockId -> { id, name, ip }
+    var registeredOrder = []; // 등록 순서대로 blockId를 저장 (대시보드 서브탭 순서에 사용)
+    var limitMsg = document.getElementById('reg-limit-msg');
+    var deviceCardList = document.getElementById('device-card-list');
+    var deviceEmptyMsg = document.getElementById('device-empty-msg');
+    var deviceBlockList = document.getElementById('device-block-list');
+
+    var dashboardSection = document.getElementById('tab-dashboard');
+    var subtabsBar = dashboardSection.querySelector('.subtabs');
+    var devicePanelTemplate = document.getElementById('device-panel-template');
+
+    deviceBlockList.querySelectorAll('.device-block').forEach(function (blockEl) {
+      var blockId = blockEl.dataset.blockId;
+      var head = blockEl.querySelector('[data-role="block-head"]');
+      var badge = blockEl.querySelector('[data-role="status-badge"]');
+      var form = blockEl.querySelector('[data-role="block-form"]');
+      var ipInput = blockEl.querySelector('[data-role="ip-input"]');
+      var confirmBtn = blockEl.querySelector('[data-role="confirm-btn"]');
+
+      function registerBlock() {
+        if (devices[blockId]) return;
+        if (registeredOrder.length >= MAX_DEVICES) {
+          form.classList.remove('open');
+          limitMsg.style.display = 'block';
+          return;
+        }
+        limitMsg.style.display = 'none';
+
+        var ip = ipInput.value.trim() || '-';
+        var name = blockId + '번 기기';
+        var device = { id: blockId, name: name, ip: ip };
+        devices[blockId] = device;
+        registeredOrder.push(blockId);
+
+        badge.textContent = '● 등록됨';
+        badge.classList.remove('unregistered');
+        badge.classList.add('registered');
+        form.classList.remove('open');
+        blockEl.classList.add('registered');
+
+        renderDeviceCards();
+        addDeviceDashboardTab(device);
+      }
+
+      head.addEventListener('click', function () {
+        if (devices[blockId]) return;
+        if (registeredOrder.length >= MAX_DEVICES) {
+          form.classList.remove('open');
+          limitMsg.style.display = 'block';
+          return;
+        }
+        limitMsg.style.display = 'none';
+        form.classList.toggle('open');
+      });
+
+      confirmBtn.addEventListener('click', registerBlock);
+    });
+
+    function renderDeviceCards() {
+      // "로컬 PC" 카드는 항상 고정이므로 다시 그리지 않고, 라즈베리파이 카드만 갱신한다.
+      deviceCardList.querySelectorAll('.device-card:not(.local-pc-card)').forEach(function (el) { el.remove(); });
+      if (registeredOrder.length === 0) {
+        deviceEmptyMsg.style.display = '';
+        return;
+      }
+      deviceEmptyMsg.style.display = 'none';
+      registeredOrder.forEach(function (blockId) {
+        var device = devices[blockId];
+        var card = document.createElement('div');
+        card.className = 'box device-card';
+
+        var nameEl = document.createElement('div');
+        nameEl.className = 'name';
+        nameEl.textContent = device.name;
+
+        var ipEl = document.createElement('div');
+        ipEl.className = 'ip';
+        ipEl.textContent = device.ip;
+
+        var badge = document.createElement('div');
+        badge.className = 'status-badge registered';
+        badge.textContent = '● 등록됨';
+
+        // 연결 상태 표시 옆에 [연동 해제] 버튼을 둔다("로컬 PC" 카드에는 없음 -
+        // 그 카드는 이 함수가 다시 그리지 않는 정적 마크업이라 대상이 아니다).
+        var unlinkBtn = document.createElement('button');
+        unlinkBtn.type = 'button';
+        unlinkBtn.className = 'mock-btn unlink-btn';
+        unlinkBtn.textContent = '연동 해제';
+        unlinkBtn.addEventListener('click', function () { unregisterDevice(blockId); });
+
+        var statusRow = document.createElement('div');
+        statusRow.className = 'device-card-status-row';
+        statusRow.appendChild(badge);
+        statusRow.appendChild(unlinkBtn);
+
+        card.appendChild(nameEl);
+        card.appendChild(ipEl);
+        card.appendChild(statusRow);
+        deviceCardList.appendChild(card);
+      });
+    }
+
+    var deviceCameraControllers = {}; // blockId -> 개별 대시보드 패널의 카메라 컨트롤러
+
+    function addDeviceDashboardTab(device) {
+      var btn = document.createElement('button');
+      btn.className = 'subtab-item';
+      btn.dataset.subtab = 'subtab-device-' + device.id;
+      btn.textContent = device.name;
+      bindSubtabClick(btn);
+      subtabsBar.appendChild(btn);
+
+      var frag = devicePanelTemplate.content.cloneNode(true);
+      var panel = frag.querySelector('.subtab-panel');
+      panel.id = 'subtab-device-' + device.id;
+      panel.querySelectorAll('.tpl-device-label').forEach(function (el) { el.textContent = device.name; });
+      dashboardSection.appendChild(panel);
+
+      var camBox = panel.querySelector('.cam-box');
+      if (camBox) deviceCameraControllers[device.id] = createRaspberryCameraController(camBox, device.ip);
+      setupPromptAnswer(panel, device.id);
+    }
+
+    // [연동 해제] 클릭 시 해당 기기의 등록을 즉시 해제한다: 카드/서브탭/시뮬레이터
+    // 로봇을 모두 정리하고, 진행 중이던 카메라 스트림 연결도 함께 끊어 자원을
+    // 정리하며, 등록 대수 제한(최대 2대) 슬롯도 반환해 같은 블록으로 재등록할 수
+    // 있게 한다(PHASE8.md 완료 기준).
+    function unregisterDevice(blockId) {
+      var device = devices[blockId];
+      if (!device) return;
+
+      if (deviceCameraControllers[blockId]) {
+        deviceCameraControllers[blockId].stop();
+        delete deviceCameraControllers[blockId];
+      }
+
+      delete devices[blockId];
+      registeredOrder = registeredOrder.filter(function (id) { return id !== blockId; });
+
+      // 대시보드 서브탭/패널 제거. 해제되는 기기의 탭이 현재 활성 탭이었다면
+      // "로컬 PC" 탭으로 되돌려 빈 화면이 남지 않게 한다.
+      var subtabBtn = subtabsBar.querySelector('[data-subtab="subtab-device-' + blockId + '"]');
+      var subtabPanelEl = document.getElementById('subtab-device-' + blockId);
+      var wasActive = !!(subtabBtn && subtabBtn.classList.contains('active'));
+      if (subtabBtn) subtabBtn.remove();
+      if (subtabPanelEl) subtabPanelEl.remove();
+      if (wasActive) {
+        var localBtn = subtabsBar.querySelector('[data-subtab="subtab-local-pc"]');
+        if (localBtn) localBtn.click();
+      }
+
+      // 연동 탭의 등록 블록을 미등록 상태로 되돌려 재등록 가능하게 한다.
+      var blockEl = deviceBlockList.querySelector('.device-block[data-block-id="' + blockId + '"]');
+      if (blockEl) {
+        blockEl.classList.remove('registered');
+        var badgeEl = blockEl.querySelector('[data-role="status-badge"]');
+        if (badgeEl) {
+          badgeEl.textContent = '미등록';
+          badgeEl.classList.remove('registered');
+          badgeEl.classList.add('unregistered');
+        }
+        var formEl = blockEl.querySelector('[data-role="block-form"]');
+        if (formEl) formEl.classList.remove('open');
+        var ipInputEl = blockEl.querySelector('[data-role="ip-input"]');
+        if (ipInputEl) ipInputEl.value = '';
+      }
+      limitMsg.style.display = 'none';
+
+      renderDeviceCards();
+
+      appendLog(device.name + ': 연동 해제됨');
+    }
+
+    renderDeviceCards();
+
+    // ---- 시뮬레이터: 8x8 격자맵 (Phase 8) ----
+    // 시뮬레이터에는 "로컬 PC" 캐릭터(로봇 🤖) 하나만 존재한다 — 라즈베리파이 연동은
+    // 별도 프로젝트로 분리될 예정이라, 이 시뮬레이터 탭은 로컬 PC 프롬프트 기준 기능
+    // 테스트 용도로 한정한다(등록된 기기의 프롬프트는 시뮬레이터 좌표에 영향을 주지
+    // 않는다 - runWorkflow 참고). 로봇은 출발지(1,1)에서 시작하며 실시간으로 움직이지
+    // 않고, LLM이 move 도구를 고른 직후(runWorkflow의 "5.이동중" 단계) 도구 인자의
+    // 절대 방향(up/down/left/right)으로 이전 진행 방향과 무관하게 즉시 전환한 뒤,
+    // 인자의 칸 수(steps)만큼 이동하며, 이 좌표/방향 갱신은 애니메이션 없이 즉시
+    // 반영된다(applyRobotMove()).
+    var GRID_SIZE = 8;
+    var START_POS = { row: 1, col: 1 };
+    var WALL_RATIO = 0.3;
+
+    var DIRECTION_DELTA = {
+      up: { row: -1, col: 0 }, right: { row: 0, col: 1 },
+      down: { row: 1, col: 0 }, left: { row: 0, col: -1 }
+    };
+    var FACING_LABEL_KO = { up: '위쪽(↑)', right: '오른쪽(→)', down: '아래쪽(↓)', left: '왼쪽(←)' };
+    // MediaPipe 손 제스처로 인식하는 direction은 로봇이 다음에 어느 쪽으로 갈지
+    // 판단한 상대 회전 지시가 아니라, 손이 가리키는 절대 방향이다(main.py와 동일한
+    // 5가지 값 어휘를 그대로 재사용). 로그/정보 패널에는 완료 기준에 명시된 한글
+    // 표기를 그대로 쓴다.
+    var LLM_DIRECTION_LABEL_KO = { up: '위', down: '아래', left: '왼쪽', right: '오른쪽', unknown: '인식 불가' };
+
+    // robot: 시뮬레이터에 존재하는 유일한 로봇("로컬 PC")의 상태. facing은 격자 위에서
+    // 로봇이 바라보는 절대 방향(up/right/down/left)이며, MediaPipe 제스처로 인식한
+    // direction이 바로 이 facing 값이 된다 — "이전 진행 방향과 무관하게 즉시
+    // 전환"(PHASE8.md)이므로 현재 facing을 기준으로 한 상대 회전이 아니라 direction
+    // 값을 그대로 대입한다(applyRobotMove 참고). path는 출발지(1,1)부터 현재까지
+    // 실제로 거쳐온 "row-col" 칸 키의 전체 이동 순서 목록이다(연속으로 같은 칸에
+    // 머문 경우만 중복 push를 막고, 그 외 백트랙으로 인한 재방문은 순서 그대로 보관
+    // - applyRobotMove 참고). renderGrid가 이 순서를 이용해 인접한 두 항목 사이마다
+    // 선을 잇고, 점은 칸별로 한 번만(중복 제거) 찍는다.
+    var robot = {
+      row: START_POS.row, col: START_POS.col,
+      prevRow: null, prevCol: null,
+      facing: 'up',
+      path: [START_POS.row + '-' + START_POS.col]
+    };
+
+    var gridEl = document.getElementById('sim-grid');
+    var prevCoordEl = document.getElementById('sim-prev-coord');
+    var currentCoordEl = document.getElementById('sim-current-coord');
+    var directionEl = document.getElementById('sim-direction');
+    var logListEl = document.getElementById('sim-log-list');
+    var logInitialized = false;
+
+    // walls: "row-col" -> true. 페이지 로드 시 한 번 무작위로 채워지며, 벽 칸으로는
+    // 로봇이 이동할 수 없다(방향 전환은 반영되지만 이동만 취소됨 - applyRobotMove 참고).
+    var walls = {};
+
+    var cells = {};
+    for (var r = 1; r <= GRID_SIZE; r++) {
+      for (var c = 1; c <= GRID_SIZE; c++) {
+        var cell = document.createElement('div');
+        cell.className = 'sim-cell';
+        gridEl.appendChild(cell);
+        cells[r + '-' + c] = cell;
+      }
+    }
+
+    function appendLog(text) {
+      if (!logInitialized) {
+        logListEl.innerHTML = '';
+        logInitialized = true;
+      }
+      var time = new Date().toLocaleTimeString('ko-KR', { hour12: false });
+      var li = document.createElement('li');
+      li.textContent = '[' + time + '] ' + text;
+      logListEl.insertBefore(li, logListEl.firstChild);
+      while (logListEl.children.length > 50) {
+        logListEl.removeChild(logListEl.lastChild);
+      }
+    }
+
+    // 제스처로 인식한 절대 방향 direction과, 유저 프롬프트에서 LLM이 읽어낸 이동
+    // 칸 수 steps에 따라 로봇을 이동시킨다: up/down/left/right는 이전 진행 방향과
+    // 무관하게 그 방향을 바로 바라보도록 facing을 전환(단계적 90도 회전이 아님)한
+    // 뒤, 그 방향으로 steps칸만큼 한 칸씩 이동을 시도한다. unknown이면 방향 전환도
+    // 이동도 하지 않는다. 벽이나 격자 경계에 막히면 그 자리에서 멈춘다(나머지 칸은
+    // 이동하지 않음) — 방향 전환 자체는 이미 반영된 채로 유지된다. 애니메이션 없이
+    // 이 함수 호출 한 번으로 좌표/방향이 즉시 갱신된다.
+    function applyRobotMove(direction, steps) {
+      var stepCount = Number.isFinite(steps) && steps > 0 ? Math.floor(steps) : 1;
+      var prevRow = robot.row, prevCol = robot.col;
+
+      var blockedByWall = false;
+      var movedCells = 0;
+      if (direction === 'up' || direction === 'down' || direction === 'left' || direction === 'right') {
+        robot.facing = direction;
+        var delta = DIRECTION_DELTA[direction];
+        for (var i = 0; i < stepCount; i++) {
+          var nextRow = robot.row + delta.row;
+          var nextCol = robot.col + delta.col;
+          var inBounds = nextRow >= 1 && nextRow <= GRID_SIZE && nextCol >= 1 && nextCol <= GRID_SIZE;
+          var isWall = inBounds && !!walls[nextRow + '-' + nextCol];
+          if (!inBounds || isWall) {
+            if (isWall) blockedByWall = true;
+            break; // 더 이상 진행할 수 없으면 그 자리에서 멈춘다.
+          }
+          robot.row = nextRow;
+          robot.col = nextCol;
+          movedCells++;
+          var currentKey = robot.row + '-' + robot.col;
+          // 직전에 기록된 칸과 같으면(이동 안 함) 다시 push하지 않되, 이전에
+          // 방문했던 칸으로 되돌아온 경우(백트랙)는 실제 이동 순서를 그대로 남겨
+          // 선(자취)이 그 구간도 정확히 다시 이어지게 한다.
+          if (robot.path[robot.path.length - 1] !== currentKey) robot.path.push(currentKey);
+        }
+      }
+      // direction === 'unknown'이면 방향 전환도 이동도 시도하지 않는다.
+
+      robot.prevRow = prevRow;
+      robot.prevCol = prevCol;
+
+      renderGrid();
+      renderInfoPanel();
+
+      var label = LLM_DIRECTION_LABEL_KO[direction] || '인식 불가';
+      var logText = '로컬 PC: (' + prevRow + ', ' + prevCol + ') → ' + label + ' ' + movedCells + '칸 → (' + robot.row + ', ' + robot.col + ')';
+      if (blockedByWall) logText += ' [벽에 막혀 이동 중단]';
+      appendLog(logText);
+    }
+
+    // 벽 배치가 시작 위치를 완전히 가두거나 격자를 서로 갈 수 없는 구역으로 나누면
+    // "항상 이동 가능한 경로"가 보장되지 않으므로, 시작 위치에서 4방향 BFS로 열린
+    // 칸(벽이 아닌 칸)을 모두 순회해 열린 칸 전체가 한 덩어리로 연결돼 있는지 검사한다.
+    function isFullyConnectedFromStart(wallMap, openCount) {
+      var startKey = START_POS.row + '-' + START_POS.col;
+      var visited = {};
+      visited[startKey] = true;
+      var queue = [startKey];
+      while (queue.length) {
+        var current = keyToRowCol(queue.shift());
+        [[current.row - 1, current.col], [current.row + 1, current.col],
+         [current.row, current.col - 1], [current.row, current.col + 1]].forEach(function (pair) {
+          var row = pair[0], col = pair[1];
+          if (row < 1 || row > GRID_SIZE || col < 1 || col > GRID_SIZE) return;
+          var key = row + '-' + col;
+          if (wallMap[key] || visited[key]) return;
+          visited[key] = true;
+          queue.push(key);
+        });
+      }
+      return Object.keys(visited).length === openCount;
+    }
+
+    // 전체 격자 칸 수의 약 30%를 무작위로 벽으로 지정한다(페이지 로드 시 한 번만
+    // 호출됨). 시작 위치(1,1)와 로봇의 현재 위치에는 벽이 생성되지 않으며, 시작
+    // 위치에서 모든 열린 칸으로 이동할 수 있는 배치가 나올 때까지 다시 뽑는다
+    // (막다른 고립 구역이 생기지 않게 하기 위함).
+    function randomizeWalls() {
+      var protectedKeys = {};
+      protectedKeys[START_POS.row + '-' + START_POS.col] = true;
+      protectedKeys[robot.row + '-' + robot.col] = true;
+
+      var candidates = [];
+      for (var row = 1; row <= GRID_SIZE; row++) {
+        for (var col = 1; col <= GRID_SIZE; col++) {
+          var key = row + '-' + col;
+          if (!protectedKeys[key]) candidates.push(key);
+        }
+      }
+
+      var wallCount = Math.min(candidates.length, Math.round(GRID_SIZE * GRID_SIZE * WALL_RATIO));
+      var openCount = GRID_SIZE * GRID_SIZE - wallCount;
+
+      var newWalls = {};
+      var MAX_ATTEMPTS = 200;
+      for (var attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
+        for (var i = candidates.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var tmp = candidates[i]; candidates[i] = candidates[j]; candidates[j] = tmp;
+        }
+        var trialWalls = {};
+        candidates.slice(0, wallCount).forEach(function (key) { trialWalls[key] = true; });
+        newWalls = trialWalls;
+        if (isFullyConnectedFromStart(trialWalls, openCount)) break;
+        // 연결되지 않으면 이 배치는 버리고 다시 섞어 시도한다(마지막 시도 결과는
+        // MAX_ATTEMPTS를 넘겨도 안전망으로 그대로 사용한다).
+      }
+      walls = newWalls;
+      renderGrid();
+      appendLog('랜덤 벽 생성: ' + wallCount + '개 칸');
+    }
+
+    // 경로(점+선) 렌더링에 쓰는 헬퍼: 인접한 두 "row-col" 칸 사이의 방향.
+    function keyToRowCol(key) {
+      var parts = key.split('-');
+      return { row: parseInt(parts[0], 10), col: parseInt(parts[1], 10) };
+    }
+    function directionBetweenKeys(fromKey, toKey) {
+      var a = keyToRowCol(fromKey), b = keyToRowCol(toKey);
+      if (b.row === a.row - 1 && b.col === a.col) return 'up';
+      if (b.row === a.row + 1 && b.col === a.col) return 'down';
+      if (b.col === a.col - 1 && b.row === a.row) return 'left';
+      if (b.col === a.col + 1 && b.row === a.row) return 'right';
+      return null; // 인접하지 않은 칸(정상 이동에서는 발생하지 않음, 방어적으로 무시)
+    }
+    var OPPOSITE_DIRECTION = { up: 'down', down: 'up', left: 'right', right: 'left' };
+
+    function renderGrid() {
+      Object.keys(cells).forEach(function (key) {
+        cells[key].innerHTML = '';
+        cells[key].classList.toggle('sim-wall', !!walls[key]);
+      });
+
+      // 경로(점+선) 레이어를 마커보다 먼저 DOM에 넣어, 로봇이 현재 서 있는 칸에서는
+      // 마커가 자기 자취의 끝점 위에 자연스럽게 그려지게 한다(위 CSS 주석 참고).
+      // 로봇이 이미 지나쳐 온(현재 아무도 없는) 칸에는 마커 자체가 없으므로 점/선이
+      // 그대로 보인다.
+      var pathLayers = {};
+      function getPathLayer(key) {
+        if (!pathLayers[key]) {
+          var layer = document.createElement('div');
+          layer.className = 'sim-path-layer';
+          cells[key].appendChild(layer);
+          pathLayers[key] = layer;
+        }
+        return pathLayers[key];
+      }
+
+      // 인접한 두 경유 칸 사이를 각 칸에서 중앙~경계까지 뻗은 반쪽 선분 두 개로 잇는다.
+      for (var i = 0; i < robot.path.length - 1; i++) {
+        var fromKey = robot.path[i];
+        var toKey = robot.path[i + 1];
+        var dir = directionBetweenKeys(fromKey, toKey);
+        if (!dir) continue;
+
+        var fromSeg = document.createElement('div');
+        fromSeg.className = 'sim-path-seg dir-' + dir + ' robot-local-pc';
+        getPathLayer(fromKey).appendChild(fromSeg);
+
+        var toDir = OPPOSITE_DIRECTION[dir];
+        var toSeg = document.createElement('div');
+        toSeg.className = 'sim-path-seg dir-' + toDir + ' robot-local-pc';
+        getPathLayer(toKey).appendChild(toSeg);
+      }
+
+      // 실제로 거쳐온 칸의 정중앙에 점을 하나씩(같은 칸을 여러 번 지났어도 한 번만) 찍는다.
+      var visitedKeys = {};
+      robot.path.forEach(function (key) {
+        if (visitedKeys[key]) return;
+        visitedKeys[key] = true;
+        var dot = document.createElement('div');
+        dot.className = 'sim-path-dot robot-local-pc';
+        dot.title = '로컬 PC 이동 경로';
+        getPathLayer(key).appendChild(dot);
+      });
+
+      var markerRow = document.createElement('div');
+      markerRow.className = 'sim-marker-row';
+      cells[robot.row + '-' + robot.col].appendChild(markerRow);
+
+      var marker = document.createElement('div');
+      marker.className = 'sim-marker robot-local-pc';
+      marker.title = '로컬 PC - ' + (FACING_LABEL_KO[robot.facing] || robot.facing);
+
+      var labelSpan = document.createElement('span');
+      labelSpan.className = 'sim-marker-label';
+      labelSpan.textContent = '🤖';
+
+      marker.appendChild(labelSpan);
+      markerRow.appendChild(marker);
+    }
+
+    function renderInfoPanel() {
+      prevCoordEl.textContent = (robot.prevRow != null) ? '(' + robot.prevRow + ', ' + robot.prevCol + ')' : '-';
+      currentCoordEl.textContent = '(' + robot.row + ', ' + robot.col + ')';
+      directionEl.textContent = FACING_LABEL_KO[robot.facing] || '-';
+    }
+
+    renderGrid();
+    renderInfoPanel();
+    // 시뮬레이터를 처음 열었을 때부터 장애물이 하나도 없으면 맵이 밋밋해 보이므로,
+    // 페이지 로드 시 한 번 기본 장애물 벽을 생성한다.
+    randomizeWalls();
+  </script>
+
+  <!-- MediaPipe 제스처 인식(테스트: 엄지척(Thumb_Up) 등 인식 확인). YOLO/VLM처럼
+       main.py를 거치는 백엔드 호출이 아니라 브라우저에서 직접 실행되는 클라이언트
+       사이드 모델이라, ESM으로 배포되는 @mediapipe/tasks-vision 라이브러리가
+       필요하다. CDN 대신 /mediapipe 정적 경로(main.py 참고)로 로컬 파일을 그대로
+       서빙해 오프라인에서도 동작하게 한다. 위의 클래식 스크립트와는 별도 모듈
+       스코프라 var를 공유할 수 없으므로, 위 스크립트가 호출할 수 있도록
+       window.recognizeGesture 전역 함수로 결과를 연결한다(requestGestureRecognize
+       참고). -->
+  <script type="module">
+    import { GestureRecognizer, FilesetResolver } from '/mediapipe/vision_bundle.mjs';
+
+    var GESTURE_LABEL_KO = {
+      None: '인식 없음', Closed_Fist: '주먹', Open_Palm: '펼친 손바닥',
+      Pointing_Up: '위쪽 가리킴', Thumb_Down: '엄지 아래', Thumb_Up: '엄지 척',
+      Victory: '브이', ILoveYou: '사랑해'
+    };
+
+    // 제스처 카테고리(Thumb_Up 등)에는 왼쪽/오른쪽/아래쪽 가리킴이 없고, 손이 돌아가면
+    // 카테고리가 틀리기 쉽다(2일차 실습 2-2). 그래서 방향은 카테고리가 아니라 손 랜드마크
+    // 좌표에서 손목(0) → 검지 끝(8) 벡터로 직접 계산한다 ― 2일차 실습 2-2 와 같은 규칙.
+    var HAND_DIRECTION_LABEL_KO = { up: '위', down: '아래', left: '왼쪽', right: '오른쪽', unknown: '인식 불가' };
+    // MediaPipe 랜드마크 좌표는 x를 이미지 너비로, y를 이미지 높이로 각각 독립적으로
+    // 나눈 정규화 값이다. 카메라 프레임이 정사각형이 아니면(예: 640x480) 가로/세로
+    // 나누는 기준 값이 달라서, 같은 픽셀 거리를 움직여도 좌우 방향의 dx가 상하 방향의
+    // dy보다 작게 나온다(640x480 기준 약 0.75배) — 그래서 좌우로 크게 움직여야만
+    // "가로 성분이 세로 성분보다 크다" 판정이 나와 좌우 인식이 유독 둔감해진다.
+    // 이를 보정하기 위해 dx/dy를 실제 픽셀 단위(이미지 폭/높이 곱)로 되돌린 뒤에
+    // 우세한 축을 비교한다.
+    var MIN_POINT_VECTOR_LENGTH_RATIO = 0.08; // 이미지 짧은 변의 8% 보다 짧으면 판단 보류 (실습 2-2)
+    // mirrored=true이면 화면을 좌우 반전(셀피)해서 보여주는 소스(로컬 PC 웹캠)라는 뜻이다.
+    // 방향은 미러링하지 않은 원본 픽셀로 계산하므로, 사용자가 인지하는 좌우(거울 화면 기준)와
+    // 일치시키려면 좌/우 판정만 뒤집어야 한다(위/아래는 그대로). 라즈베리파이 카메라처럼
+    // 미러링하지 않는 소스는 mirrored=false로 원본 좌우를 그대로 쓴다.
+    function classifyPointingDirection(landmarks, imageWidth, imageHeight, mirrored) {
+      var wrist = landmarks[0];
+      var indexTip = landmarks[8];                  // 검지 끝
+      var dxPixels = (indexTip.x - wrist.x) * imageWidth;
+      // MediaPipe 정규화 좌표는 원점이 좌상단이고 y가 아래로 증가하므로, dy가
+      // 양수면 아래쪽을 가리키는 것이다.
+      var dyPixels = (indexTip.y - wrist.y) * imageHeight;
+      var minLength = Math.min(imageWidth, imageHeight) * MIN_POINT_VECTOR_LENGTH_RATIO;
+      if (Math.hypot(dxPixels, dyPixels) < minLength) return 'unknown';
+      if (Math.abs(dxPixels) > Math.abs(dyPixels)) {
+        var isRight = dxPixels > 0;
+        if (mirrored) isRight = !isRight; // 거울 화면 기준으로 좌우를 맞춘다
+        return isRight ? 'right' : 'left';
+      }
+      return dyPixels > 0 ? 'down' : 'up';
+    }
+
+    // 펼친 손가락 개수(0~5)를 랜드마크로 센다 ― 2일차 도전 2 해설과 같은 규칙.
+    // 네 손가락은 끝(tip)이 중간 관절(pip)보다 손목(0)에서 멀면 펴진 것,
+    // 엄지는 옆으로 펴지므로 끝(4)이 IP 관절(3)보다 새끼 뿌리(17)에서 멀면 펴진 것.
+    // 제스처 시퀀스 입력의 "칸 수" 단계에서 쓴다.
+    function _dist(a, b) { return Math.hypot(a.x - b.x, a.y - b.y); }
+    function countExtendedFingers(landmarks) {
+      var wrist = landmarks[0];
+      var tips = [8, 12, 16, 20];
+      var pips = [6, 10, 14, 18];
+      var count = 0;
+      for (var i = 0; i < tips.length; i++) {
+        if (_dist(landmarks[tips[i]], wrist) > _dist(landmarks[pips[i]], wrist)) count++;
+      }
+      var pinkyMcp = landmarks[17];
+      if (_dist(landmarks[4], pinkyMcp) > _dist(landmarks[3], pinkyMcp)) count++;
+      return count;
+    }
+
+    // WASM+모델(약 20MB) 로딩은 수 초 걸리고 메모리도 크게 잡으므로 최초 요청 때
+    // 한 번만 한다(main.py의 지연 로딩 모델들과 동일한 패턴). GPU delegate가
+    // 지원되지 않는 환경(WebGL 미지원 등)에서는 CPU delegate로 한 번 더 시도한다.
+    // runningMode는 'IMAGE'(단일 스냅샷: [전송] 시 폴백 방향 인식)와 'VIDEO'(연속 추적:
+    // 제스처 시퀀스 입력)로 나뉘며, 두 모드는 서로 다른 인식기 인스턴스를 쓴다.
+    var gestureRecognizerPromise = null;
+    function createGestureRecognizer(delegate, runningMode) {
+      return FilesetResolver.forVisionTasks('/mediapipe/wasm').then(function (vision) {
+        return GestureRecognizer.createFromOptions(vision, {
+          baseOptions: { modelAssetPath: '/mediapipe/gesture_recognizer.task', delegate: delegate },
+          runningMode: runningMode || 'IMAGE'
+        });
+      });
+    }
+    function getGestureRecognizer() {
+      if (!gestureRecognizerPromise) {
+        gestureRecognizerPromise = createGestureRecognizer('GPU', 'IMAGE').catch(function () {
+          return createGestureRecognizer('CPU', 'IMAGE');
+        });
+      }
+      return gestureRecognizerPromise;
+    }
+
+    // VIDEO 모드 인식기: 제스처 시퀀스 입력의 연속 프레임 추적용. 최초 1회 생성하고,
+    // window.initGestureVideo()가 프레임 단위 함수 frame(videoEl, tsMs)을 돌려준다.
+    // frame()은 동기로 {handPresent, categoryName, direction, fingerCount}를 반환한다.
+    // recognizeForVideo는 단조 증가하는 타임스탬프(ms)를 요구하므로 호출부에서 넘긴다.
+    var videoRecognizerPromise = null;
+    window.initGestureVideo = function () {
+      if (!videoRecognizerPromise) {
+        videoRecognizerPromise = createGestureRecognizer('GPU', 'VIDEO').catch(function () {
+          return createGestureRecognizer('CPU', 'VIDEO');
+        });
+      }
+      return videoRecognizerPromise.then(function (recognizer) {
+        return function frame(videoEl, tsMs) {
+          try {
+            var result = recognizer.recognizeForVideo(videoEl, tsMs);
+            if (!result.landmarks || !result.landmarks.length) return { handPresent: false };
+            var lm = result.landmarks[0];
+            var g = result.gestures && result.gestures[0] && result.gestures[0][0];
+            return {
+              handPresent: true,
+              categoryName: g ? g.categoryName : '',
+              // VIDEO 인식기는 로컬 PC 웹캠 전용이고 그 표시는 셀피(미러링)이므로 mirrored=true.
+              direction: classifyPointingDirection(lm, videoEl.videoWidth, videoEl.videoHeight, true),
+              fingerCount: countExtendedFingers(lm)
+            };
+          } catch (err) {
+            return { handPresent: false, error: true };
+          }
+        };
+      });
+    };
+
+    // 스냅샷 blob(YOLO/VLM과 동일한 캡처 시점 원본 프레임) 한 장에 대해 손 제스처와
+    // 가리키는 방향을 함께 인식해 {direction, text} 객체로 돌려준다(direction은 로봇
+    // 이동에, text는 화면 표시에 쓴다). 캔버스를 직접 받지 않고
+    // blob을 ImageBitmap으로 디코드해서 쓰는 이유는 requestGestureRecognize의 주석
+    // 참고(캔버스는 YOLO 결과가 먼저 도착하면 바운딩 박스로 오염될 수 있어 경쟁
+    // 조건이 생긴다). 손이 없거나 인식에 실패해도 예외를 던지지 않고 안내 문구를
+    // 돌려준다(requestGestureRecognize가 이 함수를 호출하는 클래식 스크립트 쪽에서
+    // 한 번 더 방어하지만, 여기서도 동일한 원칙을 지킨다).
+    window.recognizeGesture = function (blob, mirrored) {
+      return createImageBitmap(blob).then(function (bitmap) {
+        return getGestureRecognizer().then(function (recognizer) {
+          var result = recognizer.recognize(bitmap);
+          // 방향 계산(classifyPointingDirection)에 이미지 가로/세로 비율이 필요하므로
+          // bitmap을 닫기 전에 크기를 미리 읽어 둔다.
+          var imageWidth = bitmap.width, imageHeight = bitmap.height;
+          bitmap.close();
+          if (!result.landmarks || !result.landmarks.length) {
+            return { direction: 'unknown', text: '손을 인식하지 못했습니다.' };
+          }
+          // 여러 손이 잡히면 표시는 모두 이어 붙이되, 로봇 이동에 쓰는 방향은 첫 번째
+          // 손의 방향으로 정한다(이 앱은 한 손으로 조작하는 것을 전제로 한다).
+          var firstDirection = 'unknown';
+          var text = result.landmarks.map(function (handLandmarks, i) {
+            var topGesture = result.gestures && result.gestures[i] && result.gestures[i][0];
+            var categoryName = topGesture && topGesture.categoryName;
+            var gestureText = topGesture
+              ? (GESTURE_LABEL_KO[categoryName] || categoryName) + ' ' + Math.round(topGesture.score * 100) + '%'
+              : '';
+            // 방향은 제스처 카테고리(엄지 척/엄지 아래 등)로 고정하지 않고 항상
+            // classifyPointingDirection의 각도 계산 결과를 그대로 쓴다(위 주석 참고
+            // - 카테고리로 고정하면 엄지가 살짝만 기울어도 실제로는 좌우를 가리키는
+            // 상황에서 좌우가 인식되지 않는 문제가 있었다).
+            var direction = classifyPointingDirection(handLandmarks, imageWidth, imageHeight, mirrored);
+            if (i === 0) firstDirection = direction;
+            var directionText = '방향: ' + (HAND_DIRECTION_LABEL_KO[direction] || direction);
+            return [gestureText, directionText].filter(Boolean).join(' · ');
+          }).join(', ');
+          return { direction: firstDirection, text: text };
+        });
+      }).catch(function (err) {
+        console.error('MediaPipe gesture recognition error:', err);
+        return { direction: 'unknown', text: '제스처 인식 오류가 발생했습니다.' };
+      });
+    };
+  </script>
+</body>
+</html>

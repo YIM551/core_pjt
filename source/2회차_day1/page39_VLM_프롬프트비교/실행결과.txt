@@ -1,0 +1,19 @@
+입력 이미지 : sample.jpg
+비교할 프롬프트 : 2개 (CPU 추론이라 시간이 걸립니다)
+
+--- [자유 설명] 이 이미지를 설명해줘.
+: The image depicts a street scene in an urban area. In the foreground, there are three people walking on a sidewalk. The person on the left is wearing a light-colored coat and blue jeans, while the person in the middle is dressed in a dark coat and blue jeans. The person on the
+    (91.4s, 279자)
+
+--- [간결 설명] 이 이미지에 무엇이 보이는지 한국어로 간결하게 설명해줘.
+: 이미지에는 전기 버스가 보입니다. 버스는 "cero emisiones"라고 쓰여 있으며, 배경에는 건물과 나무가 보입니다.
+    (89.3s, 70자)
+
+======================================================================
+프롬프트            글자수    소요(s)
+----------------------------------------------------------------------
+자유 설명           279     91.4
+간결 설명            70     89.3
+
+정리: VLM에게는 '서술'만 시키고, '판단'과 '집계'는 다른 모듈에 맡긴다.
+      프롬프트와 max_tokens를 고정해야 2일차 LLM 통합 결과가 재현된다.

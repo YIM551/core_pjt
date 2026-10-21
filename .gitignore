@@ -1,0 +1,41 @@
+# Local Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.cache/
+*.cache
+.pytest_cache/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Model files are restored from release assets or the documented download source
+*.pt
+*.pth
+*.gguf
+*.task
+
+# Bulk files are stored as GitHub release assets
+*.zip
+*.mp4
+.backup/
+/datasets/**/train/
+/datasets/**/valid/
+/datasets/**/test/
+/datasets/**/data.local.yaml
+
+# Browser workflow screenshots are not experiment results
+/results/furniture_day1/roboflow_terms.png
+/results/furniture_day1/roboflow_download.png
+
+# OS/editor temporary files
+.DS_Store
+Thumbs.db
+~$*

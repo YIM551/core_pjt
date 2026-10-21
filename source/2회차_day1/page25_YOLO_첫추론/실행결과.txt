@@ -1,0 +1,10 @@
+입력 이미지 : sample.jpg  (810x1080)
+모델 로딩   : 1.48s
+
+  conf |   검출 수 |    추론(ms) | 검출 결과
+------------------------------------------------------------------------
+  0.10 |      6 |      1668 | bus, person, person, person, person, skateboard
+  0.25 |      5 |        95 | bus, person, person, person, person
+  0.60 |      5 |        63 | bus, person, person, person, person
+
+conf 를 낮추면 검출 수가 늘지만 오탐(False Positive)도 함께 늘어난다.

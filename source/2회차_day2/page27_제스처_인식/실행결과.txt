@@ -1,0 +1,19 @@
+입력 이미지 : pointing_up.jpg (419x419)
+  gesture    : Pointing_Up (score 0.82)
+  handedness : Left
+  landmarks  : 21점
+    [ 0] 손목    x=0.80 y=0.32
+    [ 4] 엄지 끝  x=0.75 y=0.19
+    [ 8] 검지 끝  x=0.71 y=0.07
+  저장       : landmarks_pointing_up.png
+
+입력 이미지 : victory.jpg (418x418)
+  gesture    : Victory (score 0.91)
+  handedness : Right
+  landmarks  : 21점
+    [ 0] 손목    x=0.29 y=0.75
+    [ 4] 엄지 끝  x=0.29 y=0.74
+    [ 8] 검지 끝  x=0.42 y=0.40
+  저장       : landmarks_victory.png
+
+gesture 는 '무슨 손 모양인가', landmarks 는 '손이 어디를 향하는가' 를 알려준다.

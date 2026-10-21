@@ -1,0 +1,19 @@
+{
+  "source_url": "https://universe.roboflow.com/roboflow-100/furniture-ngpea/dataset/2",
+  "workspace": "roboflow-100",
+  "project": "furniture-ngpea",
+  "version": 2,
+  "format": "yolov11",
+  "license": "CC BY 4.0",
+  "original_creator": "Minoj Selvaraj",
+  "original_project_url": "https://universe.roboflow.com/minoj-selvaraj/furniture-sfocl",
+  "downloaded_at_utc": "2026-10-21T06:15:08.744027+00:00",
+  "archive_name": "furniture.v2-release.yolov11.zip",
+  "archive_bytes": 56423743,
+  "archive_sha256": "c9fcf329d42cb419f4af787ac95172511f5f6a71017e359ac6710324b06125bd",
+  "expected_split_images": {
+    "train": 454,
+    "valid": 161,
+    "test": 74
+  }
+}

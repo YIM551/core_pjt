@@ -1,0 +1,31 @@
+[before] 사전학습 모델 평가 중...
+평가 임계값 conf = 0.001
+YOLO11n summary (fused): 100 layers, 2,616,248 parameters, 0 gradients, 6.5 GFLOPs
+
+                   all         10         16          0          0          0          0
+[after ] 파인튜닝 모델 평가 중...
+YOLO11n summary (fused): 101 layers, 2,582,542 parameters, 0 gradients, 6.3 GFLOPs
+
+                   all         10         16      0.106          1      0.968       0.84
+
+     stage |    weights |      mAP50 |   mAP50_95 |  precision |     recall |   max_conf |   infer_ms
+--------------------------------------------------------------------------------------------------------
+    before | yolo11n.pt |        0.0 |        0.0 |        0.0 |        0.0 |     0.3793 |       20.3
+     after |    best.pt |     0.9683 |       0.84 |     0.1056 |        1.0 |     0.0418 |       20.1
+
+mAP50 변화    : 0.0000 -> 0.9683 (+0.9683)
+mAP50-95 변화 : 0.0000 -> 0.8400 (+0.8400)
+
+사전학습 모델은 우리 클래스를 모르기 때문에 점수가 거의 0이다.
+이 차이가 '도메인 정렬(domain alignment)'의 효과다.
+
+[주의] 파인튜닝 모델의 최고 확신도 0.0418 < 0.25
+  순위(mAP)는 맞지만 확신이 낮다 ― 실제로 쓰는 conf 0.25 에서는 아무것도 검출하지 못한다.
+  확인 : python YOLO_파인튜닝_평가비교.py --conf 0.25
+
+[과적합 징후 체크]
+  - train loss는 내려가는데 val mAP가 정체/하락 -> 데이터 부족 또는 epochs 과다
+  - 학습 데이터에서만 잘 맞고 새 사진에서 급락 -> 다양성 부족
+
+CSV 저장: C:\work\vlm9\source\2회차_day1\page61_파인튜닝_평가\finetune_compare.csv
+  (5s)

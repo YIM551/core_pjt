@@ -1,0 +1,6 @@
+{
+  "image": "pointing_up.jpg",
+  "yolo": "person 1개, tie 1개",
+  "vlm": "여성이 손가락으로 1을 가리키고 있다, 장애물 없음.",
+  "gesture": "Pointing_Up, 가리키는 방향: 위"
+}
