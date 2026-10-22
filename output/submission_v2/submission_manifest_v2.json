@@ -1,0 +1,39 @@
+{
+  "version": "v2",
+  "submitter": {
+    "region": "광주",
+    "class": "5반",
+    "name": "임나경"
+  },
+  "deck": {
+    "name": "AI 코어_2회차_집사형로봇_광주_5반_임나경_최신_v2_확정.pptx",
+    "bytes": 1673914,
+    "sha256": "3c2fcd0e54dbf74edcff567047baa1ca92947a1e9d86aa7bce25aa5a57399602",
+    "slides": 18
+  },
+  "archives": [
+    {
+      "name": "AI 코어_2회차_PJT01_동작시연영상_광주_5반_임나경_최신_v2.zip",
+      "bytes": 20087391,
+      "sha256": "c2dba1dee6e0fd7f93ae37d5d75e2fef8f6e5323b0765aee506c7465241283c8",
+      "verified_members": 155
+    },
+    {
+      "name": "AI 코어_2회차_PJT02_동작시연영상_광주_5반_임나경_최신_v2.zip",
+      "bytes": 20648484,
+      "sha256": "b255f19e6277e06b775e5a737a5e4a143d203d88a02cb4fda847cfa66be2ba60",
+      "verified_members": 136
+    },
+    {
+      "name": "AI 코어_2회차_PJT03_동작시연영상_광주_5반_임나경_최신_v2.zip",
+      "bytes": 22186722,
+      "sha256": "ab5e07c0d79de27c9195d767bce3b54a23bc85455364149d5c34ddede1d278d0",
+      "verified_members": 146
+    }
+  ],
+  "preserves_previous_submissions": true,
+  "latest_video_recorded": false,
+  "validation": "Every ZIP CRC, member uniqueness and all member SHA256 checked;18slides rendered and visually inspected.",
+  "weights_sha256": "afbf6e55186bdd368cb0f0445ca2d61a77e6fdf98e53429bac890a32d3786e8f",
+  "test_evaluation_reexecuted": false
+}

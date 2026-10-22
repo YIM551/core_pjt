@@ -1,0 +1,147 @@
+{
+  "repository": "https://github.com/YIM551/core_pjt",
+  "release_tag": "backup-2026-10-22-submission-v2",
+  "tag": "backup-2026-10-22-submission-v2",
+  "base_commit": "7c4933e6412becaf88e32bf272d3f1f947e06aa6",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 36008,
+      "sha256": "ceac29f36ad8f7ef12f7073095dac31e1f122a0316428122acda6dca69106c12"
+    },
+    {
+      "path": "scripts/update_submission_presentation.mjs",
+      "bytes": 13649,
+      "sha256": "fa6d8c2c9ee3fc1442b644448d7eda31290b0b718b680661f3b6b4ab00b51820"
+    },
+    {
+      "path": "scripts/package_submission_v2.py",
+      "bytes": 7797,
+      "sha256": "4e173c744efe00bf59460c378418ad64d18fbf0bee6282a8f4e9029ccb067c7d"
+    },
+    {
+      "path": "output/submission_v2/AI 코어_2회차_집사형로봇_광주_5반_임나경_최신_v2_확정.pptx",
+      "bytes": 1673914,
+      "sha256": "3c2fcd0e54dbf74edcff567047baa1ca92947a1e9d86aa7bce25aa5a57399602"
+    },
+    {
+      "path": "output/submission_v2/latest_submission_status.json",
+      "bytes": 4600,
+      "sha256": "4ac1c65b160c5e5919af2edfa0057bb312e3101d20610f08bbe56f2d834ed722"
+    },
+    {
+      "path": "output/submission_v2/presentation_validation_v2.json",
+      "bytes": 5917,
+      "sha256": "d14b0249ef8626d5e7f8dd92e659cb189c0042932c14317139f713fc521bd40e"
+    },
+    {
+      "path": "output/submission_v2/submission_manifest_v2.json",
+      "bytes": 1474,
+      "sha256": "a813a32d2725b1036a0aafbeb79c7e1861ac0db876b50d7cd2e2cc3472417e40"
+    }
+  ],
+  "assets": [
+    {
+      "name": "home-butler-latest-v2.pptx",
+      "local_path": "output/submission_v2/AI 코어_2회차_집사형로봇_광주_5반_임나경_최신_v2_확정.pptx",
+      "restore_to": "output/submission_v2/AI 코어_2회차_집사형로봇_광주_5반_임나경_최신_v2_확정.pptx",
+      "bytes": 1673914,
+      "sha256": "3c2fcd0e54dbf74edcff567047baa1ca92947a1e9d86aa7bce25aa5a57399602",
+      "content_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+    },
+    {
+      "name": "PJT01_Gwangju_5_ImNagyeong_v2.zip",
+      "local_path": "output/submission_v2/AI 코어_2회차_PJT01_동작시연영상_광주_5반_임나경_최신_v2.zip",
+      "restore_to": "output/submission_v2/AI 코어_2회차_PJT01_동작시연영상_광주_5반_임나경_최신_v2.zip",
+      "bytes": 20087391,
+      "sha256": "c2dba1dee6e0fd7f93ae37d5d75e2fef8f6e5323b0765aee506c7465241283c8",
+      "content_type": "application/zip"
+    },
+    {
+      "name": "PJT02_Gwangju_5_ImNagyeong_v2.zip",
+      "local_path": "output/submission_v2/AI 코어_2회차_PJT02_동작시연영상_광주_5반_임나경_최신_v2.zip",
+      "restore_to": "output/submission_v2/AI 코어_2회차_PJT02_동작시연영상_광주_5반_임나경_최신_v2.zip",
+      "bytes": 20648484,
+      "sha256": "b255f19e6277e06b775e5a737a5e4a143d203d88a02cb4fda847cfa66be2ba60",
+      "content_type": "application/zip"
+    },
+    {
+      "name": "PJT03_Gwangju_5_ImNagyeong_v2.zip",
+      "local_path": "output/submission_v2/AI 코어_2회차_PJT03_동작시연영상_광주_5반_임나경_최신_v2.zip",
+      "restore_to": "output/submission_v2/AI 코어_2회차_PJT03_동작시연영상_광주_5반_임나경_최신_v2.zip",
+      "bytes": 22186722,
+      "sha256": "ab5e07c0d79de27c9195d767bce3b54a23bc85455364149d5c34ddede1d278d0",
+      "content_type": "application/zip"
+    }
+  ],
+  "previous_release": {
+    "tag": "backup-2026-10-22-specs",
+    "url": "https://github.com/YIM551/core_pjt/releases/tag/backup-2026-10-22-specs",
+    "assets": [
+      {
+        "name": "furniture-spec1-20261022-training.zip",
+        "local_path": ".backup/furniture-spec1-20261022-training.zip",
+        "bytes": 9819621,
+        "sha256": "b9e55705e262f74dbd0fd3971ab3b077b5b242ef68fa0093aeea4c881df9162a",
+        "restore_to": "project root (extract; project-relative paths retained)"
+      },
+      {
+        "name": "home-butler-presentation-20261022.pptx",
+        "local_path": "output/submission/AI 코어_2회차_집사형로봇_광주_5반_임나경_최종.pptx",
+        "bytes": 1511987,
+        "sha256": "495791e8421c97968312521d0af5eb6549ed2292df52febd77a28d753ab4dd5d",
+        "restore_to": "output/submission/AI 코어_2회차_집사형로봇_광주_5반_임나경_최종.pptx"
+      },
+      {
+        "name": "PJT01_Gwangju_5_ImNagyeong.zip",
+        "local_path": "output/submission/AI 코어_2회차_PJT01_동작시연영상_광주_5반_임나경.zip",
+        "bytes": 8447977,
+        "sha256": "286831bb47d6dc42c9864183c8853ad3818281cef3f3edf8a8019a7f563094d7",
+        "restore_to": "output/submission/AI 코어_2회차_PJT01_동작시연영상_광주_5반_임나경.zip"
+      },
+      {
+        "name": "PJT02_Gwangju_5_ImNagyeong.zip",
+        "local_path": "output/submission/AI 코어_2회차_PJT02_동작시연영상_광주_5반_임나경.zip",
+        "bytes": 4014652,
+        "sha256": "d7ce45da477ed0d1168a3dc165028eb3b168499719356d240ad869d520de223f",
+        "restore_to": "output/submission/AI 코어_2회차_PJT02_동작시연영상_광주_5반_임나경.zip"
+      },
+      {
+        "name": "PJT03_Gwangju_5_ImNagyeong.zip",
+        "local_path": "output/submission/AI 코어_2회차_PJT03_동작시연영상_광주_5반_임나경.zip",
+        "bytes": 5552406,
+        "sha256": "bc8e387b9c64bc8dc818ed86bd2a179376961327fbfc53fe6ed41a7df81adbb9",
+        "restore_to": "output/submission/AI 코어_2회차_PJT03_동작시연영상_광주_5반_임나경.zip"
+      },
+      {
+        "name": "pjt01-demo-20261022.webm",
+        "local_path": "results/spec_workflow_20261022/spec1/demo.webm",
+        "bytes": 898165,
+        "sha256": "2d3b7649b6aeba662fe143ff04c2a83be3a543613130fee0f2c391d43072546f",
+        "restore_to": "results/spec_workflow_20261022/spec1/demo.webm"
+      },
+      {
+        "name": "pjt02-demo-20261022.webm",
+        "local_path": "results/spec_workflow_20261022/spec2/demo.webm",
+        "bytes": 863669,
+        "sha256": "ff65193c42f48579826c3c25f9f29888e56fe2b107d97724a448ccf531d633fb",
+        "restore_to": "results/spec_workflow_20261022/spec2/demo.webm"
+      },
+      {
+        "name": "pjt03-demo-20261022.webm",
+        "local_path": "results/spec_workflow_20261022/spec3/demo.webm",
+        "bytes": 2464100,
+        "sha256": "cb2e9eb098644a41a5d284107b2c8067b29ab18d344a83ae21ee5bfc3b60d92b",
+        "restore_to": "results/spec_workflow_20261022/spec3/demo.webm"
+      }
+    ]
+  },
+  "slides": 18,
+  "archives": 3,
+  "old_deliverables_preserved": true,
+  "scope": "Updated Furniture integration, F206, VLM optimization and final test evaluation in deck and ZIPs; generation scripts and validation receipts included.",
+  "verification": "All local artifacts and all ZIP members match recorded SHA256; ZIP CRC and unique members verified.",
+  "video_scope": "Existing initial recordings retained; new changes documented as screenshots and execution evidence, no newly recorded demo.",
+  "repository_visibility": "public",
+  "publication_authorization": "User explicitly requested maintaining the public repository and backing up these deliverables."
+}

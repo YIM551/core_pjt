@@ -1,0 +1,105 @@
+{
+  "version": "v2",
+  "created_utc": "2026-10-22T02:12:51.682515+00:00",
+  "code_base_commit": "7c4933e6412becaf88e32bf272d3f1f947e06aa6",
+  "submitter": {
+    "region": "광주",
+    "class": "5반",
+    "name": "임나경"
+  },
+  "mandatory": {
+    "F101": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "model selection notes, conf comparison, measurement.csv"
+    },
+    "F102": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "VLM prompt comparison, time/RSS and regulated repeated outputs"
+    },
+    "F103": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "original PoC endpoints and measured sequential/parallel requests"
+    },
+    "F104": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "frozen curated dataset, pretrained transfer learning10epochs, same-valid aligned-class comparison"
+    },
+    "F201": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "YOLO summary and Korean <=40 character VLM contract with obstacle suffix preserved"
+    },
+    "F202": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "real GestureRecognizer,21landmarks/handedness, direction and mirror tests"
+    },
+    "F203": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "local dashboard, shared-frame YOLO/VLM APIs, independent errors/thread pools"
+    },
+    "F204": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "real Qwen3-4B answer with sourced text and defensive JSON parser"
+    },
+    "F301": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "API design and final64/64 live server checks"
+    },
+    "F302": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "LLM tool selection and guarded arguments"
+    },
+    "F303": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "grounded move/ask, direction-word boundaries, remembered follow-up steps"
+    },
+    "F304": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "real browser describe/ask/move and independently checked wall/boundary simulator result"
+    }
+  },
+  "optional": {
+    "F105": {
+      "status": "deferred",
+      "reason": "Live camera capture/custom comprehensive room annotations unavailable"
+    },
+    "F106": {
+      "status": "verified_static_experiments",
+      "evidence": "results/vlm_settings_20261022/",
+      "limits": "Six images,60 measured trials; no live-camera quality guarantee"
+    },
+    "F205": {
+      "status": "partial",
+      "reason": "rotation/mirror/finger counts16/16; three personally captured images and live camera not verified"
+    },
+    "F206": {
+      "status": "implemented_and_verified",
+      "evidence": "results/f206_20261022/",
+      "limits": "Supported class/count patterns; ambiguity reporting does not repair detector accuracy"
+    },
+    "F305": {
+      "status": "implemented_unverified_live",
+      "reason": "Existing gesture sequence code retained; no live webcam sequence recording"
+    },
+    "F306": {
+      "status": "verified_static_and_API",
+      "reason": "Real pointing image selects up, prompt/history/gesture direction priority verified; live mirrored camera remains unverified"
+    }
+  },
+  "test_status": "Final test87 evaluated; not used for tuning; no longer unused",
+  "final_test": {
+    "map50": 0.995,
+    "map50_95": 0.8950005607315391,
+    "precision_at_conf025": 1.0,
+    "recall_at_conf025": 1.0
+  },
+  "weights_sha256": "afbf6e55186bdd368cb0f0445ca2d61a77e6fdf98e53429bac890a32d3786e8f",
+  "video_scope": "Original spec1/2/3 browser videos retained as historical demonstrations. Latest Furniture/F206/optimization states are screenshots and actual JSON/log evidence, not newly recorded videos.",
+  "historical_record_notice": "results/spec_workflow_20261022/completion.json is the earlier snapshot. This status supersedes its F106/F206/test statements.",
+  "limits": [
+    "Small curated mainly-single-object validation set is not a real-room benchmark",
+    "COCO dining table and Furniture Table have different semantic breadth",
+    "VLM output formatting is verified; factual accuracy or safety of obstacle statements is not guaranteed",
+    "Ballie and SmartThings are reference concepts; no physical robot or SmartThings device is connected"
+  ],
+  "validation_receipt": "presentation_validation_v2.json"
+}

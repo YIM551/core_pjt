@@ -12,6 +12,8 @@ move 면 **시뮬레이터** 의 로봇이 움직이고, describe 면 장면을 
 
 ### Furniture 최종 test 평가 완료
 
+최신 18장 PPT와 PJT01·02·03 제출 ZIP v2는 `output/submission_v2/` 및 GitHub 릴리스 `backup-2026-10-22-submission-v2`에 보관한다. 생성 코드는 `scripts/update_submission_presentation.mjs`와 `scripts/package_submission_v2.py`다. 릴리스의 영문 다운로드 이름에 대응하는 원래 한글 파일명·복원 경로·SHA-256은 `results/backup_manifest_20261022_submission_v2.json`에 있다. 기존 시연 영상은 초기 촬영본이며 최신 변경은 ZIP의 화면·검증 기록에 반영했다.
+
 최종 평가 코드·valid/test 비교·박스 위치 비교 이미지는 Git 태그 `backup-2026-10-22-final-test`에 보관한다. 파일별 크기·SHA-256과 고정 가중치·분할 해시는 `results/backup_manifest_20261022_final_test.json`을 참조한다. 백업 과정에서 추론이나 학습을 다시 실행하지 않았다.
 
 이후 best.pt를 변경하지 않고 고정 test87장을 최종 평가했다. 기존 valid85장 결과를 같은 평가기로 재현했으며, test mAP50은99.50%, mAP50–95는89.50%, conf0.25·IoU0.5의 Precision/Recall은 각각100%다. valid mAP50–95 90.55%보다 약1.05%p 낮으며 Table의 test mAP50–95는82.91%다. 데이터·가중치 해시는 보존했고 test를 보고 튜닝하지 않았다. 상세 지표·한계·박스 사례는 `results/furniture_final_test_20261022/README.md`에 있다. **test87장은 이제 최종 평가에 사용한 데이터**이며 아래의 'test 미사용' 표현은 이전 실험 당시의 기록이다.
@@ -81,7 +83,7 @@ $env:CORE_YOLO_MODEL = 'C:\work\core_pjt\source\2회차_day1\runs\furniture_spec
 
 ### GitHub 백업과 복구
 
-백업 저장소는 **[YIM551/core_pjt](https://github.com/YIM551/core_pjt) (비공개)**다. 원본 데이터·모델·영상은 **[최초 백업 릴리스](https://github.com/YIM551/core_pjt/releases/tag/backup-2026-10-21)**, 최종 학습용 데이터는 **[데이터 정비 완료 백업 릴리스](https://github.com/YIM551/core_pjt/releases/tag/backup-2026-10-21-curated)**에서 관리한다. 후자의 태그는 VLM·PoC 실행 결과와 데이터 검수까지 포함한 코드 시점이다.
+백업 저장소는 **[YIM551/core_pjt](https://github.com/YIM551/core_pjt) (현재 공개, 사용자 요청으로 공개 유지)**다. 원본 데이터·모델·영상은 **[최초 백업 릴리스](https://github.com/YIM551/core_pjt/releases/tag/backup-2026-10-21)**, 최종 학습용 데이터는 **[데이터 정비 완료 백업 릴리스](https://github.com/YIM551/core_pjt/releases/tag/backup-2026-10-21-curated)**에서 관리한다. 후자의 태그는 VLM·PoC 실행 결과와 데이터 검수까지 포함한 코드 시점이다.
 
 | 위치 | 보관 내용 |
 |---|---|
