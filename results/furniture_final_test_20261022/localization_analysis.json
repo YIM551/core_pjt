@@ -1,0 +1,82 @@
+{
+  "operating_conf": 0.25,
+  "iou_threshold_counts": {
+    "0.5": {
+      "tp": 87,
+      "fp": 0,
+      "fn": 0
+    },
+    "0.75": {
+      "tp": 87,
+      "fp": 0,
+      "fn": 0
+    },
+    "0.9": {
+      "tp": 73,
+      "fp": 14,
+      "fn": 14
+    },
+    "0.95": {
+      "tp": 38,
+      "fp": 49,
+      "fn": 49
+    }
+  },
+  "lowest_iou_per_class": [
+    {
+      "id": "C109",
+      "image": "test/images/Chair--239-_jpg.rf.5892e4165b42c86883d60ec958f78e90.jpg",
+      "class": "Chair",
+      "iou": 0.9070325493812561,
+      "ground_truth_box": [
+        338.0,
+        45.00000000000004,
+        873.9999999999999,
+        1162.0
+      ],
+      "prediction_box": [
+        311.6271667480469,
+        26.63337516784668,
+        884.0752563476562,
+        1179.7120361328125
+      ]
+    },
+    {
+      "id": "S106",
+      "image": "test/images/Sofa--262-_jpg.rf.6762ce6622f2a6dc5c7b601361866995.jpg",
+      "class": "Sofa",
+      "iou": 0.8330326676368713,
+      "ground_truth_box": [
+        13.000000000000034,
+        381.00000000000006,
+        1153.0,
+        888.0
+      ],
+      "prediction_box": [
+        0.0,
+        383.6695556640625,
+        1160.2469482421875,
+        975.896728515625
+      ]
+    },
+    {
+      "id": "T118",
+      "image": "test/images/Table--250-_jpg.rf.f8faf57189486f2c1044076ff50d045c.jpg",
+      "class": "Table",
+      "iou": 0.8292348980903625,
+      "ground_truth_box": [
+        205.0,
+        604.0000000000001,
+        991.0000000000001,
+        1113.0
+      ],
+      "prediction_box": [
+        245.123046875,
+        628.4849853515625,
+        938.7728881835938,
+        1106.7598876953125
+      ]
+    }
+  ],
+  "legend": "Green = supplied ground truth, red = model prediction; examples chosen by lowest IoU per class."
+}

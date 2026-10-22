@@ -1,0 +1,154 @@
+{
+  "repository": "https://github.com/YIM551/core_pjt",
+  "tag": "backup-2026-10-22-final-test",
+  "base_commit": "c7f0d1ba1c28008c0418c9d363f617543249a309",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 35432,
+      "sha256": "4d9ec708ea74d6329035fb79ab46ec913ef53f8cab23e49648c8555237b187fe"
+    },
+    {
+      "path": "scripts/spec1_evaluate.py",
+      "bytes": 6917,
+      "sha256": "3b5534c24e72053ca7847ba7b9c195050142b79bea3c3c95387ad4ca3fcbfa7c"
+    },
+    {
+      "path": "scripts/final_furniture_evaluate.py",
+      "bytes": 5670,
+      "sha256": "5fe784aad130d2fe87ce366524a8c581b68b662b2d690c28df5a328db6d4fbc4"
+    },
+    {
+      "path": "scripts/analyze_final_localization.py",
+      "bytes": 2588,
+      "sha256": "06f5356b47e0fb9919a8f61ec4b80080d02e7fc5e1c64b15f2f3210c01084492"
+    },
+    {
+      "path": "results/furniture_final_test_20261022/comparison.json",
+      "bytes": 3823,
+      "sha256": "bc5831e84d347b893ff9f196b1db3519f146bf990c7a4b7196c9b52ca273a273"
+    },
+    {
+      "path": "results/furniture_final_test_20261022/evaluation_lock.json",
+      "bytes": 556,
+      "sha256": "63126413d35f770315cd82884995af20eaa6033d86724ae7dcb3bbe11ff78786"
+    },
+    {
+      "path": "results/furniture_final_test_20261022/localization_analysis.json",
+      "bytes": 1850,
+      "sha256": "57508e8e17200f8be7cce1c3820e39263c72ef9b7944b2e341a4e40d0d0fa2bd"
+    },
+    {
+      "path": "results/furniture_final_test_20261022/localization_examples.jpg",
+      "bytes": 55821,
+      "sha256": "dd687468f32303474217c57cd6bb8c83eaa9aedb0d80d094b9d22dc0e76ad8d0"
+    },
+    {
+      "path": "results/furniture_final_test_20261022/README.md",
+      "bytes": 3597,
+      "sha256": "b40c420f335ce87d7436c3a1b2b5c248e39809339807a1d850fafb11b8d2a433"
+    },
+    {
+      "path": "results/furniture_final_test_20261022/test_errors.json",
+      "bytes": 4,
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+    },
+    {
+      "path": "results/furniture_final_test_20261022/test_final_metrics.json",
+      "bytes": 1536,
+      "sha256": "8c146cc6312b7f8291fb3f547df3d48c9d1c52ed0468479af75a73974453f72d"
+    },
+    {
+      "path": "results/furniture_final_test_20261022/test_final_predictions.json",
+      "bytes": 1353254,
+      "sha256": "503b8a2690aa40483a439b8a093d1c859c85fbd7bcef9beab8f75fbb7a0934f9"
+    },
+    {
+      "path": "results/furniture_final_test_20261022/valid_reproduced_metrics.json",
+      "bytes": 1651,
+      "sha256": "30220dc9dad8eec9c7fcd22bb6719261d1257ffeaf4cfa805d58b1e6a5d65964"
+    },
+    {
+      "path": "results/furniture_final_test_20261022/valid_reproduced_predictions.json",
+      "bytes": 1449544,
+      "sha256": "2c4ce14a1cd52a9b7a46c0dd41d3323939d8093b05321da4f3a4bdac57944b07"
+    },
+    {
+      "path": "results/furniture_final_test_20261022/valid_vs_test.csv",
+      "bytes": 198,
+      "sha256": "bd68eb825a2380704d2a761b3efd893125e72c49ee2275d4db3c374a8ce8e7ba"
+    }
+  ],
+  "previous_release": {
+    "tag": "backup-2026-10-22-specs",
+    "url": "https://github.com/YIM551/core_pjt/releases/tag/backup-2026-10-22-specs",
+    "assets": [
+      {
+        "name": "furniture-spec1-20261022-training.zip",
+        "local_path": ".backup/furniture-spec1-20261022-training.zip",
+        "bytes": 9819621,
+        "sha256": "b9e55705e262f74dbd0fd3971ab3b077b5b242ef68fa0093aeea4c881df9162a",
+        "restore_to": "project root (extract; project-relative paths retained)"
+      },
+      {
+        "name": "home-butler-presentation-20261022.pptx",
+        "local_path": "output/submission/AI 코어_2회차_집사형로봇_광주_5반_임나경_최종.pptx",
+        "bytes": 1511987,
+        "sha256": "495791e8421c97968312521d0af5eb6549ed2292df52febd77a28d753ab4dd5d",
+        "restore_to": "output/submission/AI 코어_2회차_집사형로봇_광주_5반_임나경_최종.pptx"
+      },
+      {
+        "name": "PJT01_Gwangju_5_ImNagyeong.zip",
+        "local_path": "output/submission/AI 코어_2회차_PJT01_동작시연영상_광주_5반_임나경.zip",
+        "bytes": 8447977,
+        "sha256": "286831bb47d6dc42c9864183c8853ad3818281cef3f3edf8a8019a7f563094d7",
+        "restore_to": "output/submission/AI 코어_2회차_PJT01_동작시연영상_광주_5반_임나경.zip"
+      },
+      {
+        "name": "PJT02_Gwangju_5_ImNagyeong.zip",
+        "local_path": "output/submission/AI 코어_2회차_PJT02_동작시연영상_광주_5반_임나경.zip",
+        "bytes": 4014652,
+        "sha256": "d7ce45da477ed0d1168a3dc165028eb3b168499719356d240ad869d520de223f",
+        "restore_to": "output/submission/AI 코어_2회차_PJT02_동작시연영상_광주_5반_임나경.zip"
+      },
+      {
+        "name": "PJT03_Gwangju_5_ImNagyeong.zip",
+        "local_path": "output/submission/AI 코어_2회차_PJT03_동작시연영상_광주_5반_임나경.zip",
+        "bytes": 5552406,
+        "sha256": "bc8e387b9c64bc8dc818ed86bd2a179376961327fbfc53fe6ed41a7df81adbb9",
+        "restore_to": "output/submission/AI 코어_2회차_PJT03_동작시연영상_광주_5반_임나경.zip"
+      },
+      {
+        "name": "pjt01-demo-20261022.webm",
+        "local_path": "results/spec_workflow_20261022/spec1/demo.webm",
+        "bytes": 898165,
+        "sha256": "2d3b7649b6aeba662fe143ff04c2a83be3a543613130fee0f2c391d43072546f",
+        "restore_to": "results/spec_workflow_20261022/spec1/demo.webm"
+      },
+      {
+        "name": "pjt02-demo-20261022.webm",
+        "local_path": "results/spec_workflow_20261022/spec2/demo.webm",
+        "bytes": 863669,
+        "sha256": "ff65193c42f48579826c3c25f9f29888e56fe2b107d97724a448ccf531d633fb",
+        "restore_to": "results/spec_workflow_20261022/spec2/demo.webm"
+      },
+      {
+        "name": "pjt03-demo-20261022.webm",
+        "local_path": "results/spec_workflow_20261022/spec3/demo.webm",
+        "bytes": 2464100,
+        "sha256": "cb2e9eb098644a41a5d284107b2c8067b29ab18d344a83ae21ee5bfc3b60d92b",
+        "restore_to": "results/spec_workflow_20261022/spec3/demo.webm"
+      }
+    ]
+  },
+  "weights_sha256": "afbf6e55186bdd368cb0f0445ca2d61a77e6fdf98e53429bac890a32d3786e8f",
+  "split_manifest_sha256": "91fbacaceece08988cb58742e341980db8d39a4939d3c82dda5df497bacc0b2c",
+  "scope": [
+    "Frozen final test87 evaluation code and raw predictions",
+    "Same-evaluator valid85 reproduction and comparison",
+    "Metrics JSON/CSV, test errors, localization diagnostics and comparison image",
+    "Evaluation lock and interpretation/limitations"
+  ],
+  "test_status": "Used for final evaluation; not unused and not used for tuning.",
+  "backup_did_not_rerun_inference_or_training": true
+}

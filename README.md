@@ -10,6 +10,12 @@ move 면 **시뮬레이터** 의 로봇이 움직이고, describe 면 장면을 
 
 ## 2026-10-22 명세서 1·2·3 수행 결과
 
+### Furniture 최종 test 평가 완료
+
+최종 평가 코드·valid/test 비교·박스 위치 비교 이미지는 Git 태그 `backup-2026-10-22-final-test`에 보관한다. 파일별 크기·SHA-256과 고정 가중치·분할 해시는 `results/backup_manifest_20261022_final_test.json`을 참조한다. 백업 과정에서 추론이나 학습을 다시 실행하지 않았다.
+
+이후 best.pt를 변경하지 않고 고정 test87장을 최종 평가했다. 기존 valid85장 결과를 같은 평가기로 재현했으며, test mAP50은99.50%, mAP50–95는89.50%, conf0.25·IoU0.5의 Precision/Recall은 각각100%다. valid mAP50–95 90.55%보다 약1.05%p 낮으며 Table의 test mAP50–95는82.91%다. 데이터·가중치 해시는 보존했고 test를 보고 튜닝하지 않았다. 상세 지표·한계·박스 사례는 `results/furniture_final_test_20261022/README.md`에 있다. **test87장은 이제 최종 평가에 사용한 데이터**이며 아래의 'test 미사용' 표현은 이전 실험 당시의 기록이다.
+
 ### 후속 F206 보강
 
 이번 후속 코드·검증 기록은 Git 태그 `backup-2026-10-22-optimization`으로 보관한다. 파일별 SHA-256은 `results/backup_manifest_20261022_optimization.json`에 있다. Furniture 연결, F206 전후 비교, 캐시·단순 질문 최적화, VLM 크기·토큰 실험 및 최종 조건부 정책 검증을 포함한다. 학습 best.pt·last.pt와 당시 PPT·시연 영상·제출 ZIP은 기존 `backup-2026-10-22-specs` 릴리스에서 복원한다. 기존 제출물은 이번 후속 코드를 반영해 재생성한 버전이 아니라 당시 제출물 스냅샷이다.

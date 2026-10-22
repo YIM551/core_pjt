@@ -1,0 +1,122 @@
+{
+  "valid_reproduces_previous": true,
+  "test_used_for_tuning": false,
+  "valid": {
+    "model": "valid_reproduced",
+    "weights": "C:\\work\\core_pjt\\source\\2\ud68c\ucc28_day1\\runs\\furniture_spec1_20261022\\weights\\best.pt",
+    "images": 85,
+    "split": "valid",
+    "imgsz": 320,
+    "ap_prediction_conf_floor": 0.001,
+    "nms_iou": 0.7,
+    "operating_conf": 0.25,
+    "class_mapping": {
+      "0": 0,
+      "1": 1,
+      "2": 2
+    },
+    "map50": 0.9796100363332002,
+    "map50_95": 0.905460844543179,
+    "precision_at_conf025": 0.9534391534391534,
+    "recall_at_conf025": 0.9876543209876543,
+    "max_conf": 0.99793940782547,
+    "per_class": [
+      {
+        "class": "Chair",
+        "map50": 0.995,
+        "map50_95": 0.9613562463343109,
+        "precision_at_conf025": 0.9714285714285714,
+        "recall_at_conf025": 1.0,
+        "tp": 34,
+        "fp": 1,
+        "fn": 0
+      },
+      {
+        "class": "Sofa",
+        "map50": 0.9488301089996005,
+        "map50_95": 0.8336690966597745,
+        "precision_at_conf025": 0.8888888888888888,
+        "recall_at_conf025": 1.0,
+        "tp": 24,
+        "fp": 3,
+        "fn": 0
+      },
+      {
+        "class": "Table",
+        "map50": 0.995,
+        "map50_95": 0.9213571906354515,
+        "precision_at_conf025": 1.0,
+        "recall_at_conf025": 0.9629629629629629,
+        "tp": 26,
+        "fp": 0,
+        "fn": 1
+      }
+    ],
+    "elapsed_seconds": 2.656880900000033,
+    "split_manifest_sha256": "91fbacaceece08988cb58742e341980db8d39a4939d3c82dda5df497bacc0b2c",
+    "scope": "Three furniture classes, frozen valid split, same evaluator/settings as the original valid comparison. Test results are for final reporting, not tuning. COCO dining table and broad Furniture Table differ semantically."
+  },
+  "test": {
+    "model": "test_final",
+    "weights": "C:\\work\\core_pjt\\source\\2\ud68c\ucc28_day1\\runs\\furniture_spec1_20261022\\weights\\best.pt",
+    "images": 87,
+    "split": "test",
+    "imgsz": 320,
+    "ap_prediction_conf_floor": 0.001,
+    "nms_iou": 0.7,
+    "operating_conf": 0.25,
+    "class_mapping": {
+      "0": 0,
+      "1": 1,
+      "2": 2
+    },
+    "map50": 0.995,
+    "map50_95": 0.8950005607315391,
+    "precision_at_conf025": 1.0,
+    "recall_at_conf025": 1.0,
+    "max_conf": 0.9990469813346863,
+    "per_class": [
+      {
+        "class": "Chair",
+        "map50": 0.995,
+        "map50_95": 0.9406125,
+        "precision_at_conf025": 1.0,
+        "recall_at_conf025": 1.0,
+        "tp": 34,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "class": "Sofa",
+        "map50": 0.995,
+        "map50_95": 0.9153177536231883,
+        "precision_at_conf025": 1.0,
+        "recall_at_conf025": 1.0,
+        "tp": 24,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "class": "Table",
+        "map50": 0.995,
+        "map50_95": 0.8290714285714286,
+        "precision_at_conf025": 1.0,
+        "recall_at_conf025": 1.0,
+        "tp": 29,
+        "fp": 0,
+        "fn": 0
+      }
+    ],
+    "elapsed_seconds": 1.655517500001224,
+    "split_manifest_sha256": "91fbacaceece08988cb58742e341980db8d39a4939d3c82dda5df497bacc0b2c",
+    "scope": "Three furniture classes, frozen test split, same evaluator/settings as the original valid comparison. Test results are for final reporting, not tuning. COCO dining table and broad Furniture Table differ semantically."
+  },
+  "test_minus_valid_percentage_points": {
+    "map50": 1.5389963666799789,
+    "map50_95": -1.046028381163988,
+    "precision_at_conf025": 4.6560846560846585,
+    "recall_at_conf025": 1.2345679012345734
+  },
+  "test_images_with_operating_point_errors": 0,
+  "test_images_without_operating_point_errors": 87
+}

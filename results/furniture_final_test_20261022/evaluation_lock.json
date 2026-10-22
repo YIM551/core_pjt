@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-10-22T01:52:13.083485+00:00",
+  "weights_sha256": "afbf6e55186bdd368cb0f0445ca2d61a77e6fdf98e53429bac890a32d3786e8f",
+  "manifest_sha256": "91fbacaceece08988cb58742e341980db8d39a4939d3c82dda5df497bacc0b2c",
+  "policy": "Final test reporting only; no training or threshold/model selection from test results.",
+  "all_565_image_label_hashes_verified": true,
+  "cross_split_group_and_exact_image_overlap": false,
+  "imgsz": 320,
+  "conf_for_AP": 0.001,
+  "nms_iou": 0.7,
+  "operating_conf": 0.25,
+  "matching_iou": 0.5
+}
