@@ -486,12 +486,12 @@
               <span class="step">1.프롬프트+캡처</span><span class="arrow">→</span>
               <span class="step">2.분석중(YOLO/VLM/미디어파이프)</span><span class="arrow">→</span>
               <span class="step">3.추가정보 요청중</span><span class="arrow">→</span>
-              <span class="step">4.답변생성(LLM)</span><span class="arrow">→</span>
+              <span class="step">4.답변 구성</span><span class="arrow">→</span>
               <span class="step">5.이동중</span>
             </div>
           </div>
           <div class="box llm-answer">
-            <b>LLM 최종 답변</b>
+            <b>최종 답변</b>
             <div class="llm-answer-text" data-role="llm-answer-text">아직 생성된 답변이 없습니다</div>
           </div>
         </div>
@@ -551,12 +551,12 @@
                 <span class="step">1.프롬프트+캡처</span><span class="arrow">→</span>
                 <span class="step">2.분석중(YOLO/VLM/미디어파이프)</span><span class="arrow">→</span>
                 <span class="step">3.추가정보 요청중</span><span class="arrow">→</span>
-                <span class="step">4.답변생성(LLM)</span><span class="arrow">→</span>
+                <span class="step">4.답변 구성</span><span class="arrow">→</span>
                 <span class="step">5.이동중</span>
               </div>
             </div>
             <div class="box llm-answer">
-              <b>LLM 최종 답변</b>
+              <b>최종 답변</b>
               <div class="llm-answer-text" data-role="llm-answer-text">아직 생성된 답변이 없습니다</div>
             </div>
           </div>
@@ -1032,8 +1032,11 @@
         drawYoloBoxes(ctx, data.objects);
         // 캡처 시 canvas.width를 원본 프레임 폭으로 맞춰두므로 그대로 쓸 수 있다.
         var text = formatYoloResultText(data.objects, ctx && ctx.canvas ? ctx.canvas.width : 0);
+        if (data.analysis && data.analysis.cross_class_overlaps.length) {
+          text += '\n⚠ ' + data.analysis.summary + '\n겹치는 후보를 별개 물체로 합산하지 않습니다.';
+        }
         if (yoloResultEl) yoloResultEl.textContent = text;
-        return summarizeYoloForLlm(data.objects);
+        return data.analysis ? data.analysis.summary : summarizeYoloForLlm(data.objects);
       }).catch(function () {
         var text = 'YOLO 인식 오류가 발생했습니다.';
         if (yoloResultEl) yoloResultEl.textContent = text;
@@ -1233,7 +1236,8 @@
     // 하단 "시뮬레이터" 절에 정의됨. 이 함수는 <script> 전체 스코프에서 호출 시점
     // 이전에 실행이 끝나 있으므로 함수 선언 호이스팅으로 여기서 앞당겨 참조해도
     // 안전하다).
-    var WORKFLOW_STEP_DELAY_MS = 550;
+    // Advance on real work completion; do not add 550 ms per stage for animation.
+    var WORKFLOW_STEP_DELAY_MS = 0;
     var WORKFLOW_INFO_REQUEST_STEP_INDEX = 2; // "3.추가정보 요청중" (0-based)
     var WORKFLOW_ANSWER_READY_STEP_INDEX = 3; // "4.답변생성(LLM)"
     var WORKFLOW_MOVE_STEP_INDEX = 4; // "5.이동중"

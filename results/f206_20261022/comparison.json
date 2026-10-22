@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "same_weights": true,
+    "same_input_bytes": true,
+    "same_raw_yolo_detections": true,
+    "same_vlm_description": true,
+    "overlap_marked": true,
+    "no_certain_counts_for_ambiguous_region": true,
+    "conflict_reported": true,
+    "source_citations_enforced": true,
+    "uncertainty_explicit": true,
+    "no_false_sofa_count": true,
+    "integration_passed": true
+  },
+  "before_message": "소파 1개, 테이블 1개가 보여요.",
+  "after_message": "[YOLO] 중복 후보: Sofa/Table (종류·개수 미확정). [VLM] 테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음. [인식 불일치] 겹치는 후보는 별개 물체로 합산하지 않았으며 종류·개수는 미확정입니다. 이미지를 다시 확인해 주세요.",
+  "before_summary": "Sofa 1개, Table 1개",
+  "after_summary": "중복 후보: Sofa/Table (종류·개수 미확정)",
+  "overlaps": [
+    {
+      "indices": [
+        0,
+        1
+      ],
+      "labels": [
+        "Sofa",
+        "Table"
+      ],
+      "iou": 0.9369
+    }
+  ],
+  "input_sha256": "447b5ef42cd73ecbe777c95ef35ed6508352b978ec87cbeaed76ef3e2831a45f",
+  "weights_sha256": "afbf6e55186bdd368cb0f0445ca2d61a77e6fdf98e53429bac890a32d3786e8f",
+  "scope": "Ambiguity reporting improves; raw model accuracy is unchanged. VLM non-mention is unknown, not zero."
+}

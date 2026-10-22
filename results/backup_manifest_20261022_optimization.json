@@ -1,0 +1,475 @@
+{
+  "repository": "https://github.com/YIM551/core_pjt",
+  "tag": "backup-2026-10-22-optimization",
+  "base_commit": "87414eef4922808848ed688f5d27b98787f2f648",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 34394,
+      "sha256": "873d469d96d7bb915ddf84ab40e9a5eecfb51f7765a6252c6c6d246dc2a63dfa"
+    },
+    {
+      "path": "index.html",
+      "bytes": 139985,
+      "sha256": "f946150ca454a6bf50c9c3cb42ad76cefd20e46c10eae610378401f2e5821430"
+    },
+    {
+      "path": "inference_optimization.py",
+      "bytes": 2457,
+      "sha256": "50f6f81e24583c9d822403856bbd92ef93f69e6321810ae1f15f05de053484d9"
+    },
+    {
+      "path": "main.py",
+      "bytes": 27364,
+      "sha256": "8bdef4d2c37daa3a1b87160f13ba356bc2ff32d2c679cc05a7cfafcab611c360"
+    },
+    {
+      "path": "perception_consistency.py",
+      "bytes": 3909,
+      "sha256": "5bd144346e3bfcf36716f3e5c990308a04b6ddc5f6d82fdf8b3c2797b7b49b74"
+    },
+    {
+      "path": "results/f206_20261022/README.md",
+      "bytes": 2088,
+      "sha256": "9fc99c9b31bdd95fe7482d1111bf7586f3352abd3a881ab5f388ecbfb96987f0"
+    },
+    {
+      "path": "results/f206_20261022/after/Table-dashboard-input.jpg",
+      "bytes": 70654,
+      "sha256": "447b5ef42cd73ecbe777c95ef35ed6508352b978ec87cbeaed76ef3e2831a45f"
+    },
+    {
+      "path": "results/f206_20261022/after/Table.png",
+      "bytes": 549730,
+      "sha256": "b9da0786ad974ea2c90f8502c05d69d9fe14dc79891d6ca417b9883a18df5254"
+    },
+    {
+      "path": "results/f206_20261022/after/validation.json",
+      "bytes": 6973,
+      "sha256": "5e2d5f2250943b4f28e4e7a5d1315c0d0a006a7ea50a02b657e382611fdd2b94"
+    },
+    {
+      "path": "results/f206_20261022/api_validation.log",
+      "bytes": 5541,
+      "sha256": "2ed2026ba6fdf51e02f5ec804c479a521cbd29f46fca137b7b8b3fcdee037422"
+    },
+    {
+      "path": "results/f206_20261022/before.json",
+      "bytes": 14033,
+      "sha256": "78d6c2794cb16b2571480a2d4ca7c8108fbc476eda2f87377e28e2ac1854c622"
+    },
+    {
+      "path": "results/f206_20261022/before.png",
+      "bytes": 531997,
+      "sha256": "e1f785bc6a9d3fbfa2113984043f35b4198fd28fd1c5c3f4422cdef097dfc239"
+    },
+    {
+      "path": "results/f206_20261022/comparison.json",
+      "bytes": 1388,
+      "sha256": "a95d73b3d763020183c3662a04351e32c57a7c2c7eae1c9de9604e8fb941b806"
+    },
+    {
+      "path": "results/f206_20261022/server.stderr.log",
+      "bytes": 5494,
+      "sha256": "3f008886983a6badd8f6d9600e0476ee5e18bfdd9a50640f63698057bba579d8"
+    },
+    {
+      "path": "results/f206_20261022/server.stdout.log",
+      "bytes": 7217,
+      "sha256": "96629858f76398477bf593d377de63e7cc00b79e4b2ac1e55b654f88f97410e8"
+    },
+    {
+      "path": "results/furniture_dashboard_20261022/Chair-dashboard-input.jpg",
+      "bytes": 86939,
+      "sha256": "487f64c99750542be4ff7ae68b1831d730afd0ad7212bd8061dd248a75950309"
+    },
+    {
+      "path": "results/furniture_dashboard_20261022/Chair.png",
+      "bytes": 551440,
+      "sha256": "a071cc858b722ad6e40e7842dea4e4650d55b2e18fd25a874ffb66461f6d8e96"
+    },
+    {
+      "path": "results/furniture_dashboard_20261022/README.md",
+      "bytes": 2658,
+      "sha256": "3325e1eff760da75cacbad25ee6250428a0551fb731e681ba466debfdad08da9"
+    },
+    {
+      "path": "results/furniture_dashboard_20261022/Sofa-dashboard-input.jpg",
+      "bytes": 130659,
+      "sha256": "fe0ae9d01fbdfee20979a43691616d2b989cacd50fb58e180e6e8308f6245380"
+    },
+    {
+      "path": "results/furniture_dashboard_20261022/Sofa.png",
+      "bytes": 605390,
+      "sha256": "0abae4fbd80d96eaf183230f228dd1849994ed829dd84490de0fe0223d66efe2"
+    },
+    {
+      "path": "results/furniture_dashboard_20261022/Table-dashboard-input.jpg",
+      "bytes": 70654,
+      "sha256": "447b5ef42cd73ecbe777c95ef35ed6508352b978ec87cbeaed76ef3e2831a45f"
+    },
+    {
+      "path": "results/furniture_dashboard_20261022/Table.png",
+      "bytes": 531997,
+      "sha256": "e1f785bc6a9d3fbfa2113984043f35b4198fd28fd1c5c3f4422cdef097dfc239"
+    },
+    {
+      "path": "results/furniture_dashboard_20261022/server.stderr.log",
+      "bytes": 5404,
+      "sha256": "a70b4d8465c47901bfe33cb704a9121c47d5541abe78a114f1bc343a960952a6"
+    },
+    {
+      "path": "results/furniture_dashboard_20261022/server.stdout.log",
+      "bytes": 7563,
+      "sha256": "07a6a9e95128d8d96b1060b59bef54902804a32b1144c9b1e995d1b4350c4d24"
+    },
+    {
+      "path": "results/furniture_dashboard_20261022/validation.json",
+      "bytes": 14033,
+      "sha256": "78d6c2794cb16b2571480a2d4ca7c8108fbc476eda2f87377e28e2ac1854c622"
+    },
+    {
+      "path": "results/optimization_20261022/README.md",
+      "bytes": 3359,
+      "sha256": "366c733d8ce90a628da62fd0db7978d7c8abfb30bb4ced8332d68c3ad72c3648"
+    },
+    {
+      "path": "results/optimization_20261022/after_cached.json",
+      "bytes": 8781,
+      "sha256": "c432e524b140e4393086aaf12e15ca5dbe0b2c5a1ad49b695b287168c5bd0e23"
+    },
+    {
+      "path": "results/optimization_20261022/after_uncached.json",
+      "bytes": 8772,
+      "sha256": "4f202655864328d12194b2ce2fef39915fe54bd4b830282a8e990f733b78d0d4"
+    },
+    {
+      "path": "results/optimization_20261022/api_validation.log",
+      "bytes": 5461,
+      "sha256": "477165729222ed91c9dcb2a05ada5472b91c5476cd579cc3c71fbd402749f406"
+    },
+    {
+      "path": "results/optimization_20261022/before.json",
+      "bytes": 8533,
+      "sha256": "2ab22c71c9e4dc7ce983f328fe622f822d4c65b73a5c4bf74fb72f9a438cea66"
+    },
+    {
+      "path": "results/optimization_20261022/browser/Table-dashboard-input.jpg",
+      "bytes": 70654,
+      "sha256": "447b5ef42cd73ecbe777c95ef35ed6508352b978ec87cbeaed76ef3e2831a45f"
+    },
+    {
+      "path": "results/optimization_20261022/browser/Table.png",
+      "bytes": 549776,
+      "sha256": "96b005cd7ee8bd960afa7c24c5da38312e282901ff54f32ff449c2604b5d02ee"
+    },
+    {
+      "path": "results/optimization_20261022/browser/validation.json",
+      "bytes": 7050,
+      "sha256": "6548fd8821ab186626548830b269c2db095b1e9166bce83c36b88d09105167b1"
+    },
+    {
+      "path": "results/optimization_20261022/comparison.json",
+      "bytes": 1029,
+      "sha256": "2e76f8fa6ca9625bbbfbca1ebb7fe3959ab6d62d37bd5f1495b6ca334ba6546f"
+    },
+    {
+      "path": "results/optimization_20261022/optimized.stderr.log",
+      "bytes": 3759,
+      "sha256": "6c16b20a089d604b46192f2c2c5a07d3a72269d00a1f5d918fb15b752704143b"
+    },
+    {
+      "path": "results/optimization_20261022/optimized.stdout.log",
+      "bytes": 7484,
+      "sha256": "e47282fdd5fa33807b23817e84d1a6df3dee99a848e8c4f2a112eaac1615f96a"
+    },
+    {
+      "path": "results/optimization_20261022/uncached.stderr.log",
+      "bytes": 3670,
+      "sha256": "d4df9959eff8e211d7d91a8883db5669a45cfc19d5e1c8fb0c27f581ab5a230e"
+    },
+    {
+      "path": "results/optimization_20261022/uncached.stdout.log",
+      "bytes": 2103,
+      "sha256": "0887cafb382f687370de32e5cd7426f697f75885db5c562af516ebb19c76ca3f"
+    },
+    {
+      "path": "results/vlm_settings_20261022/README.md",
+      "bytes": 4260,
+      "sha256": "aee896ce1b2718aa35c22b0eae2aa6c3c82486ab0454df8e66da76de9ef6c354"
+    },
+    {
+      "path": "results/vlm_settings_20261022/browser/Chair-dashboard-input.jpg",
+      "bytes": 86939,
+      "sha256": "487f64c99750542be4ff7ae68b1831d730afd0ad7212bd8061dd248a75950309"
+    },
+    {
+      "path": "results/vlm_settings_20261022/browser/Chair.png",
+      "bytes": 554629,
+      "sha256": "d4fb1b80d72dac9948c5097e4940d8b1771ee0baff0495ab72f074bd99540286"
+    },
+    {
+      "path": "results/vlm_settings_20261022/browser/Sofa-dashboard-input.jpg",
+      "bytes": 130659,
+      "sha256": "fe0ae9d01fbdfee20979a43691616d2b989cacd50fb58e180e6e8308f6245380"
+    },
+    {
+      "path": "results/vlm_settings_20261022/browser/Sofa.png",
+      "bytes": 608459,
+      "sha256": "4b7003088a4b9977d6fd9abe744862c9887b25c3f624d4bb395e280c2eaad614"
+    },
+    {
+      "path": "results/vlm_settings_20261022/browser/Table-dashboard-input.jpg",
+      "bytes": 70654,
+      "sha256": "447b5ef42cd73ecbe777c95ef35ed6508352b978ec87cbeaed76ef3e2831a45f"
+    },
+    {
+      "path": "results/vlm_settings_20261022/browser/Table.png",
+      "bytes": 549693,
+      "sha256": "91c0680bf2c459749290ec6755c2f438aa9ca3401a32f7df8cb98f573eb3c27d"
+    },
+    {
+      "path": "results/vlm_settings_20261022/browser/validation.json",
+      "bytes": 17606,
+      "sha256": "b1d4573549f2a594fd87b2937864538f768df4da1debd74196cd50df4513b633"
+    },
+    {
+      "path": "results/vlm_settings_20261022/comparison.json",
+      "bytes": 5047,
+      "sha256": "122a3a4a30a2419b33d1f89057c7d449ceefd5522e7a43f109e89281258fa544"
+    },
+    {
+      "path": "results/vlm_settings_20261022/confirm.json",
+      "bytes": 13473,
+      "sha256": "7d872605f55c6ff5692fe51e2fa1bcba8188fc59dee8b02f5febc91599a14cd9"
+    },
+    {
+      "path": "results/vlm_settings_20261022/confirm.stderr.log",
+      "bytes": 13464,
+      "sha256": "b04e7e07196f7f705473cd5115fa3e9b49fa0581929f610388de4d1fbc9ab1cf"
+    },
+    {
+      "path": "results/vlm_settings_20261022/confirm.stdout.log",
+      "bytes": 4154,
+      "sha256": "ccceb06c22fb70217c06917c220b58845de539348604956566d530660d968540"
+    },
+    {
+      "path": "results/vlm_settings_20261022/confirm40.json",
+      "bytes": 7558,
+      "sha256": "44155170517265e57b34af44d00a3f5c0fd0e9b71b0c2b063cdba177c7f4ae16"
+    },
+    {
+      "path": "results/vlm_settings_20261022/confirm40.stderr.log",
+      "bytes": 8145,
+      "sha256": "0bb789f0bbf1f81575f7d544a14e0809cbdee57841db66835a866a938b351940"
+    },
+    {
+      "path": "results/vlm_settings_20261022/confirm40.stdout.log",
+      "bytes": 2117,
+      "sha256": "2e7954b6f382e388591e2d6f7db1364b3be11bee698f1e492961e49bdf723006"
+    },
+    {
+      "path": "results/vlm_settings_20261022/deployment_verification.json",
+      "bytes": 657,
+      "sha256": "133d1d8f4b256cee03f7be3ca4ed9e36310d73a33c8b27c63b2ef68307020e2e"
+    },
+    {
+      "path": "results/vlm_settings_20261022/measurements.csv",
+      "bytes": 5881,
+      "sha256": "71ff78db25a68ead8ae2b59fcd39f08451aac62102699932fcd562a3420a2881"
+    },
+    {
+      "path": "results/vlm_settings_20261022/policy.stderr.log",
+      "bytes": 11509,
+      "sha256": "d43e89874f1d77016378761553d49d3e1f6ef0c5ea30c32d02978b5383278aa5"
+    },
+    {
+      "path": "results/vlm_settings_20261022/policy.stdout.log",
+      "bytes": 5654,
+      "sha256": "8a3615468717e1bcb4d62a5978f2726f3bf4f6545f1594f865c0ca02d1a5c62a"
+    },
+    {
+      "path": "results/vlm_settings_20261022/policy_validation.json",
+      "bytes": 7843,
+      "sha256": "36208ce0d07cd1951fc61b1de2fc04057581a3b49436a4e6d7ace7cb116f348e"
+    },
+    {
+      "path": "results/vlm_settings_20261022/refine.json",
+      "bytes": 12281,
+      "sha256": "3d15ed481c94995b82d790c937487ba630e60210004e0d2cc5aabc0ff1114b81"
+    },
+    {
+      "path": "results/vlm_settings_20261022/refine.stderr.log",
+      "bytes": 11512,
+      "sha256": "96427afd278c3f4197b4cd2f9278d28c285bc2f1fa685fdc96fea218bfcfbcd6"
+    },
+    {
+      "path": "results/vlm_settings_20261022/refine.stdout.log",
+      "bytes": 3966,
+      "sha256": "977994b963d6553eea2bc3d7caa5d28b8dcc9200eab9e701be168ef89241d478"
+    },
+    {
+      "path": "results/vlm_settings_20261022/screen.json",
+      "bytes": 17922,
+      "sha256": "8f3be390cde5235f0007abcac05a7feb927623b9ef8e91c7717d4a22b4955f70"
+    },
+    {
+      "path": "results/vlm_settings_20261022/server.stderr.log",
+      "bytes": 2803,
+      "sha256": "c1205df4097ea38ffec9637b642d1f6de3f183088b8f5cbcaa9e75a5df499085"
+    },
+    {
+      "path": "results/vlm_settings_20261022/server.stdout.log",
+      "bytes": 4216,
+      "sha256": "d8d6f42be51e2c0f548eb65b130767782eed4bc4d7b6ea9873a0ab7f13d8c08d"
+    },
+    {
+      "path": "scripts/benchmark_dashboard.py",
+      "bytes": 2923,
+      "sha256": "45a5b8f82581803ec06ac6c14fa2ab508630969f0987a37f65f5488ecbd4726b"
+    },
+    {
+      "path": "scripts/benchmark_vlm_settings.py",
+      "bytes": 4724,
+      "sha256": "33f33746afa1c5a8db77cde784869e542c91f9eb8b50dadacb97debb3c4dfaf1"
+    },
+    {
+      "path": "scripts/compare_f206.py",
+      "bytes": 2414,
+      "sha256": "b3015f936f976695a6e57e9bd1854c0629fd037b6f1eea89ecf0edcbb097b5b6"
+    },
+    {
+      "path": "scripts/compare_optimization.py",
+      "bytes": 2257,
+      "sha256": "130834d46f4eea306a46f377b778a7e63660c55246fe4b20ce621546885081e5"
+    },
+    {
+      "path": "scripts/furniture_dashboard_validate.mjs",
+      "bytes": 7373,
+      "sha256": "114a9d0fcf214cfa808b785795216d067a67c1f8b95762f7a9e0f3a5603736cf"
+    },
+    {
+      "path": "scripts/start_furniture_dashboard.ps1",
+      "bytes": 630,
+      "sha256": "d47c6f0eacf58bd5653cd779d194c67b2cb3323bcdd256ab145a78d2a0a1507b"
+    },
+    {
+      "path": "scripts/summarize_vlm_study.py",
+      "bytes": 3839,
+      "sha256": "ffbef2d85a34876a302b7859c8a7a2689da627de695f9b62afe28eedb1d25ea2"
+    },
+    {
+      "path": "scripts/test_inference_optimization.py",
+      "bytes": 4182,
+      "sha256": "d24b978706a27b1826f6207db518cfcfcca0bab04cc948007ad10b48ff037fad"
+    },
+    {
+      "path": "scripts/test_perception_consistency.py",
+      "bytes": 2252,
+      "sha256": "e958ec912abd9c1f894ebea16422eee57a3581d9dcd5147cf1d6a712a4c81cc2"
+    },
+    {
+      "path": "scripts/validate_vlm_policy.py",
+      "bytes": 2572,
+      "sha256": "73cc065362e89972ca981303945ace6fc8bf708210a9fc89b9dedbac684caf57"
+    },
+    {
+      "path": "scripts/verify_vlm_deployment.py",
+      "bytes": 1323,
+      "sha256": "5f80d6edec9d7c37267993f77c10cbdadbcec47908e018f320578ecdd51b8ab0"
+    }
+  ],
+  "file_count": 75,
+  "bytes": 6285982,
+  "previous_release": {
+    "tag": "backup-2026-10-22-specs",
+    "url": "https://github.com/YIM551/core_pjt/releases/tag/backup-2026-10-22-specs",
+    "assets": [
+      {
+        "name": "furniture-spec1-20261022-training.zip",
+        "local_path": ".backup/furniture-spec1-20261022-training.zip",
+        "bytes": 9819621,
+        "sha256": "b9e55705e262f74dbd0fd3971ab3b077b5b242ef68fa0093aeea4c881df9162a",
+        "restore_to": "project root (extract; project-relative paths retained)"
+      },
+      {
+        "name": "home-butler-presentation-20261022.pptx",
+        "local_path": "output/submission/AI 코어_2회차_집사형로봇_광주_5반_임나경_최종.pptx",
+        "bytes": 1511987,
+        "sha256": "495791e8421c97968312521d0af5eb6549ed2292df52febd77a28d753ab4dd5d",
+        "restore_to": "output/submission/AI 코어_2회차_집사형로봇_광주_5반_임나경_최종.pptx"
+      },
+      {
+        "name": "PJT01_Gwangju_5_ImNagyeong.zip",
+        "local_path": "output/submission/AI 코어_2회차_PJT01_동작시연영상_광주_5반_임나경.zip",
+        "bytes": 8447977,
+        "sha256": "286831bb47d6dc42c9864183c8853ad3818281cef3f3edf8a8019a7f563094d7",
+        "restore_to": "output/submission/AI 코어_2회차_PJT01_동작시연영상_광주_5반_임나경.zip"
+      },
+      {
+        "name": "PJT02_Gwangju_5_ImNagyeong.zip",
+        "local_path": "output/submission/AI 코어_2회차_PJT02_동작시연영상_광주_5반_임나경.zip",
+        "bytes": 4014652,
+        "sha256": "d7ce45da477ed0d1168a3dc165028eb3b168499719356d240ad869d520de223f",
+        "restore_to": "output/submission/AI 코어_2회차_PJT02_동작시연영상_광주_5반_임나경.zip"
+      },
+      {
+        "name": "PJT03_Gwangju_5_ImNagyeong.zip",
+        "local_path": "output/submission/AI 코어_2회차_PJT03_동작시연영상_광주_5반_임나경.zip",
+        "bytes": 5552406,
+        "sha256": "bc8e387b9c64bc8dc818ed86bd2a179376961327fbfc53fe6ed41a7df81adbb9",
+        "restore_to": "output/submission/AI 코어_2회차_PJT03_동작시연영상_광주_5반_임나경.zip"
+      },
+      {
+        "name": "pjt01-demo-20261022.webm",
+        "local_path": "results/spec_workflow_20261022/spec1/demo.webm",
+        "bytes": 898165,
+        "sha256": "2d3b7649b6aeba662fe143ff04c2a83be3a543613130fee0f2c391d43072546f",
+        "restore_to": "results/spec_workflow_20261022/spec1/demo.webm"
+      },
+      {
+        "name": "pjt02-demo-20261022.webm",
+        "local_path": "results/spec_workflow_20261022/spec2/demo.webm",
+        "bytes": 863669,
+        "sha256": "ff65193c42f48579826c3c25f9f29888e56fe2b107d97724a448ccf531d633fb",
+        "restore_to": "results/spec_workflow_20261022/spec2/demo.webm"
+      },
+      {
+        "name": "pjt03-demo-20261022.webm",
+        "local_path": "results/spec_workflow_20261022/spec3/demo.webm",
+        "bytes": 2464100,
+        "sha256": "cb2e9eb098644a41a5d284107b2c8067b29ab18d344a83ae21ee5bfc3b60d92b",
+        "restore_to": "results/spec_workflow_20261022/spec3/demo.webm"
+      }
+    ]
+  },
+  "furniture_best_pt": {
+    "path": "source/2회차_day1/runs/furniture_spec1_20261022/weights/best.pt",
+    "sha256": "afbf6e55186bdd368cb0f0445ca2d61a77e6fdf98e53429bac890a32d3786e8f",
+    "restore_from": "furniture-spec1-20261022-training.zip in previous release"
+  },
+  "scope": [
+    "Furniture best.pt dashboard connection and three-image integration",
+    "F206 ambiguity/count mismatch/source attribution and before/after comparison",
+    "Simple-scene fast path, bounded exact-frame cache, removal of artificial UI waits",
+    "VLM resolution/token screening and six-image adaptive policy comparison",
+    "Real HTTP/browser evidence, screenshots, metrics, scripts and documentation"
+  ],
+  "checks": {
+    "optimization_unit_tests": "8/8",
+    "F206_unit_tests": "5/5",
+    "last_live_API_regression": "64/64 (optimization_20261022/api_validation.log)",
+    "VLM_deployment": "10/10 (vlm_settings_20261022/deployment_verification.json)"
+  },
+  "restore": [
+    "Clone this tag; recreate the Python environment using requirements.txt.",
+    "Restore unchanged Furniture weights from the previous release and datasets/models using README.",
+    "Run powershell -ExecutionPolicy Bypass -File scripts/start_furniture_dashboard.ps1; open localhost8003."
+  ],
+  "excluded": [
+    "virtual environment and caches",
+    "unchanged GGUF model binaries",
+    "private backup staging helpers"
+  ],
+  "note": "Original submission decks/ZIPs remain the prior snapshot; this tag contains subsequent code and evidence."
+}

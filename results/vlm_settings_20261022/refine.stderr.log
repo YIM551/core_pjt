@@ -1,0 +1,247 @@
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 8
+image_tokens->ny = 8
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=224, ny=224)
+clip_image_batch_encode: output embedding shape [2048, 64, 1]
+image slice encoded in 673 ms
+decoding image batch 1/1, n_tokens_batch = 64
+image decoded (batch 1/1) in 303 ms
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 14
+image_tokens->ny = 14
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=392, ny=392)
+clip_image_batch_encode: output embedding shape [2048, 196, 1]
+image slice encoded in 2945 ms
+decoding image batch 1/1, n_tokens_batch = 196
+image decoded (batch 1/1) in 1131 ms
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 15
+image_tokens->ny = 15
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=420, ny=420)
+clip_image_batch_encode: output embedding shape [2048, 225, 1]
+image slice encoded in 3449 ms
+decoding image batch 1/1, n_tokens_batch = 225
+image decoded (batch 1/1) in 1276 ms
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 14
+image_tokens->ny = 14
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=392, ny=392)
+clip_image_batch_encode: output embedding shape [2048, 196, 1]
+image slice encoded in 3007 ms
+decoding image batch 1/1, n_tokens_batch = 196
+image decoded (batch 1/1) in 1189 ms
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 15
+image_tokens->ny = 15
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=420, ny=420)
+clip_image_batch_encode: output embedding shape [2048, 225, 1]
+image slice encoded in 3453 ms
+decoding image batch 1/1, n_tokens_batch = 225
+image decoded (batch 1/1) in 1260 ms
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 14
+image_tokens->ny = 14
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=392, ny=392)
+clip_image_batch_encode: output embedding shape [2048, 196, 1]
+image slice encoded in 2931 ms
+decoding image batch 1/1, n_tokens_batch = 196
+image decoded (batch 1/1) in 1091 ms
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 15
+image_tokens->ny = 15
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=420, ny=420)
+clip_image_batch_encode: output embedding shape [2048, 225, 1]
+image slice encoded in 3373 ms
+decoding image batch 1/1, n_tokens_batch = 225
+image decoded (batch 1/1) in 1230 ms
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 15
+image_tokens->ny = 15
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=420, ny=420)
+clip_image_batch_encode: output embedding shape [2048, 225, 1]
+image slice encoded in 3474 ms
+decoding image batch 1/1, n_tokens_batch = 225
+image decoded (batch 1/1) in 1286 ms
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 15
+image_tokens->ny = 15
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=420, ny=420)
+clip_image_batch_encode: output embedding shape [2048, 225, 1]
+image slice encoded in 3439 ms
+decoding image batch 1/1, n_tokens_batch = 225
+image decoded (batch 1/1) in 1242 ms
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 15
+image_tokens->ny = 15
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=420, ny=420)
+clip_image_batch_encode: output embedding shape [2048, 225, 1]
+image slice encoded in 3442 ms
+decoding image batch 1/1, n_tokens_batch = 225
+image decoded (batch 1/1) in 1320 ms
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 14
+image_tokens->ny = 14
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=392, ny=392)
+clip_image_batch_encode: output embedding shape [2048, 196, 1]
+image slice encoded in 2895 ms
+decoding image batch 1/1, n_tokens_batch = 196
+image decoded (batch 1/1) in 1108 ms
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 14
+image_tokens->ny = 14
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=392, ny=392)
+clip_image_batch_encode: output embedding shape [2048, 196, 1]
+image slice encoded in 3001 ms
+decoding image batch 1/1, n_tokens_batch = 196
+image decoded (batch 1/1) in 1183 ms
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 14
+image_tokens->ny = 14
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=392, ny=392)
+clip_image_batch_encode: output embedding shape [2048, 196, 1]
+image slice encoded in 3012 ms
+decoding image batch 1/1, n_tokens_batch = 196
+image decoded (batch 1/1) in 1134 ms

@@ -1,0 +1,221 @@
+{
+  "phase": "confirm",
+  "cache": "describe_scene called directly; model.reset before every trial; app result cache bypassed",
+  "prompt": "이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.",
+  "temperature": 0,
+  "samples": [
+    {
+      "label": "Chair",
+      "expected_words": [
+        "의자"
+      ],
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Chair--172-_jpg.rf.24ad5ff90243c5f226c4187c346e2341.jpg"
+    },
+    {
+      "label": "Sofa",
+      "expected_words": [
+        "소파"
+      ],
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Sofa--282-_jpg.rf.43355efb16fd73f87c063dbfea856587.jpg"
+    },
+    {
+      "label": "Table",
+      "expected_words": [
+        "테이블",
+        "탁자",
+        "식탁",
+        "책상"
+      ],
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Table--141-_jpg.rf.8ef25de084be2f8ac6447dc2746a0306.jpg"
+    }
+  ],
+  "rows": [
+    {
+      "label": "Sofa",
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Sofa--282-_jpg.rf.43355efb16fd73f87c063dbfea856587.jpg",
+      "input_sha256": "96ce666faf34b6500d4c1aa04cdba1949e5f4eb4513e565dac938769b156f85d",
+      "side": 420,
+      "max_tokens": 40,
+      "repeat": 0,
+      "seconds": 3.915391800001089,
+      "description": "거실에 큰 소파가 있습니다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 3.906688799999756,
+          "usage": {
+            "prompt_tokens": 111,
+            "completion_tokens": 16,
+            "total_tokens": 127
+          },
+          "finish_reason": "stop",
+          "raw_text": ": 거실에 큰 소파가 있습니다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Sofa",
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Sofa--282-_jpg.rf.43355efb16fd73f87c063dbfea856587.jpg",
+      "input_sha256": "96ce666faf34b6500d4c1aa04cdba1949e5f4eb4513e565dac938769b156f85d",
+      "side": 420,
+      "max_tokens": 40,
+      "repeat": 1,
+      "seconds": 4.020646900000429,
+      "description": "거실에 큰 소파가 있습니다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 4.012077900000804,
+          "usage": {
+            "prompt_tokens": 111,
+            "completion_tokens": 16,
+            "total_tokens": 127
+          },
+          "finish_reason": "stop",
+          "raw_text": ": 거실에 큰 소파가 있습니다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Chair",
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Chair--172-_jpg.rf.24ad5ff90243c5f226c4187c346e2341.jpg",
+      "input_sha256": "aaf4fe139b1086884e58ad85cf38a894c6aab8ff2e3850740bf9f980d00e15f0",
+      "side": 420,
+      "max_tokens": 40,
+      "repeat": 1,
+      "seconds": 4.301980799999001,
+      "description": "방에 빨간 의자가 하나 놓여 있다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 4.288012500001059,
+          "usage": {
+            "prompt_tokens": 111,
+            "completion_tokens": 22,
+            "total_tokens": 133
+          },
+          "finish_reason": "stop",
+          "raw_text": ": 방에 빨간 의자가 하나 놓여 있다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Table",
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Table--141-_jpg.rf.8ef25de084be2f8ac6447dc2746a0306.jpg",
+      "input_sha256": "5abc57bb8dd79d5293c1fdfeb18891a8ff45d49004f3d7b822b5937913595e81",
+      "side": 420,
+      "max_tokens": 40,
+      "repeat": 0,
+      "seconds": 11.094097299999703,
+      "description": "책상이 있습니다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 5.945590100000118,
+          "usage": {
+            "prompt_tokens": 111,
+            "completion_tokens": 40,
+            "total_tokens": 151
+          },
+          "finish_reason": "length",
+          "raw_text": "\n이 책상은 나무로 만들어져 있으며, 좌우에 각각 1개의 선반과 1개의 선반, 그리고 좌측에 1개"
+        },
+        {
+          "seconds": 5.13931810000031,
+          "usage": {
+            "prompt_tokens": 138,
+            "completion_tokens": 12,
+            "total_tokens": 150
+          },
+          "finish_reason": "stop",
+          "raw_text": ": 책상이 있습니다, 장애물 없음."
+        }
+      ],
+      "retry_count": 1,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Table",
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Table--141-_jpg.rf.8ef25de084be2f8ac6447dc2746a0306.jpg",
+      "input_sha256": "5abc57bb8dd79d5293c1fdfeb18891a8ff45d49004f3d7b822b5937913595e81",
+      "side": 420,
+      "max_tokens": 40,
+      "repeat": 1,
+      "seconds": 11.08872650000012,
+      "description": "책상이 있습니다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 5.94223779999993,
+          "usage": {
+            "prompt_tokens": 111,
+            "completion_tokens": 40,
+            "total_tokens": 151
+          },
+          "finish_reason": "length",
+          "raw_text": "\n이 책상은 나무로 만들어져 있으며, 좌우에 각각 1개의 선반과 1개의 선반, 그리고 좌측에 1개"
+        },
+        {
+          "seconds": 5.137290900000153,
+          "usage": {
+            "prompt_tokens": 138,
+            "completion_tokens": 12,
+            "total_tokens": 150
+          },
+          "finish_reason": "stop",
+          "raw_text": ": 책상이 있습니다, 장애물 없음."
+        }
+      ],
+      "retry_count": 1,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Chair",
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Chair--172-_jpg.rf.24ad5ff90243c5f226c4187c346e2341.jpg",
+      "input_sha256": "aaf4fe139b1086884e58ad85cf38a894c6aab8ff2e3850740bf9f980d00e15f0",
+      "side": 420,
+      "max_tokens": 40,
+      "repeat": 0,
+      "seconds": 5.380661399998644,
+      "description": "방에 빨간 의자가 하나 놓여 있다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 5.370405800000299,
+          "usage": {
+            "prompt_tokens": 111,
+            "completion_tokens": 22,
+            "total_tokens": 133
+          },
+          "finish_reason": "stop",
+          "raw_text": ": 방에 빨간 의자가 하나 놓여 있다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    }
+  ],
+  "summary": [
+    {
+      "side": 420,
+      "max_tokens": 40,
+      "trials": 6,
+      "median_seconds": 4.841321099998822,
+      "format_pass": 6,
+      "target_mentioned": 6,
+      "retries": 2
+    }
+  ]
+}

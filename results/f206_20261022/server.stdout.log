@@ -1,0 +1,75 @@
+INFO:     127.0.0.1:55827 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64296 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64296 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64296 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:64296 - "GET /mediapipe/wasm/vision_wasm_internal.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64296 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64296 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64296 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64296 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+[yolo] 시작 10:26:05    3664 ms  1200x1200  객체 2개
+INFO:     127.0.0.1:53422 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 10:26:05   12806 ms  테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.
+INFO:     127.0.0.1:64296 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 10:26:18    8973 ms  Q. 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘. → describe   [YOLO] 중복 후보: Sofa/Table (종류·개수 미확정). [VLM] 테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음. [인식 불일치] 겹치는 후보는 별개 물체로 합산하지 않았으며 종류·개수는 미확정입니다. 이미지를 다시 확인해 주세요.
+INFO:     127.0.0.1:64296 - "POST /api/llm-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61499 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61502 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61502 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61502 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61502 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61502 - "POST /api/yolo-detect HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:61502 - "POST /api/yolo-detect HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:61502 - "POST /api/vlm-describe HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:61502 - "POST /api/vlm-describe HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:61502 - "POST /api/llm-answer HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:61502 - "POST /api/llm-answer HTTP/1.1" 400 Bad Request
+[yolo] 시작 10:26:39      33 ms  810x1080  객체 1개
+INFO:     127.0.0.1:61502 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 규격 재시도 : 도로에 전기버스가停, 장애물 없음. → 버스 앞에 사람들이 걷고 있습니다, 장애물 없음.
+[vlm ] 시작 10:26:39   10365 ms  버스 앞에 사람들이 걷고 있습니다, 장애물 없음.
+INFO:     127.0.0.1:61502 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 10:26:50    2015 ms  Q. 앞에 뭐가 있어? → describe   [YOLO] person 3개, bus 1개. [VLM] 버스 앞에 두 명의 사람이 서 있습니다, 장애물 없음.
+INFO:     127.0.0.1:61502 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 10:26:52    2139 ms  Q. 오른쪽으로 3칸 가 → move {'direction': 'right', 'steps': 3}  오른쪽으로 3칸 이동합니다.
+INFO:     127.0.0.1:61502 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 10:26:54    2099 ms  Q. 이쪽으로 2칸 이동해 → move {'direction': 'up', 'steps': 2}  위로 2칸 이동합니다.
+INFO:     127.0.0.1:61502 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 10:26:56    2227 ms  Q. 왼쪽으로, 5칸 이동. → move {'direction': 'left', 'steps': 5}  왼쪽으로 5칸 이동합니다.
+INFO:     127.0.0.1:61502 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 10:26:58    1871 ms  Q. 저쪽으로 가 → ask {'steps': 1}  어느 쪽으로 1칸 갈까요? 방향을 말하거나 손으로 가리켜 주세요.
+INFO:     127.0.0.1:61502 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 10:27:00    2057 ms  Q. 버스 있는 쪽으로 가 → ask {'steps': 1}  어느 쪽으로 1칸 갈까요? 방향을 말하거나 손으로 가리켜 주세요.
+INFO:     127.0.0.1:61502 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 10:27:02    1979 ms  Q. 위 2칸 가 → move {'direction': 'up', 'steps': 2}  위로 2칸 이동합니다.
+INFO:     127.0.0.1:61502 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 10:27:04    2111 ms  Q. 버스 위치로 가 → ask {'steps': 1}  어느 쪽으로 1칸 갈까요? 방향을 말하거나 손으로 가리켜 주세요.
+INFO:     127.0.0.1:61502 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 10:27:06    2101 ms  Q. 왼쪽으로 2칸 가 → move {'direction': 'left', 'steps': 2}  왼쪽으로 2칸 이동합니다.
+INFO:     127.0.0.1:61502 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 10:27:08    2024 ms  Q. 이쪽으로 가 → ask {'steps': 1}  어느 쪽으로 1칸 갈까요? 방향을 말하거나 손으로 가리켜 주세요.
+INFO:     127.0.0.1:61502 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 10:27:10    2220 ms  Q. 저쪽으로 2칸 가 → ask {'steps': 2}  어느 쪽으로 2칸 갈까요? 방향을 말하거나 손으로 가리켜 주세요.
+INFO:     127.0.0.1:61502 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 10:27:13    3099 ms  Q. 왼쪽 → move {'direction': 'left', 'steps': 2}  왼쪽으로 2칸 이동합니다.
+INFO:     127.0.0.1:61502 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 10:27:16    3242 ms  Q. 이쪽으로 3칸 가 → move {'direction': 'left', 'steps': 3}  왼쪽으로 3칸 이동합니다.
+INFO:     127.0.0.1:61502 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[yolo] 시작 10:29:57      38 ms  1200x1200  객체 2개
+INFO:     127.0.0.1:57511 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 10:29:57    5827 ms  테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.
+INFO:     127.0.0.1:57512 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 10:30:03    3284 ms  Q. 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘. → describe   [YOLO] 중복 후보: Sofa/Table (종류·개수 미확정). [VLM] 테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음. [인식 불일치] 겹치는 후보는 별개 물체로 합산하지 않았으며 종류·개수는 미확정입니다. 이미지를 다시 확인해 주세요.
+INFO:     127.0.0.1:57512 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[yolo] 시작 10:30:06      31 ms  1200x1200  객체 2개
+INFO:     127.0.0.1:57512 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 10:30:06    7306 ms  테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.
+INFO:     127.0.0.1:57514 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 10:30:14    2573 ms  Q. 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘. → describe   [YOLO] 중복 후보: Sofa/Table (종류·개수 미확정). [VLM] 테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음. [인식 불일치] 겹치는 후보는 별개 물체로 합산하지 않았으며 종류·개수는 미확정입니다. 이미지를 다시 확인해 주세요.
+INFO:     127.0.0.1:57514 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[yolo] 시작 10:30:16      33 ms  1200x1200  객체 2개
+INFO:     127.0.0.1:57514 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 10:30:16    7056 ms  테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.
+INFO:     127.0.0.1:54195 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 10:30:23    2604 ms  Q. 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘. → describe   [YOLO] 중복 후보: Sofa/Table (종류·개수 미확정). [VLM] 테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음. [인식 불일치] 겹치는 후보는 별개 물체로 합산하지 않았으며 종류·개수는 미확정입니다. 이미지를 다시 확인해 주세요.
+INFO:     127.0.0.1:54195 - "POST /api/llm-answer HTTP/1.1" 200 OK

@@ -1,0 +1,61 @@
+INFO:     Started server process [24228]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8003 (Press CTRL+C to quit)
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 15
+image_tokens->ny = 15
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=420, ny=420)
+clip_image_batch_encode: output embedding shape [2048, 225, 1]
+image slice encoded in 2440 ms
+decoding image batch 1/1, n_tokens_batch = 225
+image decoded (batch 1/1) in 1001 ms
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 15
+image_tokens->ny = 15
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=420, ny=420)
+clip_image_batch_encode: output embedding shape [2048, 225, 1]
+image slice encoded in 3495 ms
+decoding image batch 1/1, n_tokens_batch = 225
+image decoded (batch 1/1) in 1236 ms
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 16
+image_tokens->ny = 16
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=448, ny=448)
+clip_image_batch_encode: output embedding shape [2048, 256, 1]
+image slice encoded in 4127 ms
+decoding image batch 1/1, n_tokens_batch = 256
+image decoded (batch 1/1) in 1488 ms

@@ -1,0 +1,223 @@
+{
+  "cache": "disabled for every trial; model.reset before every trial; model warmup excluded",
+  "weights": "source\\2회차_day1\\runs\\furniture_spec1_20261022\\weights\\best.pt",
+  "samples": [
+    {
+      "label": "Sofa",
+      "expected_words": [
+        "소파"
+      ],
+      "path": "results/furniture_dashboard_20261022/Sofa-dashboard-input.jpg"
+    },
+    {
+      "label": "Chair",
+      "expected_words": [
+        "의자"
+      ],
+      "path": "results/furniture_dashboard_20261022/Chair-dashboard-input.jpg"
+    },
+    {
+      "label": "Table",
+      "expected_words": [
+        "테이블",
+        "탁자",
+        "식탁"
+      ],
+      "path": "results/furniture_dashboard_20261022/Table-dashboard-input.jpg"
+    },
+    {
+      "label": "Chair",
+      "expected_words": [
+        "의자"
+      ],
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Chair--172-_jpg.rf.24ad5ff90243c5f226c4187c346e2341.jpg"
+    },
+    {
+      "label": "Sofa",
+      "expected_words": [
+        "소파"
+      ],
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Sofa--282-_jpg.rf.43355efb16fd73f87c063dbfea856587.jpg"
+    },
+    {
+      "label": "Table",
+      "expected_words": [
+        "테이블",
+        "탁자",
+        "식탁",
+        "책상"
+      ],
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Table--141-_jpg.rf.8ef25de084be2f8ac6447dc2746a0306.jpg"
+    }
+  ],
+  "rows": [
+    {
+      "sample": 1,
+      "label": "Chair",
+      "path": "results/furniture_dashboard_20261022/Chair-dashboard-input.jpg",
+      "mode": "adaptive",
+      "side": 420,
+      "max_tokens": 60,
+      "seconds": 4.080490900001678,
+      "description": "방 안에 의자 하나가 놓여 있다, 장애물 없음.",
+      "error": null,
+      "format_pass": true,
+      "input_sha256": "487f64c99750542be4ff7ae68b1831d730afd0ad7212bd8061dd248a75950309"
+    },
+    {
+      "sample": 0,
+      "label": "Sofa",
+      "path": "results/furniture_dashboard_20261022/Sofa-dashboard-input.jpg",
+      "mode": "adaptive",
+      "side": 420,
+      "max_tokens": 60,
+      "seconds": 4.306995200000529,
+      "description": "거실에 나무로 만든 소파가 놓여 있다, 장애물 없음.",
+      "error": null,
+      "format_pass": true,
+      "input_sha256": "fe0ae9d01fbdfee20979a43691616d2b989cacd50fb58e180e6e8308f6245380"
+    },
+    {
+      "sample": 1,
+      "label": "Chair",
+      "path": "results/furniture_dashboard_20261022/Chair-dashboard-input.jpg",
+      "mode": "baseline",
+      "side": 448,
+      "max_tokens": 60,
+      "seconds": 4.586403499999506,
+      "description": "방 안에 의자 하나가 놓여 있다, 장애물 없음.",
+      "error": null,
+      "format_pass": true,
+      "input_sha256": "487f64c99750542be4ff7ae68b1831d730afd0ad7212bd8061dd248a75950309"
+    },
+    {
+      "sample": 4,
+      "label": "Sofa",
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Sofa--282-_jpg.rf.43355efb16fd73f87c063dbfea856587.jpg",
+      "mode": "baseline",
+      "side": 448,
+      "max_tokens": 60,
+      "seconds": 5.203822299999956,
+      "description": "거실에 고급스러운 검은색 소파가 놓여 있다, 장애물 없음.",
+      "error": null,
+      "format_pass": true,
+      "input_sha256": "96ce666faf34b6500d4c1aa04cdba1949e5f4eb4513e565dac938769b156f85d"
+    },
+    {
+      "sample": 3,
+      "label": "Chair",
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Chair--172-_jpg.rf.24ad5ff90243c5f226c4187c346e2341.jpg",
+      "mode": "adaptive",
+      "side": 420,
+      "max_tokens": 60,
+      "seconds": 5.447628399999303,
+      "description": "방에 빨간 의자가 하나 놓여 있다, 장애물 없음.",
+      "error": null,
+      "format_pass": true,
+      "input_sha256": "aaf4fe139b1086884e58ad85cf38a894c6aab8ff2e3850740bf9f980d00e15f0"
+    },
+    {
+      "sample": 4,
+      "label": "Sofa",
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Sofa--282-_jpg.rf.43355efb16fd73f87c063dbfea856587.jpg",
+      "mode": "adaptive",
+      "side": 420,
+      "max_tokens": 60,
+      "seconds": 5.225171300000511,
+      "description": "거실에 큰 소파가 있습니다, 장애물 없음.",
+      "error": null,
+      "format_pass": true,
+      "input_sha256": "96ce666faf34b6500d4c1aa04cdba1949e5f4eb4513e565dac938769b156f85d"
+    },
+    {
+      "sample": 5,
+      "label": "Table",
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Table--141-_jpg.rf.8ef25de084be2f8ac6447dc2746a0306.jpg",
+      "mode": "adaptive",
+      "side": 448,
+      "max_tokens": 60,
+      "seconds": 6.228705400000763,
+      "description": "이 책상에는 1개의 닫힌 쇼트가 있고, 장애물 없음.",
+      "error": null,
+      "format_pass": true,
+      "input_sha256": "5abc57bb8dd79d5293c1fdfeb18891a8ff45d49004f3d7b822b5937913595e81"
+    },
+    {
+      "sample": 3,
+      "label": "Chair",
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Chair--172-_jpg.rf.24ad5ff90243c5f226c4187c346e2341.jpg",
+      "mode": "baseline",
+      "side": 448,
+      "max_tokens": 60,
+      "seconds": 6.420936699998492,
+      "description": "화이트 벽에 붉은 의자가 놓여 있다, 장애물 없음.",
+      "error": null,
+      "format_pass": true,
+      "input_sha256": "aaf4fe139b1086884e58ad85cf38a894c6aab8ff2e3850740bf9f980d00e15f0"
+    },
+    {
+      "sample": 2,
+      "label": "Table",
+      "path": "results/furniture_dashboard_20261022/Table-dashboard-input.jpg",
+      "mode": "baseline",
+      "side": 448,
+      "max_tokens": 60,
+      "seconds": 7.247620300000563,
+      "description": "테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.",
+      "error": null,
+      "format_pass": true,
+      "input_sha256": "447b5ef42cd73ecbe777c95ef35ed6508352b978ec87cbeaed76ef3e2831a45f"
+    },
+    {
+      "sample": 2,
+      "label": "Table",
+      "path": "results/furniture_dashboard_20261022/Table-dashboard-input.jpg",
+      "mode": "adaptive",
+      "side": 448,
+      "max_tokens": 60,
+      "seconds": 7.06815479999932,
+      "description": "테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.",
+      "error": null,
+      "format_pass": true,
+      "input_sha256": "447b5ef42cd73ecbe777c95ef35ed6508352b978ec87cbeaed76ef3e2831a45f"
+    },
+    {
+      "sample": 5,
+      "label": "Table",
+      "path": "datasets/roboflow/furniture/v2_curated_v2/valid/images/Table--141-_jpg.rf.8ef25de084be2f8ac6447dc2746a0306.jpg",
+      "mode": "baseline",
+      "side": 448,
+      "max_tokens": 60,
+      "seconds": 7.126250399998753,
+      "description": "이 책상에는 1개의 닫힌 쇼트가 있고, 장애물 없음.",
+      "error": null,
+      "format_pass": true,
+      "input_sha256": "5abc57bb8dd79d5293c1fdfeb18891a8ff45d49004f3d7b822b5937913595e81"
+    },
+    {
+      "sample": 0,
+      "label": "Sofa",
+      "path": "results/furniture_dashboard_20261022/Sofa-dashboard-input.jpg",
+      "mode": "baseline",
+      "side": 448,
+      "max_tokens": 60,
+      "seconds": 6.7515552999993815,
+      "description": "거실에 큰 소파가 있습니다, 장애물 없음.",
+      "error": null,
+      "format_pass": true,
+      "input_sha256": "fe0ae9d01fbdfee20979a43691616d2b989cacd50fb58e180e6e8308f6245380"
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "n": 6,
+      "mean_seconds": 6.222764749999442,
+      "median_seconds": 6.586245999998937
+    },
+    "adaptive": {
+      "n": 6,
+      "mean_seconds": 5.392857666667017,
+      "median_seconds": 5.336399849999907
+    }
+  }
+}

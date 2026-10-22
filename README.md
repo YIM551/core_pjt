@@ -10,6 +10,23 @@ move 면 **시뮬레이터** 의 로봇이 움직이고, describe 면 장면을 
 
 ## 2026-10-22 명세서 1·2·3 수행 결과
 
+### 후속 F206 보강
+
+이번 후속 코드·검증 기록은 Git 태그 `backup-2026-10-22-optimization`으로 보관한다. 파일별 SHA-256은 `results/backup_manifest_20261022_optimization.json`에 있다. Furniture 연결, F206 전후 비교, 캐시·단순 질문 최적화, VLM 크기·토큰 실험 및 최종 조건부 정책 검증을 포함한다. 학습 best.pt·last.pt와 당시 PPT·시연 영상·제출 ZIP은 기존 `backup-2026-10-22-specs` 릴리스에서 복원한다. 기존 제출물은 이번 후속 코드를 반영해 재생성한 버전이 아니라 당시 제출물 스냅샷이다.
+
+후속 VLM 입력·토큰 실험은 `results/vlm_settings_20261022/README.md`에 있다. 실제 새 추론 비교 후 고확신 Chair/Sofa는 420px, 테이블·다른 클래스·불확실한 이미지는 448px를 유지하는 정책을 적용했다. 출력 상한은 60토큰이다. 6장 캐시 없는 전후 비교 평균은 6.223초→5.393초(13.34% 감소)였으며, 소규모 실험으로 일반화 품질을 보장하지 않는다. `CORE_VLM_MAX_SIDE`, `CORE_VLM_MAX_TOKENS`, `CORE_VLM_ADAPTIVE`, `CORE_VLM_DETAIL_SIDE`로 변경할 수 있다.
+
+후속 시간 최적화: `results/optimization_20261022/README.md` 참조. 같은 테이블의 warm API 3회 중앙값은 9.705초에서 7.272초로 줄었다(캐시 제외). F206이 최종 답변을 구성하는 단순 장면 질문에서 사용하지 않는 LLM 생성을 생략하고, 동일 이미지 VLM 결과에 최대 8개·60초 메모리 캐시를 적용했다. 단계별 550ms 강제 대기도 제거했다. 이동/복합 의도는 기존 LLM 경로를 유지한다. 캐시 적중 시간은 새 프레임 성능과 구분한다.
+
+`perception_consistency.py`와 대시보드에 출처·불일치 처리를 추가했다. 서로 다른 클래스 박스의 IoU가 0.8 이상이면 원시 검출은 보존하되 해당 후보를 확정 개수에서 제외하고 종류·개수 미확정을 표시한다. 높은 confidence만으로 종류를 정하지 않는다. 명시된 YOLO/VLM 개수가 다르면 불일치를 표시하며, VLM이 언급하지 않은 개수는 0이 아니라 미상으로 취급한다. 현재 명시 개수 파서는 Chair/Sofa/Table 및 한국어 별칭과 숫자·한/두/세/네 표현을 지원하며, 자유로운 모든 문장의 의미를 판정하는 기능은 아니다.
+
+장면 설명 답변은 서버가 `[YOLO]`, `[VLM]` 원문 근거를 붙인 형식으로 구성해 출처 표시를 보장한다. 충돌 시 불확실성과 재확인 안내를 추가하며 move/ask 규칙은 유지한다. 겹치는 실제 물체도 모호 후보가 될 수 있으므로 이 기준은 중복 제거 정답 판정이 아닌 보수적인 불확실성 표시다.
+
+같은 테이블 사진의 실제 대시보드 전후 비교는 `results/f206_20261022/comparison.json`, 변경 후 화면은 `results/f206_20261022/after/Table.png`에 있다. 원시 모델은 여전히 Sofa 0.676·Table 0.526을 검출하지만 최종 답변은 두 물체로 합산하지 않는다. 기존 제출물과 완료 기록은 당시 상태로 보존했다.
+
+실행: `powershell -ExecutionPolicy Bypass -File scripts/start_furniture_dashboard.ps1` → `http://127.0.0.1:8003`.
+규칙 검사: `.venv/Scripts/python.exe scripts/test_perception_consistency.py`.
+
 광주 5반 임나경. Ballie와 SmartThings를 참고한 집사형 로봇 콘셉트로 명세서의 필수 기능을 순서대로 실행·검증했다. 웹캠을 공급하기 어렵다는 조건에 따라 Furniture와 제공된 손 이미지를 입력으로 사용했다. 물리 로봇 주행이나 실제 SmartThings 기기 제어는 후속 연동 범위다.
 
 | 단계 | 수행 내용 | 검증 결과 |

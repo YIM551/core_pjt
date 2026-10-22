@@ -1,0 +1,366 @@
+{
+  "base_url": "http://127.0.0.1:8003",
+  "weights": "source/2회차_day1/runs/furniture_spec1_20261022/weights/best.pt",
+  "weights_sha256": "afbf6e55186bdd368cb0f0445ca2d61a77e6fdf98e53429bac890a32d3786e8f",
+  "selection": "First valid image per class in frozen manifest; no test images and no selection by prediction",
+  "cases": [
+    {
+      "label": "Sofa",
+      "sample": {
+        "id": "S123",
+        "class_id": 1,
+        "group_id": "group_S123",
+        "original_split": "train",
+        "derived_split": "valid",
+        "original_image": "train/images/Sofa--281-_jpg.rf.7f660955628a118ee783d58600508dd3.jpg",
+        "original_label": "train/labels/Sofa--281-_jpg.rf.7f660955628a118ee783d58600508dd3.txt",
+        "image": "valid/images/Sofa--281-_jpg.rf.7f660955628a118ee783d58600508dd3.jpg",
+        "label": "valid/labels/Sofa--281-_jpg.rf.7f660955628a118ee783d58600508dd3.txt",
+        "image_sha256": "d1c7bb099d927b48639bac3f4b4a79c009c277f9a732195accbdeb51b78fbd3e",
+        "label_sha256": "253208aea77da0a721f2794630ad3cb6bb9eb0f8b3bb09a377e56be8fa8fe06c",
+        "review_reason": "Visual review found one clear Sofa target, no apparent additional Chair/Sofa/Table target, and a reasonably encompassing original box.",
+        "label_action": "unchanged_copy"
+      },
+      "exchanges": [
+        {
+          "endpoint": "/api/yolo-detect",
+          "status": 200,
+          "input_sha256": "fe0ae9d01fbdfee20979a43691616d2b989cacd50fb58e180e6e8308f6245380",
+          "request": null,
+          "response": {
+            "objects": [
+              {
+                "label": "Sofa",
+                "confidence": 0.968,
+                "box": [
+                  0,
+                  312.3,
+                  1104.7,
+                  970.8
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "endpoint": "/api/vlm-describe",
+          "status": 200,
+          "input_sha256": "fe0ae9d01fbdfee20979a43691616d2b989cacd50fb58e180e6e8308f6245380",
+          "request": null,
+          "response": {
+            "description": "거실에 큰 소파가 있습니다, 장애물 없음."
+          }
+        },
+        {
+          "endpoint": "/api/llm-answer",
+          "status": 200,
+          "request": {
+            "prompt": "어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘.",
+            "yolo_summary": "Sofa 1개",
+            "vlm_description": "거실에 큰 소파가 있습니다, 장애물 없음.",
+            "gesture_direction": "none",
+            "history": [],
+            "source": "text",
+            "ip": ""
+          },
+          "response": {
+            "tool": "describe",
+            "args": {},
+            "message": "1개의 소파가 있습니다.",
+            "need_more_info": false,
+            "user_content": "[YOLO 객체 인식] Sofa 1개\n[VLM 장면 설명] 거실에 큰 소파가 있습니다, 장애물 없음.\n[손 제스처] 가리키는 방향: 손 없음\n\n[사용자 질문] 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘."
+          }
+        }
+      ],
+      "errors": [],
+      "seconds": 11.991,
+      "yolo_display": "총 1개 인식됨\n- Sofa 97% 화면 중앙 (0,312)-(1105,971)",
+      "vlm_display": "거실에 큰 소파가 있습니다, 장애물 없음.",
+      "expected_yolo_summary": "Sofa 1개",
+      "checks": {
+        "all_http_200": true,
+        "same_yolo_vlm_frame": true,
+        "expected_class_detected": true,
+        "vlm_nonempty": true,
+        "yolo_forwarded": true,
+        "vlm_forwarded": true,
+        "describe_tool": true,
+        "korean_answer": true,
+        "expected_furniture_in_answer": true,
+        "browser_no_errors": true
+      },
+      "recognition_assessment": {
+        "annotated_counts": {
+          "Sofa": 1
+        },
+        "detected_counts": {
+          "Sofa": 1
+        },
+        "counts_match_annotation": true,
+        "note": "Integration checks validate transport and response structure, not full recognition or VLM factual accuracy."
+      }
+    },
+    {
+      "label": "Chair",
+      "sample": {
+        "id": "C047",
+        "class_id": 0,
+        "group_id": "group_C047",
+        "original_split": "train",
+        "derived_split": "valid",
+        "original_image": "train/images/Chair--16-_jpg.rf.460a7e27a5c3c9dcc413eb5b2937e94e.jpg",
+        "original_label": "train/labels/Chair--16-_jpg.rf.460a7e27a5c3c9dcc413eb5b2937e94e.txt",
+        "image": "valid/images/Chair--16-_jpg.rf.460a7e27a5c3c9dcc413eb5b2937e94e.jpg",
+        "label": "valid/labels/Chair--16-_jpg.rf.460a7e27a5c3c9dcc413eb5b2937e94e.txt",
+        "image_sha256": "4e469fefa806fe9bdaf9308826edec3725b0f3edbf14a079dd117e4420b7f6f1",
+        "label_sha256": "32649a0cdaa2ae4027905963cfbbeb4a256496a2df1f88e6e552776132c0dd0c",
+        "review_reason": "Contact-sheet review: one clear target chair; the original box reasonably encompasses its visible extent and no additional target is evident.",
+        "label_action": "unchanged_copy"
+      },
+      "exchanges": [
+        {
+          "endpoint": "/api/yolo-detect",
+          "status": 200,
+          "input_sha256": "487f64c99750542be4ff7ae68b1831d730afd0ad7212bd8061dd248a75950309",
+          "request": null,
+          "response": {
+            "objects": [
+              {
+                "label": "Chair",
+                "confidence": 0.991,
+                "box": [
+                  232.2,
+                  74,
+                  894.5,
+                  1086.2
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "endpoint": "/api/vlm-describe",
+          "status": 200,
+          "input_sha256": "487f64c99750542be4ff7ae68b1831d730afd0ad7212bd8061dd248a75950309",
+          "request": null,
+          "response": {
+            "description": "방 안에 의자 하나가 놓여 있다, 장애물 없음."
+          }
+        },
+        {
+          "endpoint": "/api/llm-answer",
+          "status": 200,
+          "request": {
+            "prompt": "어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘.",
+            "yolo_summary": "Chair 1개",
+            "vlm_description": "방 안에 의자 하나가 놓여 있다, 장애물 없음.",
+            "gesture_direction": "none",
+            "history": [],
+            "source": "text",
+            "ip": ""
+          },
+          "response": {
+            "tool": "describe",
+            "args": {},
+            "message": "의자 1개가 방에 있습니다.",
+            "need_more_info": false,
+            "user_content": "[YOLO 객체 인식] Chair 1개\n[VLM 장면 설명] 방 안에 의자 하나가 놓여 있다, 장애물 없음.\n[손 제스처] 가리키는 방향: 손 없음\n\n[사용자 질문] 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘."
+          }
+        }
+      ],
+      "errors": [],
+      "seconds": 11.145,
+      "yolo_display": "총 1개 인식됨\n- Chair 99% 화면 중앙 (232,74)-(895,1086)",
+      "vlm_display": "방 안에 의자 하나가 놓여 있다, 장애물 없음.",
+      "expected_yolo_summary": "Chair 1개",
+      "checks": {
+        "all_http_200": true,
+        "same_yolo_vlm_frame": true,
+        "expected_class_detected": true,
+        "vlm_nonempty": true,
+        "yolo_forwarded": true,
+        "vlm_forwarded": true,
+        "describe_tool": true,
+        "korean_answer": true,
+        "expected_furniture_in_answer": true,
+        "browser_no_errors": true
+      },
+      "recognition_assessment": {
+        "annotated_counts": {
+          "Chair": 1
+        },
+        "detected_counts": {
+          "Chair": 1
+        },
+        "counts_match_annotation": true,
+        "note": "Integration checks validate transport and response structure, not full recognition or VLM factual accuracy."
+      }
+    },
+    {
+      "label": "Table",
+      "sample": {
+        "id": "T032",
+        "class_id": 2,
+        "group_id": "group_T032",
+        "original_split": "train",
+        "derived_split": "valid",
+        "original_image": "train/images/Table--137-_jpg.rf.57ae67df1eb7ca8325fc27607a5554b0.jpg",
+        "original_label": "train/labels/Table--137-_jpg.rf.57ae67df1eb7ca8325fc27607a5554b0.txt",
+        "image": "valid/images/Table--137-_jpg.rf.57ae67df1eb7ca8325fc27607a5554b0.jpg",
+        "label": "valid/labels/Table--137-_jpg.rf.57ae67df1eb7ca8325fc27607a5554b0.txt",
+        "image_sha256": "48e217a79dcbd73b41a6e2122e57161a970b4dd9bb397e6183f951a9758f4545",
+        "label_sha256": "c0276e87b44f03825d2605a050e1ff8be96988ee1f1b498785d0904347705039",
+        "review_reason": "Single cloth-covered table with curved legs; existing box covers the visible table and no clear additional target furniture is present.",
+        "label_action": "unchanged_copy"
+      },
+      "exchanges": [
+        {
+          "endpoint": "/api/yolo-detect",
+          "status": 200,
+          "input_sha256": "447b5ef42cd73ecbe777c95ef35ed6508352b978ec87cbeaed76ef3e2831a45f",
+          "request": null,
+          "response": {
+            "objects": [
+              {
+                "label": "Sofa",
+                "confidence": 0.676,
+                "box": [
+                  1.7,
+                  316.5,
+                  1175.3,
+                  1034.2
+                ]
+              },
+              {
+                "label": "Table",
+                "confidence": 0.526,
+                "box": [
+                  0.4,
+                  306.9,
+                  1180.1,
+                  1069
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "endpoint": "/api/vlm-describe",
+          "status": 200,
+          "input_sha256": "447b5ef42cd73ecbe777c95ef35ed6508352b978ec87cbeaed76ef3e2831a45f",
+          "request": null,
+          "response": {
+            "description": "테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음."
+          }
+        },
+        {
+          "endpoint": "/api/llm-answer",
+          "status": 200,
+          "request": {
+            "prompt": "어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘.",
+            "yolo_summary": "Sofa 1개, Table 1개",
+            "vlm_description": "테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.",
+            "gesture_direction": "none",
+            "history": [],
+            "source": "text",
+            "ip": ""
+          },
+          "response": {
+            "tool": "describe",
+            "args": {},
+            "message": "소파 1개, 테이블 1개가 보여요.",
+            "need_more_info": false,
+            "user_content": "[YOLO 객체 인식] Sofa 1개, Table 1개\n[VLM 장면 설명] 테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.\n[손 제스처] 가리키는 방향: 손 없음\n\n[사용자 질문] 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘."
+          }
+        }
+      ],
+      "errors": [],
+      "seconds": 11.798,
+      "yolo_display": "총 2개 인식됨\n- Sofa 68% 화면 중앙 (2,317)-(1175,1034)\n- Table 53% 화면 중앙 (0,307)-(1180,1069)",
+      "vlm_display": "테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.",
+      "expected_yolo_summary": "Sofa 1개, Table 1개",
+      "checks": {
+        "all_http_200": true,
+        "same_yolo_vlm_frame": true,
+        "expected_class_detected": true,
+        "vlm_nonempty": true,
+        "yolo_forwarded": true,
+        "vlm_forwarded": true,
+        "describe_tool": true,
+        "korean_answer": true,
+        "expected_furniture_in_answer": true,
+        "browser_no_errors": true
+      },
+      "recognition_assessment": {
+        "annotated_counts": {
+          "Table": 1
+        },
+        "detected_counts": {
+          "Sofa": 1,
+          "Table": 1
+        },
+        "counts_match_annotation": false,
+        "note": "Integration checks validate transport and response structure, not full recognition or VLM factual accuracy."
+      }
+    }
+  ],
+  "checks": [
+    {
+      "label": "Sofa",
+      "all_http_200": true,
+      "same_yolo_vlm_frame": true,
+      "expected_class_detected": true,
+      "vlm_nonempty": true,
+      "yolo_forwarded": true,
+      "vlm_forwarded": true,
+      "describe_tool": true,
+      "korean_answer": true,
+      "expected_furniture_in_answer": true,
+      "browser_no_errors": true
+    },
+    {
+      "label": "Chair",
+      "all_http_200": true,
+      "same_yolo_vlm_frame": true,
+      "expected_class_detected": true,
+      "vlm_nonempty": true,
+      "yolo_forwarded": true,
+      "vlm_forwarded": true,
+      "describe_tool": true,
+      "korean_answer": true,
+      "expected_furniture_in_answer": true,
+      "browser_no_errors": true
+    },
+    {
+      "label": "Table",
+      "all_http_200": true,
+      "same_yolo_vlm_frame": true,
+      "expected_class_detected": true,
+      "vlm_nonempty": true,
+      "yolo_forwarded": true,
+      "vlm_forwarded": true,
+      "describe_tool": true,
+      "korean_answer": true,
+      "expected_furniture_in_answer": true,
+      "browser_no_errors": true
+    }
+  ],
+  "health_before": {
+    "status": "ok",
+    "yolo_model": "best.pt",
+    "loaded": {
+      "yolo": true,
+      "vlm": true,
+      "llm": true
+    }
+  },
+  "health_after": {
+    "status": "ok",
+    "yolo_model": "best.pt",
+    "loaded": {
+      "yolo": true,
+      "vlm": true,
+      "llm": true
+    }
+  }
+}

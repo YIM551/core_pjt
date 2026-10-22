@@ -28,3 +28,9 @@ main.py -text whitespace=cr-at-eol
 index.html -text whitespace=cr-at-eol
 API_검증.py -text whitespace=cr-at-eol
 results/spec_workflow_20261022/**/*.log -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+scripts/*.mjs text eol=lf
+scripts/start_furniture_dashboard.ps1 -text
+results/furniture_dashboard_20261022/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+results/f206_20261022/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+results/optimization_20261022/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+results/vlm_settings_20261022/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol

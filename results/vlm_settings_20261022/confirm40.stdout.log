@@ -1,0 +1,9 @@
+{"label": "Sofa", "side": 420, "max_tokens": 40, "seconds": 3.915391800001089, "description": "\uac70\uc2e4\uc5d0 \ud070 \uc18c\ud30c\uac00 \uc788\uc2b5\ub2c8\ub2e4, \uc7a5\uc560\ubb3c \uc5c6\uc74c.", "format_pass": true, "target_mentioned": true, "retry_count": 0}
+{"label": "Sofa", "side": 420, "max_tokens": 40, "seconds": 4.020646900000429, "description": "\uac70\uc2e4\uc5d0 \ud070 \uc18c\ud30c\uac00 \uc788\uc2b5\ub2c8\ub2e4, \uc7a5\uc560\ubb3c \uc5c6\uc74c.", "format_pass": true, "target_mentioned": true, "retry_count": 0}
+{"label": "Chair", "side": 420, "max_tokens": 40, "seconds": 4.301980799999001, "description": "\ubc29\uc5d0 \ube68\uac04 \uc758\uc790\uac00 \ud558\ub098 \ub193\uc5ec \uc788\ub2e4, \uc7a5\uc560\ubb3c \uc5c6\uc74c.", "format_pass": true, "target_mentioned": true, "retry_count": 0}
+[vlm ] 규격 재시도 : 이 책상은 나무로 만들어져 있으며, 좌우에 각각 1개의 선반과 1개의 선반, 그리고 좌측에 1개 → 책상이 있습니다, 장애물 없음.
+{"label": "Table", "side": 420, "max_tokens": 40, "seconds": 11.094097299999703, "description": "\ucc45\uc0c1\uc774 \uc788\uc2b5\ub2c8\ub2e4, \uc7a5\uc560\ubb3c \uc5c6\uc74c.", "format_pass": true, "target_mentioned": true, "retry_count": 1}
+[vlm ] 규격 재시도 : 이 책상은 나무로 만들어져 있으며, 좌우에 각각 1개의 선반과 1개의 선반, 그리고 좌측에 1개 → 책상이 있습니다, 장애물 없음.
+{"label": "Table", "side": 420, "max_tokens": 40, "seconds": 11.08872650000012, "description": "\ucc45\uc0c1\uc774 \uc788\uc2b5\ub2c8\ub2e4, \uc7a5\uc560\ubb3c \uc5c6\uc74c.", "format_pass": true, "target_mentioned": true, "retry_count": 1}
+{"label": "Chair", "side": 420, "max_tokens": 40, "seconds": 5.380661399998644, "description": "\ubc29\uc5d0 \ube68\uac04 \uc758\uc790\uac00 \ud558\ub098 \ub193\uc5ec \uc788\ub2e4, \uc7a5\uc560\ubb3c \uc5c6\uc74c.", "format_pass": true, "target_mentioned": true, "retry_count": 0}
+[{"side": 420, "max_tokens": 40, "trials": 6, "median_seconds": 4.841321099998822, "format_pass": 6, "target_mentioned": 6, "retries": 2}]

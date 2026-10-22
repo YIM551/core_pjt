@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "uncached_same_image": true,
+    "uncached_same_raw_detections": true,
+    "uncached_same_vlm_description": true,
+    "uncached_same_final_message": true,
+    "cached_same_image": true,
+    "cached_same_raw_detections": true,
+    "cached_same_vlm_description": true,
+    "cached_same_final_message": true,
+    "uncached_not_using_cache": true,
+    "cache_miss_then_hits": true,
+    "simple_scene_skips_llm": true,
+    "browser_passed": true
+  },
+  "baseline_warm_api_median_seconds": 9.705202999999528,
+  "optimized_uncached_warm_api_median_seconds": 7.272407200000089,
+  "uncached_reduction_percent": 25.06692338119623,
+  "repeat_cache_hit_api_seconds": [
+    0.03948080000009213,
+    0.04730399999971269
+  ],
+  "browser_first_turn_seconds": 2.426,
+  "scope": "Three local warm-model API trials, one table image. Cache-hit results are repeat-input reuse, not faster fresh-frame VLM inference. Browser timing includes MediaPipe and UI; do not compare it directly with API timings."
+}

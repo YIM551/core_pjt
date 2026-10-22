@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "Sofa_correct_resolution": true,
+    "Sofa_fresh_inference": true,
+    "Sofa_integration": true,
+    "Chair_correct_resolution": true,
+    "Chair_fresh_inference": true,
+    "Chair_integration": true,
+    "Table_correct_resolution": true,
+    "Table_fresh_inference": true,
+    "Table_integration": true,
+    "F206_preserved": true
+  },
+  "passed": 10,
+  "total": 10,
+  "optimization_unit_checks": "8/8",
+  "F206_unit_checks": "5/5",
+  "browser_timing_note": "First Sofa turn includes cold model loading (16.133s); Chair6.826s/Table7.948s include actual UI/MediaPipe. These are not the controlled warm VLM timings."
+}

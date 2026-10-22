@@ -1,0 +1,557 @@
+{
+  "phase": "screen",
+  "cache": "describe_scene called directly; model.reset before every trial; app result cache bypassed",
+  "prompt": "이 이미지를 한국어 한 문장으로 설명해줘. 40자 이내로 쓰고, 문장 끝에 '장애물 있음' 또는 '장애물 없음' 을 붙여줘. 형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음.",
+  "temperature": 0,
+  "samples": [
+    {
+      "label": "Sofa",
+      "expected_words": [
+        "소파"
+      ],
+      "path": "results/furniture_dashboard_20261022/Sofa-dashboard-input.jpg"
+    },
+    {
+      "label": "Chair",
+      "expected_words": [
+        "의자"
+      ],
+      "path": "results/furniture_dashboard_20261022/Chair-dashboard-input.jpg"
+    },
+    {
+      "label": "Table",
+      "expected_words": [
+        "테이블",
+        "탁자",
+        "식탁"
+      ],
+      "path": "results/furniture_dashboard_20261022/Table-dashboard-input.jpg"
+    }
+  ],
+  "rows": [
+    {
+      "label": "Chair",
+      "path": "results/furniture_dashboard_20261022/Chair-dashboard-input.jpg",
+      "input_sha256": "487f64c99750542be4ff7ae68b1831d730afd0ad7212bd8061dd248a75950309",
+      "side": 224,
+      "max_tokens": 60,
+      "repeat": 0,
+      "seconds": 2.317234699999972,
+      "description": "화장실 옆에 의자 하나가 놓여 있다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 2.3103443999989395,
+          "usage": {
+            "prompt_tokens": 104,
+            "completion_tokens": 23,
+            "total_tokens": 127
+          },
+          "finish_reason": "stop",
+          "raw_text": "\n화장실 옆에 의자 하나가 놓여 있다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Table",
+      "path": "results/furniture_dashboard_20261022/Table-dashboard-input.jpg",
+      "input_sha256": "447b5ef42cd73ecbe777c95ef35ed6508352b978ec87cbeaed76ef3e2831a45f",
+      "side": 336,
+      "max_tokens": 40,
+      "repeat": 0,
+      "seconds": 3.737693399998534,
+      "description": "테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 3.7299472999984573,
+          "usage": {
+            "prompt_tokens": 108,
+            "completion_tokens": 25,
+            "total_tokens": 133
+          },
+          "finish_reason": "stop",
+          "raw_text": "\n테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Table",
+      "path": "results/furniture_dashboard_20261022/Table-dashboard-input.jpg",
+      "input_sha256": "447b5ef42cd73ecbe777c95ef35ed6508352b978ec87cbeaed76ef3e2831a45f",
+      "side": 224,
+      "max_tokens": 40,
+      "repeat": 0,
+      "seconds": 3.0037927000012132,
+      "description": "테이블 위에 체크무늬 테트리가 놓여 있다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 2.996666600000026,
+          "usage": {
+            "prompt_tokens": 104,
+            "completion_tokens": 28,
+            "total_tokens": 132
+          },
+          "finish_reason": "stop",
+          "raw_text": "\n테이블 위에 체크무늬 테트리가 놓여 있다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Chair",
+      "path": "results/furniture_dashboard_20261022/Chair-dashboard-input.jpg",
+      "input_sha256": "487f64c99750542be4ff7ae68b1831d730afd0ad7212bd8061dd248a75950309",
+      "side": 336,
+      "max_tokens": 60,
+      "repeat": 0,
+      "seconds": 4.480620500000441,
+      "description": "화장실 옆에 의자 하나가 놓여 있다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 4.471993499999371,
+          "usage": {
+            "prompt_tokens": 108,
+            "completion_tokens": 23,
+            "total_tokens": 131
+          },
+          "finish_reason": "stop",
+          "raw_text": "\n화장실 옆에 의자 하나가 놓여 있다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Chair",
+      "path": "results/furniture_dashboard_20261022/Chair-dashboard-input.jpg",
+      "input_sha256": "487f64c99750542be4ff7ae68b1831d730afd0ad7212bd8061dd248a75950309",
+      "side": 448,
+      "max_tokens": 60,
+      "repeat": 0,
+      "seconds": 6.926400700000158,
+      "description": "방 안에 의자 하나가 놓여 있다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 6.916536200000337,
+          "usage": {
+            "prompt_tokens": 112,
+            "completion_tokens": 20,
+            "total_tokens": 132
+          },
+          "finish_reason": "stop",
+          "raw_text": ": 방 안에 의자 하나가 놓여 있다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Sofa",
+      "path": "results/furniture_dashboard_20261022/Sofa-dashboard-input.jpg",
+      "input_sha256": "fe0ae9d01fbdfee20979a43691616d2b989cacd50fb58e180e6e8308f6245380",
+      "side": 448,
+      "max_tokens": 40,
+      "repeat": 0,
+      "seconds": 6.671092700000372,
+      "description": "거실에 큰 소파가 있습니다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 6.661017500000526,
+          "usage": {
+            "prompt_tokens": 112,
+            "completion_tokens": 16,
+            "total_tokens": 128
+          },
+          "finish_reason": "stop",
+          "raw_text": ": 거실에 큰 소파가 있습니다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Chair",
+      "path": "results/furniture_dashboard_20261022/Chair-dashboard-input.jpg",
+      "input_sha256": "487f64c99750542be4ff7ae68b1831d730afd0ad7212bd8061dd248a75950309",
+      "side": 448,
+      "max_tokens": 40,
+      "repeat": 0,
+      "seconds": 6.781324300000051,
+      "description": "방 안에 의자 하나가 놓여 있다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 6.770664399999077,
+          "usage": {
+            "prompt_tokens": 112,
+            "completion_tokens": 20,
+            "total_tokens": 132
+          },
+          "finish_reason": "stop",
+          "raw_text": ": 방 안에 의자 하나가 놓여 있다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Sofa",
+      "path": "results/furniture_dashboard_20261022/Sofa-dashboard-input.jpg",
+      "input_sha256": "fe0ae9d01fbdfee20979a43691616d2b989cacd50fb58e180e6e8308f6245380",
+      "side": 224,
+      "max_tokens": 60,
+      "repeat": 0,
+      "seconds": 2.5103593000003457,
+      "description": "방에 소파 한 개가 있습니다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 2.5028224999987287,
+          "usage": {
+            "prompt_tokens": 104,
+            "completion_tokens": 16,
+            "total_tokens": 120
+          },
+          "finish_reason": "stop",
+          "raw_text": "\n방에 소파 한 개가 있습니다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Sofa",
+      "path": "results/furniture_dashboard_20261022/Sofa-dashboard-input.jpg",
+      "input_sha256": "fe0ae9d01fbdfee20979a43691616d2b989cacd50fb58e180e6e8308f6245380",
+      "side": 224,
+      "max_tokens": 40,
+      "repeat": 0,
+      "seconds": 2.4715551000008418,
+      "description": "방에 소파 한 개가 있습니다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 2.463289799999984,
+          "usage": {
+            "prompt_tokens": 104,
+            "completion_tokens": 16,
+            "total_tokens": 120
+          },
+          "finish_reason": "stop",
+          "raw_text": "\n방에 소파 한 개가 있습니다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Table",
+      "path": "results/furniture_dashboard_20261022/Table-dashboard-input.jpg",
+      "input_sha256": "447b5ef42cd73ecbe777c95ef35ed6508352b978ec87cbeaed76ef3e2831a45f",
+      "side": 448,
+      "max_tokens": 60,
+      "repeat": 0,
+      "seconds": 7.092213100000663,
+      "description": "테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 7.082352899999023,
+          "usage": {
+            "prompt_tokens": 112,
+            "completion_tokens": 25,
+            "total_tokens": 137
+          },
+          "finish_reason": "stop",
+          "raw_text": "\n테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Table",
+      "path": "results/furniture_dashboard_20261022/Table-dashboard-input.jpg",
+      "input_sha256": "447b5ef42cd73ecbe777c95ef35ed6508352b978ec87cbeaed76ef3e2831a45f",
+      "side": 336,
+      "max_tokens": 60,
+      "repeat": 0,
+      "seconds": 4.660255400000096,
+      "description": "테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 4.650801300000239,
+          "usage": {
+            "prompt_tokens": 108,
+            "completion_tokens": 25,
+            "total_tokens": 133
+          },
+          "finish_reason": "stop",
+          "raw_text": "\n테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Table",
+      "path": "results/furniture_dashboard_20261022/Table-dashboard-input.jpg",
+      "input_sha256": "447b5ef42cd73ecbe777c95ef35ed6508352b978ec87cbeaed76ef3e2831a45f",
+      "side": 448,
+      "max_tokens": 40,
+      "repeat": 0,
+      "seconds": 7.341368599998532,
+      "description": "테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 7.3304205000004,
+          "usage": {
+            "prompt_tokens": 112,
+            "completion_tokens": 25,
+            "total_tokens": 137
+          },
+          "finish_reason": "stop",
+          "raw_text": "\n테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Table",
+      "path": "results/furniture_dashboard_20261022/Table-dashboard-input.jpg",
+      "input_sha256": "447b5ef42cd73ecbe777c95ef35ed6508352b978ec87cbeaed76ef3e2831a45f",
+      "side": 224,
+      "max_tokens": 60,
+      "repeat": 0,
+      "seconds": 3.1015348000000813,
+      "description": "테이블 위에 체크무늬 테트리가 놓여 있다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 3.0940991999996186,
+          "usage": {
+            "prompt_tokens": 104,
+            "completion_tokens": 28,
+            "total_tokens": 132
+          },
+          "finish_reason": "stop",
+          "raw_text": "\n테이블 위에 체크무늬 테트리가 놓여 있다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Sofa",
+      "path": "results/furniture_dashboard_20261022/Sofa-dashboard-input.jpg",
+      "input_sha256": "fe0ae9d01fbdfee20979a43691616d2b989cacd50fb58e180e6e8308f6245380",
+      "side": 336,
+      "max_tokens": 40,
+      "repeat": 0,
+      "seconds": 4.417884299999059,
+      "description": "화장실에 소파 한 개가 놓여 있다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 4.408904100000655,
+          "usage": {
+            "prompt_tokens": 108,
+            "completion_tokens": 22,
+            "total_tokens": 130
+          },
+          "finish_reason": "stop",
+          "raw_text": "\n화장실에 소파 한 개가 놓여 있다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Chair",
+      "path": "results/furniture_dashboard_20261022/Chair-dashboard-input.jpg",
+      "input_sha256": "487f64c99750542be4ff7ae68b1831d730afd0ad7212bd8061dd248a75950309",
+      "side": 224,
+      "max_tokens": 40,
+      "repeat": 0,
+      "seconds": 2.8643513999995776,
+      "description": "화장실 옆에 의자 하나가 놓여 있다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 2.8567837000009604,
+          "usage": {
+            "prompt_tokens": 104,
+            "completion_tokens": 23,
+            "total_tokens": 127
+          },
+          "finish_reason": "stop",
+          "raw_text": "\n화장실 옆에 의자 하나가 놓여 있다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Chair",
+      "path": "results/furniture_dashboard_20261022/Chair-dashboard-input.jpg",
+      "input_sha256": "487f64c99750542be4ff7ae68b1831d730afd0ad7212bd8061dd248a75950309",
+      "side": 336,
+      "max_tokens": 40,
+      "repeat": 0,
+      "seconds": 4.663586000000578,
+      "description": "화장실 옆에 의자 하나가 놓여 있다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 4.654132399999071,
+          "usage": {
+            "prompt_tokens": 108,
+            "completion_tokens": 23,
+            "total_tokens": 131
+          },
+          "finish_reason": "stop",
+          "raw_text": "\n화장실 옆에 의자 하나가 놓여 있다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Sofa",
+      "path": "results/furniture_dashboard_20261022/Sofa-dashboard-input.jpg",
+      "input_sha256": "fe0ae9d01fbdfee20979a43691616d2b989cacd50fb58e180e6e8308f6245380",
+      "side": 336,
+      "max_tokens": 60,
+      "repeat": 0,
+      "seconds": 4.549538100000063,
+      "description": "화장실에 소파 한 개가 놓여 있다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 4.540483100001438,
+          "usage": {
+            "prompt_tokens": 108,
+            "completion_tokens": 22,
+            "total_tokens": 130
+          },
+          "finish_reason": "stop",
+          "raw_text": "\n화장실에 소파 한 개가 놓여 있다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    },
+    {
+      "label": "Sofa",
+      "path": "results/furniture_dashboard_20261022/Sofa-dashboard-input.jpg",
+      "input_sha256": "fe0ae9d01fbdfee20979a43691616d2b989cacd50fb58e180e6e8308f6245380",
+      "side": 448,
+      "max_tokens": 60,
+      "repeat": 0,
+      "seconds": 6.88856830000077,
+      "description": "거실에 큰 소파가 있습니다, 장애물 없음.",
+      "error": null,
+      "calls": [
+        {
+          "seconds": 6.8789706000006845,
+          "usage": {
+            "prompt_tokens": 112,
+            "completion_tokens": 16,
+            "total_tokens": 128
+          },
+          "finish_reason": "stop",
+          "raw_text": ": 거실에 큰 소파가 있습니다, 장애물 없음."
+        }
+      ],
+      "retry_count": 0,
+      "format_pass": true,
+      "target_mentioned": true
+    }
+  ],
+  "summary": [
+    {
+      "side": 448,
+      "max_tokens": 60,
+      "trials": 3,
+      "median_seconds": 6.926400700000158,
+      "format_pass": 3,
+      "target_mentioned": 3,
+      "retries": 0
+    },
+    {
+      "side": 448,
+      "max_tokens": 40,
+      "trials": 3,
+      "median_seconds": 6.781324300000051,
+      "format_pass": 3,
+      "target_mentioned": 3,
+      "retries": 0
+    },
+    {
+      "side": 336,
+      "max_tokens": 60,
+      "trials": 3,
+      "median_seconds": 4.549538100000063,
+      "format_pass": 3,
+      "target_mentioned": 3,
+      "retries": 0
+    },
+    {
+      "side": 336,
+      "max_tokens": 40,
+      "trials": 3,
+      "median_seconds": 4.417884299999059,
+      "format_pass": 3,
+      "target_mentioned": 3,
+      "retries": 0
+    },
+    {
+      "side": 224,
+      "max_tokens": 60,
+      "trials": 3,
+      "median_seconds": 2.5103593000003457,
+      "format_pass": 3,
+      "target_mentioned": 3,
+      "retries": 0
+    },
+    {
+      "side": 224,
+      "max_tokens": 40,
+      "trials": 3,
+      "median_seconds": 2.8643513999995776,
+      "format_pass": 3,
+      "target_mentioned": 3,
+      "retries": 0
+    }
+  ]
+}

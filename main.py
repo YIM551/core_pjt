@@ -16,6 +16,7 @@ import os
 os.environ.setdefault("CUDA_VISIBLE_DEVICES", "-1")
 
 import base64
+import hashlib
 import io
 import json
 import re
@@ -28,6 +29,8 @@ from fastapi.concurrency import run_in_threadpool
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from PIL import Image, UnidentifiedImageError
+from perception_consistency import analyze_detections, reconcile, grounded_description
+from inference_optimization import ExactResultCache, is_simple_scene_question, bounded_setting, choose_vlm_side
 
 BASE_DIR = Path(__file__).resolve().parent          # 이 폴더 (main.py · index.html · mediapipe/ · models/)
 WEB_DIR = BASE_DIR                                  # 제공된 프런트 (index.html, mediapipe/)
@@ -43,8 +46,10 @@ VLM_PROMPT = (
     "'장애물 있음' 또는 '장애물 없음' 을 붙여줘. "
     "형식 예: 복도에 의자 두 개가 놓여 있다, 장애물 있음."
 )
-VLM_MAX_TOKENS = 60
-VLM_MAX_SIDE = 448
+VLM_MAX_TOKENS = bounded_setting(os.environ.get("CORE_VLM_MAX_TOKENS", "60"), "CORE_VLM_MAX_TOKENS", 16, 256)
+VLM_MAX_SIDE = bounded_setting(os.environ.get("CORE_VLM_MAX_SIDE", "420"), "CORE_VLM_MAX_SIDE", 112, 1024)
+VLM_DETAIL_SIDE = bounded_setting(os.environ.get("CORE_VLM_DETAIL_SIDE", "448"), "CORE_VLM_DETAIL_SIDE", 112, 1024)
+VLM_ADAPTIVE = os.environ.get("CORE_VLM_ADAPTIVE", "1") == "1"
 VLM_MAX_CHARS = 40
 # 설치한 llama-cpp 빌드에 따라 한자가 섞일 때가 있다 ― 그때만 이 system 메시지를 붙여 다시 묻는다
 VLM_KOREAN_SYSTEM = "너는 이미지를 한국어(한글)로만 설명한다. 한자 · 일본어 · 중국어를 절대 쓰지 않는다."
@@ -81,6 +86,8 @@ SYSTEM_PROMPT = (
     '"message": "<사용자에게 보일 한두 문장>"}'
 )
 LLM_MAX_TOKENS = 200
+SCENE_FAST_PATH = os.environ.get("CORE_SCENE_FAST_PATH", "1") == "1"
+_vlm_result_cache = ExactResultCache(capacity=max(0, min(32, int(os.environ.get("CORE_VLM_CACHE_SIZE", "8")))), ttl=60)
 _THINK_RE = re.compile(r"<think>.*?(?:</think>|\Z)", re.DOTALL)
 
 app = FastAPI(title="2회차 3일차 ― 웹 대시보드 서버 (완성)")
@@ -147,10 +154,11 @@ def detect_objects(image: Image.Image) -> list:
     ]
 
 
-def describe_scene(image: Image.Image) -> str:
+def describe_scene(image: Image.Image, max_side=None) -> str:
     model = _get("vlm", _load_vlm)
-    if max(image.size) > VLM_MAX_SIDE:                 # 입력 줄이기 (VLM 레버)
-        scale = VLM_MAX_SIDE / max(image.size)
+    side = VLM_MAX_SIDE if max_side is None else max_side
+    if max(image.size) > side:                 # 입력 줄이기 (VLM 레버)
+        scale = side / max(image.size)
         image = image.resize((round(image.width * scale), round(image.height * scale)))
     buffer = io.BytesIO()
     image.save(buffer, format="JPEG")
@@ -170,6 +178,20 @@ def describe_scene(image: Image.Image) -> str:
     if failed:
         raise ValueError("VLM output format failed: " + ", ".join(failed))
     return text
+
+
+def describe_scene_cached(image):
+    side = VLM_MAX_SIDE
+    if VLM_ADAPTIVE:
+        try:
+            side = choose_vlm_side(detect_objects(image), VLM_MAX_SIDE, VLM_DETAIL_SIDE)
+        except Exception:
+            side = max(VLM_MAX_SIDE, VLM_DETAIL_SIDE)
+    # Exact decoded pixels + shape/config. A different live frame always gets a new key.
+    digest = hashlib.sha256(image.tobytes()).hexdigest()
+    key = (digest, image.size, image.mode, VLM_PROMPT, side, VLM_MAX_TOKENS)
+    description, hit = _vlm_result_cache.get_or_compute(key, lambda: describe_scene(image, max_side=side))
+    return description, hit, side
 
 
 def _ask_vlm(model, url: str, system: str = None) -> str:
@@ -425,6 +447,8 @@ def favicon():
 @app.get("/api/health")
 def health():
     return {"status": "ok", "yolo_model": YOLO_MODEL_PATH.name,
+            "vlm_settings": {"max_side": VLM_MAX_SIDE, "max_tokens": VLM_MAX_TOKENS,
+                             "adaptive": VLM_ADAPTIVE, "detail_side": VLM_DETAIL_SIDE},
             "loaded": {name: model is not None for name, model in _models.items()}}
 
 
@@ -472,7 +496,7 @@ async def yolo_detect(request: Request):
         _log("yolo", t0, f"실패 ({type(exc).__name__})")
         return JSONResponse({"error": "yolo_failed"}, status_code=500)
     _log("yolo", t0, f"{image.width}x{image.height}  객체 {len(objects)}개")
-    return {"objects": objects}
+    return {"objects": objects, "analysis": analyze_detections(objects)}
 
 
 @app.post("/api/vlm-describe")
@@ -483,12 +507,13 @@ async def vlm_describe(request: Request):
         return error
     t0 = time.time()
     try:
-        description = await run_in_threadpool(describe_scene, image)
+        description, cache_hit, max_side = await run_in_threadpool(describe_scene_cached, image)
     except Exception as exc:
         _log("vlm", t0, f"실패 ({type(exc).__name__})")
         return JSONResponse({"error": "vlm_failed"}, status_code=500)
     _log("vlm", t0, description)
-    return {"description": description}
+    return {"description": description, "cache_hit": cache_hit, "max_side": max_side,
+            "max_tokens": VLM_MAX_TOKENS}
 
 
 def _read_history(raw) -> list:
@@ -520,21 +545,37 @@ async def llm_answer(request: Request):
         return JSONResponse({"error": "empty_prompt"}, status_code=400)
 
     t0 = time.time()
+    inference_path = "llm"
     try:
-        call, user_content = await run_in_threadpool(
-            decide_tool,
-            prompt,
-            str(body.get("yolo_summary", "")),
-            str(body.get("vlm_description", "")),
-            _read_gesture(body.get("gesture_direction", "unknown")),
-            _read_history(body.get("history")))
+        if SCENE_FAST_PATH and is_simple_scene_question(prompt) and (
+                str(body.get("yolo_summary", "")).strip() or str(body.get("vlm_description", "")).strip()):
+            # F206 already constructs the final cited description deterministically.
+            # Avoid generating an LLM message only to discard it immediately afterward.
+            call = {"tool": "describe", "args": {}, "message": ""}
+            user_content = build_user_content(prompt, str(body.get("yolo_summary", "")),
+                str(body.get("vlm_description", "")), _read_gesture(body.get("gesture_direction", "unknown")))
+            inference_path = "scene_evidence"
+        else:
+            call, user_content = await run_in_threadpool(
+                decide_tool,
+                prompt,
+                str(body.get("yolo_summary", "")),
+                str(body.get("vlm_description", "")),
+                _read_gesture(body.get("gesture_direction", "unknown")),
+                _read_history(body.get("history")))
     except Exception as exc:
         _log("llm", t0, f"실패 ({type(exc).__name__})")
         return JSONResponse({"error": "llm_failed"}, status_code=500)
+    yolo_text = str(body.get("yolo_summary", ""))
+    vlm_text = str(body.get("vlm_description", ""))
+    consistency = reconcile(yolo_text, vlm_text)
+    # Source attribution is enforced after generation rather than left to prompting.
+    if call["tool"] == "describe" and (yolo_text or vlm_text):
+        call["message"] = grounded_description(yolo_text, vlm_text, consistency)
     _log("tool", t0, f"Q. {prompt} → {call['tool']} {call['args'] or ''}  {call['message']}")
     return {**call,
             "need_more_info": call["tool"] == "ask",     # [R4]
-            "user_content": user_content}
+            "user_content": user_content, "consistency": consistency, "inference_path": inference_path}
 
 
 if __name__ == "__main__":

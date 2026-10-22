@@ -1,0 +1,18 @@
+[vlm ] 시작 10:31:35    8049 ms  거실에 큰 소파가 있습니다, 장애물 없음.
+INFO:     127.0.0.1:61327 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[yolo] 시작 10:31:43      37 ms  1200x1200  객체 2개
+INFO:     127.0.0.1:61327 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 10:31:43    7136 ms  테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.
+INFO:     127.0.0.1:58176 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 10:31:50       1 ms  Q. 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘. → describe   [YOLO] 중복 후보: Sofa/Table (종류·개수 미확정). [VLM] 테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음. [인식 불일치] 겹치는 후보는 별개 물체로 합산하지 않았으며 종류·개수는 미확정입니다. 이미지를 다시 확인해 주세요.
+INFO:     127.0.0.1:58176 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[yolo] 시작 10:31:50      28 ms  1200x1200  객체 2개
+INFO:     127.0.0.1:58176 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 10:31:50    7245 ms  테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.
+INFO:     127.0.0.1:58177 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 10:31:57       0 ms  Q. 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘. → describe   [YOLO] 중복 후보: Sofa/Table (종류·개수 미확정). [VLM] 테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음. [인식 불일치] 겹치는 후보는 별개 물체로 합산하지 않았으며 종류·개수는 미확정입니다. 이미지를 다시 확인해 주세요.
+INFO:     127.0.0.1:58177 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[vlm ] 시작 10:31:57    7308 ms  테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.
+INFO:     127.0.0.1:58178 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 10:32:05       0 ms  Q. 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘. → describe   [YOLO] 중복 후보: Sofa/Table (종류·개수 미확정). [VLM] 테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음. [인식 불일치] 겹치는 후보는 별개 물체로 합산하지 않았으며 종류·개수는 미확정입니다. 이미지를 다시 확인해 주세요.
+INFO:     127.0.0.1:58178 - "POST /api/llm-answer HTTP/1.1" 200 OK

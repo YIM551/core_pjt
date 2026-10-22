@@ -1,0 +1,243 @@
+{
+  "phase": "after_cached",
+  "image_sha256": "447b5ef42cd73ecbe777c95ef35ed6508352b978ec87cbeaed76ef3e2831a45f",
+  "runs": [
+    {
+      "run": 1,
+      "yolo_seconds": 0.0582897000003868,
+      "vlm_seconds": 7.317805799999405,
+      "llm_seconds": 0.0033881999988807365,
+      "total_seconds": 7.322159499999543,
+      "yolo": {
+        "objects": [
+          {
+            "label": "Sofa",
+            "confidence": 0.676,
+            "box": [
+              1.7,
+              316.5,
+              1175.3,
+              1034.2
+            ]
+          },
+          {
+            "label": "Table",
+            "confidence": 0.526,
+            "box": [
+              0.4,
+              306.9,
+              1180.1,
+              1069.0
+            ]
+          }
+        ],
+        "analysis": {
+          "summary": "중복 후보: Sofa/Table (종류·개수 미확정)",
+          "certain_counts": {},
+          "ambiguous_indices": [
+            0,
+            1
+          ],
+          "cross_class_overlaps": [
+            {
+              "indices": [
+                0,
+                1
+              ],
+              "labels": [
+                "Sofa",
+                "Table"
+              ],
+              "iou": 0.9369
+            }
+          ],
+          "policy": "Different labels with IoU >= 0.8 are ambiguous; raw detections retained, no class chosen."
+        }
+      },
+      "vlm": {
+        "description": "테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.",
+        "cache_hit": false
+      },
+      "answer": {
+        "tool": "describe",
+        "args": {},
+        "message": "[YOLO] 중복 후보: Sofa/Table (종류·개수 미확정). [VLM] 테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음. [인식 불일치] 겹치는 후보는 별개 물체로 합산하지 않았으며 종류·개수는 미확정입니다. 이미지를 다시 확인해 주세요.",
+        "need_more_info": false,
+        "user_content": "[YOLO 객체 인식] 중복 후보: Sofa/Table (종류·개수 미확정)\n[VLM 장면 설명] 테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.\n[손 제스처] 가리키는 방향: 손 없음\n\n[사용자 질문] 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘.",
+        "consistency": {
+          "issues": [
+            {
+              "type": "overlapping_classes",
+              "message": "같은 영역의 서로 다른 클래스 후보는 합산하지 않으며 종류·개수를 확정하지 않습니다."
+            }
+          ],
+          "has_conflict": true,
+          "yolo_counts": {},
+          "vlm_explicit_counts": {},
+          "count_policy": "YOLO for unambiguous counts; VLM missing counts remain unknown."
+        },
+        "inference_path": "scene_evidence"
+      }
+    },
+    {
+      "run": 2,
+      "yolo_seconds": 0.037544200000411365,
+      "vlm_seconds": 0.021831400001246948,
+      "llm_seconds": 0.0014995000001363223,
+      "total_seconds": 0.03948080000009213,
+      "yolo": {
+        "objects": [
+          {
+            "label": "Sofa",
+            "confidence": 0.676,
+            "box": [
+              1.7,
+              316.5,
+              1175.3,
+              1034.2
+            ]
+          },
+          {
+            "label": "Table",
+            "confidence": 0.526,
+            "box": [
+              0.4,
+              306.9,
+              1180.1,
+              1069.0
+            ]
+          }
+        ],
+        "analysis": {
+          "summary": "중복 후보: Sofa/Table (종류·개수 미확정)",
+          "certain_counts": {},
+          "ambiguous_indices": [
+            0,
+            1
+          ],
+          "cross_class_overlaps": [
+            {
+              "indices": [
+                0,
+                1
+              ],
+              "labels": [
+                "Sofa",
+                "Table"
+              ],
+              "iou": 0.9369
+            }
+          ],
+          "policy": "Different labels with IoU >= 0.8 are ambiguous; raw detections retained, no class chosen."
+        }
+      },
+      "vlm": {
+        "description": "테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.",
+        "cache_hit": true
+      },
+      "answer": {
+        "tool": "describe",
+        "args": {},
+        "message": "[YOLO] 중복 후보: Sofa/Table (종류·개수 미확정). [VLM] 테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음. [인식 불일치] 겹치는 후보는 별개 물체로 합산하지 않았으며 종류·개수는 미확정입니다. 이미지를 다시 확인해 주세요.",
+        "need_more_info": false,
+        "user_content": "[YOLO 객체 인식] 중복 후보: Sofa/Table (종류·개수 미확정)\n[VLM 장면 설명] 테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.\n[손 제스처] 가리키는 방향: 손 없음\n\n[사용자 질문] 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘.",
+        "consistency": {
+          "issues": [
+            {
+              "type": "overlapping_classes",
+              "message": "같은 영역의 서로 다른 클래스 후보는 합산하지 않으며 종류·개수를 확정하지 않습니다."
+            }
+          ],
+          "has_conflict": true,
+          "yolo_counts": {},
+          "vlm_explicit_counts": {},
+          "count_policy": "YOLO for unambiguous counts; VLM missing counts remain unknown."
+        },
+        "inference_path": "scene_evidence"
+      }
+    },
+    {
+      "run": 3,
+      "yolo_seconds": 0.04504040000028908,
+      "vlm_seconds": 0.0210588000009011,
+      "llm_seconds": 0.0018526999992900528,
+      "total_seconds": 0.04730399999971269,
+      "yolo": {
+        "objects": [
+          {
+            "label": "Sofa",
+            "confidence": 0.676,
+            "box": [
+              1.7,
+              316.5,
+              1175.3,
+              1034.2
+            ]
+          },
+          {
+            "label": "Table",
+            "confidence": 0.526,
+            "box": [
+              0.4,
+              306.9,
+              1180.1,
+              1069.0
+            ]
+          }
+        ],
+        "analysis": {
+          "summary": "중복 후보: Sofa/Table (종류·개수 미확정)",
+          "certain_counts": {},
+          "ambiguous_indices": [
+            0,
+            1
+          ],
+          "cross_class_overlaps": [
+            {
+              "indices": [
+                0,
+                1
+              ],
+              "labels": [
+                "Sofa",
+                "Table"
+              ],
+              "iou": 0.9369
+            }
+          ],
+          "policy": "Different labels with IoU >= 0.8 are ambiguous; raw detections retained, no class chosen."
+        }
+      },
+      "vlm": {
+        "description": "테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.",
+        "cache_hit": true
+      },
+      "answer": {
+        "tool": "describe",
+        "args": {},
+        "message": "[YOLO] 중복 후보: Sofa/Table (종류·개수 미확정). [VLM] 테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음. [인식 불일치] 겹치는 후보는 별개 물체로 합산하지 않았으며 종류·개수는 미확정입니다. 이미지를 다시 확인해 주세요.",
+        "need_more_info": false,
+        "user_content": "[YOLO 객체 인식] 중복 후보: Sofa/Table (종류·개수 미확정)\n[VLM 장면 설명] 테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.\n[손 제스처] 가리키는 방향: 손 없음\n\n[사용자 질문] 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘.",
+        "consistency": {
+          "issues": [
+            {
+              "type": "overlapping_classes",
+              "message": "같은 영역의 서로 다른 클래스 후보는 합산하지 않으며 종류·개수를 확정하지 않습니다."
+            }
+          ],
+          "has_conflict": true,
+          "yolo_counts": {},
+          "vlm_explicit_counts": {},
+          "count_policy": "YOLO for unambiguous counts; VLM missing counts remain unknown."
+        },
+        "inference_path": "scene_evidence"
+      }
+    }
+  ],
+  "median_seconds": {
+    "yolo_seconds": 0.04504040000028908,
+    "vlm_seconds": 0.021831400001246948,
+    "llm_seconds": 0.0018526999992900528,
+    "total_seconds": 0.04730399999971269
+  }
+}

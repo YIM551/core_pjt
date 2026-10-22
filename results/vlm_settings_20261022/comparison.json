@@ -1,0 +1,122 @@
+{
+  "quality_review": {
+    "method": "Visual inspection of all six source images and paired output text; class keywords/format are only screening proxies, not factual ground truth.",
+    "rejected_settings": [
+      {
+        "side": 224,
+        "reason": "Chair invents bathroom context; Table renders cloth as an unsupported object/word."
+      },
+      {
+        "side": 336,
+        "reason": "Chair and Sofa invent bathroom context."
+      },
+      {
+        "side": 392,
+        "reason": "Sofa introduces a separate pillow claim unsupported by the visible image."
+      },
+      {
+        "side": 420,
+        "scope": "all-image fixed profile",
+        "reason": "Additional desk image retries and becomes slower; do not apply indiscriminately."
+      }
+    ],
+    "selected_policy": "420px only for all high-confidence (>=0.8) Chair/Sofa/couch detections; otherwise448px. 60tokens retained.",
+    "quality_limits": [
+      "Baseline additional desk contains the unclear word 쇼트; conservative policy preserves rather than fixes this pre-existing error.",
+      "Obstacle statements are model quotes, not physical safety labels.",
+      "Only six valid images and few repetitions; no test data used and no general quality guarantee."
+    ],
+    "token_finding": "40 token cap does not help normal short EOS outputs, and still requires a second generation for the desk; retain60 for headroom."
+  },
+  "pairs": [
+    {
+      "sample": 0,
+      "label": "Sofa",
+      "input_sha256": "fe0ae9d01fbdfee20979a43691616d2b989cacd50fb58e180e6e8308f6245380",
+      "side": 420,
+      "before_seconds": 6.7515552999993815,
+      "after_seconds": 4.306995200000529,
+      "before_description": "거실에 큰 소파가 있습니다, 장애물 없음.",
+      "after_description": "거실에 나무로 만든 소파가 놓여 있다, 장애물 없음.",
+      "same_input": true,
+      "format_pass": true,
+      "table_baseline_preserved": true
+    },
+    {
+      "sample": 1,
+      "label": "Chair",
+      "input_sha256": "487f64c99750542be4ff7ae68b1831d730afd0ad7212bd8061dd248a75950309",
+      "side": 420,
+      "before_seconds": 4.586403499999506,
+      "after_seconds": 4.080490900001678,
+      "before_description": "방 안에 의자 하나가 놓여 있다, 장애물 없음.",
+      "after_description": "방 안에 의자 하나가 놓여 있다, 장애물 없음.",
+      "same_input": true,
+      "format_pass": true,
+      "table_baseline_preserved": true
+    },
+    {
+      "sample": 2,
+      "label": "Table",
+      "input_sha256": "447b5ef42cd73ecbe777c95ef35ed6508352b978ec87cbeaed76ef3e2831a45f",
+      "side": 448,
+      "before_seconds": 7.247620300000563,
+      "after_seconds": 7.06815479999932,
+      "before_description": "테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.",
+      "after_description": "테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.",
+      "same_input": true,
+      "format_pass": true,
+      "table_baseline_preserved": true
+    },
+    {
+      "sample": 3,
+      "label": "Chair",
+      "input_sha256": "aaf4fe139b1086884e58ad85cf38a894c6aab8ff2e3850740bf9f980d00e15f0",
+      "side": 420,
+      "before_seconds": 6.420936699998492,
+      "after_seconds": 5.447628399999303,
+      "before_description": "화이트 벽에 붉은 의자가 놓여 있다, 장애물 없음.",
+      "after_description": "방에 빨간 의자가 하나 놓여 있다, 장애물 없음.",
+      "same_input": true,
+      "format_pass": true,
+      "table_baseline_preserved": true
+    },
+    {
+      "sample": 4,
+      "label": "Sofa",
+      "input_sha256": "96ce666faf34b6500d4c1aa04cdba1949e5f4eb4513e565dac938769b156f85d",
+      "side": 420,
+      "before_seconds": 5.203822299999956,
+      "after_seconds": 5.225171300000511,
+      "before_description": "거실에 고급스러운 검은색 소파가 놓여 있다, 장애물 없음.",
+      "after_description": "거실에 큰 소파가 있습니다, 장애물 없음.",
+      "same_input": true,
+      "format_pass": true,
+      "table_baseline_preserved": true
+    },
+    {
+      "sample": 5,
+      "label": "Table",
+      "input_sha256": "5abc57bb8dd79d5293c1fdfeb18891a8ff45d49004f3d7b822b5937913595e81",
+      "side": 448,
+      "before_seconds": 7.126250399998753,
+      "after_seconds": 6.228705400000763,
+      "before_description": "이 책상에는 1개의 닫힌 쇼트가 있고, 장애물 없음.",
+      "after_description": "이 책상에는 1개의 닫힌 쇼트가 있고, 장애물 없음.",
+      "same_input": true,
+      "format_pass": true,
+      "table_baseline_preserved": true
+    }
+  ],
+  "mean_before_seconds": 6.222764749999442,
+  "mean_after_seconds": 5.392857666667017,
+  "mean_reduction_percent": 13.336629563772266,
+  "all_pair_checks": true,
+  "phase_trial_counts": {
+    "screen": 18,
+    "refine": 12,
+    "confirm": 12,
+    "confirm40": 6
+  },
+  "policy_trials": 12
+}

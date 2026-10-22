@@ -1,0 +1,93 @@
+INFO:     127.0.0.1:52513 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52500 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52500 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52500 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:52500 - "GET /mediapipe/wasm/vision_wasm_internal.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52500 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52500 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52500 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52500 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+[yolo] 시작 10:21:58    3426 ms  1200x1200  객체 1개
+INFO:     127.0.0.1:52500 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 10:21:58    8335 ms  거실에 큰 소파가 있습니다, 장애물 없음.
+INFO:     127.0.0.1:52208 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 10:22:06    6016 ms  Q. 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘. → describe   1개의 소파가 있습니다.
+INFO:     127.0.0.1:52208 - "POST /api/llm-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55450 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55450 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55450 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:55450 - "GET /mediapipe/wasm/vision_wasm_internal.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55450 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55450 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55450 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55450 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+[yolo] 시작 10:22:14      37 ms  1200x1200  객체 1개
+INFO:     127.0.0.1:55450 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 10:22:14    6871 ms  방 안에 의자 하나가 놓여 있다, 장애물 없음.
+INFO:     127.0.0.1:50063 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 10:22:22    2085 ms  Q. 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘. → describe   의자 1개가 방에 있습니다.
+INFO:     127.0.0.1:50063 - "POST /api/llm-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55240 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55240 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55240 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:55240 - "GET /mediapipe/wasm/vision_wasm_internal.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55240 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55240 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55240 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55240 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+[yolo] 시작 10:22:26      30 ms  1200x1200  객체 2개
+INFO:     127.0.0.1:53836 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 10:22:26    7217 ms  테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.
+INFO:     127.0.0.1:55240 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 10:22:34    2636 ms  Q. 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘. → describe   소파 1개, 테이블 1개가 보여요.
+INFO:     127.0.0.1:55240 - "POST /api/llm-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65061 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49387 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52491 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52491 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52491 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:52491 - "GET /mediapipe/wasm/vision_wasm_internal.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52491 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52491 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52491 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52491 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+[vlm ] 시작 10:22:49    6097 ms  거실에 큰 소파가 있습니다, 장애물 없음.
+INFO:     127.0.0.1:54561 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 10:22:56    1925 ms  Q. 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘. → describe   1개의 소파가 있습니다.
+INFO:     127.0.0.1:54561 - "POST /api/llm-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55179 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55179 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55179 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:55179 - "GET /mediapipe/wasm/vision_wasm_internal.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55179 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55179 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55179 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55179 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+[yolo] 시작 10:23:00      39 ms  1200x1200  객체 1개
+INFO:     127.0.0.1:55179 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 10:23:00    6840 ms  방 안에 의자 하나가 놓여 있다, 장애물 없음.
+INFO:     127.0.0.1:49333 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 10:23:07    2087 ms  Q. 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘. → describe   의자 1개가 방에 있습니다.
+INFO:     127.0.0.1:49333 - "POST /api/llm-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58174 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58174 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58174 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:58174 - "GET /mediapipe/wasm/vision_wasm_internal.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58174 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58174 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58174 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58174 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+[yolo] 시작 10:23:11      33 ms  1200x1200  객체 2개
+INFO:     127.0.0.1:58174 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 10:23:11    6932 ms  테이블 위에 체크무늬 천이 깔려 있다, 장애물 없음.
+INFO:     127.0.0.1:55035 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 10:23:19    2697 ms  Q. 어떤 가구가 몇 개 보여? YOLO 개수와 VLM 장면 설명을 참고해서 한국어로 알려줘. → describe   소파 1개, 테이블 1개가 보여요.
+INFO:     127.0.0.1:55035 - "POST /api/llm-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59479 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53803 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53803 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53803 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:53803 - "GET /mediapipe/wasm/vision_wasm_internal.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53803 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53803 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59445 - "GET /api/health HTTP/1.1" 200 OK
