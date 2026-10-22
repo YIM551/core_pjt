@@ -1,0 +1,45 @@
+{
+  "detection_candidates": [
+    {
+      "name": "YOLOv8n",
+      "params_m": 3.2,
+      "official_coco_map50_95": 37.3,
+      "official_cpu_onnx_ms": 80.4
+    },
+    {
+      "name": "YOLO11n",
+      "params_m": 2.6,
+      "official_coco_map50_95": 39.5,
+      "official_cpu_onnx_ms": 56.1
+    },
+    {
+      "name": "YOLO11s",
+      "params_m": 9.4,
+      "official_coco_map50_95": 47.0,
+      "official_cpu_onnx_ms": 90.0
+    }
+  ],
+  "detector_license_reference": "AGPL-3.0 or Enterprise; see publisher terms",
+  "selection": "YOLO11n: compact parameter count, CPU budget, existing pipeline and transfer-learning support. Parameter count is only a memory proxy for unmeasured alternatives.",
+  "vlm_candidates": [
+    {
+      "name": "Qwen2.5-VL-3B",
+      "selected": true,
+      "license_reference": "GGUF model card Apache-2.0",
+      "local_evidence": "vlm_measurement.csv"
+    },
+    {
+      "name": "Qwen2.5-VL-7B",
+      "selected": false,
+      "local_evidence": "not measured"
+    }
+  ],
+  "sources": [
+    "https://docs.ultralytics.com/models/yolo11/",
+    "https://docs.ultralytics.com/models/yolov8/",
+    "https://www.ultralytics.com/license",
+    "https://huggingface.co/ggml-org/Qwen2.5-VL-3B-Instruct-GGUF",
+    "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct"
+  ],
+  "note": "Official640px COCO/ONNX references are not measurements on this PC. Local latency, FPS and RSS are separately recorded."
+}

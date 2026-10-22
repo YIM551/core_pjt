@@ -1,0 +1,466 @@
+{
+  "base_url": "http://127.0.0.1:8002",
+  "source": "Actual local Edge browser, live YOLO/VLM/LLM and MediaPipe",
+  "cases": [
+    {
+      "stage": "spec1",
+      "exchanges": [
+        {
+          "endpoint": "/api/yolo-detect",
+          "status": 200,
+          "input_sha256": "fc392db34868c144aa8b5804094ab6dd26a3bd542bdd3b57ccb436c4766603dc",
+          "captured_input": "C:\\work\\core_pjt\\results\\spec_workflow_20261022\\captured_inputs\\fc392db34868c144aa8b5804094ab6dd26a3bd542bdd3b57ccb436c4766603dc.jpg",
+          "response": {
+            "objects": [
+              {
+                "label": "couch",
+                "confidence": 0.917,
+                "box": [
+                  168.9,
+                  335.2,
+                  1080.7,
+                  920.6
+                ]
+              },
+              {
+                "label": "chair",
+                "confidence": 0.897,
+                "box": [
+                  0.7,
+                  253.8,
+                  217.8,
+                  545.8
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "endpoint": "/api/vlm-describe",
+          "status": 200,
+          "input_sha256": "fc392db34868c144aa8b5804094ab6dd26a3bd542bdd3b57ccb436c4766603dc",
+          "captured_input": "C:\\work\\core_pjt\\results\\spec_workflow_20261022\\captured_inputs\\fc392db34868c144aa8b5804094ab6dd26a3bd542bdd3b57ccb436c4766603dc.jpg",
+          "response": {
+            "description": "거실에 베개와 소파가 놓여 있다, 장애물 없음."
+          }
+        },
+        {
+          "endpoint": "/api/llm-answer",
+          "status": 200,
+          "input_sha256": "ef8d5c1ff678e11dc934d2207fc87fd589604401a12432b561c714f37eda29fe",
+          "captured_input": null,
+          "response": {
+            "tool": "describe",
+            "args": {},
+            "message": "거실에 베개와 소파가 보여요.",
+            "need_more_info": false,
+            "user_content": "[YOLO 객체 인식] couch 1개, chair 1개\n[VLM 장면 설명] 거실에 베개와 소파가 놓여 있다, 장애물 없음.\n[손 제스처] 가리키는 방향: 손 없음\n\n[사용자 질문] 거실에 어떤 가구가 보여?"
+          }
+        }
+      ],
+      "errors": [],
+      "turns": [
+        {
+          "prompt": "거실에 어떤 가구가 보여?",
+          "seconds": 11.076,
+          "response": {
+            "tool": "describe",
+            "args": {},
+            "message": "거실에 베개와 소파가 보여요.",
+            "need_more_info": false,
+            "user_content": "[YOLO 객체 인식] couch 1개, chair 1개\n[VLM 장면 설명] 거실에 베개와 소파가 놓여 있다, 장애물 없음.\n[손 제스처] 가리키는 방향: 손 없음\n\n[사용자 질문] 거실에 어떤 가구가 보여?"
+          },
+          "yolo_display": "총 2개 인식됨\n- couch 92% 화면 중앙 (169,335)-(1081,921)\n- chair 90% 화면 왼쪽 (1,254)-(218,546)",
+          "vlm_display": "거실에 베개와 소파가 놓여 있다, 장애물 없음.",
+          "gesture_display": "손을 인식하지 못했습니다."
+        }
+      ],
+      "video": "C:\\work\\core_pjt\\results\\spec_workflow_20261022\\spec1\\demo.webm"
+    },
+    {
+      "stage": "spec2",
+      "exchanges": [
+        {
+          "endpoint": "/api/yolo-detect",
+          "status": 200,
+          "input_sha256": "bead61c18e026cc2089037c5bc6bbe733d2c705484e496a22ca893f5e7251fab",
+          "captured_input": "C:\\work\\core_pjt\\results\\spec_workflow_20261022\\captured_inputs\\bead61c18e026cc2089037c5bc6bbe733d2c705484e496a22ca893f5e7251fab.jpg",
+          "response": {
+            "objects": [
+              {
+                "label": "person",
+                "confidence": 0.88,
+                "box": [
+                  45.3,
+                  19.1,
+                  405.3,
+                  417
+                ]
+              },
+              {
+                "label": "tie",
+                "confidence": 0.425,
+                "box": [
+                  221.3,
+                  138.1,
+                  289.8,
+                  385
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "endpoint": "/api/vlm-describe",
+          "status": 200,
+          "input_sha256": "bead61c18e026cc2089037c5bc6bbe733d2c705484e496a22ca893f5e7251fab",
+          "captured_input": "C:\\work\\core_pjt\\results\\spec_workflow_20261022\\captured_inputs\\bead61c18e026cc2089037c5bc6bbe733d2c705484e496a22ca893f5e7251fab.jpg",
+          "response": {
+            "description": "여성 한 명이 손가락으로 높이를 가리키고 있습니다, 장애물 없음."
+          }
+        },
+        {
+          "endpoint": "/api/llm-answer",
+          "status": 200,
+          "input_sha256": "03009e6a7f5b9ca9b75aa3727b66bccffa98101c635d336148100d4a9083fa08",
+          "captured_input": null,
+          "response": {
+            "tool": "move",
+            "args": {
+              "direction": "up",
+              "steps": 2
+            },
+            "message": "위로 2칸 이동합니다.",
+            "need_more_info": false,
+            "user_content": "[YOLO 객체 인식] person 1개, tie 1개\n[VLM 장면 설명] 여성 한 명이 손가락으로 높이를 가리키고 있습니다, 장애물 없음.\n[손 제스처] 가리키는 방향: 위\n\n[사용자 질문] 이쪽으로 2칸 가"
+          }
+        }
+      ],
+      "errors": [],
+      "turns": [
+        {
+          "prompt": "이쪽으로 2칸 가",
+          "seconds": 9.922,
+          "response": {
+            "tool": "move",
+            "args": {
+              "direction": "up",
+              "steps": 2
+            },
+            "message": "위로 2칸 이동합니다.",
+            "need_more_info": false,
+            "user_content": "[YOLO 객체 인식] person 1개, tie 1개\n[VLM 장면 설명] 여성 한 명이 손가락으로 높이를 가리키고 있습니다, 장애물 없음.\n[손 제스처] 가리키는 방향: 위\n\n[사용자 질문] 이쪽으로 2칸 가"
+          },
+          "yolo_display": "총 2개 인식됨\n- person 88% 화면 중앙 (45,19)-(405,417)\n- tie 43% 화면 오른쪽 (221,138)-(290,385)",
+          "vlm_display": "여성 한 명이 손가락으로 높이를 가리키고 있습니다, 장애물 없음.",
+          "gesture_display": "위쪽 가리킴 83% · 왼손 · 방향: 위 · 손가락 1개"
+        }
+      ],
+      "video": "C:\\work\\core_pjt\\results\\spec_workflow_20261022\\spec2\\demo.webm"
+    },
+    {
+      "stage": "spec3",
+      "exchanges": [
+        {
+          "endpoint": "/api/yolo-detect",
+          "status": 200,
+          "input_sha256": "fc392db34868c144aa8b5804094ab6dd26a3bd542bdd3b57ccb436c4766603dc",
+          "captured_input": "C:\\work\\core_pjt\\results\\spec_workflow_20261022\\captured_inputs\\fc392db34868c144aa8b5804094ab6dd26a3bd542bdd3b57ccb436c4766603dc.jpg",
+          "response": {
+            "objects": [
+              {
+                "label": "couch",
+                "confidence": 0.917,
+                "box": [
+                  168.9,
+                  335.2,
+                  1080.7,
+                  920.6
+                ]
+              },
+              {
+                "label": "chair",
+                "confidence": 0.897,
+                "box": [
+                  0.7,
+                  253.8,
+                  217.8,
+                  545.8
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "endpoint": "/api/vlm-describe",
+          "status": 200,
+          "input_sha256": "fc392db34868c144aa8b5804094ab6dd26a3bd542bdd3b57ccb436c4766603dc",
+          "captured_input": "C:\\work\\core_pjt\\results\\spec_workflow_20261022\\captured_inputs\\fc392db34868c144aa8b5804094ab6dd26a3bd542bdd3b57ccb436c4766603dc.jpg",
+          "response": {
+            "description": "거실에 베개와 소파가 놓여 있다, 장애물 없음."
+          }
+        },
+        {
+          "endpoint": "/api/llm-answer",
+          "status": 200,
+          "input_sha256": "60eced941df1349cdbc009464e9250cb35c3d37e21f304dfc29f9579bf46518c",
+          "captured_input": null,
+          "response": {
+            "tool": "ask",
+            "args": {
+              "steps": 2
+            },
+            "message": "어느 쪽으로 2칸 갈까요? 방향을 말하거나 손으로 가리켜 주세요.",
+            "need_more_info": true,
+            "user_content": "[YOLO 객체 인식] couch 1개, chair 1개\n[VLM 장면 설명] 거실에 베개와 소파가 놓여 있다, 장애물 없음.\n[손 제스처] 가리키는 방향: 손 없음\n\n[사용자 질문] 저쪽으로 2칸 가"
+          }
+        },
+        {
+          "endpoint": "/api/yolo-detect",
+          "status": 200,
+          "input_sha256": "fc392db34868c144aa8b5804094ab6dd26a3bd542bdd3b57ccb436c4766603dc",
+          "captured_input": "C:\\work\\core_pjt\\results\\spec_workflow_20261022\\captured_inputs\\fc392db34868c144aa8b5804094ab6dd26a3bd542bdd3b57ccb436c4766603dc.jpg",
+          "response": {
+            "objects": [
+              {
+                "label": "couch",
+                "confidence": 0.917,
+                "box": [
+                  168.9,
+                  335.2,
+                  1080.7,
+                  920.6
+                ]
+              },
+              {
+                "label": "chair",
+                "confidence": 0.897,
+                "box": [
+                  0.7,
+                  253.8,
+                  217.8,
+                  545.8
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "endpoint": "/api/vlm-describe",
+          "status": 200,
+          "input_sha256": "fc392db34868c144aa8b5804094ab6dd26a3bd542bdd3b57ccb436c4766603dc",
+          "captured_input": "C:\\work\\core_pjt\\results\\spec_workflow_20261022\\captured_inputs\\fc392db34868c144aa8b5804094ab6dd26a3bd542bdd3b57ccb436c4766603dc.jpg",
+          "response": {
+            "description": "거실에 베개와 소파가 놓여 있다, 장애물 없음."
+          }
+        },
+        {
+          "endpoint": "/api/llm-answer",
+          "status": 200,
+          "input_sha256": "0f6e3ded7f14fb62f3b26a8b848e66962bb7886df7409307518319ca68a6f9ab",
+          "captured_input": null,
+          "response": {
+            "tool": "move",
+            "args": {
+              "direction": "down",
+              "steps": 2
+            },
+            "message": "아래로 2칸 이동합니다.",
+            "need_more_info": false,
+            "user_content": "[YOLO 객체 인식] couch 1개, chair 1개\n[VLM 장면 설명] 거실에 베개와 소파가 놓여 있다, 장애물 없음.\n[손 제스처] 가리키는 방향: 손 없음\n\n[사용자 질문] 아래"
+          }
+        },
+        {
+          "endpoint": "/api/yolo-detect",
+          "status": 200,
+          "input_sha256": "fc392db34868c144aa8b5804094ab6dd26a3bd542bdd3b57ccb436c4766603dc",
+          "captured_input": "C:\\work\\core_pjt\\results\\spec_workflow_20261022\\captured_inputs\\fc392db34868c144aa8b5804094ab6dd26a3bd542bdd3b57ccb436c4766603dc.jpg",
+          "response": {
+            "objects": [
+              {
+                "label": "couch",
+                "confidence": 0.917,
+                "box": [
+                  168.9,
+                  335.2,
+                  1080.7,
+                  920.6
+                ]
+              },
+              {
+                "label": "chair",
+                "confidence": 0.897,
+                "box": [
+                  0.7,
+                  253.8,
+                  217.8,
+                  545.8
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "endpoint": "/api/vlm-describe",
+          "status": 200,
+          "input_sha256": "fc392db34868c144aa8b5804094ab6dd26a3bd542bdd3b57ccb436c4766603dc",
+          "captured_input": "C:\\work\\core_pjt\\results\\spec_workflow_20261022\\captured_inputs\\fc392db34868c144aa8b5804094ab6dd26a3bd542bdd3b57ccb436c4766603dc.jpg",
+          "response": {
+            "description": "거실에 베개와 소파가 놓여 있다, 장애물 없음."
+          }
+        },
+        {
+          "endpoint": "/api/llm-answer",
+          "status": 200,
+          "input_sha256": "be6762102553c45330abe5c671c149086c5c39801f71bc20301ec5bb48e0e622",
+          "captured_input": null,
+          "response": {
+            "tool": "move",
+            "args": {
+              "direction": "up",
+              "steps": 10
+            },
+            "message": "위로 10칸 이동합니다.",
+            "need_more_info": false,
+            "user_content": "[YOLO 객체 인식] couch 1개, chair 1개\n[VLM 장면 설명] 거실에 베개와 소파가 놓여 있다, 장애물 없음.\n[손 제스처] 가리키는 방향: 손 없음\n\n[사용자 질문] 위로 10칸 가"
+          }
+        }
+      ],
+      "errors": [],
+      "turns": [
+        {
+          "prompt": "저쪽으로 2칸 가",
+          "seconds": 10.316,
+          "response": {
+            "tool": "ask",
+            "args": {
+              "steps": 2
+            },
+            "message": "어느 쪽으로 2칸 갈까요? 방향을 말하거나 손으로 가리켜 주세요.",
+            "need_more_info": true,
+            "user_content": "[YOLO 객체 인식] couch 1개, chair 1개\n[VLM 장면 설명] 거실에 베개와 소파가 놓여 있다, 장애물 없음.\n[손 제스처] 가리키는 방향: 손 없음\n\n[사용자 질문] 저쪽으로 2칸 가"
+          },
+          "yolo_display": "총 2개 인식됨\n- couch 92% 화면 중앙 (169,335)-(1081,921)\n- chair 90% 화면 왼쪽 (1,254)-(218,546)",
+          "vlm_display": "거실에 베개와 소파가 놓여 있다, 장애물 없음.",
+          "gesture_display": "손을 인식하지 못했습니다."
+        },
+        {
+          "prompt": "아래",
+          "seconds": 12.553,
+          "response": {
+            "tool": "move",
+            "args": {
+              "direction": "down",
+              "steps": 2
+            },
+            "message": "아래로 2칸 이동합니다.",
+            "need_more_info": false,
+            "user_content": "[YOLO 객체 인식] couch 1개, chair 1개\n[VLM 장면 설명] 거실에 베개와 소파가 놓여 있다, 장애물 없음.\n[손 제스처] 가리키는 방향: 손 없음\n\n[사용자 질문] 아래"
+          },
+          "yolo_display": "총 2개 인식됨\n- couch 92% 화면 중앙 (169,335)-(1081,921)\n- chair 90% 화면 왼쪽 (1,254)-(218,546)",
+          "vlm_display": "거실에 베개와 소파가 놓여 있다, 장애물 없음.",
+          "gesture_display": "손을 인식하지 못했습니다."
+        },
+        {
+          "prompt": "위로 10칸 가",
+          "seconds": 11.5,
+          "response": {
+            "tool": "move",
+            "args": {
+              "direction": "up",
+              "steps": 10
+            },
+            "message": "위로 10칸 이동합니다.",
+            "need_more_info": false,
+            "user_content": "[YOLO 객체 인식] couch 1개, chair 1개\n[VLM 장면 설명] 거실에 베개와 소파가 놓여 있다, 장애물 없음.\n[손 제스처] 가리키는 방향: 손 없음\n\n[사용자 질문] 위로 10칸 가"
+          },
+          "yolo_display": "총 2개 인식됨\n- couch 92% 화면 중앙 (169,335)-(1081,921)\n- chair 90% 화면 왼쪽 (1,254)-(218,546)",
+          "vlm_display": "거실에 베개와 소파가 놓여 있다, 장애물 없음.",
+          "gesture_display": "손을 인식하지 못했습니다."
+        }
+      ],
+      "simulator": {
+        "walls": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "initial": [
+          1,
+          1
+        ],
+        "after_followup": [
+          3,
+          1
+        ],
+        "after_boundary_or_wall": [
+          1,
+          1
+        ],
+        "log": "[9시 44분 10초] 로컬 PC: (3, 1) → 위 2칸 → (1, 1)\n[9시 43분 58초] 로컬 PC: (1, 1) → 아래 2칸 → (3, 1)\n[9시 43분 36초] 랜덤 벽 생성: 19개 칸"
+      },
+      "video": "C:\\work\\core_pjt\\results\\spec_workflow_20261022\\spec3\\demo.webm"
+    }
+  ]
+}

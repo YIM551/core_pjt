@@ -1,0 +1,9 @@
+WARNING: Logging before InitGoogle() is written to STDERR
+I0000 00:00:1792628770.188554   21896 hand_gesture_recognizer_graph.cc:257] Custom gesture classifier is not defined.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1792628770.198441   32184 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1792628770.207499    9676 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1792628770.208156   33140 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1792628770.208224   33140 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1792628770.231065     584 landmark_projection_calculator.cc:81] Using NORM_RECT without IMAGE_DIMENSIONS is only supported for the square ROI. Provide IMAGE_DIMENSIONS or use PROJECTION_MATRIX.
+{"input_source": "Supplied static hand images, not newly captured personal webcam images", "no_hand_sofa_pass": true, "directions_passed": 16, "finger_counts_passed": 16, "total": 16, "limitation": "Live webcam variability and optional F205 three personally captured images remain unverified."}

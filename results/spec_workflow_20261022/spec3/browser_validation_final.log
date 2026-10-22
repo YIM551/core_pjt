@@ -1,0 +1,3 @@
+PASS: Furniture image -> YOLO/VLM -> scene answer
+PASS: supplied hand image -> real MediaPipe up -> move(up, 2)
+PASS: ask -> remembered steps -> actual simulator move and boundary/wall stop

@@ -1,0 +1,61 @@
+INFO:     Started server process [21820]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 16
+image_tokens->ny = 16
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지에 무엇이 보이는지 한국어로 간결하게 설명해줘.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=448, ny=448)
+clip_image_batch_encode: output embedding shape [2048, 256, 1]
+image slice encoded in 2523 ms
+decoding image batch 1/1, n_tokens_batch = 256
+image decoded (batch 1/1) in 995 ms
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 16
+image_tokens->ny = 16
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지에 무엇이 보이는지 한국어로 간결하게 설명해줘.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=448, ny=448)
+clip_image_batch_encode: output embedding shape [2048, 256, 1]
+image slice encoded in 2467 ms
+decoding image batch 1/1, n_tokens_batch = 256
+image decoded (batch 1/1) in 1016 ms
+tokenize: no merging for part index 1
+add_text: <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+
+add_text: <|vision_start|>
+add_media: preproc_out has 1 entries, grid_x = 0, grid_y = 0, has_overview = 0
+image_tokens->nx = 16
+image_tokens->ny = 16
+batch_f32 size = 1
+add_text: <|vision_end|>
+add_text: 이 이미지에 무엇이 보이는지 한국어로 간결하게 설명해줘.<|im_end|>
+<|im_start|>assistant
+encoding image slice...
+clip_image_batch_encode: copying image 1/1 to input buffer (nx=448, ny=448)
+clip_image_batch_encode: output embedding shape [2048, 256, 1]
+image slice encoded in 2602 ms
+decoding image batch 1/1, n_tokens_batch = 256
+image decoded (batch 1/1) in 1015 ms

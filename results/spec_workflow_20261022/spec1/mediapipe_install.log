@@ -1,0 +1,39 @@
+Collecting mediapipe==1.0.1
+  Downloading mediapipe-1.0.1-py3-none-win_amd64.whl.metadata (10 kB)
+Collecting absl-py~=2.3 (from mediapipe==1.0.1)
+  Downloading absl_py-2.5.1-py3-none-any.whl.metadata (3.3 kB)
+Requirement already satisfied: certifi in .\.venv\Lib\site-packages (from mediapipe==1.0.1) (2026.10.19)
+Requirement already satisfied: numpy in .\.venv\Lib\site-packages (from mediapipe==1.0.1) (2.5.4)
+Collecting sounddevice~=0.5 (from mediapipe==1.0.1)
+  Downloading sounddevice-0.5.6-py3-none-win_amd64.whl.metadata (1.4 kB)
+Collecting flatbuffers~=25.9 (from mediapipe==1.0.1)
+  Downloading flatbuffers-25.12.19-py2.py3-none-any.whl.metadata (1.0 kB)
+Collecting opencv-contrib-python (from mediapipe==1.0.1)
+  Downloading opencv_contrib_python-5.0.0.93-cp37-abi3-win_amd64.whl.metadata (20 kB)
+Requirement already satisfied: matplotlib in .\.venv\Lib\site-packages (from mediapipe==1.0.1) (3.11.2)
+Collecting cffi (from sounddevice~=0.5->mediapipe==1.0.1)
+  Downloading cffi-2.1.1-cp312-cp312-win_amd64.whl.metadata (2.6 kB)
+Collecting pycparser (from cffi->sounddevice~=0.5->mediapipe==1.0.1)
+  Downloading pycparser-3.11-py3-none-any.whl.metadata (8.2 kB)
+Requirement already satisfied: contourpy>=1.0.1 in .\.venv\Lib\site-packages (from matplotlib->mediapipe==1.0.1) (1.4.0)
+Requirement already satisfied: cycler>=0.10 in .\.venv\Lib\site-packages (from matplotlib->mediapipe==1.0.1) (0.12.1)
+Requirement already satisfied: fonttools>=4.28.2 in .\.venv\Lib\site-packages (from matplotlib->mediapipe==1.0.1) (4.67.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in .\.venv\Lib\site-packages (from matplotlib->mediapipe==1.0.1) (1.5.1)
+Requirement already satisfied: packaging>=20.0 in .\.venv\Lib\site-packages (from matplotlib->mediapipe==1.0.1) (26.3)
+Requirement already satisfied: pillow>=9 in .\.venv\Lib\site-packages (from matplotlib->mediapipe==1.0.1) (12.3.0)
+Requirement already satisfied: pyparsing>=3 in .\.venv\Lib\site-packages (from matplotlib->mediapipe==1.0.1) (3.3.3)
+Requirement already satisfied: python-dateutil>=2.7 in .\.venv\Lib\site-packages (from matplotlib->mediapipe==1.0.1) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in .\.venv\Lib\site-packages (from python-dateutil>=2.7->matplotlib->mediapipe==1.0.1) (1.17.0)
+Downloading mediapipe-1.0.1-py3-none-win_amd64.whl (20.1 MB)
+   ---------------------------------------- 20.1/20.1 MB 43.8 MB/s  0:00:00
+Downloading absl_py-2.5.1-py3-none-any.whl (137 kB)
+Downloading flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
+Downloading sounddevice-0.5.6-py3-none-win_amd64.whl (1.0 MB)
+   ---------------------------------------- 1.0/1.0 MB 49.8 MB/s  0:00:00
+Downloading cffi-2.1.1-cp312-cp312-win_amd64.whl (185 kB)
+Downloading opencv_contrib_python-5.0.0.93-cp37-abi3-win_amd64.whl (53.8 MB)
+   ---------------------------------------- 53.8/53.8 MB 57.2 MB/s  0:00:00
+Downloading pycparser-3.11-py3-none-any.whl (51 kB)
+Installing collected packages: flatbuffers, pycparser, opencv-contrib-python, absl-py, cffi, sounddevice, mediapipe
+
+Successfully installed absl-py-2.5.1 cffi-2.1.1 flatbuffers-25.12.19 mediapipe-1.0.1 opencv-contrib-python-5.0.0.93 pycparser-3.11 sounddevice-0.5.6

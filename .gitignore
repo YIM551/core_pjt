@@ -26,6 +26,8 @@ __pycache__/
 *.zip
 *.mp4
 .backup/
+/tmp/
+/results/spec_workflow_20261022/**/raw_video/
 /datasets/**/train/
 /datasets/**/valid/
 /datasets/**/test/

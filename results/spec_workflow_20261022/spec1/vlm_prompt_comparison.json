@@ -1,0 +1,72 @@
+{
+  "image": "C:\\work\\core_pjt\\samples\\furniture_v2_sofa.jpg",
+  "input_size": [
+    448,
+    448
+  ],
+  "temperature": 0.0,
+  "max_tokens": 96,
+  "model_load_seconds": 5.772468099999969,
+  "rss_before_load_mb": 47.40625,
+  "runs": [
+    {
+      "prompt_id": "free",
+      "prompt": "이 이미지를 설명해줘.",
+      "output": ": 이 이미지는 거실 내부를 보여주고 있습니다. 중앙에는 터치가 있는 베이지색과 흰색 패턴이 있는 소파가 있습니다. 소파 옆에는 흰색 벽과 계단이 보입니다. 계단은 나무로 되어 있고, 계단 위에는 흰색 계단 데크가 있습니다. 계단 옆에는 흰",
+      "finish_reason": "length",
+      "seconds": 14.871342899999945,
+      "rss_mb": 4980.23828125,
+      "rss_delta_mb": 4932.83203125
+    },
+    {
+      "prompt_id": "concise_ko",
+      "prompt": "이 이미지에 무엇이 보이는지 한국어로 간결하게 설명해줘.",
+      "output": ": 이 이미지에는 베이지색과 흰색의 패턴이 있는 소파가 보입니다. 소파 옆에는 카펫이 깔린 의자와 계단이 있습니다. 벽은 흰색이며, 계단은 나무로 되어 있습니다.",
+      "finish_reason": "stop",
+      "seconds": 6.049452100000053,
+      "rss_mb": 4982.640625,
+      "rss_delta_mb": 4935.234375
+    },
+    {
+      "prompt_id": "count",
+      "prompt": "보이는 물체를 개수와 함께 한국어로 나열해줘.",
+      "output": ". 1. 소파 2. 베개 3. 의자 4. 계단 5. 벽掛け 6. 벽걸이 7. 벽 8. 바닥 9. 벽걸이 10. 벽掛け",
+      "finish_reason": "stop",
+      "seconds": 6.035893500000384,
+      "rss_mb": 4984.46484375,
+      "rss_delta_mb": 4937.05859375
+    },
+    {
+      "prompt_id": "obstacle",
+      "prompt": "장애물이 있는지만 한국어로 짧게 답해줘.",
+      "output": ". 네, 한국어로 짧게 답해줘요.",
+      "finish_reason": "stop",
+      "seconds": 5.201850899999954,
+      "rss_mb": 4986.2265625,
+      "rss_delta_mb": 4938.8203125
+    }
+  ],
+  "regulated_runs": [
+    {
+      "repeat": 1,
+      "output": "거실에 흰색 패턴이 있는 소파가 놓여 있다, 장애물 없음.",
+      "seconds": 6.615986800000428,
+      "checks": {
+        "한국어": true,
+        "40자 이내": true,
+        "장애물 표기": true
+      }
+    },
+    {
+      "repeat": 2,
+      "output": "거실에 흰색 패턴이 있는 소파가 놓여 있다, 장애물 없음.",
+      "seconds": 6.466275400000086,
+      "checks": {
+        "한국어": true,
+        "40자 이내": true,
+        "장애물 표기": true
+      }
+    }
+  ],
+  "regulated_reproducible": true
+}

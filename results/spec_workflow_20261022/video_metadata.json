@@ -1,0 +1,29 @@
+[
+  {
+    "stage": "spec1",
+    "format": "WebM",
+    "fps": 25.0,
+    "frames": 344,
+    "seconds": 13.76,
+    "bytes": 898165,
+    "sha256": "2d3b7649b6aeba662fe143ff04c2a83be3a543613130fee0f2c391d43072546f"
+  },
+  {
+    "stage": "spec2",
+    "format": "WebM",
+    "fps": 25.0,
+    "frames": 316,
+    "seconds": 12.64,
+    "bytes": 863669,
+    "sha256": "ff65193c42f48579826c3c25f9f29888e56fe2b107d97724a448ccf531d633fb"
+  },
+  {
+    "stage": "spec3",
+    "format": "WebM",
+    "fps": 25.0,
+    "frames": 914,
+    "seconds": 36.56,
+    "bytes": 2464100,
+    "sha256": "cb2e9eb098644a41a5d284107b2c8067b29ab18d344a83ae21ee5bfc3b60d92b"
+  }
+]

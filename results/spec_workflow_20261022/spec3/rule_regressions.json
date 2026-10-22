@@ -1,0 +1,126 @@
+{
+  "passed": 17,
+  "total": 17,
+  "cases": [
+    {
+      "name": "R5 direction reply with LLM describe",
+      "passed": true,
+      "actual": {
+        "direction": "left",
+        "steps": 3
+      },
+      "expected": {
+        "direction": "left",
+        "steps": 3
+      }
+    },
+    {
+      "name": "R5 direction reply with LLM ask",
+      "passed": true,
+      "actual": {
+        "direction": "left",
+        "steps": 3
+      },
+      "expected": {
+        "direction": "left",
+        "steps": 3
+      }
+    },
+    {
+      "name": "R5 direction reply with LLM move",
+      "passed": true,
+      "actual": {
+        "direction": "left",
+        "steps": 3
+      },
+      "expected": {
+        "direction": "left",
+        "steps": 3
+      }
+    },
+    {
+      "name": "New scene question must not complete a pending move",
+      "passed": true,
+      "actual": "describe",
+      "expected": "describe"
+    },
+    {
+      "name": "Direction word boundary: 위치",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "Direction word boundary: 위험",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "Direction word boundary: 가위",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "Direction word up",
+      "passed": true,
+      "actual": "up",
+      "expected": "up"
+    },
+    {
+      "name": "Infinite model step value",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "Clamp large step value",
+      "passed": true,
+      "actual": 10,
+      "expected": 10
+    },
+    {
+      "name": "Malformed JSON",
+      "passed": true,
+      "actual": "describe",
+      "expected": "describe"
+    },
+    {
+      "name": "Unknown tool",
+      "passed": true,
+      "actual": "describe",
+      "expected": "describe"
+    },
+    {
+      "name": "VLM compact preserves 장애물 있음",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "VLM ends with 장애물 있음",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "VLM compact preserves 장애물 없음",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "VLM ends with 장애물 없음",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "Do not invent missing obstacle evidence",
+      "passed": true,
+      "actual": "소파가 있습니다.",
+      "expected": "소파가 있습니다."
+    }
+  ]
+}

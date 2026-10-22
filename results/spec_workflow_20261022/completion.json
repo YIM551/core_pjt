@@ -1,0 +1,216 @@
+{
+  "date_kst": "2026-10-22",
+  "submitter": {
+    "region": "광주",
+    "class": "5반",
+    "name": "임나경"
+  },
+  "mandatory": {
+    "F101": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "model selection notes, conf comparison, measurement.csv"
+    },
+    "F102": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "VLM prompt comparison, time/RSS and regulated repeated outputs"
+    },
+    "F103": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "original PoC endpoints and measured sequential/parallel requests"
+    },
+    "F104": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "frozen curated dataset, pretrained transfer learning10epochs, same-valid aligned-class comparison"
+    },
+    "F201": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "YOLO summary and Korean <=40 character VLM contract with obstacle suffix preserved"
+    },
+    "F202": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "real GestureRecognizer,21landmarks/handedness, direction and mirror tests"
+    },
+    "F203": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "local dashboard, shared-frame YOLO/VLM APIs, independent errors/thread pools"
+    },
+    "F204": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "real Qwen3-4B answer with sourced text and defensive JSON parser"
+    },
+    "F301": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "API design and final64/64 live server checks"
+    },
+    "F302": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "LLM tool selection and guarded arguments"
+    },
+    "F303": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "grounded move/ask, direction-word boundaries, remembered follow-up steps"
+    },
+    "F304": {
+      "status": "verified_with_static_image_adaptation",
+      "evidence": "real browser describe/ask/move and independently checked wall/boundary simulator result"
+    }
+  },
+  "optional": {
+    "F105": {
+      "status": "deferred",
+      "reason": "Live camera capture/custom comprehensive room annotations unavailable"
+    },
+    "F106": {
+      "status": "partial",
+      "reason": "448px/token limits and bottleneck measured; controlled original/output-limit/input-resize three-setting study not performed"
+    },
+    "F205": {
+      "status": "partial",
+      "reason": "rotation/mirror/finger counts16/16; three personally captured images and live camera not verified"
+    },
+    "F206": {
+      "status": "not_implemented",
+      "reason": "YOLO/VLM source-block rules exist; deterministic count-conflict detector and quote enforcement are not implemented"
+    },
+    "F305": {
+      "status": "implemented_unverified_live",
+      "reason": "Existing gesture sequence code retained; no live webcam sequence recording"
+    },
+    "F306": {
+      "status": "verified_static_and_API",
+      "reason": "Real pointing image selects up, prompt/history/gesture direction priority verified; live mirrored camera remains unverified"
+    }
+  },
+  "checks": {
+    "api": "64/64",
+    "rule_regressions": "17/17",
+    "gesture_directions": "16/16",
+    "gesture_fingers": "16/16",
+    "actual_browser_workflows": 3,
+    "captured_frame_hashes_verified": true,
+    "original_dataset_unchanged": true,
+    "test_split_used_for_training_or_metrics": false
+  },
+  "metrics": {
+    "before": {
+      "model": "before_coco",
+      "weights": "C:\\work\\core_pjt\\yolo11n.pt",
+      "images": 85,
+      "split": "valid",
+      "imgsz": 320,
+      "ap_prediction_conf_floor": 0.001,
+      "nms_iou": 0.7,
+      "operating_conf": 0.25,
+      "class_mapping": {
+        "56": 0,
+        "57": 1,
+        "60": 2
+      },
+      "map50": 0.6257262770858872,
+      "map50_95": 0.5768974253641457,
+      "precision_at_conf025": 0.9349593495934959,
+      "recall_at_conf025": 0.4871096586782861,
+      "max_conf": 0.9642434120178223,
+      "per_class": [
+        {
+          "class": "Chair",
+          "map50": 0.9855103820598007,
+          "precision_at_conf025": 0.8048780487804879,
+          "recall_at_conf025": 0.9705882352941176,
+          "tp": 33,
+          "fp": 8,
+          "fn": 1
+        },
+        {
+          "class": "Sofa",
+          "map50": 0.5609999999999999,
+          "precision_at_conf025": 1.0,
+          "recall_at_conf025": 0.4166666666666667,
+          "tp": 10,
+          "fp": 0,
+          "fn": 14
+        },
+        {
+          "class": "Table",
+          "map50": 0.330668449197861,
+          "precision_at_conf025": 1.0,
+          "recall_at_conf025": 0.07407407407407407,
+          "tp": 2,
+          "fp": 0,
+          "fn": 25
+        }
+      ],
+      "elapsed_seconds": 2.700980900000104,
+      "split_manifest_sha256": "91fbacaceece08988cb58742e341980db8d39a4939d3c82dda5df497bacc0b2c",
+      "scope": "Three furniture classes with explicit COCO name/ID mapping; same frozen valid split and evaluator. Test is unused. COCO dining table and broad Furniture Table differ semantically; interpret baseline with this limitation."
+    },
+    "after": {
+      "model": "after_finetune",
+      "weights": "C:\\work\\core_pjt\\source\\2회차_day1\\runs\\furniture_spec1_20261022\\weights\\best.pt",
+      "images": 85,
+      "split": "valid",
+      "imgsz": 320,
+      "ap_prediction_conf_floor": 0.001,
+      "nms_iou": 0.7,
+      "operating_conf": 0.25,
+      "class_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 2
+      },
+      "map50": 0.9796100363332002,
+      "map50_95": 0.905460844543179,
+      "precision_at_conf025": 0.9534391534391534,
+      "recall_at_conf025": 0.9876543209876543,
+      "max_conf": 0.99793940782547,
+      "per_class": [
+        {
+          "class": "Chair",
+          "map50": 0.995,
+          "precision_at_conf025": 0.9714285714285714,
+          "recall_at_conf025": 1.0,
+          "tp": 34,
+          "fp": 1,
+          "fn": 0
+        },
+        {
+          "class": "Sofa",
+          "map50": 0.9488301089996005,
+          "precision_at_conf025": 0.8888888888888888,
+          "recall_at_conf025": 1.0,
+          "tp": 24,
+          "fp": 3,
+          "fn": 0
+        },
+        {
+          "class": "Table",
+          "map50": 0.995,
+          "precision_at_conf025": 1.0,
+          "recall_at_conf025": 0.9629629629629629,
+          "tp": 26,
+          "fp": 0,
+          "fn": 1
+        }
+      ],
+      "elapsed_seconds": 2.5487738000001627,
+      "split_manifest_sha256": "91fbacaceece08988cb58742e341980db8d39a4939d3c82dda5df497bacc0b2c",
+      "scope": "Three furniture classes with explicit COCO name/ID mapping; same frozen valid split and evaluator. Test is unused. COCO dining table and broad Furniture Table differ semantically; interpret baseline with this limitation."
+    }
+  },
+  "adaptations": [
+    "User-selected Furniture3classes replaces the document's obstacle/marker toy dataset",
+    "Supplied/local images replace webcam input by prior user instruction",
+    "Grid simulator replaces physical actuation"
+  ],
+  "limits": [
+    "Small curated mainly-single-object validation set is not a real-room benchmark",
+    "COCO dining table and Furniture Table have different semantic breadth",
+    "VLM output formatting is verified; factual accuracy or safety of obstacle statements is not guaranteed",
+    "Ballie and SmartThings are reference concepts; no physical robot or SmartThings device is connected"
+  ],
+  "script_sha256": {
+    "main.py": "6e0d55f2bd77177d44b9386b8d9dda41334fd024906defcc02c1336a61cd18ca",
+    "index.html": "923928f25294b7dcda751f9cd6023d552001c5141d76ba6724f289b953995366",
+    "API_검증.py": "97285ea7cfb69ba1f16d1ddae55741e10f60abd05cfbe337c38b9283957a4505"
+  }
+}

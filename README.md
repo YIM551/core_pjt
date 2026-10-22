@@ -8,6 +8,45 @@ move 면 **시뮬레이터** 의 로봇이 움직이고, describe 면 장면을 
 라즈베리파이 연동(카메라 스트리밍 · 음성 · GPIO · 온디바이스 LLM)은 포함하지 않는다.
 `연동` 탭은 화면(기기 등록 · 기기별 대시보드 탭)만 동작한다.
 
+## 2026-10-22 명세서 1·2·3 수행 결과
+
+광주 5반 임나경. Ballie와 SmartThings를 참고한 집사형 로봇 콘셉트로 명세서의 필수 기능을 순서대로 실행·검증했다. 웹캠을 공급하기 어렵다는 조건에 따라 Furniture와 제공된 손 이미지를 입력으로 사용했다. 물리 로봇 주행이나 실제 SmartThings 기기 제어는 후속 연동 범위다.
+
+| 단계 | 수행 내용 | 검증 결과 |
+|---|---|---|
+| 명세서 1 | 모델 선정 근거, conf·시간·메모리 측정, VLM 프롬프트 비교, PoC 순차·병렬 측정, Furniture 10 epoch 파인튜닝 | 같은 valid 85장 mAP50 0.626 → 0.980, 클래스 평균 recall(conf 0.25) 0.487 → 0.988 |
+| 명세서 2 | YOLO 요약·VLM 출력 규격, MediaPipe 손 방향·손가락 개수, 이미지 입력과 LLM 답변 연결 | 방향·반전 16/16, 손가락 개수 16/16, 실제 브라우저에서 손 이미지 기반 move(up, 2) 확인 |
+| 명세서 3 | A1~A5·R1~R5 설계·검증, 도구 호출, 되묻기와 시뮬레이터 | 최종 API 64/64, 추가 규칙 검사 17/17, 브라우저의 ask·이동·벽/경계 정지 확인 |
+
+전후 평가는 COCO의 chair/couch/dining table을 Furniture의 Chair/Sofa/Table로 명시적으로 대응시키고, 같은 평가 코드와 분할을 사용했다. Table의 범위와 dining table의 의미는 완전히 같지 않으므로, 이 비교를 세 클래스에 맞춘 참고 기준으로 해석한다. 선별된 단일 가구 사진의 검증 성능이며 복잡한 실내 장면 성능은 별도 검증해야 한다. test 87장은 학습·이번 평가에 사용하지 않았다.
+
+- 실행 기록: `results/spec_workflow_20261022/`의 spec1·spec2·spec3 폴더
+- API 설계: `API_설계.md`
+- 학습 가중치: `source/2회차_day1/runs/furniture_spec1_20261022/weights/best.pt`
+- 제출물: `output/submission/`의 최종 PPTX 및 PJT01·02·03 ZIP
+- 회차별 필수·심화 상태: `results/spec_workflow_20261022/completion.json`
+
+현재 대시보드는 `http://127.0.0.1:8002`에서 확인한다. **예제 소파** 또는 **이미지 선택**으로 입력하고 질문을 전송한다. **카메라 사용**을 누르면 웹캠 입력으로 전환한다. 실제 카메라의 조명·흔들림·실시간 제스처 시퀀스는 이번 정지 이미지 실험으로 검증하지 않았다.
+
+```powershell
+Set-Location C:\work\core_pjt
+.\.venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8002
+# 다른 터미널에서 검증
+.\.venv\Scripts\python.exe API_검증.py --url http://127.0.0.1:8002
+.\.venv\Scripts\python.exe scripts\spec3_rules_validate.py
+```
+
+Furniture 학습 가중치를 서버에 연결하려면 시작 전에 다음 환경변수를 지정한다. 기본 COCO 모델은 80개 클래스, Furniture 모델은 Chair/Sofa/Table 3개 클래스를 지원한다.
+
+```powershell
+$env:CORE_YOLO_MODEL = 'C:\work\core_pjt\source\2회차_day1\runs\furniture_spec1_20261022\weights\best.pt'
+.\.venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8002
+```
+
+`가위`를 `위` 방향으로 오인하는 문제를 수정했고, ask 뒤 방향만 답하면 LLM이 describe로 잘못 분류해도 코드가 이전 칸 수로 이어받도록 보강했다. 새 장면 질문은 이동으로 바꾸지 않는다. VLM 규격은 모델이 만든 장애물 표기를 보존하며 길이 초과 시 설명 부분에만 생략 표시를 쓴다. 한국어·장애물 표기가 끝내 확보되지 않으면 오류로 처리한다.
+
+아래 2026-10-21 기록은 이전 백업 시점의 이력이다. 10월 22일의 구현·학습 결과는 이번 수행 기록을 따른다.
+
 ## 2026-10-21 진행 기록 ― Furniture v2와 1일차 첫 추론
 
 웹캠 대신 [Roboflow Furniture v2](https://universe.roboflow.com/roboflow-100/furniture-ngpea/dataset/2)의 YOLOv11 ZIP을 받아 로컬 이미지로 실습했다.
@@ -330,3 +369,16 @@ A5-6 은 방어용 항목이다. 화면에서는 방향어가 있는 질문이 R
 
 - `gesture_direction` 은 `up` · `down` · `left` · `right`, 손이 없으면 `none`, 방향을 판단할 수 없으면 `unknown`.
 - 대화 기록(`history`)은 브라우저가 보관해 요청에 담아 보낸다 ― 서버는 저장하지 않는다.
+
+## 2026-10-22 GitHub 백업 및 복구
+
+명세서 1·2·3 코드와 검증 기록, 학습 CSV·설정, 최종 PPT와 시연 영상 3개는 이 커밋에 보관한다.
+[제출·학습 결과 릴리스](https://github.com/YIM551/core_pjt/releases/tag/backup-2026-10-22-specs)에는 학습 가중치와 제출물을 다음 8개 파일로 보관한다.
+
+- `furniture-spec1-20261022-training.zip`: 프로젝트 루트에 압축 해제하면 학습 결과와 `weights/best.pt`, `weights/last.pt` 복원
+- `home-butler-presentation-20261022.pptx`: 최종 PPT 원본
+- `pjt01-demo-20261022.webm` ~ `pjt03-demo-20261022.webm`: 실제 브라우저 시연 영상
+- `PJT01_Gwangju_5_ImNagyeong.zip` ~ `PJT03_Gwangju_5_ImNagyeong.zip`: 제출 ZIP 원본, 내용과 바이트 변경 없음
+
+릴리스 파일명은 다운로드 호환성을 위해 영문으로 표시한다. 원래 한글 파일명·복원 경로·크기·SHA-256은 `results/backup_manifest_20261022_specs.json`의 `restore_to`를 따른다.
+저장소를 clone한 뒤 학습 ZIP을 루트에 풀고 README의 환경 설치 명령을 실행한다. 원본 데이터·기본 모델은 `backup-2026-10-21`, 학습 데이터 565쌍은 `backup-2026-10-21-curated` 릴리스를 함께 사용한다. GGUF 모델과 가상환경은 기존 공식 다운로드·설치 절차로 준비한다.

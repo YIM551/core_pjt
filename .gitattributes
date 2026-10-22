@@ -20,3 +20,11 @@
 # Preserve byte-level provenance and frozen review/manifest checksums on checkout.
 datasets/** -text whitespace=cr-at-eol,-blank-at-eof
 results/furniture_day1/data_audit/** -text whitespace=cr-at-eol
+results/spec_workflow_20261022/** -text whitespace=cr-at-eol
+*.webm binary
+
+# Preserve source hashes recorded in the completed submission evidence.
+main.py -text whitespace=cr-at-eol
+index.html -text whitespace=cr-at-eol
+API_검증.py -text whitespace=cr-at-eol
+results/spec_workflow_20261022/**/*.log -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol

@@ -1,0 +1,80 @@
+
+[A1 · A2] 화면과 정적 파일
+  PASS  [A1  ] GET / → index.html  ― status=200
+  PASS  [A2  ] GET /mediapipe/vision_bundle.mjs  ― 200, 155,439 bytes
+  PASS  [A2  ] GET /mediapipe/gesture_recognizer.task  ― 200, 8,373,440 bytes
+
+[A3 · A4 · A5] 잘못된 요청 → 약속된 400
+  PASS  [A3  ] /api/yolo-detect 빈 본문 → empty_image  ― 400 empty_image
+  PASS  [A3  ] /api/yolo-detect 이미지 아님 → invalid_image  ― 400 invalid_image
+  PASS  [A4  ] /api/vlm-describe 빈 본문 → empty_image  ― 400 empty_image
+  PASS  [A4  ] /api/vlm-describe 이미지 아님 → invalid_image  ― 400 invalid_image
+  PASS  [A5  ] JSON 아님 → invalid_json  ― 400 invalid_json
+  PASS  [A5  ] 빈 prompt → empty_prompt  ― 400 empty_prompt
+
+[A3 · A4] 인식 (sample.jpg 810x1080)
+  PASS  [A3  ] objects : label · confidence · box(픽셀 좌표)  ― 2.1s  bus, person, person, person, person
+  PASS  [A4  ] description 문자열  ― 9.9s  '버스 앞에 사람들이 걷고 있습니다, 장애물 없음.'
+
+[A5 · R3] 의도 파악 → 도구 선택
+  PASS  [A5-1] 장면 질문 → describe : '앞에 뭐가 있어?'  ― 5.1s → describe {}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='describe'
+  PASS  [R2  ] 도구별 인자 형식  ― args={}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=False
+  PASS  [A5-2] 방향 · 칸 수 → move : '오른쪽으로 3칸 가'  ― 1.9s → move {'direction': 'right', 'steps': 3}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='move'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'direction': 'right', 'steps': 3}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=False
+  PASS  [A5-3] 방향은 손 제스처 → move : '이쪽으로 2칸 이동해'  ― 1.9s → move {'direction': 'up', 'steps': 2}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='move'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'direction': 'up', 'steps': 2}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=False
+  PASS  [A5-4] 제스처 시퀀스 입력 문구 → move : '왼쪽으로, 5칸 이동.'  ― 2.2s → move {'direction': 'left', 'steps': 5}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='move'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'direction': 'left', 'steps': 5}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=False
+  PASS  [R3  ] 방향 근거 없음 → ask : '저쪽으로 가'  ― 1.9s → ask {'steps': 1}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='ask'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'steps': 1}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=True
+  PASS  [R3  ] 방향 근거 없음 → ask : '버스 있는 쪽으로 가'  ― 2.0s → ask {'steps': 1}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='ask'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'steps': 1}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=True
+  PASS  [R3  ] '위' 는 방향어 → move : '위 2칸 가'  ― 1.8s → move {'direction': 'up', 'steps': 2}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='move'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'direction': 'up', 'steps': 2}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=False
+  PASS  [R3  ] '위치' 는 방향어 아님 → ask : '버스 위치로 가'  ― 1.9s → ask {'steps': 1}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='ask'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'steps': 1}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=True
+  PASS  [A5-5] 프롬프트 방향어가 손 제스처보다 우선 : '왼쪽으로 2칸 가'  ― 1.9s → move {'direction': 'left', 'steps': 2}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='move'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'direction': 'left', 'steps': 2}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=False
+  PASS  [R3  ] 손 없음 · 방향어 없음 → ask : '이쪽으로 가'  ― 2.0s → ask {'steps': 1}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='ask'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'steps': 1}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=True
+
+[R5] 되묻기 → 방향을 답하면 이어서 이동
+  PASS  [R5  ] 1턴 '저쪽으로 2칸 가' → ask  ― → ask {'steps': 2}
+  PASS  [R5  ] 2턴 '왼쪽' → move(left, 2)  ― 2.6s → move {'direction': 'left', 'steps': 2}
+
+[A5-6] 이전 턴 질문이 손 제스처보다 우선 (방어용 ― 우선순위 구현 확인)
+  PASS  [A5-6] 이전 턴 '왼쪽' + 손 up + '이쪽으로 3칸 가' → move(left, 3)  ― 2.8s → move {'direction': 'left', 'steps': 3}
+
+------------------------------------------------------------
+A1 1/1  A2 2/2  A3 3/3  A4 3/3  A5 18/18  R1 10/10  R2 10/10  R3 5/5  R4 10/10  R5 2/2
+전체 64/64 PASS

@@ -1,0 +1,31 @@
+{
+  "submitter": {
+    "region": "광주",
+    "class": "5반",
+    "name": "임나경"
+  },
+  "deck": {
+    "name": "AI 코어_2회차_집사형로봇_광주_5반_임나경_최종.pptx",
+    "bytes": 1511987,
+    "sha256": "495791e8421c97968312521d0af5eb6549ed2292df52febd77a28d753ab4dd5d"
+  },
+  "archives": [
+    {
+      "name": "AI 코어_2회차_PJT01_동작시연영상_광주_5반_임나경.zip",
+      "bytes": 8447977,
+      "sha256": "286831bb47d6dc42c9864183c8853ad3818281cef3f3edf8a8019a7f563094d7"
+    },
+    {
+      "name": "AI 코어_2회차_PJT02_동작시연영상_광주_5반_임나경.zip",
+      "bytes": 4014652,
+      "sha256": "d7ce45da477ed0d1168a3dc165028eb3b168499719356d240ad869d520de223f"
+    },
+    {
+      "name": "AI 코어_2회차_PJT03_동작시연영상_광주_5반_임나경.zip",
+      "bytes": 5552406,
+      "sha256": "bc8e387b9c64bc8dc818ed86bd2a179376961327fbfc53fe6ed41a7df81adbb9"
+    }
+  ],
+  "video_format": "WebM, real browser screen recording",
+  "original_dataset_tree_sha256": "46af11222baca3707ea13a576629f314d3c3c3abe814585fd0e6a326ad0bcd3e"
+}

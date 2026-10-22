@@ -1,0 +1,133 @@
+{
+  "image": "C:\\work\\core_pjt\\samples\\furniture_v2_sofa.jpg",
+  "image_sha256": "3cc5950e24dccfbc16a15842db222e2d4d39a2cf5ed6d4841fdd28ef725d173b",
+  "memory_note": "Process RSS snapshots, not GPU memory or peak memory. Delta is relative to before each model load; allocations can be reused by later models.",
+  "results": [
+    {
+      "weights": "C:\\work\\core_pjt\\yolo11n.pt",
+      "conf": 0.1,
+      "boxes": [
+        {
+          "label": "couch",
+          "confidence": 0.845099151134491,
+          "xyxy": [
+            155.553466796875,
+            334.2515563964844,
+            1082.6737060546875,
+            922.1148681640625
+          ]
+        },
+        {
+          "label": "chair",
+          "confidence": 0.6526836156845093,
+          "xyxy": [
+            0.4128741919994354,
+            255.31509399414062,
+            224.10873413085938,
+            546.9755859375
+          ]
+        }
+      ]
+    },
+    {
+      "weights": "C:\\work\\core_pjt\\yolo11n.pt",
+      "conf": 0.25,
+      "boxes": [
+        {
+          "label": "couch",
+          "confidence": 0.845099151134491,
+          "xyxy": [
+            155.553466796875,
+            334.2515563964844,
+            1082.6737060546875,
+            922.1148681640625
+          ]
+        },
+        {
+          "label": "chair",
+          "confidence": 0.6526836156845093,
+          "xyxy": [
+            0.4128741919994354,
+            255.31509399414062,
+            224.10873413085938,
+            546.9755859375
+          ]
+        }
+      ]
+    },
+    {
+      "weights": "C:\\work\\core_pjt\\yolo11n.pt",
+      "conf": 0.6,
+      "boxes": [
+        {
+          "label": "couch",
+          "confidence": 0.845099151134491,
+          "xyxy": [
+            155.553466796875,
+            334.2515563964844,
+            1082.6737060546875,
+            922.1148681640625
+          ]
+        },
+        {
+          "label": "chair",
+          "confidence": 0.6526836156845093,
+          "xyxy": [
+            0.4128741919994354,
+            255.31509399414062,
+            224.10873413085938,
+            546.9755859375
+          ]
+        }
+      ]
+    },
+    {
+      "weights": "C:\\work\\core_pjt\\source\\2회차_day1\\runs\\furniture_spec1_20261022\\weights\\best.pt",
+      "conf": 0.1,
+      "boxes": [
+        {
+          "label": "Sofa",
+          "confidence": 0.9525582194328308,
+          "xyxy": [
+            104.34916687011719,
+            163.87338256835938,
+            1081.6331787109375,
+            921.209228515625
+          ]
+        }
+      ]
+    },
+    {
+      "weights": "C:\\work\\core_pjt\\source\\2회차_day1\\runs\\furniture_spec1_20261022\\weights\\best.pt",
+      "conf": 0.25,
+      "boxes": [
+        {
+          "label": "Sofa",
+          "confidence": 0.9525582194328308,
+          "xyxy": [
+            104.34916687011719,
+            163.87338256835938,
+            1081.6331787109375,
+            921.209228515625
+          ]
+        }
+      ]
+    },
+    {
+      "weights": "C:\\work\\core_pjt\\source\\2회차_day1\\runs\\furniture_spec1_20261022\\weights\\best.pt",
+      "conf": 0.6,
+      "boxes": [
+        {
+          "label": "Sofa",
+          "confidence": 0.9525582194328308,
+          "xyxy": [
+            104.34916687011719,
+            163.87338256835938,
+            1081.6331787109375,
+            921.209228515625
+          ]
+        }
+      ]
+    }
+  ]
+}

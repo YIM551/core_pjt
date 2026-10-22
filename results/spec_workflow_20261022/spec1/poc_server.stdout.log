@@ -1,0 +1,15 @@
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+[yolo] 2109ms  couch 1개, chair 1개, vase 1개
+INFO:     127.0.0.1:52741 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 8906ms  : 이 이미지에는 베이지색과 흰색의 패턴이 있는 소파가 보입니다. 소파 ...
+INFO:     127.0.0.1:52743 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+[yolo] 51ms  couch 1개, chair 1개, vase 1개
+INFO:     127.0.0.1:55480 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 5996ms  : 이 이미지에는 베이지색과 흰색의 패턴이 있는 소파가 보입니다. 소파 ...
+INFO:     127.0.0.1:55481 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+[yolo] 55ms  couch 1개, chair 1개, vase 1개
+INFO:     127.0.0.1:60759 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 6216ms  : 이 이미지에는 베이지색과 흰색의 패턴이 있는 소파가 보입니다. 소파 ...
+INFO:     127.0.0.1:60760 - "POST /api/vlm-describe HTTP/1.1" 200 OK

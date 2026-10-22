@@ -1,0 +1,71 @@
+[
+  {
+    "mode": "warmup_excluded",
+    "responses": [
+      {
+        "endpoint": "/api/yolo-detect",
+        "seconds": 2.3757236000001285,
+        "status": 200,
+        "body": {
+          "summary": "couch 1개, chair 1개, vase 1개",
+          "elapsed_ms": 2109
+        }
+      },
+      {
+        "endpoint": "/api/vlm-describe",
+        "seconds": 9.054150799999661,
+        "status": 200,
+        "body": {
+          "description": ": 이 이미지에는 베이지색과 흰색의 패턴이 있는 소파가 보입니다. 소파 옆에는 카펫이 깔린 의자와 계단이 있습니다. 벽은 흰색이며, 계단은 나무로 되어 있습니다.",
+          "elapsed_ms": 8906
+        }
+      }
+    ]
+  },
+  {
+    "mode": "sequential",
+    "responses": [
+      {
+        "endpoint": "/api/yolo-detect",
+        "seconds": 0.361442999999781,
+        "status": 200,
+        "body": {
+          "summary": "couch 1개, chair 1개, vase 1개",
+          "elapsed_ms": 51
+        }
+      },
+      {
+        "endpoint": "/api/vlm-describe",
+        "seconds": 6.249113699999725,
+        "status": 200,
+        "body": {
+          "description": ": 이 이미지에는 베이지색과 흰색의 패턴이 있는 소파가 보입니다. 소파 옆에는 카펫이 깔린 의자와 계단이 있습니다. 벽은 흰색이며, 계단은 나무로 되어 있습니다.",
+          "elapsed_ms": 5996
+        }
+      }
+    ]
+  },
+  {
+    "mode": "parallel",
+    "responses": [
+      {
+        "endpoint": "/api/yolo-detect",
+        "seconds": 0.3685660999999527,
+        "status": 200,
+        "body": {
+          "summary": "couch 1개, chair 1개, vase 1개",
+          "elapsed_ms": 55
+        }
+      },
+      {
+        "endpoint": "/api/vlm-describe",
+        "seconds": 6.5693412000000535,
+        "status": 200,
+        "body": {
+          "description": ": 이 이미지에는 베이지색과 흰색의 패턴이 있는 소파가 보입니다. 소파 옆에는 카펫이 깔린 의자와 계단이 있습니다. 벽은 흰색이며, 계단은 나무로 되어 있습니다.",
+          "elapsed_ms": 6216
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "date_kst": "2026-10-22",
+  "submitter": {
+    "region": "광주",
+    "class": "5반",
+    "name": "임나경"
+  },
+  "concept": "Ballie와 SmartThings를 참고한 가정용 집사형 로봇 PoC",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu_count": 24,
+  "ram_gb": 63.6201057434082,
+  "cuda": false,
+  "packages": {
+    "ultralytics": "8.4.164",
+    "torch": "2.14.0",
+    "llama-cpp-python": "0.3.34",
+    "fastapi": "0.141.1",
+    "mediapipe": "1.0.1",
+    "pillow": "12.3.0"
+  },
+  "spec_pdf_sha256": {
+    "16-C-2-01.pdf": "bb353f6c332a5d3dc890a7272e22d4651d99e248f1f131b7b559aab309273783",
+    "16-C-2-02.pdf": "8841c424033cdc1019e42a71678f0b87ee2a96f057d46a71d9f6d6c859f74d9d",
+    "16-C-2-03.pdf": "f7bd9a7cc884f29eaf8d98971a105ea84b38fa0e6438c6535b2d213788cadbc8"
+  },
+  "adaptation": "No live webcam available. Local Furniture and supplied hand images replace capture input. Device actuation uses the grid simulator; Ballie/SmartThings are reference concepts, no physical device command is sent."
+}

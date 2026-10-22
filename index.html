@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>통합 대시보드</title>
+<title>집사형 로봇 AI Workflow</title>
 <style>
   :root {
     color-scheme: dark;
@@ -350,15 +350,15 @@
 <body>
 
   <nav class="sidebar">
-    <button class="nav-item active" data-tab="tab-integration">연동</button>
-    <button class="nav-item" data-tab="tab-dashboard">대시보드</button>
+    <button class="nav-item" data-tab="tab-integration">연동</button>
+    <button class="nav-item active" data-tab="tab-dashboard">대시보드</button>
     <button class="nav-item" data-tab="tab-simulator">시뮬레이터</button>
   </nav>
 
   <main class="app-main">
 
     <!-- ================= 연동 탭 ================= -->
-    <section id="tab-integration" class="tab-panel active">
+    <section id="tab-integration" class="tab-panel">
       <h2 class="panel-title">연동 — 라즈베리파이5 기기 등록</h2>
 
       <div class="box">
@@ -417,7 +417,8 @@
     <!-- ================= 대시보드 탭 ================= -->
     <!-- "로컬 PC" 서브탭은 항상 존재한다. 라즈베리파이 기기를 등록할 때마다 JS가 아래
          서브탭 바에 기기 서브탭/패널을 동적으로 추가한다(최대 2개, "로컬 PC" 탭은 항상 맨 앞). -->
-    <section id="tab-dashboard" class="tab-panel">
+    <section id="tab-dashboard" class="tab-panel active">
+      <h2 class="panel-title">집사형 로봇 AI Workflow</h2>
       <div class="subtabs">
         <!-- "로컬 PC" 서브탭은 라즈베리파이 등록 여부와 무관하게 항상 맨 앞에 고정 존재한다.
              라즈베리파이 기기 서브탭은 등록될 때마다 이 버튼 뒤에 JS로 추가된다. -->
@@ -429,10 +430,17 @@
       <div id="subtab-local-pc" class="subtab-panel active">
         <div class="device-grid">
           <div class="box media cam-box" style="grid-column:1; grid-row:1;">
-            <b>카메라 스트리밍 (로컬 PC)</b>
+            <b>이미지 입력 (로컬 PC)</b>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin:8px 0">
+              <button type="button" class="mock-btn" id="load-sofa-sample">예제 소파</button>
+              <button type="button" class="mock-btn" id="choose-local-image">이미지 선택</button>
+              <input id="local-image-file" type="file" accept="image/*" style="display:none">
+              <button type="button" class="mock-btn" id="use-local-camera">카메라 사용</button>
+            </div>
             <div class="cam-viewport">
               <video class="cam-video" autoplay muted playsinline></video>
-              <div class="cam-placeholder">카메라 연결 대기 중</div>
+              <img class="input-image" alt="선택한 입력 이미지" style="display:none;width:100%;height:100%;object-fit:contain">
+              <div class="cam-placeholder">예제 소파 또는 이미지 파일을 선택하세요</div>
             </div>
             <div class="cam-status">
               <span class="cam-status-dot"></span>
@@ -796,7 +804,55 @@
       });
     }
 
-    createLocalPcCameraController(document.querySelector('#subtab-local-pc .cam-box'));
+    (function setupImageInput() {
+      var panel = document.querySelector('#subtab-local-pc');
+      var camBox = panel.querySelector('.cam-box');
+      var preview = camBox.querySelector('.input-image');
+      var video = camBox.querySelector('.cam-video');
+      var fileInput = document.getElementById('local-image-file');
+      var objectUrl = null;
+      document.getElementById('choose-local-image').addEventListener('click', function () {
+        fileInput.click();
+      });
+      async function loadImage(blob, name) {
+        var candidateUrl = URL.createObjectURL(blob);
+        var image = new Image();
+        image.src = candidateUrl;
+        try { await image.decode(); } catch (error) {
+          URL.revokeObjectURL(candidateUrl);
+          setCamStatus(camBox, 'error', '이미지 파일을 읽을 수 없습니다');
+          return;
+        }
+        if (objectUrl) URL.revokeObjectURL(objectUrl);
+        objectUrl = candidateUrl;
+        if (video.srcObject) {
+          video.srcObject.getTracks().forEach(function (track) { track.stop(); });
+          video.srcObject = null;
+        }
+        video.style.display = 'none';
+        preview.src = objectUrl;
+        preview.style.display = 'block';
+        panel._inputImage = image;
+        camBox.querySelector('.cam-placeholder').style.display = 'none';
+        setCamStatus(camBox, 'ok', name + ' · ' + image.naturalWidth + '×' + image.naturalHeight);
+      }
+      fileInput.addEventListener('change', function () {
+        if (fileInput.files[0]) loadImage(fileInput.files[0], fileInput.files[0].name);
+      });
+      document.getElementById('load-sofa-sample').addEventListener('click', async function () {
+        try {
+          var response = await fetch('/api/sample-image?name=sofa');
+          if (!response.ok) throw new Error('sample unavailable');
+          await loadImage(await response.blob(), 'Furniture v2 소파');
+        } catch (error) { setCamStatus(camBox, 'error', '예제 이미지를 불러오지 못했습니다'); }
+      });
+      document.getElementById('use-local-camera').addEventListener('click', function () {
+        panel._inputImage = null;
+        preview.style.display = 'none';
+        fileInput.value = '';
+        createLocalPcCameraController(camBox);
+      });
+    })();
 
     // ---- 스냅샷 촬영 + YOLO 객체 인식 (Phase 5) ----
     // "로컬 PC"/기기별 대시보드 패널 모두 이 로직을 그대로 공유한다(카메라/프롬프트
@@ -846,6 +902,10 @@
     }
 
     function getActiveCameraFrame(panelEl) {
+      if (panelEl._inputImage && panelEl._inputImage.naturalWidth > 0) {
+        return { el: panelEl._inputImage, width: panelEl._inputImage.naturalWidth,
+                 height: panelEl._inputImage.naturalHeight };
+      }
       var camBox = panelEl.querySelector('.cam-box');
       if (!camBox) return null;
       var videoEl = camBox.querySelector('.cam-video');
@@ -1382,7 +1442,7 @@
         vlmLlmText = texts[1];
         gestureDirection = (texts[2] && texts[2].direction) || 'unknown';
       } else {
-        var guide = '카메라 영상이 없어 촬영할 수 없습니다.';
+        var guide = '이미지를 선택하거나 카메라를 연결하세요.';
         if (yoloResultEl) yoloResultEl.textContent = guide;
         if (vlmResultEl) vlmResultEl.textContent = guide;
         if (mediapipeResultEl) mediapipeResultEl.textContent = guide;
@@ -2412,7 +2472,10 @@
             var direction = classifyPointingDirection(handLandmarks, imageWidth, imageHeight, mirrored);
             if (i === 0) firstDirection = direction;
             var directionText = '방향: ' + (HAND_DIRECTION_LABEL_KO[direction] || direction);
-            return [gestureText, directionText].filter(Boolean).join(' · ');
+            var handed = result.handedness && result.handedness[i] && result.handedness[i][0];
+            var handedText = handed ? (handed.categoryName === 'Left' ? '왼손' : '오른손') : '';
+            return [gestureText, handedText, directionText,
+                    '손가락 ' + countExtendedFingers(handLandmarks) + '개'].filter(Boolean).join(' · ');
           }).join(', ');
           return { direction: firstDirection, text: text };
         });

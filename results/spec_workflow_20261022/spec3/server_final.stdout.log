@@ -1,0 +1,175 @@
+INFO:     127.0.0.1:62007 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62007 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62007 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62007 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62007 - "POST /api/yolo-detect HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:62007 - "POST /api/yolo-detect HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:62007 - "POST /api/vlm-describe HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:62007 - "POST /api/vlm-describe HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:62007 - "POST /api/llm-answer HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:62007 - "POST /api/llm-answer HTTP/1.1" 400 Bad Request
+[yolo] 시작 09:33:35    2102 ms  810x1080  객체 5개
+INFO:     127.0.0.1:62007 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 규격 재시도 : 도로에 전기버스가停, 장애물 없음. → 버스 앞에 사람들이 걷고 있습니다, 장애물 없음.
+[vlm ] 시작 09:33:37    9897 ms  버스 앞에 사람들이 걷고 있습니다, 장애물 없음.
+INFO:     127.0.0.1:62007 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 09:33:47    5097 ms  Q. 앞에 뭐가 있어? → describe   앞에 사람 2명이 서 있습니다.
+INFO:     127.0.0.1:62007 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 09:33:52    1875 ms  Q. 오른쪽으로 3칸 가 → move {'direction': 'right', 'steps': 3}  오른쪽으로 3칸 이동합니다.
+INFO:     127.0.0.1:62007 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 09:33:54    1867 ms  Q. 이쪽으로 2칸 이동해 → move {'direction': 'up', 'steps': 2}  위로 2칸 이동합니다.
+INFO:     127.0.0.1:62007 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 09:33:56    2153 ms  Q. 왼쪽으로, 5칸 이동. → move {'direction': 'left', 'steps': 5}  왼쪽으로 5칸 이동합니다.
+INFO:     127.0.0.1:62007 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 09:33:58    1881 ms  Q. 저쪽으로 가 → ask {'steps': 1}  어느 쪽으로 1칸 갈까요? 방향을 말하거나 손으로 가리켜 주세요.
+INFO:     127.0.0.1:62007 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 09:34:00    1950 ms  Q. 버스 있는 쪽으로 가 → ask {'steps': 1}  어느 쪽으로 1칸 갈까요? 방향을 말하거나 손으로 가리켜 주세요.
+INFO:     127.0.0.1:62007 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 09:34:02    1842 ms  Q. 위 2칸 가 → move {'direction': 'up', 'steps': 2}  위로 2칸 이동합니다.
+INFO:     127.0.0.1:62007 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 09:34:04    1927 ms  Q. 버스 위치로 가 → ask {'steps': 1}  어느 쪽으로 1칸 갈까요? 방향을 말하거나 손으로 가리켜 주세요.
+INFO:     127.0.0.1:62007 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 09:34:06    1929 ms  Q. 왼쪽으로 2칸 가 → move {'direction': 'left', 'steps': 2}  왼쪽으로 2칸 이동합니다.
+INFO:     127.0.0.1:62007 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 09:34:08    2040 ms  Q. 이쪽으로 가 → ask {'steps': 1}  어느 쪽으로 1칸 갈까요? 방향을 말하거나 손으로 가리켜 주세요.
+INFO:     127.0.0.1:62007 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 09:34:10    2087 ms  Q. 저쪽으로 2칸 가 → ask {'steps': 2}  어느 쪽으로 2칸 갈까요? 방향을 말하거나 손으로 가리켜 주세요.
+INFO:     127.0.0.1:62007 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 09:34:12    2614 ms  Q. 왼쪽 → move {'direction': 'left', 'steps': 2}  왼쪽으로 2칸 이동합니다.
+INFO:     127.0.0.1:62007 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[tool] 시작 09:34:15    2809 ms  Q. 이쪽으로 3칸 가 → move {'direction': 'left', 'steps': 3}  왼쪽으로 3칸 이동합니다.
+INFO:     127.0.0.1:62007 - "POST /api/llm-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60826 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60826 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60826 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:60826 - "GET /mediapipe/wasm/vision_wasm_internal.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60826 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51736 - "GET /api/sample-image?name=sofa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60826 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51210 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51210 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+[yolo] 시작 09:35:11     159 ms  1200x1200  객체 2개
+INFO:     127.0.0.1:60826 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 09:35:11    5674 ms  거실에 베개와 소파가 놓여 있다, 장애물 없음.
+INFO:     127.0.0.1:51736 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 09:35:18    2139 ms  Q. 거실에 어떤 가구가 보여? → describe   거실에 베개와 소파가 보여요.
+INFO:     127.0.0.1:51736 - "POST /api/llm-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52171 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52171 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52171 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:52171 - "GET /mediapipe/wasm/vision_wasm_internal.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52171 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52171 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50654 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+[yolo] 시작 09:35:23      85 ms  419x419  객체 2개
+INFO:     127.0.0.1:52171 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52171 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+[vlm ] 시작 09:35:23    5029 ms  여성 한 명이 손가락으로 높이를 가리키고 있습니다, 장애물 없음.
+INFO:     127.0.0.1:53742 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 09:35:29    2427 ms  Q. 이쪽으로 2칸 가 → move {'direction': 'up', 'steps': 2}  위로 2칸 이동합니다.
+INFO:     127.0.0.1:53742 - "POST /api/llm-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61723 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61723 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61723 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:61723 - "GET /api/sample-image?name=sofa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61723 - "GET /mediapipe/wasm/vision_wasm_internal.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61723 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61723 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65505 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+[yolo] 시작 09:35:35      89 ms  1200x1200  객체 2개
+INFO:     127.0.0.1:61723 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61723 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+[vlm ] 시작 09:35:35    5427 ms  거실에 베개와 소파가 놓여 있다, 장애물 없음.
+INFO:     127.0.0.1:56943 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 09:35:41    2811 ms  Q. 저쪽으로 2칸 가 → ask {'steps': 2}  어느 쪽으로 2칸 갈까요? 방향을 말하거나 손으로 가리켜 주세요.
+INFO:     127.0.0.1:56943 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[yolo] 시작 09:35:45     120 ms  1200x1200  객체 2개
+INFO:     127.0.0.1:56943 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 09:35:45    6853 ms  거실에 베개와 소파가 놓여 있다, 장애물 없음.
+INFO:     127.0.0.1:55591 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 09:35:52    3380 ms  Q. 아래 → move {'direction': 'down', 'steps': 2}  아래로 2칸 이동합니다.
+INFO:     127.0.0.1:55591 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[yolo] 시작 09:35:58      80 ms  1200x1200  객체 2개
+INFO:     127.0.0.1:55591 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 09:35:58    6751 ms  거실에 베개와 소파가 놓여 있다, 장애물 없음.
+INFO:     127.0.0.1:52253 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 09:36:05    2375 ms  Q. 위로 10칸 가 → move {'direction': 'up', 'steps': 10}  위로 10칸 이동합니다.
+INFO:     127.0.0.1:52253 - "POST /api/llm-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54921 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54921 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54921 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:54921 - "GET /mediapipe/wasm/vision_wasm_internal.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54921 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54921 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55170 - "GET /api/sample-image?name=sofa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49445 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49445 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+[yolo] 시작 09:37:14     131 ms  1200x1200  객체 2개
+INFO:     127.0.0.1:54921 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 09:37:14    5434 ms  거실에 베개와 소파가 놓여 있다, 장애물 없음.
+INFO:     127.0.0.1:55170 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 09:37:20    1776 ms  Q. 거실에 어떤 가구가 보여? → describe   거실에 베개와 소파가 보여요.
+INFO:     127.0.0.1:55170 - "POST /api/llm-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56718 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56718 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56718 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:56718 - "GET /api/sample-image?name=sofa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56718 - "GET /mediapipe/wasm/vision_wasm_internal.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56718 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56718 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56718 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56718 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+[yolo] 시작 09:43:13      64 ms  1200x1200  객체 2개
+INFO:     127.0.0.1:56718 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 09:43:13    5291 ms  거실에 베개와 소파가 놓여 있다, 장애물 없음.
+INFO:     127.0.0.1:50684 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 09:43:19    1652 ms  Q. 거실에 어떤 가구가 보여? → describe   거실에 베개와 소파가 보여요.
+INFO:     127.0.0.1:50684 - "POST /api/llm-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50160 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50160 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50160 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:50160 - "GET /mediapipe/wasm/vision_wasm_internal.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50160 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50160 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50160 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50160 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+[yolo] 시작 09:43:24      92 ms  419x419  객체 2개
+INFO:     127.0.0.1:58321 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 09:43:24    5065 ms  여성 한 명이 손가락으로 높이를 가리키고 있습니다, 장애물 없음.
+INFO:     127.0.0.1:60746 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 09:43:30    2480 ms  Q. 이쪽으로 2칸 가 → move {'direction': 'up', 'steps': 2}  위로 2칸 이동합니다.
+INFO:     127.0.0.1:60746 - "POST /api/llm-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60828 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60828 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60828 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:60828 - "GET /api/sample-image?name=sofa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60828 - "GET /mediapipe/wasm/vision_wasm_internal.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60828 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60828 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60828 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60828 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK
+[yolo] 시작 09:43:37      99 ms  1200x1200  객체 2개
+INFO:     127.0.0.1:60828 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 09:43:37    5377 ms  거실에 베개와 소파가 놓여 있다, 장애물 없음.
+INFO:     127.0.0.1:53034 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 09:43:43    2645 ms  Q. 저쪽으로 2칸 가 → ask {'steps': 2}  어느 쪽으로 2칸 갈까요? 방향을 말하거나 손으로 가리켜 주세요.
+INFO:     127.0.0.1:53034 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[yolo] 시작 09:43:47      80 ms  1200x1200  객체 2개
+INFO:     127.0.0.1:53034 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 09:43:47    6462 ms  거실에 베개와 소파가 놓여 있다, 장애물 없음.
+INFO:     127.0.0.1:56857 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 09:43:54    3307 ms  Q. 아래 → move {'direction': 'down', 'steps': 2}  아래로 2칸 이동합니다.
+INFO:     127.0.0.1:56857 - "POST /api/llm-answer HTTP/1.1" 200 OK
+[yolo] 시작 09:44:00      72 ms  1200x1200  객체 2개
+INFO:     127.0.0.1:56857 - "POST /api/yolo-detect HTTP/1.1" 200 OK
+[vlm ] 시작 09:44:00    6504 ms  거실에 베개와 소파가 놓여 있다, 장애물 없음.
+INFO:     127.0.0.1:53499 - "POST /api/vlm-describe HTTP/1.1" 200 OK
+[tool] 시작 09:44:07    2215 ms  Q. 위로 10칸 가 → move {'direction': 'up', 'steps': 10}  위로 10칸 이동합니다.
+INFO:     127.0.0.1:53499 - "POST /api/llm-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61810 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53997 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53997 - "GET /mediapipe/vision_bundle.mjs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53997 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:53997 - "GET /mediapipe/wasm/vision_wasm_internal.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53997 - "GET /mediapipe/wasm/vision_wasm_internal.wasm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53997 - "GET /mediapipe/gesture_recognizer.task HTTP/1.1" 200 OK

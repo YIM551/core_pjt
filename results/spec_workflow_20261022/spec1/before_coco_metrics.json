@@ -1,0 +1,52 @@
+{
+  "model": "before_coco",
+  "weights": "C:\\work\\core_pjt\\yolo11n.pt",
+  "images": 85,
+  "split": "valid",
+  "imgsz": 320,
+  "ap_prediction_conf_floor": 0.001,
+  "nms_iou": 0.7,
+  "operating_conf": 0.25,
+  "class_mapping": {
+    "56": 0,
+    "57": 1,
+    "60": 2
+  },
+  "map50": 0.6257262770858872,
+  "map50_95": 0.5768974253641457,
+  "precision_at_conf025": 0.9349593495934959,
+  "recall_at_conf025": 0.4871096586782861,
+  "max_conf": 0.9642434120178223,
+  "per_class": [
+    {
+      "class": "Chair",
+      "map50": 0.9855103820598007,
+      "precision_at_conf025": 0.8048780487804879,
+      "recall_at_conf025": 0.9705882352941176,
+      "tp": 33,
+      "fp": 8,
+      "fn": 1
+    },
+    {
+      "class": "Sofa",
+      "map50": 0.5609999999999999,
+      "precision_at_conf025": 1.0,
+      "recall_at_conf025": 0.4166666666666667,
+      "tp": 10,
+      "fp": 0,
+      "fn": 14
+    },
+    {
+      "class": "Table",
+      "map50": 0.330668449197861,
+      "precision_at_conf025": 1.0,
+      "recall_at_conf025": 0.07407407407407407,
+      "tp": 2,
+      "fp": 0,
+      "fn": 25
+    }
+  ],
+  "elapsed_seconds": 2.700980900000104,
+  "split_manifest_sha256": "91fbacaceece08988cb58742e341980db8d39a4939d3c82dda5df497bacc0b2c",
+  "scope": "Three furniture classes with explicit COCO name/ID mapping; same frozen valid split and evaluator. Test is unused. COCO dining table and broad Furniture Table differ semantically; interpret baseline with this limitation."
+}

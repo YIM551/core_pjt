@@ -32,7 +32,7 @@ from PIL import Image, UnidentifiedImageError
 BASE_DIR = Path(__file__).resolve().parent          # 이 폴더 (main.py · index.html · mediapipe/ · models/)
 WEB_DIR = BASE_DIR                                  # 제공된 프런트 (index.html, mediapipe/)
 
-YOLO_MODEL_PATH = BASE_DIR / "yolo11n.pt"
+YOLO_MODEL_PATH = Path(os.environ.get("CORE_YOLO_MODEL", str(BASE_DIR / "yolo11n.pt"))).resolve()
 VLM_GGUF_PATH = BASE_DIR / "models" / "Qwen2.5-VL-3B-Instruct-Q4_K_M.gguf"
 VLM_MMPROJ_PATH = BASE_DIR / "models" / "mmproj-Qwen2.5-VL-3B-Instruct-f16.gguf"
 GESTURE_MODEL_PATH = BASE_DIR / "models" / "gesture_recognizer.task"
@@ -62,7 +62,7 @@ ASK_MESSAGE = "어느 쪽으로 갈까요? 방향을 말하거나 손으로 가�
 FALLBACK_MESSAGE = "답변을 생성하지 못했습니다."
 
 SYSTEM_PROMPT = (
-    "너는 격자 시뮬레이터의 로봇을 조종하는 어시스턴트다. 인식 모델이 만든 Text 블록과 "
+    "너는 가정용 집사형 로봇의 격자 시뮬레이터를 조종하는 어시스턴트다. 인식 모델이 만든 Text 블록과 "
     "사용자 질문을 보고 사용자의 의도를 파악해 도구 하나를 고른다.\n"
     "도구:\n"
     "- move(direction, steps): 로봇 이동. direction 은 up|down|left|right, steps 는 1~10 정수\n"
@@ -157,14 +157,18 @@ def describe_scene(image: Image.Image) -> str:
     url = "data:image/jpeg;base64," + base64.b64encode(buffer.getvalue()).decode("ascii")
     text = _ask_vlm(model, url)
     failed = [name for name, ok in check(text) if not ok]
-    if "한국어" in failed:                             # 한자 · 가나가 섞이면 한글로만 쓰라고 한 번 더 묻는다
+    if failed:
         retry = _ask_vlm(model, url, system=VLM_KOREAN_SYSTEM)
-        print(f"[vlm ] 한국어 아님 → 다시 물음 : {text} → {retry}", flush=True)
+        print(f"[vlm ] 규격 재시도 : {text} → {retry}", flush=True)
         if dict(check(retry))["한국어"]:
             text = retry
             failed = [name for name, ok in check(text) if not ok]
-    if failed:                                         # 자르지 않는다 ― '장애물 있음/없음' 이 잘릴 수 있다
-        print(f"[vlm ] 규격 벗어남 ({', '.join(failed)}) : {text}", flush=True)
+    # Preserve the model's obstacle statement while shortening only its description.
+    # A missing statement or non-Korean output is a failure, never fabricated evidence.
+    text = compact_vlm_text(text)
+    failed = [name for name, ok in check(text) if not ok]
+    if failed:
+        raise ValueError("VLM output format failed: " + ", ".join(failed))
     return text
 
 
@@ -202,6 +206,19 @@ def check(text: str) -> list:
         (f"{VLM_MAX_CHARS}자 이내", len(text) <= VLM_MAX_CHARS),
         ("장애물 표기", bool(re.search(r"장애물 (있음|없음)\.?$", text))),
     ]
+
+
+def compact_vlm_text(text: str) -> str:
+    obstacle = re.search(r"장애물 (있음|없음)", text)
+    if not obstacle or not dict(check(text))["한국어"] or len(text) <= VLM_MAX_CHARS:
+        return text
+    suffix = ", " + obstacle.group(0) + "."
+    description = re.sub(r"장애물 (있음|없음).*", "", text).rstrip(" .,，")
+    budget = VLM_MAX_CHARS - len(suffix) - 1
+    shortened = description[:budget].rstrip(" .,，")
+    if " " in shortened and len(shortened.rsplit(" ", 1)[0]) >= budget // 2:
+        shortened = shortened.rsplit(" ", 1)[0]
+    return shortened + "…" + suffix
 
 
 # ---------------------------------------------------------------------------
@@ -253,7 +270,7 @@ def to_steps(value) -> int:
     """[R2] 1 ~ MAX_STEPS 정수로 맞춘다. 읽을 수 없으면 1."""
     try:
         steps = int(value)
-    except (TypeError, ValueError):
+    except (TypeError, ValueError, OverflowError):
         return 1
     return min(max(steps, 1), MAX_STEPS)
 
@@ -282,7 +299,7 @@ def parse_tool_call(raw: str) -> dict:
 
 
 # 방향어 ― '위' 는 뒤에 띄어쓰기 · '로' · '쪽' 이 올 때만 방향이다 ('위치' · '위험' · '위에' 는 아님)
-_DIRECTION_WORD_RE = re.compile(r"오른쪽|왼쪽|위(?=\s|로|쪽|$)|아래|\b(?:up|down|left|right)\b", re.I)
+_DIRECTION_WORD_RE = re.compile(r"오른쪽|왼쪽|(?<![가-힣A-Za-z])위(?=\s|로|쪽|$)|아래|\b(?:up|down|left|right)\b", re.I)
 _WORD_TO_DIRECTION = {"오른쪽": "right", "왼쪽": "left", "아래": "down"}
 _STEPS_RE = re.compile(r"(\d+|한|두|세|네|다섯|여섯|일곱|여덟|아홉|열)\s*칸")
 _KOREAN_NUMBER = {"한": 1, "두": 2, "세": 3, "네": 4, "다섯": 5,
@@ -356,6 +373,13 @@ def apply_rules(call: dict, prompt: str, history: list, gesture_direction: str) 
     direction = resolve_direction(prompt, history, gesture_direction)
     steps = said_steps(prompt)
     pending = pending_steps(history)
+    # A direction-only reply completes the already established movement request,
+    # even when the LLM misclassifies this short answer as describe.
+    direction_reply = re.fullmatch(
+        r"(?:오른쪽|왼쪽|위(?:쪽)?|아래(?:쪽)?|up|down|left|right)(?:으로|로)?[.!?]?",
+        prompt.strip(), re.I)
+    if pending is not None and direction is not None and direction_reply:
+        return move_with_steps(direction, steps or pending)
     if call["tool"] == "move":
         if not has_direction_evidence(prompt, history, gesture_direction):
             return ask_for_direction(steps or call["args"]["steps"])       # [R3] 근거 없는 이동
@@ -396,6 +420,23 @@ def index():
 @app.get("/favicon.ico")
 def favicon():
     return Response(status_code=204)
+
+
+@app.get("/api/health")
+def health():
+    return {"status": "ok", "yolo_model": YOLO_MODEL_PATH.name,
+            "loaded": {name: model is not None for name, model in _models.items()}}
+
+
+@app.get("/api/sample-image")
+def sample_image(name: str = "sofa"):
+    paths = {"sofa": BASE_DIR / "samples/furniture_v2_sofa.jpg",
+             "pointing": BASE_DIR / "samples/pointing_up.jpg",
+             "victory": BASE_DIR / "samples/victory.jpg"}
+    path = paths.get(name)
+    if path is None or not path.is_file():
+        return JSONResponse({"error": "sample_not_found"}, status_code=404)
+    return FileResponse(path, media_type="image/jpeg")
 
 
 @app.get("/mediapipe/gesture_recognizer.task")
