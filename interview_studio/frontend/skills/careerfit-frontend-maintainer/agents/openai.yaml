@@ -1,0 +1,4 @@
+interface:
+  display_name: "CareerFit Frontend Maintainer"
+  short_description: "Vue 화면, 상태, 반응형 UI를 구현하고 검증합니다."
+  default_prompt: "Use $careerfit-frontend-maintainer to implement the scoped CareerFit frontend change."

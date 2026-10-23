@@ -1,0 +1,4 @@
+interface:
+  display_name: "CareerFit API Integration Maintainer"
+  short_description: "FastAPI 계약에 맞는 프론트 통신을 유지합니다."
+  default_prompt: "Use $careerfit-api-integration-maintainer to implement the scoped API integration."

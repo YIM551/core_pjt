@@ -1,0 +1,4 @@
+interface:
+  display_name: "CareerFit Frontend Reviewer"
+  short_description: "프론트 계약, UX, 접근성 회귀를 독립 검토합니다."
+  default_prompt: "Use $careerfit-frontend-reviewer to review the supplied frontend diff without editing."

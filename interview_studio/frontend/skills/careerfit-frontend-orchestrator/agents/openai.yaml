@@ -1,0 +1,4 @@
+interface:
+  display_name: "CareerFit Frontend Orchestrator"
+  short_description: "구현, 독립 검증, 수정 루프를 조율합니다."
+  default_prompt: "Use $careerfit-frontend-orchestrator to coordinate this frontend feature."
