@@ -1,0 +1,4 @@
+interface:
+  display_name: "CareerFit RAG and AI Maintainer"
+  short_description: "Implement scoped retrieval and interview AI changes."
+  default_prompt: "Use $careerfit-rag-ai-maintainer to implement this CareerFit AI feature."

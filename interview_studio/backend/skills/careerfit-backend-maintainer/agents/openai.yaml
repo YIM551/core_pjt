@@ -1,0 +1,4 @@
+interface:
+  display_name: "CareerFit Backend Maintainer"
+  short_description: "Implement scoped CareerFit FastAPI backend changes."
+  default_prompt: "Use $careerfit-backend-maintainer to implement this CareerFit backend change."

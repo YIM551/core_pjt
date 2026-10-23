@@ -1,0 +1,4 @@
+interface:
+  display_name: "CareerFit Backend Orchestrator"
+  short_description: "Coordinate developer and read-only verifier agents."
+  default_prompt: "Use $careerfit-backend-orchestrator to coordinate this CareerFit backend change."

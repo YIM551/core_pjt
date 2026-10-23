@@ -1,0 +1,13 @@
+# Optional local model runtime. Install after requirements.txt.
+--extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+llama-cpp-python==0.3.34
+faster-whisper==1.2.1
+av==16.0.1
+sse-starlette==3.5.0
+starlette-context==0.5.1
+
+# Offline acoustic CTC, ECAPA speaker embeddings and SepFormer separation.
+torch==2.6.0
+torchaudio==2.6.0
+speechbrain==1.0.3
+transformers==4.48.3

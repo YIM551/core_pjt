@@ -1,0 +1,4 @@
+interface:
+  display_name: "CareerFit API Contract Reviewer"
+  short_description: "Read-only review of CareerFit backend contracts."
+  default_prompt: "Use $careerfit-api-contract-reviewer to review these backend API changes."
