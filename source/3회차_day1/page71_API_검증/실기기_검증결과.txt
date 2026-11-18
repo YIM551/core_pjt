@@ -1,0 +1,147 @@
+[A1 · A2] 화면과 정적 파일
+  PASS  [A1  ] GET / → index.html  ― status=200
+  PASS  [A2  ] GET /mediapipe/vision_bundle.mjs  ― 200, 155,439 bytes
+  PASS  [A2  ] GET /mediapipe/gesture_recognizer.task  ― 200, 8,373,440 bytes
+
+[A3 · A4 · A5] 잘못된 요청 → 약속된 400
+  PASS  [A3  ] /api/yolo-detect 빈 본문 → empty_image  ― 400 empty_image
+  PASS  [A3  ] /api/yolo-detect 이미지 아님 → invalid_image  ― 400 invalid_image
+  PASS  [A4  ] /api/vlm-describe 빈 본문 → empty_image  ― 400 empty_image
+  PASS  [A4  ] /api/vlm-describe 이미지 아님 → invalid_image  ― 400 invalid_image
+  PASS  [A5  ] JSON 아님 → invalid_json  ― 400 invalid_json
+  PASS  [A5  ] 빈 prompt → empty_prompt  ― 400 empty_prompt
+
+[A6 ~ A8 · R6 · R8] 3회차 중계 ― 잘못된 요청 → 400, 연결할 수 없는 기기(192.0.2.1) → 502
+  PASS  [A6  ] ip 없음 → invalid_request  ― 400 invalid_request
+  PASS  [A6  ] 연결 불가 → 502 camera_unreachable  ― 502 camera_unreachable
+  PASS  [A7  ] /api/robot-signal JSON 아님 → invalid_json  ― 400 invalid_json
+  PASS  [A7  ] /api/robot-signal 없는 방향 → invalid_request  ― 400 invalid_request
+  PASS  [A7  ] /api/robot-signal 연결 불가 → 502 device_unreachable  ― 502 device_unreachable
+  PASS  [A8  ] /api/oled-display JSON 아님 → invalid_json  ― 400 invalid_json
+  PASS  [A8  ] /api/oled-display 없는 방향 → invalid_request  ― 400 invalid_request
+  PASS  [A8  ] /api/oled-display 연결 불가 → 502 device_unreachable  ― 502 device_unreachable
+  PASS  [R8  ] LED는 좌우만 지원 ― A7 up → 400 invalid_request  ― 400 invalid_request
+  PASS  [R8  ] OLED는 상하도 지원 ― A8 up, 연결 불가 → 502 device_unreachable  ― 502 device_unreachable
+  PASS  [R8  ] LED는 좌우만 지원 ― A7 down → 400 invalid_request  ― 400 invalid_request
+  PASS  [R8  ] OLED는 상하도 지원 ― A8 down, 연결 불가 → 502 device_unreachable  ― 502 device_unreachable
+
+[A3 · A4] 인식 (sample.jpg 810x1080)
+  PASS  [A3  ] objects : label · confidence · box(픽셀 좌표)  ― 0.0s  bus, person, person, person, person
+  PASS  [A4  ] description 문자열  ― 4.2s  '화면 오른쪽에 파란 버스가 서 있다. 가운데에 사람 세 명이 걷고 있다. 장애물 없음.'
+
+[A5 · R3] 의도 파악 → 도구 선택
+  PASS  [A5-1] 장면 질문 → describe : '앞에 뭐가 있어?'  ― 1.6s → describe {}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='describe'
+  PASS  [R2  ] 도구별 인자 형식  ― args={}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=False
+  PASS  [A5-2] 방향 · 칸 수 → move : '오른쪽으로 3칸 가'  ― 1.8s → move {'direction': 'right', 'steps': 3}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='move'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'direction': 'right', 'steps': 3}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=False
+  PASS  [A5-3] 방향은 손 제스처 → move : '이쪽으로 2칸 이동해'  ― 1.8s → move {'direction': 'up', 'steps': 2}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='move'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'direction': 'up', 'steps': 2}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=False
+  PASS  [A5-4] 제스처 시퀀스 입력 문구 → move : '왼쪽으로, 5칸 이동.'  ― 1.9s → move {'direction': 'left', 'steps': 5}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='move'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'direction': 'left', 'steps': 5}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=False
+  PASS  [R3  ] 방향 근거 없음 → ask : '저쪽으로 가'  ― 1.7s → ask {'steps': 1, 'guess': 'right'}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='ask'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'steps': 1, 'guess': 'right'}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=True
+  PASS  [R3  ] 방향 근거 없음 → ask : '버스 있는 쪽으로 가'  ― 1.8s → ask {'steps': 1, 'guess': 'right'}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='ask'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'steps': 1, 'guess': 'right'}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=True
+  PASS  [R3  ] '위' 는 방향어 → move : '위 2칸 가'  ― 1.8s → move {'direction': 'up', 'steps': 2}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='move'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'direction': 'up', 'steps': 2}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=False
+  PASS  [R3  ] '위치' 는 방향어 아님 → ask : '버스 위치로 가'  ― 1.9s → ask {'steps': 1, 'guess': 'right'}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='ask'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'steps': 1, 'guess': 'right'}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=True
+  PASS  [A5-5] 프롬프트 방향어가 손 제스처보다 우선 : '왼쪽으로 2칸 가'  ― 1.8s → move {'direction': 'left', 'steps': 2}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='move'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'direction': 'left', 'steps': 2}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=False
+  PASS  [R3  ] 손 없음 · 방향어 없음 → ask : '이쪽으로 가'  ― 1.8s → ask {'steps': 1, 'guess': 'right'}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='ask'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'steps': 1, 'guess': 'right'}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=True
+  PASS  [개선4 ] '말고' 앞 방향어는 지운다 → move : '왼쪽 말고 오른쪽으로 2칸 가'  ― 1.9s → move {'direction': 'right', 'steps': 2}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='move'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'direction': 'right', 'steps': 2}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=False
+  PASS  [개선4 ] 부정된 방향어만 있음 → ask : '왼쪽 말고 가'  ― 1.6s → ask {'steps': 1}
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='ask'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'steps': 1}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=True
+
+[R5] 되묻기 → 방향을 답하면 이어서 이동
+  PASS  [R5  ] 1턴 '저쪽으로 2칸 가' → ask  ― → ask {'steps': 2, 'guess': 'right'}
+  PASS  [R5  ] 2턴 '왼쪽' → move(left, 2)  ― 2.5s → move {'direction': 'left', 'steps': 2}
+
+[A5-6] 이전 턴 질문이 손 제스처보다 우선 (방어용 ― 우선순위 구현 확인)
+  PASS  [A5-6] 이전 턴 '왼쪽' + 손 up + '이쪽으로 3칸 가' → move(left, 3)  ― 2.5s → move {'direction': 'left', 'steps': 3}
+
+[개선 ②] 제안(guess)에 '응' → 그 방향으로 이동
+  PASS  [개선2 ] ask(guess=right, steps=2) 뒤 '응' → move(right, 2)  ― 2.5s → move {'direction': 'right', 'steps': 2}
+
+[개선 ⑤] 연속 명령 → 첫 이동 + then
+  PASS  [개선5 ] '오른쪽 2칸 가고 위로 1칸' → move(right, 2) + then [up 1]  ― 2.0s → move {'direction': 'right', 'steps': 2} then=[{'direction': 'up', 'steps': 1}]
+  PASS  [A5  ] 응답 필드 5개
+  PASS  [R1  ] tool 은 move / describe / ask 중 하나  ― tool='move'
+  PASS  [R2  ] 도구별 인자 형식  ― args={'direction': 'right', 'steps': 2}
+  PASS  [R4  ] need_more_info == (tool == ask)  ― need_more_info=False
+
+[R10] 출력 대상별 답변 문구 ― ip 가 있으면(기기 탭) 칸 수 없이 방향만
+  PASS  [R10 ] 로컬 PC 탭 · 기기 탭의 tool · args 가 같다  ― 로컬 → move {'direction': 'right', 'steps': 3} / 기기 → move {'direction': 'right', 'steps': 3}
+  PASS  [R10 ] 로컬 PC 탭(ip 없음) move → 칸 수 포함 (2회차 문구)  ― '오른쪽으로 3칸 이동합니다.'
+  PASS  [R10 ] 기기 탭(ip 있음) move → 칸 수 없음  ― '오른쪽으로 이동합니다.'
+  PASS  [R10 ] 기기 탭 '오른쪽 2칸 가고 위로 1칸' → move · 칸 수 없음  ― move {'direction': 'right', 'steps': 2} then=[{'direction': 'up', 'steps': 1}] '오른쪽 → 위 순서로 이동합니다.'
+  PASS  [R10 ] 기기 탭 '저쪽으로 2칸 가' → ask · 칸 수 없음  ― ask {'steps': 2, 'guess': 'right'} then=None "오른쪽으로 갈까요? 맞으면 '응', 아니면 방향을 말해 주세요."
+
+[D1 ~ D3] 기기 서버 직접 확인 (http://192.168.110.141:8080)
+  PASS  [D1  ] /stream.mjpg → multipart MJPEG  ― multipart/x-mixed-replace; boundary=FRAME
+  PASS  [D2  ] /gpio-blink?pin=17 → {ok: true}  ― 200 {"ok": true}
+  PASS  [D2  ] /gpio-blink?pin=abc → 400  ― 400
+  PASS  [D3  ] /oled-display?text=RIGHT → 200  ― 200 {"ok": true, "oled": "shown"}
+  PASS  [D3  ] /oled-display 글자 없음 → 400  ― 400
+
+[A6 ~ A8 · R8] PC 중계
+  PASS  [A6  ] 중계 스트림에 MJPEG 프레임  ― status=200
+  PASS  [A7  ] LED left → {ok: true}  ― 200
+  PASS  [A7  ] LED right → {ok: true}  ― 200
+  PASS  [R8  ] OLED left → LEFT  ― 200
+  PASS  [R8  ] OLED right → RIGHT  ― 200
+  PASS  [R8  ] OLED up → UP  ― 200
+  PASS  [R8  ] OLED down → DOWN  ― 200
+
+[F104 · R8 · R10] 기기 탭 질문 → move 를 OLED · LED 로 (화면과 같은 순서)
+  PASS  [R8  ] '오른쪽으로 3칸 가' → OLED RIGHT  ― 1.9s → move {'direction': 'right', 'steps': 3} then=None OLED=['RIGHT']
+  PASS  [R10 ] 기기 탭 답변에 칸 수 없음  ― '오른쪽으로 이동합니다.'
+  PASS  [R8  ] '위로 2칸 가' → OLED UP  ― 1.9s → move {'direction': 'up', 'steps': 2} then=None OLED=['UP']
+  PASS  [R10 ] 기기 탭 답변에 칸 수 없음  ― '위로 이동합니다.'
+  PASS  [R8  ] '오른쪽 2칸 가고 위로 1칸' → OLED RIGHT → UP  ― 1.9s → move {'direction': 'right', 'steps': 2} then=[{'direction': 'up', 'steps': 1}] OLED=['RIGHT', 'UP']
+  PASS  [R10 ] 기기 탭 답변에 칸 수 없음  ― '오른쪽 → 위 순서로 이동합니다.'
+  PASS  [R8  ] '왼쪽으로 3칸 아래로 2칸' → OLED LEFT → DOWN  ― 1.8s → move {'direction': 'left', 'steps': 3} then=[{'direction': 'down', 'steps': 2}] OLED=['LEFT', 'DOWN']
+  PASS  [R10 ] 기기 탭 답변에 칸 수 없음  ― '왼쪽 → 아래 순서로 이동합니다.'
+  PASS  [F104] '저쪽으로 가' → ask (OLED · LED 출력 없음)  ― ask {'steps': 1, 'guess': 'right'} "오른쪽으로 갈까요? 맞으면 '응', 아니면 방향을 말해 주세요."
+
+------------------------------------------------------------
+A1 1/1  A2 2/2  A3 3/3  A4 3/3  A5 21/21  A6 3/3  A7 5/5  A8 3/3  D1 1/1  D2 2/2  D3 2/2  F104 1/1  R1 13/13  R10 9/9  R2 13/13  R3 5/5  R4 13/13  R5 2/2  R8 12/12  개선2 1/1  개선4 2/2  개선5 1/1
+전체 118/118 PASS

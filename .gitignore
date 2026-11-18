@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.pem
+*.key
+models/
+*.pt
+*.gguf
+*.task
+*.log
+camera_test.jpg
