@@ -324,7 +324,8 @@ def run_device(client, ip):
 
     print("\n[F104 · R8 · R10] 기기 탭 질문 → move 를 OLED · LED 로 (화면과 같은 순서)")
     for prompt, expected in (("오른쪽으로 3칸 가", ["RIGHT"]), ("위로 2칸 가", ["UP"]),
-                             ("오른쪽 2칸 가고 위로 1칸", ["RIGHT", "UP"])):
+                             ("오른쪽 2칸 가고 위로 1칸", ["RIGHT", "UP"]),
+                             ("왼쪽으로 3칸 아래로 2칸", ["LEFT", "DOWN"])):
         r, sec = llm(client, prompt, ip=ip)
         data = r.json() if r.status_code == 200 else {}
         shown = output_move(client, ip, data)

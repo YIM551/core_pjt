@@ -319,6 +319,10 @@ _NEGATED_RE = re.compile(r"(오른쪽|왼쪽|위|아래)\s*(?:말고|아니고|�
 _CONFIRM_RE = re.compile(r"^\s*(?:응|어|네|예|그래|좋아|맞아|ㅇㅇ|오케이|ok|yes)(?:요)?\s*[.!~]*\s*$", re.I)
 # [개선 ⑤] 연속 명령의 연결어 ― ',' 는 넣지 않는다 ('왼쪽으로, 5칸 이동.' 이 쪼개진다)
 _SPLIT_RE = re.compile(r"\s*(?:가고|하고|그리고|다음에)\s*")
+# 연결어 없는 연속 명령은 각 동작에 방향과 칸 수가 명시된 경우에만 인식한다.
+_COUNTED_MOVE = rf"(?:오른쪽|왼쪽|위(?:쪽)?|아래(?:쪽)?)(?:으로|로)?\s+{_STEPS_RE.pattern}"
+_COUNTED_MOVE_RE = re.compile(_COUNTED_MOVE)
+_COMPACT_SEQUENCE_RE = re.compile(rf"{_COUNTED_MOVE}(?:[\s,]+{_COUNTED_MOVE})+[.!]?")
 
 
 def said_direction(text: str):
@@ -406,7 +410,10 @@ def pending_guess(history: list):
 
 
 def split_moves(prompt: str) -> list:
-    """[개선 ⑤] '오른쪽 2칸 가고 위로 1칸' → 연결어로 나눠 방향어가 있는 조각만 차례로 담는다."""
+    """[개선 ⑤] 연결어가 있거나 방향과 칸 수를 연달아 쓴 명령을 순서대로 나눈다."""
+    if _COMPACT_SEQUENCE_RE.fullmatch(prompt.strip()):
+        return [{"direction": said_direction(move.group()), "steps": said_steps(move.group())}
+                for move in _COUNTED_MOVE_RE.finditer(prompt)]
     parts = _SPLIT_RE.split(prompt)
     return [{"direction": said_direction(p), "steps": said_steps(p) or 1}
             for p in parts if said_direction(p)]
