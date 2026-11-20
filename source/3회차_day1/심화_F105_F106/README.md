@@ -37,4 +37,4 @@ systemctl is-active camera-stream.service
 - `camera-stream.service`
 
 ---
-막히면 `../README.md` 의 순서표를 먼저 확인할 것.
+실행 환경과 검증 결과는 [프로젝트 README](../../../README_PJT03.md)를 참고한다.

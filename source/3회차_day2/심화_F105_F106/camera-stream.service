@@ -1,0 +1,17 @@
+[Unit]
+Description=Raspberry Pi device server (camera_server.py: D1~D3 PJT01, +D4 · D5 PJT02)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# 반드시 venv 의 python 으로 실행한다 ― luma.oled(D3) · llama_cpp(D5, 2일차) 는 venv 에만 설치되어 있다.
+# /usr/bin/python3 로 띄우면 카메라 · 음성은 되지만 /llm-infer 가 매번 500 이 된다.
+ExecStart=/home/__USER__/venv/bin/python3 /home/__USER__/camera_server.py
+WorkingDirectory=/home/__USER__
+User=__USER__
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,32 @@
+# 서버 창 출력 ― 이 서버를 띄운 채 ../page71_API_검증/API_검증.py 를 전체 실행했을 때 (기기 없이, PC 실측)
+# 192.0.2.1 은 연결할 수 없는 문서용 예약 주소 → A7 · A8 은 502 (R6). [127.0.0.1] 줄은 ip 가 있는 기기 탭 요청 → 칸 수 없는 문구 (R10)
+
+[led ] 시작 11:06:48    3184 ms  실패 (ConnectTimeout)  192.0.2.1
+[oled] 시작 11:06:51    3206 ms  실패 (ConnectTimeout)  192.0.2.1
+[led ] 시작 11:06:58    3190 ms  실패 (ConnectTimeout)  192.0.2.1
+[oled] 시작 11:07:01    3201 ms  실패 (ConnectTimeout)  192.0.2.1
+[yolo] 시작 11:07:04    7087 ms  810x1080  객체 5개
+[vlm ] 시작 11:07:11   18153 ms  화면 오른쪽에 파란 버스가 서 있다. 가운데에 사람 세 명이 걷고 있다. 장애물 없음.
+[tool] 시작 11:07:30   11120 ms  Q. 앞에 뭐가 있어? → describe    앞에 사람 2명이 서 있습니다.
+[tool] 시작 11:07:41    3822 ms  Q. 오른쪽으로 3칸 가 → move {'direction': 'right', 'steps': 3}   오른쪽으로 3칸 이동합니다.
+[tool] 시작 11:07:45    3836 ms  Q. 이쪽으로 2칸 이동해 → move {'direction': 'up', 'steps': 2}   위로 2칸 이동합니다.
+[tool] 시작 11:07:48    3937 ms  Q. 왼쪽으로, 5칸 이동. → move {'direction': 'left', 'steps': 5}   왼쪽으로 5칸 이동합니다.
+[tool] 시작 11:07:52    3460 ms  Q. 저쪽으로 가 → ask {'steps': 1, 'guess': 'right'}   오른쪽으로 1칸 갈까요? 맞으면 '응', 아니면 방향을 말해 주세요.
+[tool] 시작 11:07:56    3687 ms  Q. 버스 있는 쪽으로 가 → ask {'steps': 1, 'guess': 'right'}   오른쪽으로 1칸 갈까요? 맞으면 '응', 아니면 방향을 말해 주세요.
+[tool] 시작 11:07:59    3608 ms  Q. 위 2칸 가 → move {'direction': 'up', 'steps': 2}   위로 2칸 이동합니다.
+[tool] 시작 11:08:03    3865 ms  Q. 버스 위치로 가 → ask {'steps': 1, 'guess': 'right'}   오른쪽으로 1칸 갈까요? 맞으면 '응', 아니면 방향을 말해 주세요.
+[tool] 시작 11:08:07    3808 ms  Q. 왼쪽으로 2칸 가 → move {'direction': 'left', 'steps': 2}   왼쪽으로 2칸 이동합니다.
+[tool] 시작 11:08:11    3656 ms  Q. 이쪽으로 가 → ask {'steps': 1, 'guess': 'right'}   오른쪽으로 1칸 갈까요? 맞으면 '응', 아니면 방향을 말해 주세요.
+[tool] 시작 11:08:14    4025 ms  Q. 왼쪽 말고 오른쪽으로 2칸 가 → move {'direction': 'right', 'steps': 2}   오른쪽으로 2칸 이동합니다.
+[tool] 시작 11:08:18    3431 ms  Q. 왼쪽 말고 가 → ask {'steps': 1}   어느 쪽으로 1칸 갈까요? 방향을 말하거나 손으로 가리켜 주세요.
+[tool] 시작 11:08:22    3822 ms  Q. 저쪽으로 2칸 가 → ask {'steps': 2, 'guess': 'right'}   오른쪽으로 2칸 갈까요? 맞으면 '응', 아니면 방향을 말해 주세요.
+[tool] 시작 11:08:26    5963 ms  Q. 왼쪽 → move {'direction': 'left', 'steps': 2}   왼쪽으로 2칸 이동합니다.
+[tool] 시작 11:08:32    6210 ms  Q. 이쪽으로 3칸 가 → move {'direction': 'left', 'steps': 3}   왼쪽으로 3칸 이동합니다.
+[tool] 시작 11:08:38    6071 ms  Q. 응 → move {'direction': 'right', 'steps': 2}   오른쪽으로 2칸 이동합니다.
+[tool] 시작 11:08:44    4095 ms  Q. 오른쪽 2칸 가고 위로 1칸 → move {'direction': 'right', 'steps': 2} [{'direction': 'up', 'steps': 1}]  오른쪽으로 2칸, 위로 1칸 이동합니다.
+[tool] 시작 11:08:48    3854 ms  Q. 오른쪽으로 3칸 가 → move {'direction': 'right', 'steps': 3}   오른쪽으로 3칸 이동합니다.
+[tool] 시작 11:08:52    3440 ms  [127.0.0.1] Q. 오른쪽으로 3칸 가 → move {'direction': 'right', 'steps': 3}   오른쪽으로 이동합니다.
+[tool] 시작 11:08:55    3626 ms  [127.0.0.1] Q. 오른쪽 2칸 가고 위로 1칸 → move {'direction': 'right', 'steps': 2} [{'direction': 'up', 'steps': 1}]  오른쪽 → 위 순서로 이동합니다.
+[tool] 시작 11:08:59    3577 ms  [127.0.0.1] Q. 저쪽으로 2칸 가 → ask {'steps': 2, 'guess': 'right'}   오른쪽으로 갈까요? 맞으면 '응', 아니면 방향을 말해 주세요.
+[led ] 시작 11:09:12    3208 ms  실패 (ConnectTimeout)  192.0.2.1
+[oled] 시작 11:09:16    3221 ms  실패 (ConnectTimeout)  192.0.2.1

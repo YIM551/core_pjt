@@ -1,0 +1,24 @@
+# 기대 출력 ― 라즈베리파이 실물에서 나와야 하는 출력의 형식이다 (코드의 출력 문구 · 강의자료 수치 기준).
+# 실측 기록이 아니므로 시간 · 인식 문장 · 장면 설명 · 숫자는 환경마다 다르다. <...> 는 환경마다 달라지는 값.
+
+$ python 되묻기_대화.py --device <PiIP>
+
+■ ① ask → 방향으로 답
+    [voice ] '저쪽으로 2칸 가' → <8 ~ 11>s  ask {'steps': 2}  ·  '어느 쪽으로 갈까요? 방향을 말하거나 손으로 가리켜 주세요.'  (history 2개)
+    [voice ] '왼쪽' → <8 ~ 11>s  move {'direction': 'left', 'steps': 2}  OLED LEFT  ·  '왼쪽으로 이동합니다.'  (history 0개)
+    O  기대 move(left, 2) · OLED LEFT · history 비움
+
+■ ② 제안 → '응'
+    [voice ] '저쪽으로 2칸 가' → ...  ask {'steps': 2, 'guess': 'right'}  ·  "오른쪽으로 갈까요? 맞으면 '응', 아니면 방향을 말해 주세요."  (history 2개)
+    [voice ] '응' → ...  move {'direction': 'right', 'steps': 2}  OLED RIGHT  ·  '오른쪽으로 이동합니다.'  (history 0개)
+    O  기대 move(right, 2) · OLED RIGHT · history 비움
+  (제안이 안 나오면)
+    제안(guess) 없음 ― 이번엔 '어느 쪽으로 갈까요?' 로 끝났다. ①만 확인해도 된다 (건너뜀)
+
+■ ③ 음성 ask → 타이핑 '위'
+    [voice ] '저쪽으로 2칸 가' → ...  ask {'steps': 2, ...}  (history 2개)
+    [device] '위' → ...  move {'direction': 'up', 'steps': 2}  OLED UP  ·  '위로 이동합니다.'  (history 0개)
+    O  기대 move(up, 2) · OLED UP · history 비움
+
+------------------------------------------------------------
+되묻기 대화 3/3        (② 를 건너뛰면 2/2)

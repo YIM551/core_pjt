@@ -1,6 +1,7 @@
 # Local Python environments and caches
 .venv/
 venv/
+node_modules/
 __pycache__/
 *.py[cod]
 .cache/
@@ -40,4 +41,5 @@ __pycache__/
 # OS/editor temporary files
 .DS_Store
 Thumbs.db
+source/3회차_day*/**/camera_test.jpg
 ~$*

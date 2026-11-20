@@ -1,0 +1,27 @@
+# 기대 출력 ― 라즈베리파이 실물에서 나와야 하는 출력의 형식이다 (코드의 출력 문구 · 강의자료 수치 기준).
+# 실측 기록이 아니므로 시간 · 인식 문장 · 장면 설명 · 숫자는 환경마다 다르다. <...> 는 환경마다 달라지는 값.
+
+$ ~/venv/bin/python3 ~/camera_server.py
+INFO:root:PTT 버튼 준비 완료 (GPIO 23)
+INFO:root:OLED: 초기화 완료 (128x64, rotate=2)
+INFO:root:OLED: start 표시 완료
+INFO:root:OLED: 기동 화면 표시 -> shown
+INFO:root:Streaming on http://0.0.0.0:8080/stream.mjpg (640x480, 15fps)
+
+$ curl http://localhost:8080/voice-text
+{"seq": 0, "text": ""}
+
+# PTT 를 누른 채 "오른쪽으로 두 칸 가" → 뗌 (서버 창)
+INFO:root:PTT: 녹음 시작 -> /tmp/ptt_<임의>.wav
+INFO:root:PTT: 녹음 종료 (<2 근처>초) -> /tmp/ptt_<임의>.wav
+INFO:root:STT: 결과 seq=1 text='오른쪽으로 두 칸 가'
+
+$ curl http://localhost:8080/voice-text
+{"seq": 1, "text": "오른쪽으로 두 칸 가"}
+
+# PTT 를 아주 짧게 (0.5초 미만) ― seq 그대로
+INFO:root:PTT: 녹음 시작 -> /tmp/ptt_<임의>.wav
+INFO:root:PTT: <0.2 근처>초 — 너무 짧아 무시
+
+# 무음만 녹음됐을 때 ― 비발화 태그를 걸러 빈 문자열 (화면은 무시한다)
+INFO:root:STT: 결과 seq=2 text=''
