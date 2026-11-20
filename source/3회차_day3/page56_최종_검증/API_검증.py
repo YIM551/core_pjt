@@ -442,9 +442,9 @@ def run_device(client, ip):
                         f"[손 제스처] 가리키는 방향: 손 없음\n\n[사용자 질문] 앞에 뭐가 있어?",
         "history": []})
     data = json_object(r) if r.status_code == 200 else {}
-    check("D5", "/llm-infer → {tool, args, message} (첫 요청은 모델 로딩 포함)",
+    check("D5", "/llm-infer → 도구·인자와 빈 message 반환",
           data.get("tool") in ("move", "describe", "ask") and isinstance(data.get("args"), dict)
-          and isinstance(data.get("message"), str), f"{time.perf_counter() - t0:.1f}s → {data}")
+          and data.get("message") == "", f"{time.perf_counter() - t0:.1f}s → {data}")
 
     print("\n[A6 ~ A9 · R8] PC 중계")
     try:

@@ -85,6 +85,30 @@ async def check_dashboard(pc, check):
                 "vlm_description": "파란 버스 옆에 사람이 서 있습니다."})).json()
         check("F301", "D5가 강아지·의자를 지어내도 A5는 입력의 사람·버스만 설명",
               scene.get("tool") == "describe" and scene.get("message") == observed, repr(scene.get("message")))
+        # 실기기에서 D5가 이동 명령 세 가지를 모두 describe로 분류했다.
+        movement = [
+            ("버스 있는 쪽으로 가", "none", "ask", {"steps": 1}),
+            ("위 2칸 가", "left", "move", {"direction": "up", "steps": 2}),
+            ("버스 위치로 가", "unknown", "ask", {"steps": 1}),
+            ("버스 있는 쪽으로 가", "down", "move", {"direction": "down", "steps": 1}),
+        ]
+        with patch.object(pc, "ask_device_llm", new=AsyncMock(return_value=invented)):
+            for prompt, gesture, tool, args in movement:
+                response = await client.post("/api/llm-answer", json={
+                    **body, "source": "device", "prompt": prompt, "gesture_direction": gesture,
+                    "vlm_description": "오른쪽에 버스가 있습니다."})
+                answer = response.json()
+                check("R9", f"D5 describe, {prompt!r}, 손 {gesture} → {tool} {args}",
+                      response.status_code == 200 and answer.get("tool") == tool and answer.get("args") == args,
+                      repr(answer))
+        with patch.object(pc, "ask_device_llm", new=AsyncMock(return_value=candidate)):
+            for prompt in ("왼쪽에 뭐가 있어?", "버스 어디로 가?", "왼쪽으로 가지 마"):
+                response = await client.post("/api/llm-answer", json={
+                    **body, "source": "device", "prompt": prompt, "gesture_direction": "right"})
+                answer = response.json()
+                check("R9", f"D5 move, {prompt!r} → 이동 없이 종료",
+                      response.status_code == 200 and answer.get("tool") == "describe"
+                      and answer.get("args") == {} and answer.get("need_more_info") is False, repr(answer))
         with patch.object(pc, "ask_device_llm", new=AsyncMock(return_value=candidate)):
             first = (await client.post("/api/llm-answer", json=body)).json()
         expected = {"steps": 2, "guess": "right"}

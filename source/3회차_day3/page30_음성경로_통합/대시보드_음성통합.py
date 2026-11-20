@@ -318,6 +318,14 @@ def parse_tool_call(raw: str) -> dict:
 _DIRECTION_WORD_RE = re.compile(r"오른쪽|왼쪽|위(?=\s|로|쪽|$)|아래|\b(?:up|down|left|right)\b", re.I)
 _WORD_TO_DIRECTION = {"오른쪽": "right", "왼쪽": "left", "아래": "down"}
 _STEPS_RE = re.compile(r"(\d+|한|두|세|네|다섯|여섯|일곱|여덟|아홉|열)\s*칸")
+# 방향·대상·칸 수 뒤의 명령형만 인정한다. '위치'나 장면 속 물체 자체는 방향 근거가 아니다.
+_MOVE_COMMAND_RE = re.compile(
+    r"(?:(?:(?:오른쪽|왼쪽|위(?:쪽)?|아래(?:쪽)?|이쪽|저쪽|그쪽)(?:으로|로)?|"
+    r"(?:[가-힣a-zA-Z0-9]+\s+)+(?:(?:쪽|곳)으로|위치로))\s*,?\s*)?"
+    rf"(?:{_STEPS_RE.pattern}\s*)?(?:가(?:\s*줘(?:요)?|\s*주세요|세요|자|라)?|"
+    r"이동(?:해(?:\s*줘(?:요)?)?|하세요)?|움직여(?:\s*줘(?:요)?)?)[.!~]*")
+_STOP_COMMAND_RE = re.compile(r"(?:가지|이동하지|움직이지)\s*마(?:라|요|세요)?[.!~]*$")
+_WHERE_GOING_RE = re.compile(r"어디(?:로|까지)?\s*(?:가(?:요|나요)?|이동해(?:요)?)[?!.~]*$")
 _KOREAN_NUMBER = {"한": 1, "두": 2, "세": 3, "네": 4, "다섯": 5,
                   "여섯": 6, "일곱": 7, "여덟": 8, "아홉": 9, "열": 10}
 _QUESTION_RE = re.compile(r"\[사용자 질문\] (.*)")
@@ -418,6 +426,10 @@ def split_moves(prompt: str) -> list:
 
 def apply_rules(call: dict, prompt: str, history: list, gesture_direction: str) -> dict:
     """[R3][R5] LLM 이 고른 도구를, 입력에 실제로 적힌 근거로 확정한다."""
+    if _STOP_COMMAND_RE.search(prompt):
+        return {"tool": "describe", "args": {}, "message": "이동하지 않습니다."}
+    if _WHERE_GOING_RE.search(prompt) or (_SCENE_QUESTION_RE.search(prompt) and not _MOVE_WORD_RE.search(prompt)):
+        return call if call["tool"] == "describe" else {"tool": "describe", "args": {}, "message": FALLBACK_MESSAGE}
     moves = split_moves(prompt)
     if len(moves) > 1:                                                     # [개선 ⑤] 연속 명령
         call = move_with_steps(**moves[0])
@@ -445,8 +457,8 @@ def apply_rules(call: dict, prompt: str, history: list, gesture_direction: str) 
             return ask_for_direction(steps or call["args"]["steps"], llm_guess)  # [R3] 근거 없는 이동
         return move_with_steps(direction,                                  # [R3] 프롬프트 방향어 → 이전 턴 질문 → 손 제스처
                                steps or pending or call["args"]["steps"])  # [R5] 칸 수: 질문 → 기억 → LLM
-    if call["tool"] == "ask":
-        if has_direction_evidence(prompt, history, gesture_direction):
+    if call["tool"] == "ask" or (call["tool"] == "describe" and _MOVE_COMMAND_RE.fullmatch(prompt.strip())):
+        if direction:
             return move_with_steps(direction, steps or pending or 1)        # [R5] 근거가 있으면 이동
         return ask_for_direction(steps or pending or 1)                     # [R3] 칸 수를 기억해 되묻기
     return call
@@ -539,15 +551,11 @@ async def decide_tool_on_device(ip: str, prompt: str, yolo_summary: str, vlm_des
     답변 문구는 llm_answer 가 출력 대상(R10)에 맞춰 다시 쓴다."""
     user_content = build_user_content(prompt, yolo_summary, vlm_description, gesture_direction)
     call = parse_tool_call(await ask_device_llm(ip, user_content, history))
-    if (_pending_ask_args(history) is not None and _SCENE_QUESTION_RE.search(prompt)
-            and not _MOVE_WORD_RE.search(prompt)):
-        # 되묻는 중에도 사용자는 “왼쪽에 뭐가 있어?”로 화제를 바꿀 수 있다.
-        call = {"tool": "describe", "args": {}, "message": ""}
     call = apply_rules(call, prompt, history, gesture_direction)
-    if (call["tool"] == "ask" and not _MOVE_WORD_RE.search(prompt)
+    if (call["tool"] == "ask" and not (_MOVE_WORD_RE.search(prompt) or _MOVE_COMMAND_RE.fullmatch(prompt.strip()))
             and _pending_ask_args(history) is None):   # 가라는 말이 없는데 되묻는다 → 장면 질문이다
         call = {"tool": "describe", "args": {}, "message": ""}
-    if call["tool"] == "describe":
+    if call["tool"] == "describe" and not _STOP_COMMAND_RE.search(prompt):
         call["message"] = scene_summary(yolo_summary, vlm_description)
     return call, user_content
 
