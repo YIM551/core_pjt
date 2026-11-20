@@ -1,0 +1,17 @@
+# 기대 출력 ― 라즈베리파이 실물에서 나와야 하는 출력의 형식이다 (코드의 출력 문구 · 강의자료 수치 기준).
+# 실측 기록이 아니므로 시간 · 인식 문장 · 장면 설명 · 숫자는 환경마다 다르다. <...> 는 환경마다 달라지는 값.
+
+$ python 기동_점검.py --device <PiIP>
+  PASS  1. D1 영상  ― multipart/x-mixed-replace; boundary=FRAME
+  PASS  2. D2 · D3 LED · OLED  ― LED 17 · 27 점멸, OLED LEFT (oled=shown) ― LED 를 깜빡여도 OLED 가 리셋되지 않는지 눈으로 본다
+  PASS  3. D4 음성 인식  ― {'seq': <n>, 'text': '<마지막 발화>'}  (--ptt 로 실제 발화까지 확인할 수 있다)
+  PASS  4. D5 기기 LLM  ― <첫 요청 44 ~ 54>s → describe {} (이제 모델이 올라가 있다)
+  PASS  5. PC 중계 A6 · A9  ― A6 영상 중계 · A9 {'seq': <n>, 'text': '<마지막 발화>'} ― 이제 연동 탭에 IP 를 등록한다
+
+전 단계 PASS ― 시나리오 실습(page40)으로 넘어간다.
+
+$ python 기동_점검.py --device <PiIP> --ptt
+  ...
+         PTT 를 누른 채 '오른쪽으로 두 칸 가' 라고 말하고 떼세요 (20초 안에)…
+  PASS  3. D4 음성 인식  ― seq <n> → <n+1>, text='오른쪽으로 두 칸 가'
+  ...

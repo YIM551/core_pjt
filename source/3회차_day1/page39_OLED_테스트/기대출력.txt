@@ -1,0 +1,14 @@
+# 기대 출력 ― 라즈베리파이 실물에서 나와야 하는 출력의 형식이다 (코드의 출력 문구 · 강의자료 수치 기준).
+# 실측 기록이 아니므로 시간 · 인식 문장 · 장면 설명 · 숫자는 환경마다 다르다. <...> 는 환경마다 달라지는 값.
+
+$ ~/venv/bin/python3 test_oled.py
+초기화 완료: ssd1306 128x64, rotate=2
+테두리 표시 ― 네 변이 모두 보이는가?
+표시: LEFT
+표시: RIGHT
+코드는 끝까지 돌았다. 화면이 안 나왔다면: ① VCC 가 3.3V 인가 ② DC(물리 22) · RST(물리 15) ③ CS(물리 24)
+글자가 거꾸로면 --rotate 0, 화면 일부가 밀려 보이면 --driver sh1106
+PASS  (눈으로 글자를 확인했다면)
+
+# SPI 를 켜지 않았으면 첫 줄에서 멈춘다:
+FAIL  /dev/spidev0.0 없음 ― sudo raspi-config → Interface Options → SPI → Enable 후 재부팅

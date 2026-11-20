@@ -1,0 +1,17 @@
+$ curl -i "http://127.0.0.1:8000/api/voice-poll"
+HTTP/1.1 400 Bad Request
+date: Thu, 12 Nov 2026 02:10:38 GMT
+server: uvicorn
+content-length: 27
+content-type: application/json
+
+{"error":"invalid_request"}
+
+$ curl -i "http://127.0.0.1:8000/api/voice-poll?ip=192.0.2.1"      # 연결할 수 없는 IP (문서용 예약 주소)
+HTTP/1.1 502 Bad Gateway
+date: Thu, 12 Nov 2026 02:10:38 GMT
+server: uvicorn
+content-length: 47
+content-type: application/json
+
+{"error":"device_unreachable","ip":"192.0.2.1"}

@@ -1,0 +1,8 @@
+$ python 장애_관찰.py --device 192.0.2.1 --seconds 10 --ask "왼쪽"      # 라즈베리파이 전원 OFF 상황 (PC 실측)
+기기 탭 질문 (source=device, history 2개) : '왼쪽'
+    3.2s  502 device_llm_unreachable ― 화면은 오류 문구만 보이고 history 2개를 유지한다 (R6)
+  로컬 PC : 정상
+
+시각        영상 (A6)                       음성 (A9)                       로컬 PC (A1)
+11:20:44  끊김 (502 camera_unreachable)   끊김 (502 device_unreachable)   정상
+11:20:50  끊김 (502 camera_unreachable)   끊김 (502 device_unreachable)   정상

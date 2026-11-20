@@ -1,0 +1,31 @@
+# 기대 출력 ― 라즈베리파이 실물에서 나와야 하는 출력의 형식이다 (코드의 출력 문구 · 강의자료 수치 기준).
+# 실측 기록이 아니므로 시간 · 인식 문장 · 장면 설명 · 숫자는 환경마다 다르다. <...> 는 환경마다 달라지는 값.
+
+$ ~/venv/bin/python3 ~/camera_server.py
+<picamera2 · libcamera 로그 몇 줄>
+INFO:root:OLED: 초기화 완료 (128x64, rotate=2)
+INFO:root:OLED: start 표시 완료
+INFO:root:OLED: 기동 화면 표시 -> shown
+INFO:root:Streaming on http://0.0.0.0:8080/stream.mjpg (640x480, 15fps)
+
+# 다른 SSH 창에서
+$ curl "http://localhost:8080/gpio-blink?pin=17"          # 오른쪽 LED 3회 점멸 (약 1.8초 뒤 응답)
+{"ok": true}
+$ curl "http://localhost:8080/gpio-blink?pin=abc"
+{"error": "invalid_request"}
+$ curl "http://localhost:8080/oled-display?text=LEFT"     # OLED 에 LEFT
+{"ok": true, "oled": "shown"}
+$ curl "http://localhost:8080/oled-display"
+{"error": "invalid_request"}
+
+# 서버 창
+INFO:root:GPIO blink requested: pin=17
+INFO:root:GPIO blink done: pin=17
+INFO:root:OLED: LEFT 표시 완료
+
+# luma.oled 가 없거나(시스템 python3 로 실행) 배선이 안 됐을 때 ― 오류가 아니다 (R6)
+ERROR:root:OLED: 초기화 실패 - OLED 없이 계속 진행한다
+<Traceback ...>
+INFO:root:OLED: 기동 화면 표시 -> unavailable
+$ curl "http://localhost:8080/oled-display?text=LEFT"
+{"ok": true, "oled": "unavailable"}

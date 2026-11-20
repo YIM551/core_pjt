@@ -1,0 +1,28 @@
+# 기대 출력 ― 라즈베리파이 실물에서 나와야 하는 출력의 형식이다 (코드의 출력 문구 · 강의자료 수치 기준).
+# 실측 기록이 아니므로 시간 · 인식 문장 · 장면 설명 · 숫자는 환경마다 다르다. <...> 는 환경마다 달라지는 값.
+
+$ ~/venv/bin/python3 test_led.py
+pin factory: <gpiozero.pins.lgpio.LGPIOFactory object at 0x...>
+--- GPIO 17 (오른쪽) ---
+  [1/3] ON
+  [1/3] OFF
+  [2/3] ON
+  [2/3] OFF
+  [3/3] ON
+  [3/3] OFF
+--- GPIO 27 (왼쪽) ---
+  [1/3] ON
+  [1/3] OFF
+  [2/3] ON
+  [2/3] OFF
+  [3/3] ON
+  [3/3] OFF
+코드는 끝까지 돌았다. LED 가 안 켜졌다면 배선 문제다:
+  ① 긴 다리(+)가 GPIO 쪽인가  ② 저항이 직렬로 들어갔나  ③ 물리 핀 11(17) · 13(27) · GND 6 인가
+PASS  (눈으로 깜빡임을 확인했다면)
+
+# 기기 서버가 핀을 잡고 있을 때
+--- GPIO 17 (오른쪽) ---
+  LED 생성 실패: GPIOPinInUse: pin 17 is already in use
+...
+FAIL  [17] ― 다른 프로그램이 핀을 쓰는지(camera_server.py) 확인한다

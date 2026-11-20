@@ -1,0 +1,30 @@
+# 기대 출력 ― 라즈베리파이 실물에서 나와야 하는 출력의 형식이다 (코드의 출력 문구 · 강의자료 수치 기준).
+# 실측 기록이 아니므로 시간 · 인식 문장 · 장면 설명 · 숫자는 환경마다 다르다. <...> 는 환경마다 달라지는 값.
+
+$ python D5_단독확인.py --device <PiIP>
+D5 http://<PiIP>:8080/llm-infer
+
+O  ①  <44 ~ 54>s  앞에 뭐가 있어?                      ← 첫 요청은 모델 로딩 포함
+       → 200 describe {}  '<장면 설명 두세 문장>'
+O  ②  <7.8 ~ 11.5>s  오른쪽으로 2칸 가
+       → 200 move {'direction': 'right', 'steps': 2}  '<장면 설명>'
+O  ③  <7.8 ~ 11.5>s  저쪽으로 가
+       → 200 ask {}  '<장면 설명>'
+         (또는 → 200 move {'direction': 'right', 'steps': 1} … 와 아래 안내 줄)
+       (소형 모델이 방향을 추측했다 ― 방향 근거가 없으므로 PC 의 R3 가 ask 로 바꾸고 guess 로 남긴다)
+O  ④         user_content 없음
+       → 400 empty_user_content
+O  ⑤         JSON 아님
+       → 400 invalid_json
+
+5/5
+
+# 기기 서버 창
+INFO:root:LLM: 모델 로딩 시작 (/home/<사용자>/models/Qwen3-1.7B-Q4_K_M.gguf)
+INFO:root:LLM: 모델 로딩 완료 (Qwen3-1.7B-Q4_K_M)
+INFO:root:LLM: raw='{"tool": "describe", "args": {}, "message": "..."}'
+INFO:root:LLM: <44 ~ 54>초 → describe {}
+
+# 모델 파일 이름을 잠시 바꾸고 보냈을 때 ― 서버는 계속 살아 있다
+X  ①  <0.x>s  앞에 뭐가 있어?
+       → 500 None {}  {'error': 'inference_failed'}
